@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 53376635,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/State%20Finance%20Accounts%20-%20Revenue%20and%20Expenditure.xlsx",
+  "key": "fc16_relevant_data/fc16_state_accounts.xlsx",
+  "method": "GET",
+  "name": "fc16_state_accounts.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://fincomindia.nic.in/commission-reports-sixteenth",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "53376635",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"69818be6-32e767b\"",
+    "last-modified": "Tue, 03 Feb 2026 05:47:18 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:19:09Z",
+  "sha256": "5a285dc8136d1f130bd09cd53ab4f5920dc08c06d1ce6039cbae06c81bf598c3",
+  "source_id": "fc16_relevant_data",
+  "status": 200,
+  "url": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/State%20Finance%20Accounts%20-%20Revenue%20and%20Expenditure.xlsx"
+}

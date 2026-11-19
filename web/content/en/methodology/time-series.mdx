@@ -1,0 +1,14 @@
+The balanced SAM exists for **one year only, 2023-24**. No balanced map exists for any other year, and this site does not invent one: it does not interpolate between years or project the 2023-24 structure backwards.
+
+For other years the time slider shows a lighter view: the **top flows** for which annual series exist. There are <DataFig path="ts.flows" fmt="count"/> such series (<DataFig path="ts.core" fmt="count"/> core flows and <DataFig path="ts.memo" fmt="count"/> memo items such as GDP), running from <DataText path="ts.first"/> to <DataText path="ts.last"/>, though few series cover the early decades. This view is **not complete and not balanced**: it shows only the flows we have series for, a banner says so, and a flow with no figure for a year is listed as missing, not drawn.
+
+Both views size each flow as a **share of that year's GDP**, so widths can be compared across the switch.
+
+**Breaks in the series are marked, never smoothed.**
+
+- **The base year changed.** From 2022-23 the national accounts use the new base; earlier years are on the 2011-12 base. Levels on the two bases are not directly comparable; shares of GDP, each on its own base, are closer. Some household financial saving series also change base earlier, at 2011-12 (<DataFig path="methodology.ts_base_changes"/> such changes); those are marked too.
+- **Sources and concepts change.** Long series are joined from several sources (<DataFig path="methodology.ts_segment_joins"/> joins in all), and a concept can change, as State VAT did when GST replaced most of it in 2017-18 (<DataFig path="methodology.ts_concept_breaks"/> such break in all). Every join, base change and concept break appears as a marker on the slider and in the trend charts.
+- **Linked series are derived.** For <DataFig path="methodology.ts_linked_flows"/> flows, such as consumption, investment and GDP, old-base values are also shown ratio-linked to the new base at 2022-23. That linked series is **derived**, labelled so, and switched off by default. All other series show the break as it is.
+- **The latest year is provisional.** The most recent figures are provisional or revised estimates and will change; the stage of each estimate is marked.
+
+**Each series is checked against the map.** For 2023-24 each series is compared with the SAM cells it measures: <DataFig path="methodology.ts_check_pass"/> pass, <DataFig path="methodology.ts_check_explained"/> differ for a documented reason, and <DataFig path="methodology.ts_check_none"/> has no check. "Explained" means the difference is understood (for example cash versus accrual, or a balancing move), not that it is confirmed. Every trend chart shows the SAM value for 2023-24 as a separate point, so any gap stays visible.

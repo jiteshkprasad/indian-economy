@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 311525,
+  "content_type": "application/pdf",
+  "final_url": "https://cga.gov.in//writereaddata/file/Fin20232024Statement9Appendix.pdf",
+  "key": "cga_finance_accounts_aag/fa2324_statement9_appendix.pdf",
+  "method": "GET",
+  "name": "fa2324_statement9_appendix.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://cga.nic.in/FinanceReport/Published/2023-2024.aspx",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "311525",
+    "content-type": "application/pdf",
+    "last-modified": "Wed, 18 Dec 2024 10:22:56 GMT"
+  },
+  "retrieved_at": "2026-09-29T14:33:41Z",
+  "sha256": "a3935088e699a00636c86148f7b4ad41629a7f379ce1889f435ef7d1e17bc0c2",
+  "source_id": "cga_finance_accounts_aag",
+  "status": 200,
+  "url": "https://cga.gov.in//writereaddata/file/Fin20232024Statement9Appendix.pdf"
+}

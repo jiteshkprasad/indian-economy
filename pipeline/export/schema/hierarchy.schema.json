@@ -1,0 +1,276 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "<v>/hierarchy.json: zoom hierarchy, presets and top-flows nodes (PLAN s.3.2).",
+  "properties": {
+    "accounts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "group": {
+            "type": "string"
+          },
+          "idx": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "l0": {
+            "type": "string"
+          },
+          "l1": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "name_tech": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "idx",
+          "group",
+          "l0",
+          "l1",
+          "name_tech"
+        ],
+        "type": "object"
+      },
+      "maxItems": 128,
+      "minItems": 128,
+      "type": "array"
+    },
+    "columns": {
+      "items": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "type": "array"
+    },
+    "nodes": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "accounts": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "children": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "col": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "expandable": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "production",
+              "factors",
+              "households",
+              "corporations",
+              "government",
+              "row",
+              "capital",
+              "discrepancy"
+            ]
+          },
+          "level": {
+            "enum": [
+              0,
+              1,
+              2
+            ]
+          },
+          "order": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "parent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "level",
+          "parent",
+          "children",
+          "accounts",
+          "order",
+          "col",
+          "kind",
+          "expandable"
+        ],
+        "type": "object"
+      },
+      "maxItems": 168,
+      "minItems": 168,
+      "type": "array"
+    },
+    "presets": {
+      "additionalProperties": false,
+      "properties": {
+        "full": {
+          "additionalProperties": false,
+          "properties": {
+            "columns": {
+              "items": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "merges": {
+              "additionalProperties": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "type": "object"
+            },
+            "return_flows": {
+              "enum": [
+                "arcs",
+                "stubs"
+              ]
+            },
+            "split_node": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "merges",
+            "columns",
+            "split_node",
+            "return_flows"
+          ],
+          "type": "object"
+        },
+        "simple": {
+          "additionalProperties": false,
+          "properties": {
+            "columns": {
+              "items": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "merges": {
+              "additionalProperties": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "type": "object"
+            },
+            "return_flows": {
+              "enum": [
+                "arcs",
+                "stubs"
+              ]
+            },
+            "split_node": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "merges",
+            "columns",
+            "split_node",
+            "return_flows"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "simple",
+        "full"
+      ],
+      "type": "object"
+    },
+    "split_node": {
+      "const": "PRDS"
+    },
+    "ts_nodes": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "accounts": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "col": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "production",
+              "factors",
+              "households",
+              "corporations",
+              "government",
+              "row",
+              "capital",
+              "discrepancy"
+            ]
+          },
+          "order": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "accounts",
+          "order",
+          "col",
+          "kind"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "nodes",
+    "accounts",
+    "columns",
+    "split_node",
+    "presets",
+    "ts_nodes"
+  ],
+  "title": "Hierarchy",
+  "type": "object"
+}

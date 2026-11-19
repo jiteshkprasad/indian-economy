@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 8914522,
+  "content_type": "application/pdf",
+  "final_url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1759229853481_27d8e959-0ae4-40fe-b9ff-d666b8aeb06d_ASI_Vol_I_2023-24C-2.pdf",
+  "key": "mospi_asi/asi_2023_24_vol_i.pdf",
+  "method": "GET",
+  "name": "asi_2023_24_vol_i.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "8914522",
+    "content-type": "application/pdf",
+    "etag": "W/\"88065a-1999a453f40\"",
+    "last-modified": "Tue, 30 Sep 2025 10:57:33 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:21:35Z",
+  "sha256": "c77b3f863bc6bfa77a8daa0f86c531e9b99652718b791b9969a504795edcfbbc",
+  "source_id": "mospi_asi",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1759229853481_27d8e959-0ae4-40fe-b9ff-d666b8aeb06d_ASI_Vol_I_2023-24C-2.pdf"
+}

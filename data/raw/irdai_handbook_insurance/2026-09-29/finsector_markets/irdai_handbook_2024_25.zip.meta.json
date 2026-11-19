@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 6573360,
+  "content_type": "application/zip",
+  "final_url": "https://irdai.gov.in/documents/37343/825690/Handbook+on+Indian+Insurance+Statistics+2024-25.zip/c754826c-a24f-6adf-65d9-bba0e1bb8d2a?version=1.1&t=1770357151427&download=true",
+  "key": "irdai_handbook_insurance/irdai_handbook_2024_25.zip",
+  "method": "GET",
+  "name": "irdai_handbook_2024_25.zip",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://irdai.gov.in/handbook-of-indian-insurance",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-disposition": "attachment; filename=\"Handbook on Indian Insurance Statistics 2024-25.zip\"",
+    "content-type": "application/zip",
+    "last-modified": "Fri, 06 Feb 2026 05:52:31 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:19:50Z",
+  "sha256": "c4c77d51dc6dbec9be0b2786303525f343d88e9b8d6334a887d14b47b53693e2",
+  "source_id": "irdai_handbook_insurance",
+  "status": 200,
+  "url": "https://irdai.gov.in/documents/37343/825690/Handbook+on+Indian+Insurance+Statistics+2024-25.zip/c754826c-a24f-6adf-65d9-bba0e1bb8d2a?version=1.1&t=1770357151427&download=true"
+}

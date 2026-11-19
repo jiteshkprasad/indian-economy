@@ -1,0 +1,1524 @@
+# Pinned raw files for one ingest unit. Written by `python -m pipeline fetch`; do not edit by hand.
+# key '<source_id>/<name>' -> the exact bytes (sha256) every build uses. `history` keeps superseded pins.
+pins:
+  mospi_nas_2026_publication/1.1.xlsx:
+    body_sha256: null
+    bytes: 32407
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.1.xlsx
+    retrieved_at: '2026-09-29T09:15:35Z'
+    sha256: 55164fe36bcd12bb3debb840d3f5c6f1ed0c9e8ec6fcaa549707ffc4f4e78309
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.1.xlsx
+  mospi_nas_2026_publication/1.10.xlsx:
+    body_sha256: null
+    bytes: 21864
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.10.xlsx
+    retrieved_at: '2026-09-29T10:19:20Z'
+    sha256: 2407c1cd18637f697243ca6db847863bda051b8a90be7b1cc20b672302afd2ec
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.10.xlsx
+  mospi_nas_2026_publication/1.11.xlsx:
+    body_sha256: null
+    bytes: 26116
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.11.xlsx
+    retrieved_at: '2026-09-29T10:19:22Z'
+    sha256: 34e727d034a4cf05bedffb94eaaa0ce2c555177a2294e383336bc9098d9203b2
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.11.xlsx
+  mospi_nas_2026_publication/1.12.xlsx:
+    body_sha256: null
+    bytes: 20397
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.12.xlsx
+    retrieved_at: '2026-09-29T10:19:24Z'
+    sha256: 75d73c8cdd966a35732ce2ec635c946dc20b5438bc0599d5898e73e99f0bee15
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.12.xlsx
+  mospi_nas_2026_publication/1.13.xlsx:
+    body_sha256: null
+    bytes: 20184
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.13.xlsx
+    retrieved_at: '2026-09-29T10:19:26Z'
+    sha256: 74f1e7db86356267c43ba25c8b235e609dd7609321d292dc4a917d3028f5c512
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.13.xlsx
+  mospi_nas_2026_publication/1.14.xlsx:
+    body_sha256: null
+    bytes: 20659
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.14.xlsx
+    retrieved_at: '2026-09-29T10:19:28Z'
+    sha256: 8b0cd987000e150d0d7abbb7628246b2c8099c797de99924fc31e67d2477357c
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.14.xlsx
+  mospi_nas_2026_publication/1.2.xlsx:
+    body_sha256: null
+    bytes: 35925
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.2.xlsx
+    retrieved_at: '2026-09-29T10:19:02Z'
+    sha256: 06f3dbc3afcb2d8b83e47212f1fe1e75fd1fad456768f7aa5b4d59769198cc1a
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.2.xlsx
+  mospi_nas_2026_publication/1.4.xlsx:
+    body_sha256: null
+    bytes: 40514
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.4.xlsx
+    retrieved_at: '2026-09-29T10:19:04Z'
+    sha256: a330e415bd4679bc7d264d128c522de0d534e6af5201986abbe5b21d95f860f8
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.4.xlsx
+  mospi_nas_2026_publication/1.5.xlsx:
+    body_sha256: null
+    bytes: 53274
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.5.xlsx
+    retrieved_at: '2026-09-29T10:19:06Z'
+    sha256: 9899bee7f16232566ec980a10e804a6412e36d84bd54bb03cb3fa86bc113373d
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.5.xlsx
+  mospi_nas_2026_publication/1.6.xlsx:
+    body_sha256: null
+    bytes: 35297
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.6.xlsx
+    retrieved_at: '2026-09-29T10:19:08Z'
+    sha256: 3436e1c1cf3a59a56526146c33f7accfdc37a3c1a6c0fe4eaf8af7e34b772bc0
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.6.xlsx
+  mospi_nas_2026_publication/1.6A.xlsx:
+    body_sha256: null
+    bytes: 39966
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.6A.xlsx
+    retrieved_at: '2026-09-29T10:19:10Z'
+    sha256: 11e7b4e0cb7afe8d524ed6257641f2663c9c0459821d8e1b0294178730ab3729
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.6A.xlsx
+  mospi_nas_2026_publication/1.6B.xlsx:
+    body_sha256: null
+    bytes: 30718
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.6B.xlsx
+    retrieved_at: '2026-09-29T10:19:12Z'
+    sha256: 189c1d414d876eb7b671a19ed99ce936b476556a97403fefeeb21af84b7d01e2
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.6B.xlsx
+  mospi_nas_2026_publication/1.7.xlsx:
+    body_sha256: null
+    bytes: 21405
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.7.xlsx
+    retrieved_at: '2026-09-29T10:19:14Z'
+    sha256: 6e5c88f557f46fcc707592073a240aaf7f9cbff4847e878bbfc2ae391a159a6c
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.7.xlsx
+  mospi_nas_2026_publication/1.8.xlsx:
+    body_sha256: null
+    bytes: 21536
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.8.xlsx
+    retrieved_at: '2026-09-29T10:19:16Z'
+    sha256: bf1cb959689ce2c3e40804ecb9f2ce1da420a022a585c3cd744e1c3988383088
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.8.xlsx
+  mospi_nas_2026_publication/1.9.xlsx:
+    body_sha256: null
+    bytes: 21857
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/1.9.xlsx
+    retrieved_at: '2026-09-29T10:19:18Z'
+    sha256: 6bcbeecce6734ad88479cf968dd7ec04b9e1fad869a47142fbeb3e05cd861b9e
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/1.9.xlsx
+  mospi_nas_2026_publication/4.1.xlsx:
+    body_sha256: null
+    bytes: 35373
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/4.1.xlsx
+    retrieved_at: '2026-09-29T10:19:30Z'
+    sha256: 0a8c8562be481543230d1b96c07c8162a93c6f16f9d32301cd5c6d05d577f51c
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/4.1.xlsx
+  mospi_nas_2026_publication/4.2.xlsx:
+    body_sha256: null
+    bytes: 110426
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/4.2.xlsx
+    retrieved_at: '2026-09-29T10:19:33Z'
+    sha256: a07a2b86ece1216cff14e36f3d8cdab94487cda6b6231aede7e9051cf75626e9
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/4.2.xlsx
+  mospi_nas_2026_publication/5.1.xlsx:
+    body_sha256: null
+    bytes: 37273
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/5.1.xlsx
+    retrieved_at: '2026-09-29T10:19:35Z'
+    sha256: 6c7a37e4dc69e80f470b645690eceeffc31c0f5e215a727606cffe371adc8f16
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/5.1.xlsx
+  mospi_nas_2026_publication/5.2.xlsx:
+    body_sha256: null
+    bytes: 40859
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/5.2.xlsx
+    retrieved_at: '2026-09-29T10:19:37Z'
+    sha256: 7cb7bdda35b9a0afe5b2463ec3a4d2ec864415df77364ff07315a8763a8d1dd0
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/5.2.xlsx
+  mospi_nas_2026_publication/5.3.xlsx:
+    body_sha256: null
+    bytes: 35393
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/5.3.xlsx
+    retrieved_at: '2026-09-29T10:19:39Z'
+    sha256: 5dc2c931fc4e6b80c06dd12ee9b238c8495e8551a4b0d100038d6330eaeb3b0e
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/5.3.xlsx
+  mospi_nas_2026_publication/6.1.xlsx:
+    body_sha256: null
+    bytes: 30512
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/6.1.xlsx
+    retrieved_at: '2026-09-29T10:19:41Z'
+    sha256: e2731840399359c20b231e577b78d457a5507c89edf87e9e9bb1c1b597b1002a
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/6.1.xlsx
+  mospi_nas_2026_publication/6.2.xlsx:
+    body_sha256: null
+    bytes: 34280
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/6.2.xlsx
+    retrieved_at: '2026-09-29T10:19:46Z'
+    sha256: b5c5c42833ae216dccf9084c4f75209f65e8bf963966d995f0ffdd495e677f52
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/6.2.xlsx
+  mospi_nas_2026_publication/7.1.xlsx:
+    body_sha256: null
+    bytes: 36274
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.1.xlsx
+    retrieved_at: '2026-09-29T10:19:48Z'
+    sha256: fc7998ec1c9ae70a51ae642090883c1a40669a15c61cc8b96d7b2cd36d8c216f
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.1.xlsx
+  mospi_nas_2026_publication/7.1A.xlsx:
+    body_sha256: null
+    bytes: 55030
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.1A.xlsx
+    retrieved_at: '2026-09-29T10:19:50Z'
+    sha256: 1a9619af6de4de63c4c58d3bb8112e71a5e62cb061c1b71439f5cb5c2dc717ec
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.1A.xlsx
+  mospi_nas_2026_publication/7.1B.xlsx:
+    body_sha256: null
+    bytes: 53882
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.1B.xlsx
+    retrieved_at: '2026-09-29T10:19:52Z'
+    sha256: 04b7b6f3fc07b846bca4b957f81d594b186a742f7a66221d67197ca9552cb3c9
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.1B.xlsx
+  mospi_nas_2026_publication/7.1C.xlsx:
+    body_sha256: null
+    bytes: 53276
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.1C.xlsx
+    retrieved_at: '2026-09-29T10:19:54Z'
+    sha256: bc1852793febc4c2687b0b9bc40f0b2a92bf3cd5126a6f8ff25882de1894a2e4
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.1C.xlsx
+  mospi_nas_2026_publication/7.2.xlsx:
+    body_sha256: null
+    bytes: 40332
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.2.xlsx
+    retrieved_at: '2026-09-29T10:19:56Z'
+    sha256: e6301a140f53412ae2d6cb36276f3e2c2e2af7bf3e742d53099b637443b12783
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.2.xlsx
+  mospi_nas_2026_publication/7.2A.xlsx:
+    body_sha256: null
+    bytes: 57128
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.2A.xlsx
+    retrieved_at: '2026-09-29T10:19:58Z'
+    sha256: 505b0d4e0ad540bf3c86b6462a38a307ed31d63a9dd1bf120a1d9e85563a530b
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.2A.xlsx
+  mospi_nas_2026_publication/7.2B.xlsx:
+    body_sha256: null
+    bytes: 57089
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.2B.xlsx
+    retrieved_at: '2026-09-29T10:20:01Z'
+    sha256: 9840a3c75ccbee3f42064482becf53829f84764a7dabf3598e3fefe96ec9f3ef
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.2B.xlsx
+  mospi_nas_2026_publication/7.2C.xlsx:
+    body_sha256: null
+    bytes: 57435
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.2C.xlsx
+    retrieved_at: '2026-09-29T10:20:03Z'
+    sha256: c65e5d3164dd135323a977e65932c72f24db10b5048828c7e80047e8bf5aea80
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.2C.xlsx
+  mospi_nas_2026_publication/7.3.xlsx:
+    body_sha256: null
+    bytes: 33118
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.3.xlsx
+    retrieved_at: '2026-09-29T10:20:06Z'
+    sha256: 3078d2a2bd3da9e07194c7daa387b50893ee065eb14bea72e681585bc2e879ad
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.3.xlsx
+  mospi_nas_2026_publication/7.3A.xlsx:
+    body_sha256: null
+    bytes: 45886
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.3A.xlsx
+    retrieved_at: '2026-09-29T10:20:08Z'
+    sha256: e7ada0ab623d0b09c085622c5aae16bb209b6d909cc59cd8aa867367855d5265
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.3A.xlsx
+  mospi_nas_2026_publication/7.3B.xlsx:
+    body_sha256: null
+    bytes: 46178
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.3B.xlsx
+    retrieved_at: '2026-09-29T10:20:10Z'
+    sha256: f9c4b3cb238a333d7a16c677f9819b0ba116cdb480ada2931ac86d64e2adabbe
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.3B.xlsx
+  mospi_nas_2026_publication/7.3C.xlsx:
+    body_sha256: null
+    bytes: 44520
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.3C.xlsx
+    retrieved_at: '2026-09-29T10:20:12Z'
+    sha256: ff44feabc09f15eff1338092291e358545d505dab6fa2d16c129b2bc4f283765
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.3C.xlsx
+  mospi_nas_2026_publication/7.4.xlsx:
+    body_sha256: null
+    bytes: 28467
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.4.xlsx
+    retrieved_at: '2026-09-29T10:20:14Z'
+    sha256: 415ab7016529ee50613aa6526845851f5bddeb18b9abaf3d72698111276a225c
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.4.xlsx
+  mospi_nas_2026_publication/7.4A.xlsx:
+    body_sha256: null
+    bytes: 35804
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.4A.xlsx
+    retrieved_at: '2026-09-29T10:20:16Z'
+    sha256: 56bcb7a83e6cf808657b9d7218d21904e02d6016f8c36896d470945175c39108
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.4A.xlsx
+  mospi_nas_2026_publication/7.4B.xlsx:
+    body_sha256: null
+    bytes: 35944
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.4B.xlsx
+    retrieved_at: '2026-09-29T10:20:18Z'
+    sha256: ef5651f595b30dc34f63bf827205e4a6b306978a536395e75c3915ab3633f2fd
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.4B.xlsx
+  mospi_nas_2026_publication/7.4C.xlsx:
+    body_sha256: null
+    bytes: 34839
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/7.4C.xlsx
+    retrieved_at: '2026-09-29T10:20:20Z'
+    sha256: ef6d66398309564d46782c238155572c59379ac37b696bb12040a215ced85aab
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/7.4C.xlsx
+  mospi_nas_2026_publication/8.1.1.xlsx:
+    body_sha256: null
+    bytes: 26645
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.1.1.xlsx
+    retrieved_at: '2026-09-29T10:20:23Z'
+    sha256: b1083ca94dd580e81fde09858b73f01a270b04299ef830f0d45a590de53116ba
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.1.1.xlsx
+  mospi_nas_2026_publication/8.1.2.xlsx:
+    body_sha256: null
+    bytes: 45013
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.1.2.xlsx
+    retrieved_at: '2026-09-29T10:20:25Z'
+    sha256: b0462e5c3313e759dac2b2c47623bd6a08bab61f1cbc8766c38450230737456a
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.1.2.xlsx
+  mospi_nas_2026_publication/8.10.xlsx:
+    body_sha256: null
+    bytes: 28845
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.10.xlsx
+    retrieved_at: '2026-09-29T10:21:37Z'
+    sha256: a72dbfafd835b23139b3644ec1fa9e2def61959b6e91f45276d01d398574ca1c
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.10.xlsx
+  mospi_nas_2026_publication/8.11.xlsx:
+    body_sha256: null
+    bytes: 27423
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.11.xlsx
+    retrieved_at: '2026-09-29T10:21:40Z'
+    sha256: d4b6316c526fcb0df2182cbfa0d41e92cd3aee716a567e7344a92bfe7600640d
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.11.xlsx
+  mospi_nas_2026_publication/8.12.xlsx:
+    body_sha256: null
+    bytes: 25667
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.12.xlsx
+    retrieved_at: '2026-09-29T10:21:42Z'
+    sha256: 42788a1731315275a023e4c804a4b0772c746001e3b442734147e42c74f2e5bf
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.12.xlsx
+  mospi_nas_2026_publication/8.13.xlsx:
+    body_sha256: null
+    bytes: 26814
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.13.xlsx
+    retrieved_at: '2026-09-29T10:21:44Z'
+    sha256: ed6ff5cc2de81f3c4631751c016594e9cc808075ce0a0bc7a977885dbc28d960
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.13.xlsx
+  mospi_nas_2026_publication/8.14.xlsx:
+    body_sha256: null
+    bytes: 27421
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.14.xlsx
+    retrieved_at: '2026-09-29T10:21:46Z'
+    sha256: 2a75f88066d3e7a773e55fbe809e6d441d90c951a15d4d03a13465f35ad42f9e
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.14.xlsx
+  mospi_nas_2026_publication/8.15.1.xlsx:
+    body_sha256: null
+    bytes: 31621
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.15.1.xlsx
+    retrieved_at: '2026-09-29T10:21:48Z'
+    sha256: 814a9eef7a1b51859f7ebb2630d8679d84f732f31d35aebe80641641fca285a0
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.15.1.xlsx
+  mospi_nas_2026_publication/8.15.2.xlsx:
+    body_sha256: null
+    bytes: 51260
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.15.2.xlsx
+    retrieved_at: '2026-09-29T10:21:50Z'
+    sha256: 0f3c4f5aa4561ff122a3f310379d1e8656c60f5c0dfedbb8e016acd745bf37d6
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.15.2.xlsx
+  mospi_nas_2026_publication/8.15.3.xlsx:
+    body_sha256: null
+    bytes: 53291
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.15.3.xlsx
+    retrieved_at: '2026-09-29T10:21:52Z'
+    sha256: e09b611b84e4bdc230a19343732984b224eb7a4e541663111f87cdc5f38d44e2
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.15.3.xlsx
+  mospi_nas_2026_publication/8.16.xlsx:
+    body_sha256: null
+    bytes: 25029
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.16.xlsx
+    retrieved_at: '2026-09-29T10:21:55Z'
+    sha256: d5a7ad4c71c5a3a9ec0b03e3b22c5cacaeb1bb4cbae48789c506d81bbad543ec
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.16.xlsx
+  mospi_nas_2026_publication/8.17.1.xlsx:
+    body_sha256: null
+    bytes: 21047
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.17.1.xlsx
+    retrieved_at: '2026-09-29T09:16:18Z'
+    sha256: 3225b15d25cb2cd5ef9b63bfbebb056cf91625d0528aca963f68c7511aeff512
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.17.1.xlsx
+  mospi_nas_2026_publication/8.17.2.xlsx:
+    body_sha256: null
+    bytes: 16124
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.17.2.xlsx
+    retrieved_at: '2026-09-29T10:21:57Z'
+    sha256: b08b3c4851c73eda61dd12f32603ca1141506af3ef3951a580640f18a733d1f0
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.17.2.xlsx
+  mospi_nas_2026_publication/8.18.1.xlsx:
+    body_sha256: null
+    bytes: 24390
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.18.1.xlsx
+    retrieved_at: '2026-09-29T10:21:59Z'
+    sha256: fcc27c9de953075511ff0d17bb25fc553818161822a2ba27dae8879cd0c87adf
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.18.1.xlsx
+  mospi_nas_2026_publication/8.18.2.xlsx:
+    body_sha256: null
+    bytes: 26264
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.18.2.xlsx
+    retrieved_at: '2026-09-29T10:22:01Z'
+    sha256: 4bc81e058ee7ce0cca999980e5bc47e4c45dc118321536b75b3937532eba059a
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.18.2.xlsx
+  mospi_nas_2026_publication/8.2.xlsx:
+    body_sha256: null
+    bytes: 27423
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.2.xlsx
+    retrieved_at: '2026-09-29T10:20:27Z'
+    sha256: ddb968d214ca2275f4ccfef945432828341e0966c6cace203bade748749124b1
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.2.xlsx
+  mospi_nas_2026_publication/8.3.xlsx:
+    body_sha256: null
+    bytes: 25283
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.3.xlsx
+    retrieved_at: '2026-09-29T10:20:31Z'
+    sha256: 994e8469692e38137876037cc094c0644cacf4e58c6368c190edfef57c9647a4
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.3.xlsx
+  mospi_nas_2026_publication/8.4.xlsx:
+    body_sha256: null
+    bytes: 25008
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.4.xlsx
+    retrieved_at: '2026-09-29T10:20:33Z'
+    sha256: 95c8845c828fdf0d3a4f588aae39e865939134521059fe14c9c45fd6ac3a8f95
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.4.xlsx
+  mospi_nas_2026_publication/8.5.xlsx:
+    body_sha256: null
+    bytes: 27162
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.5.xlsx
+    retrieved_at: '2026-09-29T10:20:35Z'
+    sha256: f7f4fef7b2109fc6edc0a53c2fd522167f5c202a1a73b3d7f0767ba8865ca980
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.5.xlsx
+  mospi_nas_2026_publication/8.6.1A.xlsx:
+    body_sha256: null
+    bytes: 31851
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.6.1A.xlsx
+    retrieved_at: '2026-09-29T10:20:37Z'
+    sha256: 48b16c2dfce5ea8dd2d49d512f619a7fa3957c909a028fcf8a22916a044f3763
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.6.1A.xlsx
+  mospi_nas_2026_publication/8.6.1B.xlsx:
+    body_sha256: null
+    bytes: 32470
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.6.1B.xlsx
+    retrieved_at: '2026-09-29T10:20:40Z'
+    sha256: de3920ec7b1c25dcacd231d170a7de7796d2cee5c296925812344acda3da92bf
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.6.1B.xlsx
+  mospi_nas_2026_publication/8.6.2A.xlsx:
+    body_sha256: null
+    bytes: 32493
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.6.2A.xlsx
+    retrieved_at: '2026-09-29T10:20:42Z'
+    sha256: 75c3abe50a723976022eb61ecf336b9a2ade04367014be30bd3d3533d04078ef
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.6.2A.xlsx
+  mospi_nas_2026_publication/8.6.2B.xlsx:
+    body_sha256: null
+    bytes: 32988
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.6.2B.xlsx
+    retrieved_at: '2026-09-29T10:20:44Z'
+    sha256: 049f5f2eaf36403b54a043ea375436de060e91daca96117f7faf116dbb79b403
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.6.2B.xlsx
+  mospi_nas_2026_publication/8.7.xlsx:
+    body_sha256: null
+    bytes: 27360
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.7.xlsx
+    retrieved_at: '2026-09-29T10:20:46Z'
+    sha256: ec9fa9328a785bd526ac488653dabbb36fc49f9426255a14b1641869fc6352fe
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.7.xlsx
+  mospi_nas_2026_publication/8.8.xlsx:
+    body_sha256: null
+    bytes: 27687
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.8.xlsx
+    retrieved_at: '2026-09-29T10:20:48Z'
+    sha256: 8632f114a9848f5eff45671943a7fb650958457eba6a4c1919a4db0b0a2b8302
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.8.xlsx
+  mospi_nas_2026_publication/8.9.xlsx:
+    body_sha256: null
+    bytes: 25940
+    method: GET
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/8.9.xlsx
+    retrieved_at: '2026-09-29T10:20:57Z'
+    sha256: c0764e652363d141ee0275ab9c0d302335cdd82bf836857b4f2a9b552e9dcaf3
+    url: https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.9.xlsx
+  mospi_nas_2026_publication/chapters_2861.json:
+    body_sha256: 0744c7130d10aae3fe72f3653e69d37407958aa232b13d7f382f6ff9cdf44c8f
+    bytes: 30891
+    method: POST
+    path: data/raw/mospi_nas_2026_publication/2026-09-29/mospi_nas_2026/chapters_2861.json
+    retrieved_at: '2026-09-29T09:15:33Z'
+    sha256: 4a9922a79f6fd863a417b4a2671aa28845986ecb38bba169e7f0c383af943491
+    url: https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data
+  mospi_nas_api/nasapi_b2011_back_a_i01_p01.json:
+    body_sha256: null
+    bytes: 64147
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i01_p01.json
+    retrieved_at: '2026-09-29T14:21:37Z'
+    sha256: a8b92ecde7e069a74be9d49e659af653fee4f4c8b7e71d572982dad0f185714e
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i01_p02.json:
+    body_sha256: null
+    bytes: 63808
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i01_p02.json
+    retrieved_at: '2026-09-29T14:21:40Z'
+    sha256: 853e380ab67536b984901947d7b0e407e88f96ad4ac756895e51e74e8a1f4edc
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=2
+  mospi_nas_api/nasapi_b2011_back_a_i01_p03.json:
+    body_sha256: null
+    bytes: 63419
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i01_p03.json
+    retrieved_at: '2026-09-29T14:21:42Z'
+    sha256: 003ca0cddd88be25b7ced937b775513e6a93c3771dea85776981728c3f837b85
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=3
+  mospi_nas_api/nasapi_b2011_back_a_i01_p04.json:
+    body_sha256: null
+    bytes: 63402
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i01_p04.json
+    retrieved_at: '2026-09-29T14:21:44Z'
+    sha256: b2720f4f3fd2f15d14292bbb28054e6c3d52005356773c5717045e1b70338101
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=4
+  mospi_nas_api/nasapi_b2011_back_a_i01_p05.json:
+    body_sha256: null
+    bytes: 63224
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i01_p05.json
+    retrieved_at: '2026-09-29T14:21:46Z'
+    sha256: 2eedb202684288eb965fa4c1ebacb4320d83b83a9ad994fc21658b71ce28c511
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=5
+  mospi_nas_api/nasapi_b2011_back_a_i01_p06.json:
+    body_sha256: null
+    bytes: 62952
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i01_p06.json
+    retrieved_at: '2026-09-29T14:21:48Z'
+    sha256: 23ab22fba8c0596a96b6669332aef3a6aee891ab848742b2b0d93b13883503d7
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=6
+  mospi_nas_api/nasapi_b2011_back_a_i01_p07.json:
+    body_sha256: null
+    bytes: 63011
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i01_p07.json
+    retrieved_at: '2026-09-29T14:21:51Z'
+    sha256: 14c16f13a8d0ec4027cfdad194c106dc0668ed191a44e07d2a4fa29ffe8ff8c4
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=7
+  mospi_nas_api/nasapi_b2011_back_a_i01_p08.json:
+    body_sha256: null
+    bytes: 62820
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i01_p08.json
+    retrieved_at: '2026-09-29T14:21:53Z'
+    sha256: 29276b24bce90bb47461faf9c3f192a6eeabce19569174298c63e913d0004903
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=8
+  mospi_nas_api/nasapi_b2011_back_a_i01_p09.json:
+    body_sha256: null
+    bytes: 50224
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i01_p09.json
+    retrieved_at: '2026-09-29T14:21:55Z'
+    sha256: 17368e535080ffc62a9dc44ad9a4834ef9cead17000d23dd18522923f4095bdd
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=9
+  mospi_nas_api/nasapi_b2011_back_a_i02_p01.json:
+    body_sha256: null
+    bytes: 13356
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i02_p01.json
+    retrieved_at: '2026-09-29T14:21:57Z'
+    sha256: 9bfb3fe00ebf16153d06d7b4d44a3d10f9c93fa9f5a8aeb189f406b17c02f774
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=2&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i03_p01.json:
+    body_sha256: null
+    bytes: 51
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i03_p01.json
+    retrieved_at: '2026-09-29T14:21:59Z'
+    sha256: ab8bc9dd51190bee5da5478bd2e8b37074c787b085ca82efe1c6371148ca8c53
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=3&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i04_p01.json:
+    body_sha256: null
+    bytes: 51
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i04_p01.json
+    retrieved_at: '2026-09-29T14:22:01Z'
+    sha256: ab8bc9dd51190bee5da5478bd2e8b37074c787b085ca82efe1c6371148ca8c53
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=4&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i05_p01.json:
+    body_sha256: null
+    bytes: 13566
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i05_p01.json
+    retrieved_at: '2026-09-29T14:22:04Z'
+    sha256: 3007936c73deec0f5f763b092c83a0746425852bdc31deae97aae1181c43bb6d
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=5&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i06_p01.json:
+    body_sha256: null
+    bytes: 14597
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i06_p01.json
+    retrieved_at: '2026-09-29T14:22:08Z'
+    sha256: 3695d745ae597a9d1bed828bd864b16653d2242ef4117de0dda713407eb3e377
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=6&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i07_p01.json:
+    body_sha256: null
+    bytes: 12507
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i07_p01.json
+    retrieved_at: '2026-09-29T14:22:10Z'
+    sha256: f83f02ee3a7b815ffa9a0d5f800dd2ff51a23621c1523c13a93003b13ece6730
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=7&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i08_p01.json:
+    body_sha256: null
+    bytes: 15960
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i08_p01.json
+    retrieved_at: '2026-09-29T14:22:12Z'
+    sha256: 14bd86fe7de6e97ee555ed28e22a628bff2f137d044fa5dd14400ca0c2f13ba1
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=8&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i09_p01.json:
+    body_sha256: null
+    bytes: 15654
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i09_p01.json
+    retrieved_at: '2026-09-29T14:22:14Z'
+    sha256: f6ef3fde8f2e7eb73fb62ba81a26ff91862e4d061402654808dc06c78683f9a7
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=9&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i10_p01.json:
+    body_sha256: null
+    bytes: 14477
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i10_p01.json
+    retrieved_at: '2026-09-29T14:22:21Z'
+    sha256: 57a10ef551a19bf89f60132c62c3e86175fe7eece882a0e098642aa320f1296b
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=10&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i11_p01.json:
+    body_sha256: null
+    bytes: 14547
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i11_p01.json
+    retrieved_at: '2026-09-29T14:22:24Z'
+    sha256: ebf15f5830f89a57a0e42472647b6de2ac28784bc4129c9c25de09ed65c38b14
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=11&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i12_p01.json:
+    body_sha256: null
+    bytes: 12915
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i12_p01.json
+    retrieved_at: '2026-09-29T14:22:26Z'
+    sha256: 4a531580aedfa2f58fe9bd672c01369ed89ae24a61830854907c3db2b72d0d29
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=12&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i13_p01.json:
+    body_sha256: null
+    bytes: 2955
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i13_p01.json
+    retrieved_at: '2026-09-29T14:22:28Z'
+    sha256: b7a8031125ec83003d03cc0518a7829c1a6fa0d47de424d7c8ea7094a7b6cb6f
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=13&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i14_p01.json:
+    body_sha256: null
+    bytes: 13791
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i14_p01.json
+    retrieved_at: '2026-09-29T14:22:30Z'
+    sha256: 0ca82d71d6624f26151adfdb7d6287eb1bc0490430d6613939ad94228488f546
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=14&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i15_p01.json:
+    body_sha256: null
+    bytes: 13808
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i15_p01.json
+    retrieved_at: '2026-09-29T14:22:32Z'
+    sha256: 4891f6035567e2a0536eaed757b41fbd7e73e0ac320348aebd858b0a2a13c4a5
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=15&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i16_p01.json:
+    body_sha256: null
+    bytes: 13457
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i16_p01.json
+    retrieved_at: '2026-09-29T14:22:34Z'
+    sha256: ab263676643e90796d2ec80587ddfbf5a3a10497724bdb663e0beef79c092f41
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=16&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i17_p01.json:
+    body_sha256: null
+    bytes: 12574
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i17_p01.json
+    retrieved_at: '2026-09-29T14:22:36Z'
+    sha256: e9399bc587c1f557477339ca01c80ff1b574c2577df2aadc47558c3a21fdbbc3
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=17&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i18_p01.json:
+    body_sha256: null
+    bytes: 13081
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i18_p01.json
+    retrieved_at: '2026-09-29T14:22:38Z'
+    sha256: e743b4ac479538d0bb4493f37a43b9ce179540aa30e74081aec7efcd93d5b880
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=18&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i19_p01.json:
+    body_sha256: null
+    bytes: 12965
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i19_p01.json
+    retrieved_at: '2026-09-29T14:22:41Z'
+    sha256: 43da67406c146706a1100794fdbe9402dd2ffda616d160d5432e18eef0d6ef33
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=19&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_back_a_i20_p01.json:
+    body_sha256: null
+    bytes: 13413
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_back_a_i20_p01.json
+    retrieved_at: '2026-09-29T14:22:43Z'
+    sha256: 18670c9b0a4bdce4ff266d0a5b27aaf9d03948cdc58e20f21c4ce6cdfac19886
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Back&frequency_code=Annually&indicator_code=20&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i01_p01.json:
+    body_sha256: null
+    bytes: 67631
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i01_p01.json
+    retrieved_at: '2026-09-29T14:22:47Z'
+    sha256: 1bdef56ed39879cbea3cdc34d89fed10adcb116d4600aa3b99432c51f701ac9d
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i01_p02.json:
+    body_sha256: null
+    bytes: 68258
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i01_p02.json
+    retrieved_at: '2026-09-29T14:22:49Z'
+    sha256: 7ccd72567d3e4bc6b907e7d8e9abd03d9c397c8e183db8bf197b8e5e7e883dc0
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=2
+  mospi_nas_api/nasapi_b2011_current_a_i01_p03.json:
+    body_sha256: null
+    bytes: 68159
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i01_p03.json
+    retrieved_at: '2026-09-29T14:22:52Z'
+    sha256: 405fb0cdcfa2e46e6ee8a09845e605da9d0e123e03d50abd94cae83558c299fb
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=3
+  mospi_nas_api/nasapi_b2011_current_a_i01_p04.json:
+    body_sha256: null
+    bytes: 68176
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i01_p04.json
+    retrieved_at: '2026-09-29T14:22:54Z'
+    sha256: a7d214821c87b698f2703cdb166216df820ca1e644beb424f0ab2d09023e85e2
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=4
+  mospi_nas_api/nasapi_b2011_current_a_i01_p05.json:
+    body_sha256: null
+    bytes: 68519
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i01_p05.json
+    retrieved_at: '2026-09-29T14:22:58Z'
+    sha256: bb89797c068f84b8b5eed644a59733e5acb7ec4a9bc11029a9e9c203e9f9bd52
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=5
+  mospi_nas_api/nasapi_b2011_current_a_i01_p06.json:
+    body_sha256: null
+    bytes: 68089
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i01_p06.json
+    retrieved_at: '2026-09-29T14:23:01Z'
+    sha256: 463540e7160ddd0ae941d3cd4cf51d5f5a1ecae30bf7dd77c4ddc26a57ece3f8
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=6
+  mospi_nas_api/nasapi_b2011_current_a_i01_p07.json:
+    body_sha256: null
+    bytes: 68569
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i01_p07.json
+    retrieved_at: '2026-09-29T14:23:03Z'
+    sha256: d3283ba7928b6188edb9eaed45127a18d3a6aa1ec2de0085807286864812468d
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=7
+  mospi_nas_api/nasapi_b2011_current_a_i01_p08.json:
+    body_sha256: null
+    bytes: 49753
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i01_p08.json
+    retrieved_at: '2026-09-29T14:23:05Z'
+    sha256: 25604fad0e431c5b5ead6f4a91f12d766091eb185be7c4bfb8dc13cfac8da405
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=8
+  mospi_nas_api/nasapi_b2011_current_a_i02_p01.json:
+    body_sha256: null
+    bytes: 15992
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i02_p01.json
+    retrieved_at: '2026-09-29T14:23:25Z'
+    sha256: 40d61812cafcee0a21d75bea77a840fc6003556a9e4fc181b96711db64ef9245
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=2&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i03_p01.json:
+    body_sha256: null
+    bytes: 8078
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i03_p01.json
+    retrieved_at: '2026-09-29T14:23:27Z'
+    sha256: 3c01ea17c42b99a22d3d05ee50cd7d7d365a7a5426bb41ddc261eda88ef5a2ed
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=3&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i04_p01.json:
+    body_sha256: null
+    bytes: 8153
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i04_p01.json
+    retrieved_at: '2026-09-29T14:23:29Z'
+    sha256: 2c056c10a1b5ecd4f2fab6bfbfc522f0a81a31e96bec29139b0e6cd295909f3d
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=4&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i05_p01.json:
+    body_sha256: null
+    bytes: 16207
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i05_p01.json
+    retrieved_at: '2026-09-29T14:23:31Z'
+    sha256: a1f0aa8f6b9381e51bf11ea09aace861425027b92f37fb2ec2a419862059ca6d
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=5&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i06_p01.json:
+    body_sha256: null
+    bytes: 55995
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i06_p01.json
+    retrieved_at: '2026-09-29T14:23:33Z'
+    sha256: 4fa0ce68b26fac881d16e7a3f4d7962fc8d028a6fba288adc6a223af91d9a2ec
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=6&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i06_p02.json:
+    body_sha256: null
+    bytes: 20156
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i06_p02.json
+    retrieved_at: '2026-09-29T14:23:35Z'
+    sha256: 38af46f22ea963fa5f4e3f22207fdf69105c9ec364ce60d00fd094648cbd078e
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=6&Format=JSON&limit=200&page=2
+  mospi_nas_api/nasapi_b2011_current_a_i07_p01.json:
+    body_sha256: null
+    bytes: 15080
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i07_p01.json
+    retrieved_at: '2026-09-29T14:23:38Z'
+    sha256: aa383ad2c6cc76f6385eb8ad5e312fb680009594176964f2d6b537a21cb42627
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=7&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i08_p01.json:
+    body_sha256: null
+    bytes: 66123
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i08_p01.json
+    retrieved_at: '2026-09-29T14:23:40Z'
+    sha256: 7826406a7f1aa945517befa11d4532dfb99a494fecdf7bb91e2714c1924c8906
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=8&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i08_p02.json:
+    body_sha256: null
+    bytes: 66317
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i08_p02.json
+    retrieved_at: '2026-09-29T14:23:44Z'
+    sha256: 40c7d898415eb12d6fc100d28ede399bed6bc267c65f9ac0a81917bbda9f279f
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=8&Format=JSON&limit=200&page=2
+  mospi_nas_api/nasapi_b2011_current_a_i08_p03.json:
+    body_sha256: null
+    bytes: 66265
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i08_p03.json
+    retrieved_at: '2026-09-29T14:23:46Z'
+    sha256: 9c0d374cfaec0426fdbe8a97a80783eb36048f335f697947644244baeb0a2a44
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=8&Format=JSON&limit=200&page=3
+  mospi_nas_api/nasapi_b2011_current_a_i08_p04.json:
+    body_sha256: null
+    bytes: 66079
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i08_p04.json
+    retrieved_at: '2026-09-29T14:23:49Z'
+    sha256: 4a0267788192779e23fd1417fbfb57151c0f86e030a3a78466c1c329526e1c3f
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=8&Format=JSON&limit=200&page=4
+  mospi_nas_api/nasapi_b2011_current_a_i08_p05.json:
+    body_sha256: null
+    bytes: 16580
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i08_p05.json
+    retrieved_at: '2026-09-29T14:23:51Z'
+    sha256: 0d9e0e9e54bd680dec4067900d0c6565de6465f0fe593001046e7bfcdd0a3497
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=8&Format=JSON&limit=200&page=5
+  mospi_nas_api/nasapi_b2011_current_a_i09_p01.json:
+    body_sha256: null
+    bytes: 59574
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i09_p01.json
+    retrieved_at: '2026-09-29T14:24:06Z'
+    sha256: e91a0c32ca6fee6de9a63a747e4f0f708cb86939ba1d582517eb7119db0d05ef
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=9&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i09_p02.json:
+    body_sha256: null
+    bytes: 21149
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i09_p02.json
+    retrieved_at: '2026-09-29T14:24:08Z'
+    sha256: 7f73edf7b698b8617ce218a3e8aaf3b4818e7abb8a3a56f4707fb1882e881fb7
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=9&Format=JSON&limit=200&page=2
+  mospi_nas_api/nasapi_b2011_current_a_i10_p01.json:
+    body_sha256: null
+    bytes: 17121
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i10_p01.json
+    retrieved_at: '2026-09-29T14:24:10Z'
+    sha256: e168881f61a67e64ed238b55da97b0714eaf1d53255baaa45065bc8f7ac1e968
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=10&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i11_p01.json:
+    body_sha256: null
+    bytes: 17266
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i11_p01.json
+    retrieved_at: '2026-09-29T14:24:12Z'
+    sha256: 8a7dd1fb9fc372ad398a2cce03c4c8d59cc1a6737c6a57457ce2f9ed1c6cbc8f
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=11&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i12_p01.json:
+    body_sha256: null
+    bytes: 15486
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i12_p01.json
+    retrieved_at: '2026-09-29T14:24:15Z'
+    sha256: 98f4ef46d861fd140cbc97ada4b370a842b25049410cc1225766eb7553c26611
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=12&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i13_p01.json:
+    body_sha256: null
+    bytes: 15097
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i13_p01.json
+    retrieved_at: '2026-09-29T14:24:17Z'
+    sha256: fb55adddd6382375977e93b0579d352bab2feb31dea342e73907ba3ed90a9543
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=13&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i14_p01.json:
+    body_sha256: null
+    bytes: 16484
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i14_p01.json
+    retrieved_at: '2026-09-29T14:24:19Z'
+    sha256: 2d1a4df96a202b1c19413a7fb3fe059d78f58dc0da79e273995cb555f9ea31d7
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=14&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i15_p01.json:
+    body_sha256: null
+    bytes: 16484
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i15_p01.json
+    retrieved_at: '2026-09-29T14:24:21Z'
+    sha256: 4f89483eefda0b0e9d0fc9dd698adf8ebef96551c11edab0ea688970a3d36b5d
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=15&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i16_p01.json:
+    body_sha256: null
+    bytes: 8387
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i16_p01.json
+    retrieved_at: '2026-09-29T14:24:23Z'
+    sha256: 4b94e8c33fc125ff632827f0028ff373afb5675208ce803abfe61fb91135a966
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=16&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i17_p01.json:
+    body_sha256: null
+    bytes: 15151
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i17_p01.json
+    retrieved_at: '2026-09-29T14:24:25Z'
+    sha256: 44c09f832ec732f3e6fd96029b117b81c500cd5224cd2f6b83e9f19b935957f0
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=17&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i18_p01.json:
+    body_sha256: null
+    bytes: 8153
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i18_p01.json
+    retrieved_at: '2026-09-29T14:24:27Z'
+    sha256: 4aa226f5ff2a77c6d241506ed538d57cb2e96ede47b6448ae5821bad9e41162c
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=18&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i19_p01.json:
+    body_sha256: null
+    bytes: 15788
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i19_p01.json
+    retrieved_at: '2026-09-29T14:24:30Z'
+    sha256: a83a44d6eeb3de0269687161fa117d590df1959ad388d8f15b5f717c73822403
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=19&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i20_p01.json:
+    body_sha256: null
+    bytes: 52442
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i20_p01.json
+    retrieved_at: '2026-09-29T14:24:32Z'
+    sha256: 99961ead9f67ed1859756b655f901c212d95cae9e5f4d0b6c44242ae0c7da4b6
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=20&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_a_i20_p02.json:
+    body_sha256: null
+    bytes: 18890
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_a_i20_p02.json
+    retrieved_at: '2026-09-29T14:24:34Z'
+    sha256: bd4309e8dd44cf9d7442108bb99603455ef80a2b6b1061551aa23e97a15ee3f2
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Annually&indicator_code=20&Format=JSON&limit=200&page=2
+  mospi_nas_api/nasapi_b2011_current_q_i01_p01.json:
+    body_sha256: null
+    bytes: 63243
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i01_p01.json
+    retrieved_at: '2026-09-29T14:25:21Z'
+    sha256: eff696c96c990b1e0633c5b529f86ed8328b7aa8026e4be50ade6bee0b45ff2a
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=1&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_q_i01_p02.json:
+    body_sha256: null
+    bytes: 63020
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i01_p02.json
+    retrieved_at: '2026-09-29T14:25:23Z'
+    sha256: dce36ef95a18938b5e1e77016f459b52cbfe0e81c3572db190f4859e56e6254b
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=1&Format=JSON&limit=200&page=2
+  mospi_nas_api/nasapi_b2011_current_q_i01_p03.json:
+    body_sha256: null
+    bytes: 38659
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i01_p03.json
+    retrieved_at: '2026-09-29T14:25:25Z'
+    sha256: 512db2bc3e189b6d321d7a021d9e2a4a00919cf7ad8ed06d854300db7b30976c
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=1&Format=JSON&limit=200&page=3
+  mospi_nas_api/nasapi_b2011_current_q_i02_p01.json:
+    body_sha256: null
+    bytes: 12956
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i02_p01.json
+    retrieved_at: '2026-09-29T14:25:28Z'
+    sha256: 4c6194f89e2c82d1144ea2a8023c7ea3db53b158d9affb48654f543ced839ede
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=2&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_q_i05_p01.json:
+    body_sha256: null
+    bytes: 13130
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i05_p01.json
+    retrieved_at: '2026-09-29T14:25:30Z'
+    sha256: 87d3c994b57122535c39ee7669c9fc37f0b97397c90dec3dd5959715a4b9de1c
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=5&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_q_i09_p01.json:
+    body_sha256: null
+    bytes: 15113
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i09_p01.json
+    retrieved_at: '2026-09-29T14:25:32Z'
+    sha256: 41d07229f6096e94da92e3dcf6170f56a81e4eeeef4cf925c112f3adf92ebc7b
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=9&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_q_i10_p01.json:
+    body_sha256: null
+    bytes: 14000
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i10_p01.json
+    retrieved_at: '2026-09-29T14:25:34Z'
+    sha256: 118239530cee6d97711f8a0f32604d827501de3f100ad97eab80e23f54ee14eb
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=10&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_q_i11_p01.json:
+    body_sha256: null
+    bytes: 14058
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i11_p01.json
+    retrieved_at: '2026-09-29T14:25:36Z'
+    sha256: adefe671eebceb77ee771b3a70205f3a1643effa7b62cd34b76a19f773d712cb
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=11&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_q_i12_p01.json:
+    body_sha256: null
+    bytes: 12496
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i12_p01.json
+    retrieved_at: '2026-09-29T14:25:38Z'
+    sha256: 5c9572774f84229c36acdefe91f2db084eb9095f7379c60d70b79985c444d0af
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=12&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_q_i13_p01.json:
+    body_sha256: null
+    bytes: 12158
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i13_p01.json
+    retrieved_at: '2026-09-29T14:25:40Z'
+    sha256: 30bf257e481076541557bbb9f2cf87d126b18ac7d941546084a774f6264baa07
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=13&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_q_i14_p01.json:
+    body_sha256: null
+    bytes: 13385
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i14_p01.json
+    retrieved_at: '2026-09-29T14:25:43Z'
+    sha256: 1e7ce2ee924df511142b19ead4b6e822d43b34ce299133b0e7b1059096de91b5
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=14&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2011_current_q_i15_p01.json:
+    body_sha256: null
+    bytes: 13400
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2011_current_q_i15_p01.json
+    retrieved_at: '2026-09-29T14:25:45Z'
+    sha256: 6037e13c0bb20f70c265033984ab5066ebf7b290786d71a5b88df3e9a9a9e65f
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=15&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_back_a_i05_p01.json:
+    body_sha256: null
+    bytes: 51
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_back_a_i05_p01.json
+    retrieved_at: '2026-09-29T14:26:08Z'
+    sha256: ab8bc9dd51190bee5da5478bd2e8b37074c787b085ca82efe1c6371148ca8c53
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Back&frequency_code=Annually&indicator_code=5&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i01_p01.json:
+    body_sha256: null
+    bytes: 43690
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i01_p01.json
+    retrieved_at: '2026-09-29T14:24:36Z'
+    sha256: 44bf94af651745c354a0aec41b70f77b587fa5512d1888ae459e0c41398af0d1
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=1&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i02_p01.json:
+    body_sha256: null
+    bytes: 1083
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i02_p01.json
+    retrieved_at: '2026-09-29T14:24:38Z'
+    sha256: ff0815e8826f460c7504e57038e18758ff43faa2d1c24e6581c8f8fdd527e94b
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=2&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i03_p01.json:
+    body_sha256: null
+    bytes: 823
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i03_p01.json
+    retrieved_at: '2026-09-29T14:24:40Z'
+    sha256: 876eb6f607d53281d7ffa45112b713e15a246d34b74cc98356a931ca4fa4323f
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=3&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i04_p01.json:
+    body_sha256: null
+    bytes: 829
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i04_p01.json
+    retrieved_at: '2026-09-29T14:24:42Z'
+    sha256: 0e255b302bd09c3ae949ded75135dadc0d06359a2a729dcdaa48d730b71ee521
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=4&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i05_p01.json:
+    body_sha256: null
+    bytes: 1095
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i05_p01.json
+    retrieved_at: '2026-09-29T14:24:44Z'
+    sha256: 6b06ab7fa3f9d92a09b5dba5cac9839267998ccde4b13a39f026f972d72fe5b6
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=5&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i06_p01.json:
+    body_sha256: null
+    bytes: 6721
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i06_p01.json
+    retrieved_at: '2026-09-29T14:24:47Z'
+    sha256: 568ccb5016a02f3ba2c9be54295a4cd2b8ddc70664f3d844a66099434edf9439
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=6&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i07_p01.json:
+    body_sha256: null
+    bytes: 1027
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i07_p01.json
+    retrieved_at: '2026-09-29T14:24:49Z'
+    sha256: db57e15cd3efefc1f07278ce92fce03ac190b603bba206da0a596dcd8b48f228
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=7&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i08_p01.json:
+    body_sha256: null
+    bytes: 24572
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i08_p01.json
+    retrieved_at: '2026-09-29T14:24:51Z'
+    sha256: 8f57b9d97a9255bbd4ac556ad42a4dafc3238a49189a376030e4f32ba7aedb4b
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=8&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i09_p01.json:
+    body_sha256: null
+    bytes: 6641
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i09_p01.json
+    retrieved_at: '2026-09-29T14:24:53Z'
+    sha256: 2a451f8e83e637a5994167e75cf416de2c992fef8ce487ba5dc66c413b80e64a
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=9&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i10_p01.json:
+    body_sha256: null
+    bytes: 1155
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i10_p01.json
+    retrieved_at: '2026-09-29T14:24:55Z'
+    sha256: 8364665f6cacdbcf02b98c0bc78047c533795a96af7842b462e2b642f1ed7ad9
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=10&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i11_p01.json:
+    body_sha256: null
+    bytes: 1159
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i11_p01.json
+    retrieved_at: '2026-09-29T14:24:57Z'
+    sha256: 9f47a2892109e86326809073cf3e700ad7d733fb8bc584bbb39f5e51de80c19c
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=11&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i12_p01.json:
+    body_sha256: null
+    bytes: 1051
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i12_p01.json
+    retrieved_at: '2026-09-29T14:24:59Z'
+    sha256: e95fc35a73951436f5080fdce0f9808963ac8507efe0e6cbe2afc0df58f07332
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=12&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i13_p01.json:
+    body_sha256: null
+    bytes: 1027
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i13_p01.json
+    retrieved_at: '2026-09-29T14:25:02Z'
+    sha256: 5a32b81565527ac89e364a98b457c551d316ea6afcd57dff173ec727c38047a4
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=13&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i14_p01.json:
+    body_sha256: null
+    bytes: 1111
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i14_p01.json
+    retrieved_at: '2026-09-29T14:25:04Z'
+    sha256: a3d1b34e6fdd563b675ceab18fb2203574ae9a9fda19f00e70e89cae05efcc2f
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=14&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i15_p01.json:
+    body_sha256: null
+    bytes: 1111
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i15_p01.json
+    retrieved_at: '2026-09-29T14:25:06Z'
+    sha256: 804a430a568958d18d5f091c0347cb6f852f9b347d55c3123adc8511c425739b
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=15&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i16_p01.json:
+    body_sha256: null
+    bytes: 850
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i16_p01.json
+    retrieved_at: '2026-09-29T14:25:08Z'
+    sha256: 0eb4b1a5d0a4a77864de0470af064cebdec82503710bfe2fa080389396f0fc2e
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=16&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i17_p01.json:
+    body_sha256: null
+    bytes: 1031
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i17_p01.json
+    retrieved_at: '2026-09-29T14:25:10Z'
+    sha256: aec779216d77347ea395194022b81ef261bc978c14a33f5aa036fe6bd29ec9db
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=17&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i18_p01.json:
+    body_sha256: null
+    bytes: 827
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i18_p01.json
+    retrieved_at: '2026-09-29T14:25:12Z'
+    sha256: 3b4ab33abc1f16f156ea30c56c63a7cc38031ce7d296abab805b2fbacb092cb6
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=18&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i19_p01.json:
+    body_sha256: null
+    bytes: 1051
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i19_p01.json
+    retrieved_at: '2026-09-29T14:25:14Z'
+    sha256: 771f30fd74dc75468587d1692d85b65bac9cce1131927b43c8fa97d318b092e2
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=19&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_a_i20_p01.json:
+    body_sha256: null
+    bytes: 6284
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_a_i20_p01.json
+    retrieved_at: '2026-09-29T14:25:19Z'
+    sha256: 756ffaad1752ea7784fcf42518161e6d25786ae99d0296ad914b559cbb585686
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Annually&indicator_code=20&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_q_i01_p01.json:
+    body_sha256: null
+    bytes: 48479
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_q_i01_p01.json
+    retrieved_at: '2026-09-29T14:25:47Z'
+    sha256: 234a9a1f2d337acdaf7dca4aa9beb5530651cae9cb895d92f21e818412d68f7a
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Quarterly&indicator_code=1&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_q_i02_p01.json:
+    body_sha256: null
+    bytes: 3895
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_q_i02_p01.json
+    retrieved_at: '2026-09-29T14:25:49Z'
+    sha256: 1ee5d428c5bac801ea5e1bd8ebb2b4748fc5472272be07e781eeeeaeb8c87942
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Quarterly&indicator_code=2&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_q_i05_p01.json:
+    body_sha256: null
+    bytes: 3946
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_q_i05_p01.json
+    retrieved_at: '2026-09-29T14:25:51Z'
+    sha256: 1b378c81e2c5d6f6e33bdbc4aa6bd8e15305253356279f497b887a43696fa2d1
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Quarterly&indicator_code=5&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_q_i09_p01.json:
+    body_sha256: null
+    bytes: 4541
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_q_i09_p01.json
+    retrieved_at: '2026-09-29T14:25:53Z'
+    sha256: 8b4aea8bb5e0db3ffd7e72864a98cb29de58407c259c7ed41654483c937bd0ac
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Quarterly&indicator_code=9&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_q_i10_p01.json:
+    body_sha256: null
+    bytes: 4201
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_q_i10_p01.json
+    retrieved_at: '2026-09-29T14:25:55Z'
+    sha256: 148d69e559289ead286e87bfa669940602d563d62c305abd97fe1cc02c20274f
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Quarterly&indicator_code=10&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_q_i11_p01.json:
+    body_sha256: null
+    bytes: 4219
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_q_i11_p01.json
+    retrieved_at: '2026-09-29T14:25:57Z'
+    sha256: 6c6d931d9215bfc005386cf186c953ba12446421217b5252d302ace1724c154f
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Quarterly&indicator_code=11&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_q_i12_p01.json:
+    body_sha256: null
+    bytes: 3779
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_q_i12_p01.json
+    retrieved_at: '2026-09-29T14:26:00Z'
+    sha256: 5f652476ded92bdc91a044b6787820c5551931356ef6641aaa81e0311bc2e5e3
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Quarterly&indicator_code=12&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_q_i13_p01.json:
+    body_sha256: null
+    bytes: 3669
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_q_i13_p01.json
+    retrieved_at: '2026-09-29T14:26:02Z'
+    sha256: b14ff6c72219ad3825e83722759742491f1a435b4296798ec5c4d5f24a5f3003
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Quarterly&indicator_code=13&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_q_i14_p01.json:
+    body_sha256: null
+    bytes: 4048
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_q_i14_p01.json
+    retrieved_at: '2026-09-29T14:26:04Z'
+    sha256: e129577be01d693041e1a2df7f9598242ea9259fd950e41f35f16f5701c58b68
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Quarterly&indicator_code=14&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_b2022_current_q_i15_p01.json:
+    body_sha256: null
+    bytes: 4048
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_b2022_current_q_i15_p01.json
+    retrieved_at: '2026-09-29T14:26:06Z'
+    sha256: 06fd974653b6a2caf04a0ffe0576bc916b507f5ed98429265b1fb68dd674d855
+    url: https://api.mospi.gov.in/api/nas/getNASData?base_year=2022-23&series=Current&frequency_code=Quarterly&indicator_code=15&Format=JSON&limit=200&page=1
+  mospi_nas_api/nasapi_indicator_list.json:
+    body_sha256: null
+    bytes: 3175
+    method: GET
+    path: data/raw/mospi_nas_api/2026-09-29/mospi_nas_2026/nasapi_indicator_list.json
+    retrieved_at: '2026-09-29T14:21:35Z'
+    sha256: dcd71522ec58c2b077043b06918425ef91ac0215878a4b6ccb30ff20bcce5985
+    url: https://api.mospi.gov.in/api/nas/getNasIndicatorList?account_code=1
+  mospi_nas_old_base_2011_12/chapters_432.json:
+    body_sha256: e8fb1ee0b339ae07268918614a89f8b53bfe45d6449c7efdff6316bbf8491513
+    bytes: 30441
+    method: POST
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/chapters_432.json
+    retrieved_at: '2026-09-29T10:25:04Z'
+    sha256: 0d732bb91ba333085cf3ef7bb38af9aed5bb63f15e8d34b3cf2ebb38aab6d0c6
+    url: https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data
+  mospi_nas_old_base_2011_12/chapters_434.json:
+    body_sha256: 453a1347bb4e5389c77f1c911e73dec57ee2e6aa1cc102fa4f863c5f1b6f0e36
+    bytes: 38041
+    method: POST
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/chapters_434.json
+    retrieved_at: '2026-09-29T10:25:02Z'
+    sha256: 98a72f0ecc03b52ecb5f6d28530a680ebcc46277918caaac31cd9e2f357c220f
+    url: https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data
+  mospi_nas_old_base_2011_12/nas2024_1.15.xlsx:
+    body_sha256: null
+    bytes: 57529
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_1.15.xlsx
+    retrieved_at: '2026-09-29T10:25:36Z'
+    sha256: 41b759a8056d6fff2325163e58d2d4062da08c47325eabd134171520427cdc99
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/1.15.xlsx
+  mospi_nas_old_base_2011_12/nas2024_2.0.xlsx:
+    body_sha256: null
+    bytes: 45826
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_2.0.xlsx
+    retrieved_at: '2026-09-29T10:25:38Z'
+    sha256: 8ff6a5b17cbbde8b6d783b4d2305943c596574c8bef993e4fff57f8319681e9b
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/2.0.xlsx
+  mospi_nas_old_base_2011_12/nas2024_2.1.xlsx:
+    body_sha256: null
+    bytes: 49267
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_2.1.xlsx
+    retrieved_at: '2026-09-29T10:25:40Z'
+    sha256: 5f48e96ceafd63b09f11739dca5fb5ae04c8e5cee6812ef3494b696907496207
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/2.1.xlsx
+  mospi_nas_old_base_2011_12/nas2024_2.1A.xlsx:
+    body_sha256: null
+    bytes: 52243
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_2.1A.xlsx
+    retrieved_at: '2026-09-29T10:25:42Z'
+    sha256: d3529c5a4617a8cded1f1407904c373a78a335cc2bbd8d974cd6e11528ebc5a3
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/2.1A.xlsx
+  mospi_nas_old_base_2011_12/nas2024_2.1B.xlsx:
+    body_sha256: null
+    bytes: 55744
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_2.1B.xlsx
+    retrieved_at: '2026-09-29T10:25:45Z'
+    sha256: 9dd7d0c1343f1bc588dd7a3e7b743bc9fc92b83890f075630e144d4a59867815
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/2.1B.xlsx
+  mospi_nas_old_base_2011_12/nas2024_2.2.xlsx:
+    body_sha256: null
+    bytes: 55694
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_2.2.xlsx
+    retrieved_at: '2026-09-29T10:25:47Z'
+    sha256: 456bddb1f5d2659c4c90049f641b3d01a64872416756e1a385147e55189ad9d2
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/2.2.xlsx
+  mospi_nas_old_base_2011_12/nas2024_3.0.xlsx:
+    body_sha256: null
+    bytes: 59382
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_3.0.xlsx
+    retrieved_at: '2026-09-29T10:25:49Z'
+    sha256: 42138d7b887ef961a3afcf4ec50b097b83bfa73d8671037ce8c918dd3f5460d9
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/3.0.xlsx
+  mospi_nas_old_base_2011_12/nas2024_3.1.xlsx:
+    body_sha256: null
+    bytes: 54351
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_3.1.xlsx
+    retrieved_at: '2026-09-29T10:25:51Z'
+    sha256: 635a2942f7321ed835ca1c4c0c795a68e4ad3daefc247aa31b90a505cea38208
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/3.1.xlsx
+  mospi_nas_old_base_2011_12/nas2024_3.2.xlsx:
+    body_sha256: null
+    bytes: 54443
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_3.2.xlsx
+    retrieved_at: '2026-09-29T10:25:53Z'
+    sha256: 8687e05739ee2188516a6d15db7e3c99787bc7e4a8ee6c1372adcb10af85842e
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/3.2.xlsx
+  mospi_nas_old_base_2011_12/nas2024_4.0.xlsx:
+    body_sha256: null
+    bytes: 62569
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_4.0.xlsx
+    retrieved_at: '2026-09-29T10:25:55Z'
+    sha256: 238fc6bf13dc011bcd1956ebbb023200bb1ae426cc378a986b4f210b0a7420cf
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/4.0.xlsx
+  mospi_nas_old_base_2011_12/nas2024_5.0.xlsx:
+    body_sha256: null
+    bytes: 62187
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_5.0.xlsx
+    retrieved_at: '2026-09-29T10:25:57Z'
+    sha256: a24f2dddbac5cdcaa9f66e2bc39c4354ffdeadbbb01722b7f19f3db6ab7dd297
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/5.0.xlsx
+  mospi_nas_old_base_2011_12/nas2024_6.0.xlsx:
+    body_sha256: null
+    bytes: 52434
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_6.0.xlsx
+    retrieved_at: '2026-09-29T10:26:00Z'
+    sha256: 40ee0d82403477071c40e5655ce1e11408d8b72f5655321e56198c632a655286
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/6.0.xlsx
+  mospi_nas_old_base_2011_12/nas2024_Method_NAS2024.pdf:
+    body_sha256: null
+    bytes: 165666
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2024_Method_NAS2024.pdf
+    retrieved_at: '2026-09-29T10:27:36Z'
+    sha256: 49b39ae85b7c8fd449f26768988ebfd760d995ddd87fb51c0c0b3558308f3ff9
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/Method_NAS2024.pdf
+  mospi_nas_old_base_2011_12/nas2025_1.1.xlsx:
+    body_sha256: null
+    bytes: 61170
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2025_1.1.xlsx
+    retrieved_at: '2026-09-29T10:26:02Z'
+    sha256: 1dcc7354ef13bcf21da4371ae41955350d83bf3c176bc4bb6aec1d29efda1113
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2025/1.1.xlsx
+  mospi_nas_old_base_2011_12/nas2025_1.14.xlsx:
+    body_sha256: null
+    bytes: 39855
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2025_1.14.xlsx
+    retrieved_at: '2026-09-29T10:26:06Z'
+    sha256: 9205fdf2879ded03748fdd4156a7e4e9597d44309fb6f113daf25f83a2b9d9fb
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2025/1.14.xlsx
+  mospi_nas_old_base_2011_12/nas2025_1.9.xlsx:
+    body_sha256: null
+    bytes: 37446
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2025_1.9.xlsx
+    retrieved_at: '2026-09-29T10:26:04Z'
+    sha256: c3c5209f022ab183c6468c8b32a20ebcd5f33bcfe913341f3d723ebb9a0212f2
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2025/1.9.xlsx
+  mospi_nas_old_base_2011_12/nas2025_5.3.xlsx:
+    body_sha256: null
+    bytes: 39089
+    method: GET
+    path: data/raw/mospi_nas_old_base_2011_12/2026-09-29/mospi_nas_2026/nas2025_5.3.xlsx
+    retrieved_at: '2026-09-29T10:26:12Z'
+    sha256: 1cd6ffad4cc47f25cbd94f84b58562657968ef58f0e21ef1e6b30b2e19ac58ca
+    url: https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2025/5.3.xlsx
+unit: mospi_nas_2026

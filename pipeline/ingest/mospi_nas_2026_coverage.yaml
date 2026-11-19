@@ -1,0 +1,425 @@
+# Gap-map coverage declared by the mospi_nas_2026 unit (format: pipeline/core/coverage.py).
+# extent: full = this unit's data fill the cell by itself (possibly by pure arithmetic on
+# published numbers); partial = part of it; control_total = the total the cell must sum to (the
+# cell's detail comes from another unit or from Phase 2 estimation).
+# Period is the SAM reference year 2023-24 unless stated. Old-base (2011-12) entries use 2022-23,
+# the last year of the NAS 2024 sequences of accounts, and serve as priors only.
+unit: mospi_nas_2026
+entries:
+# ---- final demand ------------------------------------------------------------------------------
+- ref: C1
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.pfce.current]
+  extent: control_total
+  note: PFCE total (16415547 in 2023-24); the commodity split comes from the SUT unit.
+- ref: C1
+  dataset: mospi_nas_2026_s1_12
+  series_ids: [s1_12.private_final_consumption_expenditure_in_domestic_market.current,
+    s1_12.final_consumption_expenditure_of_resident_households_in_the.current,
+    s1_12.final_consumption_expenditure_of_non_resident_households_in.current]
+  extent: control_total
+  note: PFCE domestic-market total and the resident/non-resident bridge (1.12); COICOP detail in 5.1.
+- ref: C2
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.gfce.current]
+  extent: control_total
+  note: GFCE total; the commodity split comes from the SUT unit.
+- ref: C2
+  dataset: mospi_nas_2026_s1_14
+  series_ids: [s1_14.gg.final_consumption_expenditure.current]
+  extent: control_total
+  note: General government FCE 3121027 (1.14), the figure the gap map cites.
+- ref: C2a
+  dataset: mospi_nas_2026_s4_1
+  series_ids: [s4_1.central_government.current, s4_1.state_government.current, s4_1.local_bodies.current,
+    s4_1.autonomous_institutions.current]
+  extent: partial
+  note: NVA of Centre, States, local bodies and autonomous institutions (4.1) as the own-output key; COFOG
+    FCE by function is in mospi_nas_2026_s4_2 (not split Centre/State).
+- ref: C4a
+  dataset: mospi_nas_2026_s5_1
+  series_ids: [s5_1.gross_rentals_equipment_and_material_for_housing.current]
+  extent: partial
+  note: PFCE on gross rentals incl. equipment/material for housing (5.1 COICOP 04.1); the imputed-rent
+    output is in 8.13 (ownership of dwellings). Split by household group is Phase 2.
+- ref: C4b
+  dataset: mospi_nas_2026_s1_13
+  series_ids: [s1_13.private_final_consumption_expenditure.current]
+  extent: partial
+  note: FISIM consumed by households (602897, 1.13); insurance service charge PFCE is 5.1 'Insurance'.
+- ref: C4b
+  dataset: mospi_nas_2026_s5_1
+  series_ids: [s5_1.insurance.current, s5_1.financial_intermediation_services_indirectly_measured.current]
+  extent: partial
+  note: PFCE on insurance and FISIM (5.1); distribution by household group is Phase 2.
+- ref: C4c
+  dataset: mospi_nas_2026_s1_14
+  series_ids: [s1_14.households_npish.final_consumption_expenditure.current]
+  extent: control_total
+  note: FCE of households incl. NPISH; NPISH is not separable on the new base.
+# ---- discrepancy / official gaps --------------------------------------------------------------
+- ref: D1
+  dataset: mospi_nas_2026_derived_residuals
+  series_ids: [derived.household_residual.current]
+  extent: full
+  note: Household GDI - FCE - gross saving (1.14) = 571133 in 2023-24 (status derived; inputs in s1_14).
+- ref: D2
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.adjustment_for_cif_in_import_of_services.current,
+    s6_1.import_of_services_adjusted_for_cost_insurance_and_freight_c.current]
+  extent: full
+  note: 6.1 item 18 CIF adjustment (212499) and item 19 CIF-adjusted services imports.
+- ref: D3
+  dataset: mospi_nas_2026_derived_residuals
+  series_ids: [derived.si_errors_omissions.current]
+  extent: full
+  note: GCF (1.1) - finances for GCF (1.9 item 3) = 358634 in 2023-24 (status derived). Its allocation
+    across sectors is Phase 2.
+- ref: D4
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.discrepancies.current]
+  extent: full
+  note: GDP expenditure discrepancy, 0 for 2023-24 at current prices.
+# ---- factor incomes ------------------------------------------------------------------------------
+- ref: F1
+  dataset: mospi_nas_2026_s7_1
+  series_ids: [s7_1.total.ce.current]
+  extent: partial
+  note: Domestic CE total (9442897, 7.1); CE from/to RoW are in s6_1 (V3, V4). The identity closes from
+    this unit's data; the SUT unit gives the activity split.
+- ref: F1
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.compensation_of_employees_from_rest_of_the_world.current,
+    s6_1.compensation_of_employees_to_the_rest_of_the_world.current]
+  extent: partial
+  note: CE from and to the rest of the world (6.1 items 2 and 7).
+- ref: F1
+  dataset: mospi_nas_2026_derived_residuals
+  series_ids: [derived.ce_receivable_by_residents.current]
+  extent: full
+  note: The F1 identity written as a derived row (V1 + V3 - V4 = 9442897 + 62344 - 30636 = 9474605 in 2023-24),
+    with the 7.1 and 6.1 prov_ids as provenance inputs. The split across household groups is F1a (Phase 2).
+- ref: F3
+  dataset: mospi_nas_2026_s7_1c
+  series_ids: [s7_1c.total.os_mi.current, s7_1c.total.cfc.current]
+  extent: partial
+  note: Household-sector net OS/MI and CFC (7.1C); the mixed-income part (V2a) is estimated in Phase 2.
+- ref: F3a
+  dataset: mospi_nas_2026_s8_13
+  series_ids: [s8_13.ownership_of_dwellings.output.current, s8_13.ownership_of_dwellings.input.current,
+    s8_13.ownership_of_dwellings.gross_value_added_unadjusted_for_fisim.current]
+  extent: partial
+  note: Ownership-of-dwellings output, input and GVA (8.13); imputed vs actual rent and the group split
+    are Phase 2.
+- ref: F4
+  dataset: mospi_nas_2026_s1_14
+  series_ids: [s1_14.nfc_public.gross_value_added_at_basic_prices.current,
+    s1_14.nfc_private.gross_value_added_at_basic_prices.current,
+    s1_14.fc_public.gross_value_added_at_basic_prices.current,
+    s1_14.fc_private.gross_value_added_at_basic_prices.current,
+    s1_14.gg.gross_value_added_at_basic_prices.current]
+  extent: full
+  note: Sector GVA (1.14). With CE and net production taxes from 7.1A/7.1B/8.15.1 (entries below) every term
+    of 'GOS = GVA - CE - net production taxes' is in this unit.
+- ref: F4
+  dataset: mospi_nas_2026_s7_1a
+  series_ids: [s7_1a.total.ce.current, s7_1a.financial.ce.current, s7_1a.total.net_production_taxes.current,
+    s7_1a.financial.net_production_taxes.current]
+  extent: partial
+  note: Public sector CE and net production taxes, total and financial services row (7.1A).
+- ref: F4
+  dataset: mospi_nas_2026_s7_1b
+  series_ids: [s7_1b.total.ce.current, s7_1b.financial.ce.current, s7_1b.total.net_production_taxes.current,
+    s7_1b.financial.net_production_taxes.current]
+  extent: partial
+  note: Private corporations CE and net production taxes, total and financial services row (7.1B).
+- ref: F4
+  dataset: mospi_nas_2026_s8_15_1
+  series_ids: [s8_15_1.total.ce.current, s8_15_1.total.net_production_taxes.current]
+  extent: partial
+  note: General government CE and net production taxes (8.15.1).
+- ref: F4b
+  dataset: mospi_nas_2026_s4_1
+  series_ids: [s4_1.central_government.current, s4_1.state_government.current, s4_1.local_bodies.current,
+    s4_1.autonomous_institutions.current, s4_1.consumption_of_fixed_capital.current]
+  extent: partial
+  note: NVA key for splitting GG CFC between Centre and States (4.1); the split itself is estimated.
+- ref: V1
+  dataset: mospi_nas_2026_s7_1
+  series_ids: [s7_1.total.ce.current]
+  extent: control_total
+  note: CE by NAS industry (7.1, 24 rows); the 34-activity split comes from the SUT unit.
+- ref: V2
+  dataset: mospi_nas_2026_s7_1
+  series_ids: [s7_1.total.os_mi.current, s7_1.total.cfc.current]
+  extent: control_total
+  note: Net OS/MI (13183820) and CFC (3836206) by NAS industry (7.1).
+- ref: V2a
+  dataset: mospi_nas_2026_s7_1c
+  series_ids: [s7_1c.total.os_mi.current, s7_1c.total.cfc.current, s7_1c.crops.os_mi.current,
+    s7_1c.livestock.os_mi.current, s7_1c.forestry.os_mi.current, s7_1c.fishing.os_mi.current]
+  extent: partial
+  note: Official anchor - household-sector OS/MI (85,90,352) and CFC (11,81,079) by industry (7.1C).
+- ref: V3
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.compensation_of_employees_from_rest_of_the_world.current]
+  extent: full
+  note: 6.1 item 2 (62344).
+- ref: V4
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.compensation_of_employees_to_the_rest_of_the_world.current]
+  extent: full
+  note: 6.1 item 7 (30636).
+# ---- capital formation ---------------------------------------------------------------------------
+- ref: I1
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.gfcf.current]
+  extent: control_total
+  note: GFCF total; the commodity split comes from the SUT unit.
+- ref: I1a
+  dataset: mospi_nas_2026_s1_11
+  series_ids: [s1_11.public_non_financial_corporations.current, s1_11.private_non_financial_corporations.current,
+    s1_11.public_financial_corporations.current, s1_11.private_financial_corporations.current,
+    s1_11.general_government.current, s1_11.household_sector.current,
+    s1_11.household_sector.dwellings_other_buildings_and_structures.current,
+    s1_11.household_sector.machinery_and_equipment.current]
+  extent: partial
+  note: GFCF by institution and asset (1.11) - the column margins and the asset prior of the RAS.
+- ref: I2
+  dataset: mospi_nas_2026_s1_9
+  series_ids: [s1_9.saving_in_the_form_of_gold_and_silver_ornaments.current]
+  extent: full
+  note: Household saving in gold and silver ornaments (1.9 item 1.4.4 = 172127).
+- ref: I2a
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.valuables.current]
+  extent: partial
+  note: Valuables total (1.1); minus 1.9 item 1.4.4 gives the unassigned part (SUT total from io_tables).
+- ref: I3
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.cis.current]
+  extent: control_total
+  note: Change in stocks total; the commodity split comes from the SUT unit.
+- ref: I3a
+  dataset: mospi_nas_2026_s1_14
+  series_ids: [s1_14.nfc_public.gross_capital_formation.current, s1_14.nfc_private.gross_capital_formation.current,
+    s1_14.fc_public.gross_capital_formation.current, s1_14.fc_private.gross_capital_formation.current,
+    s1_14.gg.gross_capital_formation.current, s1_14.households_npish.gross_capital_formation.current]
+  extent: control_total
+  note: Sector GCF excl. valuables (1.14); sector CIS = this minus 1.11 GFCF by sector (both in this unit),
+    also 7.2A-C CIS by sector. Control totals for the 6 NAS sectors only; the cell also needs the FC
+    sub-sector and Centre/State splits, estimated in Phase 2 (verifier finding verify-3).
+- ref: I3a
+  dataset: mospi_nas_2026_s7_2a
+  series_ids: [s7_2a.total.cis.current]
+  extent: partial
+  note: Public-sector CIS (7.2A); 7.2B and 7.2C give private corporations and households.
+# ---- saving and capital account ------------------------------------------------------------------
+- ref: K1
+  dataset: mospi_nas_2026_s1_9
+  series_ids: [s1_9.public_non_financial_corporations.current, s1_9.private_non_financial_corporations.current]
+  extent: full
+  note: 462996 and 2410409 (1.9).
+- ref: K2
+  dataset: mospi_nas_2026_s1_9
+  series_ids: [s1_9.public_financial_corporations.current, s1_9.private_financial_corporations.current]
+  extent: full
+  note: 535510 and 455938 (1.9).
+- ref: K3
+  dataset: mospi_nas_2026_s1_9
+  series_ids: [s1_9.general_government.current]
+  extent: full
+  note: -318384 (1.9 / 1.14).
+- ref: K3a
+  dataset: mospi_nas_2026_s1_9
+  series_ids: [s1_9.general_government.current]
+  extent: control_total
+  note: GG saving total that the Centre/State split must sum to.
+- ref: K4
+  dataset: mospi_nas_2026_s1_9
+  series_ids: [s1_9.household_sector.current, s1_9.gross_financial_saving.current, s1_9.less_financial_liabilities.current,
+    s1_9.saving_in_physical_assets.current, s1_9.saving_in_the_form_of_gold_and_silver_ornaments.current]
+  extent: full
+  note: Household gross saving 5890330 and its components (1.9 item 1.4).
+- ref: K4a
+  dataset: mospi_nas_2026_s1_9
+  series_ids: [s1_9.household_sector.current]
+  extent: control_total
+  note: Household saving total that the group split must sum to.
+- ref: K5
+  dataset: mospi_nas_2026_s1_9
+  series_ids: [s1_9.net_capital_inflow_from_row.current]
+  extent: full
+  note: Net capital inflow from RoW 208891 (1.9) = -(6.1 surplus on current transactions).
+- ref: K5
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.surplus_on_current_transactions.current]
+  extent: full
+  note: 6.1 item 11 (-208891).
+- ref: K6
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.capital_transfers_to_general_government_from_the_rest_of_the.current,
+    s6_1.capital_transfers_to_corporations_households_and_npishs_net.current,
+    s6_1.acquisitions_less_disposal_of_non_produced_non_financial_ass.current]
+  extent: partial
+  note: RoW capital transfers and non-produced assets (6.1 items 12-14); domestic capital grants come from
+    the fiscal units.
+- ref: K7
+  dataset: mospi_nas_2026_s5_3
+  series_ids: [s5_3.gross_financial_saving.current]
+  extent: partial
+  note: Household acquisition of financial assets (5.3); other sectors come from the FSF unit.
+- ref: K7a
+  dataset: mospi_nas_2026_s5_3
+  series_ids: [s5_3.currency.current, s5_3.deposits.current, s5_3.with_banks.current, s5_3.with_non_banking_companies.current,
+    s5_3.with_co_operative_banks_and_societies.current, s5_3.trade_debt_net.current, s5_3.shares_and_debentures.current,
+    s5_3.mutual_funds.current, s5_3.claims_on_government.current, s5_3.investment_in_government_securities.current,
+    s5_3.investment_in_small_savings_etc.current, s5_3.insurance_funds.current, s5_3.provident_and_pension_funds.current]
+  extent: full
+  note: Household financial assets by instrument (5.3, 2023-24) as cited in the gap map. The gap map's PPF
+    double-count check (PF & pension vs small savings etc.) is open, issue mospi_nas_2026-27.
+- ref: K7b
+  dataset: mospi_nas_2026_s5_3
+  series_ids: [s5_3.gross_financial_saving.current, s5_3.financial_liabilities.current]
+  extent: partial
+  note: The NAS side of the counterparty rule (households); the RoW side is s6_1 items 16-17.
+- ref: K8
+  dataset: mospi_nas_2026_s5_3
+  series_ids: [s5_3.financial_liabilities.current]
+  extent: partial
+  note: Household liabilities (5.3); other sectors come from the FSF unit.
+- ref: K8a
+  dataset: mospi_nas_2026_s5_3
+  series_ids: [s5_3.financial_liabilities.current, s5_3.bank_advances.current,
+    s5_3.loans_and_advances_by_co_operative_banks_and_societies.current,
+    s5_3.loans_by_financial_corporations_and_non_banking_companies.current,
+    s5_3.loans_and_advances_from_government.current, s5_3.loans_from_insurance_corporations.current]
+  extent: full
+  note: Household borrowing 1909287 by lender (5.3).
+- ref: K8b
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.net_acquisition_of_foreign_financial_assets.current, s6_1.net_incurrence_of_foreign_liabilities.current]
+  extent: partial
+  note: 6.1 items 16-17 (670569 / 886570) by broad instrument; BoP function detail comes from external_sector.
+- ref: K9
+  dataset: mospi_nas_2026_s1_14
+  series_ids: [s1_14.nfc_public.gross_savings.current, s1_14.nfc_public.gross_capital_formation.current,
+    s1_14.households_npish.gross_savings.current, s1_14.households_npish.gross_capital_formation.current]
+  extent: partial
+  note: The NAS saving and GCF terms of each sector's net lending; the FSF side is another unit.
+# ---- production ----------------------------------------------------------------------------------
+- ref: P1
+  dataset: mospi_nas_2026_s7_1
+  series_ids: [s7_1.total.output.current]
+  extent: control_total
+  note: Output by NAS industry (7.1) - the column totals the SUT make matrix is checked against.
+- ref: P2
+  dataset: mospi_nas_2026_s7_1
+  series_ids: [s7_1.total.ic.current]
+  extent: control_total
+  note: Intermediate consumption by NAS industry (7.1; 31158879 in 2023-24).
+- ref: P10
+  dataset: mospi_nas_2026_s7_1
+  series_ids: [s7_1.total.net_production_taxes.current]
+  extent: control_total
+  note: Production taxes less production subsidies by NAS industry (7.1; -57442 in 2023-24).
+- ref: P5
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.exports.current, s1_1.exports_goods.current, s1_1.exports_services.current]
+  extent: control_total
+  note: Export totals (goods, services); 6.1 has the services detail. Commodity split from the SUT unit.
+- ref: P6
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.imports.current, s1_1.imports_goods.current, s1_1.imports_services.current]
+  extent: control_total
+  note: CIF-adjusted import totals; the commodity split comes from the SUT unit.
+- ref: P7a
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.taxes_on_products.current, s1_1.subsidies_on_products.current]
+  extent: control_total
+  note: Product taxes and subsidies totals (1.1); the split by tax type is estimated in Phase 2.
+- ref: P7b
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.taxes_on_products.current]
+  extent: control_total
+  note: Product-tax total for the valuation layer.
+# ---- property income, transfers ------------------------------------------------------------------
+- ref: R11
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.other_current_transfers_to_resident_sectors_other_than_gener.current]
+  extent: full
+  note: 6.1 item 4 (983128).
+- ref: R12
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.other_current_transfers_by_resident_sectors_other_than_gener.current]
+  extent: full
+  note: 6.1 item 9 (99913).
+- ref: R12a
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.other_current_transfers_by_resident_sectors_other_than_gener.current]
+  extent: control_total
+  note: Total of outward transfers to be split by household group.
+- ref: R13
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.property_and_entrepreneurial_income_from_rest_of_the_world.current]
+  extent: control_total
+  note: 6.1 item 3 (280907); recipient split estimated.
+- ref: R14
+  dataset: mospi_nas_2026_s6_1
+  series_ids: [s6_1.property_and_entrepreneurial_income_to_the_rest_of_the_world.current]
+  extent: control_total
+  note: 6.1 item 8 (724612); payer split estimated.
+- ref: R14a
+  dataset: mospi_nas_2026_s1_9
+  series_ids: [s1_9.reinvested_earnings_of_foreign_companies_in_private_corporat.current]
+  extent: control_total
+  note: 1.9 memo item 4.1 (163704) - the total the payer split must sum to.
+- ref: R17
+  dataset: mospi_nas_2026_s8_12
+  series_ids: [s8_12.non_life_insurance_s_128.current, s8_12.life_insurance_s_128.current]
+  extent: partial
+  note: Insurance GVA by type (8.12), a cross-check on the service charge; premiums/claims come from IRDAI.
+- ref: R3b
+  dataset: mospi_nas_2026_s1_13
+  series_ids: [s1_13.public_administration_and_defence.current]
+  extent: partial
+  note: FISIM allocated to public administration (1.13) = 0, which sizes the FISIM adjustment on
+    government interest.
+- ref: R4
+  dataset: mospi_nas_2026_s1_13
+  series_ids: [s1_13.allocation_of_fisim_as_ic_to_user_industry.current, s1_13.private_final_consumption_expenditure.current,
+    s1_13.rest_of_world_row.current]
+  extent: partial
+  note: FISIM by user (1.13; 627885 IC, 602897 PFCE, 29794 RoW) for the SNA-interest adjustment.
+- ref: R5
+  dataset: mospi_nas_2026_s1_13
+  series_ids: [s1_13.allocation_of_fisim_as_ic_to_user_industry.current]
+  extent: partial
+  note: FISIM on loans is not separated from FISIM on deposits in 1.13.
+# ---- taxes (old-base priors) ---------------------------------------------------------------------
+- ref: T1a
+  dataset: mospi_nas_2026_s1_1
+  series_ids: [s1_1.taxes_on_products.current]
+  extent: control_total
+  note: NAS product-tax total (new base); Union taxes by type come from union_fiscal.
+- ref: T2x
+  dataset: mospi_nas_2026_oldbase_soa_s4_0
+  series_ids: [oldbase_soa_s4_0.allocation_of_primary_income.resources.d21.current,
+    oldbase_soa_s4_0.allocation_of_primary_income.resources.d29.current,
+    oldbase_soa_s4_0.secondary_distribution_of_income.resources.d5.current]
+  period: '2022-23'
+  extent: partial
+  note: Old-base (2011-12) GG receivable D21/D29/D5 (NAS 2024, 4.0) - accrual-concept prior only.
+- ref: T4a
+  dataset: mospi_nas_2026_oldbase_soa_s2_1
+  series_ids: [oldbase_soa_s2_1.secondary_distribution_of_income.uses.d5.current]
+  period: '2022-23'
+  extent: partial
+  note: Old-base D5 paid by public NFC (NAS 2024, 2.1); 2.2, 3.1 and 3.2 give private NFC and FC - the prior
+    for corporation tax by paying sector.
+- ref: T4a
+  dataset: mospi_nas_2026_oldbase_soa_s2_2
+  series_ids: [oldbase_soa_s2_2.secondary_distribution_of_income.uses.d5.current]
+  period: '2022-23'
+  extent: partial
+  note: Old-base D5 paid by private NFC (NAS 2024, 2.2).

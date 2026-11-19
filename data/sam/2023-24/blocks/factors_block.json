@@ -1,0 +1,106 @@
+{
+  "block": "factors",
+  "checks": {
+    "failed": [],
+    "n": 45
+  },
+  "concordances_read": {},
+  "constraints": 63,
+  "datasets_read": [
+    "external_sector_bop_bpm6_annual",
+    "io_tables_ifpri_2223_datapaper",
+    "io_tables_sut_va",
+    "labour_enterprise_surveys_asi_2324_industry",
+    "labour_enterprise_surveys_asuse_2324_activity",
+    "labour_enterprise_surveys_plfs_earnings",
+    "labour_enterprise_surveys_plfs_earnings_api",
+    "labour_enterprise_surveys_plfs_enterprise_type",
+    "labour_enterprise_surveys_plfs_industry_dist",
+    "labour_enterprise_surveys_plfs_industry_status",
+    "labour_enterprise_surveys_plfs_lfs_indicators",
+    "mospi_nas_2026_derived_residuals",
+    "mospi_nas_2026_s1_14",
+    "mospi_nas_2026_s4_1",
+    "mospi_nas_2026_s6_1",
+    "mospi_nas_2026_s7_1",
+    "mospi_nas_2026_s7_1a",
+    "mospi_nas_2026_s7_1b",
+    "mospi_nas_2026_s7_1c",
+    "mospi_nas_2026_s8_15_1",
+    "mospi_nas_2026_s8_16",
+    "union_fiscal_fa_gia"
+  ],
+  "dependency_hashes": {
+    "households": {
+      "constraints": "d7934f138cf654b2f21979d311b55b7961c10ff87e38de6b5303451362e86430",
+      "entries": "d3cd60ede26b86b6b17224652a27c1eb3e9c1b7544688d6efba0224e98f42d0e",
+      "provenance": "d2e8beab4f053055fbb9981ecc5b83a78f10f9b093b8fb701b8cdc09353b39dc"
+    },
+    "production": {
+      "constraints": "b0a9b2675e64f33e3b3483d4f82ae4633b7be0c9dfa1673f8de82f4472257281",
+      "entries": "f6f2a4c4b428bc234ec83c20c5c5e754d599497cbc9ec463de0f668a0993ca21",
+      "provenance": "5c8f496f92c629e03d161c981730c5d224a54275caad0c6303df0eb8cba6730c"
+    }
+  },
+  "depends": [
+    "production",
+    "households"
+  ],
+  "entries": 227,
+  "refs": [
+    "V1a",
+    "V2a",
+    "V3",
+    "V4",
+    "F1",
+    "F1a",
+    "F2",
+    "F3",
+    "F3a",
+    "F3b",
+    "F3c",
+    "F4",
+    "F4b"
+  ],
+  "refs_not_implemented": [],
+  "satellites": {
+    "factor_income_keys": {
+      "decimals": 9,
+      "description": "Household factor income by group and factor type (levels, shares within each key, area totals), incl. public_sector_wage_key; the F1a/F2/F3a/F3b/F3c entries as keys",
+      "ref": "F1a",
+      "rows": 400
+    },
+    "gg_centre_state_key": {
+      "decimals": 12,
+      "description": "Centre/State shares of GG NVA (NAS 4.1, institutional view) incl. the autonomous-bodies split; the F4b key that C2a must use",
+      "ref": "F4b",
+      "rows": 10
+    },
+    "sector_gos": {
+      "decimals": 6,
+      "description": "NAS 2026 GVA, CE, net production taxes, CFC, OS and GOS by institutional sector (F4 arithmetic)",
+      "ref": "F4",
+      "rows": 36
+    },
+    "v1a_labour_split": {
+      "decimals": 9,
+      "description": "V1a regular/casual CE by activity and the PLFS wage-bill decomposition by group and area (survey-scale annual wage bills, workers x earnings, Rs crore; used only as shares, never as levels)",
+      "ref": "V1a",
+      "rows": 102
+    },
+    "v1a_parameters": {
+      "decimals": 9,
+      "description": "V1a parameters: D (days), share_reg by PLFS group (and at D = 250), public-sector CE floors, ASI contract-worker share",
+      "ref": "V1a",
+      "rows": 32
+    },
+    "va_split_by_activity": {
+      "decimals": 9,
+      "description": "V2a split of SUT OS/MI + CFC by activity: household mixed income, partnerships/trusts, dwellings, corporate/government; keys and the dwelling sensitivity",
+      "ref": "V2a",
+      "rows": 166
+    }
+  },
+  "warnings": 0,
+  "year": "2023-24"
+}

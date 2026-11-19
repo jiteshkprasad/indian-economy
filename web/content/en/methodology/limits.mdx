@@ -1,0 +1,34 @@
+These are the main ways the map could mislead you if you did not know them.
+
+**The household survey sees only part of consumption.** The household consumption survey (HCES) for 2023-24 adds up to <DataFig path="methodology.hces_pfce_coverage"/> of the consumption in the national accounts. We spread each product's national consumption across household groups with the survey's shares, which assumes the missing part is spread like the part the survey sees. Studies suggest it is concentrated among richer households, so the richest groups' consumption is probably understated and their saving overstated.
+
+**Income by household group comes from an older study's pattern.** Factor income of households, <DataFig path="methodology.hh_factor_income"/> <SummaryBadge path="methodology.hh_factor_income"/>, is held to totals derived from the published national accounts, but it is split across the ten groups with income gradients from an IFPRI social accounting matrix built on the old national-accounts base (D2-19). We did not use survey microdata (D1-2), so the pattern within rural and urban areas is a modelling choice. Income tax by household group has no open source at all and is estimated.
+
+**Non-profit institutions serving households** (charities, religious bodies, many private schools) are inside the household account, as in India's national accounts.
+
+**Old-base structures fill gaps in the new series.** The new national-accounts series does not yet publish who pays interest, dividends, transfers and some taxes to whom. Where nothing newer exists, the map uses the pattern of the previous series as a starting point and holds it to the new totals (D2-21). <DataFig path="methodology.old_base_entries"/> entries, worth <DataFig path="methodology.old_base_abs"/> <SummaryBadge path="methodology.old_base_abs"/>, are flagged this way. The old and new series do not line up evenly, so this is the weakest part of the map.
+
+**Some levels are set by tolerance bands we chose.** Where no source pins a flow, we let balancing move it only within a band, for example within a twentieth or a tenth of a related published figure. In <DataFig path="methodology.judgement_bands"/> such bands the balanced value ended exactly on the band's edge, so the width of the band, a judgement, sets the level. They cover <DataFig path="methodology.judgement_band_entries"/> entries worth <DataFig path="methodology.judgement_band_abs"/> <SummaryBadge path="methodology.judgement_band_abs"/>:
+
+- general government's current transfers and its capital transfers, around the published spending by function;
+- railway and postal pensions;
+- money for central schemes released outside State treasuries;
+- revenue grants to public sector companies;
+- Union CGST, the GST compensation cess and Union excise, which sit on the ceiling of their allowance above cash collections;
+- the Centre's share of government depreciation;
+- public sector companies' corporation tax.
+
+Every entry in these bands is flagged, and every one that balancing was free to move is labelled **set by balancing**. The owner accepted these widths provisionally at the second project checkpoint (Checkpoint B); a test of how the map changes if they are halved or doubled has not been run.
+
+**Discrepancies are shown, not hidden.** Official statistics for 2023-24 leave some gaps open. The map carries them in a separate account instead of balancing them away, and balancing never moved them:
+
+- **Household residual**, <DataFig path="methodology.disc_d1"/> <SummaryBadge path="methodology.disc_d1"/>: household disposable income less consumption less saving, each as published. The total is derived from those published figures; its split across household groups is estimated. It is never counted as consumption or saving.
+- **Services import reconciliation**, <DataFig path="methodology.disc_d2"/> <SummaryBadge path="methodology.disc_d2"/>: the difference between imports of services in the national accounts and in the balance of payments (a CIF adjustment). It is an accounting item, not money paid abroad.
+- **Saving-investment errors and omissions**, <DataFig path="methodology.disc_d3"/> <SummaryBadge path="methodology.disc_d3"/>: investment less saving less net capital inflow. It is one residual, derived from the published national accounts; the map's total equals that derived figure (the export checks it), but no balancing constraint holds it, so its badge shows only how its two parts were made. Of it, <DataFig path="methodology.disc_d3_valuables"/> <SummaryBadge path="methodology.disc_d3_valuables"/> is attributed to valuables, such as gold and silver, that the national accounts assign to no institutional sector; it is derived from published figures and carried into the households' capital account. The remaining <DataFig path="methodology.disc_d3_si_errors"/> <SummaryBadge path="methodology.disc_d3_si_errors"/> is spread over the capital accounts of companies and financial firms in proportion to their investment, so that split is estimated.
+- **GDP expenditure discrepancy**, <DataFig path="methodology.disc_d4"/> in 2023-24.
+
+**One year in full, other years in part.** The balanced map exists only for 2023-24; see [the time series](#time-series).
+
+**The stories use average shares, not multipliers.** "Of every ₹100" means the average in 2023-24. It does not say what an extra rupee of spending, tax or remittance would do, and it follows only the first round of payments.
+
+**Some findings are still open.** The States' subsidies come out well above what State budgets report; public sector companies keep more than the national accounts say they save; two official sources disagree on how saving is split between banks and NBFCs; and the rural richest fifth shows a saving rate below the rural poorest fifth, which looks implausible. These are listed under [open issues](#issues).

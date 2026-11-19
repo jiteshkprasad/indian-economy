@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "<v>/provenance.json: provenance records used by the export, with resolved citations (PLAN s.3.5).",
+  "properties": {
+    "records": {
+      "additionalProperties": {
+        "additionalProperties": false,
+        "properties": {
+          "assumption": {
+            "type": "boolean"
+          },
+          "base_year": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "cites": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "retrieved": {
+                  "items": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "tables": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "urls": {
+                  "items": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "type": "array"
+                },
+                "withheld": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "source",
+                "tables",
+                "urls",
+                "withheld",
+                "retrieved"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "conversion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "depends_on_assumption": {
+            "type": "boolean"
+          },
+          "locator": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "method": {
+            "type": "string"
+          },
+          "price_basis": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "official",
+              "derived",
+              "estimated"
+            ]
+          },
+          "table": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "vintage": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "source",
+          "status",
+          "table",
+          "locator",
+          "method",
+          "vintage",
+          "base_year",
+          "price_basis",
+          "unit",
+          "conversion",
+          "assumption",
+          "depends_on_assumption",
+          "cites"
+        ],
+        "type": "object"
+      },
+      "type": "object"
+    },
+    "sources": {
+      "additionalProperties": {
+        "additionalProperties": false,
+        "properties": {
+          "attribution": {
+            "type": "string"
+          },
+          "landing": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "licence": {
+            "type": "string"
+          },
+          "link_mode": {
+            "enum": [
+              "deep",
+              "landing",
+              "withheld"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "registry_status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "publisher",
+          "landing",
+          "link_mode",
+          "licence",
+          "attribution",
+          "registry_status"
+        ],
+        "type": "object"
+      },
+      "type": "object"
+    }
+  },
+  "required": [
+    "records",
+    "sources"
+  ],
+  "title": "Provenance",
+  "type": "object"
+}

@@ -1,0 +1,84 @@
+# Pinned raw files for one ingest unit. Written by `python -m pipeline fetch`; do not edit by hand.
+# key '<source_id>/<name>' -> the exact bytes (sha256) every build uses. `history` keeps superseded pins.
+pins:
+  adb_mrio/adb_ind_iot_2000_2007_2024.xlsx:
+    body_sha256: null
+    bytes: 921068
+    method: GET
+    path: data/raw/adb_mrio/2026-09-29/io_tables/adb_ind_iot_2000_2007_2024.xlsx
+    retrieved_at: '2026-09-29T10:21:09Z'
+    sha256: 7bb76a14c6afb969e1eb668a71cffdf140d519fcd50a2c58ce1683cb6212e337
+    url: https://kidb.adb.org/download/mrio-file/211
+  ifpri_nexus_sam_india_2022_23_paper/ifpri_sam_india_2022_23_data_paper.pdf:
+    body_sha256: null
+    bytes: 501277
+    method: GET
+    path: data/raw/ifpri_nexus_sam_india_2022_23_paper/2026-09-29/io_tables/ifpri_sam_india_2022_23_data_paper.pdf
+    retrieved_at: '2026-09-29T10:40:53Z'
+    sha256: baec90a6a8bfbe58be8782ef59fea786cb837246589297601de5ae3f0110e9f0
+    url: https://cgspace.cgiar.org/server/api/core/bitstreams/ff7b1ece-8897-4567-be3a-4c99db75dca3/content
+  mospi_energy_statistics/chapters_2817.json:
+    body_sha256: 271b5853b69f6f841522894e9bfbe4da6e5ebd267c07b255c029b010456c20cc
+    bytes: 16408
+    method: POST
+    path: data/raw/mospi_energy_statistics/2026-09-29/io_tables/chapters_2817.json
+    retrieved_at: '2026-09-29T10:21:05Z'
+    sha256: 7e42c4df52f0f4890dc3c1385a46a0ce924e3ba7d1a54c2d5608c3477fca5d29
+    url: https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data
+  mospi_energy_statistics/es2026_chapter_9.pdf:
+    body_sha256: null
+    bytes: 1967821
+    method: GET
+    path: data/raw/mospi_energy_statistics/2026-09-29/io_tables/es2026_chapter_9.pdf
+    retrieved_at: '2026-09-29T10:21:08Z'
+    sha256: d4ebae869c99ccfe992e759b611bdeb2ba2bde550bcae2307c1b971fe3f99a49
+    url: https://www.mospi.gov.in/uploads/publications_reports/publications_reports1776237517942_bc184217-6e54-43d6-91a7-fd54751314c9_Chapter-9.pdf
+  mospi_sut_2022base/chapters_847.json:
+    body_sha256: 18453faf895cf72109c89fc88b0bd9c6a7e8b289bf77cb8e577bae861c79e091
+    bytes: 11962
+    method: POST
+    path: data/raw/mospi_sut_2022base/2026-09-29/io_tables/chapters_847.json
+    retrieved_at: '2026-09-29T10:20:29Z'
+    sha256: 05f1894e52fee95191f9c8b915d89f32229c1f9dacb633b9b9821b2033dee3e3
+    url: https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data
+  mospi_sut_2022base/sut_2022_23.xlsx:
+    body_sha256: null
+    bytes: 189097
+    method: GET
+    path: data/raw/mospi_sut_2022base/2026-09-29/io_tables/sut_2022_23.xlsx
+    retrieved_at: '2026-09-29T10:20:59Z'
+    sha256: 415955ee0fc8f7ad4c9c0c8b61473dcc02e333ef647ac83de3d5a2612547df19
+    url: https://www.mospi.gov.in/uploads/publications_reports/publications_reports1788173286808_21cfcaa3-bdab-4e6a-9d0e-fda61f69f2ad_Supply_Use_table_2022-23_(1).xlsx
+  mospi_sut_2022base/sut_2023_24.xlsx:
+    body_sha256: null
+    bytes: 173434
+    method: GET
+    path: data/raw/mospi_sut_2022base/2026-09-29/io_tables/sut_2023_24.xlsx
+    retrieved_at: '2026-09-29T10:21:01Z'
+    sha256: 6fbaa0e96982394e1ed2d6e1448acb681176e5541a36f744c285a96b921dfafd
+    url: https://www.mospi.gov.in/uploads/publications_reports/publications_reports1788173315135_8fb39764-d999-48c2-a479-67aee1e91051_Supply_Use_table_2023-24_(1).xlsx
+  mospi_sut_2022base/sut_note_2022_23_2023_24.pdf:
+    body_sha256: null
+    bytes: 818198
+    method: GET
+    path: data/raw/mospi_sut_2022base/2026-09-29/io_tables/sut_note_2022_23_2023_24.pdf
+    retrieved_at: '2026-09-29T10:21:03Z'
+    sha256: 054e062c955af9b2a4778eb589300c882e7de216ede25c804af10ebb8865dcdb
+    url: https://www.mospi.gov.in/uploads/publications_reports/publications_reports1788173257610_f0d5f86d-0465-410e-85e8-f1c271803f26_Note_Supply_Use_Tables_2022-23,2023-24_(1).pdf
+  oecd_icio_2025/icio2025_2016_2022_sml.zip:
+    body_sha256: null
+    bytes: 166241019
+    method: GET
+    path: data/raw/oecd_icio_2025/2026-09-29/io_tables/icio2025_2016_2022_sml.zip
+    retrieved_at: '2026-09-29T10:21:24Z'
+    sha256: 46db55c45747e26dde5c1716d072b2aa74ace362a4424491ac646d2ab175befb
+    url: https://webfs-sti.oecd.org/files/STI-PIE/ICIO/2025/2016-2022_SML.zip
+  oecd_icio_2025/icio2025_readme_small.xlsx:
+    body_sha256: null
+    bytes: 328422
+    method: GET
+    path: data/raw/oecd_icio_2025/2026-09-29/io_tables/icio2025_readme_small.xlsx
+    retrieved_at: '2026-09-29T10:29:47Z'
+    sha256: dec015b4d89190607fac90710352c9076d0c58ddfcdf6abf1fb6703d6cfca1ba
+    url: https://webfs-sti.oecd.org/files/STI-PIE/ICIO/2025/ReadMe_ICIO_small.xlsx
+unit: io_tables

@@ -1,0 +1,32 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 76078,
+  "content_type": "text/html; charset=utf-8",
+  "final_url": "https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23968",
+  "key": "rbi_hbs_external/hbs2026_t143.html",
+  "method": "GET",
+  "name": "hbs2026_t143.html",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.rbi.org.in/scripts/AnnualPublications.aspx?head=Handbook%20of%20Statistics%20on%20Indian%20Economy",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "text/html; charset=utf-8"
+  },
+  "retrieved_at": "2026-09-29T10:34:08Z",
+  "sha256": "e0c776f0cbacfbb70fe55e588575535ed62c425945d7f05a94f7969bc8a6e656",
+  "source_id": "rbi_hbs_external",
+  "status": 200,
+  "url": "https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23968"
+}

@@ -1,0 +1,1389 @@
+{
+ "nodes": {
+  "PRODUCERS": {
+   "label": "Producers",
+   "short": "Industries and the markets where their goods and services are sold."
+  },
+  "GOV": {
+   "label": "Government",
+   "short": "The Centre and the States together, with the taxes they collect."
+  },
+  "PRDS": {
+   "label": "Goods & services",
+   "short": "The markets for products: where everything made in India or imported is bought and sold."
+  },
+  "PROD": {
+   "label": "Industries",
+   "short": "Everyone who produces: farms, mines, factories, builders, shops, banks, schools and public services."
+  },
+  "ROW": {
+   "label": "Rest of the world",
+   "short": "Foreign buyers and sellers, and people and firms abroad who send or receive income and transfers."
+  },
+  "FACT": {
+   "label": "Wages, mixed income and profits",
+   "short": "The incomes earned in production: pay for work, earnings of the self-employed, and operating surplus."
+  },
+  "HH": {
+   "label": "Households",
+   "short": "All families, rural and urban, split into fifths by how much they spend per person."
+  },
+  "NFC": {
+   "label": "Companies",
+   "short": "Non-financial companies, public and private."
+  },
+  "FC": {
+   "label": "Banks and financial institutions",
+   "short": "The RBI, banks, NBFCs, insurers and pension funds."
+  },
+  "TAX": {
+   "label": "Taxes",
+   "short": "Collection accounts for each kind of tax and subsidy, passed on to the Centre and the States."
+  },
+  "CEN": {
+   "label": "Union government",
+   "short": "The Centre: the Government of India, its autonomous bodies and the Food Corporation of India."
+  },
+  "STA": {
+   "label": "States and local bodies",
+   "short": "State governments, Union Territories with legislatures, municipalities and panchayats."
+  },
+  "SI": {
+   "label": "Saving and investment",
+   "short": "Capital accounts: where each sector's saving meets its investment, lending and borrowing."
+  },
+  "DISC": {
+   "label": "Discrepancies and reconciliation items",
+   "short": "Published gaps that official statistics leave open, shown as they are and never balanced away."
+  },
+  "FINM": {
+   "label": "Financial markets",
+   "short": "Deposits, loans, bonds, shares, insurance and pension funds: the instruments that carry saving to borrowers."
+  },
+  "PRDS.AGRI": {
+   "label": "Farm, forest and fish products",
+   "short": "Crops, livestock products, timber and fish."
+  },
+  "PRDS.MINE": {
+   "label": "Mining products",
+   "short": "Coal, crude oil, natural gas and other minerals."
+  },
+  "PRDS.MANU": {
+   "label": "Manufactured goods",
+   "short": "Everything factories make, from processed food to cars and phones."
+  },
+  "PRDS.CNUT": {
+   "label": "Construction work, power and water",
+   "short": "Construction work, electricity, gas and water."
+  },
+  "PRDS.TTC": {
+   "label": "Trade, hotel, transport and communication services",
+   "short": "Trade, hotel and restaurant, transport and communication services."
+  },
+  "PRDS.FIRE": {
+   "label": "Financial, housing and business services",
+   "short": "Banking, insurance, housing, real estate, business and IT services."
+  },
+  "PRDS.PSOC": {
+   "label": "Education, health and public services",
+   "short": "Education, health, personal services, and public administration and defence."
+  },
+  "PROD.AGRI": {
+   "label": "Farming, forestry and fishing",
+   "short": "Industries that grow crops, raise livestock, cut timber and catch fish."
+  },
+  "PROD.MINE": {
+   "label": "Mining",
+   "short": "Coal mining, oil and gas extraction and other mining."
+  },
+  "PROD.MANU": {
+   "label": "Manufacturing",
+   "short": "Factories and workshops of every kind."
+  },
+  "PROD.CNUT": {
+   "label": "Construction and utilities",
+   "short": "Builders, and the electricity, gas and water industries."
+  },
+  "PROD.TTC": {
+   "label": "Trade, hotels, transport and communication",
+   "short": "Shops and traders, hotels and restaurants, transport, storage and telecom."
+  },
+  "PROD.FIRE": {
+   "label": "Finance, real estate and business services",
+   "short": "Banks, insurers, owners of dwellings, real estate, business and IT firms."
+  },
+  "PROD.PSOC": {
+   "label": "Public, social and personal services",
+   "short": "Schools, hospitals, personal services, and the government's own administration and defence."
+  },
+  "FACT.LAB": {
+   "label": "Wages and salaries",
+   "short": "Pay for work: regular wages and salaries, and casual wages."
+  },
+  "HH.RUR": {
+   "label": "Rural households",
+   "short": "Village households, in five groups from poorest to richest."
+  },
+  "HH.URB": {
+   "label": "Urban households",
+   "short": "Town and city households, in five groups from poorest to richest."
+  },
+  "TAX.GST": {
+   "label": "GST",
+   "short": "Central GST, State GST and the GST compensation cess."
+  },
+  "TAX.OIND": {
+   "label": "Other indirect taxes",
+   "short": "Customs, Union excise, State VAT, State excise and other taxes on products."
+  },
+  "TAX.DIR": {
+   "label": "Direct taxes",
+   "short": "Personal income tax and corporation tax."
+  },
+  "SI.CORP": {
+   "label": "Companies' capital accounts",
+   "short": "Saving, investment and financing of public and private companies."
+  },
+  "SI.FIN": {
+   "label": "Financial firms' capital accounts",
+   "short": "Saving, investment and financing of the RBI, banks, NBFCs, insurers, pension funds and mutual funds."
+  },
+  "SI.GOV": {
+   "label": "Government capital accounts",
+   "short": "Saving, investment and borrowing of the Centre and the States."
+  },
+  "FINM.MONEY": {
+   "label": "Currency and deposits",
+   "short": "Cash and bank deposits."
+  },
+  "FINM.GOVD": {
+   "label": "Government debt and small savings",
+   "short": "Government securities, small savings and public-account deposits."
+  },
+  "FINM.SEC": {
+   "label": "Bonds, shares and mutual funds",
+   "short": "Corporate bonds, commercial paper, shares and mutual fund units."
+  },
+  "FINM.OTH": {
+   "label": "Reserves and other items",
+   "short": "Foreign-exchange reserves, and other accounts that hold residuals."
+  },
+  "A_CROP": {
+   "label": "Crop farming",
+   "short": "The industry that grows crops."
+  },
+  "A_LVST": {
+   "label": "Livestock farming",
+   "short": "Dairy, poultry, meat and other animal farming."
+  },
+  "A_FOFI": {
+   "label": "Forestry and fishing",
+   "short": "Logging, forest produce and fishing."
+  },
+  "A_COAL": {
+   "label": "Coal mining",
+   "short": "Mining of coal and lignite."
+  },
+  "A_OILG": {
+   "label": "Oil and gas extraction",
+   "short": "Production of crude petroleum and natural gas."
+  },
+  "A_OMIN": {
+   "label": "Other mining",
+   "short": "Mining of iron ore, other metal ores, stone, sand and other minerals."
+  },
+  "A_FOOD": {
+   "label": "Food processing",
+   "short": "Industries that make food products."
+  },
+  "A_BVTB": {
+   "label": "Beverage and tobacco makers",
+   "short": "Industries that make drinks and tobacco products."
+  },
+  "A_TXAP": {
+   "label": "Textile, clothing and leather makers",
+   "short": "Spinning, weaving, garments, footwear and leather goods."
+  },
+  "A_WOOD": {
+   "label": "Wood, paper, printing and furniture makers",
+   "short": "Wood products, paper, printing and furniture."
+  },
+  "A_GJOM": {
+   "label": "Gems, jewellery and other manufacturing",
+   "short": "Cutting and polishing of gems, jewellery and other manufacturing."
+  },
+  "A_RPET": {
+   "label": "Petroleum refining",
+   "short": "Refineries and coke ovens."
+  },
+  "A_CHEM": {
+   "label": "Chemical, fertiliser, rubber and plastics makers",
+   "short": "Chemicals including fertilisers, and rubber and plastic products."
+  },
+  "A_PHRM": {
+   "label": "Pharmaceutical makers",
+   "short": "Industries that make medicines."
+  },
+  "A_NMMN": {
+   "label": "Cement and mineral product makers",
+   "short": "Cement, glass, ceramics and other non-metallic mineral products."
+  },
+  "A_MTLS": {
+   "label": "Steel and basic metal makers",
+   "short": "Iron and steel and non-ferrous metals."
+  },
+  "A_MACH": {
+   "label": "Metal product and machinery makers",
+   "short": "Fabricated metal products, machinery, and repair."
+  },
+  "A_ELEQ": {
+   "label": "Electronics and electrical equipment makers",
+   "short": "Computers, phones, electrical and optical equipment."
+  },
+  "A_TREQ": {
+   "label": "Vehicle and transport equipment makers",
+   "short": "Cars, two-wheelers, trucks, railway equipment, ships and aircraft."
+  },
+  "A_CNST": {
+   "label": "Construction industry",
+   "short": "Builders of homes, offices, roads and other structures."
+  },
+  "A_UTIL": {
+   "label": "Electricity, gas and water supply",
+   "short": "Power, gas distribution, water supply and other utilities."
+  },
+  "A_TRAD": {
+   "label": "Trade and repair",
+   "short": "Wholesale and retail trade, and repair of motor vehicles."
+  },
+  "A_HOTL": {
+   "label": "Hotels and restaurants",
+   "short": "Places that sell meals and rooms."
+  },
+  "A_TRNS": {
+   "label": "Transport and storage",
+   "short": "Rail, road, water and air transport, and warehousing."
+  },
+  "A_COMM": {
+   "label": "Communication and broadcasting",
+   "short": "Telecom, post, and broadcasting."
+  },
+  "A_FINS": {
+   "label": "Banking and other finance",
+   "short": "Banks, NBFCs and other financial services firms, as producers."
+  },
+  "A_INSR": {
+   "label": "Insurance and pension providers",
+   "short": "Insurers and pension funds, as producers."
+  },
+  "A_DWEL": {
+   "label": "Ownership of dwellings",
+   "short": "The housing that people own or rent out, treated as an industry that produces housing services."
+  },
+  "A_BSRE": {
+   "label": "Real estate, legal and business firms",
+   "short": "Real estate, legal, accounting, renting and other business services firms."
+  },
+  "A_ITSV": {
+   "label": "IT and software firms",
+   "short": "Computer programming, consultancy and related services."
+  },
+  "A_EDUC": {
+   "label": "Schools, colleges and research",
+   "short": "Education and research, public and private."
+  },
+  "A_HLTH": {
+   "label": "Hospitals, clinics and social care",
+   "short": "Health and social care, public and private."
+  },
+  "A_OSRV": {
+   "label": "Community and personal services",
+   "short": "Personal, community and other services."
+  },
+  "A_PADM": {
+   "label": "Public administration and defence",
+   "short": "Government departments, police and the armed forces, as producers of public services."
+  },
+  "C_CROP": {
+   "label": "Crops",
+   "short": "Grain, pulses, vegetables, fruit and other crops."
+  },
+  "C_LVST": {
+   "label": "Livestock products",
+   "short": "Milk, eggs, meat and other animal products."
+  },
+  "C_FOFI": {
+   "label": "Forest and fish products",
+   "short": "Timber, firewood, forest produce and fish."
+  },
+  "C_COAL": {
+   "label": "Coal and lignite",
+   "short": "Coal and lignite."
+  },
+  "C_OILG": {
+   "label": "Crude oil and natural gas",
+   "short": "Crude petroleum and natural gas."
+  },
+  "C_OMIN": {
+   "label": "Other minerals",
+   "short": "Metal ores, stone, sand and other minerals."
+  },
+  "C_FOOD": {
+   "label": "Processed food",
+   "short": "Edible oils, sugar, dairy products, packaged food and other food products."
+  },
+  "C_BVTB": {
+   "label": "Beverages and tobacco",
+   "short": "Drinks, including alcohol, and tobacco products."
+  },
+  "C_TXAP": {
+   "label": "Textiles, clothing and leather",
+   "short": "Yarn, cloth, garments, footwear and leather goods."
+  },
+  "C_WOOD": {
+   "label": "Wood, paper, print and furniture",
+   "short": "Wood products, paper, printed matter and furniture."
+  },
+  "C_GJOM": {
+   "label": "Gems, jewellery and other manufactures",
+   "short": "Gems, jewellery and other manufactured goods."
+  },
+  "C_RPET": {
+   "label": "Petrol, diesel and other refined fuels",
+   "short": "Refined petroleum products and coke."
+  },
+  "C_CHEM": {
+   "label": "Chemicals, fertilisers, rubber and plastics",
+   "short": "Chemicals, fertilisers, pesticides, rubber and plastic goods."
+  },
+  "C_PHRM": {
+   "label": "Medicines",
+   "short": "Pharmaceutical products."
+  },
+  "C_NMMN": {
+   "label": "Cement and other mineral products",
+   "short": "Cement, glass, ceramics and other non-metallic mineral products."
+  },
+  "C_MTLS": {
+   "label": "Iron, steel and other basic metals",
+   "short": "Iron and steel, aluminium, copper and other basic metals."
+  },
+  "C_MACH": {
+   "label": "Metal products and machinery",
+   "short": "Fabricated metal products, machinery and repair services."
+  },
+  "C_ELEQ": {
+   "label": "Electronics and electrical equipment",
+   "short": "Computers, phones, electrical and optical equipment."
+  },
+  "C_TREQ": {
+   "label": "Vehicles and transport equipment",
+   "short": "Cars, two-wheelers, trucks, railway equipment, ships and aircraft."
+  },
+  "C_CNST": {
+   "label": "Construction work",
+   "short": "Buildings, roads and other structures."
+  },
+  "C_UTIL": {
+   "label": "Electricity, gas and water",
+   "short": "Electricity, piped gas, water and other utility services."
+  },
+  "C_TRAD": {
+   "label": "Trade and repair services",
+   "short": "The service that traders and repairers provide."
+  },
+  "C_HOTL": {
+   "label": "Meals and accommodation",
+   "short": "Hotel and restaurant services."
+  },
+  "C_TRNS": {
+   "label": "Transport and storage services",
+   "short": "Rail, road, water and air transport, and warehousing."
+  },
+  "C_COMM": {
+   "label": "Communication services",
+   "short": "Telecom, post and broadcasting services."
+  },
+  "C_FINS": {
+   "label": "Financial services",
+   "short": "Banking and other financial services, including the margin banks earn on loans and deposits."
+  },
+  "C_INSR": {
+   "label": "Insurance and pension services",
+   "short": "The service charge of insurance and pension funds."
+  },
+  "C_DWEL": {
+   "label": "Housing services (rent)",
+   "short": "Rent paid by tenants and the rent owner-occupiers are deemed to pay themselves."
+  },
+  "C_BSRE": {
+   "label": "Real estate and business services",
+   "short": "Real estate, legal, accounting, renting and other business services."
+  },
+  "C_ITSV": {
+   "label": "IT and computer services",
+   "short": "Software, IT consulting and related services."
+  },
+  "C_EDUC": {
+   "label": "Education and research",
+   "short": "Teaching and research services."
+  },
+  "C_HLTH": {
+   "label": "Health and social care",
+   "short": "Medical, hospital and social care services."
+  },
+  "C_OSRV": {
+   "label": "Personal and other services",
+   "short": "Personal, community, cultural and other services."
+  },
+  "C_PADM": {
+   "label": "Public administration and defence services",
+   "short": "The services of government departments, police and the armed forces."
+  },
+  "M_TTM": {
+   "label": "Trade and transport margins",
+   "short": "The traders' and transporters' share of what buyers pay for goods."
+  },
+  "F_LREG": {
+   "label": "Regular wages and salaries",
+   "short": "Pay of workers with regular wage or salaried jobs."
+  },
+  "F_LCAS": {
+   "label": "Casual wages",
+   "short": "Pay of casual and daily-wage workers."
+  },
+  "F_MIXD": {
+   "label": "Mixed income",
+   "short": "Earnings of the self-employed: farmers, shopkeepers and other household businesses."
+  },
+  "F_GOSC": {
+   "label": "Gross operating surplus",
+   "short": "Profits, rents and depreciation of companies, governments and owners of dwellings."
+  },
+  "H_R1": {
+   "label": "Rural, poorest fifth",
+   "short": "The fifth of rural people with the lowest spending per person."
+  },
+  "H_R2": {
+   "label": "Rural, second fifth",
+   "short": "The second-lowest fifth of rural people by spending per person."
+  },
+  "H_R3": {
+   "label": "Rural, middle fifth",
+   "short": "The middle fifth of rural people by spending per person."
+  },
+  "H_R4": {
+   "label": "Rural, fourth fifth",
+   "short": "The second-highest fifth of rural people by spending per person."
+  },
+  "H_R5": {
+   "label": "Rural, richest fifth",
+   "short": "The fifth of rural people with the highest spending per person."
+  },
+  "H_U1": {
+   "label": "Urban, poorest fifth",
+   "short": "The fifth of urban people with the lowest spending per person."
+  },
+  "H_U2": {
+   "label": "Urban, second fifth",
+   "short": "The second-lowest fifth of urban people by spending per person."
+  },
+  "H_U3": {
+   "label": "Urban, middle fifth",
+   "short": "The middle fifth of urban people by spending per person."
+  },
+  "H_U4": {
+   "label": "Urban, fourth fifth",
+   "short": "The second-highest fifth of urban people by spending per person."
+  },
+  "H_U5": {
+   "label": "Urban, richest fifth",
+   "short": "The fifth of urban people with the highest spending per person."
+  },
+  "E_NFPU": {
+   "label": "Public sector companies",
+   "short": "Government-owned companies and departmental enterprises such as the Railways and Posts."
+  },
+  "E_NFPR": {
+   "label": "Private companies",
+   "short": "Private non-financial companies."
+  },
+  "E_RBI": {
+   "label": "Reserve Bank of India",
+   "short": "India's central bank."
+  },
+  "E_BANK": {
+   "label": "Banks",
+   "short": "Commercial banks, co-operative banks and other deposit-taking institutions."
+  },
+  "E_NBFC": {
+   "label": "NBFCs and other lenders",
+   "short": "Non-bank finance companies, housing finance companies, development finance institutions and financial auxiliaries."
+  },
+  "E_INSP": {
+   "label": "Insurers and pension funds",
+   "short": "Life and general insurers, provident and pension funds."
+  },
+  "G_CEN": {
+   "label": "Union government",
+   "short": "The Centre, with its autonomous bodies and the Food Corporation of India."
+  },
+  "G_STA": {
+   "label": "States and local bodies",
+   "short": "States, Union Territories with legislatures, municipalities and panchayats."
+  },
+  "T_CGST": {
+   "label": "Central GST",
+   "short": "CGST, including UTGST, after the settlement of integrated GST."
+  },
+  "T_SGST": {
+   "label": "State GST",
+   "short": "SGST, after the settlement of integrated GST."
+  },
+  "T_GCES": {
+   "label": "GST compensation cess",
+   "short": "The cess on tobacco, cars, coal and some other goods, used to compensate the States for GST and to repay the loans raised for that."
+  },
+  "T_CUST": {
+   "label": "Customs duties",
+   "short": "Duties on imports."
+  },
+  "T_UEXC": {
+   "label": "Union excise duties",
+   "short": "Excise collected by the Centre, mostly on petrol and diesel."
+  },
+  "T_SVAT": {
+   "label": "State VAT and sales tax",
+   "short": "VAT that States still levy, mostly on petrol, diesel and alcohol."
+  },
+  "T_SEXC": {
+   "label": "State excise",
+   "short": "States' excise on alcohol."
+  },
+  "T_OPRT": {
+   "label": "Other taxes on products",
+   "short": "Motor-vehicle tax, export duty, the equalisation levy and other product taxes."
+  },
+  "T_PSUB": {
+   "label": "Product subsidies",
+   "short": "Subsidies that lower the price of products, recorded as negative taxes."
+  },
+  "T_PROD": {
+   "label": "Production taxes less subsidies",
+   "short": "Stamp duty, land revenue, property tax and other taxes on production, net of production subsidies."
+  },
+  "T_PIT": {
+   "label": "Personal income tax",
+   "short": "Income tax and other direct taxes paid by households, including securities transaction tax."
+  },
+  "T_CIT": {
+   "label": "Corporation tax",
+   "short": "Tax on company profits."
+  },
+  "R_ROW": {
+   "label": "Rest of the world",
+   "short": "India's current account with the rest of the world."
+  },
+  "K_HH": {
+   "label": "Households' capital account",
+   "short": "Household saving, and what households invest in homes, gold and financial assets, and borrow."
+  },
+  "K_NFPU": {
+   "label": "Public companies' capital account",
+   "short": "Saving, investment and financing of public sector companies."
+  },
+  "K_NFPR": {
+   "label": "Private companies' capital account",
+   "short": "Saving, investment and financing of private companies."
+  },
+  "K_RBI": {
+   "label": "RBI's capital account",
+   "short": "The RBI's saving, and its purchases and sales of financial assets including reserves."
+  },
+  "K_BANK": {
+   "label": "Banks' capital account",
+   "short": "Banks' saving, lending, investments and deposits taken."
+  },
+  "K_NBFC": {
+   "label": "NBFCs' capital account",
+   "short": "Saving, lending and borrowing of NBFCs and other lenders."
+  },
+  "K_INSP": {
+   "label": "Insurers' and pension funds' capital account",
+   "short": "Saving, investments and policyholder liabilities of insurers and pension funds."
+  },
+  "K_MUTF": {
+   "label": "Mutual funds' capital account",
+   "short": "What mutual funds invest in and the units they issue."
+  },
+  "K_GCEN": {
+   "label": "Centre's capital account",
+   "short": "The Union government's saving, investment and borrowing."
+  },
+  "K_GSTA": {
+   "label": "States' capital account",
+   "short": "The States' saving, investment and borrowing."
+  },
+  "K_ROW": {
+   "label": "Foreign investment and lending",
+   "short": "The rest of the world's capital and financial account with India."
+  },
+  "K_DSTK": {
+   "label": "Change in inventories",
+   "short": "Stocks of goods built up or run down during the year."
+  },
+  "I_CURR": {
+   "label": "Currency",
+   "short": "Notes and coins."
+  },
+  "I_DEPO": {
+   "label": "Deposits",
+   "short": "Bank deposits, including NRI deposits and certificates of deposit."
+  },
+  "I_LOAN": {
+   "label": "Loans",
+   "short": "Loans and advances, including external commercial borrowing and trade credit."
+  },
+  "I_GSEC": {
+   "label": "Government securities",
+   "short": "Bonds and treasury bills of the Centre and the States."
+  },
+  "I_SSAV": {
+   "label": "Small savings",
+   "short": "Post-office and other small savings schemes, and public-account deposits."
+  },
+  "I_CBND": {
+   "label": "Corporate bonds",
+   "short": "Corporate debt securities and commercial paper."
+  },
+  "I_EQTY": {
+   "label": "Shares and equity",
+   "short": "Shares and other equity, other than mutual fund units."
+  },
+  "I_MFUN": {
+   "label": "Mutual fund units",
+   "short": "Units of mutual funds."
+  },
+  "I_INPE": {
+   "label": "Insurance and pension funds",
+   "short": "Life insurance, provident fund and pension entitlements."
+  },
+  "I_RESV": {
+   "label": "Foreign-exchange reserves",
+   "short": "The RBI's reserve assets."
+  },
+  "I_OTHR": {
+   "label": "Other accounts and residuals",
+   "short": "Other payables and receivables, and the residuals that reconcile two sources."
+  },
+  "X_DISC": {
+   "label": "Discrepancies and reconciliation items",
+   "short": "Published residuals, carried visibly and never moved by balancing."
+  }
+ },
+ "links": {
+  "PRDS--PROD": {
+   "label": "Payments to industries for their output"
+  },
+  "PROD--PRDS": {
+   "label": "Inputs bought by industries"
+  },
+  "PROD--PRDS~neg": {
+   "label": "A tiny negative input entry"
+  },
+  "PROD--FACT": {
+   "label": "Wages, mixed income and operating surplus"
+  },
+  "FACT--HH": {
+   "label": "Income earned by households"
+  },
+  "HH--PRDS": {
+   "label": "Household consumption"
+  },
+  "SI--FINM": {
+   "label": "Financial assets acquired"
+  },
+  "SI--FINM~neg": {
+   "label": "Financial assets sold or run down"
+  },
+  "FINM--SI": {
+   "label": "Borrowing and other new liabilities"
+  },
+  "FINM--SI~neg": {
+   "label": "Liabilities repaid"
+  },
+  "SI--PRDS": {
+   "label": "Investment spending"
+  },
+  "SI--PRDS~neg": {
+   "label": "Inventories run down"
+  },
+  "PRDS--ROW": {
+   "label": "Imports"
+  },
+  "ROW--PRDS": {
+   "label": "Exports"
+  },
+  "HH--SI": {
+   "label": "Household saving"
+  },
+  "FACT--NFC": {
+   "label": "Companies' operating surplus"
+  },
+  "TAX--CEN": {
+   "label": "Union taxes, before sharing with the States"
+  },
+  "TAX--CEN~neg": {
+   "label": "Subsidies paid by the Centre"
+  },
+  "PRDS--TAX": {
+   "label": "Taxes on products"
+  },
+  "PRDS--TAX~neg": {
+   "label": "Product subsidies"
+  },
+  "NFC--SI": {
+   "label": "Company saving"
+  },
+  "FC--HH": {
+   "label": "Interest, insurance and pension income from financial firms"
+  },
+  "STA--PRDS": {
+   "label": "States' spending on public services"
+  },
+  "CEN--STA": {
+   "label": "Devolution, grants and other transfers to the States"
+  },
+  "TAX--STA": {
+   "label": "Taxes kept by the States"
+  },
+  "TAX--STA~neg": {
+   "label": "Subsidies paid by the States"
+  },
+  "FACT--FC": {
+   "label": "Financial firms' operating surplus"
+  },
+  "NFC--FC": {
+   "label": "Companies' interest, dividends and premiums to financial firms"
+  },
+  "FC--SI": {
+   "label": "Financial firms' saving"
+  },
+  "ROW--HH": {
+   "label": "Remittances received"
+  },
+  "NFC--TAX": {
+   "label": "Taxes paid by companies"
+  },
+  "CEN--PRDS": {
+   "label": "The Centre's spending on public services"
+  },
+  "HH--TAX": {
+   "label": "Income tax paid by households"
+  },
+  "STA--HH": {
+   "label": "States' pensions and cash transfers"
+  },
+  "NFC--HH": {
+   "label": "Dividends, distributed income and pensions from companies"
+  },
+  "HH--FC": {
+   "label": "Households' interest and insurance premiums"
+  },
+  "CEN--FC": {
+   "label": "The Centre's interest to financial firms"
+  },
+  "CEN--HH": {
+   "label": "The Centre's payments to households"
+  },
+  "HH--DISC": {
+   "label": "Household residual (published discrepancy)"
+  },
+  "NFC--ROW": {
+   "label": "Company income paid abroad"
+  },
+  "FC--NFC": {
+   "label": "Financial firms' interest and claims paid to companies"
+  },
+  "CEN--SI~neg": {
+   "label": "The Centre's negative gross saving (dissaving)"
+  },
+  "STA--FC": {
+   "label": "States' interest to financial firms"
+  },
+  "DISC--SI": {
+   "label": "Saving-investment errors and omissions"
+  },
+  "PROD--TAX": {
+   "label": "Taxes on production"
+  },
+  "PROD--TAX~neg": {
+   "label": "Production subsidies"
+  },
+  "FACT--STA": {
+   "label": "States' operating surplus (depreciation)"
+  },
+  "FC--ROW": {
+   "label": "Financial firms' income paid abroad"
+  },
+  "DISC--ROW": {
+   "label": "Import reconciliation item (not a payment)"
+  },
+  "ROW--SI": {
+   "label": "Current-account deficit (foreign saving)"
+  },
+  "FC--TAX": {
+   "label": "Taxes paid by financial firms"
+  },
+  "ROW--FC": {
+   "label": "Income from abroad to financial firms"
+  },
+  "NFC--STA": {
+   "label": "Royalties, interest and dividends to the States"
+  },
+  "ROW--NFC": {
+   "label": "Income from abroad to companies"
+  },
+  "FC--CEN": {
+   "label": "RBI surplus, dividends and interest to the Centre"
+  },
+  "NFC--CEN": {
+   "label": "Dividends and resource rents to the Centre"
+  },
+  "FACT--CEN": {
+   "label": "The Centre's operating surplus (depreciation)"
+  },
+  "STA--SI": {
+   "label": "States' saving"
+  },
+  "HH--ROW": {
+   "label": "Money sent abroad by households"
+  },
+  "ROW--FACT": {
+   "label": "Pay earned from abroad"
+  },
+  "CEN--NFC": {
+   "label": "The Centre's grants and interest to companies"
+  },
+  "STA--CEN": {
+   "label": "States' interest to the Centre"
+  },
+  "CEN--ROW": {
+   "label": "The Centre's interest paid abroad"
+  },
+  "FACT--ROW": {
+   "label": "Pay earned by non-residents"
+  },
+  "FC--STA": {
+   "label": "Financial firms' interest to the States"
+  },
+  "HH--STA": {
+   "label": "Royalties paid by household enterprises"
+  },
+  "STA--NFC": {
+   "label": "States' interest to companies"
+  },
+  "ROW--CEN": {
+   "label": "Income from abroad to the Centre"
+  },
+  "STA--ROW": {
+   "label": "States' interest paid abroad"
+  },
+  "HH--CEN": {
+   "label": "Households' interest to the Centre"
+  },
+  "PRODUCERS--FACT": {
+   "label": "Wages, mixed income and operating surplus"
+  },
+  "HH--PRODUCERS": {
+   "label": "Household consumption"
+  },
+  "SI--PRODUCERS": {
+   "label": "Investment spending"
+  },
+  "SI--PRODUCERS~neg": {
+   "label": "Inventories run down"
+  },
+  "PRODUCERS--ROW": {
+   "label": "Imports"
+  },
+  "ROW--PRODUCERS": {
+   "label": "Exports"
+  },
+  "PRODUCERS--TAX": {
+   "label": "Taxes on products and production"
+  },
+  "PRODUCERS--TAX~neg": {
+   "label": "Product and production subsidies"
+  },
+  "STA--PRODUCERS": {
+   "label": "States' spending on public services"
+  },
+  "CEN--PRODUCERS": {
+   "label": "The Centre's spending on public services"
+  }
+ },
+ "refs": {
+  "P1": {
+   "label": "Output of each product, by industry"
+  },
+  "P2": {
+   "label": "Inputs bought by industries"
+  },
+  "P3": {
+   "label": "Trade and transport services supplied as margins"
+  },
+  "P4": {
+   "label": "Margins paid on each product"
+  },
+  "P5": {
+   "label": "Exports"
+  },
+  "P6": {
+   "label": "Imports"
+  },
+  "P7a": {
+   "label": "Taxes on products, by tax"
+  },
+  "P8": {
+   "label": "Import duties"
+  },
+  "P9": {
+   "label": "Product subsidies"
+  },
+  "P9a": {
+   "label": "Product subsidies, by paying government"
+  },
+  "P10": {
+   "label": "Production taxes less subsidies, by industry"
+  },
+  "P10a": {
+   "label": "Production taxes and subsidies, Centre and States"
+  },
+  "V1a": {
+   "label": "Wages, regular and casual"
+  },
+  "V2a": {
+   "label": "Mixed income and operating surplus"
+  },
+  "V3": {
+   "label": "Pay received from abroad"
+  },
+  "V4": {
+   "label": "Pay to non-residents"
+  },
+  "F1a": {
+   "label": "Wages by household group"
+  },
+  "F2": {
+   "label": "Mixed income by household group"
+  },
+  "F3a": {
+   "label": "Imputed rent of owner-occupiers"
+  },
+  "F3b": {
+   "label": "Rent received by household landlords"
+  },
+  "F3c": {
+   "label": "Surplus of household partnerships and non-profits"
+  },
+  "F4": {
+   "label": "Operating surplus of companies and government"
+  },
+  "F4a": {
+   "label": "Operating surplus of financial firms, by type"
+  },
+  "F4b": {
+   "label": "Government operating surplus, Centre and States"
+  },
+  "C1a": {
+   "label": "Household consumption, by product and group"
+  },
+  "C4a": {
+   "label": "Housing services consumed"
+  },
+  "C4b": {
+   "label": "Financial and insurance services consumed"
+  },
+  "C4d": {
+   "label": "Out-of-pocket health and education spending"
+  },
+  "C2a": {
+   "label": "Government consumption, Centre and States"
+  },
+  "I1a": {
+   "label": "Fixed investment, by product and investor"
+  },
+  "I2": {
+   "label": "Gold and silver ornaments bought by households"
+  },
+  "I2a": {
+   "label": "Valuables with no institutional sector"
+  },
+  "I3": {
+   "label": "Change in inventories, by product"
+  },
+  "I3a": {
+   "label": "Change in inventories, by owner"
+  },
+  "T1a": {
+   "label": "Union taxes (accrual basis)"
+  },
+  "T2x": {
+   "label": "State taxes (accrual basis)"
+  },
+  "T2b": {
+   "label": "Uses of the GST compensation cess"
+  },
+  "T3": {
+   "label": "Income tax paid by firms (quasi-corporations)"
+  },
+  "T3a": {
+   "label": "Income tax by household group"
+  },
+  "T4a": {
+   "label": "Corporation tax, by paying sector"
+  },
+  "R1": {
+   "label": "Tax devolution to the States"
+  },
+  "R2": {
+   "label": "Grants from the Centre to the States"
+  },
+  "R2k": {
+   "label": "Capital grants to the States"
+  },
+  "R3": {
+   "label": "Interest paid by governments"
+  },
+  "R3a": {
+   "label": "Government interest, by holder"
+  },
+  "R4": {
+   "label": "Interest paid by financial firms"
+  },
+  "R5": {
+   "label": "Interest paid to financial firms"
+  },
+  "R6": {
+   "label": "RBI surplus transfer"
+  },
+  "R7": {
+   "label": "Dividends to governments"
+  },
+  "R7x": {
+   "label": "Royalties, rents and interest to governments"
+  },
+  "R8": {
+   "label": "Dividends and distributed income of companies"
+  },
+  "R8a": {
+   "label": "Interest and dividends received by households"
+  },
+  "R9c": {
+   "label": "Investment income of policyholders and fund members"
+  },
+  "R9d": {
+   "label": "Railway and postal pensions"
+  },
+  "R9a": {
+   "label": "Government pensions"
+  },
+  "R10": {
+   "label": "Cash transfers to households"
+  },
+  "R11a": {
+   "label": "Remittances, by household group"
+  },
+  "R12a": {
+   "label": "Transfers sent abroad, by household group"
+  },
+  "R13": {
+   "label": "Income received from abroad"
+  },
+  "R14": {
+   "label": "Income paid abroad"
+  },
+  "R14a": {
+   "label": "Reinvested earnings of foreign direct investors"
+  },
+  "R17": {
+   "label": "Non-life insurance premiums and claims"
+  },
+  "R18": {
+   "label": "Grants and other current transfers to companies"
+  },
+  "K1": {
+   "label": "Company saving"
+  },
+  "K2a": {
+   "label": "Financial firms' saving, by type"
+  },
+  "K3a": {
+   "label": "Government saving, Centre and States"
+  },
+  "K4a": {
+   "label": "Household saving, by group"
+  },
+  "K5": {
+   "label": "Foreign saving (current-account deficit)"
+  },
+  "K6": {
+   "label": "Capital transfers"
+  },
+  "K7": {
+   "label": "Financial assets acquired"
+  },
+  "K8": {
+   "label": "Liabilities incurred"
+  },
+  "K7b": {
+   "label": "Counterparties re-matched to official totals"
+  },
+  "K7a": {
+   "label": "Household financial assets"
+  },
+  "K8a": {
+   "label": "Household borrowing"
+  },
+  "K8b": {
+   "label": "Foreign investment and borrowing, by type"
+  },
+  "K8c": {
+   "label": "Increase in foreign-exchange reserves"
+  },
+  "K8d": {
+   "label": "Government securities bought, by holder"
+  },
+  "K8e": {
+   "label": "Repayment of the GST back-to-back loans"
+  },
+  "K9": {
+   "label": "Flow-of-funds reconciliation residual"
+  },
+  "K9b": {
+   "label": "RBI surplus timing item"
+  },
+  "D1": {
+   "label": "Household residual"
+  },
+  "D2": {
+   "label": "Services import reconciliation (CIF adjustment)"
+  },
+  "D3": {
+   "label": "Saving-investment errors and omissions"
+  },
+  "D4": {
+   "label": "GDP expenditure discrepancy"
+  }
+ },
+ "series": {
+  "F01": {
+   "label": "Household consumption (PFCE)"
+  },
+  "F02": {
+   "label": "Government consumption (GFCE)"
+  },
+  "F03": {
+   "label": "Fixed investment (GFCF)"
+  },
+  "F04": {
+   "label": "Valuables (gold and silver)"
+  },
+  "F05": {
+   "label": "Exports of goods"
+  },
+  "F06": {
+   "label": "Exports of services"
+  },
+  "F07": {
+   "label": "Imports of goods"
+  },
+  "F08": {
+   "label": "Imports of services"
+  },
+  "F09": {
+   "label": "Compensation of employees"
+  },
+  "F10": {
+   "label": "Operating surplus and mixed income"
+  },
+  "F11": {
+   "label": "Net income from abroad"
+  },
+  "F12": {
+   "label": "Taxes on products"
+  },
+  "F13": {
+   "label": "Product subsidies"
+  },
+  "F14": {
+   "label": "GST to the Centre"
+  },
+  "F15": {
+   "label": "SGST to the States"
+  },
+  "F16": {
+   "label": "Union excise duties"
+  },
+  "F17": {
+   "label": "Customs duties"
+  },
+  "F18": {
+   "label": "State VAT and sales tax"
+  },
+  "F19": {
+   "label": "State excise"
+  },
+  "F20": {
+   "label": "Stamps and registration fees"
+  },
+  "F21": {
+   "label": "Corporation tax"
+  },
+  "F22": {
+   "label": "Personal income tax"
+  },
+  "F23": {
+   "label": "Tax devolution to the States"
+  },
+  "F24": {
+   "label": "Grants from the Centre to the States"
+  },
+  "F25": {
+   "label": "Interest paid by the Centre"
+  },
+  "F26": {
+   "label": "Interest paid by the States"
+  },
+  "F27": {
+   "label": "Pensions paid by the Centre"
+  },
+  "F28": {
+   "label": "Pensions paid by the States"
+  },
+  "F29": {
+   "label": "Food subsidy (free grain)"
+  },
+  "F30": {
+   "label": "Fertiliser subsidy"
+  },
+  "F31": {
+   "label": "RBI surplus to the Centre"
+  },
+  "F32": {
+   "label": "Government gross saving"
+  },
+  "F33": {
+   "label": "Public investment (government GFCF)"
+  },
+  "F34": {
+   "label": "Government securities issued (net)"
+  },
+  "F35": {
+   "label": "Household gross saving"
+  },
+  "F36": {
+   "label": "Household financial saving (gross)"
+  },
+  "F37": {
+   "label": "Household borrowing"
+  },
+  "F38": {
+   "label": "Household physical saving"
+  },
+  "F39": {
+   "label": "Household bank deposits"
+  },
+  "F40": {
+   "label": "Household shares, bonds and mutual funds"
+  },
+  "F41": {
+   "label": "Household insurance, PF and pension saving"
+  },
+  "F42": {
+   "label": "Household bank borrowing"
+  },
+  "F43": {
+   "label": "Remittances received"
+  },
+  "F44": {
+   "label": "Private transfers sent abroad"
+  },
+  "F45": {
+   "label": "Private company saving"
+  },
+  "F46": {
+   "label": "Private company investment"
+  },
+  "F47": {
+   "label": "Financial firms' saving"
+  },
+  "F48": {
+   "label": "Companies' new liabilities"
+  },
+  "F49": {
+   "label": "Current-account deficit"
+  },
+  "F50": {
+   "label": "Investment income paid abroad"
+  },
+  "F51": {
+   "label": "Foreign direct investment into India"
+  },
+  "F52": {
+   "label": "Foreign portfolio investment in India"
+  },
+  "F53": {
+   "label": "NRI deposits"
+  },
+  "F54": {
+   "label": "Increase in foreign-exchange reserves"
+  },
+  "M01": {
+   "label": "GDP"
+  },
+  "M02": {
+   "label": "Gross value added (GVA)"
+  },
+  "M03": {
+   "label": "Exports of goods and services"
+  },
+  "M04": {
+   "label": "Imports of goods and services (national accounts)"
+  },
+  "M05": {
+   "label": "Services import reconciliation (CIF adjustment)"
+  },
+  "M06": {
+   "label": "Imports of goods and services (balance of payments)"
+  },
+  "M07": {
+   "label": "Net taxes on products"
+  },
+  "M08": {
+   "label": "Direct taxes on income"
+  },
+  "M09": {
+   "label": "Household net financial saving"
+  },
+  "M10": {
+   "label": "Change in inventories"
+  },
+  "M11": {
+   "label": "Net private transfers from abroad"
+  },
+  "M12": {
+   "label": "Household residual (published discrepancy)"
+  },
+  "M13": {
+   "label": "Household gross disposable income"
+  },
+  "M14": {
+   "label": "Union gross tax revenue"
+  },
+  "M15": {
+   "label": "Government property income paid (old base)"
+  }
+ }
+}

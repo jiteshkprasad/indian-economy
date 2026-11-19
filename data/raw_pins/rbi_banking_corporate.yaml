@@ -1,0 +1,140 @@
+# Pinned raw files for one ingest unit. Written by `python -m pipeline fetch`; do not edit by hand.
+# key '<source_id>/<name>' -> the exact bytes (sha256) every build uses. `history` keeps superseded pins.
+pins:
+  rbi_annual_report/ar2324_ch12_accounts.html:
+    body_sha256: null
+    bytes: 201549
+    method: GET
+    path: data/raw/rbi_annual_report/2026-09-29/rbi_banking_corporate/ar2324_ch12_accounts.html
+    retrieved_at: '2026-09-29T10:35:02Z'
+    sha256: fb3e51e2491493bbfadc5f62ff77f2130280619926ac4b9dc181fdd0fd19bbb1
+    url: https://www.rbi.org.in/Scripts/AnnualReportPublications.aspx?Id=1412
+  rbi_annual_report/ar2425_ch12_accounts.html:
+    body_sha256: null
+    bytes: 203879
+    method: GET
+    path: data/raw/rbi_annual_report/2026-09-29/rbi_banking_corporate/ar2425_ch12_accounts.html
+    retrieved_at: '2026-09-29T10:35:07Z'
+    sha256: f6fc2ed5468035ec8f5069a008aba60da39d9541309c74c6f6bab9f67136fb35
+    url: https://www.rbi.org.in/Scripts/AnnualReportPublications.aspx?Id=1442
+  rbi_annual_report/ar2526_ch12_accounts.html:
+    body_sha256: null
+    bytes: 211929
+    method: GET
+    path: data/raw/rbi_annual_report/2026-09-29/rbi_banking_corporate/ar2526_ch12_accounts.html
+    retrieved_at: '2026-09-29T10:35:10Z'
+    sha256: 585571fa5187c62650e22df87205d64028f82817246761c8a288d7421f04457e
+    url: https://www.rbi.org.in/Scripts/AnnualReportPublications.aspx?Id=1472
+  rbi_bsr/bsr1_mar2024_pr.html:
+    body_sha256: null
+    bytes: 118481
+    method: GET
+    path: data/raw/rbi_bsr/2026-09-29/rbi_banking_corporate/bsr1_mar2024_pr.html
+    retrieved_at: '2026-09-29T10:35:43Z'
+    sha256: 7e249c6bb3225615e963d0de4fcffedefa6ad5b00bd48b39eeefeacb4696eeaf
+    url: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=58036
+  rbi_bsr/bsr1_mar2024_pr_annex.pdf:
+    body_sha256: null
+    bytes: 403765
+    method: GET
+    path: data/raw/rbi_bsr/2026-09-29/rbi_banking_corporate/bsr1_mar2024_pr_annex.pdf
+    retrieved_at: '2026-09-29T10:35:48Z'
+    sha256: 0195d2a627877c42e910e2077fab98789e853f53abbf4fbc529db850907c76fa
+    url: https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR439CDC5EB6566564088BB587FB8B5A485F5.PDF
+  rbi_corporate_finances/pcbs_2023_24_pr.html:
+    body_sha256: null
+    bytes: 117266
+    method: GET
+    path: data/raw/rbi_corporate_finances/2026-09-29/rbi_banking_corporate/pcbs_2023_24_pr.html
+    retrieved_at: '2026-09-29T10:35:47Z'
+    sha256: 006d65c23959ecc9b6189836b9ef4423e8ad5fc02ce6ddfa1c6d4afb81c5051b
+    url: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=58186
+  rbi_corporate_finances/pcbs_2023_24_pr_annex.pdf:
+    body_sha256: null
+    bytes: 383197
+    method: GET
+    path: data/raw/rbi_corporate_finances/2026-09-29/rbi_banking_corporate/pcbs_2023_24_pr_annex.pdf
+    retrieved_at: '2026-09-29T10:36:00Z'
+    sha256: 521cee7dafb8d67815f190bd62ed9c3d17094519bc36179a41fbe6c6c2a911ac
+    url: https://rbidocs.rbi.org.in/rdocs/PressRelease/PDFs/PR5894CAE0781143145B0B48CC414365FC7AD.PDF
+  rbi_trend_progress/rtp2324_app_vi_6.html:
+    body_sha256: null
+    bytes: 68229
+    method: GET
+    path: data/raw/rbi_trend_progress/2026-09-29/rbi_banking_corporate/rtp2324_app_vi_6.html
+    retrieved_at: '2026-09-29T10:35:38Z'
+    sha256: 006a1e1258c748e0573309db3c65fef502742299b5d867d92c24b02e7635982e
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23113
+  rbi_trend_progress/rtp2324_app_vi_7.html:
+    body_sha256: null
+    bytes: 68235
+    method: GET
+    path: data/raw/rbi_trend_progress/2026-09-29/rbi_banking_corporate/rtp2324_app_vi_7.html
+    retrieved_at: '2026-09-29T10:35:40Z'
+    sha256: 56ac0123c3ffe6c8cadd3c9a32f2c89743e1200680e424262491cb7956f8ae2e
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23114
+  rbi_trend_progress/rtp2324_ch4.html:
+    body_sha256: null
+    bytes: 383350
+    method: GET
+    path: data/raw/rbi_trend_progress/2026-09-29/rbi_banking_corporate/rtp2324_ch4.html
+    retrieved_at: '2026-09-29T10:35:27Z'
+    sha256: b142c351408a48416034bccc8bc2cd19cc6f772b83d38740ffaf914a34f4275e
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23075
+  rbi_trend_progress/rtp2324_ch5.html:
+    body_sha256: null
+    bytes: 195454
+    method: GET
+    path: data/raw/rbi_trend_progress/2026-09-29/rbi_banking_corporate/rtp2324_ch5.html
+    retrieved_at: '2026-09-29T10:35:32Z'
+    sha256: a16a4390d37894a90145e56def31f308a20f4a78922ef58ffc91c5507f14b862
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23076
+  rbi_trend_progress/rtp2324_ch6.html:
+    body_sha256: null
+    bytes: 225957
+    method: GET
+    path: data/raw/rbi_trend_progress/2026-09-29/rbi_banking_corporate/rtp2324_ch6.html
+    retrieved_at: '2026-09-29T10:35:35Z'
+    sha256: e9c1db7feeb66eed093f1801e13e974d9ccf8e631115edb0961c9548a9853d7a
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23077
+  rbi_trend_progress/rtp2425_app_vi_6.html:
+    body_sha256: null
+    bytes: 68610
+    method: GET
+    path: data/raw/rbi_trend_progress/2026-09-29/rbi_banking_corporate/rtp2425_app_vi_6.html
+    retrieved_at: '2026-09-29T10:35:22Z'
+    sha256: 39c35da1f43dff9d05cb3d90f9e7e10dc9a1df0458547e256844e996a5fb6b60
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23677
+  rbi_trend_progress/rtp2425_app_vi_7.html:
+    body_sha256: null
+    bytes: 68629
+    method: GET
+    path: data/raw/rbi_trend_progress/2026-09-29/rbi_banking_corporate/rtp2425_app_vi_7.html
+    retrieved_at: '2026-09-29T10:35:24Z'
+    sha256: 85ad81c47628bf7c7d4af4a920a2acc66a5ad4c35453fb70a9e96509bed451e6
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23678
+  rbi_trend_progress/rtp2425_ch4.html:
+    body_sha256: null
+    bytes: 376521
+    method: GET
+    path: data/raw/rbi_trend_progress/2026-09-29/rbi_banking_corporate/rtp2425_ch4.html
+    retrieved_at: '2026-09-29T10:35:13Z'
+    sha256: 49f56f09e0360a73f3828f7a1dd0cb4f415d6df0cb9a5f7a5f4744781f07c1dd
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23639
+  rbi_trend_progress/rtp2425_ch5.html:
+    body_sha256: null
+    bytes: 191785
+    method: GET
+    path: data/raw/rbi_trend_progress/2026-09-29/rbi_banking_corporate/rtp2425_ch5.html
+    retrieved_at: '2026-09-29T10:35:15Z'
+    sha256: 642524ea3d69a2702d22162c6721f33949cb01d997de5c3affeee1417545faeb
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23640
+  rbi_trend_progress/rtp2425_ch6.html:
+    body_sha256: null
+    bytes: 214898
+    method: GET
+    path: data/raw/rbi_trend_progress/2026-09-29/rbi_banking_corporate/rtp2425_ch6.html
+    retrieved_at: '2026-09-29T10:35:19Z'
+    sha256: 4205208563197cf107031eaa5eccb49a505f7f07ccfbd97bd2cb78e57c60fc2d
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23641
+unit: rbi_banking_corporate

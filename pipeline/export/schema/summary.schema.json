@@ -1,0 +1,404 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "<v>/summary.json: headline figures for the first screen and the methodology page (PLAN s.3.6, s.4.0).",
+  "properties": {
+    "gdp": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "const": "official"
+        },
+        "prov": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        },
+        "year": {
+          "const": "2023-24"
+        }
+      },
+      "required": [
+        "year",
+        "value",
+        "prov",
+        "label"
+      ],
+      "type": "object"
+    },
+    "headline": {
+      "additionalProperties": false,
+      "properties": {
+        "gdp_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hh_outlays": {
+          "additionalProperties": false,
+          "properties": {
+            "parts": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "key": {
+                    "enum": [
+                      "consumption",
+                      "saving",
+                      "taxes",
+                      "financial_services_and_interest",
+                      "transfers_abroad",
+                      "to_government",
+                      "unallocated_residual"
+                    ]
+                  },
+                  "per100": {
+                    "type": "number"
+                  },
+                  "pins": {
+                    "description": "What holds the total (constraint ids or 'ts:<flow id>'); empty when total_label is null.",
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "split_label": {
+                    "enum": [
+                      "official",
+                      "derived",
+                      "estimated",
+                      "balancing_set"
+                    ]
+                  },
+                  "total_label": {
+                    "description": "Whether this part's sum is held to published figures (PLAN s.3.4.2), as for a link in sam/pinned.json; null = no published total.",
+                    "enum": [
+                      "official",
+                      "derived",
+                      null
+                    ]
+                  },
+                  "value": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "key",
+                  "value",
+                  "per100",
+                  "split_label",
+                  "total_label",
+                  "pins"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "prov": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "total": {
+              "type": "number"
+            },
+            "total_label": {
+              "enum": [
+                "official",
+                "derived",
+                null
+              ]
+            }
+          },
+          "required": [
+            "total",
+            "total_label",
+            "prov",
+            "parts"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "hh_outlays",
+        "gdp_note"
+      ],
+      "type": "object"
+    },
+    "methodology": {
+      "additionalProperties": {
+        "additionalProperties": false,
+        "properties": {
+          "pins": {
+            "description": "Economic values only: what holds the total; empty when total_label is null.",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "prov": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "split_label": {
+            "description": "Economic values only (sums of SAM entries): the headline split label of exactly the entries summed (PLAN s.3.4.2). Absent on counts and rule constants.",
+            "enum": [
+              "official",
+              "derived",
+              "estimated",
+              "balancing_set"
+            ]
+          },
+          "total_label": {
+            "description": "Economic values only: whether the sum is held to published figures, by the exact-cover rule of sam/pinned.json; null = no published total.",
+            "enum": [
+              "official",
+              "derived",
+              null
+            ]
+          },
+          "unit": {
+            "enum": [
+              "inr",
+              "pct_gdp",
+              "pct",
+              "count"
+            ]
+          },
+          "value": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "value",
+          "unit",
+          "prov"
+        ],
+        "type": "object"
+      },
+      "type": "object"
+    },
+    "sam": {
+      "additionalProperties": false,
+      "properties": {
+        "accounts": {
+          "const": 128
+        },
+        "balancing": {
+          "additionalProperties": false,
+          "properties": {
+            "iterations": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "max_imbalance": {
+              "type": "number"
+            },
+            "moved_abs": {
+              "type": "number"
+            },
+            "moved_share_of_abs": {
+              "type": "number"
+            },
+            "status": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "iterations",
+            "max_imbalance",
+            "moved_abs",
+            "moved_share_of_abs"
+          ],
+          "type": "object"
+        },
+        "cells_nonzero": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "composition": {
+          "additionalProperties": false,
+          "properties": {
+            "b": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            "d": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            "e": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            "o": {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            }
+          },
+          "required": [
+            "o",
+            "d",
+            "e",
+            "b"
+          ],
+          "type": "object"
+        },
+        "entries": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "grand_total": {
+          "type": "number"
+        },
+        "labels": {
+          "additionalProperties": false,
+          "properties": {
+            "balancing_set": {
+              "additionalProperties": false,
+              "properties": {
+                "abs": {
+                  "type": "number"
+                },
+                "entries": {
+                  "minimum": 0,
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "entries",
+                "abs"
+              ],
+              "type": "object"
+            },
+            "derived": {
+              "additionalProperties": false,
+              "properties": {
+                "abs": {
+                  "type": "number"
+                },
+                "entries": {
+                  "minimum": 0,
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "entries",
+                "abs"
+              ],
+              "type": "object"
+            },
+            "estimated": {
+              "additionalProperties": false,
+              "properties": {
+                "abs": {
+                  "type": "number"
+                },
+                "entries": {
+                  "minimum": 0,
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "entries",
+                "abs"
+              ],
+              "type": "object"
+            },
+            "official": {
+              "additionalProperties": false,
+              "properties": {
+                "abs": {
+                  "type": "number"
+                },
+                "entries": {
+                  "minimum": 0,
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "entries",
+                "abs"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "official",
+            "derived",
+            "estimated",
+            "balancing_set"
+          ],
+          "type": "object"
+        },
+        "refs": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "accounts",
+        "cells_nonzero",
+        "entries",
+        "refs",
+        "grand_total",
+        "composition",
+        "labels",
+        "balancing"
+      ],
+      "type": "object"
+    },
+    "ts": {
+      "additionalProperties": false,
+      "properties": {
+        "core": {
+          "const": 54
+        },
+        "first": {
+          "const": "1950-51"
+        },
+        "flows": {
+          "const": 69
+        },
+        "last": {
+          "const": "2025-26"
+        },
+        "memo": {
+          "const": 15
+        },
+        "rows": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "flows",
+        "core",
+        "memo",
+        "first",
+        "last",
+        "rows"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "gdp",
+    "headline",
+    "sam",
+    "methodology",
+    "ts"
+  ],
+  "title": "Summary",
+  "type": "object"
+}

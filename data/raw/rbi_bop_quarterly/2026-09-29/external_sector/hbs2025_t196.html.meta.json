@@ -1,0 +1,32 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 147623,
+  "content_type": "text/html; charset=utf-8",
+  "final_url": "https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23370",
+  "key": "rbi_bop_quarterly/hbs2025_t196.html",
+  "method": "GET",
+  "name": "hbs2025_t196.html",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.rbi.org.in/scripts/AnnualPublications.aspx?head=Handbook%20of%20Statistics%20on%20Indian%20Economy",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "text/html; charset=utf-8"
+  },
+  "retrieved_at": "2026-09-29T10:34:25Z",
+  "sha256": "49de119b71b3656b967aef9f735cf89253bee581b21538112e4efb762f2d8a82",
+  "source_id": "rbi_bop_quarterly",
+  "status": 200,
+  "url": "https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23370"
+}

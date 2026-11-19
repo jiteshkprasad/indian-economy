@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": {
+    "additionalProperties": false,
+    "properties": {
+      "col_block": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "gap_status": {
+        "type": "string"
+      },
+      "method": {
+        "type": "string"
+      },
+      "primary_source": {
+        "type": "string"
+      },
+      "row_block": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "row_block",
+      "col_block",
+      "description",
+      "gap_status",
+      "primary_source",
+      "method"
+    ],
+    "type": "object"
+  },
+  "description": "<v>/sam/refs.json: the gap-map refs used by the entries (data/gap_map.csv).",
+  "title": "Refs",
+  "type": "object"
+}

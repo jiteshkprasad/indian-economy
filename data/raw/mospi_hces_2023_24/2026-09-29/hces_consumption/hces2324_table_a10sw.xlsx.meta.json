@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 1587230,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://mospi.gov.in/sites/default/files/publication_reports/HCES-23-24/TableA10SW-State-WithImputation.xlsx",
+  "key": "mospi_hces_2023_24/hces2324_table_a10sw.xlsx",
+  "method": "GET",
+  "name": "hces2324_table_a10sw.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "1587230",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"679b4cd4-18381e\"",
+    "last-modified": "Thu, 30 Jan 2025 09:56:36 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:36:39Z",
+  "sha256": "8b01588eaca46a798a61378b5495de9cb06b01ce99f1341df9b8eec5f32b1662",
+  "source_id": "mospi_hces_2023_24",
+  "status": 200,
+  "url": "https://mospi.gov.in/sites/default/files/publication_reports/HCES-23-24/TableA10SW-State-WithImputation.xlsx"
+}

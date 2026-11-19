@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 577479,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://mospi.gov.in/sites/default/files/publication_reports/HCES-23-24/TableA10F-Fractile-class-All%20India.xlsx",
+  "key": "mospi_hces_2023_24/hces2324_table_a10f.xlsx",
+  "method": "GET",
+  "name": "hces2324_table_a10f.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "577479",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"679b4cb6-8cfc7\"",
+    "last-modified": "Thu, 30 Jan 2025 09:56:06 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:36:35Z",
+  "sha256": "e8867e5ef8359a3eafe9f54280bbd135a30759f0c5591e4ed3a34f5d83f97137",
+  "source_id": "mospi_hces_2023_24",
+  "status": 200,
+  "url": "https://mospi.gov.in/sites/default/files/publication_reports/HCES-23-24/TableA10F-Fractile-class-All%20India.xlsx"
+}

@@ -1,0 +1,13 @@
+# URL host -> link mode for exported citations (PLAN s.3.5, proposed D3-7).
+# deep: link the exact URL. landing: link only the registry's urls.landing. withheld: no link at all.
+# RBI hosts are withheld until RBI grants permission (DECISIONS D1-1(d), ISSUES P1-9).
+# A URL whose host is not listed under `hosts` uses `default`. tests/export/test_provenance.py fails if an
+# exported URL's host is withheld.
+default: deep
+hosts:
+  rbi.org.in: withheld
+  www.rbi.org.in: withheld
+  rbidocs.rbi.org.in: withheld
+  data.rbi.org.in: withheld
+  dbie.rbi.org.in: withheld
+  cimsdbie.rbi.org.in: withheld

@@ -1,0 +1,1317 @@
+{
+ "deficit-funding": {
+  "saving_cen": {
+   "value": -427343.15402300004,
+   "unit": "inr",
+   "text": "−₹4.27 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "saving_sta": {
+   "value": 108959.27183099999,
+   "unit": "inr",
+   "text": "₹1.09 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "saving_gg": {
+   "value": -318383.88219200005,
+   "unit": "inr",
+   "text": "−₹3.18 lakh crore",
+   "split": "balancing_set",
+   "total": "official"
+  },
+  "saving_gg_gdp": {
+   "value": -0.01095107977025042,
+   "unit": "pct_gdp",
+   "text": "−1.1% of GDP",
+   "split": "balancing_set",
+   "total": "official"
+  },
+  "invest_cen": {
+   "value": 541109.594985,
+   "unit": "inr",
+   "text": "₹5.41 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "invest_sta": {
+   "value": 687143.0765069999,
+   "unit": "inr",
+   "text": "₹6.87 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "captr_cen": {
+   "value": 179714.346209,
+   "unit": "inr",
+   "text": "₹1.80 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "captr_sta": {
+   "value": 161147.738243,
+   "unit": "inr",
+   "text": "₹1.61 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nonfin_in_cen": {
+   "value": -425785.83877000003,
+   "unit": "inr",
+   "text": "−₹4.26 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nonfin_out_cen": {
+   "value": 720823.941194,
+   "unit": "inr",
+   "text": "₹7.21 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nb_cen": {
+   "value": 1146609.779964,
+   "unit": "inr",
+   "text": "₹11.47 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nonfin_in_sta": {
+   "value": 264275.877284,
+   "unit": "inr",
+   "text": "₹2.64 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nonfin_out_sta": {
+   "value": 848290.8147499999,
+   "unit": "inr",
+   "text": "₹8.48 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nb_sta": {
+   "value": 584014.937466,
+   "unit": "inr",
+   "text": "₹5.84 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nb_gg": {
+   "value": 1730624.71743,
+   "unit": "inr",
+   "text": "₹17.31 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nb_gg_gdp": {
+   "value": 0.05952628381330551,
+   "unit": "pct_gdp",
+   "text": "6.0% of GDP",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nb_cen_gdp": {
+   "value": 0.03943860185159383,
+   "unit": "pct_gdp",
+   "text": "3.9% of GDP",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nb_sta_gdp": {
+   "value": 0.02008768196171168,
+   "unit": "pct_gdp",
+   "text": "2.0% of GDP",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "assets_cen": {
+   "value": 466078.59938800003,
+   "unit": "inr",
+   "text": "₹4.66 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "liab_cen": {
+   "value": 1612688.379354,
+   "unit": "inr",
+   "text": "₹16.13 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nb_cen_fin": {
+   "value": 1146609.779966,
+   "unit": "inr",
+   "text": "₹11.47 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "assets_sta": {
+   "value": 124512.948715,
+   "unit": "inr",
+   "text": "₹1.25 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "liab_sta": {
+   "value": 708527.8861809999,
+   "unit": "inr",
+   "text": "₹7.09 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "nb_sta_fin": {
+   "value": 584014.937466,
+   "unit": "inr",
+   "text": "₹5.84 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "liab_cen_gsec": {
+   "value": 1171496.155983,
+   "unit": "inr",
+   "text": "₹11.71 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "liab_cen_ssav": {
+   "value": 434724.0081,
+   "unit": "inr",
+   "text": "₹4.35 lakh crore",
+   "split": "estimated",
+   "total": "derived"
+  },
+  "liab_cen_other": {
+   "value": 6468.215271000007,
+   "unit": "inr",
+   "text": "₹6,468 crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "liab_sta_gsec": {
+   "value": 664632.589578,
+   "unit": "inr",
+   "text": "₹6.65 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "liab_sta_loan": {
+   "value": -14114.13980199999,
+   "unit": "inr",
+   "text": "−₹14,114 crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "liab_sta_other": {
+   "value": 58009.436405,
+   "unit": "inr",
+   "text": "₹58,009 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "assets_cen_eqty": {
+   "value": 272627.033118,
+   "unit": "inr",
+   "text": "₹2.73 lakh crore",
+   "split": "derived",
+   "total": ""
+  },
+  "assets_cen_loan": {
+   "value": 80261.07940300001,
+   "unit": "inr",
+   "text": "₹80,261 crore",
+   "split": "derived",
+   "total": ""
+  },
+  "assets_cen_k9": {
+   "value": -42036.59044999999,
+   "unit": "inr",
+   "text": "−₹42,037 crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "assets_cen_k9b": {
+   "value": 123158.706858,
+   "unit": "inr",
+   "text": "₹1.23 lakh crore",
+   "split": "derived",
+   "total": ""
+  },
+  "assets_cen_k9_net": {
+   "value": 81122.11640800002,
+   "unit": "inr",
+   "text": "₹81,122 crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "assets_cen_named": {
+   "value": 434010.22892900003,
+   "unit": "inr",
+   "text": "₹4.34 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "assets_sta_depo": {
+   "value": 253193.704304,
+   "unit": "inr",
+   "text": "₹2.53 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "assets_sta_k9": {
+   "value": -179517.354968,
+   "unit": "inr",
+   "text": "−₹1.80 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "assets_sta_named": {
+   "value": 73676.34933600001,
+   "unit": "inr",
+   "text": "₹73,676 crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "assets_sta_rest": {
+   "value": 50836.59937899999,
+   "unit": "inr",
+   "text": "₹50,837 crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gsec_issued": {
+   "value": 1836128.745561,
+   "unit": "inr",
+   "text": "₹18.36 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gsec_bought": {
+   "value": 1836128.74556,
+   "unit": "inr",
+   "text": "₹18.36 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gsec_bank": {
+   "value": 893212.249674,
+   "unit": "inr",
+   "text": "₹8.93 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gsec_insp": {
+   "value": 794966.357233,
+   "unit": "inr",
+   "text": "₹7.95 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gsec_row": {
+   "value": 120151.176633,
+   "unit": "inr",
+   "text": "₹1.20 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gsec_nbfc_mf": {
+   "value": 77730.113777,
+   "unit": "inr",
+   "text": "₹77,730 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gsec_hh": {
+   "value": 25552.157,
+   "unit": "inr",
+   "text": "₹25,552 crore",
+   "split": "official",
+   "total": ""
+  },
+  "gsec_rbi": {
+   "value": -42718.418763999995,
+   "unit": "inr",
+   "text": "−₹42,718 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gsec_others": {
+   "value": -32764.889993000004,
+   "unit": "inr",
+   "text": "−₹32,765 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gsec_bank_per100": {
+   "value": 48.64649343535511,
+   "unit": "per100",
+   "text": "₹48.6",
+   "split": "estimated",
+   "total": ""
+  },
+  "gsec_insp_per100": {
+   "value": 43.29578517600685,
+   "unit": "per100",
+   "text": "₹43.3",
+   "split": "estimated",
+   "total": ""
+  },
+  "gsec_row_per100": {
+   "value": 6.543722869296386,
+   "unit": "per100",
+   "text": "₹6.5",
+   "split": "estimated",
+   "total": ""
+  },
+  "gsec_hh_per100": {
+   "value": 1.3916320988805686,
+   "unit": "per100",
+   "text": "₹1.4",
+   "split": "official",
+   "total": ""
+  },
+  "hhfin_depo": {
+   "value": 1409587.953117,
+   "unit": "inr",
+   "text": "₹14.10 lakh crore",
+   "split": "official",
+   "total": ""
+  },
+  "hhfin_inpe": {
+   "value": 1260185.567157,
+   "unit": "inr",
+   "text": "₹12.60 lakh crore",
+   "split": "derived",
+   "total": ""
+  },
+  "hhfin_ssav": {
+   "value": 421678.36000000004,
+   "unit": "inr",
+   "text": "₹4.22 lakh crore",
+   "split": "official",
+   "total": ""
+  },
+  "int_cen_prev": {
+   "value": 957689.53,
+   "unit": "inr",
+   "text": "₹9.58 lakh crore",
+   "split": "official",
+   "total": "official"
+  },
+  "int_cen": {
+   "value": 1101867.88,
+   "unit": "inr",
+   "text": "₹11.02 lakh crore",
+   "split": "official",
+   "total": "official"
+  },
+  "int_cen_gdp": {
+   "value": 0.03789966680185141,
+   "unit": "pct_gdp",
+   "text": "3.8% of GDP",
+   "split": "official",
+   "total": "official"
+  },
+  "int_sta": {
+   "value": 494910.9671,
+   "unit": "inr",
+   "text": "₹4.95 lakh crore",
+   "split": "official",
+   "total": "official"
+  },
+  "int_sta_gdp": {
+   "value": 0.01702287641751754,
+   "unit": "pct_gdp",
+   "text": "1.7% of GDP",
+   "split": "official",
+   "total": "official"
+  },
+  "assets_cen_rest": {
+   "value": 32068.370458999998,
+   "unit": "inr",
+   "text": "₹32,068 crore",
+   "split": "balancing_set",
+   "total": ""
+  }
+ },
+ "gst-rupee": {
+  "gst_total": {
+   "value": 1840149.404226,
+   "unit": "inr",
+   "text": "₹18.40 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gst_commodity_side": {
+   "value": 1840149.404222,
+   "unit": "inr",
+   "text": "₹18.40 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gst_total_gdp": {
+   "value": 0.06329347696911793,
+   "unit": "pct_gdp",
+   "text": "6.3% of GDP",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "cgst_total": {
+   "value": 862332.261,
+   "unit": "inr",
+   "text": "₹8.62 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "sgst_total": {
+   "value": 829309.175226,
+   "unit": "inr",
+   "text": "₹8.29 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "cess_total": {
+   "value": 148507.968,
+   "unit": "inr",
+   "text": "₹1.49 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "utgst": {
+   "value": 5772.018,
+   "unit": "inr",
+   "text": "₹5,772 crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "cgst_per100": {
+   "value": 46.862078645332204,
+   "unit": "per100",
+   "text": "₹46.9",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "sgst_per100": {
+   "value": 45.06749143963244,
+   "unit": "per100",
+   "text": "₹45.1",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "cess_per100": {
+   "value": 8.070429915035357,
+   "unit": "per100",
+   "text": "₹8.1",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gst_cnst": {
+   "value": 323986.191151,
+   "unit": "inr",
+   "text": "₹3.24 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gst_treq": {
+   "value": 177183.500582,
+   "unit": "inr",
+   "text": "₹1.77 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gst_chem": {
+   "value": 137486.908806,
+   "unit": "inr",
+   "text": "₹1.37 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gst_txap": {
+   "value": 136494.233647,
+   "unit": "inr",
+   "text": "₹1.36 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "gst_cnst_per100": {
+   "value": 17.60651555833743,
+   "unit": "per100",
+   "text": "₹17.6",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gst_treq_per100": {
+   "value": 9.628756239872368,
+   "unit": "per100",
+   "text": "₹9.6",
+   "split": "estimated",
+   "total": ""
+  },
+  "gst_chem_per100": {
+   "value": 7.471507937918135,
+   "unit": "per100",
+   "text": "₹7.5",
+   "split": "estimated",
+   "total": ""
+  },
+  "gst_txap_per100": {
+   "value": 7.4175625812681565,
+   "unit": "per100",
+   "text": "₹7.4",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_pfce_cgst": {
+   "value": 460218.79272882384,
+   "unit": "inr",
+   "text": "₹4.60 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_pfce_sgst": {
+   "value": 442567.65530897083,
+   "unit": "inr",
+   "text": "₹4.43 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_pfce_cess": {
+   "value": 82199.76642281927,
+   "unit": "inr",
+   "text": "₹82,200 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_ic_cgst": {
+   "value": 198380.4166662472,
+   "unit": "inr",
+   "text": "₹1.98 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_ic_sgst": {
+   "value": 190789.62746656386,
+   "unit": "inr",
+   "text": "₹1.91 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_ic_cess": {
+   "value": 13859.773916170338,
+   "unit": "inr",
+   "text": "₹13,860 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_gfcf_cgst": {
+   "value": 181492.34987567912,
+   "unit": "inr",
+   "text": "₹1.81 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_gfcf_sgst": {
+   "value": 174560.62795443542,
+   "unit": "inr",
+   "text": "₹1.75 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_gfcf_cess": {
+   "value": 51407.09081873684,
+   "unit": "inr",
+   "text": "₹51,407 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_gfce_cgst": {
+   "value": 12678.008673531189,
+   "unit": "inr",
+   "text": "₹12,678 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_gfce_sgst": {
+   "value": 12193.798563834416,
+   "unit": "inr",
+   "text": "₹12,194 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_gfce_cess": {
+   "value": 593.5998644733204,
+   "unit": "inr",
+   "text": "₹594 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_valu_cgst": {
+   "value": 9562.693053718654,
+   "unit": "inr",
+   "text": "₹9,563 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_valu_sgst": {
+   "value": 9197.465929195565,
+   "unit": "inr",
+   "text": "₹9,197 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_valu_cess": {
+   "value": 447.736978800195,
+   "unit": "inr",
+   "text": "₹448 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_pfce": {
+   "value": 984986.2144606139,
+   "unit": "inr",
+   "text": "₹9.85 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_ic": {
+   "value": 403029.8180489814,
+   "unit": "inr",
+   "text": "₹4.03 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_gfcf": {
+   "value": 407460.06864885136,
+   "unit": "inr",
+   "text": "₹4.07 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_gfce": {
+   "value": 25465.407101838926,
+   "unit": "inr",
+   "text": "₹25,465 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_valu": {
+   "value": 19207.895961714414,
+   "unit": "inr",
+   "text": "₹19,208 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_pfce_per100": {
+   "value": 53.52751315739267,
+   "unit": "per100",
+   "text": "₹53.5",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_ic_per100": {
+   "value": 21.90201606045022,
+   "unit": "per100",
+   "text": "₹21.9",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_gfcf_per100": {
+   "value": 22.142771000766764,
+   "unit": "per100",
+   "text": "₹22.1",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_gfce_per100": {
+   "value": 1.3838771484212984,
+   "unit": "per100",
+   "text": "₹1.4",
+   "split": "estimated",
+   "total": ""
+  },
+  "till_valu_per100": {
+   "value": 1.0438226329690525,
+   "unit": "per100",
+   "text": "₹1.0",
+   "split": "estimated",
+   "total": ""
+  },
+  "gst_centre": {
+   "value": 1010840.229,
+   "unit": "inr",
+   "text": "₹10.11 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gst_states": {
+   "value": 829309.175226,
+   "unit": "inr",
+   "text": "₹8.29 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gst_centre_per100": {
+   "value": 54.93250856036756,
+   "unit": "per100",
+   "text": "₹54.9",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gst_states_per100": {
+   "value": 45.06749143963244,
+   "unit": "per100",
+   "text": "₹45.1",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "comp_grants": {
+   "value": 44945.5121,
+   "unit": "inr",
+   "text": "₹44,946 crore",
+   "split": "official",
+   "total": ""
+  },
+  "cess_loan_transfer": {
+   "value": 78104.0,
+   "unit": "inr",
+   "text": "₹78,104 crore",
+   "split": "derived",
+   "total": ""
+  },
+  "b2b_repaid": {
+   "value": -78104.0,
+   "unit": "inr",
+   "text": "−₹78,104 crore",
+   "split": "derived",
+   "total": ""
+  },
+  "cess_passed": {
+   "value": 123049.51209999999,
+   "unit": "inr",
+   "text": "₹1.23 lakh crore",
+   "split": "derived",
+   "total": "derived"
+  },
+  "cess_passed_per100": {
+   "value": 82.85717847812718,
+   "unit": "per100",
+   "text": "₹82.9",
+   "split": "derived",
+   "total": "derived"
+  },
+  "devol_cgst": {
+   "value": 342787.33,
+   "unit": "inr",
+   "text": "₹3.43 lakh crore",
+   "split": "official",
+   "total": ""
+  },
+  "cgst_ex_utgst": {
+   "value": 856560.243,
+   "unit": "inr",
+   "text": "₹8.57 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "devol_cgst_per100": {
+   "value": 40.01905677987438,
+   "unit": "per100",
+   "text": "₹40.0",
+   "split": "official",
+   "total": ""
+  },
+  "gst_to_states_kept": {
+   "value": 1217042.0173260001,
+   "unit": "inr",
+   "text": "₹12.17 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gst_to_states_kept_per100": {
+   "value": 66.13821761053744,
+   "unit": "per100",
+   "text": "₹66.1",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "cess_loan_per100_gst": {
+   "value": 4.244437969038278,
+   "unit": "per100",
+   "text": "₹4.2",
+   "split": "derived",
+   "total": ""
+  },
+  "gg_current": {
+   "value": 5726370.989938,
+   "unit": "inr",
+   "text": "₹57.26 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_capital": {
+   "value": 1413798.150491,
+   "unit": "inr",
+   "text": "₹14.14 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_outlays": {
+   "value": 7140169.140429,
+   "unit": "inr",
+   "text": "₹71.40 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_goods_services": {
+   "value": 3121028.372289,
+   "unit": "inr",
+   "text": "₹31.21 lakh crore",
+   "split": "balancing_set",
+   "total": "official"
+  },
+  "gg_interest": {
+   "value": 1549430.886645,
+   "unit": "inr",
+   "text": "₹15.49 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_pensions": {
+   "value": 680555.0178970001,
+   "unit": "inr",
+   "text": "₹6.81 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_cash_transfers": {
+   "value": 352598.224051,
+   "unit": "inr",
+   "text": "₹3.53 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_corp_transfers": {
+   "value": 22758.489056000002,
+   "unit": "inr",
+   "text": "₹22,758 crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_goods_services_per100": {
+   "value": 43.71084649265718,
+   "unit": "per100",
+   "text": "₹43.7",
+   "split": "balancing_set",
+   "total": "official"
+  },
+  "gg_interest_per100": {
+   "value": 21.700198639158653,
+   "unit": "per100",
+   "text": "₹21.7",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_pensions_per100": {
+   "value": 9.531357094099741,
+   "unit": "per100",
+   "text": "₹9.5",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_cash_transfers_per100": {
+   "value": 4.938233494421324,
+   "unit": "per100",
+   "text": "₹4.9",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_corp_transfers_per100": {
+   "value": 0.3187387946755644,
+   "unit": "per100",
+   "text": "₹0.3",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_capital_per100": {
+   "value": 19.80062548498753,
+   "unit": "per100",
+   "text": "₹19.8",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_fin_assets": {
+   "value": 590591.548103,
+   "unit": "inr",
+   "text": "₹5.91 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_product_subsidies": {
+   "value": -576422.431948,
+   "unit": "inr",
+   "text": "−₹5.76 lakh crore",
+   "split": "balancing_set",
+   "total": "official"
+  },
+  "gg_production_subsidies": {
+   "value": -341858.12486700004,
+   "unit": "inr",
+   "text": "−₹3.42 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_subsidies_paid": {
+   "value": 918280.556815,
+   "unit": "inr",
+   "text": "₹9.18 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "gg_subsidies_per100": {
+   "value": 12.86076756383151,
+   "unit": "per100",
+   "text": "₹12.9",
+   "split": "balancing_set",
+   "total": ""
+  }
+ },
+ "remittance-dubai": {
+  "remit_total": {
+   "value": 983128.720164,
+   "unit": "inr",
+   "text": "₹9.83 lakh crore",
+   "split": "estimated",
+   "total": "official"
+  },
+  "remit_gdp": {
+   "value": 0.03381553414330058,
+   "unit": "pct_gdp",
+   "text": "3.4% of GDP",
+   "split": "estimated",
+   "total": "official"
+  },
+  "remit_value_first": {
+   "value": 139173.0,
+   "unit": "inr",
+   "text": "₹1.39 lakh crore",
+   "split": "official",
+   "total": "official"
+  },
+  "remit_share_first": {
+   "value": 0.03271096791540882,
+   "unit": "pct_gdp",
+   "text": "3.3% of GDP",
+   "split": "official",
+   "total": "official"
+  },
+  "remit_share_2023": {
+   "value": 0.0338155093726578,
+   "unit": "pct_gdp",
+   "text": "3.4% of GDP",
+   "split": "official",
+   "total": "official"
+  },
+  "remit_value_latest": {
+   "value": 1373451.0,
+   "unit": "inr",
+   "text": "₹13.73 lakh crore",
+   "split": "official",
+   "total": "official"
+  },
+  "uae_remit": {
+   "value": 189138.799871,
+   "unit": "inr",
+   "text": "₹1.89 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "uae_share": {
+   "value": 0.19238477,
+   "unit": "pct",
+   "text": "19.2%",
+   "split": "estimated",
+   "total": ""
+  },
+  "usa_share": {
+   "value": 0.27755511,
+   "unit": "pct",
+   "text": "27.8%",
+   "split": "estimated",
+   "total": ""
+  },
+  "remit_rural": {
+   "value": 466204.73167,
+   "unit": "inr",
+   "text": "₹4.66 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "remit_urban": {
+   "value": 516923.988494,
+   "unit": "inr",
+   "text": "₹5.17 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "remit_top": {
+   "value": 455493.488013,
+   "unit": "inr",
+   "text": "₹4.55 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "remit_bottom": {
+   "value": 53564.401044,
+   "unit": "inr",
+   "text": "₹53,564 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "remit_rural_per100": {
+   "value": 47.42051799607994,
+   "unit": "per100",
+   "text": "₹47.4",
+   "split": "estimated",
+   "total": ""
+  },
+  "remit_urban_per100": {
+   "value": 52.579482003920056,
+   "unit": "per100",
+   "text": "₹52.6",
+   "split": "estimated",
+   "total": ""
+  },
+  "remit_top_per100": {
+   "value": 46.33101227446769,
+   "unit": "per100",
+   "text": "₹46.3",
+   "split": "estimated",
+   "total": ""
+  },
+  "remit_bottom_per100": {
+   "value": 5.448360926234022,
+   "unit": "per100",
+   "text": "₹5.4",
+   "split": "estimated",
+   "total": ""
+  },
+  "hh_consumption": {
+   "value": 16415545.52477,
+   "unit": "inr",
+   "text": "₹164.16 lakh crore",
+   "split": "estimated",
+   "total": "official"
+  },
+  "hh_saving": {
+   "value": 5890329.946044,
+   "unit": "inr",
+   "text": "₹58.90 lakh crore",
+   "split": "balancing_set",
+   "total": "official"
+  },
+  "hh_taxes": {
+   "value": 818441.4834960001,
+   "unit": "inr",
+   "text": "₹8.18 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "hh_finance": {
+   "value": 749995.765134,
+   "unit": "inr",
+   "text": "₹7.50 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "hh_abroad": {
+   "value": 99911.813896,
+   "unit": "inr",
+   "text": "₹99,912 crore",
+   "split": "estimated",
+   "total": "official"
+  },
+  "hh_to_gov": {
+   "value": 28373.118805,
+   "unit": "inr",
+   "text": "₹28,373 crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "hh_residual": {
+   "value": 571133.165042,
+   "unit": "inr",
+   "text": "₹5.71 lakh crore",
+   "split": "estimated",
+   "total": "derived"
+  },
+  "hh_outlays": {
+   "value": 24573730.817187,
+   "unit": "inr",
+   "text": "₹245.74 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "hh_outlays_all": {
+   "value": 24573730.817187,
+   "unit": "inr",
+   "text": "₹245.74 lakh crore",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "hh_consumption_per100": {
+   "value": 66.80119370921439,
+   "unit": "per100",
+   "text": "₹66.8",
+   "split": "estimated",
+   "total": "official"
+  },
+  "hh_saving_per100": {
+   "value": 23.97002713940478,
+   "unit": "per100",
+   "text": "₹24.0",
+   "split": "balancing_set",
+   "total": "official"
+  },
+  "hh_taxes_per100": {
+   "value": 3.3305544428100338,
+   "unit": "per100",
+   "text": "₹3.3",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "hh_finance_per100": {
+   "value": 3.052022384038849,
+   "unit": "per100",
+   "text": "₹3.1",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "hh_abroad_per100": {
+   "value": 0.40657975233504695,
+   "unit": "per100",
+   "text": "₹0.4",
+   "split": "estimated",
+   "total": "official"
+  },
+  "hh_to_gov_per100": {
+   "value": 0.11546117688062119,
+   "unit": "per100",
+   "text": "₹0.1",
+   "split": "balancing_set",
+   "total": ""
+  },
+  "hh_residual_per100": {
+   "value": 2.32416139531628,
+   "unit": "per100",
+   "text": "₹2.3",
+   "split": "estimated",
+   "total": "derived"
+  },
+  "pfce_tax_cgst": {
+   "value": 460218.79272882384,
+   "unit": "inr",
+   "text": "₹4.60 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_tax_sgst": {
+   "value": 442567.65530897083,
+   "unit": "inr",
+   "text": "₹4.43 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_tax_cess": {
+   "value": 82199.76642281927,
+   "unit": "inr",
+   "text": "₹82,200 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_tax_uexc": {
+   "value": 138483.93566038122,
+   "unit": "inr",
+   "text": "₹1.38 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_tax_svat": {
+   "value": 182725.64561701484,
+   "unit": "inr",
+   "text": "₹1.83 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_tax_sexc": {
+   "value": 197657.48619198086,
+   "unit": "inr",
+   "text": "₹1.98 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_tax_oprt": {
+   "value": 52913.40393573642,
+   "unit": "inr",
+   "text": "₹52,913 crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_gst": {
+   "value": 984986.2144606139,
+   "unit": "inr",
+   "text": "₹9.85 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_other_tax": {
+   "value": 571780.4714051133,
+   "unit": "inr",
+   "text": "₹5.72 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_gst_per100": {
+   "value": 6.000325806866018,
+   "unit": "per100",
+   "text": "₹6.0",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_other_tax_per100": {
+   "value": 3.483164604809103,
+   "unit": "per100",
+   "text": "₹3.5",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_imports": {
+   "value": 725905.8449134514,
+   "unit": "inr",
+   "text": "₹7.26 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_margins": {
+   "value": 786170.1951484873,
+   "unit": "inr",
+   "text": "₹7.86 lakh crore",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_imports_per100": {
+   "value": 4.422063487430901,
+   "unit": "per100",
+   "text": "₹4.4",
+   "split": "estimated",
+   "total": ""
+  },
+  "pfce_margins_per100": {
+   "value": 4.789181047697789,
+   "unit": "per100",
+   "text": "₹4.8",
+   "split": "estimated",
+   "total": ""
+  }
+ }
+}

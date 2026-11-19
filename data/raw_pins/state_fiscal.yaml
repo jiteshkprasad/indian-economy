@@ -1,0 +1,228 @@
+# Pinned raw files for one ingest unit. Written by `python -m pipeline fetch`; do not edit by hand.
+# key '<source_id>/<name>' -> the exact bytes (sha256) every build uses. `history` keeps superseded pins.
+pins:
+  fc16_relevant_data/fc16_kfi.xlsx:
+    body_sha256: null
+    bytes: 530793
+    method: GET
+    path: data/raw/fc16_relevant_data/2026-09-29/state_fiscal/fc16_kfi.xlsx
+    retrieved_at: '2026-09-29T10:18:56Z'
+    sha256: 8e81beafe7874f694f67bd604c7faca10b846fbf4e4adcf2331f5f4810ebcca0
+    url: https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/State%20Finances%20-%20Key%20Fiscal%20Indicators.xlsx
+  fc16_relevant_data/fc16_state_accounts.xlsx:
+    body_sha256: null
+    bytes: 53376635
+    method: GET
+    path: data/raw/fc16_relevant_data/2026-09-29/state_fiscal/fc16_state_accounts.xlsx
+    retrieved_at: '2026-09-29T10:19:09Z'
+    sha256: 5a285dc8136d1f130bd09cd53ab4f5920dc08c06d1ce6039cbae06c81bf598c3
+    url: https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/State%20Finance%20Accounts%20-%20Revenue%20and%20Expenditure.xlsx
+  fc16_relevant_data/fc16_subsidies.xlsx:
+    body_sha256: null
+    bytes: 39108
+    method: GET
+    path: data/raw/fc16_relevant_data/2026-09-29/state_fiscal/fc16_subsidies.xlsx
+    retrieved_at: '2026-09-29T10:19:00Z'
+    sha256: 88a2d8df60736611f9e0c850002f68767a132f4e03e4a948d7275f322a6dbf0d
+    url: https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/Sector%20wise%20Subsidies%20and%20Transfers.xlsx
+  fc16_relevant_data/fc16_transfers.xlsx:
+    body_sha256: null
+    bytes: 96812
+    method: GET
+    path: data/raw/fc16_relevant_data/2026-09-29/state_fiscal/fc16_transfers.xlsx
+    retrieved_at: '2026-09-29T10:18:58Z'
+    sha256: 4bfca9d040734cae4aabf693ea1817f2e437cd58f9066079bf5d519a90d1ed3d
+    url: https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/Time%20series%20of%20transfer%20of%20resources%20from%20Centre%20to%20States.xlsx
+  fc16_ulb_cityfinance_dump/fc16_ulb_cityfinance.xlsx:
+    body_sha256: null
+    bytes: 10380666
+    method: GET
+    path: data/raw/fc16_ulb_cityfinance_dump/2026-09-29/state_fiscal/fc16_ulb_cityfinance.xlsx
+    retrieved_at: '2026-09-29T10:20:47Z'
+    sha256: 0502498f8b22d05cfc7fc043221091af44de47ea7fff68e9f9c5ef1d54b5b492
+    url: https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/FC16%20ULB%20Data%20Dump%20Cityfinance.xlsx
+  rbi_municipal_finances/muni_st01.xlsx:
+    body_sha256: null
+    bytes: 12209
+    method: GET
+    path: data/raw/rbi_municipal_finances/2026-09-29/state_fiscal/muni_st01.xlsx
+    retrieved_at: '2026-09-29T10:23:38Z'
+    sha256: b4a65ec0099d5af8de26afc00d8dacdf21051828a59deaead44854eaa4df46a2
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/01STATEMENTS13112024828DA9DF2F4C444BB9862C495B2A2571.XLSX
+  rbi_municipal_finances/muni_st04.xlsx:
+    body_sha256: null
+    bytes: 12193
+    method: GET
+    path: data/raw/rbi_municipal_finances/2026-09-29/state_fiscal/muni_st04.xlsx
+    retrieved_at: '2026-09-29T10:23:48Z'
+    sha256: 1ecff8e50e6711c2c60c416674e11e264f8ebee8057647b4e399be864ca2bd12
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/04STATEMENTS13112024576A7E28923A4E78A5C82B10DDA2BC0B.XLSX
+  rbi_municipal_finances/muni_st08.xlsx:
+    body_sha256: null
+    bytes: 11485
+    method: GET
+    path: data/raw/rbi_municipal_finances/2026-09-29/state_fiscal/muni_st08.xlsx
+    retrieved_at: '2026-09-29T10:23:58Z'
+    sha256: 0603dc2f865f22b03fbe431c01edb66482b198019811a214f79de054182500e3
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/08STATEMENTS131120242F348A1516CA48A0B28CFE75717A3486.XLSX
+  rbi_municipal_finances/rbi_muni_listing.html:
+    body_sha256: null
+    bytes: 123607
+    method: GET
+    path: data/raw/rbi_municipal_finances/2026-09-29/state_fiscal/rbi_muni_listing.html
+    retrieved_at: '2026-09-29T10:19:22Z'
+    sha256: c3dd09a1326adf85d5d9cb924df1ece5ff19e62daf7b5682e3c7d790aaa39979
+    url: https://www.rbi.org.in/Scripts/AnnualPublications.aspx?head=Report%20on%20Municipal%20Finances
+  rbi_pri_finances/pri_app1_part7.xlsx:
+    body_sha256: null
+    bytes: 13275
+    method: GET
+    path: data/raw/rbi_pri_finances/2026-09-29/state_fiscal/pri_app1_part7.xlsx
+    retrieved_at: '2026-09-29T10:23:17Z'
+    sha256: f8e187394b38fcbba5540524421f5a65220bb0e097ee327549943f524316655e
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/7APPENDIXI2401202489952FC1CD09426DA87C3BD840BCD66F.XLSX
+  rbi_pri_finances/pri_app2_part7.xlsx:
+    body_sha256: null
+    bytes: 13354
+    method: GET
+    path: data/raw/rbi_pri_finances/2026-09-29/state_fiscal/pri_app2_part7.xlsx
+    retrieved_at: '2026-09-29T10:23:27Z'
+    sha256: dd52ecaf227a9a14afc93aecab03015b87d612c0057e798def0b8aa4ea033f1b
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/7APPENDIXII240120246384CB6088A746198E9D8386F3E88943.XLSX
+  rbi_pri_finances/pri_ch2.pdf:
+    body_sha256: null
+    bytes: 463145
+    method: GET
+    path: data/raw/rbi_pri_finances/2026-09-29/state_fiscal/pri_ch2.pdf
+    retrieved_at: '2026-09-29T10:40:29Z'
+    sha256: a36c920f0601bd35b9592c3169141301bac829ad23f02c6820528fc3747004e7
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/PDFs/2FISCALPOSITIONOFPANCHAYATIRAJ4F4C1CCC4CD3442097324939C4AE4342.PDF
+  rbi_pri_finances/rbi_pri_listing.html:
+    body_sha256: null
+    bytes: 92370
+    method: GET
+    path: data/raw/rbi_pri_finances/2026-09-29/state_fiscal/rbi_pri_listing.html
+    retrieved_at: '2026-09-29T10:19:24Z'
+    sha256: 8f65aa90afab3d6cdc3c7210e39b782312316bece009882fbc8cc91cde44eb4f
+    url: https://www.rbi.org.in/Scripts/OccasionalPublications.aspx?head=Finances%20of%20Panchayati%20Raj%20Institutions
+  rbi_state_finances_study/rbi_sf_listing.html:
+    body_sha256: null
+    bytes: 196486
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/rbi_sf_listing.html
+    retrieved_at: '2026-09-29T10:19:18Z'
+    sha256: 8849c23d9b16d7fe79629345703ebf2a8299ca256ba3e9adb9418c7416b29620
+    url: https://www.rbi.org.in/Scripts/AnnualPublications.aspx?head=State%20Finances%20:%20A%20Study%20of%20Budgets
+  rbi_state_finances_study/sf2526_app_t01.xlsx:
+    body_sha256: null
+    bytes: 13116
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_app_t01.xlsx
+    retrieved_at: '2026-09-29T10:22:32Z'
+    sha256: 69de65e9eecced5a69e9cd924eb8d6ccf1854cfc1d28232c5964fcaaf1423eca
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/01_APP230120266318663B94AF422D8941472ECF135352.XLSX
+  rbi_state_finances_study/sf2526_app_t02.xlsx:
+    body_sha256: null
+    bytes: 15923
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_app_t02.xlsx
+    retrieved_at: '2026-09-29T10:20:47Z'
+    sha256: 30bba26ddc9ab35348d0066e4ed5a108e3ac39cea4ef85a219b87b93509c92b0
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/02_APP23012026B2830D87C491433F932392727168FB91.XLSX
+  rbi_state_finances_study/sf2526_app_t03.xlsx:
+    body_sha256: null
+    bytes: 12315
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_app_t03.xlsx
+    retrieved_at: '2026-09-29T10:22:42Z'
+    sha256: 9a4bd639a16c92abe4470c0e4dd313c59893843cd1ccb91991dd50a7a330c42a
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/03_APP23012026E50A3CF9FA1D44E19272A25D8FABC6B2.XLSX
+  rbi_state_finances_study/sf2526_app_t09.xlsx:
+    body_sha256: null
+    bytes: 15035
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_app_t09.xlsx
+    retrieved_at: '2026-09-29T10:22:53Z'
+    sha256: cf5c2e8dd2732e167ed41fc19f7991fdf803e956126d8e91b6ca540fd0e0d5d4
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/09_APP23012026FAB0E6DC3D174F09B0ADCE0855EF8016.XLSX
+  rbi_state_finances_study/sf2526_app_t11.xlsx:
+    body_sha256: null
+    bytes: 15149
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_app_t11.xlsx
+    retrieved_at: '2026-09-29T10:23:03Z'
+    sha256: 0ff963f867cbe7f70646b5eeb60c1fb69e8373daa89bb39f8f28e505f54a5f0d
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/11_APP230120264ABF938C6F214A6F80A5379B6DC5CC4A.XLSX
+  rbi_state_finances_study/sf2526_appx1_all.xlsx:
+    body_sha256: null
+    bytes: 24664
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_appx1_all.xlsx
+    retrieved_at: '2026-09-29T10:20:59Z'
+    sha256: ed9f1e631c5cbd9a46289fd0ec114091533a6f7d5acd45d494191fe6aa9bdc60
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/1APPENDIX23012026_8D7CB95CC812F44FA964A24EF98D7D304.XLSX
+  rbi_state_finances_study/sf2526_appx2_all.xlsx:
+    body_sha256: null
+    bytes: 24277
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_appx2_all.xlsx
+    retrieved_at: '2026-09-29T10:21:09Z'
+    sha256: f8e2d8abba4301aa3590c0a455162ff87cfcb96a7e5f825e570ae8353433e4a0
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/2APPENDIX23012026_8DCD8C722C17641A0BD6D65030B172EDF.XLSX
+  rbi_state_finances_study/sf2526_appx3_all.xlsx:
+    body_sha256: null
+    bytes: 29967
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_appx3_all.xlsx
+    retrieved_at: '2026-09-29T10:21:19Z'
+    sha256: 7265d205555fc84dd69c7dc5416abedb0a67b0d2a5355e4207c2fa0e3fb01a92
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/3APPENDIX23012026_4EF3E411D370147538EF55357920EB7F8.XLSX
+  rbi_state_finances_study/sf2526_appx4_all.xlsx:
+    body_sha256: null
+    bytes: 21550
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_appx4_all.xlsx
+    retrieved_at: '2026-09-29T10:21:30Z'
+    sha256: 2e18c7b420d6059d834aca941430d4f560b3faf8f7cf62cebab9d05962084d8c
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/4APPENDIX23012026_17A78A4D707A954346B1C674CC80204DFB.XLSX
+  rbi_state_finances_study/sf2526_st13.xlsx:
+    body_sha256: null
+    bytes: 12636
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_st13.xlsx
+    retrieved_at: '2026-09-29T10:21:40Z'
+    sha256: 086bd2753166ecbb3289a1027981c8df9074f9addae41f6bb2227046677a5062
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/13_ST230120265B6803A482FD41179A091F70AF8B6A6A.XLSX
+  rbi_state_finances_study/sf2526_st14.xlsx:
+    body_sha256: null
+    bytes: 12442
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_st14.xlsx
+    retrieved_at: '2026-09-29T10:21:50Z'
+    sha256: f0492963c3b5a01da95535c67db6d522df1cbc935ddf76c553c02165d501f56f
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/14_ST230120264DFE56A61A0F424C823D5A84BE4C0294.XLSX
+  rbi_state_finances_study/sf2526_st15.xlsx:
+    body_sha256: null
+    bytes: 12570
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_st15.xlsx
+    retrieved_at: '2026-09-29T10:22:01Z'
+    sha256: 16fdc6643388e23219e36b341fbf34264d2eefde365414818162c4c89d92c098
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/15_ST230120265C79C1E441C9480BBDE51CE41BE76B58.XLSX
+  rbi_state_finances_study/sf2526_st17.xlsx:
+    body_sha256: null
+    bytes: 13593
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_st17.xlsx
+    retrieved_at: '2026-09-29T10:22:11Z'
+    sha256: 6aa2a7f82f0710282804b0a376e2416e11596c80dbab7a8dbdd71eb8227a2363
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/17_ST2301202683B49BF6F4584A6985B2CCCAA41B020E.XLSX
+  rbi_state_finances_study/sf2526_st36.xlsx:
+    body_sha256: null
+    bytes: 13196
+    method: GET
+    path: data/raw/rbi_state_finances_study/2026-09-29/state_fiscal/sf2526_st36.xlsx
+    retrieved_at: '2026-09-29T10:22:21Z'
+    sha256: f29c38e5a3713b054c39e4deaa7c810ae09129c1ca0da57b4e8a25effca7c994
+    url: https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/36_ST230120262E61B283CDE24F4786F619C5301E81C5.XLSX
+unit: state_fiscal

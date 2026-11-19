@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 13130,
+  "content_type": "application/json; charset=utf-8",
+  "final_url": "https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=5&Format=JSON&limit=200&page=1",
+  "key": "mospi_nas_api/nasapi_b2011_current_q_i05_p01.json",
+  "method": "GET",
+  "name": "nasapi_b2011_current_q_i05_p01.json",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://esankhyiki.mospi.gov.in/",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "13130",
+    "content-type": "application/json; charset=utf-8",
+    "etag": "W/\"334a-Aing/KYkC+9xnGjFvUYmtpORrec\"",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T14:25:30Z",
+  "sha256": "87d3c994b57122535c39ee7669c9fc37f0b97397c90dec3dd5959715a4b9de1c",
+  "source_id": "mospi_nas_api",
+  "status": 200,
+  "url": "https://api.mospi.gov.in/api/nas/getNASData?base_year=2011-12&series=Current&frequency_code=Quarterly&indicator_code=5&Format=JSON&limit=200&page=1"
+}

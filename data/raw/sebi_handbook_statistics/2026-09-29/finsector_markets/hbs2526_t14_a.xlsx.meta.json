@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 14687,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2014%20Funds%20Mobilised%20by%20all%20Instruments_Y.xlsx",
+  "key": "sebi_handbook_statistics/hbs2526_t14_a.xlsx",
+  "method": "GET",
+  "name": "hbs2526_t14_a.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.sebi.gov.in/reports-and-statistics/publications/aug-2026/handbook-of-statistics-2025-26_103700.html",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "14687",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "last-modified": "Mon, 10 Aug 2026 08:25:45 GMT",
+    "server": "Apache"
+  },
+  "retrieved_at": "2026-09-29T10:20:37Z",
+  "sha256": "945c01f8389a9bae75498c945b0c9b947ed8c7bd08e928bb7214f1ae04ce58d3",
+  "source_id": "sebi_handbook_statistics",
+  "status": 200,
+  "url": "https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2014%20Funds%20Mobilised%20by%20all%20Instruments_Y.xlsx"
+}

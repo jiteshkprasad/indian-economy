@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 773738,
+  "content_type": "application/pdf",
+  "final_url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786967914812.pdf",
+  "key": "sebi_handbook_statistics/hbs2025_26_contents.pdf",
+  "method": "GET",
+  "name": "hbs2025_26_contents.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.sebi.gov.in/reports-and-statistics/publications/aug-2026/handbook-of-statistics-2025-26_103700.html",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "773738",
+    "content-type": "application/pdf",
+    "last-modified": "Mon, 17 Aug 2026 11:58:34 GMT",
+    "server": "Apache"
+  },
+  "retrieved_at": "2026-09-29T10:19:48Z",
+  "sha256": "2d9f21d5171a9ba2c6d302ba5d9b64cf63379692df29d9ee80e46911b6f418ee",
+  "source_id": "sebi_handbook_statistics",
+  "status": 200,
+  "url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786967914812.pdf"
+}

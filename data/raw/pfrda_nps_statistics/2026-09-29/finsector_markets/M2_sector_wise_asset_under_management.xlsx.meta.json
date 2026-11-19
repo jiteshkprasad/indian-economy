@@ -1,0 +1,36 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 18495,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://www.pfrda.org.in/documents/33652/202496/M2_sector_wise_asset_under_management.xlsx?v=1.238",
+  "key": "pfrda_nps_statistics/M2_sector_wise_asset_under_management.xlsx",
+  "method": "GET",
+  "name": "M2_sector_wise_asset_under_management.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.pfrda.org.in/research-publications/statistics/statistical-data",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-disposition": "attachment; filename=\"M2_sector_wise_asset_under_management.xlsx\"",
+    "content-length": "18495",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "last-modified": "Mon, 28 Sep 2026 18:42:00 GMT",
+    "server": "Apache"
+  },
+  "retrieved_at": "2026-09-29T10:19:56Z",
+  "sha256": "fd7451b82eb30bab30dd8f6fd8459376f23f983df1936d7830c754ecf74322ee",
+  "source_id": "pfrda_nps_statistics",
+  "status": 200,
+  "url": "https://www.pfrda.org.in/documents/33652/202496/M2_sector_wise_asset_under_management.xlsx?v=1.238"
+}

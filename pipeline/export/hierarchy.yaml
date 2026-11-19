@@ -1,0 +1,184 @@
+# The account hierarchy for the Map's semantic zoom (docs/phase3/PLAN.md s.3.2). Owner: U1.
+#
+# Rules (tests/export/test_hierarchy.py checks every one):
+# - every one of the 128 accounts in pipeline/sam/accounts.yaml appears exactly once as a leaf;
+# - a level-1 group with one account is not created: the account is the node;
+# - level-0 ids are UPPER words, level-1 ids are <L0>.<WORD>, level-2 ids are account codes;
+# - `col` is the level-0 column of the unrolled layout (full preset); children inherit it;
+# - the global vertical `order` is the depth-first order of this file (parents before children),
+#   so expanded children replace their parent in place.
+# English labels and descriptions are NOT here: they live in web/content/en/map-text.json (U6).
+# `name_tech` is a short technical name used only in tests, logs and as a last-resort label.
+
+kinds:  # node kind -> colour token name (hex values live in U2's web/src/styles/tokens.css)
+  production: --k-production
+  factors: --k-factors
+  households: --k-households
+  corporations: --k-corporations
+  government: --k-government
+  row: --k-row
+  capital: --k-capital
+  discrepancy: --k-discrepancy
+
+split_node: PRDS  # drawn twice in the full preset: payer copy in column 0, receiver copy in column 8
+split_col: 8
+
+nodes:
+  - id: PRDS
+    name_tech: Goods and services (product markets)
+    col: 0
+    kind: production
+    children:
+      - {id: PRDS.AGRI, name_tech: "Agriculture, forestry and fishing products", accounts: [C_CROP, C_LVST, C_FOFI]}
+      - {id: PRDS.MINE, name_tech: "Mining products", accounts: [C_COAL, C_OILG, C_OMIN]}
+      - {id: PRDS.MANU, name_tech: "Manufactured products", accounts: [C_FOOD, C_BVTB, C_TXAP, C_WOOD, C_GJOM, C_RPET, C_CHEM, C_PHRM, C_NMMN, C_MTLS, C_MACH, C_ELEQ, C_TREQ]}
+      - {id: PRDS.CNUT, name_tech: "Construction and utilities", accounts: [C_CNST, C_UTIL]}
+      - {id: PRDS.TTC, name_tech: "Trade, hotels, transport and communication", accounts: [C_TRAD, C_HOTL, C_TRNS, C_COMM]}
+      - {id: PRDS.FIRE, name_tech: "Finance, insurance, real estate and business services", accounts: [C_FINS, C_INSR, C_DWEL, C_BSRE, C_ITSV]}
+      - {id: PRDS.PSOC, name_tech: "Public administration and social services", accounts: [C_EDUC, C_HLTH, C_OSRV, C_PADM]}
+      - {account: M_TTM}
+  - id: PROD
+    name_tech: Industries (production)
+    col: 1
+    kind: production
+    children:
+      - {id: PROD.AGRI, name_tech: "Agriculture, forestry and fishing", accounts: [A_CROP, A_LVST, A_FOFI]}
+      - {id: PROD.MINE, name_tech: "Mining", accounts: [A_COAL, A_OILG, A_OMIN]}
+      - {id: PROD.MANU, name_tech: "Manufacturing", accounts: [A_FOOD, A_BVTB, A_TXAP, A_WOOD, A_GJOM, A_RPET, A_CHEM, A_PHRM, A_NMMN, A_MTLS, A_MACH, A_ELEQ, A_TREQ]}
+      - {id: PROD.CNUT, name_tech: "Construction and utilities", accounts: [A_CNST, A_UTIL]}
+      - {id: PROD.TTC, name_tech: "Trade, hotels, transport and communication", accounts: [A_TRAD, A_HOTL, A_TRNS, A_COMM]}
+      - {id: PROD.FIRE, name_tech: "Finance, insurance, real estate and business services", accounts: [A_FINS, A_INSR, A_DWEL, A_BSRE, A_ITSV]}
+      - {id: PROD.PSOC, name_tech: "Public administration and social services", accounts: [A_EDUC, A_HLTH, A_OSRV, A_PADM]}
+  - id: ROW
+    name_tech: Rest of the world (current account)
+    col: 1
+    kind: row
+    children:
+      - {account: R_ROW}
+  - id: FACT
+    name_tech: Wages, mixed income and profits (factor incomes)
+    col: 2
+    kind: factors
+    children:
+      - {id: FACT.LAB, name_tech: "Labour (regular and casual)", accounts: [F_LREG, F_LCAS]}
+      - {account: F_MIXD}
+      - {account: F_GOSC}
+  - id: HH
+    name_tech: Households
+    col: 3
+    kind: households
+    children:
+      - {id: HH.RUR, name_tech: "Rural households", accounts: [H_R1, H_R2, H_R3, H_R4, H_R5]}
+      - {id: HH.URB, name_tech: "Urban households", accounts: [H_U1, H_U2, H_U3, H_U4, H_U5]}
+  - id: NFC
+    name_tech: Companies (non-financial)
+    col: 3
+    kind: corporations
+    children:
+      - {account: E_NFPU}
+      - {account: E_NFPR}
+  - id: FC
+    name_tech: Banks and financial institutions
+    col: 3
+    kind: corporations
+    children:
+      - {account: E_RBI}
+      - {account: E_BANK}
+      - {account: E_NBFC}
+      - {account: E_INSP}
+  - id: TAX
+    name_tech: Taxes (collection accounts)
+    col: 4
+    kind: government
+    children:
+      - {id: TAX.GST, name_tech: "GST (central, state and compensation cess)", accounts: [T_CGST, T_SGST, T_GCES]}
+      - {id: TAX.OIND, name_tech: "Other indirect taxes", accounts: [T_CUST, T_UEXC, T_SVAT, T_SEXC, T_OPRT]}
+      - {id: TAX.DIR, name_tech: "Direct taxes", accounts: [T_PIT, T_CIT]}
+      - {account: T_PSUB}
+      - {account: T_PROD}
+  - id: CEN
+    name_tech: Union government
+    col: 5
+    kind: government
+    children:
+      - {account: G_CEN}
+  - id: STA
+    name_tech: States and local bodies
+    col: 5
+    kind: government
+    children:
+      - {account: G_STA}
+  - id: SI
+    name_tech: Saving and investment (capital accounts)
+    col: 6
+    kind: capital
+    children:
+      - {account: K_HH}
+      - {id: SI.CORP, name_tech: "Corporate capital accounts", accounts: [K_NFPU, K_NFPR]}
+      - {id: SI.FIN, name_tech: "Financial corporations' capital accounts", accounts: [K_RBI, K_BANK, K_NBFC, K_INSP, K_MUTF]}
+      - {id: SI.GOV, name_tech: "Government capital accounts", accounts: [K_GCEN, K_GSTA]}
+      - {account: K_ROW}
+      - {account: K_DSTK}
+  - id: DISC
+    name_tech: Discrepancies and reconciliation items
+    col: 6
+    kind: discrepancy
+    children:
+      - {account: X_DISC}
+  - id: FINM
+    name_tech: Financial markets (instruments)
+    col: 7
+    kind: capital
+    children:
+      - {id: FINM.MONEY, name_tech: "Currency and deposits", accounts: [I_CURR, I_DEPO]}
+      - {account: I_LOAN}
+      - {id: FINM.GOVD, name_tech: "Government debt and small savings", accounts: [I_GSEC, I_SSAV]}
+      - {id: FINM.SEC, name_tech: "Corporate bonds, equity and mutual funds", accounts: [I_CBND, I_EQTY, I_MFUN]}
+      - {account: I_INPE}
+      - {id: FINM.OTH, name_tech: "Reserve assets and other items", accounts: [I_RESV, I_OTHR]}
+
+# Presets: merges applied on top of level 0 (s.3.2). A merge id that equals one of its members keeps
+# that member's place (SI absorbs FINM); a new id (PRODUCERS) takes the place of its first member.
+presets:
+  simple:
+    merges:
+      PRODUCERS: [PRDS, PROD]
+      SI: [SI, FINM]
+    columns:
+      - [PRODUCERS]
+      - [ROW]
+      - [FACT]
+      - [HH, NFC, FC]
+      - [TAX]
+      - [CEN, STA]
+      - [SI, DISC]
+      - [PRODUCERS]
+    split_node: PRODUCERS
+    return_flows: stubs
+  full:
+    merges: {}
+    columns:
+      - [PRDS]
+      - [PROD, ROW]
+      - [FACT]
+      - [HH, NFC, FC]
+      - [TAX]
+      - [CEN, STA]
+      - [SI, DISC]
+      - [FINM]
+      - [PRDS]
+    split_node: PRDS
+    return_flows: arcs
+
+# Nodes of the top-flows view (s.2.1, s.3.7.3): the simple preset with TAX, CEN and STA merged into GOV.
+# `col` uses the simple preset's columns; GOV takes the Centre/States column (5); column 4 is empty.
+ts_nodes:
+  - {id: PRODUCERS, members: [PRDS, PROD], col: 0, kind: production}
+  - {id: ROW, members: [ROW], col: 1, kind: row}
+  - {id: FACT, members: [FACT], col: 2, kind: factors}
+  - {id: HH, members: [HH], col: 3, kind: households}
+  - {id: NFC, members: [NFC], col: 3, kind: corporations}
+  - {id: FC, members: [FC], col: 3, kind: corporations}
+  - {id: GOV, members: [TAX, CEN, STA], col: 5, kind: government}
+  - {id: SI, members: [SI, FINM], col: 6, kind: capital}
+  - {id: DISC, members: [DISC], col: 6, kind: discrepancy}

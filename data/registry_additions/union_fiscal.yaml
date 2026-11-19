@@ -1,0 +1,39 @@
+unit: union_fiscal
+sources:
+- id: pib_gst_monthly_releases
+  name: PIB / Ministry of Finance monthly GST revenue collection press releases (FY 2023-24 collections)
+  publisher: Ministry of Finance via Press Information Bureau (PIB Delhi)
+  family: union_fiscal
+  urls:
+    landing: https://www.pib.gov.in/allRel.aspx?reg=3&lang=1
+    data:
+    - https://www.pib.gov.in/PressReleasePage.aspx?PRID=1962701&reg=3&lang=1
+    docs:
+    - https://www.pib.gov.in/PressReleaseDetail.aspx?PRID=1962701&reg=3&lang=1
+  access:
+    method: 'HTML. Releases are located with the public release archive allRel.aspx (ASP.NET form posted back
+      with its own __VIEWSTATE/__EVENTVALIDATION and the ministry/day/month/year filters; DECISIONS D1-7). The
+      release text is served by PressReleasePage.aspx?PRID=<id>&reg=3&lang=1 (the page PIB frames inside
+      PressReleaseDetail.aspx). No login, key, cookie or CSRF token is needed; no challenge was served on
+      2026-09-29.'
+    requires: none
+    notes: Named substitute for GSTN (DECISIONS D1-1c). PIB stopped the monthly GST releases after the May-2024 data
+      (registry gstn_gst_statistics quirks, secondary sources), so this source covers FY 2023-24 but not later years.
+  license:
+    name: not established (no copyright or terms link on the archive or release pages; /robots.txt returns an error
+      page). Official press releases issued for public dissemination.
+    url: null
+    attribution: Cite 'Press Information Bureau, Ministry of Finance' with the release id and date.
+  frequency: Monthly (1st of the month following collection) until the June-2024 release
+  coverage:
+    start: 2023-04
+    end: 2024-03
+    notes: This unit ingests the 12 releases for collections April 2023 to March 2024 (released 1 May 2023 to 1 Apr
+      2024).
+  base_year_price_basis: Rs crore, current prices; cash collections (gross, before refunds)
+  verification:
+    status: unverified
+    notes: Added by the union_fiscal ingest agent on 2026-09-29 (union_fiscal-1). Existence and release channel
+      checked live on 2026-09-29 (archive form post for 1 Oct 2023, Ministry of Finance, lists PRID 1962701 '1,62,712
+      crore gross GST revenue collected during September 2023'). Licence text not found. Needs orchestrator
+      verification before merge.

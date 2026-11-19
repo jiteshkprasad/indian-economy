@@ -1,0 +1,18 @@
+# raw downloads are not committed (licences; size); their .meta.json sidecars are
+data/raw/**
+!data/raw/**/
+!data/raw/**/*.meta.json
+!data/raw/.gitkeep
+data/raw/.hosts/
+data/runs/
+data/.pipeline.lock*
+data/clean/.*
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+node_modules/
+web/out/
+web/.next/

@@ -1,0 +1,433 @@
+# Balancing explanations for block `rest_of_world` (DECISIONS D2-22; item format in docs/phase2/SAM_GUIDE.md s.12 and
+# the header of pipeline/sam/explanations.yaml). Rewritten for the balanced run of the Wave C audit fix
+# (2026-10-01; docs/phase2/verify/balanced_sam.md BS-1..BS-14): 17 entry items and 8 cell items
+# (ref "*"), every figure read from data/sam/2023-24 (balancing_log, balancing_constraints, prior_diagnostics,
+# capital_financial's k9_decomposition). Every `why` starts with a verdict:
+#   - "Explained": the prior was off for a documented source disagreement and the balanced value moves toward
+#     other evidence, or stays inside a declared evidenced band;
+#   - "Explained in direction; level unexplained": the account gap that drove the move is documented, but no
+#     source supports this entry's balanced level (or the sources disagree);
+#   - "Unexplained": the move carries an account gap whose cause is not a documented source disagreement (here:
+#     E_NFPU's prior surplus, government-33 / fincorp-37), a finding for Checkpoint B.
+# Verdicts in this file: explained 2, level unexplained 23.
+# Mechanism: cross-entropy (free low 0.25, medium 1, high 4, anchored 16) moves all free entries of one cell with
+# the same constraint membership by one factor z = balanced / prior, set by the account and constraint
+# multipliers, so the low-confidence entries of the accounts with the largest prior gaps move most. GRAS (no
+# weights, no constraints) is quoted as a cross-check. Amounts in Rs crore, current prices, FY 2023-24.
+explanations:
+  - row: E_BANK
+    col: R_ROW
+    ref: "R13"
+    component: "oi_income"
+    prior: 16143.966105
+    balanced: 18670.068679
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). E_BANK <- R_ROW R13 oi_income, 16,144 -> 18,670
+      (2,526, +15.6%; z 1.156; free low; binding: row.r13_total (target 2,80,907, balanced 2,80,906, at its lower
+      edge)). The BoP totals hold (row.r13_total within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient
+      split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12).
+      Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 14,856. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: E_BANK
+    col: R_ROW
+    ref: "R13"
+    component: "other_primary_income"
+    prior: 7820.835067
+    balanced: 9044.588355
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). E_BANK <- R_ROW R13 other_primary_income, 7,821
+      -> 9,045 (1,224, +15.6%; z 1.156; free low; binding: row.r13_total (target 2,80,907, balanced 2,80,906, at its
+      lower edge)). The BoP totals hold (row.r13_total within +-1 of NAS 6.1 / BoP); only the domestic payer or
+      recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10,
+      -12). Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 7,197. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: E_NBFC
+    col: R_ROW
+    ref: "R13"
+    component: "di_income"
+    prior: 3838.004564
+    balanced: 3052.785304
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). E_NBFC <- R_ROW R13 di_income, 3,838 -> 3,053
+      (-785, -20.5%; z 0.795; free low; binding: row.r13_total (target 2,80,907, balanced 2,80,906, at its lower
+      edge)). The BoP totals hold (row.r13_total within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient
+      split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12).
+      Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 2,987. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: E_NFPR
+    col: R_ROW
+    ref: "R13"
+    component: "di_income"
+    prior: 73100.454580
+    balanced: 83743.462035
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). E_NFPR <- R_ROW R13 di_income, 73,100 -> 83,743
+      (10,643, +14.6%; z 1.146; free low; binding: row.r13_total (target 2,80,907, balanced 2,80,906, at its lower
+      edge)). The BoP totals hold (row.r13_total within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient
+      split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12).
+      Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 71,976. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: E_NFPR
+    col: R_ROW
+    ref: "R13"
+    component: "oi_income"
+    prior: 3643.761650
+    balanced: 4174.272474
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). E_NFPR <- R_ROW R13 oi_income, 3,644 -> 4,174
+      (531, +14.6%; z 1.146; free low; binding: row.r13_total (target 2,80,907, balanced 2,80,906, at its lower
+      edge)). The BoP totals hold (row.r13_total within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient
+      split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12).
+      Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 3,588. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: E_NFPR
+    col: R_ROW
+    ref: "R13"
+    component: "other_primary_income"
+    prior: 38741.699505
+    balanced: 44382.269034
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). E_NFPR <- R_ROW R13 other_primary_income, 38,742
+      -> 44,382 (5,641, +14.6%; z 1.146; free low; binding: row.r13_total (target 2,80,907, balanced 2,80,906, at
+      its lower edge)). The BoP totals hold (row.r13_total within +-1 of NAS 6.1 / BoP); only the domestic payer or
+      recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10,
+      -12). Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 38,146. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: E_RBI
+    col: R_ROW
+    ref: "R13"
+    component: "reserve_income_unexplained"
+    prior: 25645.500000
+    balanced: 7712.739243
+    why: >-
+      Explained. E_RBI <- R_ROW R13 reserve_income_unexplained, 25,646 -> 7,713 (-17,933, -69.9%; z 0.301; free low;
+      binding: row.r13_total (target 2,80,907, balanced 2,80,906, at its lower edge)). By design (D2-7,
+      rest_of_world-25): this entry is BoP 1.B.2.4 reserve income less the RBI Annual Report's figure, and fincorp
+      builds E_RBI's saving on the AR basis. The Wave C band k2a.rbi_ar_basis (target 94,159, balanced 96,659, at
+      its upper edge) (fincorp-34 (a)) holds E_RBI's saving near the NAS-derived figure, so balancing removed most
+      of the unexplained income from E_RBI and re-split the fixed R13 total over the other recipients; about 6,929
+      of it is the Union's IMF income (rest_of_world-26). GRAS (no weights, no constraints) gives 23,477.
+    sources: [cga_finance_accounts_aag, rbi_annual_report, rbi_hbs_external]
+  - row: R_ROW
+    col: E_BANK
+    ref: "R14"
+    component: "di_distributed"
+    prior: 16236.798391
+    balanced: 14498.887789
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). R_ROW <- E_BANK R14 di_distributed, 16,237 ->
+      14,499 (-1,738, -10.7%; z 0.893; free low; binding: row.r14_type.di (target 4,13,327, balanced 4,13,328, at
+      its upper edge)). The BoP totals hold (row.r14_type.* within +-1 of NAS 6.1 / BoP); only the domestic payer or
+      recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10,
+      -12). Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 15,997. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_BANK
+    ref: "R14a"
+    component: "reinvested_earnings"
+    prior: 10648.201609
+    balanced: 9508.468145
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). R_ROW <- E_BANK R14a reinvested_earnings, 10,648
+      -> 9,508 (-1,140, -10.7%; z 0.893; free low; binding: row.r14_type.di (target 4,13,327, balanced 4,13,328, at
+      its upper edge)). The BoP totals hold (row.r14_type.di / row.r14a_total within +-1 of NAS 6.1 / BoP); only the
+      domestic payer or recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key
+      (rest_of_world-4, -6, -10, -12). Entries of one weight in an account move by one factor, the signature of the
+      account's prior gap: E_NBFC 2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source
+      contradicts the move or supports its level. GRAS (no weights, no constraints) gives 10,491. The prior account
+      gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z
+      -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK
+      -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_NBFC
+    ref: "R14"
+    component: "di_distributed"
+    prior: 23816.213030
+    balanced: 30920.883876
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). R_ROW <- E_NBFC R14 di_distributed, 23,816 ->
+      30,921 (7,105, +29.8%; z 1.298; free low; binding: row.r14_type.di (target 4,13,327, balanced 4,13,328, at its
+      upper edge)). The BoP totals hold (row.r14_type.* within +-1 of NAS 6.1 / BoP); only the domestic payer or
+      recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10,
+      -12). Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 28,064. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_NBFC
+    ref: "R14"
+    component: "oi_other_interest"
+    prior: 25653.636678
+    balanced: 34006.273268
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). R_ROW <- E_NBFC R14 oi_other_interest, 25,654 ->
+      34,006 (8,353, +32.6%; z 1.326; free low; binding: row.r14_type.oi (target 2,04,454, balanced 2,04,453, at its
+      lower edge)). The BoP totals hold (row.r14_type.* within +-1 of NAS 6.1 / BoP); only the domestic payer or
+      recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10,
+      -12). Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 30,229. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_NBFC
+    ref: "R14"
+    component: "other_primary_income"
+    prior: 1577.603685
+    balanced: 2087.418407
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). R_ROW <- E_NBFC R14 other_primary_income, 1,578
+      -> 2,087 (510, +32.3%; z 1.323; free low; no constraint binds on it). The BoP totals hold (row.r14_type.*
+      within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient split moves, and that split is a
+      low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12). Entries of one weight in an account
+      move by one factor, the signature of the account's prior gap: E_NBFC 2,32,893, E_BANK -1,02,838, E_NFPR
+      -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its level. GRAS (no weights, no
+      constraints) gives 1,859. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure
+      institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893,
+      E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_NBFC
+    ref: "R14"
+    component: "pi_other"
+    prior: 6812.958442
+    balanced: 9402.813062
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). R_ROW <- E_NBFC R14 pi_other, 6,813 -> 9,403
+      (2,590, +38.0%; z 1.380; free low; binding: row.r14_type.pi (target 84,419, balanced 84,418, at its lower
+      edge)). The BoP totals hold (row.r14_type.* within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient
+      split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12).
+      Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 8,028. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_NBFC
+    ref: "R14a"
+    component: "reinvested_earnings"
+    prior: 15618.832716
+    balanced: 20278.123650
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). R_ROW <- E_NBFC R14a reinvested_earnings, 15,619
+      -> 20,278 (4,659, +29.8%; z 1.298; free low; binding: row.r14_type.di (target 4,13,327, balanced 4,13,328, at
+      its upper edge)). The BoP totals hold (row.r14_type.di / row.r14a_total within +-1 of NAS 6.1 / BoP); only the
+      domestic payer or recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key
+      (rest_of_world-4, -6, -10, -12). Entries of one weight in an account move by one factor, the signature of the
+      account's prior gap: E_NBFC 2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source
+      contradicts the move or supports its level. GRAS (no weights, no constraints) gives 18,404. The prior account
+      gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z
+      -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK
+      -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_NFPR
+    ref: "R14"
+    component: "di_distributed"
+    prior: 209569.721273
+    balanced: 204203.564964
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). R_ROW <- E_NFPR R14 di_distributed, 2,09,570 ->
+      2,04,204 (-5,366, -2.6%; z 0.974; free medium; binding: row.r14_type.di (target 4,13,327, balanced 4,13,328,
+      at its upper edge)). The BoP totals hold (row.r14_type.* within +-1 of NAS 6.1 / BoP); only the domestic payer
+      or recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6,
+      -10, -12). Entries of one weight in an account move by one factor, the signature of the account's prior gap:
+      E_NBFC 2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or
+      supports its level. GRAS (no weights, no constraints) gives 2,09,630. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_NFPR
+    ref: "R14"
+    component: "oi_other_interest"
+    prior: 68781.082353
+    balanced: 63305.150925
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). R_ROW <- E_NFPR R14 oi_other_interest, 68,781 ->
+      63,305 (-5,476, -8.0%; z 0.920; free low; binding: row.r14_type.oi (target 2,04,454, balanced 2,04,453, at its
+      lower edge)). The BoP totals hold (row.r14_type.* within +-1 of NAS 6.1 / BoP); only the domestic payer or
+      recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10,
+      -12). Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level. GRAS (no weights, no constraints) gives 68,801. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_RBI
+    ref: "R14"
+    component: "other_primary_income"
+    prior: 204.210679
+    balanced: 714.633455
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). R_ROW <- E_RBI R14 other_primary_income, 204 ->
+      715 (510, +249.9%; z 3.499; free low; no constraint binds on it). The BoP totals hold (row.r14_type.* within
+      +-1 of NAS 6.1 / BoP); only the domestic payer or recipient split moves, and that split is a low-confidence
+      FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12). Entries of one weight in an account move by one
+      factor, the signature of the account's prior gap: E_NBFC 2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI
+      25,646. No RoW source contradicts the move or supports its level. GRAS (no weights, no constraints) gives 235.
+      The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426,
+      households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892,
+      E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: E_BANK
+    col: R_ROW
+    ref: "*"
+    component: "*"
+    prior: 24005.148983
+    balanced: 27761.318208
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). Cell E_BANK <- R_ROW: 24,005 -> 27,761 (3,756,
+      +15.6%; 4 entries). Largest moves: rest_of_world R13 oi_income 2,526 (+15.6%); rest_of_world R13
+      other_primary_income 1,224 (+15.6%); rest_of_world R13 di_income 6 (+15.6%). The BoP totals hold
+      (row.r13_total within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient split moves, and that split
+      is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12). Entries of one weight in an
+      account move by one factor, the signature of the account's prior gap: E_NBFC 2,32,893, E_BANK -1,02,838,
+      E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its level.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: E_NBFC
+    col: R_ROW
+    ref: "*"
+    component: "*"
+    prior: 5970.394175
+    balanced: 4748.908266
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). Cell E_NBFC <- R_ROW: 5,970 -> 4,749 (-1,221,
+      -20.5%; 4 entries). Largest moves: rest_of_world R13 di_income -785 (-20.5%); rest_of_world R13
+      other_primary_income -398 (-20.5%); rest_of_world R13 pi_income -37 (-20.5%); rest_of_world R13 oi_income -1
+      (-20.5%). The BoP totals hold (row.r13_total within +-1 of NAS 6.1 / BoP); only the domestic payer or
+      recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10,
+      -12). Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: E_NFPR
+    col: R_ROW
+    ref: "*"
+    component: "*"
+    prior: 118913.167259
+    balanced: 136226.243257
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). Cell E_NFPR <- R_ROW: 1,18,913 -> 1,36,226
+      (17,313, +14.6%; 4 entries). Largest moves: rest_of_world R13 di_income 10,643 (+14.6%); rest_of_world R13
+      other_primary_income 5,641 (+14.6%); rest_of_world R13 oi_income 531 (+14.6%); rest_of_world R13 pi_income 499
+      (+14.6%). The BoP totals hold (row.r13_total within +-1 of NAS 6.1 / BoP); only the domestic payer or
+      recipient split moves, and that split is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10,
+      -12). Entries of one weight in an account move by one factor, the signature of the account's prior gap: E_NBFC
+      2,32,893, E_BANK -1,02,838, E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its
+      level.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: E_RBI
+    col: R_ROW
+    ref: "*"
+    component: "*"
+    prior: 131059.000000
+    balanced: 111165.734410
+    why: >-
+      Explained. Cell E_RBI <- R_ROW: 1,31,059 -> 1,11,166 (-19,893, -15.2%; 2 entries). Largest moves:
+      rest_of_world R13 reserve_income_unexplained -17,933 (-69.9%); rest_of_world R13 reserve_asset_income -1,961
+      (-1.9%). The largest mover is explained under its entry: By design (D2-7, rest_of_world-25): this entry is BoP
+      1.B.2.4 reserve income less the RBI Annual Report's figure, and fincorp builds E_RBI's saving on the AR basis.
+      The Wave C band k2a.rbi_ar_basis (target 94,159, balanced 96,659, at its upper edge) (fincorp-34 (a)) holds
+      E_RBI's saving near the NAS-derived figure, so balancing removed most of the unexplained income from E_RBI and
+      re-split the fixed R13 total over the other recipients; about 6,929 of it is the Union's IMF income
+      (rest_of_world-26).
+    sources: [cga_finance_accounts_aag, rbi_annual_report, rbi_hbs_external]
+  - row: R_ROW
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 114599.146944
+    balanced: 107929.961515
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). Cell R_ROW <- E_BANK: 1,14,599 -> 1,07,930
+      (-6,669, -5.8%; 6 entries). Largest moves: rest_of_world R14 oi_other_interest -1,981 (-8.8%); rest_of_world
+      R14 di_distributed -1,738 (-10.7%); rest_of_world R14 nri_deposit_interest -1,320 (-2.3%); rest_of_world R14a
+      reinvested_earnings -1,140 (-10.7%); rest_of_world R14 other_primary_income -255 (-9.0%). The BoP totals hold
+      (row.r14_type.* within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient split moves, and that split
+      is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12). Entries of one weight in an
+      account move by one factor, the signature of the account's prior gap: E_NBFC 2,32,893, E_BANK -1,02,838,
+      E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its level.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 73479.244551
+    balanced: 96695.512263
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). Cell R_ROW <- E_NBFC: 73,479 -> 96,696 (23,216,
+      +31.6%; 5 entries). Largest moves: rest_of_world R14 oi_other_interest 8,353 (+32.6%); rest_of_world R14
+      di_distributed 7,105 (+29.8%); rest_of_world R14a reinvested_earnings 4,659 (+29.8%); rest_of_world R14
+      pi_other 2,590 (+38.0%); rest_of_world R14 other_primary_income 510 (+32.3%). The BoP totals hold
+      (row.r14_type.* within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient split moves, and that split
+      is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12). Entries of one weight in an
+      account move by one factor, the signature of the account's prior gap: E_NBFC 2,32,893, E_BANK -1,02,838,
+      E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its level.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 485220.925545
+    balanced: 467586.194519
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). Cell R_ROW <- E_NFPR: 4,85,221 -> 4,67,586
+      (-17,635, -3.6%; 5 entries). Largest moves: rest_of_world R14 oi_other_interest -5,476 (-8.0%); rest_of_world
+      R14 di_distributed -5,366 (-2.6%); rest_of_world R14a reinvested_earnings -3,519 (-2.6%); rest_of_world R14
+      pi_other -2,503 (-4.2%); rest_of_world R14 other_primary_income -771 (-8.1%). The BoP totals hold
+      (row.r14_type.* within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient split moves, and that split
+      is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12). Entries of one weight in an
+      account move by one factor, the signature of the account's prior gap: E_NBFC 2,32,893, E_BANK -1,02,838,
+      E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its level.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]
+  - row: R_ROW
+    col: E_RBI
+    ref: "*"
+    component: "*"
+    prior: 7489.659235
+    balanced: 8420.696584
+    why: >-
+      Explained in direction; level unexplained (rest_of_world-27). Cell R_ROW <- E_RBI: 7,490 -> 8,421 (931,
+      +12.4%; 3 entries). Largest moves: rest_of_world R14 other_primary_income 510 (+249.9%); rest_of_world R14
+      oi_other_interest 420 (+250.6%); rest_of_world R14 reserve_asset_debit 1 (+0.0%). The BoP totals hold
+      (row.r14_type.* within +-1 of NAS 6.1 / BoP); only the domestic payer or recipient split moves, and that split
+      is a low-confidence FSF-stock or pro-rata key (rest_of_world-4, -6, -10, -12). Entries of one weight in an
+      account move by one factor, the signature of the account's prior gap: E_NBFC 2,32,893, E_BANK -1,02,838,
+      E_NFPR -1,13,892, E_RBI 25,646. No RoW source contradicts the move or supports its level.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_hbs_external]

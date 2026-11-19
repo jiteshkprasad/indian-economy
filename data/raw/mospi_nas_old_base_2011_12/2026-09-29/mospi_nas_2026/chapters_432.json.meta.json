@@ -1,0 +1,37 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 30441,
+  "content_type": "application/json; charset=utf-8",
+  "final_url": "https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data",
+  "key": "mospi_nas_old_base_2011_12/chapters_432.json",
+  "method": "POST",
+  "name": "chapters_432.json",
+  "redirects": [],
+  "request_body": {
+    "publication_id": 432
+  },
+  "request_headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Content-Type": "application/json",
+    "Origin": "https://www.mospi.gov.in",
+    "Referer": "https://mospi.gov.in/publications-reports/innerpage/432",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "30441",
+    "content-type": "application/json; charset=utf-8",
+    "etag": "W/\"76e9-cK10RUzdnIEDunlFvEyhZVprRBo\"",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:25:04Z",
+  "sha256": "0d732bb91ba333085cf3ef7bb38af9aed5bb63f15e8d34b3cf2ebb38aab6d0c6",
+  "source_id": "mospi_nas_old_base_2011_12",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data"
+}

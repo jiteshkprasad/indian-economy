@@ -1,0 +1,81 @@
+{/* Story 1 (U5). No numbers in this file: every figure is a <StoryFig> or <FigList> binding to stories/gst-rupee.json. */}
+
+<Step id="total">
+
+Every time you buy a phone, a bus ticket or a plate of biryani, part of the price is GST, the Goods and Services Tax. In 2023-24 GST added up to <StoryFig id="gst_total" />, which is <StoryFig id="gst_total_gdp" />.
+
+This is GST as the national accounts count it. It is **net**: the tax that businesses pay on their inputs and claim back as a credit is not counted twice. And it is counted **after settlement**: integrated GST (IGST), charged on sales from one State to another, has already been shared out between the Centre and the States, so there is no separate IGST pot in these accounts.
+
+On the map, GST is part of the flow from goods and services to taxes: whoever buys a product pays its tax along with the price.
+
+</Step>
+
+<Step id="split">
+
+GST comes in three parts. Of every hundred rupees of GST, <StoryFig id="cgst_per100" /> is Central GST (CGST), <StoryFig id="sgst_per100" /> is State GST (SGST) and <StoryFig id="cess_per100" /> is the GST compensation cess, an extra levy on a short list of goods such as cars, tobacco, coal and fizzy drinks.
+
+<FigList ids="cgst_total sgst_total cess_total utgst" caption="parts" />
+
+CGST here includes Union Territory GST (UTGST), collected in Union Territories that have no legislature of their own; it belongs to the Centre.
+
+A caution about the level of CGST and the cess. When the accounts were balanced so that every row and column adds up, both were set at the upper edge of the tolerance band allowed around the cash collections. The width of that band is a judgement, not a published figure, so read these two levels with care. "How these figures were made", below, flags them.
+
+</Step>
+
+<Step id="products">
+
+Some purchases carry far more GST than others. Construction carries the most: <StoryFig id="gst_cnst" />, or <StoryFig id="gst_cnst_per100" /> of every hundred rupees of GST. Next come vehicles and other transport equipment (<StoryFig id="gst_treq_per100" />), chemicals, rubber and plastics (<StoryFig id="gst_chem_per100" />), and textiles and clothing (<StoryFig id="gst_txap_per100" />).
+
+Construction is high because the GST on new buildings, roads and other works mostly stays where it lands. Households and governments are final buyers and cannot claim it back, and the GST law blocks most credit on buildings even for businesses.
+
+How each tax splits across products is estimated from the supply and use tables, so these shares carry an "estimated" label. Construction is the exception: balancing moved its GST noticeably, so its share is labelled "set by balancing". The direction of that move is explained; its size is not yet.
+
+</Step>
+
+<Step id="till">
+
+Who actually hands over the money? Households buying things for their own use pay the largest share: <StoryFig id="till_pfce" />, or <StoryFig id="till_pfce_per100" /> of every hundred rupees of GST.
+
+<FigList ids="till_pfce_per100 till_gfcf_per100 till_ic_per100 till_gfce_per100 till_valu_per100" caption="till" />
+
+Spending on investment (new homes, offices, roads and machines) carries about a fifth. So does intermediate use, the things firms buy to make other things. Because GST is counted net, the intermediate-use share is only the GST that firms paid on inputs and could **not** claim back, for example because what they sell is exempt from GST. Exports carry no GST at all: they are zero-rated.
+
+That is why the household share is the economically final part of GST: it is the tax that stays with the person who consumes the product.
+
+These shares are estimates. They come from the supply and use table's split of each tax by type of buyer, made before the accounts were balanced, and are then scaled to the balanced totals of CGST, SGST and the cess.
+
+</Step>
+
+<Step id="lands">
+
+In the accounts, CGST and the cess are paid to the Centre and SGST to the States. On this first count the Centre receives <StoryFig id="gst_centre" /> (<StoryFig id="gst_centre_per100" /> of every hundred rupees) and the States <StoryFig id="gst_states" /> (<StoryFig id="gst_states_per100" />).
+
+That is not where the money stays. The next step follows what the Centre passes on.
+
+</Step>
+
+<Step id="onwards">
+
+Two kinds of flow carry GST money from the Centre to the States.
+
+**The cess.** The cess was created to compensate the States for any shortfall in their tax revenue in the first years of GST. In 2023-24 the Centre paid the States <StoryFig id="comp_grants" /> as compensation grants. It also passed on <StoryFig id="cess_loan_transfer" /> of cess so that the States could repay the back-to-back loans the Centre had raised for them in the pandemic years, when cess collections fell short. The States' loans fell by the same amount: <StoryFig id="b2b_repaid" /> (negative, because debt was repaid). Together the two transfers equal <StoryFig id="cess_passed_per100" /> of every hundred rupees of cess collected that year. They need not match exactly, because a year's grants can settle claims from earlier years.
+
+**Tax devolution.** The Finance Commission sets the share of the Centre's taxes that goes to the States. In 2023-24 the States received <StoryFig id="devol_cgst" /> of CGST this way: <StoryFig id="devol_cgst_per100" /> of every hundred rupees of CGST, leaving out UTGST, which is not shared. A year's devolution also carries adjustments for earlier years.
+
+Counting what the States keep to spend (SGST, devolved CGST and the compensation grants), <StoryFig id="gst_to_states_kept_per100" /> of every hundred rupees of GST ended up with the States. Another <StoryFig id="cess_loan_per100_gst" /> was paid to them only to repay the back-to-back loans, so it passed straight through and did not stay with them.
+
+</Step>
+
+<Step id="spend">
+
+Money is fungible. Once GST reaches a treasury it is pooled with income tax, borrowing and everything else, so no rupee of GST can be traced to a particular school or road. What the accounts can show is what the Centre and the States together spend on.
+
+Their combined outlays came to <StoryFig id="gg_outlays" />. That counts each rupee once: money the Centre passes to the States is left out, so it is not counted twice. Per hundred rupees of outlays:
+
+<FigList ids="gg_goods_services_per100 gg_interest_per100 gg_capital_per100 gg_pensions_per100 gg_cash_transfers_per100 gg_corp_transfers_per100" caption="spend" />
+
+Running public services is the biggest item: the pay of teachers, police, nurses and clerks, the food grain the Centre hands out through the public distribution system, and other purchases. Interest on past borrowing comes second, ahead of all spending on investment.
+
+Two things are outside this hundred. Governments also bought financial assets, such as shares in public companies, loans and deposits: <StoryFig id="gg_fin_assets" /> net. And subsidies are left out. In this map, as in the supply and use tables it is built on, subsidies are booked as **negative taxes** in the tax accounts: <StoryFig id="gg_product_subsidies" /> on products such as fertiliser, and <StoryFig id="gg_production_subsidies" /> paid to producers. So they are not among the government outlays counted here. In the government's own accounts, and in the national accounts' measure of government spending, subsidies are spending: adding them back would raise outlays by <StoryFig id="gg_subsidies_per100" /> for every hundred rupees counted here, and every share above would be a little smaller.
+
+</Step>

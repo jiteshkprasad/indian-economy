@@ -1,0 +1,36 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 31851,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.6.1A.xlsx",
+  "key": "mospi_nas_2026_publication/8.6.1A.xlsx",
+  "method": "GET",
+  "name": "8.6.1A.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://mospi.gov.in/publications-reports/innerpage/2861",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "31851",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "W/\"7c6b-1a0568a91c8\"",
+    "last-modified": "Mon, 31 Aug 2026 06:38:37 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:20:37Z",
+  "sha256": "48b16c2dfce5ea8dd2d49d512f619a7fa3957c909a028fcf8a22916a044f3763",
+  "source_id": "mospi_nas_2026_publication",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/uploads/publications_reports/NAS-2026-Statements/8.6.1A.xlsx"
+}

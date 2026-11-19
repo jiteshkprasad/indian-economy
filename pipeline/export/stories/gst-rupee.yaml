@@ -1,0 +1,330 @@
+# Story 1: "Where does your GST rupee go?" (docs/phase3/PLAN.md s.4.9). Owner: U5.
+# Figure specs only; the evaluator is pipeline/export/stories.py (U1). Grammar: docs/phase3/requests/U5.md.
+# Every number shown in web/content/en/stories/gst-rupee.mdx is one of these figures.
+# tests/export/test_export_stories.py recomputes every value with DuckDB SQL, independently of the evaluator.
+#
+# Conventions: rows receive, columns pay. GST is net and post-settlement (D0-5): no IGST account.
+# T_CGST includes UTGST (G_CEN <- T_CGST, T1a component `utgst`). The cess (T_GCES) is booked to the Centre,
+# which passes it on to the States as compensation grants and the cess-loan transfer (T2b; D2-13).
+slug: gst-rupee
+
+figures:
+  # --- Step "total": how much GST, and how big that is ---
+  # The levels are read on the receipt side (the government that collects each tax), because that is
+  # where balancing set them: G_CEN <- T_CGST and G_CEN <- T_GCES are members of the judgement bands
+  # taxes:t1.cgst and taxes:t1.gces (CHECKPOINT_B s.6b), so their figures carry the judgement_band flag.
+  # Each tax account balances, so the receipt side equals the commodity side (T_* <- C_*) used by the
+  # product and till steps; tests/export/test_export_stories.py checks that identity.
+  gst_total:
+    kind: sam_sum
+    terms: [{rows: [G_CEN, G_STA], cols: [T_CGST, T_SGST, T_GCES]}]
+    unit: inr
+  # The same total summed on the commodity side (T_* <- C_*), the side the product and till splits are
+  # made on; it is the denominator of those shares, so a share is labelled by how the split was made,
+  # not by how the level was set. Not shown on its own. check_equals proves it is the same number.
+  gst_commodity_side:
+    kind: sam_sum
+    terms: [{rows: [T_CGST, T_SGST, T_GCES], cols: "@COM"}]
+    unit: inr
+    check_equals: {ref: gst_total, tol: 0.01}
+  gst_total_gdp:
+    kind: ratio
+    num: {ref: gst_total}
+    den: {gdp: "2023-24"}
+    unit: pct_gdp
+
+  # --- Step "split": CGST (incl. UTGST), SGST and cess ---
+  cgst_total:
+    kind: sam_sum
+    terms: [{rows: [G_CEN], cols: [T_CGST]}]
+    unit: inr
+  sgst_total:
+    kind: sam_sum
+    terms: [{rows: [G_STA], cols: [T_SGST]}]
+    unit: inr
+  cess_total:
+    kind: sam_sum
+    terms: [{rows: [G_CEN], cols: [T_GCES]}]
+    unit: inr
+  utgst:
+    kind: entries_sum
+    terms: [{rows: [G_CEN], cols: [T_CGST], refs: [T1a], components: [utgst]}]
+    unit: inr
+  cgst_per100: {kind: per100, part: {ref: cgst_total}, whole: {ref: gst_total}, unit: per100}
+  sgst_per100: {kind: per100, part: {ref: sgst_total}, whole: {ref: gst_total}, unit: per100}
+  cess_per100: {kind: per100, part: {ref: cess_total}, whole: {ref: gst_total}, unit: per100}
+
+  # --- Step "products": the four products that carry the most GST (T_* <- C_* cells) ---
+  # The test checks that these four are the four largest commodity columns, construction first.
+  gst_cnst:
+    kind: sam_sum
+    terms: [{rows: [T_CGST, T_SGST, T_GCES], cols: [C_CNST]}]
+    unit: inr
+  gst_treq:
+    kind: sam_sum
+    terms: [{rows: [T_CGST, T_SGST, T_GCES], cols: [C_TREQ]}]
+    unit: inr
+  gst_chem:
+    kind: sam_sum
+    terms: [{rows: [T_CGST, T_SGST, T_GCES], cols: [C_CHEM]}]
+    unit: inr
+  gst_txap:
+    kind: sam_sum
+    terms: [{rows: [T_CGST, T_SGST, T_GCES], cols: [C_TXAP]}]
+    unit: inr
+  gst_cnst_per100: {kind: per100, part: {ref: gst_cnst}, whole: {ref: gst_commodity_side}, unit: per100}
+  gst_treq_per100: {kind: per100, part: {ref: gst_treq}, whole: {ref: gst_commodity_side}, unit: per100}
+  gst_chem_per100: {kind: per100, part: {ref: gst_chem}, whole: {ref: gst_commodity_side}, unit: per100}
+  gst_txap_per100: {kind: per100, part: {ref: gst_txap}, whole: {ref: gst_commodity_side}, unit: per100}
+
+  # --- Step "till": who pays at the till. p7b use-type shares (built on the prior) applied to the
+  # balanced total of each tax account (satellite_share), then summed over the three accounts.
+  # Use types in p7b for GST: pfce, ic, gfcf, gfce, valuables (no exports: zero-rated).
+  till_pfce_cgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_CGST, use_type: pfce}
+    within: {tax_account: T_CGST}
+    total: {kind: sam_sum, terms: [{rows: [T_CGST], cols: "@COM"}]}
+    unit: inr
+  till_pfce_sgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_SGST, use_type: pfce}
+    within: {tax_account: T_SGST}
+    total: {kind: sam_sum, terms: [{rows: [T_SGST], cols: "@COM"}]}
+    unit: inr
+  till_pfce_cess:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_GCES, use_type: pfce}
+    within: {tax_account: T_GCES}
+    total: {kind: sam_sum, terms: [{rows: [T_GCES], cols: "@COM"}]}
+    unit: inr
+  till_ic_cgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_CGST, use_type: ic}
+    within: {tax_account: T_CGST}
+    total: {kind: sam_sum, terms: [{rows: [T_CGST], cols: "@COM"}]}
+    unit: inr
+  till_ic_sgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_SGST, use_type: ic}
+    within: {tax_account: T_SGST}
+    total: {kind: sam_sum, terms: [{rows: [T_SGST], cols: "@COM"}]}
+    unit: inr
+  till_ic_cess:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_GCES, use_type: ic}
+    within: {tax_account: T_GCES}
+    total: {kind: sam_sum, terms: [{rows: [T_GCES], cols: "@COM"}]}
+    unit: inr
+  till_gfcf_cgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_CGST, use_type: gfcf}
+    within: {tax_account: T_CGST}
+    total: {kind: sam_sum, terms: [{rows: [T_CGST], cols: "@COM"}]}
+    unit: inr
+  till_gfcf_sgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_SGST, use_type: gfcf}
+    within: {tax_account: T_SGST}
+    total: {kind: sam_sum, terms: [{rows: [T_SGST], cols: "@COM"}]}
+    unit: inr
+  till_gfcf_cess:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_GCES, use_type: gfcf}
+    within: {tax_account: T_GCES}
+    total: {kind: sam_sum, terms: [{rows: [T_GCES], cols: "@COM"}]}
+    unit: inr
+  till_gfce_cgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_CGST, use_type: gfce}
+    within: {tax_account: T_CGST}
+    total: {kind: sam_sum, terms: [{rows: [T_CGST], cols: "@COM"}]}
+    unit: inr
+  till_gfce_sgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_SGST, use_type: gfce}
+    within: {tax_account: T_SGST}
+    total: {kind: sam_sum, terms: [{rows: [T_SGST], cols: "@COM"}]}
+    unit: inr
+  till_gfce_cess:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_GCES, use_type: gfce}
+    within: {tax_account: T_GCES}
+    total: {kind: sam_sum, terms: [{rows: [T_GCES], cols: "@COM"}]}
+    unit: inr
+  till_valu_cgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_CGST, use_type: valuables}
+    within: {tax_account: T_CGST}
+    total: {kind: sam_sum, terms: [{rows: [T_CGST], cols: "@COM"}]}
+    unit: inr
+  till_valu_sgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_SGST, use_type: valuables}
+    within: {tax_account: T_SGST}
+    total: {kind: sam_sum, terms: [{rows: [T_SGST], cols: "@COM"}]}
+    unit: inr
+  till_valu_cess:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_GCES, use_type: valuables}
+    within: {tax_account: T_GCES}
+    total: {kind: sam_sum, terms: [{rows: [T_GCES], cols: "@COM"}]}
+    unit: inr
+  till_pfce: {kind: sum, terms: [{ref: till_pfce_cgst}, {ref: till_pfce_sgst}, {ref: till_pfce_cess}], unit: inr}
+  till_ic: {kind: sum, terms: [{ref: till_ic_cgst}, {ref: till_ic_sgst}, {ref: till_ic_cess}], unit: inr}
+  till_gfcf: {kind: sum, terms: [{ref: till_gfcf_cgst}, {ref: till_gfcf_sgst}, {ref: till_gfcf_cess}], unit: inr}
+  till_gfce: {kind: sum, terms: [{ref: till_gfce_cgst}, {ref: till_gfce_sgst}, {ref: till_gfce_cess}], unit: inr}
+  till_valu: {kind: sum, terms: [{ref: till_valu_cgst}, {ref: till_valu_sgst}, {ref: till_valu_cess}], unit: inr}
+  till_pfce_per100: {kind: per100, part: {ref: till_pfce}, whole: {ref: gst_commodity_side}, unit: per100}
+  till_ic_per100: {kind: per100, part: {ref: till_ic}, whole: {ref: gst_commodity_side}, unit: per100}
+  till_gfcf_per100: {kind: per100, part: {ref: till_gfcf}, whole: {ref: gst_commodity_side}, unit: per100}
+  till_gfce_per100: {kind: per100, part: {ref: till_gfce}, whole: {ref: gst_commodity_side}, unit: per100}
+  till_valu_per100: {kind: per100, part: {ref: till_valu}, whole: {ref: gst_commodity_side}, unit: per100}
+
+  # --- Step "lands": where the money is booked ---
+  gst_centre:
+    kind: sam_sum
+    terms: [{rows: [G_CEN], cols: [T_CGST, T_GCES]}]
+    unit: inr
+  gst_states:
+    kind: sam_sum
+    terms: [{rows: [G_STA], cols: [T_SGST]}]
+    unit: inr
+  gst_centre_per100: {kind: per100, part: {ref: gst_centre}, whole: {ref: gst_total}, unit: per100}
+  gst_states_per100: {kind: per100, part: {ref: gst_states}, whole: {ref: gst_total}, unit: per100}
+
+  # --- Step "onwards": the Centre passes part of it on to the States ---
+  # (a) the cess: compensation grants (official) and the cess-loan transfer (derived), T2b;
+  comp_grants:
+    kind: entries_sum
+    terms: [{rows: [G_STA], cols: [G_CEN], refs: [T2b], components: [compensation_grants]}]
+    unit: inr
+  cess_loan_transfer:
+    kind: entries_sum
+    terms: [{rows: [G_STA], cols: [G_CEN], refs: [T2b], components: [cess_loan_recovery]}]
+    unit: inr
+  # the States then repay the GST back-to-back loans with it (K8e; negative incurrence of loan liabilities)
+  b2b_repaid:
+    kind: entries_sum
+    terms: [{rows: [K_GSTA], cols: [I_LOAN], refs: [K8e], components: [gst_b2b_repayment]}]
+    unit: inr
+  cess_passed:          # both T2b entries in one selector, so the gov.t2b.cess_uses pin can apply
+    kind: entries_sum
+    terms: [{rows: [G_STA], cols: [G_CEN], refs: [T2b]}]
+    unit: inr
+  cess_passed_per100: {kind: per100, part: {ref: cess_passed}, whole: {ref: cess_total}, unit: per100}
+  # (b) tax devolution: the States' share of the Centre's CGST (R1, component cgst; official).
+  devol_cgst:
+    kind: entries_sum
+    terms: [{rows: [G_STA], cols: [G_CEN], refs: [R1], components: [cgst]}]
+    unit: inr
+  cgst_ex_utgst: {kind: difference, a: {ref: cgst_total}, b: {ref: utgst}, unit: inr}
+  devol_cgst_per100: {kind: per100, part: {ref: devol_cgst}, whole: {ref: cgst_ex_utgst}, unit: per100}
+  # What stays with the States, per 100 of GST: SGST, devolved CGST and the compensation grants. The cess-loan
+  # transfer is NOT counted here: the States pass it straight back to repay the back-to-back loans (b2b_repaid,
+  # K8e), so it does not stay with them (V1-11). It is shown on its own, per 100 of GST.
+  gst_to_states_kept: {kind: sum, terms: [{ref: gst_states}, {ref: devol_cgst}, {ref: comp_grants}], unit: inr}
+  gst_to_states_kept_per100: {kind: per100, part: {ref: gst_to_states_kept}, whole: {ref: gst_total}, unit: per100}
+  cess_loan_per100_gst: {kind: per100, part: {ref: cess_loan_transfer}, whole: {ref: gst_total}, unit: per100}
+
+  # --- Step "spend": what governments spend on, per 100 of consolidated general-government outlays ---
+  # Current outlays: everything the G_CEN and G_STA columns pay, except saving (K3a, rows K_GCEN/K_GSTA) and
+  # transfers between the Centre and the States (rows G_CEN/G_STA: R1, R2, R3, T2b).
+  gg_current:
+    kind: entries_sum
+    terms: [{rows: "@ALL", not_rows: [G_CEN, G_STA, K_GCEN, K_GSTA], cols: [G_CEN, G_STA]}]
+    unit: inr
+  # Capital outlays: GFCF (I1a), inventories (I3a) and capital transfers (K6) paid to non-government accounts.
+  gg_capital:
+    kind: entries_sum
+    terms: [{rows: "@ALL", not_rows: [K_GCEN, K_GSTA], cols: [K_GCEN, K_GSTA], refs: [I1a, I3a, K6]}]
+    unit: inr
+  gg_outlays: {kind: sum, terms: [{ref: gg_current}, {ref: gg_capital}], unit: inr}
+  gg_goods_services:
+    kind: entries_sum
+    terms: [{rows: "@COM", cols: [G_CEN, G_STA], refs: [C2a]}]
+    unit: inr
+  gg_interest:
+    kind: entries_sum
+    terms: [{rows: "@ALL", not_rows: [G_CEN, G_STA], cols: [G_CEN, G_STA], refs: [R3a, R8a, R9c, R14]}]
+    unit: inr
+  gg_pensions:
+    kind: entries_sum
+    terms: [{rows: "@HH", cols: [G_CEN, G_STA], refs: [R9a]}]
+    unit: inr
+  gg_cash_transfers:
+    kind: entries_sum
+    terms: [{rows: "@HH", cols: [G_CEN, G_STA], refs: [R10]}]
+    unit: inr
+  gg_corp_transfers:
+    kind: entries_sum
+    terms: [{rows: "@ALL", cols: [G_CEN, G_STA], refs: [R18]}]
+    unit: inr
+  gg_goods_services_per100: {kind: per100, part: {ref: gg_goods_services}, whole: {ref: gg_outlays}, unit: per100}
+  gg_interest_per100: {kind: per100, part: {ref: gg_interest}, whole: {ref: gg_outlays}, unit: per100}
+  gg_pensions_per100: {kind: per100, part: {ref: gg_pensions}, whole: {ref: gg_outlays}, unit: per100}
+  gg_cash_transfers_per100: {kind: per100, part: {ref: gg_cash_transfers}, whole: {ref: gg_outlays}, unit: per100}
+  gg_corp_transfers_per100: {kind: per100, part: {ref: gg_corp_transfers}, whole: {ref: gg_outlays}, unit: per100}
+  gg_capital_per100: {kind: per100, part: {ref: gg_capital}, whole: {ref: gg_outlays}, unit: per100}
+  # Shown separately, not in the 100: net acquisition of financial assets by the Centre and the States
+  # (their K_GCEN/K_GSTA columns into instrument accounts, including the K9 residuals and K9b).
+  gg_fin_assets:
+    kind: sam_sum
+    terms: [{rows: "@INST", cols: [K_GCEN, K_GSTA]}]
+    unit: inr
+  # Subsidies: in this SAM, as in the supply and use tables, they are booked as negative taxes in the tax accounts
+  # (T_PSUB, T_PROD), so they are not in the G_CEN/G_STA columns counted in gg_outlays. In the government's own
+  # accounts (and NAS St 4.2 current expenditure, D2-24) they are spending (V2-04).
+  gg_product_subsidies:
+    kind: entries_sum
+    terms: [{rows: [G_CEN, G_STA], cols: [T_PSUB], refs: [P9a]}]
+    unit: inr
+  gg_production_subsidies:
+    kind: entries_sum
+    terms: [{rows: [G_CEN, G_STA], cols: [T_PROD], refs: [P10a], components: [gross_subsidies]}]
+    unit: inr
+  # Both subsidies as a positive amount paid, and that amount per 100 of the outlays counted above: how much
+  # adding them back would raise outlays.
+  gg_subsidies_paid:
+    kind: sum
+    terms: [{ref: gg_product_subsidies, coef: -1}, {ref: gg_production_subsidies, coef: -1}]
+    unit: inr
+  gg_subsidies_per100: {kind: per100, part: {ref: gg_subsidies_paid}, whole: {ref: gg_outlays}, unit: per100}
+
+steps:
+  - id: total
+    view: {view: sam, preset: simple, year: "2023-24", expanded: [], highlight: [PRODUCERS--TAX], select: PRODUCERS--TAX}
+    figures: [gst_total, gst_total_gdp]
+  - id: split
+    view: {view: sam, preset: full, year: "2023-24", expanded: [TAX], highlight: [PRDS--TAX.GST], select: PRDS--TAX.GST}
+    figures: [cgst_total, cgst_per100, utgst, sgst_total, sgst_per100, cess_total, cess_per100]
+  - id: products
+    view: {view: sam, preset: full, year: "2023-24", expanded: [PRDS, TAX], highlight: [PRDS.CNUT--TAX.GST, PRDS.MANU--TAX.GST], select: null}
+    figures: [gst_cnst, gst_cnst_per100, gst_treq_per100, gst_chem_per100, gst_txap_per100]
+  - id: till
+    view: {view: sam, preset: simple, year: "2023-24", expanded: [], highlight: [HH--PRODUCERS, PRODUCERS--TAX], select: null}
+    figures: [till_pfce, till_pfce_per100, till_ic_per100, till_gfcf_per100, till_gfce_per100, till_valu_per100]
+  - id: lands
+    view: {view: sam, preset: full, year: "2023-24", expanded: [TAX], highlight: [TAX.GST--CEN, TAX.GST--STA], select: null}
+    figures: [gst_centre, gst_centre_per100, gst_states, gst_states_per100]
+  - id: onwards
+    view: {view: sam, preset: full, year: "2023-24", expanded: [], highlight: [CEN--STA], select: CEN--STA}
+    figures: [comp_grants, cess_loan_transfer, b2b_repaid, cess_passed_per100, devol_cgst, devol_cgst_per100, gst_to_states_kept_per100, cess_loan_per100_gst]
+  - id: spend
+    view: {view: sam, preset: simple, year: "2023-24", expanded: [], highlight: [CEN--PRODUCERS, STA--PRODUCERS, CEN--HH, STA--HH, CEN--FC, STA--FC, SI--PRODUCERS], select: null}
+    figures: [gg_outlays, gg_goods_services_per100, gg_interest_per100, gg_pensions_per100, gg_cash_transfers_per100, gg_corp_transfers_per100, gg_capital_per100, gg_fin_assets, gg_product_subsidies, gg_production_subsidies, gg_subsidies_per100]

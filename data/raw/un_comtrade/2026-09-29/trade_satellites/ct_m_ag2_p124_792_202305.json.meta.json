@@ -1,0 +1,31 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 308660,
+  "content_type": "application/json; charset=utf-8",
+  "final_url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=699&period=202305&partnerCode=124,792&flowCode=X,M&cmdCode=AG2&includeDesc=true",
+  "key": "un_comtrade/ct_m_ag2_p124_792_202305.json",
+  "method": "GET",
+  "name": "ct_m_ag2_p124_792_202305.json",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8"
+  },
+  "retrieved_at": "2026-09-29T10:35:56Z",
+  "sha256": "292dcb9754b81d2eb1d141b08a6b3c781bf92ac23429f65b86014de9e5eee7e7",
+  "source_id": "un_comtrade",
+  "status": 200,
+  "url": "https://comtradeapi.un.org/public/v1/preview/C/M/HS?reporterCode=699&period=202305&partnerCode=124,792&flowCode=X,M&cmdCode=AG2&includeDesc=true"
+}

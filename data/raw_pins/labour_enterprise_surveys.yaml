@@ -1,0 +1,524 @@
+# Pinned raw files for one ingest unit. Written by `python -m pipeline fetch`; do not edit by hand.
+# key '<source_id>/<name>' -> the exact bytes (sha256) every build uses. `history` keeps superseded pins.
+pins:
+  mospi_aidis_2019/aidis_2019_press_note.pdf:
+    body_sha256: null
+    bytes: 766593
+    method: GET
+    path: data/raw/mospi_aidis_2019/2026-09-29/labour_enterprise_surveys/aidis_2019_press_note.pdf
+    retrieved_at: '2026-09-29T10:21:36Z'
+    sha256: 74d1aca5ba0422fc2821e0c4f5209b1b9773355b23f7af0b43300d22e40c3c17
+    url: https://mospi.gov.in/sites/default/files/press_release/press_note-AIDIS--240821%20update.pdf
+  mospi_asi/asi_2023_24_summary_results.pdf:
+    body_sha256: null
+    bytes: 6002379
+    method: GET
+    path: data/raw/mospi_asi/2026-09-29/labour_enterprise_surveys/asi_2023_24_summary_results.pdf
+    retrieved_at: '2026-09-29T10:21:32Z'
+    sha256: 5fb1a9894eed93708dea7672cc22fb61f18eebcf380c31e1488509c10a43235a
+    url: https://www.mospi.gov.in/uploads/publications_reports/publications_reports1759229789833_2b8ed8ad-314e-46b7-b123-b08cb17f1233_ASI_Summary_Results_2023-24C.pdf
+  mospi_asi/asi_2023_24_vol_i.pdf:
+    body_sha256: null
+    bytes: 8914522
+    method: GET
+    path: data/raw/mospi_asi/2026-09-29/labour_enterprise_surveys/asi_2023_24_vol_i.pdf
+    retrieved_at: '2026-09-29T10:21:35Z'
+    sha256: c77b3f863bc6bfa77a8daa0f86c531e9b99652718b791b9969a504795edcfbbc
+    url: https://www.mospi.gov.in/uploads/publications_reports/publications_reports1759229853481_27d8e959-0ae4-40fe-b9ff-d666b8aeb06d_ASI_Vol_I_2023-24C-2.pdf
+  mospi_asuse/asuse_2023_24_factsheet.pdf:
+    body_sha256: null
+    bytes: 3465607
+    method: GET
+    path: data/raw/mospi_asuse/2026-09-29/labour_enterprise_surveys/asuse_2023_24_factsheet.pdf
+    retrieved_at: '2026-09-29T10:21:29Z'
+    sha256: 5e288475c530831207b7a29030368aeb31dab6696af6873b2f37b5639080eb4d
+    url: https://www.mospi.gov.in/sites/default/files/publication_reports/Factsheet_of_ASUSE_2023_24.pdf
+  mospi_asuse/asuse_2023_24_full_report.pdf:
+    body_sha256: null
+    bytes: 17207885
+    method: GET
+    path: data/raw/mospi_asuse/2026-09-29/labour_enterprise_surveys/asuse_2023_24_full_report.pdf
+    retrieved_at: '2026-09-29T10:21:26Z'
+    sha256: 5a4ad06490da04a00eaf084f9071addcac7d1244072080b30b94088955067877
+    url: https://www.mospi.gov.in/sites/default/files/publication_reports/ASUSE_2023_24_Full_Report-L.pdf
+  mospi_esankhyiki_api/asuse_i36_allindia_p1.json:
+    body_sha256: null
+    bytes: 42656
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p1.json
+    retrieved_at: '2026-09-29T14:32:46Z'
+    sha256: 7a3d62ecf71a433d315d0b9c4a67cec10933b63fe7f682b92940e76faa39ce9b
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=1
+  mospi_esankhyiki_api/asuse_i36_allindia_p10.json:
+    body_sha256: null
+    bytes: 41567
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p10.json
+    retrieved_at: '2026-09-29T14:33:06Z'
+    sha256: 57fd7a06f7e609fa5bae3997746f679153dbb5977f21459edbfce9cb61347b78
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=10
+  mospi_esankhyiki_api/asuse_i36_allindia_p11.json:
+    body_sha256: null
+    bytes: 42023
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p11.json
+    retrieved_at: '2026-09-29T14:33:08Z'
+    sha256: 85b0135a784f70f357a587af9e29f0a7b9d4a8f1c5f3a51af92a1ed92b55136d
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=11
+  mospi_esankhyiki_api/asuse_i36_allindia_p12.json:
+    body_sha256: null
+    bytes: 43506
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p12.json
+    retrieved_at: '2026-09-29T14:33:10Z'
+    sha256: 91ea3573967ba69bf3de12f24dcd437585d5660353899bc1a1bde88cb43a183d
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=12
+  mospi_esankhyiki_api/asuse_i36_allindia_p13.json:
+    body_sha256: null
+    bytes: 43599
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p13.json
+    retrieved_at: '2026-09-29T14:33:12Z'
+    sha256: 054b2443c91a020fef9016f4861d6a8f8a0627e1c04f0a224ac7e088262f3c79
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=13
+  mospi_esankhyiki_api/asuse_i36_allindia_p14.json:
+    body_sha256: null
+    bytes: 43233
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p14.json
+    retrieved_at: '2026-09-29T14:33:15Z'
+    sha256: d886b6cd5493643feb4df6b039a5457bdd390c2314434d73b6764182f062b69c
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=14
+  mospi_esankhyiki_api/asuse_i36_allindia_p15.json:
+    body_sha256: null
+    bytes: 42354
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p15.json
+    retrieved_at: '2026-09-29T14:33:17Z'
+    sha256: 4015a20aa75c6ad19a69af846b59b93a10a65c5581704ee661dc4d97166f10d8
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=15
+  mospi_esankhyiki_api/asuse_i36_allindia_p16.json:
+    body_sha256: null
+    bytes: 42563
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p16.json
+    retrieved_at: '2026-09-29T14:33:19Z'
+    sha256: edab878280781483e78c9f0e092dbf228d7968c1312279b46bde796b382acccb
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=16
+  mospi_esankhyiki_api/asuse_i36_allindia_p17.json:
+    body_sha256: null
+    bytes: 42787
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p17.json
+    retrieved_at: '2026-09-29T14:33:21Z'
+    sha256: 829d4eb075ad65ca0e5006d12726431bdbc1f3dc3946018ff20beb1faec5c3d8
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=17
+  mospi_esankhyiki_api/asuse_i36_allindia_p18.json:
+    body_sha256: null
+    bytes: 46310
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p18.json
+    retrieved_at: '2026-09-29T14:33:23Z'
+    sha256: dc79c2ff19d404cc05be0886fe29cb2bfdbd91c749acc49c7507752411249beb
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=18
+  mospi_esankhyiki_api/asuse_i36_allindia_p19.json:
+    body_sha256: null
+    bytes: 45072
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p19.json
+    retrieved_at: '2026-09-29T14:33:26Z'
+    sha256: fa9ec883d1994f5d41dc0e2797b4440d79b8c5070203e681d003890cd35cf477
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=19
+  mospi_esankhyiki_api/asuse_i36_allindia_p2.json:
+    body_sha256: null
+    bytes: 42909
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p2.json
+    retrieved_at: '2026-09-29T14:32:48Z'
+    sha256: 7b56b9c4d5c44233e3ed14eed15547c257f54c95c4e5b9186aefa3e484f3502f
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=2
+  mospi_esankhyiki_api/asuse_i36_allindia_p20.json:
+    body_sha256: null
+    bytes: 44362
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p20.json
+    retrieved_at: '2026-09-29T14:33:28Z'
+    sha256: 193aed759ae4e3ab08259d2aa143dcda433abcf4d0833c9daf03059683ce9913
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=20
+  mospi_esankhyiki_api/asuse_i36_allindia_p21.json:
+    body_sha256: null
+    bytes: 44517
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p21.json
+    retrieved_at: '2026-09-29T14:33:30Z'
+    sha256: 0c671fe8435e1cccfae3397210e9baa97159e8193f58235c51a05efdc932455b
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=21
+  mospi_esankhyiki_api/asuse_i36_allindia_p22.json:
+    body_sha256: null
+    bytes: 43449
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p22.json
+    retrieved_at: '2026-09-29T14:33:32Z'
+    sha256: 97ca32e2ee9dda1ef498b8cd65287884f067657b609f83f0cf72224dd4002ed7
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=22
+  mospi_esankhyiki_api/asuse_i36_allindia_p23.json:
+    body_sha256: null
+    bytes: 43370
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p23.json
+    retrieved_at: '2026-09-29T14:33:34Z'
+    sha256: 3cb764c515ff829d2914defe197a145c3968ee8a14e05a3decae2f75d020bdf9
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=23
+  mospi_esankhyiki_api/asuse_i36_allindia_p24.json:
+    body_sha256: null
+    bytes: 44839
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p24.json
+    retrieved_at: '2026-09-29T14:33:37Z'
+    sha256: bdd5924d7f196f14293b3f7d661fdc305a2e19be57830da2e1f3b1f734ecdc94
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=24
+  mospi_esankhyiki_api/asuse_i36_allindia_p25.json:
+    body_sha256: null
+    bytes: 41505
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p25.json
+    retrieved_at: '2026-09-29T14:33:39Z'
+    sha256: f0956f127047eb7deff68548e76b1d0a454f31eed456be83e3abf5ac288d6048
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=25
+  mospi_esankhyiki_api/asuse_i36_allindia_p26.json:
+    body_sha256: null
+    bytes: 41953
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p26.json
+    retrieved_at: '2026-09-29T14:33:41Z'
+    sha256: 3f150a09e81ac9091807d0a238651374a2a9fb6bd733d5485e174eee3084cb20
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=26
+  mospi_esankhyiki_api/asuse_i36_allindia_p27.json:
+    body_sha256: null
+    bytes: 43431
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p27.json
+    retrieved_at: '2026-09-29T14:33:43Z'
+    sha256: 78dbbdae1a850e118fc233e9fdefe057a42cfe751a206a509d922c7c1df8599e
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=27
+  mospi_esankhyiki_api/asuse_i36_allindia_p28.json:
+    body_sha256: null
+    bytes: 43506
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p28.json
+    retrieved_at: '2026-09-29T14:33:45Z'
+    sha256: 610b44b39670d0d97b01c377c1b796b4debb28a3fe14f3601d25042541f83551
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=28
+  mospi_esankhyiki_api/asuse_i36_allindia_p29.json:
+    body_sha256: null
+    bytes: 43142
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p29.json
+    retrieved_at: '2026-09-29T14:33:48Z'
+    sha256: f968bb711b016d12959402362b44c11a291057051dd49115a4e5efa0e0b084e8
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=29
+  mospi_esankhyiki_api/asuse_i36_allindia_p3.json:
+    body_sha256: null
+    bytes: 46412
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p3.json
+    retrieved_at: '2026-09-29T14:32:50Z'
+    sha256: 7ddf7b66e40519078fcdb98fe792e0f2e20fae5fd51edbdfefeb901f9eff6fe2
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=3
+  mospi_esankhyiki_api/asuse_i36_allindia_p30.json:
+    body_sha256: null
+    bytes: 42263
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p30.json
+    retrieved_at: '2026-09-29T14:33:50Z'
+    sha256: 68d7e2fb3fc5ee071a19fbab17e2721e5f589e5a490ee99691bdd42277ee22c9
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=30
+  mospi_esankhyiki_api/asuse_i36_allindia_p31.json:
+    body_sha256: null
+    bytes: 42918
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p31.json
+    retrieved_at: '2026-09-29T14:33:52Z'
+    sha256: f0952885bb8b5eab032265d20db4996cd88b8907dacf875e42b1ca1c4916d880
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=31
+  mospi_esankhyiki_api/asuse_i36_allindia_p32.json:
+    body_sha256: null
+    bytes: 43112
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p32.json
+    retrieved_at: '2026-09-29T14:33:54Z'
+    sha256: b52c2da02a147d65cc35917eee2961554fa6de480701ca3624122aeed8d69b0c
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=32
+  mospi_esankhyiki_api/asuse_i36_allindia_p33.json:
+    body_sha256: null
+    bytes: 46661
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p33.json
+    retrieved_at: '2026-09-29T14:33:56Z'
+    sha256: 832c3b2719e314d9e5788cdf3e87a4835d72fc88334ddbdcd4664913cacfc1d3
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=33
+  mospi_esankhyiki_api/asuse_i36_allindia_p34.json:
+    body_sha256: null
+    bytes: 45481
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p34.json
+    retrieved_at: '2026-09-29T14:33:59Z'
+    sha256: ff873d2d2abefa91f1d13e3cf2380d4823b63e07cb7561c5c862c302f45742ef
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=34
+  mospi_esankhyiki_api/asuse_i36_allindia_p35.json:
+    body_sha256: null
+    bytes: 44723
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p35.json
+    retrieved_at: '2026-09-29T14:34:01Z'
+    sha256: 8c70e1c2aa161d666f8b27927ac477e55afac434ba1882c58bdd2210781f64fe
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=35
+  mospi_esankhyiki_api/asuse_i36_allindia_p36.json:
+    body_sha256: null
+    bytes: 44882
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p36.json
+    retrieved_at: '2026-09-29T14:34:03Z'
+    sha256: 56f9aa6fd302ae64099759836803440e7f1f661d531bbd76b723be83b73d571b
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=36
+  mospi_esankhyiki_api/asuse_i36_allindia_p37.json:
+    body_sha256: null
+    bytes: 43832
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p37.json
+    retrieved_at: '2026-09-29T14:34:05Z'
+    sha256: 43e6d875ca129a378b2028e1eca921f2f02ddd8273a27d6d40451295e3b77348
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=37
+  mospi_esankhyiki_api/asuse_i36_allindia_p38.json:
+    body_sha256: null
+    bytes: 43712
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p38.json
+    retrieved_at: '2026-09-29T14:34:07Z'
+    sha256: 421ac279fd0826c2a68b7674eb6a1f752da03068bd6ec0f4187ac73d163000ca
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=38
+  mospi_esankhyiki_api/asuse_i36_allindia_p39.json:
+    body_sha256: null
+    bytes: 45175
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p39.json
+    retrieved_at: '2026-09-29T14:34:10Z'
+    sha256: a63ff844a5b07fcdb4c3c1b5cd57082c9c660da65e453a70df31b831b7c9171e
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=39
+  mospi_esankhyiki_api/asuse_i36_allindia_p4.json:
+    body_sha256: null
+    bytes: 45224
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p4.json
+    retrieved_at: '2026-09-29T14:32:53Z'
+    sha256: b57c3a66048682df651ea6913a16c80a059d859bf7bec7edd2b5e174fe987f58
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=4
+  mospi_esankhyiki_api/asuse_i36_allindia_p40.json:
+    body_sha256: null
+    bytes: 41822
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p40.json
+    retrieved_at: '2026-09-29T14:34:12Z'
+    sha256: abc103f9cfbe9f91837211bc1d70f6a84090e6c1f3a32b0367beeb2ef79396d8
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=40
+  mospi_esankhyiki_api/asuse_i36_allindia_p41.json:
+    body_sha256: null
+    bytes: 42293
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p41.json
+    retrieved_at: '2026-09-29T14:34:14Z'
+    sha256: 4ed9379eeb265f7a81829775e341d9f81e1d97f6e581a5cd57a4f2dd1815324b
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=41
+  mospi_esankhyiki_api/asuse_i36_allindia_p42.json:
+    body_sha256: null
+    bytes: 43800
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p42.json
+    retrieved_at: '2026-09-29T14:34:16Z'
+    sha256: aeb434b2fe53d95f735d9be28049711034b7ee711dafbb81083d454a2bc3c5f9
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=42
+  mospi_esankhyiki_api/asuse_i36_allindia_p43.json:
+    body_sha256: null
+    bytes: 43821
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p43.json
+    retrieved_at: '2026-09-29T14:34:18Z'
+    sha256: 11367e1eda5e524dd40862bcad41fa2109a727d83e31404e74c281e1fb3faf71
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=43
+  mospi_esankhyiki_api/asuse_i36_allindia_p44.json:
+    body_sha256: null
+    bytes: 43494
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p44.json
+    retrieved_at: '2026-09-29T14:34:20Z'
+    sha256: 9bcff07c2fed799d2eca5680491f0e8a0c0ad4c076e3ceb86286afd2a58903cc
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=44
+  mospi_esankhyiki_api/asuse_i36_allindia_p45.json:
+    body_sha256: null
+    bytes: 42593
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p45.json
+    retrieved_at: '2026-09-29T14:34:23Z'
+    sha256: 25de731379fff0a79d594452162f16b62f9374209278806497fe7d694cbdcc28
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=45
+  mospi_esankhyiki_api/asuse_i36_allindia_p5.json:
+    body_sha256: null
+    bytes: 44456
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p5.json
+    retrieved_at: '2026-09-29T14:32:55Z'
+    sha256: 98b998069908be2296bca397c7fe4cb557dcdf504ec879bf3f90a42e955f29e3
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=5
+  mospi_esankhyiki_api/asuse_i36_allindia_p6.json:
+    body_sha256: null
+    bytes: 44611
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p6.json
+    retrieved_at: '2026-09-29T14:32:57Z'
+    sha256: 8bd81ee6a99c056088a8dccc5d93af10bd8b1d071cdf9012bdd1ca5f8b93abc6
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=6
+  mospi_esankhyiki_api/asuse_i36_allindia_p7.json:
+    body_sha256: null
+    bytes: 43555
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p7.json
+    retrieved_at: '2026-09-29T14:32:59Z'
+    sha256: 3b803ffc7068bd20c7e77c990d5076c18b75ba125cf53a7437bcee713b375a22
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=7
+  mospi_esankhyiki_api/asuse_i36_allindia_p8.json:
+    body_sha256: null
+    bytes: 43451
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p8.json
+    retrieved_at: '2026-09-29T14:33:01Z'
+    sha256: 8e9d0e96b86743a4372159361d56d0748df692dc73c0a2aa6b77a767ae879eb1
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=8
+  mospi_esankhyiki_api/asuse_i36_allindia_p9.json:
+    body_sha256: null
+    bytes: 44892
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/asuse_i36_allindia_p9.json
+    retrieved_at: '2026-09-29T14:33:04Z'
+    sha256: beeca89ee5e0d5aa283a65de74439f126a8c2c4a31eb6afd7641198829e2c495
+    url: https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=9
+  mospi_esankhyiki_api/nss77_aidis_i5_allindia_p1.json:
+    body_sha256: null
+    bytes: 29683
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/nss77_aidis_i5_allindia_p1.json
+    retrieved_at: '2026-09-29T14:32:18Z'
+    sha256: 1dc38dd52be6b3e8e9671bd7ecb297edc199ccecf32e7de1fa4925c5162e05b4
+    url: https://api.mospi.gov.in/api/nss-77/getNss77AidisRecords?indicator_code=5&survey_code=1&state_code=37&limit=100&page=1
+  mospi_esankhyiki_api/nss77_aidis_i5_allindia_p2.json:
+    body_sha256: null
+    bytes: 12906
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/nss77_aidis_i5_allindia_p2.json
+    retrieved_at: '2026-09-29T14:32:20Z'
+    sha256: 9d1f1ccc0b4ef9b0719968c660e9838502d1b3344d7c25c204231fade9eaad3e
+    url: https://api.mospi.gov.in/api/nss-77/getNss77AidisRecords?indicator_code=5&survey_code=1&state_code=37&limit=100&page=2
+  mospi_esankhyiki_api/nss77_aidis_i9_allindia_p1.json:
+    body_sha256: null
+    bytes: 28554
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/nss77_aidis_i9_allindia_p1.json
+    retrieved_at: '2026-09-29T14:32:22Z'
+    sha256: cca82327a3993bd3c7ee82f1316ec55ed42eb4a57c67bc10f226c4a83cfdd48e
+    url: https://api.mospi.gov.in/api/nss-77/getNss77AidisRecords?indicator_code=9&survey_code=1&state_code=37&limit=100&page=1
+  mospi_esankhyiki_api/nss77_aidis_i9_allindia_p2.json:
+    body_sha256: null
+    bytes: 28246
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/nss77_aidis_i9_allindia_p2.json
+    retrieved_at: '2026-09-29T14:32:24Z'
+    sha256: 757f3f72b38fa36f6a84f5325e13ebb3470bde1f5edb77cf48cc16702c27b62a
+    url: https://api.mospi.gov.in/api/nss-77/getNss77AidisRecords?indicator_code=9&survey_code=1&state_code=37&limit=100&page=2
+  mospi_esankhyiki_api/nss77_aidis_i9_allindia_p3.json:
+    body_sha256: null
+    bytes: 28584
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/nss77_aidis_i9_allindia_p3.json
+    retrieved_at: '2026-09-29T14:32:26Z'
+    sha256: 552161d7c73dc5dc84d1d53aaeb1ebc2b12a64f72b7eb11fec7374a6f1bae6b9
+    url: https://api.mospi.gov.in/api/nss-77/getNss77AidisRecords?indicator_code=9&survey_code=1&state_code=37&limit=100&page=3
+  mospi_esankhyiki_api/nss77_aidis_i9_allindia_p4.json:
+    body_sha256: null
+    bytes: 28002
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/nss77_aidis_i9_allindia_p4.json
+    retrieved_at: '2026-09-29T14:32:29Z'
+    sha256: 29e1f617d5b3303472d48b72c77d85105aa983d3300be6216dbadd193ffef000
+    url: https://api.mospi.gov.in/api/nss-77/getNss77AidisRecords?indicator_code=9&survey_code=1&state_code=37&limit=100&page=4
+  mospi_esankhyiki_api/nss77_aidis_i9_allindia_p5.json:
+    body_sha256: null
+    bytes: 2416
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/nss77_aidis_i9_allindia_p5.json
+    retrieved_at: '2026-09-29T14:32:31Z'
+    sha256: 3ad89b2ce124eaa3c499e3f5b62e9474da0b4fa447265f798daee59481666f00
+    url: https://api.mospi.gov.in/api/nss-77/getNss77AidisRecords?indicator_code=9&survey_code=1&state_code=37&limit=100&page=5
+  mospi_esankhyiki_api/plfs_i6_ay2022_23_allindia_p1.json:
+    body_sha256: null
+    bytes: 11730
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/plfs_i6_ay2022_23_allindia_p1.json
+    retrieved_at: '2026-09-29T14:32:33Z'
+    sha256: 312549fa75b812c72753401476cd1546da8839af7817f72fdb68a440869cd523
+    url: https://api.mospi.gov.in/api/plfs/getData?indicator_code=6&frequency_code=1&year_type_code=1&year=2022-23&state_code=99&limit=100&page=1
+  mospi_esankhyiki_api/plfs_i6_ay2023_24_allindia_p1.json:
+    body_sha256: null
+    bytes: 11730
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/plfs_i6_ay2023_24_allindia_p1.json
+    retrieved_at: '2026-09-29T14:32:35Z'
+    sha256: ab2d6fce62182e1fd311c779670ab25271f4341e27c3b27f09dcdebf4a053245
+    url: https://api.mospi.gov.in/api/plfs/getData?indicator_code=6&frequency_code=1&year_type_code=1&year=2023-24&state_code=99&limit=100&page=1
+  mospi_esankhyiki_api/plfs_i7_ay2022_23_allindia_p1.json:
+    body_sha256: null
+    bytes: 10758
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/plfs_i7_ay2022_23_allindia_p1.json
+    retrieved_at: '2026-09-29T14:32:37Z'
+    sha256: 132b035a1d82cd53d40243a58d864d4a878d872555174c664b7d4717d90942e5
+    url: https://api.mospi.gov.in/api/plfs/getData?indicator_code=7&frequency_code=1&year_type_code=1&year=2022-23&state_code=99&limit=100&page=1
+  mospi_esankhyiki_api/plfs_i7_ay2023_24_allindia_p1.json:
+    body_sha256: null
+    bytes: 10758
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/plfs_i7_ay2023_24_allindia_p1.json
+    retrieved_at: '2026-09-29T14:32:39Z'
+    sha256: 32f8861fcad22d834ad2c587aec7feaafdd5750d3b1c5b338cc54485e2580c50
+    url: https://api.mospi.gov.in/api/plfs/getData?indicator_code=7&frequency_code=1&year_type_code=1&year=2023-24&state_code=99&limit=100&page=1
+  mospi_esankhyiki_api/plfs_i8_ay2022_23_allindia_p1.json:
+    body_sha256: null
+    bytes: 10314
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/plfs_i8_ay2022_23_allindia_p1.json
+    retrieved_at: '2026-09-29T14:32:42Z'
+    sha256: bd2c1be4b221b444c4747d577ca2c2e6d912f873ca6bb845b980b0c7beab3373
+    url: https://api.mospi.gov.in/api/plfs/getData?indicator_code=8&frequency_code=1&year_type_code=1&year=2022-23&state_code=99&limit=100&page=1
+  mospi_esankhyiki_api/plfs_i8_ay2023_24_allindia_p1.json:
+    body_sha256: null
+    bytes: 10314
+    method: GET
+    path: data/raw/mospi_esankhyiki_api/2026-09-29/labour_enterprise_surveys/plfs_i8_ay2023_24_allindia_p1.json
+    retrieved_at: '2026-09-29T14:32:44Z'
+    sha256: 1d28678773372003c1b6d512b25ef05b9528b987f6e10766e6199ce960339a55
+    url: https://api.mospi.gov.in/api/plfs/getData?indicator_code=8&frequency_code=1&year_type_code=1&year=2023-24&state_code=99&limit=100&page=1
+  mospi_plfs_annual/plfs_ar_2023_24.pdf:
+    body_sha256: null
+    bytes: 26917638
+    method: GET
+    path: data/raw/mospi_plfs_annual/2026-09-29/labour_enterprise_surveys/plfs_ar_2023_24.pdf
+    retrieved_at: '2026-09-29T10:20:55Z'
+    sha256: ab4ead2cee181a13c7ab40f164d2dceb46419cfb58f30f8baa58e35f79d33d39
+    url: https://www.mospi.gov.in/sites/default/files/publication_reports/AnnualReport_PLFS2023-24L2.pdf
+  mospi_sas_2019/sas_2019_report_587.pdf:
+    body_sha256: null
+    bytes: 60536852
+    method: GET
+    path: data/raw/mospi_sas_2019/2026-09-29/labour_enterprise_surveys/sas_2019_report_587.pdf
+    retrieved_at: '2026-09-29T10:21:48Z'
+    sha256: 119bbf39626de4a58ec183cf2d327f6a9916116dbe3367570c0952d40f9dcd05
+    url: https://mospi.gov.in/sites/default/files/publication_reports/Report_587m_0.pdf
+unit: labour_enterprise_surveys

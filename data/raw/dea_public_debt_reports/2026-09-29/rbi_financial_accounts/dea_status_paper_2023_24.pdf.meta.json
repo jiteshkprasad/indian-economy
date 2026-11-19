@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 6203117,
+  "content_type": "application/pdf",
+  "final_url": "https://dea.gov.in/files/public_debt_management_documents/Status%20Paper%20on%20Government%20Debt%20for%20%202023-24.pdf",
+  "key": "dea_public_debt_reports/dea_status_paper_2023_24.pdf",
+  "method": "GET",
+  "name": "dea_status_paper_2023_24.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://dea.gov.in/reports-public-debt-management",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "6203117",
+    "content-type": "application/pdf",
+    "last-modified": "Tue, 28 Oct 2025 11:46:46 GMT",
+    "server": "GoIServer"
+  },
+  "retrieved_at": "2026-09-29T10:23:12Z",
+  "sha256": "c5264e9db4f76979a0af7a2938b7f2dedd3de12b7e497e57e837216912fe9b5a",
+  "source_id": "dea_public_debt_reports",
+  "status": 200,
+  "url": "https://dea.gov.in/files/public_debt_management_documents/Status%20Paper%20on%20Government%20Debt%20for%20%202023-24.pdf"
+}

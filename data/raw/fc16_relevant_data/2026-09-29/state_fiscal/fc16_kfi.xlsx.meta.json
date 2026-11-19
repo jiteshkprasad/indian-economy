@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 530793,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/State%20Finances%20-%20Key%20Fiscal%20Indicators.xlsx",
+  "key": "fc16_relevant_data/fc16_kfi.xlsx",
+  "method": "GET",
+  "name": "fc16_kfi.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://fincomindia.nic.in/commission-reports-sixteenth",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "530793",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"69818ba4-81969\"",
+    "last-modified": "Tue, 03 Feb 2026 05:46:12 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:18:56Z",
+  "sha256": "8e81beafe7874f694f67bd604c7faca10b846fbf4e4adcf2331f5f4810ebcca0",
+  "source_id": "fc16_relevant_data",
+  "status": 200,
+  "url": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/State%20Finances%20-%20Key%20Fiscal%20Indicators.xlsx"
+}

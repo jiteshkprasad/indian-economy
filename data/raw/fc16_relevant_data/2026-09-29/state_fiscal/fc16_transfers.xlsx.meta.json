@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 96812,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/Time%20series%20of%20transfer%20of%20resources%20from%20Centre%20to%20States.xlsx",
+  "key": "fc16_relevant_data/fc16_transfers.xlsx",
+  "method": "GET",
+  "name": "fc16_transfers.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://fincomindia.nic.in/commission-reports-sixteenth",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "96812",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"69819ff8-17a2c\"",
+    "last-modified": "Tue, 03 Feb 2026 07:12:56 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:18:58Z",
+  "sha256": "4bfca9d040734cae4aabf693ea1817f2e437cd58f9066079bf5d519a90d1ed3d",
+  "source_id": "fc16_relevant_data",
+  "status": 200,
+  "url": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/Time%20series%20of%20transfer%20of%20resources%20from%20Centre%20to%20States.xlsx"
+}

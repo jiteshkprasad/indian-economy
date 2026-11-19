@@ -1,0 +1,176 @@
+# Gap-map coverage declared by the rbi_banking_corporate unit (format: pipeline/core/coverage.py).
+# extent: full = this dataset fills the cell; partial = part of it; control_total = the total the
+# cell must sum to. Not declared (nothing open to serve them; see docs/phase1/issues/rbi_banking_corporate.md):
+# R8 (corporate dividends: DBIE-only) and R9c (D44: the RBI Annual Report carries no policyholder/PF
+# investment income; IRDAI/EPFO/NPS belong to the finsector_markets unit). K8 (incurrence of
+# liabilities, a flow) is not declared either: this unit has only end-March SCB liability stocks, which
+# are a cross-check for rbi_financial_accounts, not a fill; the HDFC merger memo is declared under K8a.
+unit: rbi_banking_corporate
+entries:
+- ref: R6
+  dataset: rbi_banking_corporate_rbi_surplus_timing
+  series_ids: [r6.surplus_received_by_centre_cash.current]
+  extent: full
+  note: >-
+    Cash received by the Centre in FY 2023-24 = RBI surplus for 2022-23, 87,416.22 (AR Table XII.1,
+    re-dated to the fiscal year of payment; status derived). The Union Finance Accounts cross-check
+    belongs to the union_fiscal unit.
+- ref: R6
+  dataset: rbi_banking_corporate_rbi_accounts
+  series_ids: [xii_1.surplus_transferred.current, xii_1.net_income.current, xii_1.income.current,
+               sch14.b.exchange_gain_loss_from_foreign_exchange_transactions.current,
+               sch14.b.profit_loss_on_sale_and_redemption_of_foreign_securities.current, sch13.b.sub_total.current,
+               xii_8.fca_earnings.current]
+  extent: partial
+  note: >-
+    RBI accounting year 2023-24 surplus (2,10,873.99, paid in FY 2024-25) and the income breakdown the
+    gap map's super-dividend test (SNA 2008 para 7.131) needs: realised FX gains (Schedule 14(b)(iii),
+    83,615.86 in 2023-24), foreign income, and XII.8 'Earnings from FCA' (1,87,471.20), which includes
+    exchange and capital gains/losses and so is cited here only, not as property income under R13.
+- ref: K9b
+  dataset: rbi_banking_corporate_rbi_surplus_timing
+  series_ids: [k9b.change_in_surplus_payable.current]
+  extent: partial
+  note: >-
+    RBI side: change in 'surplus payable to the Central Government' in 2023-24 = 2,10,873.99 - 87,416.22
+    = 1,23,457.77 (Schedule 4, derived). Whether FSF books the Centre's receivable is for rbi_financial_accounts.
+- ref: K9b
+  dataset: rbi_banking_corporate_rbi_accounts
+  series_ids: [sch4.x.surplus_payable_to_the_central_government.current]
+  period: '2024-03-31'
+  extent: partial
+  note: The accrued liability at end-March 2024 (stock).
+- ref: K2a
+  dataset: rbi_banking_corporate_rbi_accounts
+  series_ids: [is.income_total.current, is.expenditure_total.current, is.exp_provisions.current,
+               is.exp_depreciation.current, is.surplus_payable.current]
+  extent: partial
+  note: >-
+    E_RBI: income, expenditure, provisions retained (CF), depreciation and the surplus for 2023-24;
+    RBI saving = net income - surplus booked (R6) + provisions (method in the gap map).
+- ref: K2a
+  dataset: rbi_banking_corporate_rtp_banks
+  series_ids: [rtp.scb_pl.net_profit.psb.current, rtp.scb_pl.net_profit.pvb.current, rtp.scb_pl.net_profit.fb.current,
+               rtp.scb_pl.net_profit.sfb.current, rtp.scb_pl.net_profit.pb.current, rtp.scb_pl.provisions_contingencies.scb.current,
+               rtp.rrb_pl.net_profit.rrb.current, rtp.lab_pl.net_profit.lab.current]
+  extent: partial
+  note: >-
+    E_BANK profits by bank group (public = PSBs + RRBs). No dividends paid, so retained earnings need
+    STRBI/bank reports (not open); co-operative banks in rtp_coop.
+- ref: K2a
+  dataset: rbi_banking_corporate_rtp_nbfi
+  series_ids: [rtp.nbfc_pl.net_profit.nbfc.current, rtp.hfc_pl.net_profit.hfc.current, rtp.aifi_pl.net_profit.aifi.current,
+               rtp.spd_pl.net_profit.spd.current]
+  extent: partial
+  note: E_NBFC profits (NBFCs, HFCs, AIFIs, SPDs); public/private split only via NBFC ownership asset shares.
+- ref: F4a
+  dataset: rbi_banking_corporate_rbi_accounts
+  series_ids: [is.income_total.current, is.income_interest.current, is.expenditure_total.current, is.exp_employee_cost.current,
+               is.exp_depreciation.current, is.exp_provisions.current, is.exp_interest.current]
+  extent: partial
+  note: E_RBI operating account 2023-24 (income, employee cost, depreciation, provisions).
+- ref: F4a
+  dataset: rbi_banking_corporate_rtp_banks
+  series_ids: [rtp.scb_pl.operating_profit.psb.current, rtp.scb_pl.operating_profit.pvb.current,
+               rtp.scb_pl.operating_profit.fb.current, rtp.scb_pl.operating_profit.sfb.current,
+               rtp.scb_pl.operating_profit.pb.current, rtp.scb_pl.wage_bill.scb.current,
+               rtp.scb_pl.net_interest_income.scb.current, rtp.rrb_pl.operating_profit.rrb.current,
+               rtp.lab_pl.operating_profit.lab.current]
+  extent: partial
+  note: >-
+    E_BANK by bank group (STRBI substitute, RTP chapter IV): operating profit, wage bill, NII. Bank-wise
+    detail and depreciation are STRBI-only (manual).
+- ref: F4a
+  dataset: rbi_banking_corporate_rtp_coop
+  series_ids: [rtp.ucb_pl.operating_profit.ucb.current, rtp.stcb_pl.operating_profit.stcb.current,
+               rtp.dccb_pl.operating_profit.dccb.current, rtp.stcb_pl.wage_bill.stcb.current, rtp.dccb_pl.wage_bill.dccb.current]
+  extent: partial
+  note: Co-operative banks inside E_BANK (StCBs are public per the gap map). ARDBs and PACS not ingested.
+- ref: F4a
+  dataset: rbi_banking_corporate_rtp_nbfi
+  series_ids: [rtp.nbfc_pl.income_total.nbfc.current, rtp.nbfc_pl.expenditure_total.nbfc.current,
+               rtp.nbfc_layer_pl.operating_expenditure.nbfc_ul.current, rtp.nbfc_layer_pl.operating_expenditure.nbfc_ml.current,
+               rtp.aifi_pl.wage_bill.aifi.current, rtp.hfc_pl.operating_expenditure.hfc.current]
+  extent: partial
+  note: E_NBFC (NBFC-UL/ML, HFCs, AIFIs). Public part = AIFIs + government NBFCs (asset share only; see nbfc_ownership).
+- ref: R4
+  dataset: rbi_banking_corporate_rtp_banks
+  series_ids: [rtp.scb_pl.interest_expended.psb.current, rtp.scb_pl.interest_expended.pvb.current,
+               rtp.scb_pl.interest_expended.fb.current, rtp.scb_pl.interest_expended.sfb.current,
+               rtp.scb_pl.interest_expended.pb.current, rtp.scb_cost_return.cost_of_deposits.scb,
+               rtp.scb_cost_return.cost_of_borrowings.scb, rtp.rrb_pl.interest_expended.rrb.current]
+  extent: partial
+  note: Interest paid by banks (total, by group) and effective cost of deposits / borrowings; no counterparty split.
+- ref: R4
+  dataset: rbi_banking_corporate_rtp_nbfi
+  series_ids: [rtp.nbfc_layer_pl.interest_payment.nbfc_ul.current, rtp.nbfc_layer_pl.interest_payment.nbfc_ml.current,
+               rtp.aifi_pl.interest_expended.aifi.current, rtp.hfc_pl.financial_expenditure.hfc.current]
+  extent: partial
+  note: Interest paid by NBFCs, AIFIs and HFCs.
+- ref: R5
+  dataset: rbi_banking_corporate_rtp_banks
+  series_ids: [rtp.scb_pl.interest_income.psb.current, rtp.scb_pl.interest_income.pvb.current,
+               rtp.scb_pl.interest_income.fb.current, rtp.scb_pl.interest_income.sfb.current,
+               rtp.scb_cost_return.return_on_advances.scb, rtp.rrb_pl.interest_income.rrb.current]
+  extent: partial
+  note: Interest earned by banks by group and the effective return on advances; no borrower-sector split (BSR on DBIE).
+- ref: R5
+  dataset: rbi_banking_corporate_rtp_coop
+  series_ids: [rtp.ucb_pl.interest_income.ucb.current, rtp.stcb_pl.interest_income.stcb.current,
+               rtp.dccb_pl.interest_income.dccb.current]
+  extent: partial
+  note: Interest earned by co-operative banks.
+- ref: R5
+  dataset: rbi_banking_corporate_rtp_nbfi
+  series_ids: [rtp.nbfc_layer_pl.fund_based_income.nbfc_ul.current, rtp.nbfc_layer_pl.fund_based_income.nbfc_ml.current,
+               rtp.aifi_pl.interest_income.aifi.current, rtp.hfc_pl.fund_income.hfc.current]
+  extent: partial
+  note: Fund-based (interest) income of NBFCs, AIFIs, HFCs.
+- ref: R13
+  dataset: rbi_banking_corporate_rbi_accounts
+  series_ids: [sch13.b.sub_total.current, sch14.b.amortisation_of_premium_discount_on_foreign_securities.current]
+  extent: partial
+  note: >-
+    Reserve-asset property income received by E_RBI in 2023-24: foreign-source interest (Schedule 13(b)
+    sub total, 1,03,177.64) and amortisation of premium/discount on foreign securities (Schedule 14(b)(i),
+    2,235.86; accrual adjustment to interest). Exchange gains and realised gains on foreign securities
+    (Schedule 14(b)(ii)-(iii), inside XII.8 'Earnings from FCA') are holding gains, not SNA property
+    income, and are not declared here. Type totals from BoP are for the external unit.
+- ref: T4a
+  dataset: rbi_banking_corporate_rtp_banks
+  series_ids: [rtp.rrb_pl.income_tax.rrb.current, rtp.pb_pl.tax_provisions.pb.current]
+  extent: partial
+  note: Tax provisions of RRBs and payments banks. SCB tax provisions are not printed separately (inside provisions and contingencies).
+- ref: T4a
+  dataset: rbi_banking_corporate_rtp_coop
+  series_ids: [rtp.ucb_pl.tax_provisions.ucb.current]
+  extent: partial
+  note: Tax provisions of urban co-operative banks.
+- ref: T4a
+  dataset: rbi_banking_corporate_rtp_nbfi
+  series_ids: [rtp.nbfc_layer_pl.tax_provisions.nbfc_ul.current, rtp.nbfc_layer_pl.tax_provisions.nbfc_ml.current,
+               rtp.hfc_pl.tax_provisions.hfc.current, rtp.aifi_pl.tax_provisions.aifi.current]
+  extent: partial
+  note: Tax provisions of NBFC-UL, NBFC-ML, HFCs and AIFIs. NFC tax provisions (RBI corporate finances) are DBIE-only.
+- ref: C4b
+  dataset: rbi_banking_corporate_bsr1_mar2024
+  series_ids: [bsr1.share_credit_individuals.scb, bsr1.share_credit_other_households.scb]
+  period: '2024-03-31'
+  extent: partial
+  note: >-
+    Household share of credit by SCBs including RRBs (BSR-1 population, institution scb_incl_rrb), end-March
+    2024 (47.4% individuals + 10.4% other households), for the loan-FISIM split.
+- ref: K8a
+  dataset: rbi_banking_corporate_rtp_banks
+  series_ids: [rtp.scb_bs.loans_advances_excl_merger.scb.current, rtp.scb_bs.loans_advances.scb.current,
+               rtp.scb_bs.deposits_excl_merger.scb.current, rtp.scb_bs.loans_advances_excl_merger.pvb.current]
+  period: '2024-03-31'
+  extent: partial
+  note: >-
+    HDFC merger memo: SCB loans end-March 2024 with and without the merger (1,71,42,340 vs 1,66,17,066 in
+    RTP 2023-24 Table IV.1), for the merger-adjusted household borrowing split.
+- ref: K8a
+  dataset: rbi_banking_corporate_bsr1_mar2024
+  series_ids: [bsr1.credit_growth_net_of_merger.scb, bsr1.credit_growth_incl_merger.scb]
+  extent: partial
+  note: Credit growth of SCBs incl. RRBs, 2023-24, net of the merger 15.3% vs 19.1% including it (BSR-1 March 2024 release).

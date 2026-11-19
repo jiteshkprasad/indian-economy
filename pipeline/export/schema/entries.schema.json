@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "<v>/sam/entries/<L0 id>.json: the entries whose row account is in that level-0 node (PLAN s.3.6).",
+  "properties": {
+    "entries": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "binding": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "bop_function": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "change": {
+            "type": "number"
+          },
+          "col": {
+            "type": "string"
+          },
+          "component": {
+            "type": "string"
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              null
+            ]
+          },
+          "flags": {
+            "items": {
+              "enum": [
+                "judgement_band",
+                "unexplained",
+                "level_unexplained",
+                "old_base_structure",
+                "discrepancy",
+                "has_negative",
+                "depends_on_assumption"
+              ]
+            },
+            "type": "array"
+          },
+          "label": {
+            "enum": [
+              "official",
+              "derived",
+              "estimated",
+              "balancing_set"
+            ]
+          },
+          "pct_change": {
+            "description": "Balancing move as a fraction of the prior: (v - prior) / |prior| (0.05 = 5%); null when the prior is zero.",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "prior": {
+            "type": "number"
+          },
+          "prior_status": {
+            "enum": [
+              "official",
+              "derived",
+              "estimated"
+            ]
+          },
+          "prov": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "fixed",
+              "anchored",
+              "free"
+            ]
+          },
+          "row": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "official",
+              "derived",
+              "estimated",
+              "balanced"
+            ]
+          },
+          "v": {
+            "type": "number"
+          },
+          "verdict": {
+            "enum": [
+              "explained",
+              "level unexplained",
+              "unexplained",
+              null
+            ]
+          },
+          "why": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "row",
+          "col",
+          "ref",
+          "component",
+          "v",
+          "prior",
+          "change",
+          "pct_change",
+          "status",
+          "prior_status",
+          "role",
+          "label",
+          "confidence",
+          "bop_function",
+          "prov",
+          "flags",
+          "verdict",
+          "why",
+          "binding"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "node": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "node",
+    "entries"
+  ],
+  "title": "Entries",
+  "type": "object"
+}

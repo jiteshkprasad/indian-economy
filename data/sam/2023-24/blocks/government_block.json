@@ -1,0 +1,128 @@
+{
+  "block": "government",
+  "checks": {
+    "failed": [],
+    "n": 17
+  },
+  "concordances_read": {},
+  "constraints": 38,
+  "datasets_read": [
+    "external_sector_invisibles_annual",
+    "finsector_markets_pfrda_sg",
+    "mospi_nas_2026_s1_1",
+    "mospi_nas_2026_s1_14",
+    "mospi_nas_2026_s1_9",
+    "mospi_nas_2026_s4_2",
+    "mospi_nas_2026_s6_1",
+    "mospi_nas_2026_s7_1",
+    "mospi_nas_2026_s7_1a",
+    "mospi_nas_2026_s7_1b",
+    "mospi_nas_2026_s7_1c",
+    "rbi_banking_corporate_rbi_surplus_timing",
+    "state_fiscal_fc16_kfi",
+    "state_fiscal_fc16_state_accounts",
+    "state_fiscal_fc16_subsidies",
+    "state_fiscal_rbi_sf_appendices",
+    "state_fiscal_ulb_cityfinance",
+    "union_fiscal_afs",
+    "union_fiscal_exp_profile",
+    "union_fiscal_fa_expenditure",
+    "union_fiscal_fa_gia",
+    "union_fiscal_fa_receipts",
+    "union_fiscal_gcca",
+    "union_fiscal_rb_receipts"
+  ],
+  "dependency_hashes": {
+    "factors": {
+      "constraints": "33b7e0beaa82d469d451d8568301a226e625a0aea1bd4db7efc0621f65742d8f",
+      "entries": "104bdbbdbdd9a1c80a4c7e3f9efbef56626f6bf89367958da80ca503654ac374",
+      "provenance": "3e19f602fcb504fc589e225f8447fdda4c597688bb69e96b86f9c06b8a7f3ea4"
+    },
+    "households": {
+      "constraints": "d7934f138cf654b2f21979d311b55b7961c10ff87e38de6b5303451362e86430",
+      "entries": "d3cd60ede26b86b6b17224652a27c1eb3e9c1b7544688d6efba0224e98f42d0e",
+      "provenance": "d2e8beab4f053055fbb9981ecc5b83a78f10f9b093b8fb701b8cdc09353b39dc"
+    },
+    "production": {
+      "constraints": "b0a9b2675e64f33e3b3483d4f82ae4633b7be0c9dfa1673f8de82f4472257281",
+      "entries": "f6f2a4c4b428bc234ec83c20c5c5e754d599497cbc9ec463de0f668a0993ca21",
+      "provenance": "5c8f496f92c629e03d161c981730c5d224a54275caad0c6303df0eb8cba6730c"
+    },
+    "taxes": {
+      "constraints": "0c54d6ad10600e341b403fd329206177d71bc2a7cc5b3d8320573698eca41699",
+      "entries": "df7c2049bbaf3d6f1573fd6229a44b4715d653ba8e5740195f92d38b47eec4fd",
+      "provenance": "026ace3900a627edc6b72d82f8c2c1537fcf81cc2e02c212df5c2272d3db3f60"
+    }
+  },
+  "depends": [
+    "production",
+    "households",
+    "factors",
+    "taxes"
+  ],
+  "entries": 158,
+  "refs": [
+    "C2a",
+    "R1",
+    "R2",
+    "R2k",
+    "T2b",
+    "R6",
+    "R7",
+    "R7x",
+    "R9",
+    "R9a",
+    "R9b",
+    "R9d",
+    "R10",
+    "R18",
+    "K3",
+    "K3a",
+    "K6",
+    "K8e"
+  ],
+  "refs_not_implemented": [
+    "R15",
+    "R16"
+  ],
+  "satellites": {
+    "gov_c2a_keys": {
+      "decimals": 9,
+      "description": "C2a Centre/State split: cash seeds, SUT targets, F4b Centre share and the RAS result",
+      "ref": "C2a",
+      "rows": 28
+    },
+    "gov_fiscal_bridge": {
+      "decimals": 9,
+      "description": "K3a: cash revenue balances (+ ULB revenue surplus) to NAS gross saving, remainder, allocation, sensitivities",
+      "ref": "K3a",
+      "rows": 44
+    },
+    "gov_grants_bridge": {
+      "decimals": 9,
+      "description": "H9: Union grant heads to net releases vs State receipts; outside-treasury CSS; GST fund",
+      "ref": "R2",
+      "rows": 24
+    },
+    "gov_r7x_items": {
+      "decimals": 9,
+      "description": "R7x: GG interest and rent items included and excluded",
+      "ref": "R7x",
+      "rows": 17
+    },
+    "gov_r9b_sensitivity": {
+      "decimals": 9,
+      "description": "R9b: formula, variants, the D2-5 GG disposable-income evidence and the D2-20 memo of the unwritten variants",
+      "ref": "R9b",
+      "rows": 27
+    },
+    "gov_transfer_classification": {
+      "decimals": 9,
+      "description": "Where each subsidy / transfer line is booked (C2a, P9a, P10a, R10, R18, K6)",
+      "ref": "R18",
+      "rows": 26
+    }
+  },
+  "warnings": 1,
+  "year": "2023-24"
+}

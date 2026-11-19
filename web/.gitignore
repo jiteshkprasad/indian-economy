@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.next*/
+out/
+public/data-fixture/
+.locks/
+test-results/
+playwright-report/
+blob-report/
+coverage/
+.lighthouseci/
+*.tsbuildinfo
+.env*.local
+tsconfig.next-*.json

@@ -1,0 +1,123 @@
+{
+  "block": "households",
+  "checks": {
+    "failed": [],
+    "n": 66
+  },
+  "concordances_read": {
+    "hces2324_item_to_sut_product": "7c44a6d0ac8c6e2db8d969c9fb3624960bb9340d4a1e1089e22297e46ca8e200",
+    "io_tables_sut_product_to_sam34": "8b534e018e28cb7fa5d74c81e0fd498eae68266e03aa26653c391eb035370a23"
+  },
+  "constraints": 4,
+  "datasets_read": [
+    "hces_consumption_a10f_item_fractile",
+    "hces_consumption_a10sw_state_item_imputed",
+    "hces_consumption_a2_fractile_persons",
+    "hces_consumption_cms_education_2025",
+    "hces_consumption_health596",
+    "io_tables_icio_india",
+    "io_tables_ifpri_2223_datapaper",
+    "io_tables_sut_supply",
+    "io_tables_sut_use",
+    "labour_enterprise_surveys_aidis_2019_press_note",
+    "labour_enterprise_surveys_aidis_2019_quintile",
+    "mospi_nas_2026_s1_1",
+    "mospi_nas_2026_s1_13",
+    "mospi_nas_2026_s1_14",
+    "mospi_nas_2026_s5_1",
+    "mospi_nas_2026_s8_13",
+    "rbi_banking_corporate_rtp_banks",
+    "rbi_financial_accounts_hh_finsav_52ab",
+    "union_fiscal_exp_profile"
+  ],
+  "dependency_hashes": {
+    "production": {
+      "constraints": "b0a9b2675e64f33e3b3483d4f82ae4633b7be0c9dfa1673f8de82f4472257281",
+      "entries": "f6f2a4c4b428bc234ec83c20c5c5e754d599497cbc9ec463de0f668a0993ca21",
+      "provenance": "5c8f496f92c629e03d161c981730c5d224a54275caad0c6303df0eb8cba6730c"
+    }
+  },
+  "depends": [
+    "production"
+  ],
+  "entries": 1230,
+  "refs": [
+    "C1a",
+    "C4a",
+    "C4b",
+    "C4c",
+    "C4d",
+    "S8"
+  ],
+  "refs_not_implemented": [],
+  "satellites": {
+    "c1a_hces_nas_ratio": {
+      "decimals": 12,
+      "description": "HCES-scale spending vs SUT PFCE by product and commodity (the H1 gap)",
+      "ref": "C1a",
+      "rows": 438
+    },
+    "c4a_imputed_rent_sensitivity": {
+      "decimals": 12,
+      "description": "C4a imputed rent: SAM prior (HCES 539) vs the AIDIS building-value rural/urban split (band)",
+      "ref": "C4a",
+      "rows": 34
+    },
+    "c4b_fisim_split_sensitivity": {
+      "decimals": 12,
+      "description": "C4b household FISIM by group: SAM prior (XR-5 split) vs stock weights, loans excluding HFC housing loans, and deposits only (V-HH-3; memo for Checkpoint B)",
+      "ref": "C4b",
+      "rows": 92
+    },
+    "c4c_npish_memo": {
+      "decimals": 12,
+      "description": "C4c memo: NPISH final consumption share (OECD ICIO 2022-23); NPISH stays embedded in PFCE",
+      "ref": "C4c",
+      "rows": 3
+    },
+    "hh_aidis_overlap": {
+      "decimals": 12,
+      "description": "AIDIS 2019 household-expenditure quintile classes -> SAM groups: overlapping households (HCES 2023-24) and weights",
+      "ref": "C1a",
+      "rows": 54
+    },
+    "hh_group_map": {
+      "decimals": 6,
+      "description": "HCES 2023-24 fractile classes -> SAM household groups: persons, households, avg MPCE",
+      "ref": "C1a",
+      "rows": 72
+    },
+    "hh_hces_items": {
+      "decimals": 6,
+      "description": "HCES 2023-24 item spending by SAM group, Rs crore/yr at HCES scale (leaf items, 539, totals)",
+      "ref": "C1a",
+      "rows": 3788
+    },
+    "hh_keys": {
+      "decimals": 12,
+      "description": "Reusable household keys by SAM group (levels and shares = level / sum of levels; consumers should normalise the levels): population, HCES spending, this block's PFCE, C4a and C4b components, AIDIS 2019 asset and debt keys, FISIM parameters. aidis_equity / aidis_mf / aidis_small_savings equal aidis_fin_assets (no asset-class split exists in the ingested AIDIS tables); life insurance: use aidis_fin_assets; non-life premiums: use c4b_insurance_service (HCES 2023-24 has no insurance-premium item).",
+      "ref": "C1a",
+      "rows": 510
+    },
+    "hh_national_quintile_xwalk": {
+      "decimals": 12,
+      "description": "Persons of each SAM group by national (rural+urban) MPCE person quintile q1..q5, and the estimated national cut-offs (Rs per person per 30 days)",
+      "ref": "C1a",
+      "rows": 104
+    },
+    "hh_state_xwalk": {
+      "decimals": 12,
+      "description": "HCES 2023-24 State x area x State fractile class -> SAM groups (all-India area quintiles): weights, persons and consumption (Rs crore/yr, HCES scale)",
+      "ref": "C1a",
+      "rows": 4464
+    },
+    "s8_food_stik": {
+      "decimals": 12,
+      "description": "S8: free PDS rice and wheat by SAM group (tonnes; Rs crore at the SUT GFCE unit value) and memo rows (other free items; HCES-valued grain)",
+      "ref": "S8",
+      "rows": 164
+    }
+  },
+  "warnings": 0,
+  "year": "2023-24"
+}

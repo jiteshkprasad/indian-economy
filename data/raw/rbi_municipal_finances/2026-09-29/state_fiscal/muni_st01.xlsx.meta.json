@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 12209,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/01STATEMENTS13112024828DA9DF2F4C444BB9862C495B2A2571.XLSX",
+  "key": "rbi_municipal_finances/muni_st01.xlsx",
+  "method": "GET",
+  "name": "muni_st01.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.rbi.org.in/Scripts/AnnualPublications.aspx?head=Report%20on%20Municipal%20Finances",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"4816cbe88b3adb1:0\"",
+    "last-modified": "Tue, 19 Nov 2024 14:04:11 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:23:38Z",
+  "sha256": "b4a65ec0099d5af8de26afc00d8dacdf21051828a59deaead44854eaa4df46a2",
+  "source_id": "rbi_municipal_finances",
+  "status": 200,
+  "url": "https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/01STATEMENTS13112024828DA9DF2F4C444BB9862C495B2A2571.XLSX"
+}

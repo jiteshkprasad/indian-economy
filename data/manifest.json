@@ -1,0 +1,2351 @@
+{
+  "code_hash": "56d5fd1541922c67283f1ba0fd7cc1ebc550175e472992043a5270140bec872b",
+  "files": {
+    "BALANCING.md": {
+      "sha256": "c4bb5b85cd183ce7295c60b3a7f847550f3615fc8ea079dc52c552b136950220"
+    },
+    "data/clean/external_sector/_datasets.json": {
+      "sha256": "5e910f034132b4f4236b1ae2a60dbc43d5b7603a90599e73ae3b55cae4d0b83e"
+    },
+    "data/clean/external_sector/_provenance.parquet": {
+      "rows": 162,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "bb1c303113a8bc37fc1e0e4f3f84cf7ebe45e95c6cef478d7b9a910c4ce129b5"
+    },
+    "data/clean/external_sector/external_sector_bop_bpm6_annual.parquet": {
+      "rows": 1700,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "daedf4050da399a8feac42b66e092a6a07c051c593be48d2e072de49ee0dc264"
+    },
+    "data/clean/external_sector/external_sector_bop_bpm6_quarterly.parquet": {
+      "rows": 6708,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "a7d9374be3e38a16d11f586d7d407f505c6e8a210fd876ca59af7347efb42f47"
+    },
+    "data/clean/external_sector/external_sector_bop_overall_annual.parquet": {
+      "rows": 2172,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "0e57ae6220f0af772fa188f890eef8a7a38923ffe6685226a6ca799ca8cfedbd"
+    },
+    "data/clean/external_sector/external_sector_ecb_monthly_2324.parquet": {
+      "rows": 1290,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "91f78d2ee74d1b97d1a139e25d3dfafce91dec36f1c0691260055b340fe05202"
+    },
+    "data/clean/external_sector/external_sector_external_debt.parquet": {
+      "rows": 2432,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "8e9dd31fd4cc90a13d61d08ccadb2f41d48fe7cc81cc027e69116c5a9fdfd06b"
+    },
+    "data/clean/external_sector/external_sector_external_debt_by_sector.parquet": {
+      "rows": 289,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "a558b45dbf2ca52a76b980fcdac0c3db4432614b2b6cca73cc055c631a0c0a5f"
+    },
+    "data/clean/external_sector/external_sector_fla_census.parquet": {
+      "rows": 791,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "be76cdb313e3223b725e5342eebaa5ad3c372f36398bd747b90664bbf8d83e68"
+    },
+    "data/clean/external_sector/external_sector_foreign_investment.parquet": {
+      "rows": 308,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "b67b1c89c48842f81dfa33a54441830250a875583ded63e73cb008982e5a4ef5"
+    },
+    "data/clean/external_sector/external_sector_fx_inr_usd.parquet": {
+      "rows": 188,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "89bdbe9cc08163d59e548b042ccd7fe512eb982daa9f8df99e7ae4a87fa62f85"
+    },
+    "data/clean/external_sector/external_sector_fx_reserves.parquet": {
+      "rows": 510,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "91b9e2d3e1a3f303cee3c2c92712de8d52877f1dc14a1c11f1b96dbf995be934"
+    },
+    "data/clean/external_sector/external_sector_iip_quarterly.parquet": {
+      "rows": 872,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "eb98df011d3c4fa46dec9a0f88f10354ccc2979f1554930b55df987f16965118"
+    },
+    "data/clean/external_sector/external_sector_invisibles_annual.parquet": {
+      "rows": 1440,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "6e5ce79b65e1022fd985aed5bd308b263e212839b34761ccb5f3691107dbd106"
+    },
+    "data/clean/external_sector/external_sector_ites_survey.parquet": {
+      "rows": 610,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "a77db18ce0476d31c5bc592181aec94d435d48eb1537de3a172afcaaf1f66a04"
+    },
+    "data/clean/external_sector/external_sector_lrs_outward.parquet": {
+      "rows": 208,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "883e4d82bcc6421c5a9fe7c7cfdbd6e1736ea41ae5c21fa498ff96661ca02342"
+    },
+    "data/clean/external_sector/external_sector_nri_deposits.parquet": {
+      "rows": 304,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ea0cb80129faefd86f920f1fbdb6298eacc3f44fe2d0174b46b1642e1797ad2c"
+    },
+    "data/clean/external_sector/external_sector_remittance_survey.parquet": {
+      "rows": 143,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "e6c9963a667e181791804f2ccde72bf1710e460b94819b6fe9cdabee9752fa36"
+    },
+    "data/clean/finsector_markets/_datasets.json": {
+      "sha256": "4e060529d25735c5fe05bfaddf62b6f152006a77a0e208dc004d77b9bcb0db00"
+    },
+    "data/clean/finsector_markets/_provenance.parquet": {
+      "rows": 80,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "82679c9670681af36cde6ec04edf782dd1f5d1befe461c5081cc052f05030485"
+    },
+    "data/clean/finsector_markets/finsector_markets_epfo_ar.parquet": {
+      "rows": 361,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "471797fbed5068bd84d65622b981704a39040b2f1e4ec487cfc111af29aab32e"
+    },
+    "data/clean/finsector_markets/finsector_markets_epfo_eps_outgo.parquet": {
+      "rows": 30,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "c675c56bede35597c7e0e35ef27d7427f11856d2004f0e5905bbd3ff2e6ece53"
+    },
+    "data/clean/finsector_markets/finsector_markets_irdai_life.parquet": {
+      "rows": 1284,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "66aa1d368b0a8b1b9d577040e9e1808959aef60d87fd827418236b15356c73d5"
+    },
+    "data/clean/finsector_markets/finsector_markets_irdai_nonlife.parquet": {
+      "rows": 2124,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "0ba832cd6897a9910857154a9335a7ab83f537cfe4bda41b733ec6dffe636a2a"
+    },
+    "data/clean/finsector_markets/finsector_markets_irdai_summary.parquet": {
+      "rows": 1140,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f545ad0533bceb5505621220725c2da89fdfd7b2fe1687781914a648da2ad98e"
+    },
+    "data/clean/finsector_markets/finsector_markets_pfrda_nps.parquet": {
+      "rows": 3749,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "55c4751022f67df567322fecd762f43ec136a7601df4a2694fa9bad72d5572d9"
+    },
+    "data/clean/finsector_markets/finsector_markets_pfrda_sg.parquet": {
+      "rows": 589,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "9a8e0ec1c8d62d5c73c7c4cfdfeab2392788148fd2f6905d252b74e5b141ab6e"
+    },
+    "data/clean/finsector_markets/finsector_markets_sebi_bonds_equity.parquet": {
+      "rows": 151,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "9804cdba5a5ff6cab8b66485bcc5503073352b1b588c56035a79476066945642"
+    },
+    "data/clean/finsector_markets/finsector_markets_sebi_foreign.parquet": {
+      "rows": 868,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "2af2a0386a35d38d7ea6d6bc9b76f61ba5576faf22a3901cbd49af0e36e6ddd5"
+    },
+    "data/clean/finsector_markets/finsector_markets_sebi_mf.parquet": {
+      "rows": 1069,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "de17efd863daf48e17c580dd03ea5aa482d5bbf149d7fcdd5809e65dc1a9c409"
+    },
+    "data/clean/finsector_markets/finsector_markets_sebi_primary.parquet": {
+      "rows": 512,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "8e25e3edb99d28bf0a8a5781e436751dea5204ddd6e22058d6aa15280179ddcb"
+    },
+    "data/clean/hces_consumption/_datasets.json": {
+      "sha256": "8dc9218a6a09ed6ecb8d78857384ce55db0f1ac826ecab31558443f504a7d4b8"
+    },
+    "data/clean/hces_consumption/_provenance.parquet": {
+      "rows": 41,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "f6d1386ad9880a8e770565c39090a91b6e13c3499d814d350f4d52424de15268"
+    },
+    "data/clean/hces_consumption/hces_consumption_a10f_item_fractile.parquet": {
+      "rows": 51142,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "6c807620a504fe7d670429a2e8cecd79068a42cbe2d89e2a3363c7e4af65c519"
+    },
+    "data/clean/hces_consumption/hces_consumption_a10s_state_item.parquet": {
+      "rows": 84238,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3bc096b195396983a00351a3b2315f3bbe4192346e0be544e8a241ba59c57b8c"
+    },
+    "data/clean/hces_consumption/hces_consumption_a10sw_state_item_imputed.parquet": {
+      "rows": 42651,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "638e043eab327f908cdb813f028f9c590b1d60927a671d4424edceea906493be"
+    },
+    "data/clean/hces_consumption/hces_consumption_a2_fractile_persons.parquet": {
+      "rows": 21164,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "b71aeb8ef4d5064b8322288f037b6dbbddb366e0791b7b050fdb1798053410dd"
+    },
+    "data/clean/hces_consumption/hces_consumption_a6_group_fractile.parquet": {
+      "rows": 81705,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "77772d80219b9689f776f7efd9089355ae5ddfe2c913294cced26870b2fa0c21"
+    },
+    "data/clean/hces_consumption/hces_consumption_cms_education_2025.parquet": {
+      "rows": 54,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "21df7ddef612782422e6c35f01867a9157bea8a2db4a1e8a55f65857854dc9ae"
+    },
+    "data/clean/hces_consumption/hces_consumption_cpi2024_weights.parquet": {
+      "rows": 47413,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "6ae5363a3a3e09282a02c93df29bcaffd8dd651d6c8968fdfce3b01755fd8528"
+    },
+    "data/clean/hces_consumption/hces_consumption_health596.parquet": {
+      "rows": 30,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "35a24e89b52c878f0e0ab9c4ab27e43ca5f1a6eb2a3fd0a55c232242ed6ee83d"
+    },
+    "data/clean/hces_consumption/hces_consumption_report592_mpce.parquet": {
+      "rows": 300,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "e33915219094015423fa74595fd4356ef78097144a3dc97cc8849a09b1d4d32c"
+    },
+    "data/clean/io_tables/_datasets.json": {
+      "sha256": "49b6592d6d3aad146c9689100f89061a298236dd9f842596c34d0a93f339decd"
+    },
+    "data/clean/io_tables/_provenance.parquet": {
+      "rows": 65,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "6c9fa845cd6a80e0634ecba830ddfd6d77c2f46566cd3856172d517278a9d1ec"
+    },
+    "data/clean/io_tables/io_tables_adb_ind_iot.parquet": {
+      "rows": 63042,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "6902777ef40846633bb361d8c5f61487a37d87ff29cb7dca653730c34f6d40f7"
+    },
+    "data/clean/io_tables/io_tables_energy_psut.parquet": {
+      "rows": 324,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "5a8117e697c30eff5b9b0189254e95c9e338c9b52bc8f07229cc33e649a3311a"
+    },
+    "data/clean/io_tables/io_tables_icio_india.parquet": {
+      "rows": 41076,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "5767aa23fa25a0a5c55871fd1d87d8b385161da73db9f3c849fe2c91cc0765c9"
+    },
+    "data/clean/io_tables/io_tables_ifpri_2223_datapaper.parquet": {
+      "rows": 194,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "8833b1db59cc51a8e288a3ef7d1667f08c3b0a50db36fa2cf99ccf941445e7c8"
+    },
+    "data/clean/io_tables/io_tables_sut_note_totals.parquet": {
+      "rows": 36,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "e0b2da5f0691b3f0bc3bd7888ab7753d455d9d333e2660e9b372015014bc0a0f"
+    },
+    "data/clean/io_tables/io_tables_sut_supply.parquet": {
+      "rows": 2839,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "819d291daa465829aaa6c8938db506153bcb452af974fc5ac22895ac72ae7a40"
+    },
+    "data/clean/io_tables/io_tables_sut_use.parquet": {
+      "rows": 6979,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "0ff36dfe34124e31aba6ea9311d7f0aa02ca008ba2ce4149273a99968f50295b"
+    },
+    "data/clean/io_tables/io_tables_sut_va.parquet": {
+      "rows": 804,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "70a63542591907ef4426196fbe7f19a149e44e2e80d375228922b8b3c7cb11b0"
+    },
+    "data/clean/labour_enterprise_surveys/_datasets.json": {
+      "sha256": "12c9de7d3941d5185b0401598d5972b8a28980bcb7b58b08eeaef7051ec76939"
+    },
+    "data/clean/labour_enterprise_surveys/_provenance.parquet": {
+      "rows": 116,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "e0fb8c48f171f3298b85b0b2832e6c85a1c88390c1275d56cb1b39a3cdeae6a0"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_aidis_2019_press_note.parquet": {
+      "rows": 87,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "29614e694f392e0c3b7855292df5c945a769cc53c38d977e644d463705f6c2f1"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_aidis_2019_quintile.parquet": {
+      "rows": 528,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3b399e7a93ca73e344e7610df2eb4e8a5af30c7b04890192ef60053bc650fb4f"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_asi_2324_industry.parquet": {
+      "rows": 3180,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "4495d1331477f5c634ab7802506a58339ffe2e40c4eab848bfb8c9dd2a457800"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_asi_principal_characteristics.parquet": {
+      "rows": 80,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "856cbd07b3b23bece525a090e1a7609f5995af2c425a0eb19248345e15926a66"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_asuse_2025_assets_loans.parquet": {
+      "rows": 4500,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "6927167ceb8ffef2563627263e59d8743be1fbd455fef5c1a34e041fb1fb61d8"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_asuse_2324_activity.parquet": {
+      "rows": 18871,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ad2c67005594c4c8ef804fcbeb8115665652ceb2c461382dbbfacac3e167b2c1"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_asuse_key_indicators.parquet": {
+      "rows": 252,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ffafdcbeb7cc1b346d9f5fd82bda3f607f0841625d30f6d625fffc6d90410478"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_plfs_earnings.parquet": {
+      "rows": 487,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "9e1fdab36e6a702eb35c8e1ef0e37992b1ca7e67e485ce7ec3ed839246cad8c5"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_plfs_earnings_api.parquet": {
+      "rows": 216,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "5807a52ea395c816f2a5f9176c94a7afb2f759dc12de4abe041f3d4cfdc19ee7"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_plfs_enterprise_type.parquet": {
+      "rows": 162,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "6c5f43716f642be4b5b12dd09121ff7a09b1687fdb66dc80a4997b000b690909"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_plfs_industry_dist.parquet": {
+      "rows": 7011,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "7999ed54af7feb6fc4acab1937849627823dd7367e3e6f6231722bdaac2614bb"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_plfs_industry_status.parquet": {
+      "rows": 702,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "90742c455f39c4e6bd75c553d268f81c2fe36ddc74a78a61e9b03a5a775bc7dd"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_plfs_lfs_indicators.parquet": {
+      "rows": 756,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "7e7c2f919bd37c437ac38af3376e131d9a95d98b2254d139c41ef34513de8e2e"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_plfs_status_dist.parquet": {
+      "rows": 162,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ce8b8ef8e9dd3fbec015e1ed49c8fcd8d45cc140edb6019328960aa04513525e"
+    },
+    "data/clean/labour_enterprise_surveys/labour_enterprise_surveys_sas_2019_income_by_landclass.parquet": {
+      "rows": 131,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "c0267597ce75471af9ebbf3d44dc347d2407de40cca2c8fe518b2710f2f98d4c"
+    },
+    "data/clean/mospi_nas_2026/_datasets.json": {
+      "sha256": "4212c23a715233a5ecb9dbc9fb8e6cc65d26a7f0ab31dcc84a2d4a1f5b5c6bc7"
+    },
+    "data/clean/mospi_nas_2026/_provenance.parquet": {
+      "rows": 327,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "ec4ac6ebb38d8c8e5aa92b031a510abd0c5fabed6169167ba7a27dba6609294c"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_api_b2011_annual.parquet": {
+      "rows": 7160,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "e07341cd746a4e3d71297b2e62b9353e3be502e71e3e3cf16294ac6fffff6374"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_api_b2011_back.parquet": {
+      "rows": 5344,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "9a48492a4afcf00e4e1fe9affcf6e3357e42d25aa787ee0edf47628155f62472"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_api_b2011_quarterly.parquet": {
+      "rows": 2084,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "b57e06a6640ce74e6e5c17b21ddbd8d793ca10b6d2be2f265562e93ee2db535c"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_api_b2022_annual.parquet": {
+      "rows": 575,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3ca222a1958900570a6cc69cb5e5c993dc888f382ab18fed74bf24f41a89178b"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_api_b2022_quarterly.parquet": {
+      "rows": 612,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "1c831fedd79f2ebff2fdb117ec9b21930c5cca434eca68d32ce45b354c91fd39"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_derived_residuals.parquet": {
+      "rows": 9,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "47478bbf3129fe0a49495ce3420d08c0ab7258a6b97a79583cadfbf33b954d1f"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_nas2025_s1_1.parquet": {
+      "rows": 1114,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "98e466f51e58031002c8be13d681ac5dd40e1ba7bb823827a3437e0602f4d8f2"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_nas2025_s1_14.parquet": {
+      "rows": 364,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3f4539747b969544f8f0d9c4a2a4c7a9d506031afb88aeca840930553628b75b"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_nas2025_s1_9.parquet": {
+      "rows": 286,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3b288adb5576224a2e4133f37f658cd8b7a2584641b565464dd89dcbebd552ac"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_nas2025_s5_3.parquet": {
+      "rows": 377,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "047ba010c1f2cefbf5edde7c182b9454ad36caeb0179e19982b15cf3bc6224e2"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s1_15.parquet": {
+      "rows": 912,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "61a10737ca338bd696634d5dadd10c4df91fdb398c8a18fdda3652762b96e08a"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s2_0.parquet": {
+      "rows": 565,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "8cafb18d663485005287f5d3eefdeb4bc5a25cfbd97433fb3908d897bf2d6808"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s2_1.parquet": {
+      "rows": 553,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ab8487403923e83fded66eab1a8fff3094a296ce046054dcc8345a74e7749730"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s2_1a.parquet": {
+      "rows": 396,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "22a16ea8c15185dfbc584f895fcaa332137152a874bbf6e856eaad10d7ea0483"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s2_1b.parquet": {
+      "rows": 541,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ea4da9a960890f9304bee1f905273ce7275557c397b706fcdf64b9de7c8880de"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s2_2.parquet": {
+      "rows": 520,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "420342ea4e4567381a701d7b32345a963d8d48c2a5e80c993c9a701c3f1f5562"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s3_0.parquet": {
+      "rows": 593,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "7890f7f33568c34861508d01cbe1ed02ab4b48932e6cfcdff5c159683ce286e4"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s3_1.parquet": {
+      "rows": 585,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "bac58b84641cc4a9074965612337295793a0c57c305db28120cc35cf9fc67e2d"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s3_2.parquet": {
+      "rows": 551,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "814a2aa95d730c2169bd70e0b6589f45644cbdd53fa2e54c21a6a0dadbd083af"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s4_0.parquet": {
+      "rows": 624,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "9779c422137761685b4327549d0df0bba7604c84f61490a4c9fae2bc1aa3bb54"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s5_0.parquet": {
+      "rows": 600,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "17bbfc815aed09f8d4aed8a1bea7f367eec8fefe228f76e7100a9f5e2549ef0a"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_oldbase_soa_s6_0.parquet": {
+      "rows": 468,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "48868ef37068e0d44ee1cc3f3d427595fff7c4600fa6d8a4c888c67bfa004c10"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_1.parquet": {
+      "rows": 254,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "fbea9d263f9e451d112752b0e88e7e8c1bc96e8a8e655615263a3be42353c106"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_10.parquet": {
+      "rows": 150,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "16c59b55a344a945ef5cddb2196541e17eb3c60732d850a805f7567015cf9e04"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_11.parquet": {
+      "rows": 246,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f62649bd3173ae207b002574d64cb7e0be02f4e6ed997fa9cffa0cc50cec8b8f"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_12.parquet": {
+      "rows": 126,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "df6713fa5d0aa9a887d18af4f7501c2a395f2553caa127647eccdabf98deba72"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_13.parquet": {
+      "rows": 42,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "1f536f4c83ac16ea4addcc2c29c0571a83f645d3651cff4ae1f330ad5f01e5c4"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_14.parquet": {
+      "rows": 84,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "1fd91b35c8d44cf5bc1c4188f27f235f4fff89c1d93bf650fd4f334966f85138"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_2.parquet": {
+      "rows": 38,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "c909da41e92f5db381bb72dd858912e771f43e74587e10a6c53824288c27e863"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_4.parquet": {
+      "rows": 120,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "9126936ecfc1c1ab539cde3d7241d8db86521f1b2fa2464736f2985f7010c257"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_5.parquet": {
+      "rows": 678,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "b52c6c88972060c91afb4a335566ab1cd87bbd34ed0a00cf77c0eda97eb17e74"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_6.parquet": {
+      "rows": 180,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "21ecf8bdbb6369eff100879ba77ab7c7c78ef9c219df3edf5a9ee927c0ce0164"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_6a.parquet": {
+      "rows": 180,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "e6dae43f2963aeb0ccf50492df205c2bde72bca36111ff580793db77d7b987ab"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_6b.parquet": {
+      "rows": 120,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "24c99c0fa886c4f94856d1c1d6a52310c2a0e04292ddcb1f483d9fb6148f7085"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_7.parquet": {
+      "rows": 150,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "6900f7a279e2b8ca120d00d80193f3b875312f67623c21950ef2b353ebdde57a"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_8.parquet": {
+      "rows": 150,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "0f2a19a9d63fc71a971518bc8884c2b55b4f368a1bfa16692479c4be8fdf1aef"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s1_9.parquet": {
+      "rows": 66,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "aa32d321912afe06b6bfd70e559e70cffd76c01e8e45fba6a57394df14a90b4b"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s4_1.parquet": {
+      "rows": 228,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "9583adc4c2a14b45cba685ef5088007c10884a5106461fca7ca20ce61e8e87a5"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s4_2.parquet": {
+      "rows": 1380,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "dc80e29b1b8b4c124bf8b170722c65926f1f73f741a3a91118b12243aba6f00a"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s5_1.parquet": {
+      "rows": 390,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "9754501312e753a1efac5e2595c7b301790ab2a9c62fd8b29723ddb41484ba0d"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s5_2.parquet": {
+      "rows": 198,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "1945218dbb5435f2cb1d7fe9e76f9182dc484422d3e92831eb5c8c18be903ca3"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s5_3.parquet": {
+      "rows": 90,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f01558214788582aaa6fb35b6cc48dce12214ba5bb97c432c93e0eb98bdb96ad"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s6_1.parquet": {
+      "rows": 204,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "bbbf9a82c1d59b961e0736caf9d84e4e63f1a1ca4b25234f7b72c252e45a132d"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s6_2.parquet": {
+      "rows": 39,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "a4fe7382ffa65a5d7f609c036579cfc8c61fab330a3df77c8920a3be12ab9b0d"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_1.parquet": {
+      "rows": 525,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "db7076abf8da88dbe2a1da4777366b3b0e3b67dbcae6556eb0016fdd32b9fb62"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_1a.parquet": {
+      "rows": 525,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "1d258a5cc3f3111ac21a659d67626f9ae1b1e7ec91c4e4172b6bf8620054a202"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_1b.parquet": {
+      "rows": 525,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f3fdccc6530628cf496e1eb21fba94665f9e3ac1342f3ce09c96f799c02bff81"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_1c.parquet": {
+      "rows": 483,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "224bd347e4eb37bf3510b7c833cceb4cd905abe57511b938be5e796865da0b83"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_2.parquet": {
+      "rows": 600,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "aebcbee7c8ad79f747edf3347d50ab4b01c2059c7bd806be1689f09894cbff85"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_2a.parquet": {
+      "rows": 600,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "1e3fc5060b6d58032ed5739382516cc9ba8dfe47dd380c515e7331e8fd32446d"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_2b.parquet": {
+      "rows": 600,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "660f6caee8abd9ff3794af2ed568ca0a5bd6ed87d34aab553559b8ebcb384bb6"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_2c.parquet": {
+      "rows": 600,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "287d5ba3663281645cdbeb07c09e82073915c05c8316e63645b6ca3d522b39a1"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_3.parquet": {
+      "rows": 375,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "cedccbf90e887664cef8b1c22c6326baf5cb0d3a663fa17162c1f08274183f81"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_3a.parquet": {
+      "rows": 375,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "a6c06979fe8f5bae0db226b7b2ea2a8e9a7f72be25b77fc103b0170b816b74fb"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_3b.parquet": {
+      "rows": 363,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "779b0bd615ef6eba040d26ea2f912d8454e6a827cad69ffb8f7e028c90911801"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_3c.parquet": {
+      "rows": 375,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f1292f1d3cef9ebd2f13aa5bb1a33cd4edd4d2be9c4c48c639f23cf385fc6d2a"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_4.parquet": {
+      "rows": 225,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "231f7596d94c69fb7a102cd5e036219136ef89716b6b53afe9f2234411cec3f0"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_4a.parquet": {
+      "rows": 225,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "158eac8842cdcf91f928adfd518d44c2e1bb34e637d49401ceca972fd9f86558"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_4b.parquet": {
+      "rows": 225,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "133f565198c4cfa811964982e02ec9cc349532a496cb66d484f98ded46000531"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s7_4c.parquet": {
+      "rows": 225,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "4c1e5b6c3539f33065d784fdafa93ab6e2918226bc22b4c04ef5e5b9975f80d0"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_10.parquet": {
+      "rows": 234,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "814d153a423661c41a096ee0f3330db35267a58685795bd3005331d489ad4b5a"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_11.parquet": {
+      "rows": 162,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3ac3c7c080b8eb03839706a77a000b6944f020daae5891fa6b8cadc70826db43"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_12.parquet": {
+      "rows": 84,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "342ce263ba9364146bf9a4c3a1e9c479a23cf3f53944e0ced777f303f802e3a4"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_13.parquet": {
+      "rows": 126,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3fd314411347e1fa4b8e1ccf2125181f2f3afeaf2e2a2ab14b17bf13d08c9ca7"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_14.parquet": {
+      "rows": 180,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "542853e73b2747f874c76615eac0b913583768a8bb4c5a92dc2bcde0bfaaec24"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_15_1.parquet": {
+      "rows": 102,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "2be1b2cac2e9b85547efccc697ee7c1d051819880ae4d061d8a2305c9a1c1854"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_15_2.parquet": {
+      "rows": 336,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3502cf4dad5d152d27b2f14118cff575b4a1c8e3fb89bca7319495caa282fe21"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_15_3.parquet": {
+      "rows": 504,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "83026e5b2e6a5ab9cb2581d3ce8d257980f4fe820505b43ce15a8c39acb86836"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_16.parquet": {
+      "rows": 45,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "0c573481e6c9a71af1b32d389578a1836a58b15440f9a31bf1d1eb0254c9b195"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_17_1.parquet": {
+      "rows": 240,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3e3dee86eb66846066387ec38baf7e4b9e28bf092636618fb1918c121e06d112"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_17_2.parquet": {
+      "rows": 96,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "225eb22d22a7f5c581b606a46306b36b5469619c7bbc7bfdb06820c0f3b3be41"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_18_1.parquet": {
+      "rows": 368,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "945c4d7c029f81c205aad3ad265c855d4ab30766d45b59817e6c656c570f8ab9"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_18_2.parquet": {
+      "rows": 368,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3ca484c09f1bb71b731e758254a90248624e4a674d552cc2f7d16abb32221ef6"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_1_1.parquet": {
+      "rows": 126,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ba0c7391bc25981336af0499c41503ce0b749748280cd819053459b156e4ac26"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_1_2.parquet": {
+      "rows": 990,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f27184681787aa62f3df836e90d64157969bf6a38322b14a28466c62cd20f821"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_2.parquet": {
+      "rows": 180,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "670120767a85d3b84d5d0eec28dd00033b639afd98b79985f070dbc6bc4a849a"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_3.parquet": {
+      "rows": 60,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "b26848327d9ac86a41eceee8865dbc8a5602526b5e43b291632d959204b75ed2"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_4.parquet": {
+      "rows": 54,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "4dd6ff033800260ab0c19cf0bfc248e186fe03db746f4849fddafd0da6085419"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_5.parquet": {
+      "rows": 144,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "a3b391ed6268a4ce8e487a61bb29e93f2b7b2778475542e82c533a7645446817"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_6_1a.parquet": {
+      "rows": 228,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "a32a98cdb8e57047677e4ea60abb08654a3a23e1dae2cd2f91100c302492be2f"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_6_1b.parquet": {
+      "rows": 252,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "bcd53aed44a46d0dd68b29d96ff471ea6b08d8231cd655f6320369b87f9c6502"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_6_2a.parquet": {
+      "rows": 228,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "1d25d61c2ab1aa42d3c4ef2ea62b7255f5457d6702edd59d3e85c3b6ff924b0f"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_6_2b.parquet": {
+      "rows": 252,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "c0589b3cf3f877ff1e0da45e389fd3e8062574be09fd95e8d92f2e0b3e17b7bb"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_7.parquet": {
+      "rows": 180,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "3e300bdc1c05a5f5981f12b4dad12de770ac705c27b8e541baab8a6475c2e187"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_8.parquet": {
+      "rows": 144,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "8c4be8bcf828539eb1529f5e1fc1c13ff297f80db9ec027435b2ce294abd0bf9"
+    },
+    "data/clean/mospi_nas_2026/mospi_nas_2026_s8_9.parquet": {
+      "rows": 108,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "d8281a4c436f9ead46059237c12d7441b9787d2d7ed0fd590109bb6bdf8ecbaf"
+    },
+    "data/clean/rbi_banking_corporate/_datasets.json": {
+      "sha256": "c15eef867f855d3c0cb8e09c520f01a9f440c161bcd248e0d73677fef653d0e4"
+    },
+    "data/clean/rbi_banking_corporate/_provenance.parquet": {
+      "rows": 123,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "9dc9a57b1e51be19f7757cb954625b48e5c65962621dda55b01d225d95fbed5b"
+    },
+    "data/clean/rbi_banking_corporate/rbi_banking_corporate_bsr1_mar2024.parquet": {
+      "rows": 10,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "94af0f9e3ec4f32c09e2c73e12c4178a526fda413994c4ce3d3e18719b4dbb7a"
+    },
+    "data/clean/rbi_banking_corporate/rbi_banking_corporate_pcbs_2324.parquet": {
+      "rows": 20,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ae2ab88f14d235b725212ec5fc7ae4544f24b480bea03e6e7d3c8b96e8b30afa"
+    },
+    "data/clean/rbi_banking_corporate/rbi_banking_corporate_rbi_accounts.parquet": {
+      "rows": 1172,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "c4fbe28917fb029cd36e4e18db80a0154dc4f6c62916a7b187bfc5e4505d3699"
+    },
+    "data/clean/rbi_banking_corporate/rbi_banking_corporate_rbi_surplus_timing.parquet": {
+      "rows": 8,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "e862dc43630acb404ca4c8283aceb4b3e2c6f8c8e7d4232c867a4f880359cfe7"
+    },
+    "data/clean/rbi_banking_corporate/rbi_banking_corporate_rtp_banks.parquet": {
+      "rows": 1182,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "921bfe3817ed28f4a126da7d2f3bc29ef193c5424e18aa79a785c19dfd49cf79"
+    },
+    "data/clean/rbi_banking_corporate/rbi_banking_corporate_rtp_coop.parquet": {
+      "rows": 232,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "db7ddc027c19732c920f75e0b095bfd31f099509386fd50368142a4c23a024a7"
+    },
+    "data/clean/rbi_banking_corporate/rbi_banking_corporate_rtp_nbfi.parquet": {
+      "rows": 431,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "26db82ee649e5845e273f5ffddc769828e7ffd2c82e16e026495326a272d4a7b"
+    },
+    "data/clean/rbi_financial_accounts/_datasets.json": {
+      "sha256": "19574ce5322c6aafd7bd1bb618e83eeecf07c60426e2bdaffe179a883c5d38b2"
+    },
+    "data/clean/rbi_financial_accounts/_provenance.parquet": {
+      "rows": 249,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "5abd169a1d30c1b44da86a25fc7e8b577d6325861f4c766a2916164406e0adf3"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_dea_central_debt.parquet": {
+      "rows": 736,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "0842e61eab3129734e3c35493cbb9e342183da3886c9e851eae0b817aaf56309"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_dea_gsec_ownership.parquet": {
+      "rows": 750,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f6d3e3381e343cd13ced0a3f741c6fe6dea75e81e4beaa5cc5a9e0471aab0a89"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_fsf_balance_sheets.parquet": {
+      "rows": 207228,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "191391da9b5fd4aca8ad52d23977732f07a656fa900634edc26f50c146386366"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_fsf_financing.parquet": {
+      "rows": 900,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "4ec473c74b3548f887552692ea1bdaf8320c33f8e778145d1976e2df9ceedc92"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_fsf_fwtw.parquet": {
+      "rows": 4500,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "e6f3e1c8130ab3ab06533757459e64391a4b8a45e21f32c0669c6411edde26ae"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_fsf_instrument_sector.parquet": {
+      "rows": 10800,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "a922a4e68027c2ad4838dd25b3587f28f35519046cef808de590bd841c2bd33d"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_hbs_gsec_ownership.parquet": {
+      "rows": 210,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "64ba0d49a57c4980df75af3909ead1c3576501b51a43e773ff72feeb192b8785"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_hbs_saving.parquet": {
+      "rows": 687,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ffb3d5e934844af9e5dc7caa19df36e84a7589803a44c51613e209ab7ccd0ae5"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_hbs_scb_balance_sheet.parquet": {
+      "rows": 240,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "67cf85a5b3567cb15dd9416ecdc04f7efaf3ce13f8c354b78c672a16d39d8c20"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_hbs_small_savings.parquet": {
+      "rows": 311,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "e0d73b93152b61e6ebae030ebfabc73d8712db9fa6b1b08c1cc0ea5bc8f47d86"
+    },
+    "data/clean/rbi_financial_accounts/rbi_financial_accounts_hh_finsav_52ab.parquet": {
+      "rows": 1000,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f4165a9ab914decbdc7b275cecc8e857699960d673563bac8484907841102787"
+    },
+    "data/clean/state_fiscal/_datasets.json": {
+      "sha256": "40c07aa4f89e2cdb280d2438b0d5e03d3427b70c472437f91c97113ecdd74d68"
+    },
+    "data/clean/state_fiscal/_provenance.parquet": {
+      "rows": 140,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "cf37e26f3af1aa607d5a2b57c6ee7c6060d56ea92c2eeb6dcd2f264f434344e0"
+    },
+    "data/clean/state_fiscal/state_fiscal_fc16_kfi.parquet": {
+      "rows": 33916,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "1624961f4953082f023649bc1a514f6bd3e5533098b0839ecbff44a5f4aab385"
+    },
+    "data/clean/state_fiscal/state_fiscal_fc16_local_body_assistance.parquet": {
+      "rows": 2523,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "210154ac092f134f46fd416da086ef82ddd0ce86c669e10bc0349f69e63254b5"
+    },
+    "data/clean/state_fiscal/state_fiscal_fc16_state_accounts.parquet": {
+      "rows": 101613,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ca5b73d9285c5cab7354aa6569af7fabfe7984800f75f02841d0a2b2b59abd0a"
+    },
+    "data/clean/state_fiscal/state_fiscal_fc16_subsidies.parquet": {
+      "rows": 1738,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "5de05dd96272f0d5a7c2156207c4bb718da9a02a87db925084e7f5e56c1412c0"
+    },
+    "data/clean/state_fiscal/state_fiscal_fc16_transfers.parquet": {
+      "rows": 801,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f31c169211f00820e57fafb54d50bb1ec5e8f7b2ad062006cd4f7b37d80c442b"
+    },
+    "data/clean/state_fiscal/state_fiscal_rbi_municipal.parquet": {
+      "rows": 779,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "9897a1b463893f2a6ccbb5a925d5c38808533c243fef2d767eebf96e9bad7b66"
+    },
+    "data/clean/state_fiscal/state_fiscal_rbi_pri.parquet": {
+      "rows": 232,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "db4aa3ff4f6251f0557a5d6a017ca7424763fb5437feb878621112564a6f5c44"
+    },
+    "data/clean/state_fiscal/state_fiscal_rbi_sf_app_tables.parquet": {
+      "rows": 1252,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "ea667daa644566305eb6eabe06f8e487d9857d8803fc0926440392f133932fb9"
+    },
+    "data/clean/state_fiscal/state_fiscal_rbi_sf_appendices.parquet": {
+      "rows": 1280,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f19601050e07df8fbd12dac2cc07765913d7851c454148cde069218e499a6cf1"
+    },
+    "data/clean/state_fiscal/state_fiscal_rbi_sf_statements.parquet": {
+      "rows": 1176,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "d9745d26be4431abb594e704999b3e4705a7fae3b64491702ee51cf656e5f893"
+    },
+    "data/clean/state_fiscal/state_fiscal_ulb_cityfinance.parquet": {
+      "rows": 21006,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "eb8bcd33e921b5f72056da4f4a1e329d2e24a4e4f8aea2c019886a96bf07d72d"
+    },
+    "data/clean/trade_satellites/_datasets.json": {
+      "sha256": "5e2e1e025bc5f39db9b1280916ecd4ad94ed3b19cb16b60cf833194af4e71587"
+    },
+    "data/clean/trade_satellites/_provenance.parquet": {
+      "rows": 233,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "f0decdaf12fc138618edcca7f039df9c22440d8f76a52a2efb16ef6f83e092c2"
+    },
+    "data/clean/trade_satellites/trade_satellites_batis_2023_2024.parquet": {
+      "rows": 49936,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "f43e6d77a657131db6eb39a31ef0b7843afbc829e84499634d966c7e99b8fe5b"
+    },
+    "data/clean/trade_satellites/trade_satellites_batis_history.parquet": {
+      "rows": 17377,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "c469055777521ff90e8a1af3e96f20a5a91da36527b6957395d5fb1368492659"
+    },
+    "data/clean/trade_satellites/trade_satellites_comtrade_fy_2324.parquet": {
+      "rows": 4460,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "b598c45ed81c51a6be3093a30635a943e083c8b1b541bcf978fb1eff88ebf0fc"
+    },
+    "data/clean/trade_satellites/trade_satellites_comtrade_monthly_2324.parquet": {
+      "rows": 62443,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "68a65dcc7e5722dc6ab7ab69b01350276c382543a9d387fcdb965f3733ad89ba"
+    },
+    "data/clean/trade_satellites/trade_satellites_imf_imts_annual.parquet": {
+      "rows": 24798,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "d793f37337318d1bf6d78841d058277d8949b194f3d1a0732ea2e94d18e0ed5c"
+    },
+    "data/clean/trade_satellites/trade_satellites_imf_imts_fy.parquet": {
+      "rows": 5663,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "e9d432e99eff4246b50896b253f0068a21e3de6147f38de8944fb6ea6c9d9d0e"
+    },
+    "data/clean/trade_satellites/trade_satellites_imf_imts_monthly.parquet": {
+      "rows": 76069,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "a4129f9fb72088375c39596c625fd4576fa1dfb03247addab6f8207c835c4166"
+    },
+    "data/clean/union_fiscal/_datasets.json": {
+      "sha256": "74236a94a90f70680eec2ed63451ae14c0137be12410ed55c0f3a13aa66fb7c2"
+    },
+    "data/clean/union_fiscal/_provenance.parquet": {
+      "rows": 199,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "20b2503b427ce4b32919da8b80167ed7bb5f28c9a073536a7b07855d994ca6e0"
+    },
+    "data/clean/union_fiscal/union_fiscal_afs.parquet": {
+      "rows": 990,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "d1782d0fc3b0c184a1ca1376f9a6c194cda21d2d199c49181c01202c22e12b05"
+    },
+    "data/clean/union_fiscal/union_fiscal_exp_profile.parquet": {
+      "rows": 1294,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "cd609294bf1a646cd2c8c9325a83cbe7f98a241f3f63cb0e464c94b9371eabb6"
+    },
+    "data/clean/union_fiscal/union_fiscal_fa_expenditure.parquet": {
+      "rows": 1946,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "a944dcdace6ddb465f0168e831b8c9cfbf8401d978204c0c554aecad407cc093"
+    },
+    "data/clean/union_fiscal/union_fiscal_fa_gia.parquet": {
+      "rows": 40,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "814f66713918b22c2bfee08d77dfeecbae5d97f1cbc336d844862610d3b405e9"
+    },
+    "data/clean/union_fiscal/union_fiscal_fa_provident_funds.parquet": {
+      "rows": 184,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "223dd48ee1d9f0cf06619bfc8f864fb99a24b47936d33da72f8f938a00248e8a"
+    },
+    "data/clean/union_fiscal/union_fiscal_fa_receipts.parquet": {
+      "rows": 1064,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "48f70298e85a56a64bb0509667e6d51aa5f3fa64e66528be190a2154f601ced7"
+    },
+    "data/clean/union_fiscal/union_fiscal_gcca.parquet": {
+      "rows": 1610,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "50f293e3c68e2ec7b4dc0ecdd76352fea99d4daf1f058ea1953ce30678057ebe"
+    },
+    "data/clean/union_fiscal/union_fiscal_nsi_collections.parquet": {
+      "rows": 69,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "e36c3a40a586646c651ef45ff4f9369b3c76319d4ff8063685db09a12728115d"
+    },
+    "data/clean/union_fiscal/union_fiscal_nssf.parquet": {
+      "rows": 65,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "5429622969305ed3c1f4802c52b905c749f4b8454e3a1c1b4ad4c464e6880c85"
+    },
+    "data/clean/union_fiscal/union_fiscal_pib_gst.parquet": {
+      "rows": 178,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "d9dd2385ac324662341fa47c66bd47c0df15be2b46e6ae7111b83715dd8f30f7"
+    },
+    "data/clean/union_fiscal/union_fiscal_ppac_exchequer.parquet": {
+      "rows": 311,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "205e560665968918a0bd6b652f9451c65f084e442c4ce4756e2ca0160a4a7cf7"
+    },
+    "data/clean/union_fiscal/union_fiscal_rb_receipts.parquet": {
+      "rows": 772,
+      "schema_hash": "6866e40a17c026ce",
+      "sha256": "4066c7b527e446c878fba992c7cf7dec01bc2bd4e9a4d20f58ce29828c429196"
+    },
+    "data/sam/2023-24/_provenance.parquet": {
+      "rows": 453,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "acf152d55522f7cef2f0c836df7629cab74dbdf0d2d02eef6c44f95f555798d6"
+    },
+    "data/sam/2023-24/balancing_constraints.parquet": {
+      "rows": 429,
+      "schema_hash": "bc171314c0207b1f",
+      "sha256": "2ba17221982e5e3ed12aeca17c19c66d51559ee946e03942e4aecc4d48eda5fb"
+    },
+    "data/sam/2023-24/balancing_log.parquet": {
+      "rows": 3893,
+      "schema_hash": "1b896a29293db2ec",
+      "sha256": "372157eea463bea6b3a366a4753a0a4555ee6d1a96f38e53ba999c498934917d"
+    },
+    "data/sam/2023-24/balancing_run.json": {
+      "sha256": "17126157ff45c05128fbe82a29ad6a4ec43f96f5c254f43bf29d77503f65f7d0"
+    },
+    "data/sam/2023-24/blocks/capital_financial_block.json": {
+      "sha256": "333c977eb58eea11a2105f166ec9240fb985dc0382b4e4f16f7935231a7e99ce"
+    },
+    "data/sam/2023-24/blocks/capital_financial_checks.parquet": {
+      "rows": 24,
+      "schema_hash": "ff967b7cc0168387",
+      "sha256": "e45592aea177a09ad929bb38033558147822fd2b5bd5e81603a69fdcc658cbd4"
+    },
+    "data/sam/2023-24/blocks/capital_financial_constraints.parquet": {
+      "rows": 19,
+      "schema_hash": "9dd547e108257ba7",
+      "sha256": "da9fd52d84749a44a23b8afacaab7c2f2931b417a121288ec0d0ce34ffcc5df2"
+    },
+    "data/sam/2023-24/blocks/capital_financial_entries.parquet": {
+      "rows": 444,
+      "schema_hash": "11fa20d8f2f65425",
+      "sha256": "39a15c9390b05e1c6b93639ad690a91d0c1ab3aa862bd9f28888b0589f9c42a5"
+    },
+    "data/sam/2023-24/blocks/capital_financial_provenance.parquet": {
+      "rows": 43,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "1d300f2f0539a4089864e389012b2352a4aea3db0574f1aa6852b839a0b9785b"
+    },
+    "data/sam/2023-24/blocks/capital_financial_satellites/capital_formation_by_account.parquet": {
+      "rows": 33,
+      "schema_hash": "041195439084a56b",
+      "sha256": "6dfb0470f7b23329e7ba30f39ea6bf87a0f425aa77fd29d02066728e3d8d6ff4"
+    },
+    "data/sam/2023-24/blocks/capital_financial_satellites/fsf_instrument_closure.parquet": {
+      "rows": 24,
+      "schema_hash": "819d72241e0a54e3",
+      "sha256": "681704c0d7a838be32f818cb05eee7fb2aa406e7e8e0b9cf22c679eed791399b"
+    },
+    "data/sam/2023-24/blocks/capital_financial_satellites/gg_gfcf_key.parquet": {
+      "rows": 10,
+      "schema_hash": "d8edbde1cdd8da47",
+      "sha256": "822363329f6852b1330b3e4e084e6f94a4ac252932fd0043d181cbc453e79d9d"
+    },
+    "data/sam/2023-24/blocks/capital_financial_satellites/k9_decomposition.parquet": {
+      "rows": 549,
+      "schema_hash": "041195439084a56b",
+      "sha256": "2952e9c349cbb29c93d3f3c9619b7b789bfa9a9f852bbb0977dee47107af49f5"
+    },
+    "data/sam/2023-24/blocks/capital_financial_satellites/k9_sensitivity.parquet": {
+      "rows": 70,
+      "schema_hash": "06a4cf2cae688656",
+      "sha256": "e78242c537707093f4af910552b3b6401b1185201b22c8f422159aefc8601067"
+    },
+    "data/sam/2023-24/blocks/capital_financial_satellites/s4_fsf_dual_reports.parquet": {
+      "rows": 1052,
+      "schema_hash": "869715083de7b4ce",
+      "sha256": "d18c4b739121611fe4eabe4054f521b1a3cdd8e5126bb7dc06aa0d30f8a7a573"
+    },
+    "data/sam/2023-24/blocks/capital_financial_satellites/s4_fwtw_fsf.parquet": {
+      "rows": 360,
+      "schema_hash": "e634730602431612",
+      "sha256": "461ec9f190d91a98cb08a4f42a5c8d74dec7d413508875f9988bb0793d6f0fc7"
+    },
+    "data/sam/2023-24/blocks/capital_financial_satellites/s4_fwtw_sam.parquet": {
+      "rows": 195,
+      "schema_hash": "d779736bcc34a0bf",
+      "sha256": "1783912a0ad7afad05b07328d38ab1cf356c1419dd0dbf3cbe98d562d1a1d8e3"
+    },
+    "data/sam/2023-24/blocks/capital_financial_satellites/s4_hdfc_merger_memo.parquet": {
+      "rows": 18,
+      "schema_hash": "d8edbde1cdd8da47",
+      "sha256": "0b82f3408239fa8af856f13e79f34e6dd814351055b5cbbeedc6ad1ffbf1c494"
+    },
+    "data/sam/2023-24/blocks/capital_financial_satellites/s5_hh_wealth.parquet": {
+      "rows": 40,
+      "schema_hash": "29ba3e44d1278f3a",
+      "sha256": "567a39bad464e4a7df960705934e08488135d5b92ab41df225e455b30472f7f0"
+    },
+    "data/sam/2023-24/blocks/closure_block.json": {
+      "sha256": "a790e20bb98a52ab65d82f3f67eaacccf7887991082457f210d729d3245b9e46"
+    },
+    "data/sam/2023-24/blocks/closure_checks.parquet": {
+      "rows": 9,
+      "schema_hash": "ff967b7cc0168387",
+      "sha256": "dbec178390579421f07ef8d1fcc279b93737d9ee5d8ec1d91a159855535b5497"
+    },
+    "data/sam/2023-24/blocks/closure_constraints.parquet": {
+      "rows": 2,
+      "schema_hash": "9dd547e108257ba7",
+      "sha256": "b1176308dd0f7a6eba0e541dd4d821929067fae66386794b4f009f7772d80091"
+    },
+    "data/sam/2023-24/blocks/closure_entries.parquet": {
+      "rows": 20,
+      "schema_hash": "11fa20d8f2f65425",
+      "sha256": "7e584f24c3e095f06bffbdbea2f3cf38795380f4cf9c10548fb8aab10eda4366"
+    },
+    "data/sam/2023-24/blocks/closure_provenance.parquet": {
+      "rows": 28,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "1cde2625bb0473a5969cfe9c0010933c73bfdb0e35b213dcd2ee0e58c7476cc2"
+    },
+    "data/sam/2023-24/blocks/closure_satellites/constraint_gaps.parquet": {
+      "rows": 2554,
+      "schema_hash": "06cf25b0f54f6610",
+      "sha256": "7b96967c28d62410b0bdff7fbec2bf57903e097cd499bbee712780ef1c6d2d67"
+    },
+    "data/sam/2023-24/blocks/closure_satellites/hh_saving.parquet": {
+      "rows": 169,
+      "schema_hash": "24fb32ad01ec5695",
+      "sha256": "cb125f582182ba745157a5599fe310a26c6082a241d026e7cadeb93a35821180"
+    },
+    "data/sam/2023-24/blocks/closure_satellites/institution_gaps.parquet": {
+      "rows": 281,
+      "schema_hash": "74b149ddbf0ed498",
+      "sha256": "208986bf2476a76397508be13d2641d6577a560e280539162eab340d5b5d9ca6"
+    },
+    "data/sam/2023-24/blocks/closure_satellites/prior_imbalance.parquet": {
+      "rows": 896,
+      "schema_hash": "ed098157b0058e97",
+      "sha256": "fdcd051bf435a47da34c5b6218805e016b3474bab51cf82fcf64c060471c8937"
+    },
+    "data/sam/2023-24/blocks/closure_satellites/xdisc_identity.parquet": {
+      "rows": 10,
+      "schema_hash": "d8edbde1cdd8da47",
+      "sha256": "65d90776370b93ad2900495d6439eeb748adc5f84e33a84bf51393449ceb43f1"
+    },
+    "data/sam/2023-24/blocks/factors_block.json": {
+      "sha256": "21b4a70ef03486bc780be6988febb174fc9d6d1b5f0f4ba65c6bf5a06d20634a"
+    },
+    "data/sam/2023-24/blocks/factors_checks.parquet": {
+      "rows": 45,
+      "schema_hash": "ff967b7cc0168387",
+      "sha256": "9bcee2daa30d345acca5b2c6fa83bd03f845ffb52c972a08a8447049eb1ca10a"
+    },
+    "data/sam/2023-24/blocks/factors_constraints.parquet": {
+      "rows": 63,
+      "schema_hash": "9dd547e108257ba7",
+      "sha256": "33b7e0beaa82d469d451d8568301a226e625a0aea1bd4db7efc0621f65742d8f"
+    },
+    "data/sam/2023-24/blocks/factors_entries.parquet": {
+      "rows": 227,
+      "schema_hash": "11fa20d8f2f65425",
+      "sha256": "104bdbbdbdd9a1c80a4c7e3f9efbef56626f6bf89367958da80ca503654ac374"
+    },
+    "data/sam/2023-24/blocks/factors_provenance.parquet": {
+      "rows": 32,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "3e19f602fcb504fc589e225f8447fdda4c597688bb69e96b86f9c06b8a7f3ea4"
+    },
+    "data/sam/2023-24/blocks/factors_satellites/factor_income_keys.parquet": {
+      "rows": 400,
+      "schema_hash": "dbc08edbb601e5d2",
+      "sha256": "2fa33451e45f9a09c8d400a1879297354af8e80886da92fc8fdf9a37359c7d44"
+    },
+    "data/sam/2023-24/blocks/factors_satellites/gg_centre_state_key.parquet": {
+      "rows": 10,
+      "schema_hash": "a23948d9da7e0f98",
+      "sha256": "359fe74f4cc4278ff0cad229ffd6f7069a892f8e86db5e8618ee0ed196ed1c28"
+    },
+    "data/sam/2023-24/blocks/factors_satellites/sector_gos.parquet": {
+      "rows": 36,
+      "schema_hash": "40e63e6d0933e1d8",
+      "sha256": "a6a3127703ac936e44d090830786b6a91083c3c4308e0ccde9ddcd4ab40951f3"
+    },
+    "data/sam/2023-24/blocks/factors_satellites/v1a_labour_split.parquet": {
+      "rows": 102,
+      "schema_hash": "f764e539bba7cdd3",
+      "sha256": "b4e1713e8cdc28d3f9ec833b06f6e3c18a7fcd546783fa76b8a50f6bb4066f48"
+    },
+    "data/sam/2023-24/blocks/factors_satellites/v1a_parameters.parquet": {
+      "rows": 32,
+      "schema_hash": "dff4dde30ace102c",
+      "sha256": "cd807a2e54d2f8f1e5c5ceeeb2af63b7f5d4119875fadbf49d5fa949bfe52cfa"
+    },
+    "data/sam/2023-24/blocks/factors_satellites/va_split_by_activity.parquet": {
+      "rows": 166,
+      "schema_hash": "f9bb6220ba62bb6a",
+      "sha256": "ce609004af175681e2769284ac758ad521e315c81b7bcfd2c718c64d46cc5bdc"
+    },
+    "data/sam/2023-24/blocks/fincorp_block.json": {
+      "sha256": "82abb81e745ff08c4f8801a67084a1371133418fbef8a025ea95d1c334c766d4"
+    },
+    "data/sam/2023-24/blocks/fincorp_checks.parquet": {
+      "rows": 14,
+      "schema_hash": "ff967b7cc0168387",
+      "sha256": "148a92484788a364562d052e5dd4690ada832fa181d61ece34dd0eb46d6791d6"
+    },
+    "data/sam/2023-24/blocks/fincorp_constraints.parquet": {
+      "rows": 30,
+      "schema_hash": "9dd547e108257ba7",
+      "sha256": "d96f0cafb7267b3b653d9789e9510cc973a805a633d6b1d6344693785ac221ef"
+    },
+    "data/sam/2023-24/blocks/fincorp_entries.parquet": {
+      "rows": 488,
+      "schema_hash": "11fa20d8f2f65425",
+      "sha256": "1f125a34266dd062d2e25ebafe980fb3adafb4d5c03e1f58672c7d8a47966a9e"
+    },
+    "data/sam/2023-24/blocks/fincorp_provenance.parquet": {
+      "rows": 55,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "10cc5106ff4e0b9e4b083f6d2586ff27cd0274ee64f9bbfbeeab2606f96a7bc8"
+    },
+    "data/sam/2023-24/blocks/fincorp_satellites/d44_by_scheme.parquet": {
+      "rows": 23,
+      "schema_hash": "f22242224d6e6238",
+      "sha256": "d40ac4b77c9b0f51c070c60702e90a1b180793fa78fd8be9557558f5ba2e59ac"
+    },
+    "data/sam/2023-24/blocks/fincorp_satellites/dividend_matrix.parquet": {
+      "rows": 109,
+      "schema_hash": "1595d2a3166b9178",
+      "sha256": "2f8260034e2de3353caca0798b2cdbb58308e83f1ede5e8995f6c049e077fc84"
+    },
+    "data/sam/2023-24/blocks/fincorp_satellites/fc_public_private.parquet": {
+      "rows": 18,
+      "schema_hash": "722365e8b1fd47ac",
+      "sha256": "ab7089ce9916374ce01275d0eb42912a29f239aee12100cc231f05fcc9b83baf"
+    },
+    "data/sam/2023-24/blocks/fincorp_satellites/gov_interest_bridge.parquet": {
+      "rows": 97,
+      "schema_hash": "8a9b97fa2ff4b384",
+      "sha256": "9e1ff1cfdba7300da6f040e8cd433eaf84b8c83e630f4917b02ffabb833baba5"
+    },
+    "data/sam/2023-24/blocks/fincorp_satellites/interest_fisim_bridge.parquet": {
+      "rows": 167,
+      "schema_hash": "4029861b7c09db10",
+      "sha256": "6a494b81dc3488ccd821ad7d6d3e0f54e289e95dd7400a2a1440f052c9a3b4a1"
+    },
+    "data/sam/2023-24/blocks/fincorp_satellites/mf_lookthrough.parquet": {
+      "rows": 5,
+      "schema_hash": "e33102654cb39cf6",
+      "sha256": "f849088b17d7b177f1eed24338f74d9e3be8725111b7ae3f3c8d4360d24f512d"
+    },
+    "data/sam/2023-24/blocks/fincorp_satellites/s9_funded_schemes.parquet": {
+      "rows": 35,
+      "schema_hash": "792d55cbbdea046a",
+      "sha256": "19311a6a409152a9ca7bdc032653f8e3ac0b5481aab489456ddad25e3760ff51"
+    },
+    "data/sam/2023-24/blocks/government_block.json": {
+      "sha256": "73e3d755b007611cfa5fdd432be2301bf7b474fcce30ac6283da7fd1bac66c75"
+    },
+    "data/sam/2023-24/blocks/government_checks.parquet": {
+      "rows": 17,
+      "schema_hash": "ff967b7cc0168387",
+      "sha256": "94261777e7aa8f0e405ee85275aece9da7daf031642b8f1af0e6cccc93aa27d4"
+    },
+    "data/sam/2023-24/blocks/government_constraints.parquet": {
+      "rows": 38,
+      "schema_hash": "9dd547e108257ba7",
+      "sha256": "29c633211eed7f6c14bcf95fc4c1930e59bd800cc825b56e4c1e03632ba153e2"
+    },
+    "data/sam/2023-24/blocks/government_entries.parquet": {
+      "rows": 158,
+      "schema_hash": "11fa20d8f2f65425",
+      "sha256": "c5d0e9dabbe5c7cc1a1b2e3bf82ced0b9974af57e735ae19f02104fc18dc8ca2"
+    },
+    "data/sam/2023-24/blocks/government_provenance.parquet": {
+      "rows": 57,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "64b1fbefd602f63bee4b8e80f3818f82e3e1854e4bc1eb1681f5d07bb998510f"
+    },
+    "data/sam/2023-24/blocks/government_satellites/gov_c2a_keys.parquet": {
+      "rows": 28,
+      "schema_hash": "1c37c30803f0a7b2",
+      "sha256": "d765215c563fdb8edb94c3929fbc5078d7566dffcd31324ec21416e76b6f564c"
+    },
+    "data/sam/2023-24/blocks/government_satellites/gov_fiscal_bridge.parquet": {
+      "rows": 44,
+      "schema_hash": "d8edbde1cdd8da47",
+      "sha256": "c881610d6e248be624109d0726aaa51973317d51fbba3e55020aa63fcda22de3"
+    },
+    "data/sam/2023-24/blocks/government_satellites/gov_grants_bridge.parquet": {
+      "rows": 24,
+      "schema_hash": "d8edbde1cdd8da47",
+      "sha256": "8596c0839a85fdb742bd75cd15450701edd4418cd2441c7344fa15965184e884"
+    },
+    "data/sam/2023-24/blocks/government_satellites/gov_r7x_items.parquet": {
+      "rows": 17,
+      "schema_hash": "3ec2e4fae1526eea",
+      "sha256": "d5cd9ee79cdfa5ee95c5b7e5ba5e638a345b393f0e4a22b83ea931e6c059603c"
+    },
+    "data/sam/2023-24/blocks/government_satellites/gov_r9b_sensitivity.parquet": {
+      "rows": 27,
+      "schema_hash": "4e2897a24744c00c",
+      "sha256": "de1e2e4bbfc57b272e5784169948676d08f66fc1caee37607524c390a86590e2"
+    },
+    "data/sam/2023-24/blocks/government_satellites/gov_transfer_classification.parquet": {
+      "rows": 26,
+      "schema_hash": "104bcd96878891a6",
+      "sha256": "cba4d8bcd1006e2fc8c46395c5fdcb34eb87aab3e1de0d4c252a36c8ab76082c"
+    },
+    "data/sam/2023-24/blocks/households_block.json": {
+      "sha256": "8db1029059d3b9b5717c2334d2116a062208a4d977544508c7d957f7003885a4"
+    },
+    "data/sam/2023-24/blocks/households_checks.parquet": {
+      "rows": 66,
+      "schema_hash": "ff967b7cc0168387",
+      "sha256": "f6b7d4f50929bbdf061df2a6fa80bb9239f2912145e186b1db9786be9d603a7a"
+    },
+    "data/sam/2023-24/blocks/households_constraints.parquet": {
+      "rows": 4,
+      "schema_hash": "9dd547e108257ba7",
+      "sha256": "d7934f138cf654b2f21979d311b55b7961c10ff87e38de6b5303451362e86430"
+    },
+    "data/sam/2023-24/blocks/households_entries.parquet": {
+      "rows": 1230,
+      "schema_hash": "11fa20d8f2f65425",
+      "sha256": "d3cd60ede26b86b6b17224652a27c1eb3e9c1b7544688d6efba0224e98f42d0e"
+    },
+    "data/sam/2023-24/blocks/households_provenance.parquet": {
+      "rows": 145,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "d2e8beab4f053055fbb9981ecc5b83a78f10f9b093b8fb701b8cdc09353b39dc"
+    },
+    "data/sam/2023-24/blocks/households_satellites/c1a_hces_nas_ratio.parquet": {
+      "rows": 438,
+      "schema_hash": "0a57b56aee5a217f",
+      "sha256": "765b168d66879f1bf193f740b27693d8cd551c23fd57683ab7b72ba410ead7fd"
+    },
+    "data/sam/2023-24/blocks/households_satellites/c4a_imputed_rent_sensitivity.parquet": {
+      "rows": 34,
+      "schema_hash": "b62524b151085def",
+      "sha256": "b4b831080ad48bf9765755f81d4d4f92ba0345b3b0e1d85f47fa2ca87e9930ad"
+    },
+    "data/sam/2023-24/blocks/households_satellites/c4b_fisim_split_sensitivity.parquet": {
+      "rows": 92,
+      "schema_hash": "05cf18556c1f958e",
+      "sha256": "0e09b76e0b35327319010d48fec016938364bdf6016b977aefd844ea3d49581b"
+    },
+    "data/sam/2023-24/blocks/households_satellites/c4c_npish_memo.parquet": {
+      "rows": 3,
+      "schema_hash": "dd72fd090737bfe4",
+      "sha256": "f03cdd6660609d9e5705ea3fba7fc3c44ded5e1b7cf0dd6c87475965604eb5ba"
+    },
+    "data/sam/2023-24/blocks/households_satellites/hh_aidis_overlap.parquet": {
+      "rows": 54,
+      "schema_hash": "6955a51b2a9e7267",
+      "sha256": "a08cdf92dae84fc1dbf4b8c38a7345471c291b1300134fc545b3dcdfbd4aa7e2"
+    },
+    "data/sam/2023-24/blocks/households_satellites/hh_group_map.parquet": {
+      "rows": 72,
+      "schema_hash": "f0c797536fa408b8",
+      "sha256": "ea703435ca72b28bef2dcd6efa80c128791f0080a87490418e32233dc31bd676"
+    },
+    "data/sam/2023-24/blocks/households_satellites/hh_hces_items.parquet": {
+      "rows": 3788,
+      "schema_hash": "a5d75a1a67e58794",
+      "sha256": "7680ba21f58d90f88371ebec87dd5245b6cf835b790c8c92f7fecd5830b74c98"
+    },
+    "data/sam/2023-24/blocks/households_satellites/hh_keys.parquet": {
+      "rows": 510,
+      "schema_hash": "3f5dda317ff86ee7",
+      "sha256": "12137089a775e92db7d0eb49bccddb1844909bbe32398ad9e6e3742a917d4d55"
+    },
+    "data/sam/2023-24/blocks/households_satellites/hh_national_quintile_xwalk.parquet": {
+      "rows": 104,
+      "schema_hash": "018f13ebecacb35b",
+      "sha256": "162f1debf46ac18ddd405b9b7e098db48e0e9a36bb206ae94305669853b454de"
+    },
+    "data/sam/2023-24/blocks/households_satellites/hh_state_xwalk.parquet": {
+      "rows": 4464,
+      "schema_hash": "80ba774752abb907",
+      "sha256": "9ec0444243ba571a4eec1fcf76890a6a9bd4df08e7b10718bef0f3e07be1240f"
+    },
+    "data/sam/2023-24/blocks/households_satellites/s8_food_stik.parquet": {
+      "rows": 164,
+      "schema_hash": "58a43b5fa07c0f2f",
+      "sha256": "7f8e27d247d754ba5df542fc5cb2e62f095762a7b2b56f4dc4dae5e570fb5265"
+    },
+    "data/sam/2023-24/blocks/production_block.json": {
+      "sha256": "c4d46b713fe94bd4d7db2e1199923db74bac0a832e68e2c3d87d03228300a2e1"
+    },
+    "data/sam/2023-24/blocks/production_checks.parquet": {
+      "rows": 35,
+      "schema_hash": "ff967b7cc0168387",
+      "sha256": "68604fab924b223ffc51628e5c067a6dfacfedea728620e76c68e2981dca59cf"
+    },
+    "data/sam/2023-24/blocks/production_constraints.parquet": {
+      "rows": 238,
+      "schema_hash": "9dd547e108257ba7",
+      "sha256": "b0a9b2675e64f33e3b3483d4f82ae4633b7be0c9dfa1673f8de82f4472257281"
+    },
+    "data/sam/2023-24/blocks/production_entries.parquet": {
+      "rows": 1064,
+      "schema_hash": "11fa20d8f2f65425",
+      "sha256": "f6f2a4c4b428bc234ec83c20c5c5e754d599497cbc9ec463de0f668a0993ca21"
+    },
+    "data/sam/2023-24/blocks/production_provenance.parquet": {
+      "rows": 19,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "5c8f496f92c629e03d161c981730c5d224a54275caad0c6303df0eb8cba6730c"
+    },
+    "data/sam/2023-24/blocks/production_satellites/sut_memo.parquet": {
+      "rows": 8,
+      "schema_hash": "ff35713ebb60a3dd",
+      "sha256": "5f345a654a3f188f107b53e01e8363a5617b73d0dfd01fcc995ada9fed86460b"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_block.json": {
+      "sha256": "aaf37d2e47f6a62e2e1c85693b461db61c0cf1e533d5bc974cc5ea99097cad99"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_checks.parquet": {
+      "rows": 29,
+      "schema_hash": "ff967b7cc0168387",
+      "sha256": "9c90f934d2ff9b52706918f561384146e9f34bbfd1b3a450ba7af041bf9682fc"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_constraints.parquet": {
+      "rows": 14,
+      "schema_hash": "9dd547e108257ba7",
+      "sha256": "16a53aec08531574570a7514743f47237816c5f3665dfd03ecbd0f4a5a7348b8"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_entries.parquet": {
+      "rows": 81,
+      "schema_hash": "11fa20d8f2f65425",
+      "sha256": "1231c03003f84755c65b8ea07522bb54d501f2c02cc10fa7f7c71961f6c8113d"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_provenance.parquet": {
+      "rows": 47,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "0212bebbaf5922c8449454401856eb0a57e320306cc25aa52f2cb89bd796a646"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_satellites/r11a_sensitivity.parquet": {
+      "rows": 50,
+      "schema_hash": "31e25b23d0f5c237",
+      "sha256": "1856ee86176d5cec424005f1cc95c8fcacc5a313927ceb13215e4bde9134a21f"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_satellites/r12a_sensitivity.parquet": {
+      "rows": 40,
+      "schema_hash": "31e25b23d0f5c237",
+      "sha256": "370b02d715999713c90976c084fbe3aef38664ae8481e309902d23d1be23ad75"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_satellites/row_financial_counterparts.parquet": {
+      "rows": 41,
+      "schema_hash": "f7d0efd60c313ac9",
+      "sha256": "2cf0e0c3165a6b1bd5c15cb80691c0b9d54912ca6b69e0f60f16d0a4b1bc5493"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_satellites/row_property_income.parquet": {
+      "rows": 41,
+      "schema_hash": "efac4f1176af80ba",
+      "sha256": "80494a8f50a0c23c74a878c63a24d16aff72f41c889a875b7ee0590f43549aa1"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_satellites/s1_goods_by_partner.parquet": {
+      "rows": 63286,
+      "schema_hash": "eced7a0cda9fc77b",
+      "sha256": "8117efb609088264c27356c45305048fd48698a57b2a5e4d94641be88f678510"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_satellites/s2_services_by_partner.parquet": {
+      "rows": 5162,
+      "schema_hash": "f7954ae6a5d00e8a",
+      "sha256": "e7fdd5910e8db6f4fca29cdc4e5b211fed766de758fcef1e0963c3ea05791286"
+    },
+    "data/sam/2023-24/blocks/rest_of_world_satellites/s3_remittance_sources.parquet": {
+      "rows": 54,
+      "schema_hash": "6563b3d0580b1dcc",
+      "sha256": "b385fc0e054408ac313fa0c3ae8529b42492dd3eab46310b4d0ca23f2bdc6f4f"
+    },
+    "data/sam/2023-24/blocks/taxes_block.json": {
+      "sha256": "17a2d8e12f6998867b5bf838308cec8be877ee264bd53475085a2de4b44e2db2"
+    },
+    "data/sam/2023-24/blocks/taxes_checks.parquet": {
+      "rows": 16,
+      "schema_hash": "ff967b7cc0168387",
+      "sha256": "51f4ea2197c5a39546a7e36407647503ba4559071b8944da1a08b6af74916ca1"
+    },
+    "data/sam/2023-24/blocks/taxes_constraints.parquet": {
+      "rows": 23,
+      "schema_hash": "9dd547e108257ba7",
+      "sha256": "0c54d6ad10600e341b403fd329206177d71bc2a7cc5b3d8320573698eca41699"
+    },
+    "data/sam/2023-24/blocks/taxes_entries.parquet": {
+      "rows": 181,
+      "schema_hash": "11fa20d8f2f65425",
+      "sha256": "df7c2049bbaf3d6f1573fd6229a44b4715d653ba8e5740195f92d38b47eec4fd"
+    },
+    "data/sam/2023-24/blocks/taxes_provenance.parquet": {
+      "rows": 27,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "026ace3900a627edc6b72d82f8c2c1537fcf81cc2e02c212df5c2272d3db3f60"
+    },
+    "data/sam/2023-24/blocks/taxes_satellites/direct_tax_split.parquet": {
+      "rows": 50,
+      "schema_hash": "d8edbde1cdd8da47",
+      "sha256": "e0dcabc68ad9f592fc6b9359f5a8dd52c7d935a2e6a4ddecf7ed8fca36d778cb"
+    },
+    "data/sam/2023-24/blocks/taxes_satellites/p10a_items.parquet": {
+      "rows": 13,
+      "schema_hash": "9af5dea46e26f45c",
+      "sha256": "29a02bff688256e8375f1b0b2cf43cbd633de777429f71c751703e8d2715b7b6"
+    },
+    "data/sam/2023-24/blocks/taxes_satellites/p7a_precheck.parquet": {
+      "rows": 403,
+      "schema_hash": "1380569dcb70cd4c",
+      "sha256": "946682010fcc932136a930d257866308df7c217e4ca57ea7ce75685344bfd494"
+    },
+    "data/sam/2023-24/blocks/taxes_satellites/p7b_tax_by_use.parquet": {
+      "rows": 1750,
+      "schema_hash": "815b3a451474b417",
+      "sha256": "78add0fcdab3fc9f12bce0e97f6621e2530e515b488f9f826818273e52502084"
+    },
+    "data/sam/2023-24/blocks/taxes_satellites/p9a_by_commodity.parquet": {
+      "rows": 27,
+      "schema_hash": "3ee28f4a28cb6915",
+      "sha256": "5680fd507273a921e31a46c3f2aa90d1ded0dea3e304c73825ae2bbfcda73da6"
+    },
+    "data/sam/2023-24/blocks/taxes_satellites/s7_igst_settlement.parquet": {
+      "rows": 49,
+      "schema_hash": "7fe0e7ab4bc17dd9",
+      "sha256": "1278574391217e08818d77dc39dcf9098b6fdd48436ad2e6cce37a6eb0faa3af"
+    },
+    "data/sam/2023-24/blocks/taxes_satellites/t3a_sensitivity.parquet": {
+      "rows": 55,
+      "schema_hash": "a30f8d33da937e28",
+      "sha256": "7676a4cb56d01f9e067ce4895624cae67c78c418483c1215174ab3cc0c3af8d1"
+    },
+    "data/sam/2023-24/blocks/taxes_satellites/tax_classification.parquet": {
+      "rows": 23,
+      "schema_hash": "5107bb43a9f67a3d",
+      "sha256": "4b58c6668f42ec72f5b68eb56c059f996a2bba63848ba5e0dc5e52441d7a774b"
+    },
+    "data/sam/2023-24/constraints.parquet": {
+      "rows": 429,
+      "schema_hash": "047919b652983448",
+      "sha256": "109800b53a41604569c875c7bdeba1ee046325f87fd075a60b0009b111a50307"
+    },
+    "data/sam/2023-24/prior_diagnostics.parquet": {
+      "rows": 128,
+      "schema_hash": "6a1641c361d54ed0",
+      "sha256": "2101856b41c44ce4a19e13d7bf4b8a99ff43897d3cfbfe4eaeae5bd50329fb39"
+    },
+    "data/sam/2023-24/sam_balanced.parquet": {
+      "rows": 2203,
+      "schema_hash": "c826d0b7de74725d",
+      "sha256": "426f33f0cdbd3726fc69684ba433c69817171ac2d3dc9a6aff057fb829b6e866"
+    },
+    "data/sam/2023-24/sam_balanced_matrix.csv": {
+      "sha256": "f2716f28a76f6b3fb45a1cceab15db949183409e857a4d923c175befce064135"
+    },
+    "data/sam/2023-24/sam_entries_balanced.parquet": {
+      "rows": 3893,
+      "schema_hash": "642992396c525b17",
+      "sha256": "3b6552762408f3cb0c63ba26855b46fcee4b03157d4a9b801908846f67cafdc3"
+    },
+    "data/sam/2023-24/sam_entries_prior.parquet": {
+      "rows": 3893,
+      "schema_hash": "11fa20d8f2f65425",
+      "sha256": "46c5866630f623d181c80f73728a89f4c4d987772aeb58e417e31bb2272d2ba4"
+    },
+    "data/sam/2023-24/sam_prior.parquet": {
+      "rows": 2203,
+      "schema_hash": "03745bdba3c76337",
+      "sha256": "7263149cff9fe0cc8d8db5b199e4821b0df2ca9d10d6f5210141cf5ca807155f"
+    },
+    "data/timeseries/_provenance.parquet": {
+      "rows": 152,
+      "schema_hash": "85185e5d23a77601",
+      "sha256": "560036f007a99eadb5153581d036bfd8f7c7464e7f858315014222c37bdf9383"
+    },
+    "data/timeseries/top_flows.parquet": {
+      "rows": 2504,
+      "schema_hash": "035745f432e43fce",
+      "sha256": "80d918933d224815fcbfeae478d977e5e307cca04bc73c4739767951378f6ac0"
+    },
+    "data/timeseries/top_flows_coverage.parquet": {
+      "rows": 1937,
+      "schema_hash": "da3fc68b5d9a619e",
+      "sha256": "05a90879599a8826b2a4d6ba66a669bf443d298d01afab5373e5f4adc032cb1a"
+    },
+    "data/timeseries/top_flows_definitions.parquet": {
+      "rows": 69,
+      "schema_hash": "0fc4611d1963fab1",
+      "sha256": "24ea505498395e2ec1b38aca28c56bc2f2e96d39ed6f8d013969231eb7fc3709"
+    },
+    "data/timeseries/top_flows_sam_check.parquet": {
+      "rows": 69,
+      "schema_hash": "f237e910806ae063",
+      "sha256": "a3a36366b87cd17afe30b821edb5e7285e2ecd5f09094351dcdcbf5c96d221ff"
+    }
+  },
+  "manifest_version": 1,
+  "raw_pins": {
+    "external_sector": {
+      "rbi_bop_quarterly/hbs2025_t196.html": "49de119b71b3656b967aef9f735cf89253bee581b21538112e4efb762f2d8a82",
+      "rbi_bop_quarterly/hbs2025_t197.html": "99df4a525f75718826504839d7aecee7a8b192e2a23c0f2716eedb6ed8c2f8d8",
+      "rbi_bop_quarterly/hbs2026_t197.html": "7e0d7bc1c60f36bedc842cac00447e02f3219a274951b42b46fac104969f0fc0",
+      "rbi_bop_quarterly/hbs2026_t198.html": "45a87edf1301ec317f2e5119d13518b82de27b16525019ebd57f8aa546557fcb",
+      "rbi_ecb_monthly/ecb_2023-04.html": "0c3087f7a564ce9983006b1410828dacb510792228aea1389240d11f2375da9c",
+      "rbi_ecb_monthly/ecb_2023-05.html": "43fa2b5a9ffff0ba312ce102ba820fce4c83b3dba87f4f0032b6c2c0f8bdf05c",
+      "rbi_ecb_monthly/ecb_2023-06.html": "3a003cc88606faf316b82ef8a626cd7eba68096a421ab447c40d3260f19455f0",
+      "rbi_ecb_monthly/ecb_2023-07.html": "523df3b5aeb1c789d5702a05305012c51f64f1a8eaf3029c7264005ac335d45e",
+      "rbi_ecb_monthly/ecb_2023-08.html": "e989849bbdd91938513cf44804014582fd84d0984313a11ff6c38b7649d52a30",
+      "rbi_ecb_monthly/ecb_2023-09.html": "bee51323c0f3db1e0b7c8f5c12d33d41516f4ce8e0685643484dc5e99d6c7cc0",
+      "rbi_ecb_monthly/ecb_2023-10.html": "df0dd59f530408d981cae1bca70466d30ff54622d4b2de9dab68f66258f8cb92",
+      "rbi_ecb_monthly/ecb_2023-11.html": "1d7b01eeeb39674c1ffa52e3af100c9a6336019ca7c97851f7c1d6c666df1f5b",
+      "rbi_ecb_monthly/ecb_2023-12.html": "d7e447af938cfdca9ae9f23cb15d90cede4bdc6fc593ef5149545aeadb04a90f",
+      "rbi_ecb_monthly/ecb_2024-01.html": "e956009087d7453e73dbe480b17480d13b96d88fe1e8ff80e17470cd7b2974a4",
+      "rbi_ecb_monthly/ecb_2024-02.html": "9b7ed7a2f7786e2714f932d26cdc6d31bc8e9e65ffb939a3e89dc58e85c715f1",
+      "rbi_ecb_monthly/ecb_2024-03.html": "b99289ce0a57e5e71754ec3299e4150f077f1cb461c14647c1b63819846a764b",
+      "rbi_external_debt/external_debt_end_march_2026_release.html": "004f7eb49e12671e56f1cf5d177c3a3a7ce7a21af1440342b2ff3ae61da41c06",
+      "rbi_external_debt/hbs2026_t145.html": "90ba5a3efc1c828a226c42459d9216b7641ffd6faef3272d89d59ef0e0ea2767",
+      "rbi_external_debt/hbs2026_t146.html": "8e7f0499f9819e039f5367cfb03b5b14c1bda4bbcba78e35a7ade2399a651190",
+      "rbi_fla_census/fla_census_2023_24.html": "07908248a7423417ac939d023bcbc3a1a0059c86fe2602557c54aa246b16ee42",
+      "rbi_fla_census/fla_census_2024_25.html": "4b4e45bebbd79cda4a6e266fecfa73ae494c9db3e41ae54f304fbe0c239dd9ce",
+      "rbi_hbs_external/hbs2026_t124.html": "23fffa801c5663b588a65645ad87d03664c524e92d4800e29faebe77150368ec",
+      "rbi_hbs_external/hbs2026_t125.html": "292540567bbd9fb54112d8e6bdad9fe66ffcafa89e90b7ae106145dba51fa4d1",
+      "rbi_hbs_external/hbs2026_t126.html": "2e39450d702ab05fc8669d3568bf9dce610b76da068591727d2c79b781ae8e2d",
+      "rbi_hbs_external/hbs2026_t127.html": "967eb12e66da4f249f6320c66b628f6a20cf8794abe3c194140c0b1e7306fe4b",
+      "rbi_hbs_external/hbs2026_t130.html": "fcc004d8f7866f756ac672bf13b78fcb5db5685cde347589ed805a099dd63276",
+      "rbi_hbs_external/hbs2026_t131.html": "5421be97eb779f3f2c15dcda197697dde4718b37592c3a4da5a6f7eb4fd26181",
+      "rbi_hbs_external/hbs2026_t133.html": "4f3e66e9d1cc6d09b2cdfb94eed2d41bbb8f1f8eafb841b2392a6c78018c24c2",
+      "rbi_hbs_external/hbs2026_t143.html": "e0c776f0cbacfbb70fe55e588575535ed62c425945d7f05a94f7969bc8a6e656",
+      "rbi_hbs_external/hbs2026_t144.html": "3c24381f7bc473cb276d2b82e5e240d383459e5ce97b5d71fe7bb215b5d6c849",
+      "rbi_hbs_external/hbs2026_t205.html": "f32212970e642d6dfa536012c178f91459d9ccbb70acd24a9e3981a9f8f505c9",
+      "rbi_intl_investment_position/hbs2025_t198.html": "d2e8c47558f17dbe861b31ee09bfed00f5b63f2b02fe4a8d19bf55a33b36e747",
+      "rbi_intl_investment_position/hbs2025_t199.html": "2b05318eedf6e6eec0704bc60ca5317003a7900850c7938be9c3dc0d0339233a",
+      "rbi_intl_investment_position/hbs2026_t199.html": "8af8369f720834eab0d245262564e9367578c7613ee0eb1f72e3bc2b23155282",
+      "rbi_intl_investment_position/hbs2026_t200.html": "e42d8682363a93758d59cd389618b878faf24c8f0e1e0d32c91a00884f6e2e0a",
+      "rbi_ites_survey/ites_survey_2024_25.html": "d593781d7879eba6a58857c7fbb0fb29016597adf80bfe47011bd7c31c2d6064",
+      "rbi_ites_survey/ites_survey_2025_26.html": "61543c1308190a49f751c7f991a7430298e6616e79b4304e6755f5e6e74d80d7",
+      "rbi_lrs_outward_remittances/lrs_bulletin_2024-06.html": "eac01becde5c3b5021c44ff33dd4dcb3538ebe83f51c9268768187060730b888",
+      "rbi_lrs_outward_remittances/lrs_bulletin_2025-06.html": "9eaed6542a0ed6a1b188b76868f66831516d9032f8a7fec31c04b6c122ba8ed8",
+      "rbi_lrs_outward_remittances/lrs_bulletin_2026-06.html": "b2ae1e29557200ab31c411f3416a315e80d292a30e8a2d1bda7cc0cee2cd587e",
+      "rbi_nri_deposits/hbs2026_t139.html": "15376b42e690bad0a3272b89f7c8f9aeff97023e6df24b080041a86a0cd77d4f",
+      "rbi_nri_deposits/hbs2026_t140.html": "dd9824516f2c25e2954091007079d119ddefa3c80eac90c88ad4e1df3e9d5683",
+      "rbi_nri_deposits/hbs2026_t141.html": "7e4d2771a2de37b93c3449aea365f099113f3c9fd66db76efa95e8af79b5adbc",
+      "rbi_nri_deposits/hbs2026_t142.html": "34d0dfd322f9df6d2112f72881b02902604549122d863a72852b2b1ecb809d79",
+      "rbi_remittances_survey/remittances_survey_r6.html": "9df07b03c2a1c6267568d47e4df497b8ca2075f5883795af445084c2cbcd30c9"
+    },
+    "finsector_markets": {
+      "epfo_annual_report_accounts/epfo_annual_report_2023_24.pdf": "185cde30023f92a1007d2d6670b676c89e87638b3bedd8fa32e42814bbc20d91",
+      "epfo_annual_report_accounts/epfo_annual_report_2024_25.pdf": "01411420c1b5215d753861c0d72c91230583156902d46ecb0ed8602a96395c82",
+      "irdai_handbook_insurance/irdai_handbook_2024_25.zip": "c4c77d51dc6dbec9be0b2786303525f343d88e9b8d6334a887d14b47b53693e2",
+      "pfrda_nps_statistics/A2_sector-wise_asset_under_management.xlsx": "3a8c14419fd38459764966b9ac9b154089ee949fbbb0be38d934bd0d3ee640f0",
+      "pfrda_nps_statistics/A5_sector-wise_contribution_in_tier.xlsx": "a7dfe76dfd3a1145da5d3c62311bedf10f36c503b4f44e2ca3878d6a403e8128",
+      "pfrda_nps_statistics/HoNPSS_2024-25.pdf": "279f99adfa33e207fdeb7cb80b76fd2a4ee69cb7bd01aa2abcf529fb9a548fa2",
+      "pfrda_nps_statistics/M2_sector_wise_asset_under_management.xlsx": "fd7451b82eb30bab30dd8f6fd8459376f23f983df1936d7830c754ecf74322ee",
+      "pfrda_nps_statistics/M4_sector_wise_nps_contribution.xlsx": "94fa7f5ce492d70003deec542dd82bb223f14d17ed1800c42e34113e3dc15114",
+      "pfrda_nps_statistics/M6_asset_class_wise_classification.xlsx": "d0f8598b4a217c33520fe91790b1bda0426fefe7c1b7ed07dfaa4fa343667623",
+      "pfrda_nps_statistics/M7_state_wise_subscribers.xlsx": "1cc751149c7be2b10ed65545440a119732869143f128acd35e165b8ec2ab30e7",
+      "sebi_handbook_statistics/hbs2025_26_contents.pdf": "2d9f21d5171a9ba2c6d302ba5d9b64cf63379692df29d9ee80e46911b6f418ee",
+      "sebi_handbook_statistics/hbs2526_t11_a.xlsx": "e62672c12713c51a40f43f04ed78d81d450bc5924447a6549716aeae3ae2166f",
+      "sebi_handbook_statistics/hbs2526_t13_a.xlsx": "a617a82ff54960f042243909ac424fc68f1bfa5a90cb3ec86783dc0bfa201253",
+      "sebi_handbook_statistics/hbs2526_t14_a.xlsx": "945c01f8389a9bae75498c945b0c9b947ed8c7bd08e928bb7214f1ae04ce58d3",
+      "sebi_handbook_statistics/hbs2526_t1_a.xlsx": "6f5cde8bcd5f5d56ce9bdfbf0dd6af66be7e7b5b8745bc7964e0fe1e55cf5c40",
+      "sebi_handbook_statistics/hbs2526_t23_a.xlsx": "2bb3472cbdaad3bb16b2b5c47366c9827c7d3c19cdb5f68227461f1525fcb42a",
+      "sebi_handbook_statistics/hbs2526_t58_a.xlsx": "b596c357d44858084fa5bdb794f1110235227c5756ff71cdc03a88fba4ff40a7",
+      "sebi_handbook_statistics/hbs2526_t59_a.xlsx": "88d3f23dd53d2c4889a556ed29b7607f18c1facf287f2e872043fa7f69eea790",
+      "sebi_handbook_statistics/hbs2526_t60_a.xlsx": "c1946726d9e83da43a5de06d522b1de16cb46cdac262a6b0add5710be2c00604",
+      "sebi_handbook_statistics/hbs2526_t62_a.xlsx": "e2439eaf8fccd4253ff3f40973b1223da565f043fe3e8a750c0e9e50b9517e37",
+      "sebi_handbook_statistics/hbs2526_t63_a.xlsx": "ea5e9d1d5c79e33b35991a6b64088f739ba9aaa4c068014901668958ee32d2f5",
+      "sebi_handbook_statistics/hbs2526_t64_a.xlsx": "a4f4bcb157cd3b3d267be1bb7cdf879c040d45b8c2b9bbd1243aef15f9079e7b",
+      "sebi_handbook_statistics/hbs2526_t67_a.xlsx": "f4e653581044383715838b150c56029fa2b9afee0bbb74b5c48b371126efa25c",
+      "sebi_handbook_statistics/hbs2526_t69_a.xlsx": "7d9289f93a3487318a0689889e4f49673a433cdeb4e992619d8b179788ae8d9f",
+      "sebi_handbook_statistics/hbs2526_t70_a.xlsx": "ad2ae02037d604a76d67712822b6638b37abb43e7ac728fd42161263bd4d7239",
+      "sebi_handbook_statistics/hbs2526_t72_m.xlsx": "ea22e559acef2c2d8e7909cdeebecb8d1987d9e7bbd65ced82e7ffc11dd19ff0",
+      "sebi_handbook_statistics/hbs2526_t7_a.xlsx": "50381be3e5ae626aaa6064eb5e9e6c77780e397fb707b3ba6f8607a177157fef",
+      "sebi_handbook_statistics/hbs2526_t8_a.xlsx": "213981df81df1899e291d6cca2f76e7e91606e797c9b94a987c0eeff6c8214ac"
+    },
+    "hces_consumption": {
+      "mospi_cpi_2024base/cpi2024_annex_5_3_weights.xlsx": "cae0f770cdace596929a1ccb89d2b4bca15c573accf9fa06a17222ce2be9b80d",
+      "mospi_hces_2022_23/hces2223_table_a10f.xlsx": "05df26e601df2486325cc185ca089fc931b82df08ea441e61c0b867d325da3db",
+      "mospi_hces_2022_23/hces2223_table_a10s.xlsx": "952eed6a212c8ae30846576244b5b1a9743f897997476407b0096cb3858831b2",
+      "mospi_hces_2022_23/hces2223_table_a2.xlsx": "5572824c0ee3eadb265a2fbe9730a9d8347237ed44ad8e7666f392553dbbd9f9",
+      "mospi_hces_2022_23/hces2223_table_a6.xlsx": "24c87c6fd88406a7f2d2677529acb8b8086a24e62840ab60dd98d8b5ff8659b0",
+      "mospi_hces_2023_24/hces2324_report592.pdf": "368deb9c858dcc71c3bf0e6cad096a31b5b337a724cf92a113637f3302ea268e",
+      "mospi_hces_2023_24/hces2324_table_a10f.xlsx": "e8867e5ef8359a3eafe9f54280bbd135a30759f0c5591e4ed3a34f5d83f97137",
+      "mospi_hces_2023_24/hces2324_table_a10s.xlsx": "e75eb08ab7c056a56a05e1ef379fba55b943e26b1432e89ab387b08f96053211",
+      "mospi_hces_2023_24/hces2324_table_a10sw.xlsx": "8b01588eaca46a798a61378b5495de9cb06b01ce99f1341df9b8eec5f32b1662",
+      "mospi_hces_2023_24/hces2324_table_a2.xlsx": "5e87cc21db8424b7bb7e60681393183b01f1ded67dfb70d0a12270e5e72da12a",
+      "mospi_hces_2023_24/hces2324_table_a6.xlsx": "96af8274fd95b93f942be2e1d20be677b6ca73fffcd628f56725e0f51454a0b6",
+      "nss_cms_education_2025_report/cms_education_2025_report.pdf": "090c9fca5d11726b9696068dd5c2c9d3f355943c6534e77b3145611c0adfdd2b",
+      "nss_health_2025_report/nss596_health_report.pdf": "cc5224dc72597972e6df4691368d8ad3e065395b5d324cd703e5ff507a17825e"
+    },
+    "io_tables": {
+      "adb_mrio/adb_ind_iot_2000_2007_2024.xlsx": "7bb76a14c6afb969e1eb668a71cffdf140d519fcd50a2c58ce1683cb6212e337",
+      "ifpri_nexus_sam_india_2022_23_paper/ifpri_sam_india_2022_23_data_paper.pdf": "baec90a6a8bfbe58be8782ef59fea786cb837246589297601de5ae3f0110e9f0",
+      "mospi_energy_statistics/chapters_2817.json": "7e42c4df52f0f4890dc3c1385a46a0ce924e3ba7d1a54c2d5608c3477fca5d29",
+      "mospi_energy_statistics/es2026_chapter_9.pdf": "d4ebae869c99ccfe992e759b611bdeb2ba2bde550bcae2307c1b971fe3f99a49",
+      "mospi_sut_2022base/chapters_847.json": "05f1894e52fee95191f9c8b915d89f32229c1f9dacb633b9b9821b2033dee3e3",
+      "mospi_sut_2022base/sut_2022_23.xlsx": "415955ee0fc8f7ad4c9c0c8b61473dcc02e333ef647ac83de3d5a2612547df19",
+      "mospi_sut_2022base/sut_2023_24.xlsx": "6fbaa0e96982394e1ed2d6e1448acb681176e5541a36f744c285a96b921dfafd",
+      "mospi_sut_2022base/sut_note_2022_23_2023_24.pdf": "054e062c955af9b2a4778eb589300c882e7de216ede25c804af10ebb8865dcdb",
+      "oecd_icio_2025/icio2025_2016_2022_sml.zip": "46db55c45747e26dde5c1716d072b2aa74ace362a4424491ac646d2ab175befb",
+      "oecd_icio_2025/icio2025_readme_small.xlsx": "dec015b4d89190607fac90710352c9076d0c58ddfcdf6abf1fb6703d6cfca1ba"
+    },
+    "labour_enterprise_surveys": {
+      "mospi_aidis_2019/aidis_2019_press_note.pdf": "74d1aca5ba0422fc2821e0c4f5209b1b9773355b23f7af0b43300d22e40c3c17",
+      "mospi_asi/asi_2023_24_summary_results.pdf": "5fb1a9894eed93708dea7672cc22fb61f18eebcf380c31e1488509c10a43235a",
+      "mospi_asi/asi_2023_24_vol_i.pdf": "c77b3f863bc6bfa77a8daa0f86c531e9b99652718b791b9969a504795edcfbbc",
+      "mospi_asuse/asuse_2023_24_factsheet.pdf": "5e288475c530831207b7a29030368aeb31dab6696af6873b2f37b5639080eb4d",
+      "mospi_asuse/asuse_2023_24_full_report.pdf": "5a4ad06490da04a00eaf084f9071addcac7d1244072080b30b94088955067877",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p1.json": "7a3d62ecf71a433d315d0b9c4a67cec10933b63fe7f682b92940e76faa39ce9b",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p10.json": "57fd7a06f7e609fa5bae3997746f679153dbb5977f21459edbfce9cb61347b78",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p11.json": "85b0135a784f70f357a587af9e29f0a7b9d4a8f1c5f3a51af92a1ed92b55136d",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p12.json": "91ea3573967ba69bf3de12f24dcd437585d5660353899bc1a1bde88cb43a183d",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p13.json": "054b2443c91a020fef9016f4861d6a8f8a0627e1c04f0a224ac7e088262f3c79",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p14.json": "d886b6cd5493643feb4df6b039a5457bdd390c2314434d73b6764182f062b69c",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p15.json": "4015a20aa75c6ad19a69af846b59b93a10a65c5581704ee661dc4d97166f10d8",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p16.json": "edab878280781483e78c9f0e092dbf228d7968c1312279b46bde796b382acccb",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p17.json": "829d4eb075ad65ca0e5006d12726431bdbc1f3dc3946018ff20beb1faec5c3d8",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p18.json": "dc79c2ff19d404cc05be0886fe29cb2bfdbd91c749acc49c7507752411249beb",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p19.json": "fa9ec883d1994f5d41dc0e2797b4440d79b8c5070203e681d003890cd35cf477",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p2.json": "7b56b9c4d5c44233e3ed14eed15547c257f54c95c4e5b9186aefa3e484f3502f",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p20.json": "193aed759ae4e3ab08259d2aa143dcda433abcf4d0833c9daf03059683ce9913",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p21.json": "0c671fe8435e1cccfae3397210e9baa97159e8193f58235c51a05efdc932455b",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p22.json": "97ca32e2ee9dda1ef498b8cd65287884f067657b609f83f0cf72224dd4002ed7",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p23.json": "3cb764c515ff829d2914defe197a145c3968ee8a14e05a3decae2f75d020bdf9",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p24.json": "bdd5924d7f196f14293b3f7d661fdc305a2e19be57830da2e1f3b1f734ecdc94",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p25.json": "f0956f127047eb7deff68548e76b1d0a454f31eed456be83e3abf5ac288d6048",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p26.json": "3f150a09e81ac9091807d0a238651374a2a9fb6bd733d5485e174eee3084cb20",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p27.json": "78dbbdae1a850e118fc233e9fdefe057a42cfe751a206a509d922c7c1df8599e",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p28.json": "610b44b39670d0d97b01c377c1b796b4debb28a3fe14f3601d25042541f83551",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p29.json": "f968bb711b016d12959402362b44c11a291057051dd49115a4e5efa0e0b084e8",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p3.json": "7ddf7b66e40519078fcdb98fe792e0f2e20fae5fd51edbdfefeb901f9eff6fe2",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p30.json": "68d7e2fb3fc5ee071a19fbab17e2721e5f589e5a490ee99691bdd42277ee22c9",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p31.json": "f0952885bb8b5eab032265d20db4996cd88b8907dacf875e42b1ca1c4916d880",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p32.json": "b52c2da02a147d65cc35917eee2961554fa6de480701ca3624122aeed8d69b0c",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p33.json": "832c3b2719e314d9e5788cdf3e87a4835d72fc88334ddbdcd4664913cacfc1d3",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p34.json": "ff873d2d2abefa91f1d13e3cf2380d4823b63e07cb7561c5c862c302f45742ef",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p35.json": "8c70e1c2aa161d666f8b27927ac477e55afac434ba1882c58bdd2210781f64fe",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p36.json": "56f9aa6fd302ae64099759836803440e7f1f661d531bbd76b723be83b73d571b",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p37.json": "43e6d875ca129a378b2028e1eca921f2f02ddd8273a27d6d40451295e3b77348",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p38.json": "421ac279fd0826c2a68b7674eb6a1f752da03068bd6ec0f4187ac73d163000ca",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p39.json": "a63ff844a5b07fcdb4c3c1b5cd57082c9c660da65e453a70df31b831b7c9171e",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p4.json": "b57c3a66048682df651ea6913a16c80a059d859bf7bec7edd2b5e174fe987f58",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p40.json": "abc103f9cfbe9f91837211bc1d70f6a84090e6c1f3a32b0367beeb2ef79396d8",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p41.json": "4ed9379eeb265f7a81829775e341d9f81e1d97f6e581a5cd57a4f2dd1815324b",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p42.json": "aeb434b2fe53d95f735d9be28049711034b7ee711dafbb81083d454a2bc3c5f9",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p43.json": "11367e1eda5e524dd40862bcad41fa2109a727d83e31404e74c281e1fb3faf71",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p44.json": "9bcff07c2fed799d2eca5680491f0e8a0c0ad4c076e3ceb86286afd2a58903cc",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p45.json": "25de731379fff0a79d594452162f16b62f9374209278806497fe7d694cbdcc28",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p5.json": "98b998069908be2296bca397c7fe4cb557dcdf504ec879bf3f90a42e955f29e3",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p6.json": "8bd81ee6a99c056088a8dccc5d93af10bd8b1d071cdf9012bdd1ca5f8b93abc6",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p7.json": "3b803ffc7068bd20c7e77c990d5076c18b75ba125cf53a7437bcee713b375a22",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p8.json": "8e9d0e96b86743a4372159361d56d0748df692dc73c0a2aa6b77a767ae879eb1",
+      "mospi_esankhyiki_api/asuse_i36_allindia_p9.json": "beeca89ee5e0d5aa283a65de74439f126a8c2c4a31eb6afd7641198829e2c495",
+      "mospi_esankhyiki_api/nss77_aidis_i5_allindia_p1.json": "1dc38dd52be6b3e8e9671bd7ecb297edc199ccecf32e7de1fa4925c5162e05b4",
+      "mospi_esankhyiki_api/nss77_aidis_i5_allindia_p2.json": "9d1f1ccc0b4ef9b0719968c660e9838502d1b3344d7c25c204231fade9eaad3e",
+      "mospi_esankhyiki_api/nss77_aidis_i9_allindia_p1.json": "cca82327a3993bd3c7ee82f1316ec55ed42eb4a57c67bc10f226c4a83cfdd48e",
+      "mospi_esankhyiki_api/nss77_aidis_i9_allindia_p2.json": "757f3f72b38fa36f6a84f5325e13ebb3470bde1f5edb77cf48cc16702c27b62a",
+      "mospi_esankhyiki_api/nss77_aidis_i9_allindia_p3.json": "552161d7c73dc5dc84d1d53aaeb1ebc2b12a64f72b7eb11fec7374a6f1bae6b9",
+      "mospi_esankhyiki_api/nss77_aidis_i9_allindia_p4.json": "29e1f617d5b3303472d48b72c77d85105aa983d3300be6216dbadd193ffef000",
+      "mospi_esankhyiki_api/nss77_aidis_i9_allindia_p5.json": "3ad89b2ce124eaa3c499e3f5b62e9474da0b4fa447265f798daee59481666f00",
+      "mospi_esankhyiki_api/plfs_i6_ay2022_23_allindia_p1.json": "312549fa75b812c72753401476cd1546da8839af7817f72fdb68a440869cd523",
+      "mospi_esankhyiki_api/plfs_i6_ay2023_24_allindia_p1.json": "ab2d6fce62182e1fd311c779670ab25271f4341e27c3b27f09dcdebf4a053245",
+      "mospi_esankhyiki_api/plfs_i7_ay2022_23_allindia_p1.json": "132b035a1d82cd53d40243a58d864d4a878d872555174c664b7d4717d90942e5",
+      "mospi_esankhyiki_api/plfs_i7_ay2023_24_allindia_p1.json": "32f8861fcad22d834ad2c587aec7feaafdd5750d3b1c5b338cc54485e2580c50",
+      "mospi_esankhyiki_api/plfs_i8_ay2022_23_allindia_p1.json": "bd2c1be4b221b444c4747d577ca2c2e6d912f873ca6bb845b980b0c7beab3373",
+      "mospi_esankhyiki_api/plfs_i8_ay2023_24_allindia_p1.json": "1d28678773372003c1b6d512b25ef05b9528b987f6e10766e6199ce960339a55",
+      "mospi_plfs_annual/plfs_ar_2023_24.pdf": "ab4ead2cee181a13c7ab40f164d2dceb46419cfb58f30f8baa58e35f79d33d39",
+      "mospi_sas_2019/sas_2019_report_587.pdf": "119bbf39626de4a58ec183cf2d327f6a9916116dbe3367570c0952d40f9dcd05"
+    },
+    "mospi_nas_2026": {
+      "mospi_nas_2026_publication/1.1.xlsx": "55164fe36bcd12bb3debb840d3f5c6f1ed0c9e8ec6fcaa549707ffc4f4e78309",
+      "mospi_nas_2026_publication/1.10.xlsx": "2407c1cd18637f697243ca6db847863bda051b8a90be7b1cc20b672302afd2ec",
+      "mospi_nas_2026_publication/1.11.xlsx": "34e727d034a4cf05bedffb94eaaa0ce2c555177a2294e383336bc9098d9203b2",
+      "mospi_nas_2026_publication/1.12.xlsx": "75d73c8cdd966a35732ce2ec635c946dc20b5438bc0599d5898e73e99f0bee15",
+      "mospi_nas_2026_publication/1.13.xlsx": "74f1e7db86356267c43ba25c8b235e609dd7609321d292dc4a917d3028f5c512",
+      "mospi_nas_2026_publication/1.14.xlsx": "8b0cd987000e150d0d7abbb7628246b2c8099c797de99924fc31e67d2477357c",
+      "mospi_nas_2026_publication/1.2.xlsx": "06f3dbc3afcb2d8b83e47212f1fe1e75fd1fad456768f7aa5b4d59769198cc1a",
+      "mospi_nas_2026_publication/1.4.xlsx": "a330e415bd4679bc7d264d128c522de0d534e6af5201986abbe5b21d95f860f8",
+      "mospi_nas_2026_publication/1.5.xlsx": "9899bee7f16232566ec980a10e804a6412e36d84bd54bb03cb3fa86bc113373d",
+      "mospi_nas_2026_publication/1.6.xlsx": "3436e1c1cf3a59a56526146c33f7accfdc37a3c1a6c0fe4eaf8af7e34b772bc0",
+      "mospi_nas_2026_publication/1.6A.xlsx": "11e7b4e0cb7afe8d524ed6257641f2663c9c0459821d8e1b0294178730ab3729",
+      "mospi_nas_2026_publication/1.6B.xlsx": "189c1d414d876eb7b671a19ed99ce936b476556a97403fefeeb21af84b7d01e2",
+      "mospi_nas_2026_publication/1.7.xlsx": "6e5c88f557f46fcc707592073a240aaf7f9cbff4847e878bbfc2ae391a159a6c",
+      "mospi_nas_2026_publication/1.8.xlsx": "bf1cb959689ce2c3e40804ecb9f2ce1da420a022a585c3cd744e1c3988383088",
+      "mospi_nas_2026_publication/1.9.xlsx": "6bcbeecce6734ad88479cf968dd7ec04b9e1fad869a47142fbeb3e05cd861b9e",
+      "mospi_nas_2026_publication/4.1.xlsx": "0a8c8562be481543230d1b96c07c8162a93c6f16f9d32301cd5c6d05d577f51c",
+      "mospi_nas_2026_publication/4.2.xlsx": "a07a2b86ece1216cff14e36f3d8cdab94487cda6b6231aede7e9051cf75626e9",
+      "mospi_nas_2026_publication/5.1.xlsx": "6c7a37e4dc69e80f470b645690eceeffc31c0f5e215a727606cffe371adc8f16",
+      "mospi_nas_2026_publication/5.2.xlsx": "7cb7bdda35b9a0afe5b2463ec3a4d2ec864415df77364ff07315a8763a8d1dd0",
+      "mospi_nas_2026_publication/5.3.xlsx": "5dc2c931fc4e6b80c06dd12ee9b238c8495e8551a4b0d100038d6330eaeb3b0e",
+      "mospi_nas_2026_publication/6.1.xlsx": "e2731840399359c20b231e577b78d457a5507c89edf87e9e9bb1c1b597b1002a",
+      "mospi_nas_2026_publication/6.2.xlsx": "b5c5c42833ae216dccf9084c4f75209f65e8bf963966d995f0ffdd495e677f52",
+      "mospi_nas_2026_publication/7.1.xlsx": "fc7998ec1c9ae70a51ae642090883c1a40669a15c61cc8b96d7b2cd36d8c216f",
+      "mospi_nas_2026_publication/7.1A.xlsx": "1a9619af6de4de63c4c58d3bb8112e71a5e62cb061c1b71439f5cb5c2dc717ec",
+      "mospi_nas_2026_publication/7.1B.xlsx": "04b7b6f3fc07b846bca4b957f81d594b186a742f7a66221d67197ca9552cb3c9",
+      "mospi_nas_2026_publication/7.1C.xlsx": "bc1852793febc4c2687b0b9bc40f0b2a92bf3cd5126a6f8ff25882de1894a2e4",
+      "mospi_nas_2026_publication/7.2.xlsx": "e6301a140f53412ae2d6cb36276f3e2c2e2af7bf3e742d53099b637443b12783",
+      "mospi_nas_2026_publication/7.2A.xlsx": "505b0d4e0ad540bf3c86b6462a38a307ed31d63a9dd1bf120a1d9e85563a530b",
+      "mospi_nas_2026_publication/7.2B.xlsx": "9840a3c75ccbee3f42064482becf53829f84764a7dabf3598e3fefe96ec9f3ef",
+      "mospi_nas_2026_publication/7.2C.xlsx": "c65e5d3164dd135323a977e65932c72f24db10b5048828c7e80047e8bf5aea80",
+      "mospi_nas_2026_publication/7.3.xlsx": "3078d2a2bd3da9e07194c7daa387b50893ee065eb14bea72e681585bc2e879ad",
+      "mospi_nas_2026_publication/7.3A.xlsx": "e7ada0ab623d0b09c085622c5aae16bb209b6d909cc59cd8aa867367855d5265",
+      "mospi_nas_2026_publication/7.3B.xlsx": "f9c4b3cb238a333d7a16c677f9819b0ba116cdb480ada2931ac86d64e2adabbe",
+      "mospi_nas_2026_publication/7.3C.xlsx": "ff44feabc09f15eff1338092291e358545d505dab6fa2d16c129b2bc4f283765",
+      "mospi_nas_2026_publication/7.4.xlsx": "415ab7016529ee50613aa6526845851f5bddeb18b9abaf3d72698111276a225c",
+      "mospi_nas_2026_publication/7.4A.xlsx": "56bcb7a83e6cf808657b9d7218d21904e02d6016f8c36896d470945175c39108",
+      "mospi_nas_2026_publication/7.4B.xlsx": "ef5651f595b30dc34f63bf827205e4a6b306978a536395e75c3915ab3633f2fd",
+      "mospi_nas_2026_publication/7.4C.xlsx": "ef6d66398309564d46782c238155572c59379ac37b696bb12040a215ced85aab",
+      "mospi_nas_2026_publication/8.1.1.xlsx": "b1083ca94dd580e81fde09858b73f01a270b04299ef830f0d45a590de53116ba",
+      "mospi_nas_2026_publication/8.1.2.xlsx": "b0462e5c3313e759dac2b2c47623bd6a08bab61f1cbc8766c38450230737456a",
+      "mospi_nas_2026_publication/8.10.xlsx": "a72dbfafd835b23139b3644ec1fa9e2def61959b6e91f45276d01d398574ca1c",
+      "mospi_nas_2026_publication/8.11.xlsx": "d4b6316c526fcb0df2182cbfa0d41e92cd3aee716a567e7344a92bfe7600640d",
+      "mospi_nas_2026_publication/8.12.xlsx": "42788a1731315275a023e4c804a4b0772c746001e3b442734147e42c74f2e5bf",
+      "mospi_nas_2026_publication/8.13.xlsx": "ed6ff5cc2de81f3c4631751c016594e9cc808075ce0a0bc7a977885dbc28d960",
+      "mospi_nas_2026_publication/8.14.xlsx": "2a75f88066d3e7a773e55fbe809e6d441d90c951a15d4d03a13465f35ad42f9e",
+      "mospi_nas_2026_publication/8.15.1.xlsx": "814a9eef7a1b51859f7ebb2630d8679d84f732f31d35aebe80641641fca285a0",
+      "mospi_nas_2026_publication/8.15.2.xlsx": "0f3c4f5aa4561ff122a3f310379d1e8656c60f5c0dfedbb8e016acd745bf37d6",
+      "mospi_nas_2026_publication/8.15.3.xlsx": "e09b611b84e4bdc230a19343732984b224eb7a4e541663111f87cdc5f38d44e2",
+      "mospi_nas_2026_publication/8.16.xlsx": "d5a7ad4c71c5a3a9ec0b03e3b22c5cacaeb1bb4cbae48789c506d81bbad543ec",
+      "mospi_nas_2026_publication/8.17.1.xlsx": "3225b15d25cb2cd5ef9b63bfbebb056cf91625d0528aca963f68c7511aeff512",
+      "mospi_nas_2026_publication/8.17.2.xlsx": "b08b3c4851c73eda61dd12f32603ca1141506af3ef3951a580640f18a733d1f0",
+      "mospi_nas_2026_publication/8.18.1.xlsx": "fcc27c9de953075511ff0d17bb25fc553818161822a2ba27dae8879cd0c87adf",
+      "mospi_nas_2026_publication/8.18.2.xlsx": "4bc81e058ee7ce0cca999980e5bc47e4c45dc118321536b75b3937532eba059a",
+      "mospi_nas_2026_publication/8.2.xlsx": "ddb968d214ca2275f4ccfef945432828341e0966c6cace203bade748749124b1",
+      "mospi_nas_2026_publication/8.3.xlsx": "994e8469692e38137876037cc094c0644cacf4e58c6368c190edfef57c9647a4",
+      "mospi_nas_2026_publication/8.4.xlsx": "95c8845c828fdf0d3a4f588aae39e865939134521059fe14c9c45fd6ac3a8f95",
+      "mospi_nas_2026_publication/8.5.xlsx": "f7f4fef7b2109fc6edc0a53c2fd522167f5c202a1a73b3d7f0767ba8865ca980",
+      "mospi_nas_2026_publication/8.6.1A.xlsx": "48b16c2dfce5ea8dd2d49d512f619a7fa3957c909a028fcf8a22916a044f3763",
+      "mospi_nas_2026_publication/8.6.1B.xlsx": "de3920ec7b1c25dcacd231d170a7de7796d2cee5c296925812344acda3da92bf",
+      "mospi_nas_2026_publication/8.6.2A.xlsx": "75c3abe50a723976022eb61ecf336b9a2ade04367014be30bd3d3533d04078ef",
+      "mospi_nas_2026_publication/8.6.2B.xlsx": "049f5f2eaf36403b54a043ea375436de060e91daca96117f7faf116dbb79b403",
+      "mospi_nas_2026_publication/8.7.xlsx": "ec9fa9328a785bd526ac488653dabbb36fc49f9426255a14b1641869fc6352fe",
+      "mospi_nas_2026_publication/8.8.xlsx": "8632f114a9848f5eff45671943a7fb650958457eba6a4c1919a4db0b0a2b8302",
+      "mospi_nas_2026_publication/8.9.xlsx": "c0764e652363d141ee0275ab9c0d302335cdd82bf836857b4f2a9b552e9dcaf3",
+      "mospi_nas_2026_publication/chapters_2861.json": "4a9922a79f6fd863a417b4a2671aa28845986ecb38bba169e7f0c383af943491",
+      "mospi_nas_api/nasapi_b2011_back_a_i01_p01.json": "a8b92ecde7e069a74be9d49e659af653fee4f4c8b7e71d572982dad0f185714e",
+      "mospi_nas_api/nasapi_b2011_back_a_i01_p02.json": "853e380ab67536b984901947d7b0e407e88f96ad4ac756895e51e74e8a1f4edc",
+      "mospi_nas_api/nasapi_b2011_back_a_i01_p03.json": "003ca0cddd88be25b7ced937b775513e6a93c3771dea85776981728c3f837b85",
+      "mospi_nas_api/nasapi_b2011_back_a_i01_p04.json": "b2720f4f3fd2f15d14292bbb28054e6c3d52005356773c5717045e1b70338101",
+      "mospi_nas_api/nasapi_b2011_back_a_i01_p05.json": "2eedb202684288eb965fa4c1ebacb4320d83b83a9ad994fc21658b71ce28c511",
+      "mospi_nas_api/nasapi_b2011_back_a_i01_p06.json": "23ab22fba8c0596a96b6669332aef3a6aee891ab848742b2b0d93b13883503d7",
+      "mospi_nas_api/nasapi_b2011_back_a_i01_p07.json": "14c16f13a8d0ec4027cfdad194c106dc0668ed191a44e07d2a4fa29ffe8ff8c4",
+      "mospi_nas_api/nasapi_b2011_back_a_i01_p08.json": "29276b24bce90bb47461faf9c3f192a6eeabce19569174298c63e913d0004903",
+      "mospi_nas_api/nasapi_b2011_back_a_i01_p09.json": "17368e535080ffc62a9dc44ad9a4834ef9cead17000d23dd18522923f4095bdd",
+      "mospi_nas_api/nasapi_b2011_back_a_i02_p01.json": "9bfb3fe00ebf16153d06d7b4d44a3d10f9c93fa9f5a8aeb189f406b17c02f774",
+      "mospi_nas_api/nasapi_b2011_back_a_i03_p01.json": "ab8bc9dd51190bee5da5478bd2e8b37074c787b085ca82efe1c6371148ca8c53",
+      "mospi_nas_api/nasapi_b2011_back_a_i04_p01.json": "ab8bc9dd51190bee5da5478bd2e8b37074c787b085ca82efe1c6371148ca8c53",
+      "mospi_nas_api/nasapi_b2011_back_a_i05_p01.json": "3007936c73deec0f5f763b092c83a0746425852bdc31deae97aae1181c43bb6d",
+      "mospi_nas_api/nasapi_b2011_back_a_i06_p01.json": "3695d745ae597a9d1bed828bd864b16653d2242ef4117de0dda713407eb3e377",
+      "mospi_nas_api/nasapi_b2011_back_a_i07_p01.json": "f83f02ee3a7b815ffa9a0d5f800dd2ff51a23621c1523c13a93003b13ece6730",
+      "mospi_nas_api/nasapi_b2011_back_a_i08_p01.json": "14bd86fe7de6e97ee555ed28e22a628bff2f137d044fa5dd14400ca0c2f13ba1",
+      "mospi_nas_api/nasapi_b2011_back_a_i09_p01.json": "f6ef3fde8f2e7eb73fb62ba81a26ff91862e4d061402654808dc06c78683f9a7",
+      "mospi_nas_api/nasapi_b2011_back_a_i10_p01.json": "57a10ef551a19bf89f60132c62c3e86175fe7eece882a0e098642aa320f1296b",
+      "mospi_nas_api/nasapi_b2011_back_a_i11_p01.json": "ebf15f5830f89a57a0e42472647b6de2ac28784bc4129c9c25de09ed65c38b14",
+      "mospi_nas_api/nasapi_b2011_back_a_i12_p01.json": "4a531580aedfa2f58fe9bd672c01369ed89ae24a61830854907c3db2b72d0d29",
+      "mospi_nas_api/nasapi_b2011_back_a_i13_p01.json": "b7a8031125ec83003d03cc0518a7829c1a6fa0d47de424d7c8ea7094a7b6cb6f",
+      "mospi_nas_api/nasapi_b2011_back_a_i14_p01.json": "0ca82d71d6624f26151adfdb7d6287eb1bc0490430d6613939ad94228488f546",
+      "mospi_nas_api/nasapi_b2011_back_a_i15_p01.json": "4891f6035567e2a0536eaed757b41fbd7e73e0ac320348aebd858b0a2a13c4a5",
+      "mospi_nas_api/nasapi_b2011_back_a_i16_p01.json": "ab263676643e90796d2ec80587ddfbf5a3a10497724bdb663e0beef79c092f41",
+      "mospi_nas_api/nasapi_b2011_back_a_i17_p01.json": "e9399bc587c1f557477339ca01c80ff1b574c2577df2aadc47558c3a21fdbbc3",
+      "mospi_nas_api/nasapi_b2011_back_a_i18_p01.json": "e743b4ac479538d0bb4493f37a43b9ce179540aa30e74081aec7efcd93d5b880",
+      "mospi_nas_api/nasapi_b2011_back_a_i19_p01.json": "43da67406c146706a1100794fdbe9402dd2ffda616d160d5432e18eef0d6ef33",
+      "mospi_nas_api/nasapi_b2011_back_a_i20_p01.json": "18670c9b0a4bdce4ff266d0a5b27aaf9d03948cdc58e20f21c4ce6cdfac19886",
+      "mospi_nas_api/nasapi_b2011_current_a_i01_p01.json": "1bdef56ed39879cbea3cdc34d89fed10adcb116d4600aa3b99432c51f701ac9d",
+      "mospi_nas_api/nasapi_b2011_current_a_i01_p02.json": "7ccd72567d3e4bc6b907e7d8e9abd03d9c397c8e183db8bf197b8e5e7e883dc0",
+      "mospi_nas_api/nasapi_b2011_current_a_i01_p03.json": "405fb0cdcfa2e46e6ee8a09845e605da9d0e123e03d50abd94cae83558c299fb",
+      "mospi_nas_api/nasapi_b2011_current_a_i01_p04.json": "a7d214821c87b698f2703cdb166216df820ca1e644beb424f0ab2d09023e85e2",
+      "mospi_nas_api/nasapi_b2011_current_a_i01_p05.json": "bb89797c068f84b8b5eed644a59733e5acb7ec4a9bc11029a9e9c203e9f9bd52",
+      "mospi_nas_api/nasapi_b2011_current_a_i01_p06.json": "463540e7160ddd0ae941d3cd4cf51d5f5a1ecae30bf7dd77c4ddc26a57ece3f8",
+      "mospi_nas_api/nasapi_b2011_current_a_i01_p07.json": "d3283ba7928b6188edb9eaed45127a18d3a6aa1ec2de0085807286864812468d",
+      "mospi_nas_api/nasapi_b2011_current_a_i01_p08.json": "25604fad0e431c5b5ead6f4a91f12d766091eb185be7c4bfb8dc13cfac8da405",
+      "mospi_nas_api/nasapi_b2011_current_a_i02_p01.json": "40d61812cafcee0a21d75bea77a840fc6003556a9e4fc181b96711db64ef9245",
+      "mospi_nas_api/nasapi_b2011_current_a_i03_p01.json": "3c01ea17c42b99a22d3d05ee50cd7d7d365a7a5426bb41ddc261eda88ef5a2ed",
+      "mospi_nas_api/nasapi_b2011_current_a_i04_p01.json": "2c056c10a1b5ecd4f2fab6bfbfc522f0a81a31e96bec29139b0e6cd295909f3d",
+      "mospi_nas_api/nasapi_b2011_current_a_i05_p01.json": "a1f0aa8f6b9381e51bf11ea09aace861425027b92f37fb2ec2a419862059ca6d",
+      "mospi_nas_api/nasapi_b2011_current_a_i06_p01.json": "4fa0ce68b26fac881d16e7a3f4d7962fc8d028a6fba288adc6a223af91d9a2ec",
+      "mospi_nas_api/nasapi_b2011_current_a_i06_p02.json": "38af46f22ea963fa5f4e3f22207fdf69105c9ec364ce60d00fd094648cbd078e",
+      "mospi_nas_api/nasapi_b2011_current_a_i07_p01.json": "aa383ad2c6cc76f6385eb8ad5e312fb680009594176964f2d6b537a21cb42627",
+      "mospi_nas_api/nasapi_b2011_current_a_i08_p01.json": "7826406a7f1aa945517befa11d4532dfb99a494fecdf7bb91e2714c1924c8906",
+      "mospi_nas_api/nasapi_b2011_current_a_i08_p02.json": "40c7d898415eb12d6fc100d28ede399bed6bc267c65f9ac0a81917bbda9f279f",
+      "mospi_nas_api/nasapi_b2011_current_a_i08_p03.json": "9c0d374cfaec0426fdbe8a97a80783eb36048f335f697947644244baeb0a2a44",
+      "mospi_nas_api/nasapi_b2011_current_a_i08_p04.json": "4a0267788192779e23fd1417fbfb57151c0f86e030a3a78466c1c329526e1c3f",
+      "mospi_nas_api/nasapi_b2011_current_a_i08_p05.json": "0d9e0e9e54bd680dec4067900d0c6565de6465f0fe593001046e7bfcdd0a3497",
+      "mospi_nas_api/nasapi_b2011_current_a_i09_p01.json": "e91a0c32ca6fee6de9a63a747e4f0f708cb86939ba1d582517eb7119db0d05ef",
+      "mospi_nas_api/nasapi_b2011_current_a_i09_p02.json": "7f73edf7b698b8617ce218a3e8aaf3b4818e7abb8a3a56f4707fb1882e881fb7",
+      "mospi_nas_api/nasapi_b2011_current_a_i10_p01.json": "e168881f61a67e64ed238b55da97b0714eaf1d53255baaa45065bc8f7ac1e968",
+      "mospi_nas_api/nasapi_b2011_current_a_i11_p01.json": "8a7dd1fb9fc372ad398a2cce03c4c8d59cc1a6737c6a57457ce2f9ed1c6cbc8f",
+      "mospi_nas_api/nasapi_b2011_current_a_i12_p01.json": "98f4ef46d861fd140cbc97ada4b370a842b25049410cc1225766eb7553c26611",
+      "mospi_nas_api/nasapi_b2011_current_a_i13_p01.json": "fb55adddd6382375977e93b0579d352bab2feb31dea342e73907ba3ed90a9543",
+      "mospi_nas_api/nasapi_b2011_current_a_i14_p01.json": "2d1a4df96a202b1c19413a7fb3fe059d78f58dc0da79e273995cb555f9ea31d7",
+      "mospi_nas_api/nasapi_b2011_current_a_i15_p01.json": "4f89483eefda0b0e9d0fc9dd698adf8ebef96551c11edab0ea688970a3d36b5d",
+      "mospi_nas_api/nasapi_b2011_current_a_i16_p01.json": "4b94e8c33fc125ff632827f0028ff373afb5675208ce803abfe61fb91135a966",
+      "mospi_nas_api/nasapi_b2011_current_a_i17_p01.json": "44c09f832ec732f3e6fd96029b117b81c500cd5224cd2f6b83e9f19b935957f0",
+      "mospi_nas_api/nasapi_b2011_current_a_i18_p01.json": "4aa226f5ff2a77c6d241506ed538d57cb2e96ede47b6448ae5821bad9e41162c",
+      "mospi_nas_api/nasapi_b2011_current_a_i19_p01.json": "a83a44d6eeb3de0269687161fa117d590df1959ad388d8f15b5f717c73822403",
+      "mospi_nas_api/nasapi_b2011_current_a_i20_p01.json": "99961ead9f67ed1859756b655f901c212d95cae9e5f4d0b6c44242ae0c7da4b6",
+      "mospi_nas_api/nasapi_b2011_current_a_i20_p02.json": "bd4309e8dd44cf9d7442108bb99603455ef80a2b6b1061551aa23e97a15ee3f2",
+      "mospi_nas_api/nasapi_b2011_current_q_i01_p01.json": "eff696c96c990b1e0633c5b529f86ed8328b7aa8026e4be50ade6bee0b45ff2a",
+      "mospi_nas_api/nasapi_b2011_current_q_i01_p02.json": "dce36ef95a18938b5e1e77016f459b52cbfe0e81c3572db190f4859e56e6254b",
+      "mospi_nas_api/nasapi_b2011_current_q_i01_p03.json": "512db2bc3e189b6d321d7a021d9e2a4a00919cf7ad8ed06d854300db7b30976c",
+      "mospi_nas_api/nasapi_b2011_current_q_i02_p01.json": "4c6194f89e2c82d1144ea2a8023c7ea3db53b158d9affb48654f543ced839ede",
+      "mospi_nas_api/nasapi_b2011_current_q_i05_p01.json": "87d3c994b57122535c39ee7669c9fc37f0b97397c90dec3dd5959715a4b9de1c",
+      "mospi_nas_api/nasapi_b2011_current_q_i09_p01.json": "41d07229f6096e94da92e3dcf6170f56a81e4eeeef4cf925c112f3adf92ebc7b",
+      "mospi_nas_api/nasapi_b2011_current_q_i10_p01.json": "118239530cee6d97711f8a0f32604d827501de3f100ad97eab80e23f54ee14eb",
+      "mospi_nas_api/nasapi_b2011_current_q_i11_p01.json": "adefe671eebceb77ee771b3a70205f3a1643effa7b62cd34b76a19f773d712cb",
+      "mospi_nas_api/nasapi_b2011_current_q_i12_p01.json": "5c9572774f84229c36acdefe91f2db084eb9095f7379c60d70b79985c444d0af",
+      "mospi_nas_api/nasapi_b2011_current_q_i13_p01.json": "30bf257e481076541557bbb9f2cf87d126b18ac7d941546084a774f6264baa07",
+      "mospi_nas_api/nasapi_b2011_current_q_i14_p01.json": "1e7ce2ee924df511142b19ead4b6e822d43b34ce299133b0e7b1059096de91b5",
+      "mospi_nas_api/nasapi_b2011_current_q_i15_p01.json": "6037e13c0bb20f70c265033984ab5066ebf7b290786d71a5b88df3e9a9a9e65f",
+      "mospi_nas_api/nasapi_b2022_back_a_i05_p01.json": "ab8bc9dd51190bee5da5478bd2e8b37074c787b085ca82efe1c6371148ca8c53",
+      "mospi_nas_api/nasapi_b2022_current_a_i01_p01.json": "44bf94af651745c354a0aec41b70f77b587fa5512d1888ae459e0c41398af0d1",
+      "mospi_nas_api/nasapi_b2022_current_a_i02_p01.json": "ff0815e8826f460c7504e57038e18758ff43faa2d1c24e6581c8f8fdd527e94b",
+      "mospi_nas_api/nasapi_b2022_current_a_i03_p01.json": "876eb6f607d53281d7ffa45112b713e15a246d34b74cc98356a931ca4fa4323f",
+      "mospi_nas_api/nasapi_b2022_current_a_i04_p01.json": "0e255b302bd09c3ae949ded75135dadc0d06359a2a729dcdaa48d730b71ee521",
+      "mospi_nas_api/nasapi_b2022_current_a_i05_p01.json": "6b06ab7fa3f9d92a09b5dba5cac9839267998ccde4b13a39f026f972d72fe5b6",
+      "mospi_nas_api/nasapi_b2022_current_a_i06_p01.json": "568ccb5016a02f3ba2c9be54295a4cd2b8ddc70664f3d844a66099434edf9439",
+      "mospi_nas_api/nasapi_b2022_current_a_i07_p01.json": "db57e15cd3efefc1f07278ce92fce03ac190b603bba206da0a596dcd8b48f228",
+      "mospi_nas_api/nasapi_b2022_current_a_i08_p01.json": "8f57b9d97a9255bbd4ac556ad42a4dafc3238a49189a376030e4f32ba7aedb4b",
+      "mospi_nas_api/nasapi_b2022_current_a_i09_p01.json": "2a451f8e83e637a5994167e75cf416de2c992fef8ce487ba5dc66c413b80e64a",
+      "mospi_nas_api/nasapi_b2022_current_a_i10_p01.json": "8364665f6cacdbcf02b98c0bc78047c533795a96af7842b462e2b642f1ed7ad9",
+      "mospi_nas_api/nasapi_b2022_current_a_i11_p01.json": "9f47a2892109e86326809073cf3e700ad7d733fb8bc584bbb39f5e51de80c19c",
+      "mospi_nas_api/nasapi_b2022_current_a_i12_p01.json": "e95fc35a73951436f5080fdce0f9808963ac8507efe0e6cbe2afc0df58f07332",
+      "mospi_nas_api/nasapi_b2022_current_a_i13_p01.json": "5a32b81565527ac89e364a98b457c551d316ea6afcd57dff173ec727c38047a4",
+      "mospi_nas_api/nasapi_b2022_current_a_i14_p01.json": "a3d1b34e6fdd563b675ceab18fb2203574ae9a9fda19f00e70e89cae05efcc2f",
+      "mospi_nas_api/nasapi_b2022_current_a_i15_p01.json": "804a430a568958d18d5f091c0347cb6f852f9b347d55c3123adc8511c425739b",
+      "mospi_nas_api/nasapi_b2022_current_a_i16_p01.json": "0eb4b1a5d0a4a77864de0470af064cebdec82503710bfe2fa080389396f0fc2e",
+      "mospi_nas_api/nasapi_b2022_current_a_i17_p01.json": "aec779216d77347ea395194022b81ef261bc978c14a33f5aa036fe6bd29ec9db",
+      "mospi_nas_api/nasapi_b2022_current_a_i18_p01.json": "3b4ab33abc1f16f156ea30c56c63a7cc38031ce7d296abab805b2fbacb092cb6",
+      "mospi_nas_api/nasapi_b2022_current_a_i19_p01.json": "771f30fd74dc75468587d1692d85b65bac9cce1131927b43c8fa97d318b092e2",
+      "mospi_nas_api/nasapi_b2022_current_a_i20_p01.json": "756ffaad1752ea7784fcf42518161e6d25786ae99d0296ad914b559cbb585686",
+      "mospi_nas_api/nasapi_b2022_current_q_i01_p01.json": "234a9a1f2d337acdaf7dca4aa9beb5530651cae9cb895d92f21e818412d68f7a",
+      "mospi_nas_api/nasapi_b2022_current_q_i02_p01.json": "1ee5d428c5bac801ea5e1bd8ebb2b4748fc5472272be07e781eeeeaeb8c87942",
+      "mospi_nas_api/nasapi_b2022_current_q_i05_p01.json": "1b378c81e2c5d6f6e33bdbc4aa6bd8e15305253356279f497b887a43696fa2d1",
+      "mospi_nas_api/nasapi_b2022_current_q_i09_p01.json": "8b4aea8bb5e0db3ffd7e72864a98cb29de58407c259c7ed41654483c937bd0ac",
+      "mospi_nas_api/nasapi_b2022_current_q_i10_p01.json": "148d69e559289ead286e87bfa669940602d563d62c305abd97fe1cc02c20274f",
+      "mospi_nas_api/nasapi_b2022_current_q_i11_p01.json": "6c6d931d9215bfc005386cf186c953ba12446421217b5252d302ace1724c154f",
+      "mospi_nas_api/nasapi_b2022_current_q_i12_p01.json": "5f652476ded92bdc91a044b6787820c5551931356ef6641aaa81e0311bc2e5e3",
+      "mospi_nas_api/nasapi_b2022_current_q_i13_p01.json": "b14ff6c72219ad3825e83722759742491f1a435b4296798ec5c4d5f24a5f3003",
+      "mospi_nas_api/nasapi_b2022_current_q_i14_p01.json": "e129577be01d693041e1a2df7f9598242ea9259fd950e41f35f16f5701c58b68",
+      "mospi_nas_api/nasapi_b2022_current_q_i15_p01.json": "06fd974653b6a2caf04a0ffe0576bc916b507f5ed98429265b1fb68dd674d855",
+      "mospi_nas_api/nasapi_indicator_list.json": "dcd71522ec58c2b077043b06918425ef91ac0215878a4b6ccb30ff20bcce5985",
+      "mospi_nas_old_base_2011_12/chapters_432.json": "0d732bb91ba333085cf3ef7bb38af9aed5bb63f15e8d34b3cf2ebb38aab6d0c6",
+      "mospi_nas_old_base_2011_12/chapters_434.json": "98a72f0ecc03b52ecb5f6d28530a680ebcc46277918caaac31cd9e2f357c220f",
+      "mospi_nas_old_base_2011_12/nas2024_1.15.xlsx": "41b759a8056d6fff2325163e58d2d4062da08c47325eabd134171520427cdc99",
+      "mospi_nas_old_base_2011_12/nas2024_2.0.xlsx": "8ff6a5b17cbbde8b6d783b4d2305943c596574c8bef993e4fff57f8319681e9b",
+      "mospi_nas_old_base_2011_12/nas2024_2.1.xlsx": "5f48e96ceafd63b09f11739dca5fb5ae04c8e5cee6812ef3494b696907496207",
+      "mospi_nas_old_base_2011_12/nas2024_2.1A.xlsx": "d3529c5a4617a8cded1f1407904c373a78a335cc2bbd8d974cd6e11528ebc5a3",
+      "mospi_nas_old_base_2011_12/nas2024_2.1B.xlsx": "9dd7d0c1343f1bc588dd7a3e7b743bc9fc92b83890f075630e144d4a59867815",
+      "mospi_nas_old_base_2011_12/nas2024_2.2.xlsx": "456bddb1f5d2659c4c90049f641b3d01a64872416756e1a385147e55189ad9d2",
+      "mospi_nas_old_base_2011_12/nas2024_3.0.xlsx": "42138d7b887ef961a3afcf4ec50b097b83bfa73d8671037ce8c918dd3f5460d9",
+      "mospi_nas_old_base_2011_12/nas2024_3.1.xlsx": "635a2942f7321ed835ca1c4c0c795a68e4ad3daefc247aa31b90a505cea38208",
+      "mospi_nas_old_base_2011_12/nas2024_3.2.xlsx": "8687e05739ee2188516a6d15db7e3c99787bc7e4a8ee6c1372adcb10af85842e",
+      "mospi_nas_old_base_2011_12/nas2024_4.0.xlsx": "238fc6bf13dc011bcd1956ebbb023200bb1ae426cc378a986b4f210b0a7420cf",
+      "mospi_nas_old_base_2011_12/nas2024_5.0.xlsx": "a24f2dddbac5cdcaa9f66e2bc39c4354ffdeadbbb01722b7f19f3db6ab7dd297",
+      "mospi_nas_old_base_2011_12/nas2024_6.0.xlsx": "40ee0d82403477071c40e5655ce1e11408d8b72f5655321e56198c632a655286",
+      "mospi_nas_old_base_2011_12/nas2024_Method_NAS2024.pdf": "49b39ae85b7c8fd449f26768988ebfd760d995ddd87fb51c0c0b3558308f3ff9",
+      "mospi_nas_old_base_2011_12/nas2025_1.1.xlsx": "1dcc7354ef13bcf21da4371ae41955350d83bf3c176bc4bb6aec1d29efda1113",
+      "mospi_nas_old_base_2011_12/nas2025_1.14.xlsx": "9205fdf2879ded03748fdd4156a7e4e9597d44309fb6f113daf25f83a2b9d9fb",
+      "mospi_nas_old_base_2011_12/nas2025_1.9.xlsx": "c3c5209f022ab183c6468c8b32a20ebcd5f33bcfe913341f3d723ebb9a0212f2",
+      "mospi_nas_old_base_2011_12/nas2025_5.3.xlsx": "1cd6ffad4cc47f25cbd94f84b58562657968ef58f0e21ef1e6b30b2e19ac58ca"
+    },
+    "rbi_banking_corporate": {
+      "rbi_annual_report/ar2324_ch12_accounts.html": "fb3e51e2491493bbfadc5f62ff77f2130280619926ac4b9dc181fdd0fd19bbb1",
+      "rbi_annual_report/ar2425_ch12_accounts.html": "f6fc2ed5468035ec8f5069a008aba60da39d9541309c74c6f6bab9f67136fb35",
+      "rbi_annual_report/ar2526_ch12_accounts.html": "585571fa5187c62650e22df87205d64028f82817246761c8a288d7421f04457e",
+      "rbi_bsr/bsr1_mar2024_pr.html": "7e249c6bb3225615e963d0de4fcffedefa6ad5b00bd48b39eeefeacb4696eeaf",
+      "rbi_bsr/bsr1_mar2024_pr_annex.pdf": "0195d2a627877c42e910e2077fab98789e853f53abbf4fbc529db850907c76fa",
+      "rbi_corporate_finances/pcbs_2023_24_pr.html": "006d65c23959ecc9b6189836b9ef4423e8ad5fc02ce6ddfa1c6d4afb81c5051b",
+      "rbi_corporate_finances/pcbs_2023_24_pr_annex.pdf": "521cee7dafb8d67815f190bd62ed9c3d17094519bc36179a41fbe6c6c2a911ac",
+      "rbi_trend_progress/rtp2324_app_vi_6.html": "006a1e1258c748e0573309db3c65fef502742299b5d867d92c24b02e7635982e",
+      "rbi_trend_progress/rtp2324_app_vi_7.html": "56ac0123c3ffe6c8cadd3c9a32f2c89743e1200680e424262491cb7956f8ae2e",
+      "rbi_trend_progress/rtp2324_ch4.html": "b142c351408a48416034bccc8bc2cd19cc6f772b83d38740ffaf914a34f4275e",
+      "rbi_trend_progress/rtp2324_ch5.html": "a16a4390d37894a90145e56def31f308a20f4a78922ef58ffc91c5507f14b862",
+      "rbi_trend_progress/rtp2324_ch6.html": "e9c1db7feeb66eed093f1801e13e974d9ccf8e631115edb0961c9548a9853d7a",
+      "rbi_trend_progress/rtp2425_app_vi_6.html": "39c35da1f43dff9d05cb3d90f9e7e10dc9a1df0458547e256844e996a5fb6b60",
+      "rbi_trend_progress/rtp2425_app_vi_7.html": "85ad81c47628bf7c7d4af4a920a2acc66a5ad4c35453fb70a9e96509bed451e6",
+      "rbi_trend_progress/rtp2425_ch4.html": "49f56f09e0360a73f3828f7a1dd0cb4f415d6df0cb9a5f7a5f4744781f07c1dd",
+      "rbi_trend_progress/rtp2425_ch5.html": "642524ea3d69a2702d22162c6721f33949cb01d997de5c3affeee1417545faeb",
+      "rbi_trend_progress/rtp2425_ch6.html": "4205208563197cf107031eaa5eccb49a505f7f07ccfbd97bd2cb78e57c60fc2d"
+    },
+    "rbi_financial_accounts": {
+      "dea_public_debt_reports/dea_qr_jan_mar_2023.pdf": "ac10a15be8a1d89840cc6ad71e49844f94342b4404229bee289bda024d25c2b2",
+      "dea_public_debt_reports/dea_qr_jan_mar_2024.pdf": "5a2362d9aa2941d3c881a966421db210f0351d7b659273aa08afc77a7337859f",
+      "dea_public_debt_reports/dea_status_paper_2023_24.pdf": "c5264e9db4f76979a0af7a2938b7f2dedd3de12b7e497e57e837216912fe9b5a",
+      "rbi_fsf_fof/FSF2023-24_21012026.xlsx": "3de9013dd37ef78dddd724f908ba89b5d80357494a0c34d99b8524b083bf3a1a",
+      "rbi_fsf_fof/fsf_2023_24_article.html": "9b98dcb097f49a383450aeb71cdeef65edad1de4ccc4f9c28c321103e305a693",
+      "rbi_hbs/hbs_2025_26_listing.html": "af51ff9a5dc8c7585e0763d218bcd49a33382e5250a5ed7a93ecaa8e35617cef",
+      "rbi_hbs/hbs_t107.html": "5d251d44163f390e304920710fe9d8b4de4f8c009c0023d9de08cf68b80d7ce0",
+      "rbi_hbs/hbs_t109.html": "991e404112ccc4d1c5fc8c13edaca8c0f09ce96670b023bd676e7521c58b7715",
+      "rbi_hbs/hbs_t11.html": "01b16509348f811567a0f6277214187f9eb41f681089235ec5aac157e1bad0f8",
+      "rbi_hbs/hbs_t12.html": "7378fc0551bf2d871029bb5130b75d5e96da892966539dd3d639cb1ec8948089",
+      "rbi_hbs/hbs_t39.html": "5dca3b980131651590b57037d9454ca99e8f86ec6673be998985fa9e323939a0",
+      "rbi_hbs/hbs_t49.html": "58498c3e17a267df4cb98cc30cd2cc559ffc8f0e81a162548b26821bf00770bb",
+      "rbi_hh_fin_savings/bulletin_2026_09_t52a.pdf": "62ca27bd28f2e444fab8b60212dad6d30d5768bdefa72ee4b7c1ef4d8a9b41cb",
+      "rbi_hh_fin_savings/bulletin_2026_09_t52b.pdf": "fd69c8800f63e557ef500f045f8b9e5cd64b17686fbc53781dd03a9df63439fc"
+    },
+    "state_fiscal": {
+      "fc16_relevant_data/fc16_kfi.xlsx": "8e81beafe7874f694f67bd604c7faca10b846fbf4e4adcf2331f5f4810ebcca0",
+      "fc16_relevant_data/fc16_state_accounts.xlsx": "5a285dc8136d1f130bd09cd53ab4f5920dc08c06d1ce6039cbae06c81bf598c3",
+      "fc16_relevant_data/fc16_subsidies.xlsx": "88a2d8df60736611f9e0c850002f68767a132f4e03e4a948d7275f322a6dbf0d",
+      "fc16_relevant_data/fc16_transfers.xlsx": "4bfca9d040734cae4aabf693ea1817f2e437cd58f9066079bf5d519a90d1ed3d",
+      "fc16_ulb_cityfinance_dump/fc16_ulb_cityfinance.xlsx": "0502498f8b22d05cfc7fc043221091af44de47ea7fff68e9f9c5ef1d54b5b492",
+      "rbi_municipal_finances/muni_st01.xlsx": "b4a65ec0099d5af8de26afc00d8dacdf21051828a59deaead44854eaa4df46a2",
+      "rbi_municipal_finances/muni_st04.xlsx": "1ecff8e50e6711c2c60c416674e11e264f8ebee8057647b4e399be864ca2bd12",
+      "rbi_municipal_finances/muni_st08.xlsx": "0603dc2f865f22b03fbe431c01edb66482b198019811a214f79de054182500e3",
+      "rbi_municipal_finances/rbi_muni_listing.html": "c3dd09a1326adf85d5d9cb924df1ece5ff19e62daf7b5682e3c7d790aaa39979",
+      "rbi_pri_finances/pri_app1_part7.xlsx": "f8e187394b38fcbba5540524421f5a65220bb0e097ee327549943f524316655e",
+      "rbi_pri_finances/pri_app2_part7.xlsx": "dd52ecaf227a9a14afc93aecab03015b87d612c0057e798def0b8aa4ea033f1b",
+      "rbi_pri_finances/pri_ch2.pdf": "a36c920f0601bd35b9592c3169141301bac829ad23f02c6820528fc3747004e7",
+      "rbi_pri_finances/rbi_pri_listing.html": "8f65aa90afab3d6cdc3c7210e39b782312316bece009882fbc8cc91cde44eb4f",
+      "rbi_state_finances_study/rbi_sf_listing.html": "8849c23d9b16d7fe79629345703ebf2a8299ca256ba3e9adb9418c7416b29620",
+      "rbi_state_finances_study/sf2526_app_t01.xlsx": "69de65e9eecced5a69e9cd924eb8d6ccf1854cfc1d28232c5964fcaaf1423eca",
+      "rbi_state_finances_study/sf2526_app_t02.xlsx": "30bba26ddc9ab35348d0066e4ed5a108e3ac39cea4ef85a219b87b93509c92b0",
+      "rbi_state_finances_study/sf2526_app_t03.xlsx": "9a4bd639a16c92abe4470c0e4dd313c59893843cd1ccb91991dd50a7a330c42a",
+      "rbi_state_finances_study/sf2526_app_t09.xlsx": "cf5c2e8dd2732e167ed41fc19f7991fdf803e956126d8e91b6ca540fd0e0d5d4",
+      "rbi_state_finances_study/sf2526_app_t11.xlsx": "0ff963f867cbe7f70646b5eeb60c1fb69e8373daa89bb39f8f28e505f54a5f0d",
+      "rbi_state_finances_study/sf2526_appx1_all.xlsx": "ed9f1e631c5cbd9a46289fd0ec114091533a6f7d5acd45d494191fe6aa9bdc60",
+      "rbi_state_finances_study/sf2526_appx2_all.xlsx": "f8e2d8abba4301aa3590c0a455162ff87cfcb96a7e5f825e570ae8353433e4a0",
+      "rbi_state_finances_study/sf2526_appx3_all.xlsx": "7265d205555fc84dd69c7dc5416abedb0a67b0d2a5355e4207c2fa0e3fb01a92",
+      "rbi_state_finances_study/sf2526_appx4_all.xlsx": "2e18c7b420d6059d834aca941430d4f560b3faf8f7cf62cebab9d05962084d8c",
+      "rbi_state_finances_study/sf2526_st13.xlsx": "086bd2753166ecbb3289a1027981c8df9074f9addae41f6bb2227046677a5062",
+      "rbi_state_finances_study/sf2526_st14.xlsx": "f0492963c3b5a01da95535c67db6d522df1cbc935ddf76c553c02165d501f56f",
+      "rbi_state_finances_study/sf2526_st15.xlsx": "16fdc6643388e23219e36b341fbf34264d2eefde365414818162c4c89d92c098",
+      "rbi_state_finances_study/sf2526_st17.xlsx": "6aa2a7f82f0710282804b0a376e2416e11596c80dbab7a8dbdd71eb8227a2363",
+      "rbi_state_finances_study/sf2526_st36.xlsx": "f29c38e5a3713b054c39e4deaa7c810ae09129c1ca0da57b4e8a25effca7c994"
+    },
+    "trade_satellites": {
+      "imf_sdmx/imts_cl_country.xml": "cdf085e2c51aff9c910baffe411b19df42090bdc9b15667a02a67c8e0732cf75",
+      "imf_sdmx/imts_ind_a.csv": "f8dbba41f3a030c023f69d8410dd548c70aa476ec69f14d9003f24a5f7e89a91",
+      "imf_sdmx/imts_ind_m_2011on.csv": "ff75e8777b2ef4fe02c6481ebe04d9062ad51982e3ef5b0afa4004750022d37f",
+      "imf_sdmx/imts_ind_m_2023_24_attrs.csv": "b17937dff30b41a99a1dfea257282b8959ef202621064cbfb50d48ed9dcecfa3",
+      "oecd_wto_batis/batis_dataflow.xml": "63ba8534d49e6a37562ca1be9291bebc6627a95a7197eb11da7246ef336afe36",
+      "oecd_wto_batis/batis_ind_2005_2022.csv": "bc4e1e1e661e0c0f8af6b3e1df9f58dd3ac087ccf5caf7a8ffa125b80c6b094d",
+      "oecd_wto_batis/batis_ind_2023_2024.csv": "68f8fe10e333ec0eae7a692c2385a04612df23e3bf6a6b0fa1d9a821b4277d55",
+      "un_comtrade/ct_getda_c_m_hs.json": "b6f4085968af7d20fdb4eda7eacb841e9fa9daff523e411042898e6a8f92da1c",
+      "un_comtrade/ct_m_ag2_p124_792_202304.json": "9bbe4df00313895fabec2ca2f8174a4643232cbb0f76ddec49b3cec5c686e401",
+      "un_comtrade/ct_m_ag2_p124_792_202305.json": "292dcb9754b81d2eb1d141b08a6b3c781bf92ac23429f65b86014de9e5eee7e7",
+      "un_comtrade/ct_m_ag2_p124_792_202306.json": "9cdf794a25e257945e84f2b54cb4e38ad7ba84118135e5dbfa1dce1aaa2981f8",
+      "un_comtrade/ct_m_ag2_p124_792_202307.json": "85df18032f1dba30adf17d6e61ab86b88abe125cb6f0207140827434bdb0392b",
+      "un_comtrade/ct_m_ag2_p124_792_202308.json": "9a9f6552bcf2dbfa197881b0c206ac9303fc9223c68019ba0cdfc638b5bbd741",
+      "un_comtrade/ct_m_ag2_p124_792_202309.json": "f994ac79de910564bb357112ab400e892da6852c5c236b30c2a121e3b497f119",
+      "un_comtrade/ct_m_ag2_p124_792_202310.json": "ae10400031dc900ad111e72da4ea98e72882b9f84a182802b64809f3bf34104a",
+      "un_comtrade/ct_m_ag2_p124_792_202311.json": "58cd3160314808b0a6b520dd8ca6a809d030a6f5c0f2509fe22808c991177fc0",
+      "un_comtrade/ct_m_ag2_p124_792_202312.json": "3b00cee3e3b7c5c6d01265b597461796aa62b47a9cf83b8638ddd43e893f9137",
+      "un_comtrade/ct_m_ag2_p124_792_202401.json": "86db179443d9709a4b62457e3f06028755d8bb9145bfae91a49530dc2b8ec7c0",
+      "un_comtrade/ct_m_ag2_p124_792_202402.json": "2d88987c399c80826fb5794850f043b5c5980e3ac1ec0f4f9cd1a89b012f1fc0",
+      "un_comtrade/ct_m_ag2_p124_792_202403.json": "fdbf7857e5435316d4737a05d90b2707166864efb60b856bf8e6167622c7a7b9",
+      "un_comtrade/ct_m_ag2_p156_842_202304.json": "d31a08fc4a748411c6ff4af53b38e300cb2f961d0932a2cf4d1f3b8e199aead0",
+      "un_comtrade/ct_m_ag2_p156_842_202305.json": "e5e6ea0ce3e15b170fc60dc4c273f99de22a2bb2a8cf0539213969a6d4519c14",
+      "un_comtrade/ct_m_ag2_p156_842_202306.json": "50b03d278c0eda2f43c82beabb1c13ca03f77a440d1095ff2e1409cfd9e096ae",
+      "un_comtrade/ct_m_ag2_p156_842_202307.json": "4a7847df1a1f4ff7d07a923145cfd4381c0ff839437a5268ef717f86bb4bafa3",
+      "un_comtrade/ct_m_ag2_p156_842_202308.json": "e8c54462130d32f1a39136464aea0de712819ccbd073eb8938cd8214c3d50865",
+      "un_comtrade/ct_m_ag2_p156_842_202309.json": "4d5d51d5f1389e7fbc63b2ee82e8601bcab13ab2b3e7134ad1920c7e6611367f",
+      "un_comtrade/ct_m_ag2_p156_842_202310.json": "47dcd17792f2ac6c1b9a128760235f3327a8fef3982eb7e38b2d507f3495f726",
+      "un_comtrade/ct_m_ag2_p156_842_202311.json": "1086c12ce47c5bd8626e5dc883c1f9fd42a03b96a273a49fc990185d81fee2b5",
+      "un_comtrade/ct_m_ag2_p156_842_202312.json": "14a42afa66586478bf15ba2431f569e49eaf6270014f1076a53f97606553f57b",
+      "un_comtrade/ct_m_ag2_p156_842_202401.json": "2ebd985707a1abde3a1f4a68408b16816303cd35d27013faeebae770dda48978",
+      "un_comtrade/ct_m_ag2_p156_842_202402.json": "2ec68ddfdee004da4dbe13fcb115845a4b7fa9856705780460e791fea916f9ae",
+      "un_comtrade/ct_m_ag2_p156_842_202403.json": "310859f6e64acf5855709bcfe5a14b99fb037ac453d105b29d30e819c90cf28d",
+      "un_comtrade/ct_m_ag2_p344_56_202304.json": "9fdeed876bf56c8cb24177727040043479d8878c8c6c8ea0931b4a4372afd519",
+      "un_comtrade/ct_m_ag2_p344_56_202305.json": "c55a1ffdf11099a9d3dd5cf3f27ba7078ae8caf491b13353e0e7be02069236aa",
+      "un_comtrade/ct_m_ag2_p344_56_202306.json": "754c3ee457a639b3fc25245756b6929407b4c4f79a5c03c35fe06e3e77c5951f",
+      "un_comtrade/ct_m_ag2_p344_56_202307.json": "063cc7a7884b3ad7c302f684f04194d031765d64e9aeeed80de493269b1aa657",
+      "un_comtrade/ct_m_ag2_p344_56_202308.json": "6b31ce4814c6e680a127568af85ad8efcf8b5e93bc09443e9f787339b90799b6",
+      "un_comtrade/ct_m_ag2_p344_56_202309.json": "ef7114dbcc291d5fb099c70e1fca8b90dd885ea1b6d52ffb8f0dc0cbb2d33f66",
+      "un_comtrade/ct_m_ag2_p344_56_202310.json": "af89b9ffc9c677e0fbe2e1cad259b8c0c754eb0a80ffb2cea00c00b9e170ebf5",
+      "un_comtrade/ct_m_ag2_p344_56_202311.json": "0c6ff22f3c556f9859c344ab2a2b0d2183a319e79ce7911993c49959a36def02",
+      "un_comtrade/ct_m_ag2_p344_56_202312.json": "d598d08694b28190a90aa13b90ceac33672c0674a50d6c544c741d0ffcef3b50",
+      "un_comtrade/ct_m_ag2_p344_56_202401.json": "866d324272ae7ef75b2e257c69720799f958ebcb835b4fce2d7f61b108086578",
+      "un_comtrade/ct_m_ag2_p344_56_202402.json": "9d2af7899b82905ce45a8ef957a3670c013a1aca948212c22024068d6738a9a0",
+      "un_comtrade/ct_m_ag2_p344_56_202403.json": "9e772c06535dea19faced3465f4c56e2fac40667e3fedf2474012925eda61717",
+      "un_comtrade/ct_m_ag2_p360_276_202304.json": "fa25acdacfae10ddb131237a183d44183caf497c7aaec83d09f0707da1c1450b",
+      "un_comtrade/ct_m_ag2_p360_276_202305.json": "9b856b21f946e9c6f8ea92014ed5a931c80e16572064857a89392655c556dd98",
+      "un_comtrade/ct_m_ag2_p360_276_202306.json": "55165e8f51a87a4b5fddcdf33b1cfb4012fa67c72af8248a3138ffa4f507aa58",
+      "un_comtrade/ct_m_ag2_p360_276_202307.json": "f33e730ff2dbf51f1e5b549dff3aff12fa589ce3dfd2adf919d483f7da5668b4",
+      "un_comtrade/ct_m_ag2_p360_276_202308.json": "9580e469866e0e7aad0a34a7db0fb570824e39439d82e5df4d033669310cccc4",
+      "un_comtrade/ct_m_ag2_p360_276_202309.json": "0e40dc0255c3af58d594f172cbd630e05b98d3083945bf1ddc06b95b28b998ab",
+      "un_comtrade/ct_m_ag2_p360_276_202310.json": "ff1fc7ec621c86d7aeb6816ea363397a18943f229984ba8d8940eebf4dd92056",
+      "un_comtrade/ct_m_ag2_p360_276_202311.json": "a816c9bbcbda20bd45a96f91c0feae2012cb1b845b6b3ee16695024d62d79997",
+      "un_comtrade/ct_m_ag2_p360_276_202312.json": "d33e024b56ac08bb4940aa563a8807490df104c2f0b17f544fc324938b5b1bbe",
+      "un_comtrade/ct_m_ag2_p360_276_202401.json": "297a822c0b8753e78a75f38ce6e4267a105a2cb9b16150e32caa2c760f8f90b4",
+      "un_comtrade/ct_m_ag2_p360_276_202402.json": "825922899d27549aa1f780d026b6b735db0eaa8b37495472e33507393aec8bc2",
+      "un_comtrade/ct_m_ag2_p360_276_202403.json": "59ce658af080d104672c03a44d0ad8728b135dba06582fdfca8f786bdf072879",
+      "un_comtrade/ct_m_ag2_p410_36_202304.json": "8345b21489546807610e195d2c04d701b741b809e586b69537d17eab6b0fd2cc",
+      "un_comtrade/ct_m_ag2_p410_36_202305.json": "2438699b10917acbcebcc60e9e79e2d498b35ffa246a0f801dc6f69bb1686f2d",
+      "un_comtrade/ct_m_ag2_p410_36_202306.json": "fb92aa71bffa3a87f6f58789fa16db07c6573ed0fae6a36b050adac03e441f60",
+      "un_comtrade/ct_m_ag2_p410_36_202307.json": "d7fa47da656561c353b0df34a676e0f708c2ff77a836787e3c9f4706ad3823fc",
+      "un_comtrade/ct_m_ag2_p410_36_202308.json": "1813ea00a55c3b96f011e9fab2326516698d8518751b62a16d1eb75c23405c78",
+      "un_comtrade/ct_m_ag2_p410_36_202309.json": "a929fb2443a6d2a9c0e473e91c9c74e70a043ab92477c659eb3eb4a325ff4988",
+      "un_comtrade/ct_m_ag2_p410_36_202310.json": "eff2b7f7cc16b739d3ad124dfdefddc544013ba10e2c2dd44966cb2780e61ba5",
+      "un_comtrade/ct_m_ag2_p410_36_202311.json": "9f48e7e30ba22fb49047650980b9bbbd99ddff105e7641564c4e35db2a4fa91e",
+      "un_comtrade/ct_m_ag2_p410_36_202312.json": "462838fc12e1909054e7ec011028060581ee759e5c36e9ba0e54f773f06dd384",
+      "un_comtrade/ct_m_ag2_p410_36_202401.json": "8f25bb0d8b42f600aced18ffab188b8ffbcf4831de714869f107a577d698e646",
+      "un_comtrade/ct_m_ag2_p410_36_202402.json": "087438129aff8dfb344884843df43328dd7812deafdc7adaee34455f79de7dd8",
+      "un_comtrade/ct_m_ag2_p410_36_202403.json": "47a74c7275bf4309f0ca667d1ecd154faf8b2539786444a68d8218c0cf992866",
+      "un_comtrade/ct_m_ag2_p490_414_202304.json": "9d440549e1988c419d865262c40a4d04454fe00432358a367651ca4abc55353c",
+      "un_comtrade/ct_m_ag2_p490_414_202305.json": "a11bb3dd8a61ea79a37de935e8b82bb94ede4fe259e43ee29810ef7ba136e6ff",
+      "un_comtrade/ct_m_ag2_p490_414_202306.json": "686cdc3aa0081b53821df4fc75bef4f677cfa7bdf90bbad051dc1788ead1a041",
+      "un_comtrade/ct_m_ag2_p490_414_202307.json": "6a746de017436ac159364df55241d740e59138da30307377bdbed00f72f8fde9",
+      "un_comtrade/ct_m_ag2_p490_414_202308.json": "bfd39e8d0b48c96cd25eac90ef62d53c95ab0e624881fe9ebfdb4f576ae5eecf",
+      "un_comtrade/ct_m_ag2_p490_414_202309.json": "a5141e5080aff62916cefa87d993cfe4a53b40b5a259aa2ad637916822c2847e",
+      "un_comtrade/ct_m_ag2_p490_414_202310.json": "a05fbe4840d3e33c77b2a17deb00512418c4516875a92b742f4dfff67c6dee50",
+      "un_comtrade/ct_m_ag2_p490_414_202311.json": "96219a4c361f5a38c97402272bec7a91a0996f0a65096153de345776d5163021",
+      "un_comtrade/ct_m_ag2_p490_414_202312.json": "03dc12223c1e0a70fa39ce839bdb49203d77d5a73a2ef570af737284a4cb37c9",
+      "un_comtrade/ct_m_ag2_p490_414_202401.json": "509ac1b08f7cd468016b5f9cef904425675fe7ecb20c3192a43f4107f3d1bb7e",
+      "un_comtrade/ct_m_ag2_p490_414_202402.json": "88077146efd9124697197afc04ac18ffbe3b9021525bfee6e003260818e4507b",
+      "un_comtrade/ct_m_ag2_p490_414_202403.json": "29050de00355f891c949d399b65710110dbfe3d7ede4d8e97c448d306e0ace7e",
+      "un_comtrade/ct_m_ag2_p50_76_202304.json": "d4151eab3e200c5a7d97226628aa954bdfe4a3adabeedc4b610eb99fd378944e",
+      "un_comtrade/ct_m_ag2_p50_76_202305.json": "4b7a31f4b98b9913354d2db7c1de8cfe340ca3a5aeb690ea1188c3a6ff01f4be",
+      "un_comtrade/ct_m_ag2_p50_76_202306.json": "1fb3015e3dc4f0dc3039fbd90e55a3f862aec0b2497c6ca7d0cb2e2fe8bbeaba",
+      "un_comtrade/ct_m_ag2_p50_76_202307.json": "7f0e24fac7a40c1618b356cbe9d238ee5bf22ddd4c011da39b35c73ef672b272",
+      "un_comtrade/ct_m_ag2_p50_76_202308.json": "a78ecc9f9ed83da837a0f9213b2a08c4c7739a18d6a346c17c2c44f26b3f082b",
+      "un_comtrade/ct_m_ag2_p50_76_202309.json": "ff6d59e765934252a869b31c64bb8af2685e6d94d7e5d83943346b4e826235e4",
+      "un_comtrade/ct_m_ag2_p50_76_202310.json": "8ff7ae0353f8f1112c60006679a97e3dfb814cd5aca8fa757285cb59115ad93e",
+      "un_comtrade/ct_m_ag2_p50_76_202311.json": "0b6940106bf9c390406828f9b3ad666fa38484003477d01df585a76986525012",
+      "un_comtrade/ct_m_ag2_p50_76_202312.json": "a7da93ad4e769013d094550462eca33c27cf2b899329459b9e3765a15f994c53",
+      "un_comtrade/ct_m_ag2_p50_76_202401.json": "f3c695a3201c1fed385586b37329161bb1044c3436816c376ef0bdb9b763e32c",
+      "un_comtrade/ct_m_ag2_p50_76_202402.json": "ec8a420086e9f94f702df8d4c4e78edc23b72e3ef9beefaee8c84f74d4551d4b",
+      "un_comtrade/ct_m_ag2_p50_76_202403.json": "9a997c31b65a765c69570527dd6dcfbdac769e8558d29c5ffc04f672b98bad42",
+      "un_comtrade/ct_m_ag2_p528_392_202304.json": "1a3bc278cbb6b139ee9ebbdf95e5c49c0118f7ae4726dbdd80d1617fe8986701",
+      "un_comtrade/ct_m_ag2_p528_392_202305.json": "a8c421279140b770ff21b5c9cd35225bbe63c0a7185fe38be9a2c00224b05ddf",
+      "un_comtrade/ct_m_ag2_p528_392_202306.json": "8f6a9a10a5be0c7b8780a1afda79f7ca801295f08a26236ec1888c8ced81ccc5",
+      "un_comtrade/ct_m_ag2_p528_392_202307.json": "c8f3905df2a6548a3e8dde0b094e819da555a31817cadd0410a6a5241076993e",
+      "un_comtrade/ct_m_ag2_p528_392_202308.json": "3ea6853b4ff629f71ef9987fb4115123a7dd94d763d60cb50056e4a189f8c3f6",
+      "un_comtrade/ct_m_ag2_p528_392_202309.json": "e9bdec999938902f54850976cd96f9b696d5202d20f34985d199882adae233f9",
+      "un_comtrade/ct_m_ag2_p528_392_202310.json": "5c386371476b6dcd7e7b1344b5ada5499cde363a977cae269b24c06b4e79e730",
+      "un_comtrade/ct_m_ag2_p528_392_202311.json": "17fbef47d8eb4d737791d814d837213075b9bb4a551ee490195c86127526c981",
+      "un_comtrade/ct_m_ag2_p528_392_202312.json": "72f4dd2709ca4748ea23bf3937a6dad08ffd5d818129324a03867c2fcff3781c",
+      "un_comtrade/ct_m_ag2_p528_392_202401.json": "ee9a5c73e835eec8c0673a26e1ca99b965b0178460f714b7015033f341e8141a",
+      "un_comtrade/ct_m_ag2_p528_392_202402.json": "d58cf6ee20ba4e5e7038d0e993173e90c0f16f99ccc9ec64b00027245eab51f8",
+      "un_comtrade/ct_m_ag2_p528_392_202403.json": "165bb99fdc15ee8e1cc4503bff45e42ac79f6dae6d4b68c037f4dc02f4bf2b58",
+      "un_comtrade/ct_m_ag2_p634_251_202304.json": "1434417d47f742d34478a708bf4330d3e030ded5e20a776f48f71ea7735871b3",
+      "un_comtrade/ct_m_ag2_p634_251_202305.json": "9c66eeae912d6383608e0aa15cb4ea0d94499ae6e9670c3bd23cecdfa21684f0",
+      "un_comtrade/ct_m_ag2_p634_251_202306.json": "c0b73708531590ba858eb7c7c54f9323f00676a16cb479e95b0cad35119bf8cf",
+      "un_comtrade/ct_m_ag2_p634_251_202307.json": "6895cdcd257e1639757a7323aca2c7c674fb080da38ee58be9d029efaab428fe",
+      "un_comtrade/ct_m_ag2_p634_251_202308.json": "b6b81a3661c42550768649e7a30df35197bd64bcf460238763695acb464a6c83",
+      "un_comtrade/ct_m_ag2_p634_251_202309.json": "8d0a3d97f56844e26a94b5d768d79cd289d4913fd22afa25d26a299cc1af45f4",
+      "un_comtrade/ct_m_ag2_p634_251_202310.json": "e050c7042f206f4472461f4e93dc5442285b57d60b40959cfac4ad0bdb253da2",
+      "un_comtrade/ct_m_ag2_p634_251_202311.json": "28b556fe761bb203c027e9b1d7d639ef217718dcbeea1628eddf484488633032",
+      "un_comtrade/ct_m_ag2_p634_251_202312.json": "fb1e0541eb926f8ce7358639dfac2860d710279e262d61166ea4686363a35b40",
+      "un_comtrade/ct_m_ag2_p634_251_202401.json": "686f05c83315d79068a2f8512c78d2fe263369b1137cde76bb014626f5ea6727",
+      "un_comtrade/ct_m_ag2_p634_251_202402.json": "ae5fc37a6c5e5266cb63ed6942b9bcce9f75b5cf42d20f9e66d6498b7218c1ce",
+      "un_comtrade/ct_m_ag2_p634_251_202403.json": "88a007e11b0dc7a93f470d074e5ed6c4270fcb5f998e6572fc0a68da2aa61c10",
+      "un_comtrade/ct_m_ag2_p682_368_202304.json": "e55548bff72707aeda5b3c532e7acb314a1eb22a0faa78bdaeca06212c1e1ec7",
+      "un_comtrade/ct_m_ag2_p682_368_202305.json": "ae26cf753e5c8a013875731206104cd53d42202cbd6f9a6d7da29dfd0080612c",
+      "un_comtrade/ct_m_ag2_p682_368_202306.json": "a12273d25f8d76485240f5d5310017b6290c852658db2a9f702fdd456d3f4315",
+      "un_comtrade/ct_m_ag2_p682_368_202307.json": "f51f81ef3901b2303a7af4d6c899987225370e02293f125004511f49f2f326cf",
+      "un_comtrade/ct_m_ag2_p682_368_202308.json": "1be816204861a5e104fef54290707d91826280357c1dc2ee678244df3382bbb7",
+      "un_comtrade/ct_m_ag2_p682_368_202309.json": "66affac152c2dd13acc21c515d36f88b702c91fe478c5a221a5f7e335862979b",
+      "un_comtrade/ct_m_ag2_p682_368_202310.json": "4d9559c925d42e05fdf42d07c3d41993cef02873a1e423839b170df987e68b33",
+      "un_comtrade/ct_m_ag2_p682_368_202311.json": "6164cd6466b1ec6e8b13f3519deba81021661a3929f95111910c01879276d49b",
+      "un_comtrade/ct_m_ag2_p682_368_202312.json": "6e9b04c92a59e57ba6d2622a33b0dacc37a8334e0c6370fb2289bf4858657c0b",
+      "un_comtrade/ct_m_ag2_p682_368_202401.json": "acd8ac0799dabc7e45aadc2e3257b6f88211d1dce104e1ff83ed7d120389fc0c",
+      "un_comtrade/ct_m_ag2_p682_368_202402.json": "078b305edd38e04c1a25d263d11afabc3d174f606e87764264bf73c8a694a941",
+      "un_comtrade/ct_m_ag2_p682_368_202403.json": "78484013e7a0e537d00638e1cbafa50fa162207b4141a79e8119a3d96301840e",
+      "un_comtrade/ct_m_ag2_p710_458_202304.json": "3fb57d996512e6bb5d5f09b2ddcb799451532e5dcc711b13bb1259d51ad641b5",
+      "un_comtrade/ct_m_ag2_p710_458_202305.json": "b4e99f3b424b3da6fcc06387c0f7ceff9eb18ef69daa67fbd7b847aa4a9b982a",
+      "un_comtrade/ct_m_ag2_p710_458_202306.json": "fc16948c4a15b1fecd8b18698decd2dd4ae083ef4f5992124676c3a3e462b3ce",
+      "un_comtrade/ct_m_ag2_p710_458_202307.json": "2da789863962763b501b0b76c8ed96aaecfa8502b3757706dba622fe0f92037a",
+      "un_comtrade/ct_m_ag2_p710_458_202308.json": "89f0c01eafd40990dc885cbcdd1ec5804f7d50af3f0bc143ff7df3bc487ec435",
+      "un_comtrade/ct_m_ag2_p710_458_202309.json": "966266b194743dac55dce2f75698102577f5aaff65bce1f76c27da89136ada4d",
+      "un_comtrade/ct_m_ag2_p710_458_202310.json": "e1970dac7590a31303320ecc423e242a89e0a7baae1aa8ddd0e062a2bc21b9f7",
+      "un_comtrade/ct_m_ag2_p710_458_202311.json": "483c9c9d8e5e08611883ac3ffe580244290902cdcb41a9dc2af036f3555ae733",
+      "un_comtrade/ct_m_ag2_p710_458_202312.json": "c16d3386b234806688a210850e8c9689a38e591e28ad04f1a762ab9c6b2a93ea",
+      "un_comtrade/ct_m_ag2_p710_458_202401.json": "6ed22cdba36a083932e1cd95aac816dac4592d6c55926ddc509eb97775d368b5",
+      "un_comtrade/ct_m_ag2_p710_458_202402.json": "59823dcfbb704dda9a79c751cfed5321b23d90bbc24cb06e50afae1ac5e55f79",
+      "un_comtrade/ct_m_ag2_p710_458_202403.json": "16fd2be0cee6c8d0ae76f8858f23306123082bb1d8adcf4deff846306e0492cd",
+      "un_comtrade/ct_m_ag2_p757_702_202304.json": "e37eecfb6173fea2ecbf86e41586cd3086c04e1d843f0a12142d7f2c53b915ce",
+      "un_comtrade/ct_m_ag2_p757_702_202305.json": "9c0ad073660540efea2f2615f6487ef3b038a95550617b71eb30a92d26714311",
+      "un_comtrade/ct_m_ag2_p757_702_202306.json": "99ec0d9cf14448dfdcd0da51c47151425d3bac9da97c33d9622a3bdae5ea31c3",
+      "un_comtrade/ct_m_ag2_p757_702_202307.json": "c6f1d9cd9732da6108dc4d289051a81e9322337a470117fe0bfcb0ee90ea77f5",
+      "un_comtrade/ct_m_ag2_p757_702_202308.json": "f053b687e927ab40e257dc0ddfcff99bfdbfc15d8a803a3ee36fdb5da1cd7415",
+      "un_comtrade/ct_m_ag2_p757_702_202309.json": "1a66f0c83de15a3bdcd2c36bbcce71a747219445c40ec3b5715ab7a6ce18ffb8",
+      "un_comtrade/ct_m_ag2_p757_702_202310.json": "96083958c78bd024b380afb4e037875d901b6c32d5eb8bb46a2f62de82041b6e",
+      "un_comtrade/ct_m_ag2_p757_702_202311.json": "1e4f1234618360ac9f96dc503706d9acd456996e7c805a79a5c21779041b3924",
+      "un_comtrade/ct_m_ag2_p757_702_202312.json": "ed74491fcdab773f6d1c712efb7491f15b04450cf15d3e32235fb489dc6710b2",
+      "un_comtrade/ct_m_ag2_p757_702_202401.json": "cc62dc0b05eb908c443e96136218dc8a24d85bd8fefc85500155da9e3d2a876f",
+      "un_comtrade/ct_m_ag2_p757_702_202402.json": "cdcb01dc47ab18fdfdacd1a41e992296db95e499fabea07a6e4c2390797a0de9",
+      "un_comtrade/ct_m_ag2_p757_702_202403.json": "70ba4595dd669f18b3a03782c404e0729184a1de2cf8aecd3563d90d230fd8c9",
+      "un_comtrade/ct_m_ag2_p764_380_202304.json": "559c70f2926ea91252d418bd833d5ba615766f32bb8c218f3b4715ef84c0abec",
+      "un_comtrade/ct_m_ag2_p764_380_202305.json": "87fb3b2103c858ecbd957b58f2ef2f1e026503cb82aa8817b51b57a15cb1c46d",
+      "un_comtrade/ct_m_ag2_p764_380_202306.json": "4ead39aa9ed067c4ad0feec9f25ea0919411116b4738a55c15283d2d8c4d63eb",
+      "un_comtrade/ct_m_ag2_p764_380_202307.json": "197ad3953cb448b782aab932e0ac44a3e644e998de6297f4d73b3fe659ae868e",
+      "un_comtrade/ct_m_ag2_p764_380_202308.json": "8b851b43e0fd3931c52c63acf0e1745622f061637800e50283ed22ebcabdfe38",
+      "un_comtrade/ct_m_ag2_p764_380_202309.json": "f9876ebdaa3a4b9de3d0a02ff7ad7b47c6e1f35ac7751224e06a4a7ac1387f71",
+      "un_comtrade/ct_m_ag2_p764_380_202310.json": "2ee265dd23c2fcef10c35f3e1be80bcd0cbe20f580c570bc621ace249fe9aa12",
+      "un_comtrade/ct_m_ag2_p764_380_202311.json": "22c3cf38b966705e9bcc53d0fc97f3e862213528ad92faf191fdf8a473a05fab",
+      "un_comtrade/ct_m_ag2_p764_380_202312.json": "34782b703111963f688849e32d440a46d5569b1cf63962d3154bbab1378b8ba1",
+      "un_comtrade/ct_m_ag2_p764_380_202401.json": "69877f517ca7747566531207a24affec5d1e9e4aaa127f53f201bba14ebd1113",
+      "un_comtrade/ct_m_ag2_p764_380_202402.json": "c8f5b41f9ec2b0b73e07e7c7bc84db841ae423a726c8336d5796b2a4baa80f27",
+      "un_comtrade/ct_m_ag2_p764_380_202403.json": "2a2696221da2567dc8ed59eb0b7da7469132669ce63041a079084fa507acf3ba",
+      "un_comtrade/ct_m_ag2_p784_643_202304.json": "ec29d0a93d8783f4212f01dfef5ced174464cd1e93ad89ec99752928ba0c99c2",
+      "un_comtrade/ct_m_ag2_p784_643_202305.json": "610eb3d38726cb294f8346df4d2dd4b8c37d6f95a503aa8a2edf15693a800f08",
+      "un_comtrade/ct_m_ag2_p784_643_202306.json": "fb159a790188be143c2df975e9a28280fb05c722df8a7d03dbedfbfc004b89da",
+      "un_comtrade/ct_m_ag2_p784_643_202307.json": "8bbb5ac7194831750ed66c98740486b31b85ce058baa59b10f6793f75ae57dc7",
+      "un_comtrade/ct_m_ag2_p784_643_202308.json": "592a19467fcbe22d559aa2b0d12442911bea81155eed51e3fc64c14ed134d9b5",
+      "un_comtrade/ct_m_ag2_p784_643_202309.json": "08c1209cbba6912dd1250972ce277b6fef7af3dc9a9b53957c94c32fc6c7c445",
+      "un_comtrade/ct_m_ag2_p784_643_202310.json": "e04a45cf4f6ff07b986010b8269bbb4ca772dc3c66529cfb5561e59ff65db078",
+      "un_comtrade/ct_m_ag2_p784_643_202311.json": "3eb8e6bbf0a366776d1a141ab7fa36f7bfbac81a90319abc5d8aca07d0995e66",
+      "un_comtrade/ct_m_ag2_p784_643_202312.json": "80aac94af59611111d5cfaa1ac6c189642264b96a9bbf98c36690ca6c5d63adc",
+      "un_comtrade/ct_m_ag2_p784_643_202401.json": "93408833f37d3fb25acccb2dfedc93c7bcc7c3c5a867e84a0424fef0f7e056c4",
+      "un_comtrade/ct_m_ag2_p784_643_202402.json": "49ce275b583154cf09566899e1e5094afcedc457c7111aff6043c9ec896cfc9b",
+      "un_comtrade/ct_m_ag2_p784_643_202403.json": "5aebf402166e91fa41656dfde9266ea1668cc5c9209044d6366c2b509dfe0123",
+      "un_comtrade/ct_m_ag2_p826_704_202304.json": "cf14668732a9e65d92effd94d154bf2f0a6e5acf7f5200e73ac49a2410b97980",
+      "un_comtrade/ct_m_ag2_p826_704_202305.json": "98409d39942169d39ecf236d7a85b12c68f3702836dc615a02a0b4216310869c",
+      "un_comtrade/ct_m_ag2_p826_704_202306.json": "556ea4b1c30aac7dc3e1ec41970f33f952e5c1a9986e91ac7fb86a0a3715bc22",
+      "un_comtrade/ct_m_ag2_p826_704_202307.json": "d2c6466bf69910a74c28ce1b15751b3d15824e4e93dc1766b1428c4c85951b87",
+      "un_comtrade/ct_m_ag2_p826_704_202308.json": "8635cdc3e474b677e09fa7b5afd5a096956bf1ea82cbfa9511e5444bc1732ac7",
+      "un_comtrade/ct_m_ag2_p826_704_202309.json": "15d549a5a0b92113be9e106c280d0656caae3fc2cb6d52bb3369077891a91b99",
+      "un_comtrade/ct_m_ag2_p826_704_202310.json": "cde15eaa34aa372874b822cd32b54c38c568ce00274700bf815f58ecf1a1f1e2",
+      "un_comtrade/ct_m_ag2_p826_704_202311.json": "c7de620a687859f140ac00598be17cb5f5384ff90555d1d70d4fdfb9806d9678",
+      "un_comtrade/ct_m_ag2_p826_704_202312.json": "69d691d43613a1be7b644ed5c1a1e994ee82518707d4870f4a900bee5371163f",
+      "un_comtrade/ct_m_ag2_p826_704_202401.json": "220a8c5a244e71171b056211f88720cec414168b03981d2ffb97217b345e3e20",
+      "un_comtrade/ct_m_ag2_p826_704_202402.json": "dda571787808fea4f595a10f1f8ea2530ccfc3235764437c68b0461169a1021b",
+      "un_comtrade/ct_m_ag2_p826_704_202403.json": "1e0263584d876905f08522341819eaf6cfc6217b5f756b0f617d38b3bed8ebd3",
+      "un_comtrade/ct_m_ag2_world_202304.json": "f748660afb0a56a52261c9e26d6d86f3dfff6a62d47077fcd41aa1b343212cf2",
+      "un_comtrade/ct_m_ag2_world_202305.json": "8f6d23e793a2c381c12ab0860f22a3b39d4ab35fe1dbe5088710ecb48ed8be26",
+      "un_comtrade/ct_m_ag2_world_202306.json": "b9de6b871f74e162045cdee322e5d4799012b1311c70164913308dc4cf62a4aa",
+      "un_comtrade/ct_m_ag2_world_202307.json": "dd0617ed52fa3f021b55e2715c91e6409baf15288db65d20ae557fb1c7a842b8",
+      "un_comtrade/ct_m_ag2_world_202308.json": "dd146006b2816ba3a59ba681e17305a35deb65afbb850029772aff87671446bc",
+      "un_comtrade/ct_m_ag2_world_202309.json": "4ddb61f3eeb479c0c2bb53275686a53bdc756470bfad608553c65e36415358d8",
+      "un_comtrade/ct_m_ag2_world_202310.json": "1bde4dd07bb7ab0d76061852bfdb3e73a9b53a97564ee12f3281866861e45833",
+      "un_comtrade/ct_m_ag2_world_202311.json": "ca7297dd16c5548d6ff34c6465a1ba6cc1974cfdde7ac8dc802dc1f8d723482d",
+      "un_comtrade/ct_m_ag2_world_202312.json": "95054f10868d904ea4715c754c7f0cc2a7e07aa23b4883a15ba7f52ccb244cb0",
+      "un_comtrade/ct_m_ag2_world_202401.json": "7906f9fb7ef8d02ba343a2e798ee733adc7c2ea452b8c1d8d95c5dc90cf56c66",
+      "un_comtrade/ct_m_ag2_world_202402.json": "33a683a26ea65a8daefca2ca653db596be7cde7780f562114c5806781243fb96",
+      "un_comtrade/ct_m_ag2_world_202403.json": "7223b8b4a4470a24cdcbd3f97a502aaaef4341d360b2a45750fcd00581d6207d",
+      "un_comtrade/ct_m_total_allpartners_202304.json": "06ce2842a8896d213cc5df6cbf9b550b948c972f7e584c5a9c8ea30d9425a1e0",
+      "un_comtrade/ct_m_total_allpartners_202305.json": "ff0fee391800909c3db4b28e85ee7879d346cd0464345aeb6c390536a271ed7a",
+      "un_comtrade/ct_m_total_allpartners_202306.json": "dfc1a360b7079efecf35bb0f9ef4add0b16d342a65e33ca2d11dc0a0790d820c",
+      "un_comtrade/ct_m_total_allpartners_202307.json": "f60c84e8235e60033730ac89e518e1d9e85cd322924a5d4bb553984ad484e75d",
+      "un_comtrade/ct_m_total_allpartners_202308.json": "f3550257fbcb355e1d99a60be213147216c68a1c8101d9f83a499eaee9149636",
+      "un_comtrade/ct_m_total_allpartners_202309.json": "173cec254cf67f80725322ed8954302e2b4f7ecfd9f5bcc6401200fff94e349b",
+      "un_comtrade/ct_m_total_allpartners_202310.json": "ffe83ebc0d12910debf92b9b49b7c122f612999b954af02fca0a6b2fff3c25a7",
+      "un_comtrade/ct_m_total_allpartners_202311.json": "7520911b7f13acef9aa13bb36f4aec104dab8c9c6312588cd059cbc317491848",
+      "un_comtrade/ct_m_total_allpartners_202312.json": "d5740711e0b3422ea9d43933c3a99f429c964c411903349d8ce002f2c00014ff",
+      "un_comtrade/ct_m_total_allpartners_202401.json": "7e68e67226e2fee1e06d19635a00b3e8c67c1567f71be8f7bf56318236a2fb3a",
+      "un_comtrade/ct_m_total_allpartners_202402.json": "79987e2253ffc3ff53e2a1393f9a68e90f7771678b9c656f61daf8ed76751d6d",
+      "un_comtrade/ct_m_total_allpartners_202403.json": "06218c03b0c3598f33c8b9388444c22940d1d1b15958a66bdbc2b0b818c4dd63"
+    },
+    "union_fiscal": {
+      "cga_finance_accounts_aag/fa2324_cag_certificate.pdf": "b35df94c9d0a6f2a7f6b120f526ea2b763f9d66a02d2f9743c6b1d353fd97d07",
+      "cga_finance_accounts_aag/fa2324_statement14.pdf": "2f327b3ddf31f74c33f5bf2cc3e1c7e442c7899cf520d252fde8212f3a49335e",
+      "cga_finance_accounts_aag/fa2324_statement8.pdf": "accdcd26aeadf0c745528f2622c6db5ecb4201b760faf804219ba28c8e075056",
+      "cga_finance_accounts_aag/fa2324_statement9.pdf": "460e9356105bf9601756186307f9815af4613ed0e46e477b3275ff6a5ae585a2",
+      "cga_finance_accounts_aag/fa2324_statement9_appendix.pdf": "a3935088e699a00636c86148f7b4ad41629a7f379ce1889f435ef7d1e17bc0c2",
+      "mof_union_budget_2026_27/b2425_allafs.xlsx": "51e10d98d477c48682484d4818f1115cb92611143f8b92563ec005f2ba009ca0",
+      "mof_union_budget_2026_27/b2425_ntr.xlsx": "c0c2dd59170dd93214ccb9221ee4de013f243bf53499b3f497bcfdd1f2cbd587",
+      "mof_union_budget_2026_27/b2425_stat1.xlsx": "b8e9a40144ffb7e9486452474e3311fd10ff1fd41f9dbcf106cf4e915d533c42",
+      "mof_union_budget_2026_27/b2425_stat20.xlsx": "833edd2cd2a6e679f5b432d60c1ba86dd0073d5aa77d1e244c70df58ae3544ba",
+      "mof_union_budget_2026_27/b2425_stat21.xlsx": "178f8437d5cbc038a9fa33456b3a5fef916c0ff019f0e19fc80062ea7a76d6c3",
+      "mof_union_budget_2026_27/b2425_stat6.xlsx": "d31b7551b3686865a21826c21eccc5460e176c2da76a06fdaeebc4d49769d4d6",
+      "mof_union_budget_2026_27/b2425_stat7.xlsx": "2a5a96258ebc130834de202a10bb7b2cbe12e6e27215c14c97f0381ae8a6229d",
+      "mof_union_budget_2026_27/b2425_tr.xlsx": "3a07c4f93a65161b1490ec9ea748c21fba984e69a642a899c38bbd6a238f5ce5",
+      "mof_union_budget_2026_27/b2526_allafs.xlsx": "9b23060fb5aa3b225142937130836397b310934be9dd4014939cfcd9b68ca829",
+      "mof_union_budget_2026_27/b2526_annex8.pdf": "27cae0ea8be5a23c085b530653d7ad9e7144c1288219422c2bbd25da8336f601",
+      "mof_union_budget_2026_27/b2526_ntr.pdf": "9e00f6a177a21f7d8441d05b34b757bd8b6a469f52181be47c3c8aee26748772",
+      "mof_union_budget_2026_27/b2526_stat1.xlsx": "10487038253e80578ed89a23774e0fe9029298542fdd491cd36d6bd8966b2b3c",
+      "mof_union_budget_2026_27/b2526_stat20.xlsx": "5ee9a710274712fb3fa5dbb448cb26498825b3c899daf83836f4efde30e91f58",
+      "mof_union_budget_2026_27/b2526_stat21.xlsx": "25d4991711788af5c502c2a0cea326ad83906cac4765d8ec37bdab8c5ca7dbca",
+      "mof_union_budget_2026_27/b2526_stat6.xlsx": "3b9f09895a10ea24d73365a8c9eb876d715b093f03ee88155446dd14e698aa45",
+      "mof_union_budget_2026_27/b2526_stat7.xlsx": "0cef83487b39fb04ad840f83b6ff27105acf41f1b43b748138654c8448b86603",
+      "mof_union_budget_2026_27/b2526_tr.pdf": "cf5d1e928c57b8cddf7d91e35f739efea79b1b0521365b9588ae3e52a107baf5",
+      "mof_union_budget_2026_27/b2627_annex8.pdf": "b26b4e0f2879e6a6d137a3e32421db8757fcf091c576d0a356a994c28239d86c",
+      "mof_union_budget_2026_27/b2627_ntr.xlsx": "7f62b9c8e91a3c3c2be4fcdaddf8e20c2e335979b05e2b8f881a4e57ff75b743",
+      "mof_union_budget_2026_27/b2627_stat1.xlsx": "95df1a725ec2c12f8abf9e19b7795bc8c8d54d811da8dd718e075e7c07b7c26c",
+      "mof_union_budget_2026_27/b2627_stat20.xlsx": "96e29a8f4cafef6c3ea17dc311e6cb0234e7ba6ec5315e22ba559bfeb0d42248",
+      "mof_union_budget_2026_27/b2627_stat21.xlsx": "7196e2fec517efa379cec69642a4a885cb4b1e41f25f83b4b7fb0975b0c08b9e",
+      "mof_union_budget_2026_27/b2627_stat6.xlsx": "e3460873760b86a2d2543e30c2af06afaf568cb01a3238ee00360735adac2e4c",
+      "mof_union_budget_2026_27/b2627_stat7.xlsx": "ee29294ebcdb22a2a5bc1cbc6e16d434ef42060054706032e92fa21ab4a47365",
+      "mof_union_budget_2026_27/b2627_tr.xlsx": "58e939762c008c993fdbb36e369ba22d24879a6cdb6025908d57de486c6c1a0f",
+      "nsi_small_savings_collections/nsi_collections_id152.html": "3a6570ebe32184ce4f3670f3a8cfe9a977b93c34582228a07f65afecf5ebcfc3",
+      "pib_gst_monthly_releases/pib_allrel_form.html": "6813f03f1c6b3d5a54b46c6e54465c94283c95c8cbafdbc12df77bf51fa24b30",
+      "pib_gst_monthly_releases/pib_allrel_mof_2023-05-01.html": "5d1acc120060a4b9464a41656cd25dfcdb2058107f09b50b651620c1f9594f69",
+      "pib_gst_monthly_releases/pib_allrel_mof_2023-06-01.html": "647cb8bb9d6c622972264a43068309ea9c165a3fe2f1fccf8fbad20bb4b19952",
+      "pib_gst_monthly_releases/pib_allrel_mof_2023-07-01.html": "0b2304046aba05b9a328aaf7c6363fdbac849fdda60f26b5d3930a7388c76ede",
+      "pib_gst_monthly_releases/pib_gst_2023-04.html": "07a00b412bf912b52bd190c09ed0eca7dd94ceb0a8b88baf556d5858a34f67ef",
+      "pib_gst_monthly_releases/pib_gst_2023-05.html": "daadbbedc8aeed39fea3d85e04ac56a91a5c0d5f89c773a4364e2791b23a6441",
+      "ppac_petroleum_exchequer/ppac_contribution_to_exchequer.xls": "ce78669325090482d39c425cd2df193d97779ee2d275872a93d75e502473f821",
+      "union_budget_transfers_to_states/b2425_stat18.xlsx": "d4ba1ef94c1e47710d3897339a4bb0a5f089967c4dd355bb197ec0c3a66a5dec",
+      "union_budget_transfers_to_states/b2526_stat18.xlsx": "5784056328ce82d4b16df4d0841c54199b5f01592b33e96985ff5f94e6f78c19",
+      "union_budget_transfers_to_states/b2627_stat18.xlsx": "21464eee84ef6c220bc070a8ad7163f4f7bae78a1442ccdc6994621b1db261fe"
+    }
+  },
+  "schema_version": 1,
+  "unit_code_hashes": {
+    "external_sector": "4013c5fd9e3cb58d99046c84ea3c2c47e9c3ebbc09b2a44f2448aa7470a9d052",
+    "finsector_markets": "cc5dac1fe139eb0091b0f2be326f5d870f757b4b14e73a29fca061926ce17ca2",
+    "hces_consumption": "fe836a16df1c3e029e87824cbb65f2376abe88edb8d04da544183b1ef532bfa1",
+    "io_tables": "9cc64e44a93238f409329d50552322fa46979a337708e7bdcfb079ff8f86eab3",
+    "labour_enterprise_surveys": "020d304eec177e1eba9f6bb0e5a55f5bc559fd0ded95c5bd24470fbb9e75e5e5",
+    "mospi_nas_2026": "21e76c3a5120d2d9bbb21d51bc1544c94ce895604846e82e1f7e7933c490e76b",
+    "rbi_banking_corporate": "44bffe33b3846302bd6baf0df8a6a68042f6e259fda0049a9cd362a690208686",
+    "rbi_financial_accounts": "db6c2716d8383fd54517795331e9253e2c11f24dbe71dd72c42da6f278e706a4",
+    "state_fiscal": "18d639e29b10d7a4aa43da1c71cc921acd5a8aeaf1adb0a1b655a79fe360c75a",
+    "trade_satellites": "f4da1edaa0ab4c37d3eb3edec48b725b511d9cc6580deb57b75d1819e74d39c2",
+    "union_fiscal": "2174adcdc249aa2980a8af7e761ef038b65ec64f7b66640efa4f3a9590670f6a"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 2601183,
+  "content_type": "application/pdf",
+  "final_url": "https://www.pfrda.org.in/documents/33652/203559/HoNPSS+2024-25.pdf",
+  "key": "pfrda_nps_statistics/HoNPSS_2024-25.pdf",
+  "method": "GET",
+  "name": "HoNPSS_2024-25.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.pfrda.org.in/research-publications/statistics/statistical-data",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-disposition": "inline; filename=\"HoNPSS 2024-25.pdf\"",
+    "content-length": "2601183",
+    "content-type": "application/pdf",
+    "last-modified": "Tue, 14 Oct 2025 06:29:18 GMT",
+    "server": "Apache"
+  },
+  "retrieved_at": "2026-09-29T10:20:00Z",
+  "sha256": "279f99adfa33e207fdeb7cb80b76fd2a4ee69cb7bd01aa2abcf529fb9a548fa2",
+  "source_id": "pfrda_nps_statistics",
+  "status": 200,
+  "url": "https://www.pfrda.org.in/documents/33652/203559/HoNPSS+2024-25.pdf"
+}

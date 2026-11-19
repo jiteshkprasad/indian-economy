@@ -1,0 +1,203 @@
+# Gap-map coverage declared by the labour_enterprise_surveys unit (format: pipeline/core/coverage.py).
+# Every ref this unit serves is ESTIMATED in data/gap_map.csv: the data here are published survey
+# shares, ratios and averages (inputs to the Phase 2 estimation method), never the SAM cell itself,
+# so every entry is `partial`. Survey years are `sy` periods: PLFS/SAS July-June ('2023-07/2024-06'),
+# ASUSE October-September ('2023-10/2024-09'); AIDIS stocks at 30.06.2018. R9b and R10 are not
+# declared (nothing usable in the published tables or the eSankhyiki API); F3b and T3a were
+# withdrawn after verification (the published series are not inputs to their methods): see
+# docs/phase1/issues/labour_enterprise_surveys.md. AIDIS quintile rows (eSankhyiki NSS-77 API) use
+# AIDIS's own quintile classes of household expenditure, not the SAM's HCES 2023-24 quintiles.
+unit: labour_enterprise_surveys
+entries:
+# ---- V1a: regular vs casual split of CE by activity (fallback path of the gap-map method) ----
+- ref: V1a
+  dataset: labour_enterprise_surveys_plfs_industry_dist
+  series_ids: [t26.worker_share.a.total.person, t26.worker_share.c.total.person, t26.worker_share.f.total.person, t26.sample_workers.total.person]
+  period: 2023-07/2024-06
+  extent: partial
+  note: PLFS 2023-24 (Jul-Jun) workers by NIC-2008 class/group/division/section (Table 26); the industry x status cross-tab is Table (20), next entry.
+- ref: V1a
+  dataset: labour_enterprise_surveys_plfs_industry_status
+  series_ids: [t20.worker_share.regular_wage.10-33.total.person, t20.worker_share.casual_labour.10-33.total.person, t20.worker_share.regular_wage.58-99.total.person, t20.worker_share.casual_labour.41-43.total.person, t20.worker_share.regular_wage.all.total.person]
+  period: 2023-07/2024-06
+  extent: partial
+  note: PLFS AR 2023-24 Table (20), workers (ps+ss) by status in employment within 11 NIC-2008 division groups (R/U x sex) - the industry x status distribution the V1a fallback needs (published at group level, not for the 34 activities; usual status, not CWS).
+- ref: V1a
+  dataset: labour_enterprise_surveys_plfs_status_dist
+  series_ids: [st6.worker_share.regular_wage.total.person, st6.worker_share.casual_labour.total.person, st6.worker_share.self_employed.total.person]
+  period: 2023-07/2024-06
+  extent: partial
+  note: PLFS Statement 6 status shares (R/U x sex), 2021-22..2023-24.
+- ref: V1a
+  dataset: labour_enterprise_surveys_plfs_earnings
+  series_ids: [t51.casual_wage_day.all.total.person.current, t51.casual_wage_day.a.total.person.current, t51.casual_wage_day.f.total.person.current]
+  period: 2023-07/2024-06
+  extent: partial
+  note: Casual wage per day by NIC section (Table 51); regular wages are published by quarter x R/U x sex only (Statement 10), not by industry.
+- ref: V1a
+  dataset: labour_enterprise_surveys_plfs_earnings
+  series_ids: [st10.regular_wage_earnings_month.total.person.current, st11.casual_wage_earnings_day.total.person.current, st12.self_employment_gross_earnings_30d.total.person.current]
+  period: Q4 2023-24
+  extent: partial
+  note: Quarterly average earnings by status (Statements 10-12), four quarters Jul 2023-Jun 2024.
+- ref: V1a
+  dataset: labour_enterprise_surveys_asi_2324_industry
+  series_ids: [v1t3.wages_salary_workers.all.current, v1t3.wages_salary_supervisory.all.current, v1t3.workers_contract.all, v1t3.workers_direct.all]
+  extent: partial
+  note: ASI 2023-24 factory-sector wages by employee type and NIC 4-digit class (cross-check for manufacturing).
+- ref: V1a
+  dataset: labour_enterprise_surveys_asuse_2324_activity
+  series_ids: [t33.emol_per_hired_worker.all.asuse_all.total.current, t33.hired_workers.all.asuse_all.total, t33.hired_workers.formal.asuse_m.total]
+  period: 2023-10/2024-09
+  extent: partial
+  note: ASUSE 2023-24 (Oct-Sep) emoluments per hired worker and hired workers by activity category (cross-check for unincorporated non-farm).
+- ref: V1a
+  dataset: labour_enterprise_surveys_plfs_earnings_api
+  series_ids: [api_i6.regular_wage_earnings_month.total.person.current, api_i7.casual_wage_earnings_day.total.person.current, api_i8.self_employment_gross_earnings_30d.total.person.current]
+  period: Q1 2023-24
+  extent: partial
+  note: eSankhyiki PLFS API, April-June 2023 (agricultural year 2022-23), the quarter the AR 2023-24 lacks; with plfs_earnings (Q2-Q4 2023-24) it completes FY 2023-24 by quarter. R/U x sex only, no industry.
+# ---- V2a: mixed income vs operating surplus by activity ----
+- ref: V2a
+  dataset: labour_enterprise_surveys_asuse_2324_activity
+  series_ids: [t6.estt_share.proprietary_all.asuse_all.total.all, t6.estt_share.partnership_same_hh.asuse_all.total.all, t6.estt_share.partnership_diff_hh.asuse_all.total.all, t6.estt_share.society_trust.asuse_all.total.all]
+  period: 2023-10/2024-09
+  extent: partial
+  note: Ownership shares are of establishment COUNTS by activity x R/U x OAE/HWE; no GVA by ownership is published, so the partnership share of OS must be imputed (access-check issue).
+- ref: V2a
+  dataset: labour_enterprise_surveys_asuse_2324_activity
+  series_ids: [t37.gva_per_estt.asuse_all.total.oae.current, t37.gva_per_estt.asuse_all.total.hwe.current, t4.establishments.asuse_all.total.oae, t4.establishments.asuse_all.total.hwe]
+  period: 2023-10/2024-09
+  extent: partial
+  note: GVA per establishment (market) and establishment counts by OAE/HWE and activity.
+- ref: V2a
+  dataset: labour_enterprise_surveys_asi_2324_industry
+  series_ids: [s5a.gva.all.current, s5a.nva.all.current]
+  extent: partial
+  note: ASI factory-sector GVA by NIC 2-digit (corporate/factory benchmark).
+# ---- F1a: labour income by household group ----
+- ref: F1a
+  dataset: labour_enterprise_surveys_plfs_earnings
+  series_ids: [st10.regular_wage_earnings_month.rural.person.current, st10.regular_wage_earnings_month.urban.person.current, st11.casual_wage_earnings_day.rural.person.current, st11.casual_wage_earnings_day.urban.person.current]
+  period: Q4 2023-24
+  extent: partial
+  note: R/U average earnings only; no MPCE-quintile split without unit data (D1-2).
+- ref: F1a
+  dataset: labour_enterprise_surveys_plfs_status_dist
+  series_ids: [st6.worker_share.regular_wage.rural.person, st6.worker_share.regular_wage.urban.person, st6.worker_share.casual_labour.rural.person, st6.worker_share.casual_labour.urban.person]
+  period: 2023-07/2024-06
+  extent: partial
+  note: R/U status shares; with WPR (plfs_lfs_indicators) and population they give R/U worker counts.
+- ref: F1a
+  dataset: labour_enterprise_surveys_plfs_earnings_api
+  series_ids: [api_i6.regular_wage_earnings_month.rural.person.current, api_i6.regular_wage_earnings_month.urban.person.current, api_i7.casual_wage_earnings_day.rural.person.current, api_i7.casual_wage_earnings_day.urban.person.current]
+  period: Q1 2023-24
+  extent: partial
+  note: April-June 2023 R/U earnings from the eSankhyiki PLFS API (completes FY 2023-24); no quintile split.
+# ---- F2: mixed income by household group ----
+- ref: F2
+  dataset: labour_enterprise_surveys_asuse_key_indicators
+  series_ids: [fs.gva.asuse_all.rural.current, fs.gva.asuse_all.urban.current, fs.gva.asuse_m.total.current, fs.gva.asuse_t.total.current, fs.gva.asuse_s.total.current]
+  period: 2023-10/2024-09
+  extent: partial
+  note: ASUSE 2023-24 (Oct-Sep) R/U and BAC GVA of market establishments; emoluments from Table 33 give GVA - emoluments by R/U.
+- ref: F2
+  dataset: labour_enterprise_surveys_sas_2019_income_by_landclass
+  series_ids: [s5_1a.income_crop_production_net.agri_all.current, s5_1a.income_farming_animals_net.agri_all.current, s5_1a.income_total.agri_all.current]
+  period: 2018-07/2019-06
+  extent: partial
+  note: SAS 2019 (Jul 2018-Jun 2019) agricultural household income by source and land class; rural agricultural households only.
+- ref: F2
+  dataset: labour_enterprise_surveys_plfs_earnings
+  series_ids: [st12.self_employment_gross_earnings_30d.rural.person.current, st12.self_employment_gross_earnings_30d.urban.person.current]
+  period: Q4 2023-24
+  extent: partial
+  note: Self-employment gross earnings by R/U (no quintile split without unit data).
+- ref: F2
+  dataset: labour_enterprise_surveys_plfs_earnings_api
+  series_ids: [api_i8.self_employment_gross_earnings_30d.rural.person.current, api_i8.self_employment_gross_earnings_30d.urban.person.current]
+  period: Q1 2023-24
+  extent: partial
+  note: Self-employment gross earnings by R/U for April-June 2023 (eSankhyiki PLFS API); no quintile split.
+# ---- F3c: partnership / trust operating surplus by group ----
+- ref: F3c
+  dataset: labour_enterprise_surveys_asuse_2324_activity
+  series_ids: [t6.estt_share.partnership_same_hh.asuse_all.rural.all, t6.estt_share.partnership_same_hh.asuse_all.urban.all, t6.estt_share.partnership_diff_hh.asuse_all.rural.all, t6.estt_share.partnership_diff_hh.asuse_all.urban.all]
+  period: 2023-10/2024-09
+  extent: partial
+  note: Establishment-count shares only (no GVA by ownership type is published).
+# ---- AIDIS-keyed refs: press note (R/U x household type) and NSS-77 API (expenditure quintile classes) ----
+- ref: C4a
+  dataset: labour_enterprise_surveys_aidis_2019_press_note
+  series_ids: [pn.asset_share_building.rural.all, pn.asset_share_building.urban.all, pn.ava_physical_per_hh.rural.all.current, pn.ava_physical_per_hh.urban.all.current]
+  period: '2018-06-30'
+  extent: partial
+  note: PROXY ONLY. The method needs R/U owner-occupier dwelling value shares; the press note gives the share of ALL buildings in household asset value by R/U (owner-occupied, rented-out and farm/business buildings together) and asset value per household. No fractile detail.
+- ref: F3a
+  dataset: labour_enterprise_surveys_aidis_2019_press_note
+  series_ids: [pn.asset_share_building.rural.all, pn.asset_share_building.urban.all, pn.ava_per_hh.rural.all.current, pn.ava_per_hh.urban.all.current]
+  period: '2018-06-30'
+  extent: partial
+  note: PROXY ONLY, same key as C4a (all buildings' share of asset value, not owner-occupied dwellings); R/U only.
+- ref: C4b
+  dataset: labour_enterprise_surveys_aidis_2019_press_note
+  series_ids: [pn.aod_per_hh.rural.all.current, pn.aod_per_hh.urban.all.current, pn.asset_share_deposits.rural.all, pn.asset_share_deposits.urban.all, pn.debt_share_institutional.rural.all]
+  period: '2018-06-30'
+  extent: partial
+  note: R/U debt and deposit shares; no quintile structure.
+- ref: R8a
+  dataset: labour_enterprise_surveys_aidis_2019_press_note
+  series_ids: [pn.ava_financial_per_hh.rural.all.current, pn.ava_financial_per_hh.urban.all.current, pn.asset_share_deposits.rural.all, pn.asset_share_deposits.urban.all]
+  period: '2018-06-30'
+  extent: partial
+  note: Financial assets per household by R/U only.
+- ref: S5
+  dataset: labour_enterprise_surveys_aidis_2019_press_note
+  series_ids: [pn.ava_per_hh.rural.all.current, pn.ava_per_hh.urban.all.current, pn.aod_per_hh.rural.all.current, pn.aod_per_hh.urban.all.current, pn.incidence_of_indebtedness.rural.all]
+  period: '2018-06-30'
+  extent: partial
+  note: Wealth and debt by R/U x household type (press note); the quintile structure is in aidis_2019_quintile.
+- ref: S5
+  dataset: labour_enterprise_surveys_sas_2019_income_by_landclass
+  series_ids: [s5_7.outstanding_loan_per_hh.agri_all.current, s5_7.pct_indebted.agri_all]
+  period: 2018-07/2019-06
+  extent: partial
+  note: Agricultural-household debt by land class (SAS 2019).
+# ---- R9a: government pensions by group, keyed on public-sector employment ----
+- ref: R9a
+  dataset: labour_enterprise_surveys_plfs_enterprise_type
+  series_ids: [t35.worker_share.govt_public_sector.rural.person, t35.worker_share.govt_public_sector.urban.person, t35.worker_share.govt_public_sector.total.person, t35.worker_share.autonomous_bodies.total.person]
+  period: 2023-07/2024-06
+  extent: partial
+  note: PLFS Table (35) share of non-agricultural workers (all statuses) in government/local body/public sector enterprises by R/U x sex; a worker share, not public-sector regular earnings, and no quintile split (D1-2). Combine with Statement 10 R/U regular wages in Phase 2.
+# ---- AIDIS 2019 by expenditure quintile class (eSankhyiki NSS-77 API, indicators 5 and 9) ----
+- ref: S5
+  dataset: labour_enterprise_surveys_aidis_2019_quintile
+  series_ids: [i5.ava_per_hh.rural_q1.all.current, i5.ava_per_hh.rural_q5.all.current, i5.ava_per_hh.urban_q1.all.current, i5.ava_per_hh.urban_q5.all.current, i5.aod_per_hh.rural_q1.all.current, i5.aod_per_hh.urban_q5.all.current, i5.hh_distribution.rural_q1.all]
+  period: '2018-06-30'
+  extent: partial
+  note: Assets, cash loans and incidence of indebtedness by AIDIS expenditure quintile class x R/U x household type (and by asset-holding decile, indicator 9). AIDIS quintile classes, not the SAM's HCES 2023-24 person quintiles; 2018 stocks, to be scaled to FSF/NAS stocks in Phase 2.
+- ref: R8a
+  dataset: labour_enterprise_surveys_aidis_2019_quintile
+  series_ids: [i9.financial_assets_per_hh.rural_q1.all.current, i9.financial_assets_per_hh.rural_q5.all.current, i9.financial_assets_per_hh.urban_q1.all.current, i9.financial_assets_per_hh.urban_q5.all.current]
+  period: '2018-06-30'
+  extent: partial
+  note: Financial assets per household by AIDIS expenditure quintile class x R/U; total financial assets only (no split into deposits, small savings, securities, MF units by quintile).
+- ref: C4b
+  dataset: labour_enterprise_surveys_aidis_2019_quintile
+  series_ids: [i9.cash_loan_per_hh.rural_q1.all.current, i9.cash_loan_per_hh.urban_q5.all.current, i9.financial_assets_per_hh.rural_q1.all.current, i9.financial_assets_per_hh.urban_q5.all.current]
+  period: '2018-06-30'
+  extent: partial
+  note: Cash loans and financial assets (deposit proxy) per household by expenditure quintile class x R/U; the method's deposit and debt holdings by group, before scaling to NAS 5.3 stocks.
+- ref: C4a
+  dataset: labour_enterprise_surveys_aidis_2019_quintile
+  series_ids: [i9.fixed_assets_per_hh.rural_q1.all.current, i9.fixed_assets_per_hh.rural_q5.all.current, i9.fixed_assets_per_hh.urban_q1.all.current, i9.fixed_assets_per_hh.urban_q5.all.current]
+  period: '2018-06-30'
+  extent: partial
+  note: PROXY ONLY. Fixed assets (land, buildings, livestock, equipment together) per household by expenditure quintile class; the method needs owner-occupied dwelling values, which the API does not publish by quintile.
+- ref: F3a
+  dataset: labour_enterprise_surveys_aidis_2019_quintile
+  series_ids: [i9.fixed_assets_per_hh.rural_q1.all.current, i9.fixed_assets_per_hh.rural_q5.all.current, i9.fixed_assets_per_hh.urban_q1.all.current, i9.fixed_assets_per_hh.urban_q5.all.current]
+  period: '2018-06-30'
+  extent: partial
+  note: PROXY ONLY, same key as C4a (all fixed assets, not owner-occupied dwellings) by expenditure quintile class x R/U.

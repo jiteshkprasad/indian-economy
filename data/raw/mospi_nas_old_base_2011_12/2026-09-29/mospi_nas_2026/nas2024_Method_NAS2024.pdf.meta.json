@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 165666,
+  "content_type": "application/pdf",
+  "final_url": "https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/Method_NAS2024.pdf",
+  "key": "mospi_nas_old_base_2011_12/nas2024_Method_NAS2024.pdf",
+  "method": "GET",
+  "name": "nas2024_Method_NAS2024.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "165666",
+    "content-type": "application/pdf",
+    "etag": "\"68272b49-28722\"",
+    "last-modified": "Fri, 16 May 2025 12:10:49 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:27:36Z",
+  "sha256": "49b39ae85b7c8fd449f26768988ebfd760d995ddd87fb51c0c0b3558308f3ff9",
+  "source_id": "mospi_nas_old_base_2011_12",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/sites/default/files/reports_and_publication/statistical_publication/National_Accounts/NAS2024/Method_NAS2024.pdf"
+}

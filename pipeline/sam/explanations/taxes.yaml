@@ -1,0 +1,402 @@
+# Balancing explanations for block `taxes` (DECISIONS D2-22; item format in docs/phase2/SAM_GUIDE.md s.12 and
+# the header of pipeline/sam/explanations.yaml). Rewritten for the balanced run of the Wave C audit fix
+# (2026-10-01; docs/phase2/verify/balanced_sam.md BS-1..BS-14): 18 entry items and 5 cell items
+# (ref "*"), every figure read from data/sam/2023-24 (balancing_log, balancing_constraints, prior_diagnostics,
+# capital_financial's k9_decomposition). Every `why` starts with a verdict:
+#   - "Explained": the prior was off for a documented source disagreement and the balanced value moves toward
+#     other evidence, or stays inside a declared evidenced band;
+#   - "Explained in direction; level unexplained": the account gap that drove the move is documented, but no
+#     source supports this entry's balanced level (or the sources disagree);
+#   - "Unexplained": the move carries an account gap whose cause is not a documented source disagreement (here:
+#     E_NFPU's prior surplus, government-33 / fincorp-37), a finding for Checkpoint B.
+# Verdicts in this file: explained 6, level unexplained 17.
+# Mechanism: cross-entropy (free low 0.25, medium 1, high 4, anchored 16) moves all free entries of one cell with
+# the same constraint membership by one factor z = balanced / prior, set by the account and constraint
+# multipliers, so the low-confidence entries of the accounts with the largest prior gaps move most. GRAS (no
+# weights, no constraints) is quoted as a cross-check. Amounts in Rs crore, current prices, FY 2023-24.
+explanations:
+  - row: G_CEN
+    col: T_CGST
+    ref: "T1a"
+    component: "total"
+    prior: 828795.357404
+    balanced: 856560.243000
+    why: >-
+      Explained in direction; level unexplained (BS-9). G_CEN <- T_CGST T1a total, 8,28,795 -> 8,56,560 (27,765,
+      +3.4%; z 1.034; free medium; binding: t1.cgst (target 8,21,269, balanced 8,62,332, at its upper edge)). The
+      prior is each government's cash receipt x the uniform TAX-1 accrual factor (taxes-1); balancing moved
+      product-tax receipts from the States to the Centre inside the cash bands (t1.* 5%, t2.* 5-15%), driven by the
+      prior's Centre shortfall (-2,98,948) and States' excess (4,50,426), not by tax evidence. Union CGST ends on
+      the +5% edge of t1.cgst; no GST settlement-timing series exists in clean data to narrow the bands (taxes-26,
+      Checkpoint B). GRAS (no weights, no constraints) gives 8,28,795. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: G_CEN
+    col: T_OPRT
+    ref: "T1a"
+    component: "total"
+    prior: 8786.917701
+    balanced: 10799.272474
+    why: >-
+      Explained in direction; level unexplained (BS-9). G_CEN <- T_OPRT T1a total, 8,787 -> 10,799 (2,012, +22.9%; z
+      1.229; free medium; no constraint binds on it). The prior is each government's cash receipt x the uniform
+      TAX-1 accrual factor (taxes-1); balancing moved product-tax receipts from the States to the Centre inside the
+      cash bands (t1.* 5%, t2.* 5-15%), driven by the prior's Centre shortfall (-2,98,948) and States' excess
+      (4,50,426), not by tax evidence. Union CGST ends on the +5% edge of t1.cgst; no GST settlement-timing series
+      exists in clean data to narrow the bands (taxes-26, Checkpoint B). GRAS (no weights, no constraints) gives
+      12,736. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA
+      4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR
+      -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: G_CEN
+    col: T_PROD
+    ref: "P10a"
+    component: "gross_subsidies"
+    prior: -58290.870000
+    balanced: -40929.418247
+    why: >-
+      Explained in direction; level unexplained (BS-9). G_CEN <- T_PROD P10a gross_subsidies, -58,291 -> -40,929
+      (17,361, +29.8%; z 0.702; free low; binding: p10a.centre_net (target -57,879, balanced -40,515, at its upper
+      edge)). PM-KISAN left P10a in the Wave C fix (government-30: NAS 4.2 books it as a current transfer), so the
+      Union's identified D39 heads are now St 7 interest and other subsidies plus FC16 Union 'business' subsidies,
+      and the States' residual rose by the same 51,617. Balancing then moved Union production subsidies to the
+      States up to the p10a.centre_net band (p10a.centre_net (target -57,879, balanced -40,515, at its upper edge)),
+      because G_CEN's prior is short (-2,98,948) and G_STA's long (4,50,426); the gross D39 total holds at NAS 4.2 -
+      1.1. No subsidy evidence sets the balanced Centre/State split (taxes-14, BS-9). GRAS (no weights, no
+      constraints) gives -40,617. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure
+      institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893,
+      E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, fc16_relevant_data, mospi_nas_2026_publication, rbi_state_finances_study]
+  - row: G_CEN
+    col: T_PSUB
+    ref: "P9a"
+    component: "total"
+    prior: -265142.519434
+    balanced: -231128.202792
+    why: >-
+      Explained in direction; level unexplained. G_CEN <- T_PSUB P9a total, -2,65,143 -> -2,31,128 (34,014, +12.8%;
+      z 0.872; free medium; no constraint binds on it). The prior splits the SUT product subsidies that no payer
+      data explain (C_TRAD and services) at the identified Centre share of 0.460, a rule rather than evidence
+      (taxes-11). The Centre/State imbalance of the prior (G_CEN -2,98,948, G_STA 4,50,426) moves that split toward
+      the States; p9a.total holds the SUT total, and no clean source splits the unexplained subsidies by government.
+      GRAS (no weights, no constraints) gives -2,10,477. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: G_CEN
+    col: T_UEXC
+    ref: "T1a"
+    component: "total"
+    prior: 310237.250800
+    balanced: 320630.289000
+    why: >-
+      Explained in direction; level unexplained (BS-9). G_CEN <- T_UEXC T1a total, 3,10,237 -> 3,20,630 (10,393,
+      +3.4%; z 1.034; free medium; binding: t1.uexc (target 3,05,362, balanced 3,20,630, at its upper edge)). The
+      prior is each government's cash receipt x the uniform TAX-1 accrual factor (taxes-1); balancing moved
+      product-tax receipts from the States to the Centre inside the cash bands (t1.* 5%, t2.* 5-15%), driven by the
+      prior's Centre shortfall (-2,98,948) and States' excess (4,50,426), not by tax evidence. Union CGST ends on
+      the +5% edge of t1.cgst; no GST settlement-timing series exists in clean data to narrow the bands (taxes-26,
+      Checkpoint B). GRAS (no weights, no constraints) gives 3,10,237. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: G_STA
+    col: T_OPRT
+    ref: "T2x"
+    component: "total"
+    prior: 185560.788839
+    balanced: 179217.118115
+    why: >-
+      Explained in direction; level unexplained (BS-9). G_STA <- T_OPRT T2x total, 1,85,561 -> 1,79,217 (-6,344,
+      -3.4%; z 0.966; free medium; no constraint binds on it). The prior is each government's cash receipt x the
+      uniform TAX-1 accrual factor (taxes-1); balancing moved product-tax receipts from the States to the Centre
+      inside the cash bands (t1.* 5%, t2.* 5-15%), driven by the prior's Centre shortfall (-2,98,948) and States'
+      excess (4,50,426), not by tax evidence. Union CGST ends on the +5% edge of t1.cgst; no GST settlement-timing
+      series exists in clean data to narrow the bands (taxes-26, Checkpoint B). GRAS (no weights, no constraints)
+      gives 1,81,612. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: G_STA
+    col: T_PROD
+    ref: "P10a"
+    component: "gross_subsidies"
+    prior: -283845.875562
+    balanced: -300928.706620
+    why: >-
+      Explained in direction; level unexplained (BS-9). G_STA <- T_PROD P10a gross_subsidies, -2,83,846 -> -3,00,929
+      (-17,083, -6.0%; z 1.060; free low; no constraint binds on it). PM-KISAN left P10a in the Wave C fix
+      (government-30: NAS 4.2 books it as a current transfer), so the Union's identified D39 heads are now St 7
+      interest and other subsidies plus FC16 Union 'business' subsidies, and the States' residual rose by the same
+      51,617. Balancing then moved Union production subsidies to the States up to the p10a.centre_net band
+      (p10a.centre_net (target -57,879, balanced -40,515, at its upper edge)), because G_CEN's prior is short
+      (-2,98,948) and G_STA's long (4,50,426); the gross D39 total holds at NAS 4.2 - 1.1. No subsidy evidence sets
+      the balanced Centre/State split (taxes-14, BS-9). GRAS (no weights, no constraints) gives -2,92,906. The prior
+      account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z
+      -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK
+      -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, fc16_relevant_data, mospi_nas_2026_publication, rbi_state_finances_study]
+  - row: G_STA
+    col: T_PSUB
+    ref: "P9a"
+    component: "total"
+    prior: -311279.912514
+    balanced: -345294.229156
+    why: >-
+      Explained in direction; level unexplained. G_STA <- T_PSUB P9a total, -3,11,280 -> -3,45,294 (-34,014, -10.9%;
+      z 1.109; free medium; no constraint binds on it). The prior splits the SUT product subsidies that no payer
+      data explain (C_TRAD and services) at the identified Centre share of 0.460, a rule rather than evidence
+      (taxes-11). The Centre/State imbalance of the prior (G_CEN -2,98,948, G_STA 4,50,426) moves that split toward
+      the States; p9a.total holds the SUT total, and no clean source splits the unexplained subsidies by government.
+      GRAS (no weights, no constraints) gives -3,65,945. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: G_STA
+    col: T_SEXC
+    ref: "T2x"
+    component: "total"
+    prior: 262398.835562
+    balanced: 257093.506660
+    why: >-
+      Explained in direction; level unexplained (BS-9). G_STA <- T_SEXC T2x total, 2,62,399 -> 2,57,094 (-5,305,
+      -2.0%; z 0.980; free medium; no constraint binds on it). The prior is each government's cash receipt x the
+      uniform TAX-1 accrual factor (taxes-1); balancing moved product-tax receipts from the States to the Centre
+      inside the cash bands (t1.* 5%, t2.* 5-15%), driven by the prior's Centre shortfall (-2,98,948) and States'
+      excess (4,50,426), not by tax evidence. Union CGST ends on the +5% edge of t1.cgst; no GST settlement-timing
+      series exists in clean data to narrow the bands (taxes-26, Checkpoint B). GRAS (no weights, no constraints)
+      gives 2,61,766. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: G_STA
+    col: T_SGST
+    ref: "T2x"
+    component: "total"
+    prior: 854549.164958
+    balanced: 829319.982194
+    why: >-
+      Explained in direction; level unexplained (BS-9). G_STA <- T_SGST T2x total, 8,54,549 -> 8,29,320 (-25,229,
+      -3.0%; z 0.970; free medium; no constraint binds on it). The prior is each government's cash receipt x the
+      uniform TAX-1 accrual factor (taxes-1); balancing moved product-tax receipts from the States to the Centre
+      inside the cash bands (t1.* 5%, t2.* 5-15%), driven by the prior's Centre shortfall (-2,98,948) and States'
+      excess (4,50,426), not by tax evidence. Union CGST ends on the +5% edge of t1.cgst; no GST settlement-timing
+      series exists in clean data to narrow the bands (taxes-26, Checkpoint B). GRAS (no weights, no constraints)
+      gives 8,54,549. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: G_STA
+    col: T_SVAT
+    ref: "T2x"
+    component: "total"
+    prior: 412892.295036
+    balanced: 403900.010193
+    why: >-
+      Explained in direction; level unexplained (BS-9). G_STA <- T_SVAT T2x total, 4,12,892 -> 4,03,900 (-8,992,
+      -2.2%; z 0.978; free medium; no constraint binds on it). The prior is each government's cash receipt x the
+      uniform TAX-1 accrual factor (taxes-1); balancing moved product-tax receipts from the States to the Centre
+      inside the cash bands (t1.* 5%, t2.* 5-15%), driven by the prior's Centre shortfall (-2,98,948) and States'
+      excess (4,50,426), not by tax evidence. Union CGST ends on the +5% edge of t1.cgst; no GST settlement-timing
+      series exists in clean data to narrow the bands (taxes-26, Checkpoint B). GRAS (no weights, no constraints)
+      gives 4,12,167. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: T_CIT
+    col: E_NFPR
+    ref: "T4a"
+    component: "total"
+    prior: 655712.673834
+    balanced: 638727.910350
+    why: >-
+      Explained in direction; level unexplained (BS-10). T_CIT <- E_NFPR T4a total, 6,55,713 -> 6,38,728 (-16,985,
+      -2.6%; z 0.974; free low; binding: t4.total (target 9,11,055, balanced 9,11,054, at its lower edge)). T4a
+      splits corporation tax (MH 0020, held by t4.total) by the old-base 2022-23 D5 shares; no CPSE tax series
+      exists in clean data (taxes-27). E_NFPU's prior surplus (3,12,829, government-33) raised the public NFC share
+      until the Wave C band t4a.nfpu (target 75,259, balanced 94,074, at its upper edge) (+-25% of the old-base
+      share, as t4a.fc) stopped it, and E_NFPR (the residual of the fixed total) paid correspondingly less; the
+      earlier run had +64%. GRAS (no weights, no constraints) gives 6,36,078. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mof_union_budget_2026_27, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: T_CIT
+    col: E_NFPU
+    ref: "T4a"
+    component: "total"
+    prior: 75259.090329
+    balanced: 94073.862911
+    why: >-
+      Explained in direction; level unexplained (BS-10). T_CIT <- E_NFPU T4a total, 75,259 -> 94,074 (18,815,
+      +25.0%; z 1.250; free low; binding: t4.total (target 9,11,055, balanced 9,11,054, at its lower edge); t4a.nfpu
+      (target 75,259, balanced 94,074, at its upper edge)). T4a splits corporation tax (MH 0020, held by t4.total)
+      by the old-base 2022-23 D5 shares; no CPSE tax series exists in clean data (taxes-27). E_NFPU's prior surplus
+      (3,12,829, government-33) raised the public NFC share until the Wave C band t4a.nfpu (target 75,259, balanced
+      94,074, at its upper edge) (+-25% of the old-base share, as t4a.fc) stopped it, and E_NFPR (the residual of
+      the fixed total) paid correspondingly less; the earlier run had +64%. GRAS (no weights, no constraints) gives
+      96,516. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA
+      4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR
+      -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mof_union_budget_2026_27, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: T_PIT
+    col: E_NFPR
+    ref: "T3"
+    component: "quasi_corporate"
+    prior: 215261.030983
+    balanced: 232465.761447
+    why: >-
+      Explained. T_PIT <- E_NFPR T3 quasi_corporate, 2,15,261 -> 2,32,466 (17,205, +8.0%; z 1.080; free low;
+      binding: t3.total (target 10,52,638, balanced 10,52,637, at its lower edge)). This is the household saving gap
+      Z. t3.total holds taxes on income other than CIT at the Receipt Budget and RBI State Finances cash (binding);
+      when Z (-3,84,547) pushed households' T3a down (t3.households allows 10% around the old-base household share),
+      the only other T3 payers, the quasi-corporations in E_NFPR and E_BANK (D2-11), took the rest. GRAS (no
+      weights, no constraints) gives 2,35,983.
+    sources: [ifpri_nexus_sam_india_2022_23, mof_union_budget_2026_27, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: T_PIT
+    col: H_U5
+    ref: "T3a"
+    component: "income_tax"
+    prior: 386249.346210
+    balanced: 377598.257792
+    why: >-
+      Explained. T_PIT <- H_U5 T3a income_tax, 3,86,249 -> 3,77,598 (-8,651, -2.2%; z 0.978; free low; binding:
+      t3.total (target 10,52,638, balanced 10,52,637, at its lower edge)). This is the household saving gap Z.
+      t3.total holds taxes on income other than CIT at the Receipt Budget and RBI State Finances cash (binding);
+      when Z (-3,84,547) pushed households' T3a down (t3.households allows 10% around the old-base household share),
+      the only other T3 payers, the quasi-corporations in E_NFPR and E_BANK (D2-11), took the rest. GRAS (no
+      weights, no constraints) gives 3,76,310.
+    sources: [ifpri_nexus_sam_india_2022_23, mof_union_budget_2026_27, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: T_SGST
+    col: C_CNST
+    ref: "P7a"
+    component: "total"
+    prior: 160202.868973
+    balanced: 155142.454489
+    why: >-
+      Explained in direction; level unexplained (BS-9). T_SGST <- C_CNST P7a total, 1,60,203 -> 1,55,142 (-5,060,
+      -3.2%; z 0.968; free medium; binding: product_taxes.c_cnst (target 3,24,456, balanced 3,24,457, at its upper
+      edge); p7a.total (target 30,15,341, balanced 30,15,340, at its lower edge)). The SGST on construction is the
+      RAS placement of the States' cash SGST in the SUT product-tax column of C_CNST (held by production's SUT total
+      and p7a.total); balancing moved the column toward the Union's taxes because of the prior's Centre shortfall
+      (-2,98,948) and States' excess (4,50,426), not tax evidence; no clean source splits GST on construction
+      between CGST and SGST cash. GRAS (no weights, no constraints) gives 1,60,203. The prior account gaps
+      (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547,
+      E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: T_SVAT
+    col: C_RPET
+    ref: "P7a"
+    component: "non_pol_vat"
+    prior: 117019.121470
+    balanced: 109611.134621
+    why: >-
+      Explained. T_SVAT <- C_RPET P7a non_pol_vat, 1,17,019 -> 1,09,611 (-7,408, -6.3%; z 0.937; free low; binding:
+      product_taxes.c_rpet (target 7,00,419, balanced 7,00,417, at its lower edge); p7a.total (target 30,15,341,
+      balanced 30,15,340, at its lower edge)). The product-tax cells of a commodity are held by production's SUT
+      product-tax total and p7a.total binds; inside it, the prior's placement is weak where plan fallback (b) put
+      non-petroleum State VAT on petroleum products and the RAS squeezed PPAC's Union excise on POL (2,73,684) to
+      0.977 of it (taxes-3, V-TX-3). Balancing re-split C_RPET's fixed SUT product taxes from the fallback State VAT
+      toward Union excise, i.e. toward the PPAC figure and away from the placement taxes-3 flags; the Centre/State
+      gap of the prior (G_CEN -2,98,948, G_STA 4,50,426) is what pushed it. GRAS (no weights, no constraints) gives
+      1,17,019.
+    sources: [mospi_sut_2022base, ppac_petroleum_exchequer, rbi_state_finances_study]
+  - row: T_UEXC
+    col: C_RPET
+    ref: "P7a"
+    component: "total"
+    prior: 267324.804634
+    balanced: 275529.751407
+    why: >-
+      Explained. T_UEXC <- C_RPET P7a total, 2,67,325 -> 2,75,530 (8,205, +3.1%; z 1.031; free high; binding:
+      product_taxes.c_rpet (target 7,00,419, balanced 7,00,417, at its lower edge); p7a.total (target 30,15,341,
+      balanced 30,15,340, at its lower edge)). The product-tax cells of a commodity are held by production's SUT
+      product-tax total and p7a.total binds; inside it, the prior's placement is weak where plan fallback (b) put
+      non-petroleum State VAT on petroleum products and the RAS squeezed PPAC's Union excise on POL (2,73,684) to
+      0.977 of it (taxes-3, V-TX-3). Balancing re-split C_RPET's fixed SUT product taxes from the fallback State VAT
+      toward Union excise, i.e. toward the PPAC figure and away from the placement taxes-3 flags; the Centre/State
+      gap of the prior (G_CEN -2,98,948, G_STA 4,50,426) is what pushed it. GRAS (no weights, no constraints) gives
+      2,67,325.
+    sources: [mospi_sut_2022base, ppac_petroleum_exchequer, rbi_state_finances_study]
+  - row: G_CEN
+    col: T_CGST
+    ref: "*"
+    component: "*"
+    prior: 834380.278909
+    balanced: 862332.261000
+    why: >-
+      Explained in direction; level unexplained (BS-9). Cell G_CEN <- T_CGST: 8,34,380 -> 8,62,332 (27,952, +3.4%; 2
+      entries). Largest moves: taxes T1a total 27,765 (+3.4%); taxes T1a utgst 187 (+3.4%). The prior is each
+      government's cash receipt x the uniform TAX-1 accrual factor (taxes-1); balancing moved product-tax receipts
+      from the States to the Centre inside the cash bands (t1.* 5%, t2.* 5-15%), driven by the prior's Centre
+      shortfall (-2,98,948) and States' excess (4,50,426), not by tax evidence. Union CGST ends on the +5% edge of
+      t1.cgst; no GST settlement-timing series exists in clean data to narrow the bands (taxes-26, Checkpoint B).
+    sources: [mof_union_budget_2026_27, mospi_sut_2022base, rbi_state_finances_study]
+  - row: G_CEN
+    col: T_PROD
+    ref: "*"
+    component: "*"
+    prior: -57879.110000
+    balanced: -40515.377000
+    why: >-
+      Explained in direction; level unexplained (BS-9). Cell G_CEN <- T_PROD: -57,879 -> -40,515 (17,364, +30.0%; 3
+      entries). Largest moves: taxes P10a gross_subsidies 17,361 (+29.8%); taxes P10a stamps_registration 2 (+0.6%).
+      PM-KISAN left P10a in the Wave C fix (government-30: NAS 4.2 books it as a current transfer), so the Union's
+      identified D39 heads are now St 7 interest and other subsidies plus FC16 Union 'business' subsidies, and the
+      States' residual rose by the same 51,617. Balancing then moved Union production subsidies to the States up to
+      the p10a.centre_net band (p10a.centre_net (target -57,879, balanced -40,515, at its upper edge)), because
+      G_CEN's prior is short (-2,98,948) and G_STA's long (4,50,426); the gross D39 total holds at NAS 4.2 - 1.1. No
+      subsidy evidence sets the balanced Centre/State split (taxes-14, BS-9).
+    sources: [cga_finance_accounts_aag, fc16_relevant_data, mospi_nas_2026_publication, rbi_state_finances_study]
+  - row: G_STA
+    col: T_PROD
+    ref: "*"
+    component: "*"
+    prior: 437.111378
+    balanced: -16926.621623
+    why: >-
+      Explained in direction; level unexplained (BS-9). Cell G_STA <- T_PROD: 437 -> -16,927 (-17,364, -3972.4%; 5
+      entries). Largest moves: taxes P10a gross_subsidies -17,083 (-6.0%); taxes P10a stamps_registration -208
+      (-0.1%); taxes P10a property_tax -29 (-0.1%); taxes P10a land_revenue -22 (-0.1%); taxes P10a
+      other_production_taxes -22 (-5.7%). PM-KISAN left P10a in the Wave C fix (government-30: NAS 4.2 books it as a
+      current transfer), so the Union's identified D39 heads are now St 7 interest and other subsidies plus FC16
+      Union 'business' subsidies, and the States' residual rose by the same 51,617. Balancing then moved Union
+      production subsidies to the States up to the p10a.centre_net band (p10a.centre_net (target -57,879, balanced
+      -40,515, at its upper edge)), because G_CEN's prior is short (-2,98,948) and G_STA's long (4,50,426); the
+      gross D39 total holds at NAS 4.2 - 1.1. No subsidy evidence sets the balanced Centre/State split (taxes-14,
+      BS-9).
+    sources: [cga_finance_accounts_aag, fc16_relevant_data, mospi_nas_2026_publication, rbi_state_finances_study]
+  - row: T_PIT
+    col: H_U5
+    ref: "*"
+    component: "*"
+    prior: 388928.373867
+    balanced: 380217.281451
+    why: >-
+      Explained. Cell T_PIT <- H_U5: 3,88,928 -> 3,80,217 (-8,711, -2.2%; 2 entries). Largest moves: taxes T3a
+      income_tax -8,651 (-2.2%); taxes T3a professions_tax -60 (-2.2%). The largest mover is explained under its
+      entry: This is the household saving gap Z. t3.total holds taxes on income other than CIT at the Receipt Budget
+      and RBI State Finances cash (binding); when Z (-3,84,547) pushed households' T3a down (t3.households allows
+      10% around the old-base household share), the only other T3 payers, the quasi-corporations in E_NFPR and
+      E_BANK (D2-11), took the rest.
+    sources: [ifpri_nexus_sam_india_2022_23, mof_union_budget_2026_27, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: T_SVAT
+    col: C_RPET
+    ref: "*"
+    component: "*"
+    prior: 414408.714057
+    balanced: 405787.658007
+    why: >-
+      Explained. Cell T_SVAT <- C_RPET: 4,14,409 -> 4,05,788 (-8,621, -2.1%; 2 entries). Largest moves: taxes P7a
+      non_pol_vat -7,408 (-6.3%); taxes P7a total -1,213 (-0.4%). The largest mover is explained under its entry:
+      The product-tax cells of a commodity are held by production's SUT product-tax total and p7a.total binds;
+      inside it, the prior's placement is weak where plan fallback (b) put non-petroleum State VAT on petroleum
+      products and the RAS squeezed PPAC's Union excise on POL (2,73,684) to 0.977 of it (taxes-3, V-TX-3).
+      Balancing re-split C_RPET's fixed SUT product taxes from the fallback State VAT toward Union excise, i.e.
+      toward the PPAC figure and away from the placement taxes-3 flags; the Centre/State gap of the prior (G_CEN
+      -2,98,948, G_STA 4,50,426) is what pushed it.
+    sources: [mospi_sut_2022base, ppac_petroleum_exchequer, rbi_state_finances_study]

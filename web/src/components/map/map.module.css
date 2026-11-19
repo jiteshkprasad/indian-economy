@@ -1,0 +1,701 @@
+/* The Map (U3). Colours come from U2's tokens only. */
+
+.svgWrap {
+  position: relative;
+  width: 100%;
+}
+.help {
+  margin: 0 0 6px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.svg :focus {
+  outline: none; /* the focus ring is drawn in SVG (Safari draws no outline on SVG elements) */
+}
+.ribbon {
+  pointer-events: none;
+  stroke-linejoin: round;
+}
+.pattern {
+  pointer-events: none;
+}
+/* home hero: money moving along the forward ribbons */
+.flowing {
+  pointer-events: none;
+}
+.flowStripe {
+  fill: var(--flow-stripe);
+  fill-opacity: var(--flow-stripe-opacity);
+}
+.hatchLine {
+  stroke: var(--pattern-line);
+  stroke-width: 0.9;
+}
+.hit {
+  fill: transparent;
+  stroke: none;
+  cursor: pointer;
+}
+.node {
+  cursor: pointer;
+}
+.node rect {
+  stroke: none;
+}
+/* a node's pointer target (≥ 24 CSS px, sized in SankeySvg.tsx); invisible but hit-testable */
+.node rect.nodeHit {
+  fill: transparent;
+  pointer-events: all;
+}
+.nodeSel {
+  stroke: var(--text) !important;
+  stroke-width: 2px;
+}
+.nodeLabel,
+.valueLabel {
+  fill: var(--text);
+  stroke: var(--bg);
+  paint-order: stroke;
+  stroke-linejoin: round;
+  font-size: 13px;
+  pointer-events: none;
+}
+.nodeLabel {
+  font-weight: 600;
+}
+.valueLabel {
+  font-size: 11.5px;
+  font-variant-numeric: tabular-nums;
+}
+.focusRing {
+  pointer-events: none;
+}
+.focusHalo {
+  fill: none;
+  stroke: var(--focus-halo);
+  stroke-width: 6px;
+}
+.focusStroke {
+  fill: none;
+  stroke: var(--focus);
+  stroke-width: 2.5px;
+}
+.links,
+.nodes,
+.valueLabels {
+  isolation: auto;
+}
+
+/* ---- the Map page --------------------------------------------------------------------- */
+.mapSection {
+  margin: 32px 0 24px;
+}
+.mapSection h2 {
+  margin: 0 0 4px;
+}
+.intro {
+  margin: 0 0 12px;
+  color: var(--text-muted);
+  max-width: 72ch;
+}
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  margin: 8px 0 12px;
+}
+/* No overflow: hidden here: it would clip the global :focus-visible ring (drawn outside the button).
+   The end buttons are rounded instead, and a focused button is lifted above its neighbour. */
+.segmented {
+  display: inline-flex;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+}
+.segmented button:first-child {
+  border-top-left-radius: calc(var(--radius) - 1px);
+  border-bottom-left-radius: calc(var(--radius) - 1px);
+}
+.segmented button:last-child {
+  border-top-right-radius: calc(var(--radius) - 1px);
+  border-bottom-right-radius: calc(var(--radius) - 1px);
+}
+.segmented button:focus-visible {
+  position: relative;
+  z-index: 1;
+}
+.segmented button {
+  min-height: var(--target);
+  padding: 6px 12px;
+  border: 0;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+.segmented button + button {
+  border-left: 1px solid var(--border-strong);
+}
+.segmented button[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+.groupLabel {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-right: 6px;
+}
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--target);
+}
+.switch input {
+  width: 20px;
+  height: 20px;
+}
+.banner {
+  border-left: 4px solid var(--st-estimated);
+  background: var(--st-estimated-bg);
+  padding: 10px 14px;
+  margin: 8px 0 12px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.banner p {
+  margin: 0 0 6px;
+}
+.banner p:last-child {
+  margin-bottom: 0;
+}
+.notice {
+  border-left: 4px solid var(--st-balancing);
+  background: var(--surface-2);
+  padding: 8px 12px;
+  margin: 8px 0;
+}
+.framing {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 4px 0 0;
+}
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin: 4px 0 8px;
+  font-size: 0.9rem;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+@media (min-width: 1100px) {
+  .layoutWithPanel {
+    grid-template-columns: minmax(0, 1fr) 380px;
+  }
+}
+.desktopOnly {
+  display: none;
+}
+.phoneOnly {
+  display: block;
+}
+@media (min-width: 640px) {
+  .desktopOnly {
+    display: block;
+  }
+  .phoneOnly {
+    display: none;
+  }
+}
+.scrollRegion {
+  overflow: auto;
+  max-height: 70vh;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px;
+}
+.scrollRegion:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.scrollInner {
+  width: 1100px;
+}
+.lists {
+  margin-top: 12px;
+}
+.lists h3 {
+  font-size: 1rem;
+  margin: 16px 0 6px;
+}
+.groupButtons {
+  list-style: none;
+  margin: 6px 0 14px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.smallList {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 0.9rem;
+}
+
+/* ---- slider --------------------------------------------------------------------------- */
+.slider {
+  margin: 8px 0 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.sliderRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+/* the range input and its ticks share one box, so a tick at index i sits under the thumb at i */
+.rangeBox {
+  flex: 1 1 220px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+/* A styled range, so the thumb is exactly 24 px in every engine (the tick positions in
+   YearSlider.tsx assume it): native thumbs are 15–22 px and ignore a width set on them. */
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  min-width: 0;
+  height: var(--target);
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.range::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border-strong);
+}
+.range::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border-strong);
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  margin-top: -9px;
+  border-radius: 50%;
+  border: 2px solid var(--surface);
+  background: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.range::-moz-range-thumb {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--surface);
+  background: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+.yearSelect {
+  min-height: var(--target);
+  font: inherit;
+  padding: 4px 6px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+}
+.ticks {
+  position: relative;
+  height: 16px;
+  margin: -6px 0 0;
+}
+.tick {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 10px;
+  background: var(--text-muted);
+  transform: translateX(-1px);
+}
+.tickSam {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 14px;
+  transform: translateX(-5px);
+  background: var(--st-official);
+  border-radius: 2px;
+}
+.sliderLegend {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 2px 0 0;
+}
+.markerList {
+  font-size: 0.85rem;
+  margin: 6px 0 0;
+  padding-left: 1.2em;
+}
+
+/* ---- tables and lists ----------------------------------------------------------------- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.table th,
+.table td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.table td.numCell,
+.table th.numCell {
+  text-align: right;
+  white-space: nowrap;
+}
+.tableWrap {
+  overflow-x: auto;
+}
+.rowButton {
+  display: flex;
+  width: 100%;
+  min-height: 44px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.rowButton:hover {
+  background: var(--surface-2);
+}
+.rowMain {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.rowValue {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.bar {
+  display: block;
+  height: 6px;
+  margin-top: 4px;
+  border-radius: 3px;
+  min-width: 2px;
+}
+
+/* ---- phone view ----------------------------------------------------------------------- */
+.cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+/* no overflow: hidden (it clipped the head button's focus ring); the head is transparent, so the
+   card's rounded corners need no clipping */
+.card {
+  min-width: 0; /* a grid item: without overflow: hidden it would otherwise grow to its content */
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.cardHead {
+  border-radius: calc(var(--radius) - 1px);
+}
+.cardHead {
+  display: flex;
+  width: 100%;
+  min-height: 56px;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.swatch {
+  flex: 0 0 auto;
+  width: 10px;
+  align-self: stretch;
+  border-radius: 3px;
+}
+.cardBody {
+  padding: 0 12px 12px;
+}
+.cardTitle {
+  font-weight: 650;
+  display: block;
+}
+.cardMeta {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ---- panel ---------------------------------------------------------------------------- */
+.panel {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 14px 16px;
+  align-self: start;
+}
+@media (min-width: 1100px) {
+  .panel {
+    position: sticky;
+    top: 12px;
+    max-height: calc(100vh - 24px);
+    overflow: auto;
+  }
+}
+.panelHead {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.panelHead h2,
+.panelHead h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+.panelHead h2:focus,
+.panelHead h3:focus {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.figure {
+  font-size: 1.6rem;
+  font-weight: 650;
+  margin: 8px 0 2px;
+}
+.subFigure {
+  margin: 0 0 6px;
+}
+/* panel section headings: h3 in the Map, h2 on the permalink pages (heading-level.tsx); same look */
+.subHead {
+  font-size: 1.15rem;
+}
+.panel h3,
+.panel h4 {
+  font-size: 1rem;
+  margin: 16px 0 6px;
+}
+.flagList {
+  margin: 0;
+  padding-left: 1.2em;
+}
+.muted {
+  color: var(--text-muted);
+}
+
+/* ---- first screen --------------------------------------------------------------------- */
+.first {
+  margin: 10px 0 8px;
+}
+.storiesHead {
+  font-size: 1rem;
+  margin: 0 0 6px;
+}
+.first h1 {
+  font-size: clamp(1.32rem, 4.8vw, 2.3rem);
+  line-height: 1.2;
+  margin: 0 0 12px;
+  max-width: 30ch;
+}
+.headCards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  margin: 0 0 14px;
+}
+@media (min-width: 760px) {
+  .headCards {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  }
+}
+.headCard {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 10px 12px;
+}
+.headCard h2 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 2px;
+  color: var(--text-muted);
+}
+.headValue {
+  font-size: clamp(1.3rem, 5.6vw, 1.5rem); /* the value and its "Official total" badge share one line at 375 px */
+  font-weight: 700;
+  margin: 0 4px 2px 0;
+  display: inline-block;
+}
+.per100 {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  font-size: 0.88rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto max-content;
+  column-gap: 8px;
+}
+/* each row shares the list's columns (subgrid), so values and badges line up */
+.per100 li {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  align-items: center;
+  min-height: 26px;
+}
+.per100 li > :nth-child(2) {
+  text-align: right;
+  font-weight: 600;
+}
+/* compact status badges in the headline list: smaller text so each part fits on one line at 375 px */
+.per100 [data-status-split] {
+  white-space: nowrap;
+  font-size: 0.76rem;
+  padding: 0 7px;
+  gap: 4px;
+  justify-self: start;
+}
+/* On phones a two-part badge ("Official total" / "split estimated") stacks its parts on two lines, so the
+   part names keep their room and the first story card stays inside 375x812 (PLAN §4.0). */
+@media (max-width: 639.98px) {
+  .per100 {
+    line-height: 1.25; /* a part name that wraps to two lines is no taller than a stacked badge */
+  }
+  .per100 [data-badge-text] {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+    padding: 2px 0;
+  }
+  .per100 [data-badge-sep] {
+    display: none;
+  }
+  .per100 [data-status-split]:has([data-badge-text]) {
+    border-radius: 8px;
+  }
+}
+.swatchSm {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  margin-right: 6px;
+}
+.per100Bar {
+  display: flex;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 6px 0 2px;
+}
+.per100Bar span {
+  display: block;
+  height: 100%;
+}
+.cardNote {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 4px 0 0;
+}
+
+/* ---- trend chart ---------------------------------------------------------------------- */
+.chart {
+  width: 100%;
+  max-width: 34rem;
+  height: auto;
+  display: block;
+}
+.chartLine {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+.chartLinked {
+  fill: none;
+  stroke: var(--st-derived);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 3;
+}
+.chartAxis {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+.chartText {
+  fill: var(--text-muted);
+  font-size: 11px;
+}
+.chartMarker {
+  stroke: var(--text-muted);
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+}
+.chartSam {
+  fill: var(--st-balancing);
+  stroke: var(--bg);
+  stroke-width: 1.5;
+}
+.chartDot {
+  fill: var(--accent);
+}
+
+.badgeRow {
+  margin: 8px 0;
+}
+.summary {
+  cursor: pointer;
+  min-height: 24px;
+  font-weight: 600;
+  padding: 2px 0;
+}
+
+/* view switch (PLAN §2.1 item 5): globals.css turns animations off under prefers-reduced-motion */
+.viewFade {
+  animation: mapViewFade 300ms ease-out;
+}
+@keyframes mapViewFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

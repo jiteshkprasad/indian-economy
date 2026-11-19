@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 24277,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/2APPENDIX23012026_8DCD8C722C17641A0BD6D65030B172EDF.XLSX",
+  "key": "rbi_state_finances_study/sf2526_appx2_all.xlsx",
+  "method": "GET",
+  "name": "sf2526_appx2_all.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.rbi.org.in/Scripts/AnnualPublications.aspx?head=State%20Finances%20:%20A%20Study%20of%20Budgets",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"3d1dd429c2badc1:0\"",
+    "last-modified": "Mon, 23 Mar 2026 12:40:00 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:21:09Z",
+  "sha256": "f8e2d8abba4301aa3590c0a455162ff87cfcb96a7e5f825e570ae8353433e4a0",
+  "source_id": "rbi_state_finances_study",
+  "status": 200,
+  "url": "https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/2APPENDIX23012026_8DCD8C722C17641A0BD6D65030B172EDF.XLSX"
+}

@@ -1,0 +1,117 @@
+{
+  "block": "closure",
+  "checks": {
+    "failed": [
+      "k4.prior_sum_vs_nas"
+    ],
+    "n": 9
+  },
+  "concordances_read": {},
+  "constraints": 2,
+  "datasets_read": [
+    "io_tables_ifpri_2223_datapaper",
+    "io_tables_sut_supply",
+    "io_tables_sut_use",
+    "mospi_nas_2026_derived_residuals",
+    "mospi_nas_2026_s1_1",
+    "mospi_nas_2026_s1_14",
+    "mospi_nas_2026_s1_9",
+    "mospi_nas_2026_s6_1",
+    "mospi_nas_2026_s7_1a",
+    "mospi_nas_2026_s7_1b",
+    "mospi_nas_2026_s7_1c",
+    "mospi_nas_2026_s8_15_1"
+  ],
+  "dependency_hashes": {
+    "capital_financial": {
+      "constraints": "da9fd52d84749a44a23b8afacaab7c2f2931b417a121288ec0d0ce34ffcc5df2",
+      "entries": "39a15c9390b05e1c6b93639ad690a91d0c1ab3aa862bd9f28888b0589f9c42a5",
+      "provenance": "1d300f2f0539a4089864e389012b2352a4aea3db0574f1aa6852b839a0b9785b"
+    },
+    "factors": {
+      "constraints": "33b7e0beaa82d469d451d8568301a226e625a0aea1bd4db7efc0621f65742d8f",
+      "entries": "104bdbbdbdd9a1c80a4c7e3f9efbef56626f6bf89367958da80ca503654ac374",
+      "provenance": "3e19f602fcb504fc589e225f8447fdda4c597688bb69e96b86f9c06b8a7f3ea4"
+    },
+    "fincorp": {
+      "constraints": "d96f0cafb7267b3b653d9789e9510cc973a805a633d6b1d6344693785ac221ef",
+      "entries": "1f125a34266dd062d2e25ebafe980fb3adafb4d5c03e1f58672c7d8a47966a9e",
+      "provenance": "10cc5106ff4e0b9e4b083f6d2586ff27cd0274ee64f9bbfbeeab2606f96a7bc8"
+    },
+    "government": {
+      "constraints": "29c633211eed7f6c14bcf95fc4c1930e59bd800cc825b56e4c1e03632ba153e2",
+      "entries": "c5d0e9dabbe5c7cc1a1b2e3bf82ced0b9974af57e735ae19f02104fc18dc8ca2",
+      "provenance": "64b1fbefd602f63bee4b8e80f3818f82e3e1854e4bc1eb1681f5d07bb998510f"
+    },
+    "households": {
+      "constraints": "d7934f138cf654b2f21979d311b55b7961c10ff87e38de6b5303451362e86430",
+      "entries": "d3cd60ede26b86b6b17224652a27c1eb3e9c1b7544688d6efba0224e98f42d0e",
+      "provenance": "d2e8beab4f053055fbb9981ecc5b83a78f10f9b093b8fb701b8cdc09353b39dc"
+    },
+    "production": {
+      "constraints": "b0a9b2675e64f33e3b3483d4f82ae4633b7be0c9dfa1673f8de82f4472257281",
+      "entries": "f6f2a4c4b428bc234ec83c20c5c5e754d599497cbc9ec463de0f668a0993ca21",
+      "provenance": "5c8f496f92c629e03d161c981730c5d224a54275caad0c6303df0eb8cba6730c"
+    },
+    "rest_of_world": {
+      "constraints": "16a53aec08531574570a7514743f47237816c5f3665dfd03ecbd0f4a5a7348b8",
+      "entries": "1231c03003f84755c65b8ea07522bb54d501f2c02cc10fa7f7c71961f6c8113d",
+      "provenance": "0212bebbaf5922c8449454401856eb0a57e320306cc25aa52f2cb89bd796a646"
+    },
+    "taxes": {
+      "constraints": "0c54d6ad10600e341b403fd329206177d71bc2a7cc5b3d8320573698eca41699",
+      "entries": "df7c2049bbaf3d6f1573fd6229a44b4715d653ba8e5740195f92d38b47eec4fd",
+      "provenance": "026ace3900a627edc6b72d82f8c2c1537fcf81cc2e02c212df5c2272d3db3f60"
+    }
+  },
+  "depends": [
+    "production",
+    "households",
+    "factors",
+    "taxes",
+    "government",
+    "fincorp",
+    "rest_of_world",
+    "capital_financial"
+  ],
+  "entries": 20,
+  "refs": [
+    "K4a",
+    "D1"
+  ],
+  "refs_not_implemented": [],
+  "satellites": {
+    "constraint_gaps": {
+      "decimals": 6,
+      "description": "Every declared constraint's prior sum against its band (pre-balancing)",
+      "ref": "K4a",
+      "rows": 2554
+    },
+    "hh_saving": {
+      "decimals": 9,
+      "description": "Household saving by group; Z",
+      "ref": "K4a",
+      "rows": 169
+    },
+    "institution_gaps": {
+      "decimals": 6,
+      "description": "Delivered vs required net distributive flows by institution (pre-balancing)",
+      "ref": "K4a",
+      "rows": 281
+    },
+    "prior_imbalance": {
+      "decimals": 6,
+      "description": "Pre-balancing account imbalances (DESIGN_BRIEF s.5.4)",
+      "ref": "K4a",
+      "rows": 896
+    },
+    "xdisc_identity": {
+      "decimals": 6,
+      "description": "X_DISC identity: published D1 vs D2 + D3 + D4 as written",
+      "ref": "D1",
+      "rows": 10
+    }
+  },
+  "warnings": 1,
+  "year": "2023-24"
+}

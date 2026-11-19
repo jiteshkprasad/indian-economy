@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 10380666,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/FC16%20ULB%20Data%20Dump%20Cityfinance.xlsx",
+  "key": "fc16_ulb_cityfinance_dump/fc16_ulb_cityfinance.xlsx",
+  "method": "GET",
+  "name": "fc16_ulb_cityfinance.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://fincomindia.nic.in/commission-reports-sixteenth",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "10380666",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"6996a9d8-9e657a\"",
+    "last-modified": "Thu, 19 Feb 2026 06:12:40 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:20:47Z",
+  "sha256": "0502498f8b22d05cfc7fc043221091af44de47ea7fff68e9f9c5ef1d54b5b492",
+  "source_id": "fc16_ulb_cityfinance_dump",
+  "status": 200,
+  "url": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/FC16%20ULB%20Data%20Dump%20Cityfinance.xlsx"
+}

@@ -1,0 +1,32 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 167994,
+  "content_type": "text/html; charset=utf-8",
+  "final_url": "https://www.pib.gov.in/allRel.aspx?reg=3&lang=1",
+  "key": "pib_gst_monthly_releases/pib_allrel_form.html",
+  "method": "GET",
+  "name": "pib_allrel_form.html",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "text/html; charset=utf-8",
+    "etag": "XXXXXXXX"
+  },
+  "retrieved_at": "2026-09-29T14:33:46Z",
+  "sha256": "6813f03f1c6b3d5a54b46c6e54465c94283c95c8cbafdbc12df77bf51fa24b30",
+  "source_id": "pib_gst_monthly_releases",
+  "status": 200,
+  "url": "https://www.pib.gov.in/allRel.aspx?reg=3&lang=1"
+}

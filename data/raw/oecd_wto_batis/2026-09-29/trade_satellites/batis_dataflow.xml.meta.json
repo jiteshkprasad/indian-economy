@@ -1,0 +1,33 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 1445278,
+  "content_type": "application/xml; version=2.1; charset=utf-8",
+  "final_url": "https://sdmx.oecd.org/public/rest/dataflow/OECD.SDD.TPS/DSD_BATIS@DF_BATIS/1.0?references=all",
+  "key": "oecd_wto_batis/batis_dataflow.xml",
+  "method": "GET",
+  "name": "batis_dataflow.xml",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "application/xml; version=2.1; charset=utf-8",
+    "last-modified": "2023-11-14",
+    "server": "cloudflare"
+  },
+  "retrieved_at": "2026-09-29T10:30:20Z",
+  "sha256": "63ba8534d49e6a37562ca1be9291bebc6627a95a7197eb11da7246ef336afe36",
+  "source_id": "oecd_wto_batis",
+  "status": 200,
+  "url": "https://sdmx.oecd.org/public/rest/dataflow/OECD.SDD.TPS/DSD_BATIS@DF_BATIS/1.0?references=all"
+}

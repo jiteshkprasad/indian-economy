@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 45224,
+  "content_type": "application/json; charset=utf-8",
+  "final_url": "https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=4",
+  "key": "mospi_esankhyiki_api/asuse_i36_allindia_p4.json",
+  "method": "GET",
+  "name": "asuse_i36_allindia_p4.json",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "45224",
+    "content-type": "application/json; charset=utf-8",
+    "etag": "W/\"b0a8-ll3K0UwqxIHJiHnDe/l4xe75P0s\"",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T14:32:53Z",
+  "sha256": "b57c3a66048682df651ea6913a16c80a059d859bf7bec7edd2b5e174fe987f58",
+  "source_id": "mospi_esankhyiki_api",
+  "status": 200,
+  "url": "https://api.mospi.gov.in/api/asuse/getAsuseRecords?indicator_code=36&frequency_code=1&limit=100&page=4"
+}

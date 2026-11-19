@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 19832,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2069%20Resource%20Mobilisation%20through%20Systemic%20Investment%20Plans.xlsx",
+  "key": "sebi_handbook_statistics/hbs2526_t69_a.xlsx",
+  "method": "GET",
+  "name": "hbs2526_t69_a.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.sebi.gov.in/reports-and-statistics/publications/aug-2026/handbook-of-statistics-2025-26_103700.html",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "19832",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "last-modified": "Mon, 10 Aug 2026 08:25:48 GMT",
+    "server": "Apache"
+  },
+  "retrieved_at": "2026-09-29T10:20:58Z",
+  "sha256": "7d9289f93a3487318a0689889e4f49673a433cdeb4e992619d8b179788ae8d9f",
+  "source_id": "sebi_handbook_statistics",
+  "status": 200,
+  "url": "https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2069%20Resource%20Mobilisation%20through%20Systemic%20Investment%20Plans.xlsx"
+}

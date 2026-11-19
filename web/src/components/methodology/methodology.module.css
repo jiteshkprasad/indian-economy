@@ -1,0 +1,196 @@
+/* Methodology & sources page (U6). Colours come only from U2's tokens. */
+
+.page {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.header {
+  max-width: 72ch;
+  margin-bottom: 24px;
+}
+
+.lede {
+  font-size: 1.125rem;
+  color: var(--text);
+}
+
+.notForecast {
+  border-left: 4px solid var(--accent);
+  background: var(--surface-2);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+}
+
+.toc {
+  max-width: 72ch;
+  margin: 0 0 32px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.tocHeading {
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+.toc ol {
+  margin: 0;
+  padding-left: 1.4em;
+  columns: 2 18rem;
+  column-gap: 2rem;
+}
+
+.toc li {
+  break-inside: avoid;
+}
+
+.toc a {
+  display: inline-block;
+  min-height: 24px;
+  padding: 2px 0;
+}
+
+.section {
+  scroll-margin-top: 16px;
+  margin: 0 0 40px;
+}
+
+.prose {
+  overflow-wrap: anywhere;
+}
+
+.sourceList {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: 12px;
+}
+
+.sourceCard {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 12px 14px;
+  min-width: 0;
+}
+
+.sourceTitle {
+  font-size: 1rem;
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+}
+
+.sourceDl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 12px;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.sourceDl dt {
+  color: var(--text-muted);
+}
+
+.sourceDl dd {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.sourceLink {
+  display: inline-block;
+  min-height: 24px;
+  padding: 2px 0;
+}
+
+.withheld {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.versionDl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 16px;
+  margin: 12px 0;
+}
+
+.versionDl dt {
+  color: var(--text-muted);
+}
+
+.versionDl dd {
+  margin: 0;
+  min-width: 0;
+}
+
+.hash {
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  font-size: 0.85em;
+}
+
+.commands {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 0.9rem;
+}
+
+.inputs {
+  margin-top: 16px;
+}
+
+.inputs summary {
+  cursor: pointer;
+  min-height: 24px;
+  padding: 4px 0;
+}
+
+.inputList {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+}
+
+.inputList li {
+  display: grid;
+  gap: 2px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.inputPath {
+  overflow-wrap: anywhere;
+}
+
+.fixtureWarning {
+  border: 2px solid var(--danger);
+  color: var(--danger);
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+@media (max-width: 639px) {
+  .sourceDl,
+  .versionDl {
+    grid-template-columns: 1fr;
+    gap: 0 0;
+  }
+  .sourceDl dd,
+  .versionDl dd {
+    margin-bottom: 6px;
+  }
+}

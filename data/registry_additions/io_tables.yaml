@@ -1,0 +1,6 @@
+# Sources added by the io_tables ingest unit (PIPELINE_GUIDE s.8). Unverified until the orchestrator checks and
+# merges them into data/registry.yaml.
+# 2026-10-02: ifpri_nexus_sam_india_2022_23_paper was verified (licence CC BY 4.0, from the CGSpace record) and
+# merged into data/registry.yaml (Phase 3 review V1-07 / V5-08). No pending additions.
+unit: io_tables
+sources: []

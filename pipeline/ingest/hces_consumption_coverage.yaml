@@ -1,0 +1,130 @@
+# Gap-map coverage declared by the hces_consumption unit (format: pipeline/core/coverage.py).
+# Every ref this unit serves is ESTIMATED in data/gap_map.csv: HCES supplies the distribution keys
+# (shares by R/U x fractile or State), never the SAM levels, so every entry is 'partial'.
+# HCES 2023-24 rows carry the survey window as period '2023-08/2024-07' (period_type sy), not FY 2023-24,
+# so every HCES entry names that period (the default would be the FY reference year).
+unit: hces_consumption
+entries:
+- ref: C1a
+  dataset: hces_consumption_a10f_item_fractile
+  series_ids:
+  - a10f.hces2324.102.value.rural_p00_05.current
+  - a10f.hces2324.102.value.urban_p95_100.current
+  - a10f.hces2324.999.value.rural_p00_05.current
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Item x R/U x 12-fractile values per person (leaf codes flagged item_role=leaf); the commodity key also needs the item->SUT map and the SUT PFCE (io_tables).
+- ref: C1a
+  dataset: hces_consumption_a2_fractile_persons
+  series_ids: [a2.hces2324.persons.in.rural_p00_05, a2.hces2324.persons.in.urban_p95_100]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Persons per fractile class, to turn per-person values into group aggregates.
+- ref: C4a
+  dataset: hces_consumption_a10f_item_fractile
+  series_ids: [a10f.hces2324.520.value.urban_p50_60.current, a10f.hces2324.539.value.urban_p50_60.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Actual rent paid (520) and HCES imputed rent memo (539) by R/U x fractile; sizes of the three dwelling components come from NAS/SUT.
+- ref: C4a
+  dataset: hces_consumption_a6_group_fractile
+  series_ids: [a6.hces2324.memo_imputed_rent.in.rural_all.current, a6.hces2324.memo_imputed_rent.in-mh.urban_all.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Imputed rent (memo, outside MPCE) by State x R/U x fractile.
+- ref: C4d
+  dataset: hces_consumption_a10f_item_fractile
+  series_ids: [a10f.hces2324.409.value.rural_p50_60.current, a10f.hces2324.419.value.rural_p50_60.current, a10f.hces2324.429.value.rural_p50_60.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Education, hospitalisation and non-hospitalisation medical spending by R/U x fractile (primary key; the item detail 400-424 is also there).
+- ref: C4d
+  dataset: hces_consumption_health596
+  series_ids: [t2_21.oop_per_hosp_case_avg.rural_hh_q1, t2_21.oop_per_hosp_case_avg.urban_hh_q5]
+  period: '2025'
+  extent: partial
+  note: Check only - NSS Health Jan-Dec 2025 OOP per hospitalisation case by household quintile (different survey and class definition).
+- ref: C4d
+  dataset: hces_consumption_cms_education_2025
+  series_ids: [s2_3.exp_per_student.all.person.rural_all, s2_3.exp_per_student.all.person.urban_all]
+  period: 2025-Q2
+  extent: partial
+  note: Check only - CMS Education Apr-Jun 2025 spending per student by level and sector (no consumption classes).
+- ref: F2
+  dataset: hces_consumption_a2_fractile_persons
+  series_ids: [a2.hces2324.households.in.rural_p00_05, a2.hces2324.avg_mpce.in.rural_p00_05.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Secondary input only - household counts and MPCE by R/U x fractile; the mixed-income split needs PLFS/ASUSE (labour_enterprise_surveys).
+- ref: F3a
+  dataset: hces_consumption_a6_group_fractile
+  series_ids: [a6.hces2324.memo_imputed_rent.in.rural_p00_05.current, a6.hces2324.memo_imputed_rent.in.urban_p95_100.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: HCES imputed rent of owner-occupiers by R/U x fractile (keys the imputed-rent income exactly like C4a); AIDIS is the primary source.
+- ref: F3b
+  dataset: hces_consumption_a10f_item_fractile
+  series_ids: [a10f.hces2324.520.value.urban_p95_100.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Secondary - rent paid by tenants by fractile (the landlord-side key comes from AIDIS).
+- ref: P7a
+  dataset: hces_consumption_cpi2024_weights
+  series_ids: [w5_3d.01.1.1.1.1.01.in.rural.share_all_india, w5_3a.div_01.all]
+  period: '2024'
+  extent: partial
+  note: CPI 2024 item weights with COICOP 2018 codes (HCES 2023-24 based) - the item list and weights for the PFCE x GST-rate prior; GST rates (CBIC) are not registered.
+- ref: P7a
+  dataset: hces_consumption_a10f_item_fractile
+  series_ids: [a10f.hces2324.102.value.urban_p50_60.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Item-level household spending for the PFCE x item-rate prior.
+- ref: P7b
+  dataset: hces_consumption_cpi2024_weights
+  series_ids: [w5_3d.01.1.1.1.1.01.in.urban.share_all_india]
+  period: '2024'
+  extent: partial
+  note: Same prior inputs as P7a (valuation layer by use).
+- ref: R10
+  dataset: hces_consumption_a2_fractile_persons
+  series_ids: [a2.hces2324.persons.in-up.rural_p00_05, a2.hces2324.avg_mpce.in-up.rural_p00_05.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Persons and MPCE by State x R/U x State fractile, for population-based allocation of State cash schemes.
+- ref: R11a
+  dataset: hces_consumption_a2_fractile_persons
+  series_ids: [a2.hces2324.avg_mpce.in-kl.rural_p00_05.current, a2.hces2324.persons.in-kl.rural_p00_05]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: State x fractile MPCE and persons (steps 2-3 of the remittance allocation; State fractiles are cut on each State's own MPCE).
+- ref: R11a
+  dataset: hces_consumption_a10s_state_item
+  series_ids: [a10s.hces2324.999.value.in-kl.rural.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: State x R/U consumption totals per person.
+- ref: R16
+  dataset: hces_consumption_a10f_item_fractile
+  series_ids: [a10f.hces2324.405.value.urban_p50_60.current, a10f.hces2324.413.value.urban_p50_60.current, a10f.hces2324.899.value.urban_p50_60.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Fees (tuition 405, hospital charges 413) and other consumer taxes and cesses (899) by fractile, as the allocation key for fees and fines.
+- ref: R9a
+  dataset: hces_consumption_a2_fractile_persons
+  series_ids: [a2.hces2324.households.in.urban_p95_100]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Secondary only - group sizes; pensions by group are keyed on PLFS public-sector earnings.
+- ref: S8
+  dataset: hces_consumption_a10f_item_fractile
+  series_ids: [a10f.hces2324.061.qty.rural_p00_05, a10f.hces2324.062.qty.rural_p00_05, a10f.hces2324.061.hh_reporting.rural_p00_05]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: Free rice/wheat quantities and households receiving them by R/U x fractile; valuation at the GFCE unit value comes from the budget/NAS side.
+- ref: S8
+  dataset: hces_consumption_a10sw_state_item_imputed
+  series_ids: [a10sw.hces2324.061.value.in.rural.current, a10sw.hces2324.062.value.in.urban.current]
+  period: '2023-08/2024-07'
+  extent: partial
+  note: MoSPI's own imputed value of free grain (modal unit price) by State x R/U - not cross-classified by fractile.

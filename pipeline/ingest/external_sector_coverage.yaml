@@ -1,0 +1,168 @@
+# Gap-map coverage declared by the external_sector unit (format: pipeline/core/coverage.py).
+# extent: full = this dataset fills the cell by itself; partial = part of it (or an input to an
+# ESTIMATED cell); control_total = the total the cell must sum to (detail from another unit).
+# All 2023-24 BoP figures are from RBI HBS 2025-26 Table 127 (Rs crore, BPM6).
+unit: external_sector
+entries:
+- ref: V3
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_1_b_1.credit.current]
+  extent: full
+  note: BoP 1.B.1 compensation of employees, credit 62,344 (2023-24) = NAS 6.1 item 2 exactly.
+- ref: V4
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_1_b_1.debit.current]
+  extent: full
+  note: BoP 1.B.1 compensation of employees, debit 30,636 (2023-24) = NAS 6.1 item 7 exactly.
+- ref: R11
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_1_c_1.credit.current, bpm6.inr.bpm6_1_c_1_1.credit.current]
+  extent: full
+  note: BoP 1.C.1 secondary income credit to FC/NFC/households/NPISHs 9,83,128 = NAS 6.1 item 4 exactly; 1.C.1.1 personal transfers 9,56,954.
+- ref: R12
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_1_c_1.debit.current, bpm6.inr.bpm6_1_c_1_1.debit.current]
+  extent: full
+  note: BoP 1.C.1 debit 99,913 = NAS 6.1 item 9 exactly.
+- ref: R15
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_1_c_2.credit.current, bpm6.inr.bpm6_1_c_2.debit.current]
+  extent: full
+  note: BoP 1.C.2 general government current transfers, credit 1,463 and debit 7,820 (2023-24).
+- ref: K8c
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_3_5.net.current, bpm6.inr.bpm6_3_5_4.net.current]
+  extent: full
+  note: BoP 3.5 reserve assets (flow, excl. valuation) 2023-24, net -5,26,931 (increase in reserves is a debit). Quarterly detail in external_sector_bop_bpm6_quarterly.
+- ref: K8c
+  dataset: external_sector_bop_bpm6_quarterly
+  series_ids: [bpm6q.inr.bpm6_3_5.net.current]
+  period: Q4 2023-24
+  extent: partial
+  note: Quarterly reserve-asset flows (HBS 2024-25 T197); the four quarters of 2023-24 sum to the annual T127 value.
+- ref: R13
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_1_b_2.credit.current, bpm6.inr.bpm6_1_b_2_1.credit.current, bpm6.inr.bpm6_1_b_2_2.credit.current,
+    bpm6.inr.bpm6_1_b_2_3.credit.current, bpm6.inr.bpm6_1_b_2_4.credit.current, bpm6.inr.bpm6_1_b_3.credit.current]
+  extent: partial
+  note: Property income received by type (1.B.2.x + 1.B.3 = 2,80,907 = NAS 6.1 item 3). The split by domestic recipient is estimated in Phase 2.
+- ref: R13
+  dataset: external_sector_fla_census
+  series_ids: [fla.t3b.assets.total.inr]
+  period: '2024-03-31'
+  extent: partial
+  note: Outward DI position end-March 2024 (FLA census 2024-25 round, revised; the 2023-24 round's first estimate is the other vintage), an input to the ODI-income recipient split.
+- ref: R14
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_1_b_2.debit.current, bpm6.inr.bpm6_1_b_2_1.debit.current, bpm6.inr.bpm6_1_b_2_2.debit.current,
+    bpm6.inr.bpm6_1_b_2_3.debit.current, bpm6.inr.bpm6_1_b_2_4.debit.current, bpm6.inr.bpm6_1_b_3.debit.current]
+  extent: partial
+  note: Property income paid by type (1.B.2.x + 1.B.3 = 7,24,611, NAS 6.1 item 8 = 7,24,612). Payer split estimated in Phase 2.
+- ref: R14
+  dataset: external_sector_ecb_monthly_2324
+  series_ids: [ecb.total.ecb_fccb.automatic, ecb.total.ecb_fccb.approval]
+  period: 2024-03
+  extent: partial
+  note: ECB/FCCB registrations Apr 2023-Mar 2024 by borrower sector (loan level) for the ECB-interest payer split.
+- ref: R14
+  dataset: external_sector_external_debt
+  series_ids: [debt.inr.nri_deposits.current, debt.inr.commercial_borrowing.current, debt.inr.multilateral.govt.current,
+    debt.inr.bilateral.govt.current]
+  period: '2024-03-31'
+  extent: partial
+  note: External debt stocks end-March 2024 by creditor/borrower type (interest payer split by sector).
+- ref: R14
+  dataset: external_sector_external_debt_by_sector
+  series_ids: [edr.t1.gg.usd.current, edr.t1.deposit_taking_corporations.usd.current, edr.t1.other_sectors.ofc.usd.current,
+    edr.t1.other_sectors.nfc.usd.current, edr.t1.di_intercompany_lending.usd.current]
+  period: '2024-03-31'
+  extent: partial
+  note: External debt by borrowing sector end-March 2024 (GG, banks, OFC, NFC, intercompany), US$ mn, for the interest-payer split.
+- ref: K8
+  dataset: external_sector_external_debt_by_sector
+  series_ids: [edr.t4.loans.usd.current, edr.t4.debt_securities.usd.current, edr.t4.currency_deposits.usd.current, edr.t4.trade_credit.usd.current]
+  period: '2024-03-31'
+  extent: partial
+  note: External debt by instrument end-March 2024 (RoW-held liabilities of residents), US$ mn.
+- ref: R14a
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_3_1_a_1_2.credit.current]
+  extent: partial
+  note: BoP 3.1.A.1.2 reinvestment of earnings in India 1,63,704 (2023-24) = the NAS 1.9 memo exactly. Payer split (NFC/FC) estimated from FLA.
+- ref: R14a
+  dataset: external_sector_fla_census
+  series_ids: [fla.t2b.fc.fdi_equity, fla.t2b.nfc.fdi_equity]
+  period: '2024-03-31'
+  extent: partial
+  note: FDI equity (face value) in financial vs non-financial entities, end-March 2024 (FLA census 2023-24 round, 11 Oct 2024); end-March 2025 from the 2024-25 round.
+- ref: R8
+  dataset: external_sector_fla_census
+  series_ids: [fla.t8.total.equity, fla.t8.g.financial_and_insurance_activities.equity]
+  period: '2024-03-31'
+  extent: partial
+  note: Inward FDI equity by activity (market value), end-March 2024 (FLA census 2023-24 round) and 2025 (2024-25 round); input to the RoW holder share of dividends.
+- ref: R11a
+  dataset: external_sector_remittance_survey
+  series_ids: [remit.destination_state.in-mh, remit.destination_state.in-kl, remit.destination_state.in-up]
+  extent: partial
+  note: State shares of inward remittances (banks), 2023-24 survey round, all 36 States/UTs; step 1 of the estimated method.
+- ref: R12a
+  dataset: external_sector_lrs_outward
+  series_ids: [lrs.usd.annual.lrs_1.current, lrs.usd.annual.lrs_1_4.current, lrs.usd.annual.lrs_1_7.current, lrs.inr.annual.lrs_1.current]
+  extent: partial
+  note: LRS outward remittances by purpose, FY 2023-24 (gifts, maintenance of relatives, travel, studies...); Rs crore derived with the FY-average rate.
+- ref: S3
+  dataset: external_sector_remittance_survey
+  series_ids: [remit.source_country.usa, remit.source_country.are, remit.source_country.gbr, remit.source_country.others]
+  extent: full
+  note: Source-country shares of inward remittances (banks channel), 2023-24 round, 26 countries + others.
+- ref: S2
+  dataset: external_sector_ites_survey
+  series_ids: [ites.t5.united_states_of_america.share, ites.t5.europe.share, ites.t5.total.inr]
+  extent: partial
+  note: Software/ITES exports by destination 2023-24 (2024-25 survey round, revised); BaTIS (trade_satellites) is the primary for all services.
+- ref: K5
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_1.net.current]
+  extent: partial
+  note: BoP current-account balance -2,15,248 (2023-24). NAS 1.9 net capital inflow is 2,08,891; the 6,357 gap equals BoP 1.C.2 net government transfers.
+- ref: K8b
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_3_1_a.net.current, bpm6.inr.bpm6_3_1_b.net.current, bpm6.inr.bpm6_3_2_a.net.current, bpm6.inr.bpm6_3_2_b.net.current,
+    bpm6.inr.bpm6_3_4_2_2.net.current, bpm6.inr.bpm6_3_4_3_a.net.current, bpm6.inr.bpm6_3_4_5.net.current, bpm6.inr.bpm6_3_5.net.current,
+    bpm6.inr.bpm6_5.net.current]
+  extent: partial
+  note: BPM6 financial account by functional category/instrument (FDI, FPI, NRI deposits, loans, trade credit, reserves, E&O). FPI-debt split by instrument is estimated (gap map).
+- ref: K8b
+  dataset: external_sector_bop_overall_annual
+  series_ids: [bop_old.inr.ka.loans.ecb.to_india.net.current, bop_old.inr.ka.banking_capital.commercial_banks.nri_deposits.net.current,
+    bop_old.inr.ka.loans.short_term.net.current, bop_old.inr.ka.loans.external_assistance.to_india.net.current]
+  extent: partial
+  note: ECB, NRI deposit, short-term trade credit and external assistance flows (old-format BoP) for the bop_function tags.
+- ref: K8b
+  dataset: external_sector_iip_quarterly
+  series_ids: [iipq.inr.liabilities.current, iipq.inr.assets.current]
+  period: '2024-03-31'
+  extent: partial
+  note: IIP stocks at end-March 2024 (HBS 2024-25 T199), stock context for RoW financial flows.
+- ref: K8
+  dataset: external_sector_external_debt
+  series_ids: [debt.inr.gross_external_debt.current]
+  period: '2024-03-31'
+  extent: partial
+  note: Gross external debt end-March 2024 by instrument/borrower (RoW-side liabilities only; FSF is the primary for K8).
+- ref: K7b
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_3.credit.current, bpm6.inr.bpm6_3.debit.current]
+  extent: partial
+  note: BoP financial account totals used by the RoW counterparty rule.
+- ref: P5
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_1_a_a.credit.current, bpm6.inr.bpm6_1_a_b.credit.current]
+  extent: control_total
+  note: BoP goods and services credits (cross-check only; the SUT export column is the primary).
+- ref: P6
+  dataset: external_sector_bop_bpm6_annual
+  series_ids: [bpm6.inr.bpm6_1_a_a.debit.current, bpm6.inr.bpm6_1_a_b.debit.current]
+  extent: control_total
+  note: BoP goods and services debits (cross-check only; the SUT imports column is the primary).

@@ -1,0 +1,70 @@
+{/* Story 2 (U5). No numbers in this file: every figure is a <StoryFig> or <FigList> binding to stories/remittance-dubai.json. */}
+
+<Step id="arrive">
+
+A nurse in Dubai sends money home to her parents in Kerala. Millions of such transfers, from all over the world, add up to one of the largest flows into Indian households. In 2023-24 households received <StoryFig id="remit_total" /> in remittances and other private transfers from abroad, which is <StoryFig id="remit_gdp" />.
+
+That total is a published figure. Splitting it across different kinds of household is an estimate, as later steps show.
+
+The flow is not new. The annual series starts in 2006-07, when transfers were <StoryFig id="remit_value_first" /> (<StoryFig id="remit_share_first" />). They have grown many times over in rupees, while their share of GDP has stayed in a similar range: in 2023-24 it was <StoryFig id="remit_share_2023" />. The preliminary figure for 2025-26 is <StoryFig id="remit_value_latest" /> and may be revised. (Shares before 2022-23 are measured against GDP on the older 2011-12 base, so compare them loosely.)
+
+</Step>
+
+<Step id="uae">
+
+How much of this comes from the Gulf? The Reserve Bank of India's survey of remittances reports which countries the money is sent from. Applying its share for the United Arab Emirates, <StoryFig id="uae_share" />, to the total gives about <StoryFig id="uae_remit" /> from the UAE. Only the United States sends more (<StoryFig id="usa_share" />).
+
+Three cautions, because this is an estimate and not a measurement:
+
+- The survey reports the UAE as a whole. **Dubai cannot be separated** from Abu Dhabi, Sharjah and the other emirates, so this story follows money from the UAE.
+- The survey covers money sent **through banks**. The national total also includes other transfers, such as withdrawals from deposits that non-resident Indians hold in India. Applying the bank-channel share to everything assumes the other channels have the same country mix.
+- The survey's country shares, as published, add up to slightly less than the whole, so they are scaled up to sum to one before they are applied.
+
+The site shows only the figure the model computes from the survey, credited to the Reserve Bank; it does not republish the survey's tables, and the source link is withheld.
+
+</Step>
+
+<Step id="who">
+
+Which households receive the money? No survey measures this directly by income group, so the split is estimated: each State's share of remittances (from the same survey) is spread across that State's households in line with their spending.
+
+<FigList ids="remit_urban_per100 remit_rural_per100 remit_top_per100 remit_bottom_per100" caption="who" />
+
+On these estimates, a little more of the money goes to towns and cities than to villages, and much more goes to households that already spend the most than to the poorest.
+
+</Step>
+
+<Step id="use">
+
+What happens to the money once it arrives? The accounts cannot follow one family's rupees, but they do show how Indian households, taken together, use their income. Of every hundred rupees that households paid out in 2023-24 (<StoryFig id="hh_outlays" /> in all):
+
+<FigList ids="hh_consumption_per100 hh_saving_per100 hh_taxes_per100 hh_finance_per100 hh_residual_per100 hh_abroad_per100 hh_to_gov_per100" caption="use" />
+
+Two notes on reading this list.
+
+- **These are averages, not what one extra rupee does.** A family that receives a remittance may save more of it, or spend more of it, than the average household. How spending responds to an extra rupee is a question for the model's next phase.
+- **One line is a gap, not a choice.** The published household accounts do not fully add up: income is larger than spending plus saving. That **unallocated residual** is shown as its own line, never added to consumption or saving. Household saving by group is itself worked out as what is left over, so it is an estimate too.
+
+</Step>
+
+<Step id="buys">
+
+Most of the money is spent. Households spent <StoryFig id="hh_consumption" /> on goods and services. Where does a rupee of that spending go? Of every hundred rupees:
+
+<FigList ids="pfce_gst_per100 pfce_other_tax_per100 pfce_imports_per100 pfce_margins_per100" caption="buys" />
+
+- **Taxes.** GST, and other taxes such as excise and State taxes on fuel and alcohol, are shares of household purchases estimated from the supply and use tables and scaled to the balanced tax totals. Customs duties and product subsidies are not in these two lines.
+- **Imports.** This line assumes that households buy the same mix of imported and Indian-made goods as the economy as a whole, product by product. That is a simplification, so the figure is labelled estimated.
+- **Trade and transport.** Shops, wholesalers and lorries earn a margin on most goods. That work happens in India, so this part of the spending stays at home.
+
+Most of the rest pays Indian producers for what they made, and from there it becomes wages, farm and business income, and profits.
+
+</Step>
+
+<Step id="ripple">
+
+This is the first round only. The shopkeeper who sells to a remittance family earns an income and spends part of it, and so on. Adding up those later rounds needs a model of how each kind of household and firm responds, which is what the next phase of this project, the Engine, will build.
+
+What the accounts already show is the first round: money from abroad arriving in households, most of it spent, much of the spending flowing on to Indian producers, and a part leaking out again as taxes and imports.
+
+</Step>

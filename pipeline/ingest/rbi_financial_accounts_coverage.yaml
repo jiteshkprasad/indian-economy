@@ -1,0 +1,163 @@
+# Gap-map coverage declared by the rbi_financial_accounts unit (format: pipeline/core/coverage.py).
+# extent: full = this dataset fills the cell by itself; partial = part of it or an input to an
+# estimated cell; control_total = the total the cell must sum to.
+# Period defaults to the SAM reference year '2023-24' (flows); stocks name their end-March date.
+unit: rbi_financial_accounts
+entries:
+# ---- FSF 2023-24: the official financial account (sector x instrument x counterparty) ----------
+- ref: K7
+  dataset: rbi_financial_accounts_fsf_balance_sheets
+  series_ids: [fsf.hh.assets.transaction.total.all.current, fsf.nfc_pub.assets.transaction.total.all.current,
+    fsf.nfc_pvt.assets.transaction.total.all.current, fsf.gg_cen.assets.transaction.total.all.current,
+    fsf.gg_sta.assets.transaction.total.all.current, fsf.fc_rbi.assets.transaction.total.all.current,
+    fsf.fc_odc_scb.assets.transaction.total.all.current, fsf.fc_ofc_icpf_ins.assets.transaction.total.all.current,
+    fsf.row.assets.transaction.total.all.current, fsf.hh.assets.transaction.f22_f29.fc_odc.current]
+  extent: full
+  note: FSF 2023-24 St 1-5 transactions, assets side, every sector/sub-sector x SNA instrument (F1-F8, other, NEC)
+    x counterparty for F21/F22+F29/F3/F4/F51/F81/F89. Old-base vintage (Jan 2026); mapping to the 11 SAM
+    instruments is Phase 2. Known publisher non-closures are listed in docs/phase1/issues/rbi_financial_accounts.md.
+- ref: K8
+  dataset: rbi_financial_accounts_fsf_balance_sheets
+  series_ids: [fsf.hh.liabilities.transaction.total.all.current, fsf.nfc_pub.liabilities.transaction.total.all.current,
+    fsf.nfc_pvt.liabilities.transaction.total.all.current, fsf.gg_cen.liabilities.transaction.total.all.current,
+    fsf.gg_sta.liabilities.transaction.total.all.current, fsf.fc_odc_scb.liabilities.transaction.total.all.current,
+    fsf.row.liabilities.transaction.total.all.current, fsf.hh.liabilities.transaction.f4.fc_odc.current,
+    fsf.hh.liabilities.transaction.f4.fc_ofc.current]
+  extent: full
+  note: FSF 2023-24 liabilities side, same detail as K7. Household loans from ODC/OFC carry the HDFC merger
+    reclassification (18,77,458 / 1,208 vs 12,52,313 / 3,43,354 in 2022-23), confirmed in the file; Phase 2 adjusts.
+- ref: S4
+  dataset: rbi_financial_accounts_fsf_fwtw
+  series_ids: [fsf6.all.liabilities.transaction.all.current, fsf6.gg.liabilities.transaction.fc_rbi.current,
+    fsf6.gg.liabilities.transaction.fc_odc.current, fsf6.gg.liabilities.transaction.fc_ofc.current,
+    fsf6.gg.liabilities.transaction.hh.current, fsf6.gg.liabilities.transaction.row.current]
+  extent: full
+  note: FSF Statement 6.13.b sector x sector flows 2023-24 (and 6.13.a stocks); instrument-level
+    counterparty detail is in the balance-sheet dataset.
+- ref: K9
+  dataset: rbi_financial_accounts_fsf_balance_sheets
+  series_ids: [fsf.hh.assets.transaction.total.all.current, fsf.hh.liabilities.transaction.total.all.current,
+    fsf.nfc_pvt.assets.transaction.total.all.current, fsf.nfc_pvt.liabilities.transaction.total.all.current,
+    fsf.gg.assets.transaction.total.all.current, fsf.gg.liabilities.transaction.total.all.current]
+  extent: partial
+  note: FSF side of the residual (net financial transactions by sector); the NAS net-lending side comes from mospi_nas_2026.
+- ref: K9b
+  dataset: rbi_financial_accounts_fsf_balance_sheets
+  series_ids: [fsf.fc_rbi.liabilities.transaction.f89.gg_cen.current, fsf.gg_cen.assets.transaction.f89.fc_rbi.current]
+  extent: partial
+  note: FSF books RBI's payable to the Centre (F89) - transaction 2023-24 1,21,648; stock end-March 2024 2,22,372 -
+    and the Centre's matching receivable. The surplus figures themselves come from the RBI Annual Report (other unit).
+- ref: K8b
+  dataset: rbi_financial_accounts_fsf_balance_sheets
+  series_ids: [fsf.row.assets.transaction.total.all.current, fsf.row.liabilities.transaction.total.all.current,
+    fsf.row.assets.transaction.f3.all.current, fsf.row.assets.transaction.f51.all.current,
+    fsf.row.liabilities.transaction.f4.all.current, fsf.row.liabilities.transaction.f22_f29.all.current]
+  extent: partial
+  note: FSF St 5 RoW by instrument x counterparty (used for the FPI-debt split); BoP totals come from external_sector.
+- ref: K7b
+  dataset: rbi_financial_accounts_fsf_balance_sheets
+  series_ids: [fsf.hh.assets.transaction.f22_f29.fc_odc.current, fsf.hh.assets.transaction.f22_f29.fc_ofc.current,
+    fsf.hh.liabilities.transaction.f4.fc_odc.current, fsf.hh.liabilities.transaction.f4.fc_ofc.current]
+  extent: partial
+  note: FSF counterparty detail against which the NAS 5.3 / BoP replacements are posted (estimation is Phase 2).
+# ---- household financial saving (Bulletin 52(a)/(b), HBS T11/T12) --------------------------------
+- ref: K7a
+  dataset: rbi_financial_accounts_hh_finsav_52ab
+  series_ids: [t52a.fa.current.fy, t52a.fa_deposits.current.fy, t52a.fa_currency.current.fy,
+    t52a.fa_life_insurance.current.fy, t52a.fa_pf_pension_incl_ppf.current.fy, t52a.fa_investments_mf.current.fy,
+    t52a.fa_small_savings_excl_ppf.current.fy]
+  extent: partial
+  note: RBI Sept 2026 revised 2023-24 flows, new base; components equal NAS 2026 St 5.3 where both print them
+    (deposits 14,17,816, insurance 6,49,087, PF 7,23,027, currency 1,18,248). NAS 5.3 is the primary.
+- ref: K8a
+  dataset: rbi_financial_accounts_hh_finsav_52ab
+  series_ids: [t52a.fl.current.fy, t52a.fl_fc_banks.current.fy, t52a.fl_fc_banks_scb.current.fy, t52a.fl_fc_ofi.current.fy,
+    t52a.fl_fc_ofi_nbfc.current.fy, t52a.fl_fc_ofi_hfc.current.fy]
+  extent: partial
+  note: Household borrowing by lender 2023-24 (HFC -3,33,424 = the HDFC merger); NAS 5.3 is the primary.
+- ref: K4
+  dataset: rbi_financial_accounts_hbs_saving
+  series_ids: [t11.gross_saving_hh.base2022.current, t11.gross_financial_saving_hh.base2022.current,
+    t11.financial_liabilities_hh.base2022.current, t11.saving_physical_assets_hh.base2022.current]
+  extent: partial
+  note: HBS 2025-26 T11 (new base, pre-NAS-2026 vintage) 59,63,550; NAS 2026 (58,90,330) is the primary and supersedes it.
+- ref: K1
+  dataset: rbi_financial_accounts_hbs_saving
+  series_ids: [t11.gross_saving_nfc_pub.base2022.current, t11.gross_saving_nfc_pvt.base2022.current]
+  extent: partial
+  note: HBS T11 4,65,394 / 24,15,036 (pre-NAS-2026 vintage) vs NAS 2026 St 1.9 4,62,996 / 24,10,409 (primary).
+- ref: S5
+  dataset: rbi_financial_accounts_hh_finsav_52ab
+  period: '2024-03-31'
+  series_ids: [t52b.fa.current, t52b.fl.current, t52b.fa_deposits_bank.current, t52b.fa_investments_equity.current,
+    t52b.fa_investments_mf.current, t52b.fl_banks.current, t52b.fl_ofi.current]
+  extent: partial
+  note: Household financial wealth and debt stocks at end-March 2024 (scaling totals; the group split is estimated from AIDIS).
+- ref: R8a
+  dataset: rbi_financial_accounts_hh_finsav_52ab
+  period: '2024-03-31'
+  series_ids: [t52b.fa_deposits_bank.current, t52b.fa_small_savings_excl_ppf.current, t52b.fa_ppf.current,
+    t52b.fa_investments_mf.current, t52b.fa_investments_equity.current, t52b.fa_pension_funds.current]
+  extent: partial
+  note: Household asset stocks by class that R8a scales AIDIS shares to.
+# ---- G-sec ownership and central debt (K8d, R3a) ------------------------------------------------
+- ref: K8d
+  dataset: rbi_financial_accounts_fsf_balance_sheets
+  series_ids: [fsf.gg_cen.liabilities.transaction.f3.fc_rbi.current, fsf.gg_cen.liabilities.transaction.f3.fc_odc.current,
+    fsf.gg_cen.liabilities.transaction.f3.fc_ofc.current, fsf.gg_cen.liabilities.transaction.f3.hh.current,
+    fsf.gg_cen.liabilities.transaction.f3.row.current, fsf.gg_sta.liabilities.transaction.f3.fc_odc.current]
+  extent: partial
+  note: FSF holder-sector debt-security flows of the Centre and States (the estimated sub-sector split uses the ownership shares below).
+- ref: K8d
+  dataset: rbi_financial_accounts_hbs_gsec_ownership
+  period: '2024-03-31'
+  series_ids: [t107.gsec_central.outstanding.current, t107.sgs.outstanding.current, t107.gsec_central.share.commercial_banks,
+    t107.gsec_central.share.insurance, t107.gsec_central.share.rbi, t107.sgs.share.provident_funds]
+  extent: partial
+  note: HBS T107 ownership shares and totals, end-March 2022..2026 (end-March 2023 also present).
+- ref: R3a
+  dataset: rbi_financial_accounts_dea_gsec_ownership
+  period: '2024-03-31'
+  series_ids: [qr2024_t4_4.gsec_central.share.commercial_banks, qr2024_t4_4.gsec_central.share.insurance,
+    qr2024_t4_4.gsec_central.share.rbi, qr2024_t4_4.gsec_central.share.fpi, qr2024_t4_5.tbills.share.commercial_banks,
+    sp_hb5.gsec_central.share.provident_funds]
+  extent: partial
+  note: DEA ownership of dated securities and T-bills (QR Jan-Mar 2023/2024, Status Paper T2.10/HB-5); coupon x holdings is Phase 2.
+- ref: R3a
+  dataset: rbi_financial_accounts_dea_central_debt
+  period: '2024-03-31'
+  series_ids: [sp_hb1a.dated_securities.current, sp_hb1a.tbills_91d.current, sp_hb1a.securities_against_small_savings.current,
+    sp_hb1a.external_debt_curr.current, sp_hb1b.nssf.current, sp_hb1b.state_provident_funds.current]
+  extent: partial
+  note: Central Government debt stocks by component (end-March 2023 and 2024 average), Status Paper HB-1A/1B.
+- ref: R3a
+  dataset: rbi_financial_accounts_hbs_gsec_ownership
+  period: '2024-03-31'
+  series_ids: [t107.sgs.outstanding.current, t107.sgs.share.commercial_banks, t107.sgs.share.insurance,
+    t107.sgs.share.provident_funds]
+  extent: partial
+  note: SDL ownership (HBS T107), which the gap map names as the SDL source.
+# ---- interest and dividend inputs (stocks by instrument x counterparty) -------------------------
+- ref: R4
+  dataset: rbi_financial_accounts_fsf_balance_sheets
+  period: '2024-03-31'
+  series_ids: [fsf.fc_odc.liabilities.outstanding.f22_f29.hh.current, fsf.fc_odc.liabilities.outstanding.f22_f29.nfc_pvt.current,
+    fsf.fc_odc.liabilities.outstanding.f22_f29.gg.current, fsf.fc_odc.liabilities.outstanding.f4.all.current,
+    fsf.fc_ofc.liabilities.outstanding.f4.all.current]
+  extent: partial
+  note: Stocks by instrument x counterparty (end-March 2023 also present for averaging); effective rates are Phase 2.
+- ref: R5
+  dataset: rbi_financial_accounts_fsf_balance_sheets
+  period: '2024-03-31'
+  series_ids: [fsf.fc_odc.assets.outstanding.f4.hh.current, fsf.fc_odc.assets.outstanding.f4.nfc_pvt.current,
+    fsf.fc_odc.assets.outstanding.f4.nfc_pub.current, fsf.fc_ofc.assets.outstanding.f4.hh.current,
+    fsf.fc_ofc.assets.outstanding.f4.nfc_pvt.current]
+  extent: partial
+  note: Loan stocks by lender x borrower sector (end-March 2023 and 2024).
+- ref: R8
+  dataset: rbi_financial_accounts_fsf_instrument_sector
+  period: '2024-03-31'
+  series_ids: [fsf7.hh.assets.outstanding.f51.current, fsf7.fc_ofc.assets.outstanding.f51.current,
+    fsf7.row.assets.outstanding.f51.current, fsf7.gg.assets.outstanding.f51.current, fsf7.nfc_pvt.liabilities.outstanding.f51.current]
+  extent: partial
+  note: Equity holdings by holder sector (Statement 7.13.a) used to distribute dividends; the dividend total is another unit.

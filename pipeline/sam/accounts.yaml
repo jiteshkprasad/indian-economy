@@ -1,0 +1,133 @@
+# The 128 SAM accounts (docs/phase0/ACCOUNT_STRUCTURE.md s.10), as an ORDERED list.
+# This file is the only source of matrix order (rows and columns of sam_balanced_matrix.csv).
+# group: the s.11 block-diagram group (Corporations are split NFC / FC there). structure.yaml uses these.
+# Do not reorder or rename without a DECISIONS.md entry: every block, test and output depends on it.
+accounts:
+  - {code: A_CROP, group: ACT, name: "Activity: Crops"}
+  - {code: A_LVST, group: ACT, name: "Activity: Livestock"}
+  - {code: A_FOFI, group: ACT, name: "Activity: Forestry & fishing"}
+  - {code: A_COAL, group: ACT, name: "Activity: Coal & lignite"}
+  - {code: A_OILG, group: ACT, name: "Activity: Crude petroleum & natural gas"}
+  - {code: A_OMIN, group: ACT, name: "Activity: Other mining"}
+  - {code: A_FOOD, group: ACT, name: "Activity: Food products"}
+  - {code: A_BVTB, group: ACT, name: "Activity: Beverages & tobacco"}
+  - {code: A_TXAP, group: ACT, name: "Activity: Textiles, apparel & leather"}
+  - {code: A_WOOD, group: ACT, name: "Activity: Wood, paper, printing & furniture"}
+  - {code: A_GJOM, group: ACT, name: "Activity: Gems, jewellery & other manufacturing"}
+  - {code: A_RPET, group: ACT, name: "Activity: Coke & refined petroleum"}
+  - {code: A_CHEM, group: ACT, name: "Activity: Chemicals (incl. fertilisers), rubber & plastics"}
+  - {code: A_PHRM, group: ACT, name: "Activity: Pharmaceuticals"}
+  - {code: A_NMMN, group: ACT, name: "Activity: Cement & non-metallic minerals"}
+  - {code: A_MTLS, group: ACT, name: "Activity: Basic metals (iron & steel, non-ferrous)"}
+  - {code: A_MACH, group: ACT, name: "Activity: Fabricated metals, machinery & repair"}
+  - {code: A_ELEQ, group: ACT, name: "Activity: Electronics, electrical & optical equipment"}
+  - {code: A_TREQ, group: ACT, name: "Activity: Transport equipment"}
+  - {code: A_CNST, group: ACT, name: "Activity: Construction"}
+  - {code: A_UTIL, group: ACT, name: "Activity: Electricity, gas, water & other utilities"}
+  - {code: A_TRAD, group: ACT, name: "Activity: Trade & repair of motor vehicles"}
+  - {code: A_HOTL, group: ACT, name: "Activity: Hotels & restaurants"}
+  - {code: A_TRNS, group: ACT, name: "Activity: Transport & storage (rail, road, water, air, support, warehousing)"}
+  - {code: A_COMM, group: ACT, name: "Activity: Communication & broadcasting"}
+  - {code: A_FINS, group: ACT, name: "Activity: Financial services (banking, NBFC, other)"}
+  - {code: A_INSR, group: ACT, name: "Activity: Insurance & pension services"}
+  - {code: A_DWEL, group: ACT, name: "Activity: Ownership of dwellings"}
+  - {code: A_BSRE, group: ACT, name: "Activity: Real estate, legal, business services & renting"}
+  - {code: A_ITSV, group: ACT, name: "Activity: Computer & related services"}
+  - {code: A_EDUC, group: ACT, name: "Activity: Education & research"}
+  - {code: A_HLTH, group: ACT, name: "Activity: Health & social care"}
+  - {code: A_OSRV, group: ACT, name: "Activity: Community, personal & other services"}
+  - {code: A_PADM, group: ACT, name: "Activity: Public administration & defence"}
+  - {code: C_CROP, group: COM, name: "Commodity: Crops"}
+  - {code: C_LVST, group: COM, name: "Commodity: Livestock"}
+  - {code: C_FOFI, group: COM, name: "Commodity: Forestry & fishing"}
+  - {code: C_COAL, group: COM, name: "Commodity: Coal & lignite"}
+  - {code: C_OILG, group: COM, name: "Commodity: Crude petroleum & natural gas"}
+  - {code: C_OMIN, group: COM, name: "Commodity: Other mining"}
+  - {code: C_FOOD, group: COM, name: "Commodity: Food products"}
+  - {code: C_BVTB, group: COM, name: "Commodity: Beverages & tobacco"}
+  - {code: C_TXAP, group: COM, name: "Commodity: Textiles, apparel & leather"}
+  - {code: C_WOOD, group: COM, name: "Commodity: Wood, paper, printing & furniture"}
+  - {code: C_GJOM, group: COM, name: "Commodity: Gems, jewellery & other manufacturing"}
+  - {code: C_RPET, group: COM, name: "Commodity: Coke & refined petroleum"}
+  - {code: C_CHEM, group: COM, name: "Commodity: Chemicals (incl. fertilisers), rubber & plastics"}
+  - {code: C_PHRM, group: COM, name: "Commodity: Pharmaceuticals"}
+  - {code: C_NMMN, group: COM, name: "Commodity: Cement & non-metallic minerals"}
+  - {code: C_MTLS, group: COM, name: "Commodity: Basic metals (iron & steel, non-ferrous)"}
+  - {code: C_MACH, group: COM, name: "Commodity: Fabricated metals, machinery & repair"}
+  - {code: C_ELEQ, group: COM, name: "Commodity: Electronics, electrical & optical equipment"}
+  - {code: C_TREQ, group: COM, name: "Commodity: Transport equipment"}
+  - {code: C_CNST, group: COM, name: "Commodity: Construction"}
+  - {code: C_UTIL, group: COM, name: "Commodity: Electricity, gas, water & other utilities"}
+  - {code: C_TRAD, group: COM, name: "Commodity: Trade & repair of motor vehicles"}
+  - {code: C_HOTL, group: COM, name: "Commodity: Hotels & restaurants"}
+  - {code: C_TRNS, group: COM, name: "Commodity: Transport & storage (rail, road, water, air, support, warehousing)"}
+  - {code: C_COMM, group: COM, name: "Commodity: Communication & broadcasting"}
+  - {code: C_FINS, group: COM, name: "Commodity: Financial services (banking, NBFC, other)"}
+  - {code: C_INSR, group: COM, name: "Commodity: Insurance & pension services"}
+  - {code: C_DWEL, group: COM, name: "Commodity: Ownership of dwellings"}
+  - {code: C_BSRE, group: COM, name: "Commodity: Real estate, legal, business services & renting"}
+  - {code: C_ITSV, group: COM, name: "Commodity: Computer & related services"}
+  - {code: C_EDUC, group: COM, name: "Commodity: Education & research"}
+  - {code: C_HLTH, group: COM, name: "Commodity: Health & social care"}
+  - {code: C_OSRV, group: COM, name: "Commodity: Community, personal & other services"}
+  - {code: C_PADM, group: COM, name: "Commodity: Public administration & defence"}
+  - {code: M_TTM, group: MRG, name: "Trade and transport margins"}
+  - {code: F_LREG, group: FAC, name: "Labour: regular wage/salaried"}
+  - {code: F_LCAS, group: FAC, name: "Labour: casual"}
+  - {code: F_MIXD, group: FAC, name: "Mixed income (gross)"}
+  - {code: F_GOSC, group: FAC, name: "Gross operating surplus"}
+  - {code: H_R1, group: HH, name: "Households, rural MPCE quintile 1 (poorest)"}
+  - {code: H_R2, group: HH, name: "Households, rural MPCE quintile 2"}
+  - {code: H_R3, group: HH, name: "Households, rural MPCE quintile 3"}
+  - {code: H_R4, group: HH, name: "Households, rural MPCE quintile 4"}
+  - {code: H_R5, group: HH, name: "Households, rural MPCE quintile 5 (richest)"}
+  - {code: H_U1, group: HH, name: "Households, urban MPCE quintile 1 (poorest)"}
+  - {code: H_U2, group: HH, name: "Households, urban MPCE quintile 2"}
+  - {code: H_U3, group: HH, name: "Households, urban MPCE quintile 3"}
+  - {code: H_U4, group: HH, name: "Households, urban MPCE quintile 4"}
+  - {code: H_U5, group: HH, name: "Households, urban MPCE quintile 5 (richest)"}
+  - {code: E_NFPU, group: NFC, name: "Non-financial corporations, public"}
+  - {code: E_NFPR, group: NFC, name: "Non-financial corporations, private"}
+  - {code: E_RBI, group: FC, name: "Reserve Bank of India"}
+  - {code: E_BANK, group: FC, name: "Banks and other deposit-taking corporations (ODCs)"}
+  - {code: E_NBFC, group: FC, name: "NBFCs, HFCs, AIFIs and financial auxiliaries"}
+  - {code: E_INSP, group: FC, name: "Insurance corporations and pension/provident funds"}
+  - {code: G_CEN, group: GOV, name: "Union government (incl. central autonomous bodies and FCI)"}
+  - {code: G_STA, group: GOV, name: "States, UTs with legislature and local bodies"}
+  - {code: T_CGST, group: TAX, name: "Central GST, post-settlement"}
+  - {code: T_SGST, group: TAX, name: "State GST, post-settlement"}
+  - {code: T_GCES, group: TAX, name: "GST compensation cess"}
+  - {code: T_CUST, group: TAX, name: "Customs duties"}
+  - {code: T_UEXC, group: TAX, name: "Union excise duties"}
+  - {code: T_SVAT, group: TAX, name: "State sales tax / VAT"}
+  - {code: T_SEXC, group: TAX, name: "State excise"}
+  - {code: T_OPRT, group: TAX, name: "Other taxes on products"}
+  - {code: T_PSUB, group: TAX, name: "Product subsidies"}
+  - {code: T_PROD, group: TAX, name: "Other taxes less subsidies on production"}
+  - {code: T_PIT, group: TAX, name: "Personal income tax and other direct taxes on households"}
+  - {code: T_CIT, group: TAX, name: "Corporation tax"}
+  - {code: R_ROW, group: ROW, name: "Rest of the world, current account"}
+  - {code: K_HH, group: CAP, name: "Capital account: households"}
+  - {code: K_NFPU, group: CAP, name: "Capital account: public NFCs"}
+  - {code: K_NFPR, group: CAP, name: "Capital account: private NFCs"}
+  - {code: K_RBI, group: CAP, name: "Capital account: RBI"}
+  - {code: K_BANK, group: CAP, name: "Capital account: banks (ODCs)"}
+  - {code: K_NBFC, group: CAP, name: "Capital account: NBFCs, HFCs, AIFIs"}
+  - {code: K_INSP, group: CAP, name: "Capital account: insurance and pension funds"}
+  - {code: K_MUTF, group: CAP, name: "Capital account: mutual funds"}
+  - {code: K_GCEN, group: CAP, name: "Capital account: Union government"}
+  - {code: K_GSTA, group: CAP, name: "Capital account: States and local bodies"}
+  - {code: K_ROW, group: CAP, name: "Capital and financial account: rest of the world"}
+  - {code: K_DSTK, group: DSTK, name: "Change in inventories"}
+  - {code: I_CURR, group: INST, name: "Currency"}
+  - {code: I_DEPO, group: INST, name: "Deposits (incl. NRI deposits, CDs)"}
+  - {code: I_LOAN, group: INST, name: "Loans and advances (incl. ECB, trade credit)"}
+  - {code: I_GSEC, group: INST, name: "Government securities"}
+  - {code: I_SSAV, group: INST, name: "Small savings and public-account deposits"}
+  - {code: I_CBND, group: INST, name: "Corporate debt securities and commercial paper"}
+  - {code: I_EQTY, group: INST, name: "Equity and investment-fund shares other than MF units"}
+  - {code: I_MFUN, group: INST, name: "Mutual fund units"}
+  - {code: I_INPE, group: INST, name: "Insurance, pension and PF entitlements"}
+  - {code: I_RESV, group: INST, name: "Reserve assets"}
+  - {code: I_OTHR, group: INST, name: "Other accounts receivable/payable and residuals"}
+  - {code: X_DISC, group: DISC, name: "Statistical discrepancy (published residuals; pinned, never balanced)"}

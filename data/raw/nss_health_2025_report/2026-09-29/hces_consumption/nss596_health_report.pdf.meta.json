@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 8985496,
+  "content_type": "application/pdf",
+  "final_url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1776676412084_2b4f2b5c-2f1c-446b-8fa3-ec8f125b2b66_Final_Report_no_596_Health_(2).pdf",
+  "key": "nss_health_2025_report/nss596_health_report.pdf",
+  "method": "GET",
+  "name": "nss596_health_report.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "8985496",
+    "content-type": "application/pdf",
+    "etag": "W/\"891b98-19dc03f7730\"",
+    "last-modified": "Fri, 24 Apr 2026 16:07:58 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:36:59Z",
+  "sha256": "cc5224dc72597972e6df4691368d8ad3e065395b5d324cd703e5ff507a17825e",
+  "source_id": "nss_health_2025_report",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1776676412084_2b4f2b5c-2f1c-446b-8fa3-ec8f125b2b66_Final_Report_no_596_Health_(2).pdf"
+}

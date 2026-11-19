@@ -1,0 +1,32 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 203879,
+  "content_type": "text/html; charset=utf-8",
+  "final_url": "https://www.rbi.org.in/Scripts/AnnualReportPublications.aspx?Id=1442",
+  "key": "rbi_annual_report/ar2425_ch12_accounts.html",
+  "method": "GET",
+  "name": "ar2425_ch12_accounts.html",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.rbi.org.in/Scripts/AnnualReportPublications.aspx",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "text/html; charset=utf-8"
+  },
+  "retrieved_at": "2026-09-29T10:35:07Z",
+  "sha256": "f6fc2ed5468035ec8f5069a008aba60da39d9541309c74c6f6bab9f67136fb35",
+  "source_id": "rbi_annual_report",
+  "status": 200,
+  "url": "https://www.rbi.org.in/Scripts/AnnualReportPublications.aspx?Id=1442"
+}

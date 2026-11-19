@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "<v>/sam/cells.json: every non-zero account cell (the atoms), columnar; row receives, col pays.",
+  "properties": {
+    "abs_b": {
+      "items": {
+        "type": "number"
+      },
+      "type": "array"
+    },
+    "abs_d": {
+      "items": {
+        "type": "number"
+      },
+      "type": "array"
+    },
+    "abs_e": {
+      "items": {
+        "type": "number"
+      },
+      "type": "array"
+    },
+    "abs_o": {
+      "items": {
+        "type": "number"
+      },
+      "type": "array"
+    },
+    "col": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "flags": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "n": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "n_entries": {
+      "items": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "refs": {
+      "items": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "type": "array"
+    },
+    "row": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "split": {
+      "items": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "type": "array"
+    },
+    "v": {
+      "items": {
+        "type": "number"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "n",
+    "row",
+    "col",
+    "v",
+    "abs_o",
+    "abs_d",
+    "abs_e",
+    "abs_b",
+    "split",
+    "flags",
+    "n_entries",
+    "refs"
+  ],
+  "title": "Cells",
+  "type": "object"
+}

@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 13601,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://www.indiabudget.gov.in/budget2025-26/doc/eb/stat18.xlsx",
+  "key": "union_budget_transfers_to_states/b2526_stat18.xlsx",
+  "method": "GET",
+  "name": "b2526_stat18.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.indiabudget.gov.in/",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "10621",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "last-modified": "Wed, 16 Apr 2025 11:43:36 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:52:49Z",
+  "sha256": "5784056328ce82d4b16df4d0841c54199b5f01592b33e96985ff5f94e6f78c19",
+  "source_id": "union_budget_transfers_to_states",
+  "status": 200,
+  "url": "https://www.indiabudget.gov.in/budget2025-26/doc/eb/stat18.xlsx"
+}

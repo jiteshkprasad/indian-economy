@@ -1,0 +1,108 @@
+# Pinned raw files for one ingest unit. Written by `python -m pipeline fetch`; do not edit by hand.
+# key '<source_id>/<name>' -> the exact bytes (sha256) every build uses. `history` keeps superseded pins.
+pins:
+  mospi_cpi_2024base/cpi2024_annex_5_3_weights.xlsx:
+    body_sha256: null
+    bytes: 2359023
+    method: GET
+    path: data/raw/mospi_cpi_2024base/2026-09-29/hces_consumption/cpi2024_annex_5_3_weights.xlsx
+    retrieved_at: '2026-09-29T10:36:55Z'
+    sha256: cae0f770cdace596929a1ccb89d2b4bca15c573accf9fa06a17222ce2be9b80d
+    url: https://www.mospi.gov.in/uploads/documents/documents/1769670019171-Annex_5.3.xlsx
+  mospi_hces_2022_23/hces2223_table_a10f.xlsx:
+    body_sha256: null
+    bytes: 635025
+    method: GET
+    path: data/raw/mospi_hces_2022_23/2026-09-29/hces_consumption/hces2223_table_a10f.xlsx
+    retrieved_at: '2026-09-29T10:36:44Z'
+    sha256: 05df26e601df2486325cc185ca089fc931b82df08ea441e61c0b867d325da3db
+    url: https://www.mospi.gov.in/sites/default/files/publication_reports/HCES-22-23N/Table%20A10F-Fractile%20class-All%20India.xlsx
+  mospi_hces_2022_23/hces2223_table_a10s.xlsx:
+    body_sha256: null
+    bytes: 1675044
+    method: GET
+    path: data/raw/mospi_hces_2022_23/2026-09-29/hces_consumption/hces2223_table_a10s.xlsx
+    retrieved_at: '2026-09-29T10:36:46Z'
+    sha256: 952eed6a212c8ae30846576244b5b1a9743f897997476407b0096cb3858831b2
+    url: https://www.mospi.gov.in/sites/default/files/publication_reports/HCES-22-23N/Table%20A10S-State.xlsx
+  mospi_hces_2022_23/hces2223_table_a2.xlsx:
+    body_sha256: null
+    bytes: 96601
+    method: GET
+    path: data/raw/mospi_hces_2022_23/2026-09-29/hces_consumption/hces2223_table_a2.xlsx
+    retrieved_at: '2026-09-29T10:36:39Z'
+    sha256: 5572824c0ee3eadb265a2fbe9730a9d8347237ed44ad8e7666f392553dbbd9f9
+    url: https://www.mospi.gov.in/sites/default/files/publication_reports/HCES-22-23N/Table%20A2.xlsx
+  mospi_hces_2022_23/hces2223_table_a6.xlsx:
+    body_sha256: null
+    bytes: 437013
+    method: GET
+    path: data/raw/mospi_hces_2022_23/2026-09-29/hces_consumption/hces2223_table_a6.xlsx
+    retrieved_at: '2026-09-29T10:36:42Z'
+    sha256: 24c87c6fd88406a7f2d2677529acb8b8086a24e62840ab60dd98d8b5ff8659b0
+    url: https://www.mospi.gov.in/sites/default/files/publication_reports/HCES-22-23N/Table%20A6.xlsx
+  mospi_hces_2023_24/hces2324_report592.pdf:
+    body_sha256: null
+    bytes: 11737505
+    method: GET
+    path: data/raw/mospi_hces_2023_24/2026-09-29/hces_consumption/hces2324_report592.pdf
+    retrieved_at: '2026-09-29T10:36:52Z'
+    sha256: 368deb9c858dcc71c3bf0e6cad096a31b5b337a724cf92a113637f3302ea268e
+    url: https://www.mospi.gov.in/sites/default/files/publication_reports/Final_Report_HCES_2023-24L.pdf
+  mospi_hces_2023_24/hces2324_table_a10f.xlsx:
+    body_sha256: null
+    bytes: 577479
+    method: GET
+    path: data/raw/mospi_hces_2023_24/2026-09-29/hces_consumption/hces2324_table_a10f.xlsx
+    retrieved_at: '2026-09-29T10:36:35Z'
+    sha256: e8867e5ef8359a3eafe9f54280bbd135a30759f0c5591e4ed3a34f5d83f97137
+    url: https://mospi.gov.in/sites/default/files/publication_reports/HCES-23-24/TableA10F-Fractile-class-All%20India.xlsx
+  mospi_hces_2023_24/hces2324_table_a10s.xlsx:
+    body_sha256: null
+    bytes: 1609367
+    method: GET
+    path: data/raw/mospi_hces_2023_24/2026-09-29/hces_consumption/hces2324_table_a10s.xlsx
+    retrieved_at: '2026-09-29T10:36:37Z'
+    sha256: e75eb08ab7c056a56a05e1ef379fba55b943e26b1432e89ab387b08f96053211
+    url: https://mospi.gov.in/sites/default/files/publication_reports/HCES-23-24/TableA10S-State.xlsx
+  mospi_hces_2023_24/hces2324_table_a10sw.xlsx:
+    body_sha256: null
+    bytes: 1587230
+    method: GET
+    path: data/raw/mospi_hces_2023_24/2026-09-29/hces_consumption/hces2324_table_a10sw.xlsx
+    retrieved_at: '2026-09-29T10:36:39Z'
+    sha256: 8b01588eaca46a798a61378b5495de9cb06b01ce99f1341df9b8eec5f32b1662
+    url: https://mospi.gov.in/sites/default/files/publication_reports/HCES-23-24/TableA10SW-State-WithImputation.xlsx
+  mospi_hces_2023_24/hces2324_table_a2.xlsx:
+    body_sha256: null
+    bytes: 96452
+    method: GET
+    path: data/raw/mospi_hces_2023_24/2026-09-29/hces_consumption/hces2324_table_a2.xlsx
+    retrieved_at: '2026-09-29T10:36:30Z'
+    sha256: 5e87cc21db8424b7bb7e60681393183b01f1ded67dfb70d0a12270e5e72da12a
+    url: https://mospi.gov.in/sites/default/files/publication_reports/HCES-23-24/TableA2.xlsx
+  mospi_hces_2023_24/hces2324_table_a6.xlsx:
+    body_sha256: null
+    bytes: 433029
+    method: GET
+    path: data/raw/mospi_hces_2023_24/2026-09-29/hces_consumption/hces2324_table_a6.xlsx
+    retrieved_at: '2026-09-29T10:36:32Z'
+    sha256: 96af8274fd95b93f942be2e1d20be677b6ca73fffcd628f56725e0f51454a0b6
+    url: https://mospi.gov.in/sites/default/files/publication_reports/HCES-23-24/TableA6.xlsx
+  nss_cms_education_2025_report/cms_education_2025_report.pdf:
+    body_sha256: null
+    bytes: 17016577
+    method: GET
+    path: data/raw/nss_cms_education_2025_report/2026-09-29/hces_consumption/cms_education_2025_report.pdf
+    retrieved_at: '2026-09-29T10:37:04Z'
+    sha256: 090c9fca5d11726b9696068dd5c2c9d3f355943c6534e77b3145611c0adfdd2b
+    url: https://www.mospi.gov.in/uploads/publications_reports/publications_reports1757588642898_9ba30fe0-3677-478c-8d53-9a0d2ba107f0_CMS_E_2025L.pdf
+  nss_health_2025_report/nss596_health_report.pdf:
+    body_sha256: null
+    bytes: 8985496
+    method: GET
+    path: data/raw/nss_health_2025_report/2026-09-29/hces_consumption/nss596_health_report.pdf
+    retrieved_at: '2026-09-29T10:36:59Z'
+    sha256: cc5224dc72597972e6df4691368d8ad3e065395b5d324cd703e5ff507a17825e
+    url: https://www.mospi.gov.in/uploads/publications_reports/publications_reports1776676412084_2b4f2b5c-2f1c-446b-8fa3-ec8f125b2b66_Final_Report_no_596_Health_(2).pdf
+unit: hces_consumption

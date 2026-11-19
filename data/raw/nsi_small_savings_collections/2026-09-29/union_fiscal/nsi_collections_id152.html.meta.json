@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 150148,
+  "content_type": "text/html; charset=utf-8",
+  "final_url": "https://www.nsiindia.gov.in/(S(ek3fcw55tzp5x0mzgrjtn055))/InternalPage.aspx?Id_Pk=152",
+  "key": "nsi_small_savings_collections/nsi_collections_id152.html",
+  "method": "GET",
+  "name": "nsi_collections_id152.html",
+  "redirects": [
+    "https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=152"
+  ],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "150148",
+    "content-type": "text/html; charset=utf-8",
+    "server": ""
+  },
+  "retrieved_at": "2026-09-29T10:54:33Z",
+  "sha256": "3a6570ebe32184ce4f3670f3a8cfe9a977b93c34582228a07f65afecf5ebcfc3",
+  "source_id": "nsi_small_savings_collections",
+  "status": 200,
+  "url": "https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=152"
+}

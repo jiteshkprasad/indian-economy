@@ -1,0 +1,68 @@
+sut_industry,sut_industry_label,activity,sam_no,nas_group
+1,Agriculture,A_CROP,1,1
+2,Livestock,A_LVST,2,1
+3,Forestry and Logging,A_FOFI,3,1
+4,Fishing & Aquaculture,A_FOFI,3,1
+5,Coal & Lignite,A_COAL,4,2
+6,Crude Petroleum,A_OILG,5,2
+7,Natural Gas,A_OILG,5,2
+8,Iron Ore,A_OMIN,6,2
+9,Non ferrous metal ores,A_OMIN,6,2
+10,Other Mining,A_OMIN,6,2
+11,"Production, processing and preservation of meat, fish, fruit, vegetables, oils and fats",A_FOOD,7,3
+12,Manufacture of dairy products,A_FOOD,7,3
+13,"Manufacture of grain mill products, etc. and animal feeds",A_FOOD,7,3
+14,Manufacture of other food products,A_FOOD,7,3
+15,Manufacture of beverages,A_BVTB,8,3
+16,Manufacture of tobacco products,A_BVTB,8,3
+17,Manufacture of textiles + cotton ginning,A_TXAP,9,3
+18,"Manufacture of wearing apparel, except custom tailoring",A_TXAP,9,3
+19,Manufacture of leather and related products,A_TXAP,9,3
+20,Manufacture of Basic Iron and Steel + Casting of iron and steel,A_MTLS,16,3
+21,Manufacture of basic precious and non-ferrous metals + Casting of non-ferrous metals,A_MTLS,16,3
+22,"Manufacture of fabricated metal products, except machinery and equipments",A_MACH,17,3
+23,"Manufacture of electronic component, consumer electronics, magnetic and optical media",A_ELEQ,18,3
+24,Manufacture of computer and peripheral equipment,A_ELEQ,18,3
+25,Manufacture of communication equipments,A_ELEQ,18,3
+26,Manufacture of optical and electronics products n.e.c.,A_ELEQ,18,3
+27,Manufacture of Electrical equipments,A_ELEQ,18,3
+28,Manufacture of machinery and equipments n.e.c.,A_MACH,17,3
+29,Manufacture of Transport,A_TREQ,19,3
+30,Manufacture of coke and refined petroleum products,A_RPET,12,3
+31,"Manufacture of chemical and chemical products except pharmaceuticals, medicinal and botanical products",A_CHEM,13,3
+32,Manufacture of pharmaceutical; medicinal chemicals and botanical products,A_PHRM,14,3
+33,Manufacture of rubber & plastic products,A_CHEM,13,3
+34,Manufacture of other non-metallic mineral products,A_NMMN,15,3
+35,"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting material",A_WOOD,10,3
+36,Manufacture of paper and paper products,A_WOOD,10,3
+37,Printing and reproduction of recorded media except publishing,A_WOOD,10,3
+38,Manufacture of furniture,A_WOOD,10,3
+39,Other Manufacturing,A_GJOM,11,3
+40,Repair and installation of machinery and equipments,A_MACH,17,3
+41,Construction,A_CNST,20,5
+42,Electricity,A_UTIL,21,4
+43,Gas,A_UTIL,21,4
+44,Water supply,A_UTIL,21,4
+45,Other Utility Services,A_UTIL,21,4
+46,Railway Transport,A_TRNS,24,7
+47,Land Transport,A_TRNS,24,7
+48,Water Transport,A_TRNS,24,7
+49,Air Transport,A_TRNS,24,7
+50,Supportive & Auxiliary transport activities,A_TRNS,24,7
+51,Storage & warehousing,A_TRNS,24,7
+52,Communication,A_COMM,25,7
+53,Trade,A_TRAD,22,6
+54,Hotels & Restaurant,A_HOTL,23,6
+55,Financial Services,A_FINS,26,8
+56,Insurance Services,A_INSR,27,8
+57,Ownership of dwellings,A_DWEL,28,9
+58,Education & Research,A_EDUC,31,11
+59,Medical and Health,A_HLTH,32,11
+60,Computer and related services,A_ITSV,30,9
+61,Other Business services,A_BSRE,29,9
+62,Renting of machinery and equipment,A_BSRE,29,9
+63,Real estate activities,A_BSRE,29,9
+64,Legal Services,A_BSRE,29,9
+65,"Community, Social & personal services",A_OSRV,33,11
+66,Other services,A_OSRV,33,11
+67,Public administration. & defence,A_PADM,34,10

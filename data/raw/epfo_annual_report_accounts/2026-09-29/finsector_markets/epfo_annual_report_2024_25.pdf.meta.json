@@ -1,0 +1,36 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 15364363,
+  "content_type": "application/pdf",
+  "final_url": "https://pmvbry-cdn.epfindia.gov.in/wp-content/uploads/2025/08/Annual-Report-2024-25.pdf",
+  "key": "epfo_annual_report_accounts/epfo_annual_report_2024_25.pdf",
+  "method": "GET",
+  "name": "epfo_annual_report_2024_25.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.epfo.gov.in/annual-reports/",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "15364363",
+    "content-type": "application/pdf",
+    "etag": "\"b0283d9b30019fd0d64cb6a76daf48aa\"",
+    "last-modified": "Wed, 16 Sep 2026 07:49:43 GMT",
+    "server": "pmvbry"
+  },
+  "retrieved_at": "2026-09-29T10:20:05Z",
+  "sha256": "01411420c1b5215d753861c0d72c91230583156902d46ecb0ed8602a96395c82",
+  "source_id": "epfo_annual_report_accounts",
+  "status": 200,
+  "url": "https://pmvbry-cdn.epfindia.gov.in/wp-content/uploads/2025/08/Annual-Report-2024-25.pdf"
+}

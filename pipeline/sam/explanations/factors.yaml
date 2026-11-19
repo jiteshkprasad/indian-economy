@@ -1,0 +1,110 @@
+# Balancing explanations for block `factors` (DECISIONS D2-22; item format in docs/phase2/SAM_GUIDE.md s.12 and
+# the header of pipeline/sam/explanations.yaml). Rewritten for the balanced run of the Wave C audit fix
+# (2026-10-01; docs/phase2/verify/balanced_sam.md BS-1..BS-14): 4 entry items and 2 cell items
+# (ref "*"), every figure read from data/sam/2023-24 (balancing_log, balancing_constraints, prior_diagnostics,
+# capital_financial's k9_decomposition). Every `why` starts with a verdict:
+#   - "Explained": the prior was off for a documented source disagreement and the balanced value moves toward
+#     other evidence, or stays inside a declared evidenced band;
+#   - "Explained in direction; level unexplained": the account gap that drove the move is documented, but no
+#     source supports this entry's balanced level (or the sources disagree);
+#   - "Unexplained": the move carries an account gap whose cause is not a documented source disagreement (here:
+#     E_NFPU's prior surplus, government-33 / fincorp-37), a finding for Checkpoint B.
+# Verdicts in this file: explained 6.
+# Mechanism: cross-entropy (free low 0.25, medium 1, high 4, anchored 16) moves all free entries of one cell with
+# the same constraint membership by one factor z = balanced / prior, set by the account and constraint
+# multipliers, so the low-confidence entries of the accounts with the largest prior gaps move most. GRAS (no
+# weights, no constraints) is quoted as a cross-check. Amounts in Rs crore, current prices, FY 2023-24.
+explanations:
+  - row: G_CEN
+    col: F_GOSC
+    ref: "F4b"
+    component: "total"
+    prior: 111071.850216
+    balanced: 116625.442727
+    why: >-
+      Explained. G_CEN <- F_GOSC F4b total, 1,11,072 -> 1,16,625 (5,554, +5.0%; z 1.050; free medium; binding:
+      f4.gg_gos (target 3,75,679, balanced 3,75,679, at its lower edge); f4b.centre (target 1,11,072, balanced
+      1,16,625, at its upper edge)). F4b splits GG GOS (= NAS GG CFC, held by f4.gg_gos) by NAS 2026 St 4.1 NVA; no
+      clean source splits GG CFC by government (factors-15). The Centre/State gap of distributive flows (G_CEN
+      -2,98,948, G_STA 4,50,426; government-27) pulls the Centre's receipt up; the Wave C band f4b.centre (target
+      1,11,072, balanced 1,16,625, at its upper edge) (audit BS-12) now stops it at +5% of the NVA key (the earlier
+      run reached a Centre share of 0.323 against 0.296). C2a still moves own output to the States within its own
+      +-10% band on cash evidence, so the two splits built from one key differ by up to those bands (BS-12, accepted
+      and documented in factors-22). GRAS (no weights, no constraints) gives 1,36,885.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication]
+  - row: G_STA
+    col: F_GOSC
+    ref: "F4b"
+    component: "total"
+    prior: 264607.310311
+    balanced: 259053.217800
+    why: >-
+      Explained. G_STA <- F_GOSC F4b total, 2,64,607 -> 2,59,053 (-5,554, -2.1%; z 0.979; free medium; binding:
+      f4.gg_gos (target 3,75,679, balanced 3,75,679, at its lower edge)). F4b splits GG GOS (= NAS GG CFC, held by
+      f4.gg_gos) by NAS 2026 St 4.1 NVA; no clean source splits GG CFC by government (factors-15). The Centre/State
+      gap of distributive flows (G_CEN -2,98,948, G_STA 4,50,426; government-27) pulls the Centre's receipt up; the
+      Wave C band f4b.centre (target 1,11,072, balanced 1,16,625, at its upper edge) (audit BS-12) now stops it at
+      +5% of the NVA key (the earlier run reached a Centre share of 0.323 against 0.296). C2a still moves own output
+      to the States within its own +-10% band on cash evidence, so the two splits built from one key differ by up to
+      those bands (BS-12, accepted and documented in factors-22). GRAS (no weights, no constraints) gives 2,20,199.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication]
+  - row: H_R4
+    col: F_MIXD
+    ref: "F2"
+    component: "farm"
+    prior: 1435871.046195
+    balanced: 1445611.100525
+    why: >-
+      Explained. H_R4 <- F_MIXD F2 farm, 14,35,871 -> 14,45,611 (9,740, +0.7%; z 1.007; free low; binding:
+      f2f3.hh_gross_os_mi (target 97,71,431, balanced 97,71,432, at its upper edge)). Not a factor-income source
+      disagreement: the total is held by f2f3.hh_gross_os_mi (target 97,71,431, balanced 97,71,432, at its upper
+      edge), and the group split is an IFPRI 2022/23 key mapped k = q (D2-19; free, low). The binding K4 constraint
+      raises every group's saving (Z -3,84,547) roughly in proportion to its prior, so the groups whose priors save
+      most need the most extra income and the factor total is re-split among groups by a fraction of a per cent
+      (factors-22). GRAS (no weights, no constraints) gives 14,36,497.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_plfs_annual]
+  - row: H_U4
+    col: F_LREG
+    ref: "F1a"
+    component: "total"
+    prior: 981533.369775
+    balanced: 976345.822048
+    why: >-
+      Explained. H_U4 <- F_LREG F1a total, 9,81,533 -> 9,76,346 (-5,188, -0.5%; z 0.995; free low; binding: f1.total
+      (target 94,74,605, balanced 94,74,606, at its upper edge)). Not a factor-income source disagreement: the total
+      is held by f1.total (target 94,74,605, balanced 94,74,606, at its upper edge), and the group split is an IFPRI
+      2022/23 key mapped k = q (D2-19; free, low). The binding K4 constraint raises every group's saving (Z
+      -3,84,547) roughly in proportion to its prior, so the groups whose priors save most need the most extra income
+      and the factor total is re-split among groups by a fraction of a per cent (factors-22). GRAS (no weights, no
+      constraints) gives 9,81,283.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_plfs_annual]
+  - row: H_R4
+    col: F_MIXD
+    ref: "*"
+    component: "*"
+    prior: 1754888.589935
+    balanced: 1766792.660467
+    why: >-
+      Explained. Cell H_R4 <- F_MIXD: 17,54,889 -> 17,66,793 (11,904, +0.7%; 2 entries). Largest moves: factors F2
+      farm 9,740 (+0.7%); factors F2 nonfarm 2,164 (+0.7%). The largest mover is explained under its entry: Not a
+      factor-income source disagreement: the total is held by f2f3.hh_gross_os_mi (target 97,71,431, balanced
+      97,71,432, at its upper edge), and the group split is an IFPRI 2022/23 key mapped k = q (D2-19; free, low).
+      The binding K4 constraint raises every group's saving (Z -3,84,547) roughly in proportion to its prior, so the
+      groups whose priors save most need the most extra income and the factor total is re-split among groups by a
+      fraction of a per cent (factors-22).
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_plfs_annual]
+  - row: H_R5
+    col: F_MIXD
+    ref: "*"
+    component: "*"
+    prior: 1479428.468379
+    balanced: 1472092.575171
+    why: >-
+      Explained. Cell H_R5 <- F_MIXD: 14,79,428 -> 14,72,093 (-7,336, -0.5%; 2 entries). Largest moves: factors F2
+      farm -4,358 (-0.5%); factors F2 nonfarm -2,977 (-0.5%). The largest mover is explained under its entry: Not a
+      factor-income source disagreement: the total is held by f2f3.hh_gross_os_mi (target 97,71,431, balanced
+      97,71,432, at its upper edge), and the group split is an IFPRI 2022/23 key mapped k = q (D2-19; free, low).
+      The binding K4 constraint raises every group's saving (Z -3,84,547) roughly in proportion to its prior, so the
+      groups whose priors save most need the most extra income and the factor total is re-split among groups by a
+      fraction of a per cent (factors-22).
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_plfs_annual]

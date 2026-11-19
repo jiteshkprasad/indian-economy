@@ -1,0 +1,1061 @@
+# Balancing explanations for block `government` (DECISIONS D2-22; item format in docs/phase2/SAM_GUIDE.md s.12 and
+# the header of pipeline/sam/explanations.yaml). Rewritten for the balanced run of the Wave C audit fix
+# (2026-10-01; docs/phase2/verify/balanced_sam.md BS-1..BS-14): 38 entry items and 19 cell items
+# (ref "*"), every figure read from data/sam/2023-24 (balancing_log, balancing_constraints, prior_diagnostics,
+# capital_financial's k9_decomposition). Every `why` starts with a verdict:
+#   - "Explained": the prior was off for a documented source disagreement and the balanced value moves toward
+#     other evidence, or stays inside a declared evidenced band;
+#   - "Explained in direction; level unexplained": the account gap that drove the move is documented, but no
+#     source supports this entry's balanced level (or the sources disagree);
+#   - "Unexplained": the move carries an account gap whose cause is not a documented source disagreement (here:
+#     E_NFPU's prior surplus, government-33 / fincorp-37), a finding for Checkpoint B.
+# Verdicts in this file: explained 39, level unexplained 18.
+# Mechanism: cross-entropy (free low 0.25, medium 1, high 4, anchored 16) moves all free entries of one cell with
+# the same constraint membership by one factor z = balanced / prior, set by the account and constraint
+# multipliers, so the low-confidence entries of the accounts with the largest prior gaps move most. GRAS (no
+# weights, no constraints) is quoted as a cross-check. Amounts in Rs crore, current prices, FY 2023-24.
+explanations:
+  - row: C_CNST
+    col: G_CEN
+    ref: "C2a"
+    component: "total"
+    prior: 14404.386561
+    balanced: 7972.968333
+    why: >-
+      Explained. C_CNST <- G_CEN C2a total, 14,404 -> 7,973 (-6,431, -44.6%; z 0.554; free low; binding:
+      gov.c2.total (target 31,21,027, balanced 31,21,028, at its upper edge); gov.c2a.centre_own_output (target
+      8,74,272, balanced 7,86,844, at its lower edge); gfce.c_cnst (target 1,15,147, balanced 1,15,146, at its lower
+      edge)). The Centre/State split of GFCE in each commodity is a RAS on cash functional seeds with the Centre's
+      own-output column set by factors' F4b CE key (assumption A-C2a-2, government-7). That puts the Centre's
+      own-output GFCE above its cash functional revenue expenditure, while RBI State Finances show the States
+      spending about 3.3 lakh more than the SAM writes for them (government-27); the prior leaves G_CEN -2,98,948
+      and G_STA 4,50,426. Balancing moved 87,427 of GFCE from the Centre to the States, each commodity total held by
+      production's gfce bands and GFCE by gov.c2.total; the Centre's own output ends at 7,86,844, the lower edge of
+      gov.c2a.centre_own_output (target 8,74,272, -10%): toward, not past, the cash evidence. The split by commodity
+      below the column has no evidence of its own (the low-confidence construction and utilities entries move most).
+      GRAS (no weights, no constraints) gives 16,151.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, mospi_sut_2022base, rbi_state_finances_study]
+  - row: C_CNST
+    col: G_STA
+    ref: "C2a"
+    component: "total"
+    prior: 100742.454189
+    balanced: 107172.872397
+    why: >-
+      Explained. C_CNST <- G_STA C2a total, 1,00,742 -> 1,07,173 (6,430, +6.4%; z 1.064; free low; binding:
+      gov.c2.total (target 31,21,027, balanced 31,21,028, at its upper edge); gfce.c_cnst (target 1,15,147, balanced
+      1,15,146, at its lower edge)). The Centre/State split of GFCE in each commodity is a RAS on cash functional
+      seeds with the Centre's own-output column set by factors' F4b CE key (assumption A-C2a-2, government-7). That
+      puts the Centre's own-output GFCE above its cash functional revenue expenditure, while RBI State Finances show
+      the States spending about 3.3 lakh more than the SAM writes for them (government-27); the prior leaves G_CEN
+      -2,98,948 and G_STA 4,50,426. Balancing moved 87,427 of GFCE from the Centre to the States, each commodity
+      total held by production's gfce bands and GFCE by gov.c2.total; the Centre's own output ends at 7,86,844, the
+      lower edge of gov.c2a.centre_own_output (target 8,74,272, -10%): toward, not past, the cash evidence. The
+      split by commodity below the column has no evidence of its own (the low-confidence construction and utilities
+      entries move most). GRAS (no weights, no constraints) gives 1,20,365.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, mospi_sut_2022base, rbi_state_finances_study]
+  - row: C_EDUC
+    col: G_CEN
+    ref: "C2a"
+    component: "total"
+    prior: 51554.059598
+    balanced: 44248.849066
+    why: >-
+      Explained. C_EDUC <- G_CEN C2a total, 51,554 -> 44,249 (-7,305, -14.2%; z 0.858; free medium; binding:
+      gov.c2.total (target 31,21,027, balanced 31,21,028, at its upper edge); gov.c2a.centre_own_output (target
+      8,74,272, balanced 7,86,844, at its lower edge); gfce.c_educ (target 7,41,336, balanced 7,41,337, at its upper
+      edge)). The Centre/State split of GFCE in each commodity is a RAS on cash functional seeds with the Centre's
+      own-output column set by factors' F4b CE key (assumption A-C2a-2, government-7). That puts the Centre's
+      own-output GFCE above its cash functional revenue expenditure, while RBI State Finances show the States
+      spending about 3.3 lakh more than the SAM writes for them (government-27); the prior leaves G_CEN -2,98,948
+      and G_STA 4,50,426. Balancing moved 87,427 of GFCE from the Centre to the States, each commodity total held by
+      production's gfce bands and GFCE by gov.c2.total; the Centre's own output ends at 7,86,844, the lower edge of
+      gov.c2a.centre_own_output (target 8,74,272, -10%): toward, not past, the cash evidence. The split by commodity
+      below the column has no evidence of its own (the low-confidence construction and utilities entries move most).
+      GRAS (no weights, no constraints) gives 52,520.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, mospi_sut_2022base, rbi_state_finances_study]
+  - row: C_EDUC
+    col: G_STA
+    ref: "C2a"
+    component: "total"
+    prior: 689782.401565
+    balanced: 697088.611934
+    why: >-
+      Explained. C_EDUC <- G_STA C2a total, 6,89,782 -> 6,97,089 (7,306, +1.1%; z 1.011; free medium; binding:
+      gov.c2.total (target 31,21,027, balanced 31,21,028, at its upper edge); gfce.c_educ (target 7,41,336, balanced
+      7,41,337, at its upper edge)). The Centre/State split of GFCE in each commodity is a RAS on cash functional
+      seeds with the Centre's own-output column set by factors' F4b CE key (assumption A-C2a-2, government-7). That
+      puts the Centre's own-output GFCE above its cash functional revenue expenditure, while RBI State Finances show
+      the States spending about 3.3 lakh more than the SAM writes for them (government-27); the prior leaves G_CEN
+      -2,98,948 and G_STA 4,50,426. Balancing moved 87,427 of GFCE from the Centre to the States, each commodity
+      total held by production's gfce bands and GFCE by gov.c2.total; the Centre's own output ends at 7,86,844, the
+      lower edge of gov.c2a.centre_own_output (target 8,74,272, -10%): toward, not past, the cash evidence. The
+      split by commodity below the column has no evidence of its own (the low-confidence construction and utilities
+      entries move most). GRAS (no weights, no constraints) gives 7,48,790.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, mospi_sut_2022base, rbi_state_finances_study]
+  - row: C_HLTH
+    col: G_CEN
+    ref: "C2a"
+    component: "total"
+    prior: 19117.670773
+    balanced: 16442.912930
+    why: >-
+      Explained. C_HLTH <- G_CEN C2a total, 19,118 -> 16,443 (-2,675, -14.0%; z 0.860; free medium; binding:
+      gov.c2.total (target 31,21,027, balanced 31,21,028, at its upper edge); gov.c2a.centre_own_output (target
+      8,74,272, balanced 7,86,844, at its lower edge)). The Centre/State split of GFCE in each commodity is a RAS on
+      cash functional seeds with the Centre's own-output column set by factors' F4b CE key (assumption A-C2a-2,
+      government-7). That puts the Centre's own-output GFCE above its cash functional revenue expenditure, while RBI
+      State Finances show the States spending about 3.3 lakh more than the SAM writes for them (government-27); the
+      prior leaves G_CEN -2,98,948 and G_STA 4,50,426. Balancing moved 87,427 of GFCE from the Centre to the States,
+      each commodity total held by production's gfce bands and GFCE by gov.c2.total; the Centre's own output ends at
+      7,86,844, the lower edge of gov.c2a.centre_own_output (target 8,74,272, -10%): toward, not past, the cash
+      evidence. The split by commodity below the column has no evidence of its own (the low-confidence construction
+      and utilities entries move most). GRAS (no weights, no constraints) gives 19,776.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, mospi_sut_2022base, rbi_state_finances_study]
+  - row: C_PADM
+    col: G_CEN
+    ref: "C2a"
+    component: "total"
+    prior: 789195.460946
+    balanced: 718179.689761
+    why: >-
+      Explained. C_PADM <- G_CEN C2a total, 7,89,195 -> 7,18,180 (-71,016, -9.0%; z 0.910; free medium; binding:
+      gov.c2.total (target 31,21,027, balanced 31,21,028, at its upper edge); gov.c2a.centre_own_output (target
+      8,74,272, balanced 7,86,844, at its lower edge); gfce.c_padm (target 17,82,644, balanced 17,82,643, at its
+      lower edge)). The Centre/State split of GFCE in each commodity is a RAS on cash functional seeds with the
+      Centre's own-output column set by factors' F4b CE key (assumption A-C2a-2, government-7). That puts the
+      Centre's own-output GFCE above its cash functional revenue expenditure, while RBI State Finances show the
+      States spending about 3.3 lakh more than the SAM writes for them (government-27); the prior leaves G_CEN
+      -2,98,948 and G_STA 4,50,426. Balancing moved 87,427 of GFCE from the Centre to the States, each commodity
+      total held by production's gfce bands and GFCE by gov.c2.total; the Centre's own output ends at 7,86,844, the
+      lower edge of gov.c2a.centre_own_output (target 8,74,272, -10%): toward, not past, the cash evidence. The
+      split by commodity below the column has no evidence of its own (the low-confidence construction and utilities
+      entries move most). GRAS (no weights, no constraints) gives 7,69,160.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, mospi_sut_2022base, rbi_state_finances_study]
+  - row: C_PADM
+    col: G_STA
+    ref: "C2a"
+    component: "total"
+    prior: 993448.985696
+    balanced: 1064463.757137
+    why: >-
+      Explained. C_PADM <- G_STA C2a total, 9,93,449 -> 10,64,464 (71,015, +7.1%; z 1.071; free medium; binding:
+      gov.c2.total (target 31,21,027, balanced 31,21,028, at its upper edge); gfce.c_padm (target 17,82,644,
+      balanced 17,82,643, at its lower edge)). The Centre/State split of GFCE in each commodity is a RAS on cash
+      functional seeds with the Centre's own-output column set by factors' F4b CE key (assumption A-C2a-2,
+      government-7). That puts the Centre's own-output GFCE above its cash functional revenue expenditure, while RBI
+      State Finances show the States spending about 3.3 lakh more than the SAM writes for them (government-27); the
+      prior leaves G_CEN -2,98,948 and G_STA 4,50,426. Balancing moved 87,427 of GFCE from the Centre to the States,
+      each commodity total held by production's gfce bands and GFCE by gov.c2.total; the Centre's own output ends at
+      7,86,844, the lower edge of gov.c2a.centre_own_output (target 8,74,272, -10%): toward, not past, the cash
+      evidence. The split by commodity below the column has no evidence of its own (the low-confidence construction
+      and utilities entries move most). GRAS (no weights, no constraints) gives 10,31,717.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, mospi_sut_2022base, rbi_state_finances_study]
+  - row: G_CEN
+    col: E_NFPR
+    ref: "R7x"
+    component: "petroleum_rent"
+    prior: 4514.774971
+    balanced: 3386.081228
+    why: >-
+      Explained (payer key). G_CEN <- E_NFPR R7x petroleum_rent, 4,515 -> 3,386 (-1,129, -25.0%; z 0.750; free low;
+      binding: gov.r7x.g_cen.petroleum_rent (target 15,419, balanced 16,190, at its upper edge);
+      gov.r7x.g_cen.petroleum_rent.e_nfpr (target 4,515, balanced 3,386, at its lower edge)). The published line
+      (government-32) is held within 5% by gov.r7x.g_cen.petroleum_rent and each payer sector's part within 25% of
+      its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC of the
+      industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the split
+      toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix moved telecom
+      licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no weights, no
+      constraints) gives 5,539.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication]
+  - row: G_CEN
+    col: E_NFPU
+    ref: "R7x"
+    component: "petroleum_rent"
+    prior: 10904.002129
+    balanced: 12803.634727
+    why: >-
+      Explained (payer key). G_CEN <- E_NFPU R7x petroleum_rent, 10,904 -> 12,804 (1,900, +17.4%; z 1.174; free low;
+      binding: gov.r7x.g_cen.petroleum_rent (target 15,419, balanced 16,190, at its upper edge)). The published line
+      (government-32) is held within 5% by gov.r7x.g_cen.petroleum_rent and each payer sector's part within 25% of
+      its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC of the
+      industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the split
+      toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix moved telecom
+      licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no weights, no
+      constraints) gives 17,685.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication]
+  - row: G_CEN
+    col: E_NFPU
+    ref: "R7x"
+    component: "telecom_licence"
+    prior: 4510.884740
+    balanced: 5638.605925
+    why: >-
+      Explained (payer key). G_CEN <- E_NFPU R7x telecom_licence, 4,511 -> 5,639 (1,128, +25.0%; z 1.250; free low;
+      binding: gov.r7x.g_cen.telecom_licence.e_nfpu (target 4,511, balanced 5,639, at its upper edge)). The
+      published line (government-32) is held within 5% by gov.r7x.g_cen.telecom_licence and each payer sector's part
+      within 25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI)
+      + CFC of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move
+      the split toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix
+      moved telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no
+      weights, no constraints) gives 7,316.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication]
+  - row: G_STA
+    col: E_NFPR
+    ref: "R7x"
+    component: "mining_royalties"
+    prior: 25892.768055
+    balanced: 19419.576041
+    why: >-
+      Explained (payer key). G_STA <- E_NFPR R7x mining_royalties, 25,893 -> 19,420 (-6,473, -25.0%; z 0.750; free
+      low; binding: gov.r7x.g_sta.mining_royalties.e_nfpr (target 25,893, balanced 19,420, at its lower edge)). The
+      published line (government-32) is held within 5% by gov.r7x.g_sta.mining_royalties and each payer sector's
+      part within 25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C
+      OS(+MI) + CFC of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit
+      (-1,13,892) move the split toward public payers, up to the 25% band (without the payer bands, a trial run of
+      the Wave C fix moved telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by
+      payer. GRAS (no weights, no constraints) gives 21,450.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: E_NFPR
+    ref: "R7x"
+    component: "petroleum_royalties"
+    prior: 2128.685243
+    balanced: 1596.513932
+    why: >-
+      Explained (payer key). G_STA <- E_NFPR R7x petroleum_royalties, 2,129 -> 1,597 (-532, -25.0%; z 0.750; free
+      low; binding: gov.r7x.g_sta.petroleum_royalties (target 7,270, balanced 7,633, at its upper edge);
+      gov.r7x.g_sta.petroleum_royalties.e_nfpr (target 2,129, balanced 1,597, at its lower edge)). The published
+      line (government-32) is held within 5% by gov.r7x.g_sta.petroleum_royalties and each payer sector's part
+      within 25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI)
+      + CFC of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move
+      the split toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix
+      moved telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no
+      weights, no constraints) gives 1,763.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: E_NFPU
+    ref: "R7x"
+    component: "mining_royalties"
+    prior: 62535.740943
+    balanced: 78169.676179
+    why: >-
+      Explained (payer key). G_STA <- E_NFPU R7x mining_royalties, 62,536 -> 78,170 (15,634, +25.0%; z 1.250; free
+      low; binding: gov.r7x.g_sta.mining_royalties.e_nfpu (target 62,536, balanced 78,170, at its upper edge)). The
+      published line (government-32) is held within 5% by gov.r7x.g_sta.mining_royalties and each payer sector's
+      part within 25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C
+      OS(+MI) + CFC of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit
+      (-1,13,892) move the split toward public payers, up to the 25% band (without the payer bands, a trial run of
+      the Wave C fix moved telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by
+      payer. GRAS (no weights, no constraints) gives 68,488.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: E_NFPU
+    ref: "R7x"
+    component: "petroleum_royalties"
+    prior: 5141.161757
+    balanced: 6036.825418
+    why: >-
+      Explained (payer key). G_STA <- E_NFPU R7x petroleum_royalties, 5,141 -> 6,037 (896, +17.4%; z 1.174; free
+      low; binding: gov.r7x.g_sta.petroleum_royalties (target 7,270, balanced 7,633, at its upper edge)). The
+      published line (government-32) is held within 5% by gov.r7x.g_sta.petroleum_royalties and each payer sector's
+      part within 25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C
+      OS(+MI) + CFC of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit
+      (-1,13,892) move the split toward public payers, up to the 25% band (without the payer bands, a trial run of
+      the Wave C fix moved telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by
+      payer. GRAS (no weights, no constraints) gives 5,631.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: G_CEN
+    ref: "R2"
+    component: "css_outside_treasury"
+    prior: 148479.112034
+    balanced: 119918.582643
+    why: >-
+      Explained (a compensating move, bounded; government-34). G_STA <- G_CEN R2 css_outside_treasury, 1,48,479 ->
+      1,19,919 (-28,561, -19.2%; z 0.808; free low; binding: gov.r2.css_outside_treasury (target 1,68,087, balanced
+      1,51,279, at its lower edge)). The prior books the Centre's CSS money released outside State treasuries (Union
+      Budget St 18 III CSS revenue 4,25,296 less MH 3601.06 net releases 2,57,208 = 1,68,087; D2-8, government-6) as
+      a G_STA receipt, but no block writes the outside-treasury agencies' spending, so it adds to G_STA's 4,50,426
+      excess and the Centre's -2,98,948 shortfall. The Wave C band gov.r2.css_outside_treasury (target 1,68,087,
+      balanced 1,51,279, at its lower edge) now holds the transfer (current + capital) within 10% of the published
+      derivation (IGAS-2 'Others' grantees 1,73,699 is within 3.3%), so balancing could cut it only to the band edge
+      (current + capital 1,51,279, -10%) instead of the -38.8% of the earlier run; the rest of the States' excess
+      left through the saving split (K3a). GRAS (no weights, no constraints) gives 1,18,215.
+    sources: [cga_finance_accounts_aag, rbi_state_finances_study, union_budget_transfers_to_states]
+  - row: G_STA
+    col: H_R3
+    ref: "R7x"
+    component: "mining_royalties"
+    prior: 2632.632500
+    balanced: 1966.212807
+    why: >-
+      Explained (payer key). G_STA <- H_R3 R7x mining_royalties, 2,633 -> 1,966 (-666, -25.3%; z 0.747; free low;
+      binding: gov.r7x.g_sta.mining_royalties.hh (target 37,750, balanced 28,313, at its lower edge)). The published
+      line (government-32) is held within 5% by gov.r7x.g_sta.mining_royalties and each payer sector's part within
+      25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC
+      of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the
+      split toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix moved
+      telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no
+      weights, no constraints) gives 1,925.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: H_R4
+    ref: "R7x"
+    component: "mining_royalties"
+    prior: 3653.156127
+    balanced: 2714.650691
+    why: >-
+      Explained (payer key). G_STA <- H_R4 R7x mining_royalties, 3,653 -> 2,715 (-939, -25.7%; z 0.743; free low;
+      binding: gov.r7x.g_sta.mining_royalties.hh (target 37,750, balanced 28,313, at its lower edge)). The published
+      line (government-32) is held within 5% by gov.r7x.g_sta.mining_royalties and each payer sector's part within
+      25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC
+      of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the
+      split toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix moved
+      telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no
+      weights, no constraints) gives 2,662.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: H_R5
+    ref: "R7x"
+    component: "mining_royalties"
+    prior: 6876.034124
+    balanced: 5169.858184
+    why: >-
+      Explained (payer key). G_STA <- H_R5 R7x mining_royalties, 6,876 -> 5,170 (-1,706, -24.8%; z 0.752; free low;
+      binding: gov.r7x.g_sta.mining_royalties.hh (target 37,750, balanced 28,313, at its lower edge)). The published
+      line (government-32) is held within 5% by gov.r7x.g_sta.mining_royalties and each payer sector's part within
+      25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC
+      of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the
+      split toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix moved
+      telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no
+      weights, no constraints) gives 5,069.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: H_U2
+    ref: "R7x"
+    component: "mining_royalties"
+    prior: 2445.993082
+    balanced: 1833.843520
+    why: >-
+      Explained (payer key). G_STA <- H_U2 R7x mining_royalties, 2,446 -> 1,834 (-612, -25.0%; z 0.750; free low;
+      binding: gov.r7x.g_sta.mining_royalties.hh (target 37,750, balanced 28,313, at its lower edge)). The published
+      line (government-32) is held within 5% by gov.r7x.g_sta.mining_royalties and each payer sector's part within
+      25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC
+      of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the
+      split toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix moved
+      telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no
+      weights, no constraints) gives 1,794.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: H_U3
+    ref: "R7x"
+    component: "mining_royalties"
+    prior: 3523.083583
+    balanced: 2652.799599
+    why: >-
+      Explained (payer key). G_STA <- H_U3 R7x mining_royalties, 3,523 -> 2,653 (-870, -24.7%; z 0.753; free low;
+      binding: gov.r7x.g_sta.mining_royalties.hh (target 37,750, balanced 28,313, at its lower edge)). The published
+      line (government-32) is held within 5% by gov.r7x.g_sta.mining_royalties and each payer sector's part within
+      25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC
+      of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the
+      split toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix moved
+      telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no
+      weights, no constraints) gives 2,593.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: H_U4
+    ref: "R7x"
+    component: "mining_royalties"
+    prior: 4888.760234
+    balanced: 3687.597579
+    why: >-
+      Explained (payer key). G_STA <- H_U4 R7x mining_royalties, 4,889 -> 3,688 (-1,201, -24.6%; z 0.754; free low;
+      binding: gov.r7x.g_sta.mining_royalties.hh (target 37,750, balanced 28,313, at its lower edge)). The published
+      line (government-32) is held within 5% by gov.r7x.g_sta.mining_royalties and each payer sector's part within
+      25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC
+      of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the
+      split toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix moved
+      telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no
+      weights, no constraints) gives 3,609.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: H_U5
+    ref: "R7x"
+    component: "mining_royalties"
+    prior: 9200.904755
+    balanced: 6904.243934
+    why: >-
+      Explained (payer key). G_STA <- H_U5 R7x mining_royalties, 9,201 -> 6,904 (-2,297, -25.0%; z 0.750; free low;
+      binding: gov.r7x.g_sta.mining_royalties.hh (target 37,750, balanced 28,313, at its lower edge)). The published
+      line (government-32) is held within 5% by gov.r7x.g_sta.mining_royalties and each payer sector's part within
+      25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC
+      of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the
+      split toward public payers, up to the 25% band (without the payer bands, a trial run of the Wave C fix moved
+      telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by payer. GRAS (no
+      weights, no constraints) gives 6,774.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: H_R1
+    col: G_STA
+    ref: "R10"
+    component: "cash_schemes"
+    prior: 30089.355178
+    balanced: 39060.848708
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). H_R1 <- G_STA R10 cash_schemes, 30,089
+      -> 39,061 (8,971, +29.8%; z 1.298; free low; binding: gov.cofog.current_transfers (target 10,05,630, balanced
+      10,55,912, at its upper edge)). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave
+      C fix declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current
+      transfers, 10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines
+      at their published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up
+      to the COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before. GRAS (no weights, no constraints)
+      gives 31,432. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_R2
+    col: G_STA
+    ref: "R10"
+    component: "cash_schemes"
+    prior: 30089.795218
+    balanced: 39030.216511
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). H_R2 <- G_STA R10 cash_schemes, 30,090
+      -> 39,030 (8,940, +29.7%; z 1.297; free low; binding: gov.cofog.current_transfers (target 10,05,630, balanced
+      10,55,912, at its upper edge)). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave
+      C fix declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current
+      transfers, 10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines
+      at their published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up
+      to the COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before. GRAS (no weights, no constraints)
+      gives 31,446. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_R3
+    col: G_STA
+    ref: "R10"
+    component: "cash_schemes"
+    prior: 30089.161560
+    balanced: 39001.774073
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). H_R3 <- G_STA R10 cash_schemes, 30,089
+      -> 39,002 (8,913, +29.6%; z 1.296; free low; binding: gov.cofog.current_transfers (target 10,05,630, balanced
+      10,55,912, at its upper edge)). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave
+      C fix declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current
+      transfers, 10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines
+      at their published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up
+      to the COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before. GRAS (no weights, no constraints)
+      gives 31,453. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_R4
+    col: G_STA
+    ref: "R10"
+    component: "cash_schemes"
+    prior: 30089.936031
+    balanced: 39200.364150
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). H_R4 <- G_STA R10 cash_schemes, 30,090
+      -> 39,200 (9,110, +30.3%; z 1.303; free low; binding: gov.cofog.current_transfers (target 10,05,630, balanced
+      10,55,912, at its upper edge)). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave
+      C fix declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current
+      transfers, 10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines
+      at their published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up
+      to the COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before. GRAS (no weights, no constraints)
+      gives 31,468. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_R5
+    col: G_STA
+    ref: "R10"
+    component: "cash_schemes"
+    prior: 30089.003146
+    balanced: 38741.974524
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). H_R5 <- G_STA R10 cash_schemes, 30,089
+      -> 38,742 (8,653, +28.8%; z 1.288; free low; binding: gov.cofog.current_transfers (target 10,05,630, balanced
+      10,55,912, at its upper edge)). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave
+      C fix declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current
+      transfers, 10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines
+      at their published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up
+      to the COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before. GRAS (no weights, no constraints)
+      gives 31,493. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_U1
+    col: G_STA
+    ref: "R10"
+    component: "cash_schemes"
+    prior: 12775.706748
+    balanced: 16521.372545
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). H_U1 <- G_STA R10 cash_schemes, 12,776
+      -> 16,521 (3,746, +29.3%; z 1.293; free low; binding: gov.cofog.current_transfers (target 10,05,630, balanced
+      10,55,912, at its upper edge)). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave
+      C fix declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current
+      transfers, 10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines
+      at their published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up
+      to the COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before. GRAS (no weights, no constraints)
+      gives 13,316. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_U2
+    col: G_STA
+    ref: "R10"
+    component: "cash_schemes"
+    prior: 12774.404229
+    balanced: 16494.842093
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). H_U2 <- G_STA R10 cash_schemes, 12,774
+      -> 16,495 (3,720, +29.1%; z 1.291; free low; binding: gov.cofog.current_transfers (target 10,05,630, balanced
+      10,55,912, at its upper edge)). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave
+      C fix declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current
+      transfers, 10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines
+      at their published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up
+      to the COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before. GRAS (no weights, no constraints)
+      gives 13,332. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_U3
+    col: G_STA
+    ref: "R10"
+    component: "cash_schemes"
+    prior: 12776.181991
+    balanced: 16426.088226
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). H_U3 <- G_STA R10 cash_schemes, 12,776
+      -> 16,426 (3,650, +28.6%; z 1.286; free low; binding: gov.cofog.current_transfers (target 10,05,630, balanced
+      10,55,912, at its upper edge)). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave
+      C fix declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current
+      transfers, 10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines
+      at their published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up
+      to the COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before. GRAS (no weights, no constraints)
+      gives 13,342. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_U4
+    col: G_STA
+    ref: "R10"
+    component: "cash_schemes"
+    prior: 12776.446015
+    balanced: 16397.583053
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). H_U4 <- G_STA R10 cash_schemes, 12,776
+      -> 16,398 (3,621, +28.3%; z 1.283; free low; binding: gov.cofog.current_transfers (target 10,05,630, balanced
+      10,55,912, at its upper edge)). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave
+      C fix declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current
+      transfers, 10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines
+      at their published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up
+      to the COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before. GRAS (no weights, no constraints)
+      gives 13,347. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_U5
+    col: G_STA
+    ref: "R10"
+    component: "cash_schemes"
+    prior: 12774.932277
+    balanced: 16481.152300
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). H_U5 <- G_STA R10 cash_schemes, 12,775
+      -> 16,481 (3,706, +29.0%; z 1.290; free low; binding: gov.cofog.current_transfers (target 10,05,630, balanced
+      10,55,912, at its upper edge)). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave
+      C fix declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current
+      transfers, 10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines
+      at their published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up
+      to the COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before. GRAS (no weights, no constraints)
+      gives 13,346. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: K_GCEN
+    col: G_CEN
+    ref: "K3a"
+    component: "saving_neg"
+    prior: -342973.137500
+    balanced: -430437.440248
+    why: >-
+      Explained. K_GCEN <- G_CEN K3a saving_neg, -3,42,973 -> -4,30,437 (-87,464, -25.5%; z 1.255; free low;
+      binding: gov.k3.gg_saving (target -3,18,384, balanced -3,18,384, at its upper edge)). The K3a priors split NAS
+      2026 St 1.9 GG saving (held by gov.k3.gg_saving) by the treasury cash bridge (government-2, -25). The prior
+      leaves G_CEN -2,98,948 (short) and G_STA 4,50,426 (long); once the Wave C constraints held the published
+      transfer totals (NAS 4.2 COFOG current transfers, R9d, R18, the outside-treasury CSS money, the Union's R10
+      lines), the saving split became the main outlet: the Centre's saving went -3,39,090 -> -4,27,343 and the
+      States' 20,705 -> 1,08,959. Independent FSF evidence supports the direction: capital_financial's
+      k9_decomposition term nas_vs_fsf is 1,42,584 for the Centre (NAS-based saving less GCF above its FSF net
+      lending) and -1,97,779 for the States, so FSF puts the Centre lower and the States higher by about those
+      amounts; the balanced split moves part of the way. The saving_pos / saving_neg pair of each government moves
+      together (a sign-fragile net written as two entries). GRAS (no weights, no constraints) gives -3,49,733.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_GCEN
+    col: G_CEN
+    ref: "K3a"
+    component: "saving_pos"
+    prior: 3883.384721
+    balanced: 3094.286225
+    why: >-
+      Explained. K_GCEN <- G_CEN K3a saving_pos, 3,883 -> 3,094 (-789, -20.3%; z 0.797; free low; binding:
+      gov.k3.gg_saving (target -3,18,384, balanced -3,18,384, at its upper edge)). The K3a priors split NAS 2026 St
+      1.9 GG saving (held by gov.k3.gg_saving) by the treasury cash bridge (government-2, -25). The prior leaves
+      G_CEN -2,98,948 (short) and G_STA 4,50,426 (long); once the Wave C constraints held the published transfer
+      totals (NAS 4.2 COFOG current transfers, R9d, R18, the outside-treasury CSS money, the Union's R10 lines), the
+      saving split became the main outlet: the Centre's saving went -3,39,090 -> -4,27,343 and the States' 20,705 ->
+      1,08,959. Independent FSF evidence supports the direction: capital_financial's k9_decomposition term
+      nas_vs_fsf is 1,42,584 for the Centre (NAS-based saving less GCF above its FSF net lending) and -1,97,779 for
+      the States, so FSF puts the Centre lower and the States higher by about those amounts; the balanced split
+      moves part of the way. The saving_pos / saving_neg pair of each government moves together (a sign-fragile net
+      written as two entries). GRAS (no weights, no constraints) gives 3,808.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_GSTA
+    col: G_STA
+    ref: "K3a"
+    component: "saving_neg"
+    prior: -78304.086876
+    balanced: -49062.026656
+    why: >-
+      Explained. K_GSTA <- G_STA K3a saving_neg, -78,304 -> -49,062 (29,242, +37.3%; z 0.627; free low; binding:
+      gov.k3.gg_saving (target -3,18,384, balanced -3,18,384, at its upper edge)). The K3a priors split NAS 2026 St
+      1.9 GG saving (held by gov.k3.gg_saving) by the treasury cash bridge (government-2, -25). The prior leaves
+      G_CEN -2,98,948 (short) and G_STA 4,50,426 (long); once the Wave C constraints held the published transfer
+      totals (NAS 4.2 COFOG current transfers, R9d, R18, the outside-treasury CSS money, the Union's R10 lines), the
+      saving split became the main outlet: the Centre's saving went -3,39,090 -> -4,27,343 and the States' 20,705 ->
+      1,08,959. Independent FSF evidence supports the direction: capital_financial's k9_decomposition term
+      nas_vs_fsf is 1,42,584 for the Centre (NAS-based saving less GCF above its FSF net lending) and -1,97,779 for
+      the States, so FSF puts the Centre lower and the States higher by about those amounts; the balanced split
+      moves part of the way. The saving_pos / saving_neg pair of each government moves together (a sign-fragile net
+      written as two entries). GRAS (no weights, no constraints) gives -75,002.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_GSTA
+    col: G_STA
+    ref: "K3a"
+    component: "saving_pos"
+    prior: 99009.457462
+    balanced: 158021.298487
+    why: >-
+      Explained. K_GSTA <- G_STA K3a saving_pos, 99,009 -> 1,58,021 (59,012, +59.6%; z 1.596; free low; binding:
+      gov.k3.gg_saving (target -3,18,384, balanced -3,18,384, at its upper edge)). The K3a priors split NAS 2026 St
+      1.9 GG saving (held by gov.k3.gg_saving) by the treasury cash bridge (government-2, -25). The prior leaves
+      G_CEN -2,98,948 (short) and G_STA 4,50,426 (long); once the Wave C constraints held the published transfer
+      totals (NAS 4.2 COFOG current transfers, R9d, R18, the outside-treasury CSS money, the Union's R10 lines), the
+      saving split became the main outlet: the Centre's saving went -3,39,090 -> -4,27,343 and the States' 20,705 ->
+      1,08,959. Independent FSF evidence supports the direction: capital_financial's k9_decomposition term
+      nas_vs_fsf is 1,42,584 for the Centre (NAS-based saving less GCF above its FSF net lending) and -1,97,779 for
+      the States, so FSF puts the Centre lower and the States higher by about those amounts; the balanced split
+      moves part of the way. The saving_pos / saving_neg pair of each government moves together (a sign-fragile net
+      written as two entries). GRAS (no weights, no constraints) gives 1,03,368.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_GSTA
+    col: K_GCEN
+    ref: "R2k"
+    component: "css_outside_treasury"
+    prior: 19608.195566
+    balanced: 31359.994197
+    why: >-
+      Explained. K_GSTA <- K_GCEN R2k css_outside_treasury, 19,608 -> 31,360 (11,752, +59.9%; z 1.599; free low;
+      binding: gov.r2.css_outside_treasury (target 1,68,087, balanced 1,51,279, at its lower edge)). The capital
+      part of the outside-treasury CSS money is the IGAS-2 'Others' capital share (0.1167) of the 1,68,087 total
+      (assumption A-R2-1; the State + UT capital share 0.2717 would give about 45,675). The total is now held by
+      gov.r2.css_outside_treasury at its lower edge, and inside it balancing shifted money from the current to the
+      capital part (G_STA surplus, K_GSTA taking it into capital): the capital share is now 0.207, inside the range
+      of the two IGAS-2 shares A-R2-1 cites. GRAS (no weights, no constraints) gives 17,497.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, union_budget_transfers_to_states]
+  - row: K_HH
+    col: K_GSTA
+    ref: "K6"
+    component: "cofog_residual"
+    prior: 89809.136700
+    balanced: 94951.226214
+    why: >-
+      Explained. K_HH <- K_GSTA K6 cofog_residual, 89,809 -> 94,951 (5,142, +5.7%; z 1.057; free low; binding:
+      gov.cofog.capital_transfers (target 1,76,710, balanced 1,85,545, at its upper edge)). The States' COFOG
+      residual of capital transfers (NAS 4.2 COFOG capital transfers less the identified lines, by function) is free
+      and low; the total is held by gov.cofog.capital_transfers (+-5%), which binds at its upper edge. G_STA's prior
+      surplus (4,50,426) pushes its payments up, and households' Z (-3,84,547) their receipts; the move stays inside
+      the published NAS 4.2 total's band. GRAS (no weights, no constraints) gives 91,287.
+    sources: [mospi_nas_2026_publication, rbi_state_finances_study]
+  - row: G_CEN
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 36725.727831
+    balanced: 32820.524208
+    why: >-
+      Explained (payer key). Cell G_CEN <- E_NFPR: 36,726 -> 32,821 (-3,905, -10.6%; 3 entries). Largest moves:
+      government R7x telecom_licence -2,759 (-8.7%); government R7x petroleum_rent -1,129 (-25.0%); government R7x
+      interest_other_parties -18 (-5.0%). The published line (government-32) is held within 5% by
+      gov.r7x.g_cen.telecom_licence and each payer sector's part within 25% of its key share by the Wave C payer
+      bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC of the industry; government-23). E_NFPU's
+      prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the split toward public payers, up to the 25%
+      band (without the payer bands, a trial run of the Wave C fix moved telecom licence fees from public NFCs
+      3.1-fold). No clean source splits these rents by payer.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication]
+  - row: G_STA
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 28021.453298
+    balanced: 21016.089973
+    why: >-
+      Explained (payer key). Cell G_STA <- E_NFPR: 28,021 -> 21,016 (-7,005, -25.0%; 2 entries). Largest moves:
+      government R7x mining_royalties -6,473 (-25.0%); government R7x petroleum_royalties -532 (-25.0%). The
+      published line (government-32) is held within 5% by gov.r7x.g_sta.mining_royalties and each payer sector's
+      part within 25% of its key share by the Wave C payer bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C
+      OS(+MI) + CFC of the industry; government-23). E_NFPU's prior surplus (3,12,829) and E_NFPR's deficit
+      (-1,13,892) move the split toward public payers, up to the 25% band (without the payer bands, a trial run of
+      the Wave C fix moved telecom licence fees from public NFCs 3.1-fold). No clean source splits these rents by
+      payer.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 101108.704800
+    balanced: 118964.166752
+    why: >-
+      Explained (payer key). Cell G_STA <- E_NFPU: 1,01,109 -> 1,18,964 (17,855, +17.7%; 4 entries). Largest moves:
+      government R7x mining_royalties 15,634 (+25.0%); government R7x interest_states 1,326 (+5.0%); government R7x
+      petroleum_royalties 896 (+17.4%). The published line (government-32) is held within 5% by
+      gov.r7x.g_sta.mining_royalties and each payer sector's part within 25% of its key share by the Wave C payer
+      bands; the key is a proxy (NAS 2026 St 7.1A/7.1B/7.1C OS(+MI) + CFC of the industry; government-23). E_NFPU's
+      prior surplus (3,12,829) and E_NFPR's deficit (-1,13,892) move the split toward public payers, up to the 25%
+      band (without the payer bands, a trial run of the Wave C fix moved telecom licence fees from public NFCs
+      3.1-fold). No clean source splits these rents by payer.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication]
+  - row: G_STA
+    col: G_CEN
+    ref: "*"
+    component: "*"
+    prior: 1780540.949141
+    balanced: 1745667.212755
+    why: >-
+      Explained (a compensating move, bounded; government-34). Cell G_STA <- G_CEN: 17,80,541 -> 17,45,667 (-34,874,
+      -2.0%; 14 entries). Largest moves: government R2 css_outside_treasury -28,561 (-19.2%); fincorp R3
+      gsec_state_reserve_funds -3,965 (-21.4%); government R2 css_and_other -2,319 (-1.1%); fincorp R3 itb_14d -30
+      (-1.5%). The prior books the Centre's CSS money released outside State treasuries (Union Budget St 18 III CSS
+      revenue 4,25,296 less MH 3601.06 net releases 2,57,208 = 1,68,087; D2-8, government-6) as a G_STA receipt, but
+      no block writes the outside-treasury agencies' spending, so it adds to G_STA's 4,50,426 excess and the
+      Centre's -2,98,948 shortfall. The Wave C band gov.r2.css_outside_treasury (target 1,68,087, balanced 1,51,279,
+      at its lower edge) now holds the transfer (current + capital) within 10% of the published derivation (IGAS-2
+      'Others' grantees 1,73,699 is within 3.3%), so balancing could cut it only to the band edge (current + capital
+      1,51,279, -10%) instead of the -38.8% of the earlier run; the rest of the States' excess left through the
+      saving split (K3a).
+    sources: [cga_finance_accounts_aag, rbi_state_finances_study, union_budget_transfers_to_states]
+  - row: H_R1
+    col: G_STA
+    ref: "*"
+    component: "*"
+    prior: 41407.249291
+    balanced: 50777.484744
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). Cell H_R1 <- G_STA: 41,407 -> 50,777
+      (9,370, +22.6%; 5 entries). Largest moves: government R10 cash_schemes 8,971 (+29.8%); government R9a pensions
+      360 (+3.6%); fincorp R9c gpf_states 22 (+1.8%); fincorp R8a mf_lookthrough 9 (+7.6%); fincorp R8a gsec_direct
+      8 (+7.6%). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave C fix declared
+      gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current transfers, 10,05,630;
+      PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines at their published
+      totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up to the COFOG
+      ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30. Direction: RBI
+      State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM writes for them
+      (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes (2,06,387, grossed
+      up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now bounded by the
+      published NAS 4.2 total instead of rising 74% as before.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_R2
+    col: G_STA
+    ref: "*"
+    component: "*"
+    prior: 47765.088089
+    balanced: 57314.835954
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). Cell H_R2 <- G_STA: 47,765 -> 57,315
+      (9,550, +20.0%; 5 entries). Largest moves: government R10 cash_schemes 8,940 (+29.7%); government R9a pensions
+      549 (+3.6%); fincorp R9c gpf_states 34 (+1.8%); fincorp R8a mf_lookthrough 14 (+7.5%); fincorp R8a gsec_direct
+      12 (+7.5%). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave C fix declared
+      gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current transfers, 10,05,630;
+      PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines at their published
+      totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up to the COFOG
+      ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30. Direction: RBI
+      State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM writes for them
+      (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes (2,06,387, grossed
+      up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now bounded by the
+      published NAS 4.2 total instead of rising 74% as before.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_R3
+    col: G_STA
+    ref: "*"
+    component: "*"
+    prior: 54219.978715
+    balanced: 63953.963716
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). Cell H_R3 <- G_STA: 54,220 -> 63,954
+      (9,734, +18.0%; 5 entries). Largest moves: government R10 cash_schemes 8,913 (+29.6%); government R9a pensions
+      730 (+3.5%); fincorp R9c gpf_states 46 (+1.8%); fincorp R8a mf_lookthrough 24 (+7.4%); fincorp R8a gsec_direct
+      21 (+7.4%). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave C fix declared
+      gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current transfers, 10,05,630;
+      PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines at their published
+      totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up to the COFOG
+      ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30. Direction: RBI
+      State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM writes for them
+      (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes (2,06,387, grossed
+      up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now bounded by the
+      published NAS 4.2 total instead of rising 74% as before.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_R4
+    col: G_STA
+    ref: "*"
+    component: "*"
+    prior: 64361.901233
+    balanced: 74806.443528
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). Cell H_R4 <- G_STA: 64,362 -> 74,806
+      (10,445, +16.2%; 5 entries). Largest moves: government R10 cash_schemes 9,110 (+30.3%); government R9a
+      pensions 1,192 (+4.0%); fincorp R9c gpf_states 70 (+1.9%); fincorp R8a mf_lookthrough 39 (+8.0%); fincorp R8a
+      gsec_direct 34 (+8.0%). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave C fix
+      declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current transfers,
+      10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines at their
+      published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up to the
+      COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_R5
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 14127.023807
+    balanced: 15909.935027
+    why: >-
+      Explained (bounded; government-33, audit BS-6). Cell H_R5 <- E_NFPU: 14,127 -> 15,910 (1,783, +12.6%; 4
+      entries). Largest moves: government R9d railways 1,007 (+9.8%); fincorp R8a mf_lookthrough 595 (+30.0%);
+      government R9d posts 180 (+9.8%). R9d railways is the published pension outgo of the departmental enterprise
+      (Railways: AFS Railway Funds disbursements 59,801.66, assumption A-R9d-1; Posts: MH 3201.07 less NPS) split by
+      the public-sector wage key (low). The Wave C band gov.r9d.railways (target 59,802, balanced 65,782, at its
+      upper edge) holds the total within 10% of that figure (the earlier run nearly doubled it); the rise inside the
+      band (5,980) carries E_NFPU's prior surplus (3,12,829) and households' Z (-3,84,547).
+    sources: [mof_union_budget_2026_27, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: H_R5
+    col: G_STA
+    ref: "*"
+    component: "*"
+    prior: 117489.792818
+    balanced: 128516.859289
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). Cell H_R5 <- G_STA: 1,17,490 ->
+      1,28,517 (11,027, +9.4%; 5 entries). Largest moves: government R10 cash_schemes 8,653 (+28.8%); government R9a
+      pensions 2,150 (+2.8%); fincorp R9c gpf_states 153 (+1.6%); fincorp R8a mf_lookthrough 38 (+6.7%); fincorp R8a
+      gsec_direct 33 (+6.7%). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave C fix
+      declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current transfers,
+      10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines at their
+      published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up to the
+      COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_U1
+    col: G_STA
+    ref: "*"
+    component: "*"
+    prior: 34294.679045
+    balanced: 38711.397138
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). Cell H_U1 <- G_STA: 34,295 -> 38,711
+      (4,417, +12.9%; 5 entries). Largest moves: government R10 cash_schemes 3,746 (+29.3%); government R9a pensions
+      616 (+3.2%); fincorp R9c gpf_states 40 (+1.7%); fincorp R8a mf_lookthrough 8 (+7.2%); fincorp R8a gsec_direct
+      7 (+7.2%). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave C fix declared
+      gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current transfers, 10,05,630;
+      PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines at their published
+      totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up to the COFOG
+      ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30. Direction: RBI
+      State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM writes for them
+      (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes (2,06,387, grossed
+      up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now bounded by the
+      published NAS 4.2 total instead of rising 74% as before.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_U2
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 5553.470670
+    balanced: 6291.262166
+    why: >-
+      Explained (bounded; government-33, audit BS-6). Cell H_U2 <- E_NFPU: 5,553 -> 6,291 (738, +13.3%; 4 entries).
+      Largest moves: government R9d railways 401 (+10.1%); fincorp R8a mf_lookthrough 266 (+30.4%); government R9d
+      posts 72 (+10.1%). R9d railways is the published pension outgo of the departmental enterprise (Railways: AFS
+      Railway Funds disbursements 59,801.66, assumption A-R9d-1; Posts: MH 3201.07 less NPS) split by the
+      public-sector wage key (low). The Wave C band gov.r9d.railways (target 59,802, balanced 65,782, at its upper
+      edge) holds the total within 10% of that figure (the earlier run nearly doubled it); the rise inside the band
+      (5,980) carries E_NFPU's prior surplus (3,12,829) and households' Z (-3,84,547).
+    sources: [mof_union_budget_2026_27, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: H_U2
+    col: G_STA
+    ref: "*"
+    component: "*"
+    prior: 46513.229053
+    balanced: 51243.244103
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). Cell H_U2 <- G_STA: 46,513 -> 51,243
+      (4,730, +10.2%; 5 entries). Largest moves: government R10 cash_schemes 3,720 (+29.1%); government R9a pensions
+      915 (+3.1%); fincorp R9c gpf_states 61 (+1.7%); fincorp R8a mf_lookthrough 17 (+7.0%); fincorp R8a gsec_direct
+      15 (+7.0%). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave C fix declared
+      gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current transfers, 10,05,630;
+      PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines at their published
+      totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up to the COFOG
+      ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30. Direction: RBI
+      State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM writes for them
+      (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes (2,06,387, grossed
+      up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now bounded by the
+      published NAS 4.2 total instead of rising 74% as before.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_U4
+    col: G_STA
+    ref: "*"
+    component: "*"
+    prior: 78437.054184
+    balanced: 83673.901661
+    why: >-
+      Explained in direction; level unexplained (government-31, now bounded). Cell H_U4 <- G_STA: 78,437 -> 83,674
+      (5,237, +6.7%; 5 entries). Largest moves: government R10 cash_schemes 3,621 (+28.3%); government R9a pensions
+      1,406 (+2.5%); fincorp R9c gpf_states 107 (+1.6%); fincorp R8a mf_lookthrough 55 (+6.4%); fincorp R8a
+      gsec_direct 48 (+6.4%). The prior left G_STA 4,50,426 over and households Z -3,84,547 short. The Wave C fix
+      declared gov.cofog.current_transfers (R9a + R10 + R18 within 5% of NAS 2026 St 4.2 COFOG current transfers,
+      10,05,630; PM-KISAN moved from taxes' P10a to R10, government-30), and held the Union's R10 lines at their
+      published totals, R9a by its bands and R18 at IGAS-2. So the States' cash_schemes carries the room up to the
+      COFOG ceiling (10,55,912, +5.0%): 2,14,325 -> 2,77,356 over the ten groups, every group z 1.28-1.30.
+      Direction: RBI State Finances show the States' revenue expenditure about 3.3 lakh above the outlays the SAM
+      writes for them (government-27), and FC16 covers only 21 States' cash-transfer and social-security schemes
+      (2,06,387, grossed up). Level: no source supports the balanced figure (it is the FC16 figure +29%); it is now
+      bounded by the published NAS 4.2 total instead of rising 74% as before.
+    sources: [fc16_relevant_data, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_state_finances_study]
+  - row: H_U5
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 27523.177039
+    balanced: 31128.136860
+    why: >-
+      Explained (bounded; government-33, audit BS-6). Cell H_U5 <- E_NFPU: 27,523 -> 31,128 (3,605, +13.1%; 4
+      entries). Largest moves: government R9d railways 1,977 (+10.0%); fincorp R8a mf_lookthrough 1,275 (+30.3%);
+      government R9d posts 353 (+10.0%). R9d railways is the published pension outgo of the departmental enterprise
+      (Railways: AFS Railway Funds disbursements 59,801.66, assumption A-R9d-1; Posts: MH 3201.07 less NPS) split by
+      the public-sector wage key (low). The Wave C band gov.r9d.railways (target 59,802, balanced 65,782, at its
+      upper edge) holds the total within 10% of that figure (the earlier run nearly doubled it); the rise inside the
+      band (5,980) carries E_NFPU's prior surplus (3,12,829) and households' Z (-3,84,547).
+    sources: [mof_union_budget_2026_27, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: H_U5
+    col: G_STA
+    ref: "*"
+    component: "*"
+    prior: 180776.301898
+    balanced: 189367.769305
+    why: >-
+      Explained. Cell H_U5 <- G_STA: 1,80,776 -> 1,89,368 (8,591, +4.8%; 5 entries). Largest moves: government R9a
+      pensions 4,427 (+3.0%); government R10 cash_schemes 3,706 (+29.0%); fincorp R9c gpf_states 302 (+1.7%);
+      fincorp R8a mf_lookthrough 83 (+6.9%); fincorp R8a gsec_direct 73 (+6.9%). The largest mover is explained
+      under its entry: Government pensions are the published MH 2071 (Centre) and RBI SF (States) totals net of NPS,
+      held by gov.r9.centre (2%) and gov.r9.states (3%), split by the public-sector wage key (low); households' Z
+      (-3,84,547) moves them to the top of those bands.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_state_finances_study]
+  - row: K_GCEN
+    col: G_CEN
+    ref: "*"
+    component: "*"
+    prior: -340382.297682
+    balanced: -428507.229417
+    why: >-
+      Explained. Cell K_GCEN <- G_CEN: -3,39,090 -> -4,27,343 (-88,253, -25.9%; 2 entries). Largest moves:
+      government K3a saving_neg -87,298 (-25.3%); government K3a saving_pos -827 (-20.2%). The largest mover is
+      explained under its entry: The K3a priors split NAS 2026 St 1.9 GG saving (held by gov.k3.gg_saving) by the
+      treasury cash bridge (government-2, -25). The prior leaves G_CEN -2,98,948 (short) and G_STA 4,50,426 (long);
+      once the Wave C constraints held the published transfer totals (NAS 4.2 COFOG current transfers, R9d, R18, the
+      outside-treasury CSS money, the Union's R10 lines), the saving split became the main outlet: the Centre's
+      saving went -3,39,090 -> -4,27,343 and the States' 20,705 -> 1,08,959. Independent FSF evidence supports the
+      direction: capital_financial's k9_decomposition term nas_vs_fsf is 1,42,584 for the Centre (NAS-based saving
+      less GCF above its FSF net lending) and -1,97,779 for the States, so FSF puts the Centre lower and the States
+      higher by about those amounts; the balanced split moves part of the way. The saving_pos / saving_neg pair of
+      each government moves together (a sign-fragile net written as two entries).
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_GSTA
+    col: G_STA
+    ref: "*"
+    component: "*"
+    prior: 21997.915490
+    balanced: 110123.347225
+    why: >-
+      Explained. Cell K_GSTA <- G_STA: 20,705 -> 1,08,959 (88,253, +400.6%; 2 entries). Largest moves: government
+      K3a saving_pos 58,911 (+58.0%); government K3a saving_neg 29,215 (+36.7%). The largest mover is explained
+      under its entry: The K3a priors split NAS 2026 St 1.9 GG saving (held by gov.k3.gg_saving) by the treasury
+      cash bridge (government-2, -25). The prior leaves G_CEN -2,98,948 (short) and G_STA 4,50,426 (long); once the
+      Wave C constraints held the published transfer totals (NAS 4.2 COFOG current transfers, R9d, R18, the
+      outside-treasury CSS money, the Union's R10 lines), the saving split became the main outlet: the Centre's
+      saving went -3,39,090 -> -4,27,343 and the States' 20,705 -> 1,08,959. Independent FSF evidence supports the
+      direction: capital_financial's k9_decomposition term nas_vs_fsf is 1,42,584 for the Centre (NAS-based saving
+      less GCF above its FSF net lending) and -1,97,779 for the States, so FSF puts the Centre lower and the States
+      higher by about those amounts; the balanced split moves part of the way. The saving_pos / saving_neg pair of
+      each government moves together (a sign-fragile net written as two entries).
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_GSTA
+    col: K_GCEN
+    ref: "*"
+    component: "*"
+    prior: 143565.928666
+    balanced: 154996.709898
+    why: >-
+      Explained. Cell K_GSTA <- K_GCEN: 1,43,566 -> 1,54,997 (11,431, +8.0%; 2 entries). Largest moves: government
+      R2k css_outside_treasury 11,752 (+59.9%); government R2k igas2_capital -321 (-0.3%). The largest mover is
+      explained under its entry: The capital part of the outside-treasury CSS money is the IGAS-2 'Others' capital
+      share (0.1167) of the 1,68,087 total (assumption A-R2-1; the State + UT capital share 0.2717 would give about
+      45,675). The total is now held by gov.r2.css_outside_treasury at its lower edge, and inside it balancing
+      shifted money from the current to the capital part (G_STA surplus, K_GSTA taking it into capital): the capital
+      share is now 0.207, inside the range of the two IGAS-2 shares A-R2-1 cites.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, union_budget_transfers_to_states]

@@ -1,0 +1,378 @@
+{
+  "first": {
+    "h1": "India's economy, as money flowing between people, firms, governments and the world.",
+    "gdp": {
+      "title": "India's GDP in {year}",
+      "note": "Everything produced in the year, each thing counted once."
+    },
+    "hh": {
+      "title": "Each ₹100 of household income",
+      "parts": {
+        "consumption": "Goods and services",
+        "saving": "Saving",
+        "taxes": "Income tax",
+        "financial_services_and_interest": "Interest and finance",
+        "transfers_abroad": "Sent abroad",
+        "to_government": "Other to government",
+        "unallocated_residual": "Not allocated"
+      },
+      "taxNote": "GST and other taxes on purchases are inside goods and services.",
+      "residualNote": "“Not allocated” is a gap in the published accounts."
+    },
+    "storiesHeading": "Follow the money: three stories",
+    "heading": "India's economy in two numbers"
+  },
+  "section": {
+    "heading": "The map",
+    "intro": "Each band is money paid by one group to another in {year}. Its width is its size as a share of GDP, so wider means more. Select a group or a band to see what it is, how big it is and where the numbers come from.",
+    "introTs": "Each band is one of the largest flows we have a yearly series for. Its width is its share of that year's GDP, on the same scale as the complete map."
+  },
+  "framing": "Gross flows can exceed GDP. GDP counts only final output once; the map also shows the inputs firms buy from each other and the money that passes through financial markets.",
+  "help": "Arrow keys move between groups, Enter opens details, + and − zoom, L lists a group's flows.",
+  "helpTs": "Arrow keys move between groups, Enter opens details, L lists a group's flows.",
+  "stub": "{value} back to {node}",
+  "reversedMark": "reversed",
+  "reversedYear": "reversed this year",
+  "guard": "Too much detail to draw: {n} flows (the limit here is {max}). Collapse a group, or use the matrix view on the Data page.",
+  "link": {
+    "composed": "Money from {payer} to {receiver}",
+    "composedNeg": "Negative amounts from {payer} to {receiver}"
+  },
+  "aria": {
+    "diagram": "Flow map of India's economy, {year}: {nodes} groups and {links} flows",
+    "tsDiagram": "Top flows in {year}: {n} flows drawn",
+    "node": "{name}: {value} flows through it, {pct}",
+    "nodeExpandable": "{name}: {value} flows through it, {pct}. Press + to show its parts",
+    "tsNode": "{name}",
+    "expanded": "{name} opened into its parts. Focus is on the first part.",
+    "collapsed": "Parts folded back into {name}. Focus is on {name}.",
+    "link": "{payer} pays {receiver}: {label}, {value}, {pct}, {badge}",
+    "linkNeg": "{payer} pays {receiver} a negative amount: {label}, {value}, {pct}, {badge}. Drawn reversed",
+    "tsLink": "{label}, from {from} to {to}, {year}: {value}, {pct}. {status}",
+    "tsLinkReversed": "{label}, {year}: reversed this year, {value} from {to} to {from}, {pct}. {status}"
+  },
+  "controls": {
+    "view": "What to show",
+    "viewSam": "Complete picture ({year})",
+    "viewTs": "Top flows over time",
+    "detail": "Detail",
+    "simple": "Simple",
+    "full": "Full map",
+    "returnFlows": "Draw return and side flows as arcs",
+    "list": "View as list",
+    "table": "View as table",
+    "hideList": "Hide the list",
+    "fullDiagram": "Full diagram",
+    "hideDiagram": "Hide the full diagram",
+    "fullDiagramRegion": "Full flow map. Scroll in both directions.",
+    "crumbs": "Zoom",
+    "crumbAll": "All groups",
+    "collapse": "Collapse {name}",
+    "backToSimple": "Back to the simple map",
+    "notice": "Ignored part of the link: {message}"
+  },
+  "ts": {
+    "banner": "For {year} you are seeing the {n} largest flows we have annual series for. This view is not a complete, balanced account of the economy; that exists only for {samYear}.",
+    "seeComplete": "See the complete map for {year}",
+    "coverage": "{n} of {total} flows have data for {year}",
+    "announce": "{year}: {n} of {total} flows have data",
+    "noData": "No data for {year}",
+    "noDataNone": "Every drawn flow has data for this year.",
+    "internal": "Inside {node} (listed, not drawn)",
+    "otherFlows": "Other flows this year (not drawn)",
+    "allFlows": "All flows in {year}",
+    "base": "base {base}",
+    "reversedNote": "Reversed this year",
+    "noValue": "no data",
+    "reversed": {
+      "M10": "Inventories ran down this year: firms used up more stock than they added.",
+      "F32": "Government gross saving was negative this year (dissaving): current spending exceeded current income, and the capital account covered the gap.",
+      "F49": "Current-account surplus this year: India lent to the rest of the world instead of borrowing from it."
+    }
+  },
+  "slider": {
+    "label": "Year",
+    "select": "Choose a year",
+    "prev": "Previous year",
+    "next": "Next year",
+    "play": "Play",
+    "pause": "Pause",
+    "completeTick": "Complete map",
+    "markersHeading": "Breaks in the series this year ({n}, technical notes)",
+    "stage": "Estimate stage: {stages}",
+    "provisional": "provisional",
+    "legend": "Ticks mark years where a series changes base, source or definition. The green mark is {year}, the year with the complete map.",
+    "valuetext": "{year}"
+  },
+  "list": {
+    "caption": "Flows on the map now, largest first",
+    "payer": "Paid by",
+    "receiver": "Received by",
+    "value": "Value",
+    "pctGdp": "Share of GDP",
+    "labels": "How it was made",
+    "flags": "Notes",
+    "flow": "Flow",
+    "open": "Details",
+    "small": "{count} flows are too thin to draw; they are in the list and the table.",
+    "empty": "No flows.",
+    "groups": "Groups on the map",
+    "groupsIntro": "Select a group for its details; from there you can show its parts."
+  },
+  "mobile": {
+    "intro": "Tap a group to see the money flowing in and out of it.",
+    "moneyIn": "Money in",
+    "moneyOut": "Money out",
+    "through": "{value} flows through, {pct}",
+    "none": "None"
+  },
+  "panel": {
+    "label": "Details",
+    "close": "Close",
+    "expand": "Show its parts",
+    "linkKind": "Flow",
+    "nodeKind": "Group",
+    "seriesKind": "Series",
+    "value": "Value in {year}",
+    "valueNode": "Money flowing through in {year}",
+    "share": "{pct}",
+    "pairNote": "Only the whole pair is held to a published figure: together with the other part of this pair ({other}), the total matches it.",
+    "negativeNote": "This is a negative amount. It is drawn as a flow in the opposite direction.",
+    "explanation": "What it is",
+    "composed": "Mostly {items}.",
+    "composedItem": "{label} ({share})",
+    "trend": "Trend",
+    "values": "Values",
+    "related": "Related series (covers {covers} of this flow)",
+    "overlap": "Overlapping series ({inside} of it is in this flow; the rest is in {where})",
+    "noSeries": "No annual series; only the {samYear} SAM value exists.",
+    "samYearNote": "This is the {samYear} value from the balanced accounts. The slider is on {year}; the series below shows that year.",
+    "openSeries": "Open the series page",
+    "openFlow": "Open this flow's page",
+    "inside": "What is inside",
+    "insideIntro": "The entries that make up this flow, largest first.",
+    "insideMore": "and {n} more entries",
+    "entryRef": "Item",
+    "entryValue": "Value",
+    "entryLabel": "Label",
+    "entryMove": "Before → after balancing",
+    "entryWhy": "Why it moved",
+    "moved": "{prior} → {balanced} ({pct})",
+    "binding": "Held by: {list}",
+    "judgement": "Level set by a judgement band, not by data.",
+    "internal": "{value} circulates inside this group (not drawn).",
+    "smallLinks": "{count} flows are too thin to draw; they are in the list.",
+    "moneyIn": "Largest money in",
+    "moneyOut": "Largest money out",
+    "flags": "Notes on this figure",
+    "labelsLink": "How the labels work",
+    "estimatesLink": "What is estimated",
+    "loading": "Loading details…",
+    "notFound": "{id} is not on the map.",
+    "checkPass": "Checked against the {samYear} SAM: the series matches.",
+    "checkExplained": "Checked against the {samYear} SAM: the series differs, and the difference is explained. {explanation}",
+    "checkNone": "No check against the SAM for this series.",
+    "samPoint": "SAM {samYear}",
+    "linked": "Show the linked series (derived)",
+    "linkedNote": "The linked series rescales earlier years to the {base} base. It is derived, not published.",
+    "asShare": "Share of GDP",
+    "asValue": "₹ crore",
+    "chartLabel": "{label}: {first} to {last}",
+    "seriesStatus": "{status} in {year}",
+    "noDataYear": "No data for {year}.",
+    "discHeading": "What this discrepancy item is"
+  },
+  "series": {
+    "title": "{label}",
+    "kicker": "Annual series",
+    "intro": "{n} years of data, {first} to {last}.",
+    "table": "Every year",
+    "year": "Year",
+    "value": "Value",
+    "share": "Share of GDP",
+    "status": "Label",
+    "base": "Base year",
+    "stage": "Estimate stage",
+    "markers": "Breaks and changes in the series",
+    "noMarkers": "No breaks are recorded for this series.",
+    "check": "Check against the balanced accounts",
+    "onMap": "See it on the map",
+    "linkRefused": "No linked series: {reason}",
+    "alts": "Other versions",
+    "alt_fc16_definition": "Finance Commission definition",
+    "alt_proxy_total_portfolio": "Proxy: total portfolio flows",
+    "sources": "Sources"
+  },
+  "flow": {
+    "kicker": "A flow in the {year} map",
+    "onMap": "See it on the map",
+    "preset": "Shown in the {preset} map",
+    "simple": "simple",
+    "full": "full"
+  },
+  "stubSame": "{value} to {node}",
+  "disc": {
+    "D1": "Household residual: the gap the national accounts publish between households' income and what they spend and save. The total is derived from published national-accounts figures; how it is split across household groups is estimated.",
+    "D2": "A reconciliation item between the national accounts and the balance of payments (the CIF adjustment on imports of services). It is not money paid abroad.",
+    "D3_valuables": "Derived: purchases of valuables, such as gold, that the national accounts do not assign to any sector.",
+    "D3_si_errors": "The rest of the saving-investment errors and omissions, after the valuables part: spread over companies and financial firms in proportion to their investment (estimated). The whole residual is derived from published national-accounts figures.",
+    "D4": "The GDP expenditure discrepancy. It is zero in {year}."
+  },
+  "hero": {
+    "h1": "Every rupee in India's economy, and who pays it to whom.",
+    "sub": "One connected map of the whole economy in {year}, built from official statistics, where every number says how it was made.",
+    "proof": {
+      "accounts": "accounts, from households to the Reserve Bank",
+      "flows": "money flows, each with its source",
+      "sources": "official sources",
+      "years": "years of history, {first} to {last}",
+      "balanced": "Every account adds up to the rupee.",
+      "official": "of the money on the map comes straight from official figures; the rest is labelled as derived, estimated or set by balancing."
+    },
+    "honest": "Read what it can't tell you yet",
+    "explore": "Explore the full map",
+    "label": "Proof that this is the whole economy",
+    "proofShort": {
+      "accounts": "accounts",
+      "flows": "money flows",
+      "sources": "official sources",
+      "years": "years of history"
+    }
+  },
+  "tour": {
+    "heading": "Follow a rupee",
+    "pick": "Pick a rupee to follow",
+    "overview": "The whole economy",
+    "chips": {
+      "gst-rupee": "A GST rupee",
+      "remittance-dubai": "A rupee sent from Dubai",
+      "deficit-funding": "A borrowed rupee"
+    },
+    "overviewText": "This is all of it: every payment between producers, households, companies, banks, governments and the rest of the world. Wider bands carry more money. Pick a rupee above and watch where it goes.",
+    "prev": "Back",
+    "next": "Next",
+    "start": "Start",
+    "position": "Stop {n} of {total}",
+    "full": "Read the whole story",
+    "explore": "Explore every flow yourself",
+    "mapLabel": "Map: {title}",
+    "announce": "{chip}, stop {n} of {total}: {title}",
+    "gst-rupee": {
+      "total": {
+        "before": "Every purchase carries GST. In a year it adds up to ",
+        "middle": ", or ",
+        "after": "."
+      },
+      "till": {
+        "before": "Households buying for their own use pay ",
+        "after": " of every ₹100 of GST: the tax ends with the person who consumes."
+      },
+      "lands": {
+        "before": "It lands first with the Centre (",
+        "middle": " of every ₹100) and the States (",
+        "after": ")."
+      },
+      "onwards": {
+        "before": "The Centre passes part of its share on. In the end the States keep ",
+        "after": " of every ₹100 of GST."
+      },
+      "spend": {
+        "before": "Pooled with other money, it pays for public services (",
+        "middle": " of every ₹100 governments spend) and interest on past borrowing (",
+        "after": ")."
+      }
+    },
+    "remittance-dubai": {
+      "arrive": {
+        "before": "Money sent home from abroad came to ",
+        "middle": ", or ",
+        "after": ": one of the largest flows into Indian households."
+      },
+      "uae": {
+        "before": "About ",
+        "middle": " of it comes from the UAE. Only the United States sends more: ",
+        "after": "."
+      },
+      "who": {
+        "before": "Towns and cities receive ",
+        "middle": " of every ₹100, villages ",
+        "after": "."
+      },
+      "use": {
+        "before": "Households spend ",
+        "middle": " of every ₹100 they pay out and save ",
+        "after": "."
+      },
+      "buys": {
+        "before": "Of every ₹100 spent in the shops, ",
+        "middle": " is GST and ",
+        "after": " pays for imports. Most of the rest stays with Indian producers."
+      }
+    },
+    "deficit-funding": {
+      "saving": {
+        "before": "The Centre spent more on day-to-day items than it earned: its gross saving was ",
+        "after": "."
+      },
+      "gap": {
+        "before": "Add investment, and the Centre and the States together had to borrow ",
+        "middle": ", or ",
+        "after": "."
+      },
+      "buyers": {
+        "before": "Of every ₹100 of new government bonds, banks bought ",
+        "middle": " and insurers and pension funds ",
+        "after": "."
+      },
+      "households": {
+        "before": "Where did the banks get it? Largely from households, who put ",
+        "after": " into deposits."
+      },
+      "cost": {
+        "before": "Borrowing has a cost: the Centre paid ",
+        "middle": " in interest, ",
+        "after": "."
+      }
+    }
+  },
+  "guess": {
+    "heading": "Guess, then see",
+    "intro": "Most people get these wrong. Move the slider, then check your answer against the model.",
+    "unitPer100": "₹ of every ₹100",
+    "unitPct": "% of GDP",
+    "yourGuess": "Your guess",
+    "check": "Check my guess",
+    "answer": "The answer",
+    "spot": "Spot on.",
+    "close": "Close.",
+    "far": "Not quite.",
+    "off": "You were {diff} away.",
+    "see": "See it on the map",
+    "story": "Read the story behind it",
+    "share": "Challenge a friend",
+    "copied": "Link copied",
+    "shareText": "I guessed {guess}. Can you do better?",
+    "next": "Next question",
+    "again": "Play again",
+    "score": "{n} of {total} close or spot on",
+    "friend": "A friend guessed {guess}. What's your guess?",
+    "progress": "Question {n} of {total}",
+    "q": {
+      "gst-states": "Of every ₹100 of GST collected, how much do the States keep to spend?",
+      "gst-households": "Of every ₹100 of GST, how much do households pay on what they buy for themselves?",
+      "bonds-banks": "Of every ₹100 of new government bonds, how much did banks buy?",
+      "bonds-households": "Of every ₹100 of new government bonds, how much did households buy directly?",
+      "remit-gdp": "Money sent home by Indians abroad: how big is it, as a share of GDP?",
+      "interest-gdp": "How much did the Centre pay in interest, as a share of GDP?"
+    },
+    "why": {
+      "gst-states": "GST lands with the Centre and the States, and the Centre then passes part of its share on.",
+      "gst-households": "Firms claim back most of the GST on their inputs, so the tax ends with final buyers.",
+      "bonds-banks": "Banks hold government bonds as safe assets against their deposits.",
+      "bonds-households": "Households lend to the government mostly indirectly: through deposits, insurance, pensions and small savings.",
+      "remit-gdp": "Millions of small transfers add up to one of the largest flows into Indian households.",
+      "interest-gdp": "Interest on past borrowing is one of the government's largest bills."
+    },
+    "home": "See the whole map of India's economy"
+  }
+}

@@ -1,0 +1,26 @@
+# Provenance records whose method applies an old-base (NAS 2024 vintage, 2022-23) sequence-of-accounts
+# structure to new-base 2023-24 totals (DECISIONS D2-21; PLAN s.3.4.3). Entries with one of these prov ids get
+# flag `old_base_structure` (bit 8): "Estimated with the old-base (2022-23 NAS) structure".
+# No transitive walk: a record is listed only when its own method applies the old-base structure.
+# Each item records why it is in scope. V2 reviews this list.
+old_base_scope:
+  - prov_id: sam_fincorp:9262b50cc877
+    reason: Method cites D2-21 (old-base sequence-of-accounts structure as prior for property income).
+  - prov_id: sam_fincorp:9ea6c4e525b0
+    reason: Method cites D2-21.
+  - prov_id: sam_fincorp:c1a4fab1d145
+    reason: Method cites D2-21.
+  - prov_id: sam_fincorp:f6cf865ac4ad
+    reason: Method cites D2-21.
+  - prov_id: sam_taxes:0ee0552babeb
+    reason: >-
+      Reviewed (U1, 2026-10-02). T4a corporation tax by paying sector: the corporate prior is split across public
+      NFC, private NFC, public FC and private FC by old-base NAS 2022-23 D5 shares (oldbase_soa_s2_1/s2_2/s3_1/s3_2,
+      NAS 2024 vintage) applied to the new-base 2023-24 total. That is the D2-21 pattern (old-base structure as a
+      prior for a distributive flow by sector), although the method cites D2-11/D2-17, so it is in scope. The FC
+      sub-sector parts are bottom-up from IRDAI/RBI, but they share the record, so the whole record is flagged.
+  - prov_id: sam_taxes:e2b1eea55e10
+    reason: >-
+      Reviewed (U1, 2026-10-02). T3 income tax of quasi-corporations: the household share of MH 0021 is the
+      old-base NAS 2022-23 household D5 (oldbase_soa_s5_0) over MH 0021 2022-23, applied to 2023-24 collections:
+      an old-base sequence-of-accounts ratio used as the prior, so it is in scope.

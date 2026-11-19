@@ -1,0 +1,31 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 150308,
+  "content_type": "text/html; charset=utf-8",
+  "final_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63625",
+  "key": "rbi_ites_survey/ites_survey_2025_26.html",
+  "method": "GET",
+  "name": "ites_survey_2025_26.html",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "text/html; charset=utf-8"
+  },
+  "retrieved_at": "2026-09-29T10:37:40Z",
+  "sha256": "61543c1308190a49f751c7f991a7430298e6616e79b4304e6755f5e6e74d80d7",
+  "source_id": "rbi_ites_survey",
+  "status": 200,
+  "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63625"
+}

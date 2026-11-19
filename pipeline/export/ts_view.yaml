@@ -1,0 +1,62 @@
+# The top-flows board (docs/phase3/PLAN.md s.2.1 item 6, s.3.7.3). Owner: U1.
+# A ribbon joins two different ts_nodes (pipeline/export/hierarchy.yaml); money flows from `from` to `to`.
+# The exporter checks the five rules of s.3.7.3 for every ribbon and fails the export on any breach:
+#  1. every SAM entry the flow measures maps (payer -> receiver, through ts_nodes) to exactly from -> to;
+#  2. no two ribbons share a SAM entry;
+#  3. the main series has >= 10 periods;
+#  4. a flow with any negative year (value x display_sign < 0) is `reversible` with a `reversed_text_key`
+#     (a message key in web/messages/en/map.json, U3); F11, M09 and M11 are never ribbons;
+#  5. the 2023-24 SAM check is pass or explained.
+# `internal`: flows whose SAM entries all fall inside one ts node, listed in that node's panel.
+# `rejected`: every other flow, with the reason it is not drawn (it still appears in the board's list view).
+
+ribbons:
+  - {flow: F01, from: HH, to: PRODUCERS}           # household consumption (PFCE)
+  - {flow: F02, from: GOV, to: PRODUCERS}          # government consumption (GFCE)
+  - {flow: F03, from: SI, to: PRODUCERS}           # gross fixed capital formation
+  - {flow: M10, from: SI, to: PRODUCERS, reversible: true, reversed_text_key: ts.reversed.M10}  # inventories ran down
+  - {flow: M03, from: ROW, to: PRODUCERS}          # exports of goods and services
+  - {flow: F07, from: PRODUCERS, to: ROW}          # imports of goods (2011-12 on)
+  - {flow: F09, from: PRODUCERS, to: FACT}         # compensation of employees
+  - {flow: F10, from: PRODUCERS, to: FACT}         # operating surplus and mixed income
+  - {flow: M07, from: PRODUCERS, to: GOV}          # net taxes on products (taxes less product subsidies)
+  - {flow: F35, from: HH, to: SI}                  # household gross saving
+  - {flow: F45, from: NFC, to: SI}                 # private NFC gross saving
+  - {flow: F47, from: FC, to: SI}                  # financial corporations' gross saving
+  - {flow: F32, from: GOV, to: SI, reversible: true, reversed_text_key: ts.reversed.F32}  # government dissaving
+  - {flow: F49, from: ROW, to: SI, reversible: true, reversed_text_key: ts.reversed.F49}  # current-account surplus years
+  - {flow: F43, from: ROW, to: HH}                 # remittances received
+  - {flow: F44, from: HH, to: ROW}                 # private transfers sent abroad
+
+internal:
+  GOV: [F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24, M08, M14]
+  SI: [F34, F36, F37, F39, F40, F41, F42, F48, F51, F52, F53, F54, M09]
+
+rejected:
+  - {flow: F04, reason: "Valuables: passes the rules but is left to the list view so the board draws only the main investment flows (F03, M10)"}
+  - {flow: F05, reason: "Exports of goods: part of M03, which is drawn (rule 2)"}
+  - {flow: F06, reason: "Exports of services: part of M03, which is drawn (rule 2)"}
+  - {flow: F08, reason: "Imports of services: 3 periods (rule 3)"}
+  - {flow: F11, reason: "Net primary income from abroad: a net of mixed-sign content (rule 4) spanning several node pairs (rule 1)"}
+  - {flow: F12, reason: "Taxes on products: part of M07, which is drawn (rule 2)"}
+  - {flow: F13, reason: "Product subsidies: part of M07, which is drawn (rule 2)"}
+  - {flow: F25, reason: "Interest paid by the Centre: several node pairs (rule 1) and 2 periods (rule 3)"}
+  - {flow: F26, reason: "Interest paid by the States: several node pairs (rule 1)"}
+  - {flow: F27, reason: "Pensions paid by the Centre: 2 periods (rule 3)"}
+  - {flow: F28, reason: "Pensions paid by the States: passes the rules but is left to the list view (the Centre's pensions have only 2 periods, so a States-only ribbon would mislead)"}
+  - {flow: F29, reason: "Food subsidy: inside GFCE (F02, drawn; rule 2) and 3 periods (rule 3)"}
+  - {flow: F30, reason: "Fertiliser subsidy: part of M07 (rule 2) and 7 periods (rule 3)"}
+  - {flow: F31, reason: "RBI surplus to the Centre: 4 periods (rule 3)"}
+  - {flow: F33, reason: "Government GFCF: part of F03, which is drawn (rule 2)"}
+  - {flow: F38, reason: "Household physical saving: two node pairs (rule 1) and part of F03 (rule 2)"}
+  - {flow: F46, reason: "Private NFC GFCF: part of F03, which is drawn (rule 2)"}
+  - {flow: F50, reason: "Investment income paid abroad: several node pairs (rule 1)"}
+  - {flow: M01, reason: "GDP: the scale of the board, not a flow between two nodes (rule 1)"}
+  - {flow: M02, reason: "GVA: overlaps F09 and F10 (rule 2) and spans two node pairs (rule 1)"}
+  - {flow: M04, reason: "Imports of goods and services (CIF-adjusted): 4 periods (rule 3)"}
+  - {flow: M05, reason: "CIF adjustment on services imports: 3 periods (rule 3); a reconciliation item, not money paid abroad"}
+  - {flow: M06, reason: "Imports, BoP basis: spans two node pairs (rule 1) and overlaps F07 (rule 2)"}
+  - {flow: M11, reason: "Net current transfers from abroad: a net of mixed-sign content (rule 4); F43 and F44 are drawn instead"}
+  - {flow: M12, reason: "Household residual: 3 periods (rule 3)"}
+  - {flow: M13, reason: "Household gross disposable income: a balancing item spanning three node pairs (rule 1)"}
+  - {flow: M15, reason: "General government property income paid: no SAM check (rule 5)"}

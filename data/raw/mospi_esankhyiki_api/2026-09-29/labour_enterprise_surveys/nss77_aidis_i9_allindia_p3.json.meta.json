@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 28584,
+  "content_type": "application/json; charset=utf-8",
+  "final_url": "https://api.mospi.gov.in/api/nss-77/getNss77AidisRecords?indicator_code=9&survey_code=1&state_code=37&limit=100&page=3",
+  "key": "mospi_esankhyiki_api/nss77_aidis_i9_allindia_p3.json",
+  "method": "GET",
+  "name": "nss77_aidis_i9_allindia_p3.json",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "28584",
+    "content-type": "application/json; charset=utf-8",
+    "etag": "W/\"6fa8-yIQ7nSirQd10OqDV+umvcCQgqVM\"",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T14:32:26Z",
+  "sha256": "552161d7c73dc5dc84d1d53aaeb1ebc2b12a64f72b7eb11fec7374a6f1bae6b9",
+  "source_id": "mospi_esankhyiki_api",
+  "status": 200,
+  "url": "https://api.mospi.gov.in/api/nss-77/getNss77AidisRecords?indicator_code=9&survey_code=1&state_code=37&limit=100&page=3"
+}

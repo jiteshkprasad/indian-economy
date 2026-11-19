@@ -1,0 +1,335 @@
+# Pinned raw files for one ingest unit. Written by `python -m pipeline fetch`; do not edit by hand.
+# key '<source_id>/<name>' -> the exact bytes (sha256) every build uses. `history` keeps superseded pins.
+pins:
+  cga_finance_accounts_aag/fa2324_cag_certificate.pdf:
+    body_sha256: null
+    bytes: 321243
+    method: GET
+    path: data/raw/cga_finance_accounts_aag/2026-09-29/union_fiscal/fa2324_cag_certificate.pdf
+    retrieved_at: '2026-09-29T10:52:21Z'
+    sha256: b35df94c9d0a6f2a7f6b120f526ea2b763f9d66a02d2f9743c6b1d353fd97d07
+    url: https://cga.gov.in//writereaddata/file/Fin20232024CAGCert.pdf
+  cga_finance_accounts_aag/fa2324_statement14.pdf:
+    body_sha256: null
+    bytes: 505837
+    method: GET
+    path: data/raw/cga_finance_accounts_aag/2026-09-29/union_fiscal/fa2324_statement14.pdf
+    retrieved_at: '2026-09-29T14:33:39Z'
+    sha256: 2f327b3ddf31f74c33f5bf2cc3e1c7e442c7899cf520d252fde8212f3a49335e
+    url: https://cga.gov.in//writereaddata/file/Fin20232024Statement14.pdf
+  cga_finance_accounts_aag/fa2324_statement8.pdf:
+    body_sha256: null
+    bytes: 1480938
+    method: GET
+    path: data/raw/cga_finance_accounts_aag/2026-09-29/union_fiscal/fa2324_statement8.pdf
+    retrieved_at: '2026-09-29T10:52:16Z'
+    sha256: accdcd26aeadf0c745528f2622c6db5ecb4201b760faf804219ba28c8e075056
+    url: https://cga.gov.in//writereaddata/file/Fin20232024Statement8.pdf
+  cga_finance_accounts_aag/fa2324_statement9.pdf:
+    body_sha256: null
+    bytes: 3480677
+    method: GET
+    path: data/raw/cga_finance_accounts_aag/2026-09-29/union_fiscal/fa2324_statement9.pdf
+    retrieved_at: '2026-09-29T10:52:19Z'
+    sha256: 460e9356105bf9601756186307f9815af4613ed0e46e477b3275ff6a5ae585a2
+    url: https://cga.gov.in//writereaddata/file/Fin20232024Statement9.pdf
+  cga_finance_accounts_aag/fa2324_statement9_appendix.pdf:
+    body_sha256: null
+    bytes: 311525
+    method: GET
+    path: data/raw/cga_finance_accounts_aag/2026-09-29/union_fiscal/fa2324_statement9_appendix.pdf
+    retrieved_at: '2026-09-29T14:33:41Z'
+    sha256: a3935088e699a00636c86148f7b4ad41629a7f379ce1889f435ef7d1e17bc0c2
+    url: https://cga.gov.in//writereaddata/file/Fin20232024Statement9Appendix.pdf
+  mof_union_budget_2026_27/b2425_allafs.xlsx:
+    body_sha256: null
+    bytes: 101398
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2425_allafs.xlsx
+    retrieved_at: '2026-09-29T10:52:26Z'
+    sha256: 51e10d98d477c48682484d4818f1115cb92611143f8b92563ec005f2ba009ca0
+    url: https://www.indiabudget.gov.in/budget2024-25/doc/AFS/allafs.xlsx
+  mof_union_budget_2026_27/b2425_ntr.xlsx:
+    body_sha256: null
+    bytes: 27577
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2425_ntr.xlsx
+    retrieved_at: '2026-09-29T10:52:23Z'
+    sha256: c0c2dd59170dd93214ccb9221ee4de013f243bf53499b3f497bcfdd1f2cbd587
+    url: https://www.indiabudget.gov.in/budget2024-25/doc/rec/ntr.xlsx
+  mof_union_budget_2026_27/b2425_stat1.xlsx:
+    body_sha256: null
+    bytes: 12491
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2425_stat1.xlsx
+    retrieved_at: '2026-09-29T10:52:28Z'
+    sha256: b8e9a40144ffb7e9486452474e3311fd10ff1fd41f9dbcf106cf4e915d533c42
+    url: https://www.indiabudget.gov.in/budget2024-25/doc/eb/stat1.xlsx
+  mof_union_budget_2026_27/b2425_stat20.xlsx:
+    body_sha256: null
+    bytes: 13750
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2425_stat20.xlsx
+    retrieved_at: '2026-09-29T10:52:34Z'
+    sha256: 833edd2cd2a6e679f5b432d60c1ba86dd0073d5aa77d1e244c70df58ae3544ba
+    url: https://www.indiabudget.gov.in/budget2024-25/doc/eb/stat20.xlsx
+  mof_union_budget_2026_27/b2425_stat21.xlsx:
+    body_sha256: null
+    bytes: 29895
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2425_stat21.xlsx
+    retrieved_at: '2026-09-29T10:52:36Z'
+    sha256: 178f8437d5cbc038a9fa33456b3a5fef916c0ff019f0e19fc80062ea7a76d6c3
+    url: https://www.indiabudget.gov.in/budget2024-25/doc/eb/stat21.xlsx
+  mof_union_budget_2026_27/b2425_stat6.xlsx:
+    body_sha256: null
+    bytes: 276693
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2425_stat6.xlsx
+    retrieved_at: '2026-09-29T14:33:41Z'
+    sha256: d31b7551b3686865a21826c21eccc5460e176c2da76a06fdaeebc4d49769d4d6
+    url: https://www.indiabudget.gov.in/budget2024-25/doc/eb/stat6.xlsx
+  mof_union_budget_2026_27/b2425_stat7.xlsx:
+    body_sha256: null
+    bytes: 13992
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2425_stat7.xlsx
+    retrieved_at: '2026-09-29T10:52:30Z'
+    sha256: 2a5a96258ebc130834de202a10bb7b2cbe12e6e27215c14c97f0381ae8a6229d
+    url: https://www.indiabudget.gov.in/budget2024-25/doc/eb/stat7.xlsx
+  mof_union_budget_2026_27/b2425_tr.xlsx:
+    body_sha256: null
+    bytes: 22511
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2425_tr.xlsx
+    retrieved_at: '2026-09-29T10:52:21Z'
+    sha256: 3a07c4f93a65161b1490ec9ea748c21fba984e69a642a899c38bbd6a238f5ce5
+    url: https://www.indiabudget.gov.in/budget2024-25/doc/rec/tr.xlsx
+  mof_union_budget_2026_27/b2526_allafs.xlsx:
+    body_sha256: null
+    bytes: 102468
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2526_allafs.xlsx
+    retrieved_at: '2026-09-29T10:52:42Z'
+    sha256: 9b23060fb5aa3b225142937130836397b310934be9dd4014939cfcd9b68ca829
+    url: https://www.indiabudget.gov.in/budget2025-26/doc/AFS/allafs.xlsx
+  mof_union_budget_2026_27/b2526_annex8.pdf:
+    body_sha256: null
+    bytes: 388040
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2526_annex8.pdf
+    retrieved_at: '2026-09-29T10:52:55Z'
+    sha256: 27cae0ea8be5a23c085b530653d7ad9e7144c1288219422c2bbd25da8336f601
+    url: https://www.indiabudget.gov.in/budget2025-26/doc/rec/annex8.pdf
+  mof_union_budget_2026_27/b2526_ntr.pdf:
+    body_sha256: null
+    bytes: 915057
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2526_ntr.pdf
+    retrieved_at: '2026-09-29T10:52:40Z'
+    sha256: 9e00f6a177a21f7d8441d05b34b757bd8b6a469f52181be47c3c8aee26748772
+    url: https://www.indiabudget.gov.in/budget2025-26/doc/rec/ntr.pdf
+  mof_union_budget_2026_27/b2526_stat1.xlsx:
+    body_sha256: null
+    bytes: 8810
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2526_stat1.xlsx
+    retrieved_at: '2026-09-29T10:52:44Z'
+    sha256: 10487038253e80578ed89a23774e0fe9029298542fdd491cd36d6bd8966b2b3c
+    url: https://www.indiabudget.gov.in/budget2025-26/doc/eb/stat1.xlsx
+  mof_union_budget_2026_27/b2526_stat20.xlsx:
+    body_sha256: null
+    bytes: 10505
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2526_stat20.xlsx
+    retrieved_at: '2026-09-29T10:52:51Z'
+    sha256: 5ee9a710274712fb3fa5dbb448cb26498825b3c899daf83836f4efde30e91f58
+    url: https://www.indiabudget.gov.in/budget2025-26/doc/eb/stat20.xlsx
+  mof_union_budget_2026_27/b2526_stat21.xlsx:
+    body_sha256: null
+    bytes: 25399
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2526_stat21.xlsx
+    retrieved_at: '2026-09-29T10:52:53Z'
+    sha256: 25d4991711788af5c502c2a0cea326ad83906cac4765d8ec37bdab8c5ca7dbca
+    url: https://www.indiabudget.gov.in/budget2025-26/doc/eb/stat21.xlsx
+  mof_union_budget_2026_27/b2526_stat6.xlsx:
+    body_sha256: null
+    bytes: 57499
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2526_stat6.xlsx
+    retrieved_at: '2026-09-29T14:33:43Z'
+    sha256: 3b9f09895a10ea24d73365a8c9eb876d715b093f03ee88155446dd14e698aa45
+    url: https://www.indiabudget.gov.in/budget2025-26/doc/eb/stat6.xlsx
+  mof_union_budget_2026_27/b2526_stat7.xlsx:
+    body_sha256: null
+    bytes: 15371
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2526_stat7.xlsx
+    retrieved_at: '2026-09-29T10:52:47Z'
+    sha256: 0cef83487b39fb04ad840f83b6ff27105acf41f1b43b748138654c8448b86603
+    url: https://www.indiabudget.gov.in/budget2025-26/doc/eb/stat7.xlsx
+  mof_union_budget_2026_27/b2526_tr.pdf:
+    body_sha256: null
+    bytes: 899829
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2526_tr.pdf
+    retrieved_at: '2026-09-29T10:52:38Z'
+    sha256: cf5d1e928c57b8cddf7d91e35f739efea79b1b0521365b9588ae3e52a107baf5
+    url: https://www.indiabudget.gov.in/budget2025-26/doc/rec/tr.pdf
+  mof_union_budget_2026_27/b2627_annex8.pdf:
+    body_sha256: null
+    bytes: 817371
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2627_annex8.pdf
+    retrieved_at: '2026-09-29T10:53:12Z'
+    sha256: b26b4e0f2879e6a6d137a3e32421db8757fcf091c576d0a356a994c28239d86c
+    url: https://www.indiabudget.gov.in/doc/rec/annex8.pdf
+  mof_union_budget_2026_27/b2627_ntr.xlsx:
+    body_sha256: null
+    bytes: 27087
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2627_ntr.xlsx
+    retrieved_at: '2026-09-29T10:52:59Z'
+    sha256: 7f62b9c8e91a3c3c2be4fcdaddf8e20c2e335979b05e2b8f881a4e57ff75b743
+    url: https://www.indiabudget.gov.in/doc/rec/ntr.xlsx
+  mof_union_budget_2026_27/b2627_stat1.xlsx:
+    body_sha256: null
+    bytes: 8823
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2627_stat1.xlsx
+    retrieved_at: '2026-09-29T10:53:01Z'
+    sha256: 95df1a725ec2c12f8abf9e19b7795bc8c8d54d811da8dd718e075e7c07b7c26c
+    url: https://www.indiabudget.gov.in/doc/eb/stat1.xlsx
+  mof_union_budget_2026_27/b2627_stat20.xlsx:
+    body_sha256: null
+    bytes: 10525
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2627_stat20.xlsx
+    retrieved_at: '2026-09-29T10:53:07Z'
+    sha256: 96e29a8f4cafef6c3ea17dc311e6cb0234e7ba6ec5315e22ba559bfeb0d42248
+    url: https://www.indiabudget.gov.in/doc/eb/stat20.xlsx
+  mof_union_budget_2026_27/b2627_stat21.xlsx:
+    body_sha256: null
+    bytes: 25070
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2627_stat21.xlsx
+    retrieved_at: '2026-09-29T10:53:10Z'
+    sha256: 7196e2fec517efa379cec69642a4a885cb4b1e41f25f83b4b7fb0975b0c08b9e
+    url: https://www.indiabudget.gov.in/doc/eb/stat21.xlsx
+  mof_union_budget_2026_27/b2627_stat6.xlsx:
+    body_sha256: null
+    bytes: 55806
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2627_stat6.xlsx
+    retrieved_at: '2026-09-29T14:33:45Z'
+    sha256: e3460873760b86a2d2543e30c2af06afaf568cb01a3238ee00360735adac2e4c
+    url: https://www.indiabudget.gov.in/doc/eb/stat6.xlsx
+  mof_union_budget_2026_27/b2627_stat7.xlsx:
+    body_sha256: null
+    bytes: 16955
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2627_stat7.xlsx
+    retrieved_at: '2026-09-29T10:53:03Z'
+    sha256: ee29294ebcdb22a2a5bc1cbc6e16d434ef42060054706032e92fa21ab4a47365
+    url: https://www.indiabudget.gov.in/doc/eb/stat7.xlsx
+  mof_union_budget_2026_27/b2627_tr.xlsx:
+    body_sha256: null
+    bytes: 22026
+    method: GET
+    path: data/raw/mof_union_budget_2026_27/2026-09-29/union_fiscal/b2627_tr.xlsx
+    retrieved_at: '2026-09-29T10:52:57Z'
+    sha256: 58e939762c008c993fdbb36e369ba22d24879a6cdb6025908d57de486c6c1a0f
+    url: https://www.indiabudget.gov.in/doc/rec/tr.xlsx
+  nsi_small_savings_collections/nsi_collections_id152.html:
+    body_sha256: null
+    bytes: 150148
+    method: GET
+    path: data/raw/nsi_small_savings_collections/2026-09-29/union_fiscal/nsi_collections_id152.html
+    retrieved_at: '2026-09-29T10:54:33Z'
+    sha256: 3a6570ebe32184ce4f3670f3a8cfe9a977b93c34582228a07f65afecf5ebcfc3
+    url: https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=152
+  pib_gst_monthly_releases/pib_allrel_form.html:
+    body_sha256: null
+    bytes: 167994
+    method: GET
+    path: data/raw/pib_gst_monthly_releases/2026-09-29/union_fiscal/pib_allrel_form.html
+    retrieved_at: '2026-09-29T14:33:46Z'
+    sha256: 6813f03f1c6b3d5a54b46c6e54465c94283c95c8cbafdbc12df77bf51fa24b30
+    url: https://www.pib.gov.in/allRel.aspx?reg=3&lang=1
+  pib_gst_monthly_releases/pib_allrel_mof_2023-05-01.html:
+    body_sha256: 69d40ef2a5e4c4121f9a9b18b6887df395e16e3dbccbacdd485036ab5dd4f6ab
+    body_type: form
+    bytes: 134806
+    method: POST
+    path: data/raw/pib_gst_monthly_releases/2026-09-29/union_fiscal/pib_allrel_mof_2023-05-01.html
+    retrieved_at: '2026-09-29T14:33:49Z'
+    sha256: 5d1acc120060a4b9464a41656cd25dfcdb2058107f09b50b651620c1f9594f69
+    url: https://www.pib.gov.in/allRel.aspx?reg=3&lang=1
+  pib_gst_monthly_releases/pib_allrel_mof_2023-06-01.html:
+    body_sha256: a0cea96a1f9613f1a40a7d055b6b40c3d5e420ce4cd99664e14786a5d09651a2
+    body_type: form
+    bytes: 134951
+    method: POST
+    path: data/raw/pib_gst_monthly_releases/2026-09-29/union_fiscal/pib_allrel_mof_2023-06-01.html
+    retrieved_at: '2026-09-29T14:33:55Z'
+    sha256: 647cb8bb9d6c622972264a43068309ea9c165a3fe2f1fccf8fbad20bb4b19952
+    url: https://www.pib.gov.in/allRel.aspx?reg=3&lang=1
+  pib_gst_monthly_releases/pib_allrel_mof_2023-07-01.html:
+    body_sha256: c11a6738d05eb66ab2b33f7ef9b167e64b6dad39bab9e28137d7077abf93fddd
+    body_type: form
+    bytes: 135466
+    method: POST
+    path: data/raw/pib_gst_monthly_releases/2026-09-29/union_fiscal/pib_allrel_mof_2023-07-01.html
+    retrieved_at: '2026-09-29T14:34:00Z'
+    sha256: 0b2304046aba05b9a328aaf7c6363fdbac849fdda60f26b5d3930a7388c76ede
+    url: https://www.pib.gov.in/allRel.aspx?reg=3&lang=1
+  pib_gst_monthly_releases/pib_gst_2023-04.html:
+    body_sha256: null
+    bytes: 299247
+    method: GET
+    path: data/raw/pib_gst_monthly_releases/2026-09-29/union_fiscal/pib_gst_2023-04.html
+    retrieved_at: '2026-09-29T14:33:51Z'
+    sha256: 07a00b412bf912b52bd190c09ed0eca7dd94ceb0a8b88baf556d5858a34f67ef
+    url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=1921186&reg=3&lang=1
+  pib_gst_monthly_releases/pib_gst_2023-05.html:
+    body_sha256: null
+    bytes: 313368
+    method: GET
+    path: data/raw/pib_gst_monthly_releases/2026-09-29/union_fiscal/pib_gst_2023-05.html
+    retrieved_at: '2026-09-29T14:33:57Z'
+    sha256: daadbbedc8aeed39fea3d85e04ac56a91a5c0d5f89c773a4364e2791b23a6441
+    url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=1929031&reg=3&lang=1
+  ppac_petroleum_exchequer/ppac_contribution_to_exchequer.xls:
+    body_sha256: null
+    bytes: 83456
+    method: GET
+    path: data/raw/ppac_petroleum_exchequer/2026-09-29/union_fiscal/ppac_contribution_to_exchequer.xls
+    retrieved_at: '2026-09-29T10:53:25Z'
+    sha256: ce78669325090482d39c425cd2df193d97779ee2d275872a93d75e502473f821
+    url: https://ppac.gov.in/uploads/page-images/1790331603_PP_4_ContributionToExchequer%281%29.xls
+  union_budget_transfers_to_states/b2425_stat18.xlsx:
+    body_sha256: null
+    bytes: 13203
+    method: GET
+    path: data/raw/union_budget_transfers_to_states/2026-09-29/union_fiscal/b2425_stat18.xlsx
+    retrieved_at: '2026-09-29T10:52:32Z'
+    sha256: d4ba1ef94c1e47710d3897339a4bb0a5f089967c4dd355bb197ec0c3a66a5dec
+    url: https://www.indiabudget.gov.in/budget2024-25/doc/eb/stat18.xlsx
+  union_budget_transfers_to_states/b2526_stat18.xlsx:
+    body_sha256: null
+    bytes: 13601
+    method: GET
+    path: data/raw/union_budget_transfers_to_states/2026-09-29/union_fiscal/b2526_stat18.xlsx
+    retrieved_at: '2026-09-29T10:52:49Z'
+    sha256: 5784056328ce82d4b16df4d0841c54199b5f01592b33e96985ff5f94e6f78c19
+    url: https://www.indiabudget.gov.in/budget2025-26/doc/eb/stat18.xlsx
+  union_budget_transfers_to_states/b2627_stat18.xlsx:
+    body_sha256: null
+    bytes: 9648
+    method: GET
+    path: data/raw/union_budget_transfers_to_states/2026-09-29/union_fiscal/b2627_stat18.xlsx
+    retrieved_at: '2026-09-29T10:53:05Z'
+    sha256: 21464eee84ef6c220bc070a8ad7163f4f7bae78a1442ccdc6994621b1db261fe
+    url: https://www.indiabudget.gov.in/doc/eb/stat18.xlsx
+unit: union_fiscal

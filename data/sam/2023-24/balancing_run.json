@@ -1,0 +1,130 @@
+{
+  "anchor_violation": {},
+  "balance_slack": {},
+  "band_violation": {},
+  "block_inputs": {
+    "capital_financial": {
+      "constraints": "da9fd52d84749a44a23b8afacaab7c2f2931b417a121288ec0d0ce34ffcc5df2",
+      "entries": "39a15c9390b05e1c6b93639ad690a91d0c1ab3aa862bd9f28888b0589f9c42a5"
+    },
+    "closure": {
+      "constraints": "b1176308dd0f7a6eba0e541dd4d821929067fae66386794b4f009f7772d80091",
+      "entries": "7e584f24c3e095f06bffbdbea2f3cf38795380f4cf9c10548fb8aab10eda4366"
+    },
+    "factors": {
+      "constraints": "33b7e0beaa82d469d451d8568301a226e625a0aea1bd4db7efc0621f65742d8f",
+      "entries": "104bdbbdbdd9a1c80a4c7e3f9efbef56626f6bf89367958da80ca503654ac374"
+    },
+    "fincorp": {
+      "constraints": "d96f0cafb7267b3b653d9789e9510cc973a805a633d6b1d6344693785ac221ef",
+      "entries": "1f125a34266dd062d2e25ebafe980fb3adafb4d5c03e1f58672c7d8a47966a9e"
+    },
+    "government": {
+      "constraints": "29c633211eed7f6c14bcf95fc4c1930e59bd800cc825b56e4c1e03632ba153e2",
+      "entries": "c5d0e9dabbe5c7cc1a1b2e3bf82ced0b9974af57e735ae19f02104fc18dc8ca2"
+    },
+    "households": {
+      "constraints": "d7934f138cf654b2f21979d311b55b7961c10ff87e38de6b5303451362e86430",
+      "entries": "d3cd60ede26b86b6b17224652a27c1eb3e9c1b7544688d6efba0224e98f42d0e"
+    },
+    "production": {
+      "constraints": "b0a9b2675e64f33e3b3483d4f82ae4633b7be0c9dfa1673f8de82f4472257281",
+      "entries": "f6f2a4c4b428bc234ec83c20c5c5e754d599497cbc9ec463de0f668a0993ca21"
+    },
+    "rest_of_world": {
+      "constraints": "16a53aec08531574570a7514743f47237816c5f3665dfd03ecbd0f4a5a7348b8",
+      "entries": "1231c03003f84755c65b8ea07522bb54d501f2c02cc10fa7f7c71961f6c8113d"
+    },
+    "taxes": {
+      "constraints": "0c54d6ad10600e341b403fd329206177d71bc2a7cc5b3d8320573698eca41699",
+      "entries": "df7c2049bbaf3d6f1573fd6229a44b4715d653ba8e5740195f92d38b47eec4fd"
+    }
+  },
+  "certificate": {
+    "duality_gap_rel": 3.15e-13,
+    "entries_at_bounds": 8,
+    "entries_forced_to_zero": 0,
+    "immaterial_entries_forced_to_zero": 0,
+    "max_balance_residual": 2.32e-07,
+    "max_band_violation": 2.79e-08,
+    "max_box_violation": 0.0,
+    "non_complementary_bands": 0,
+    "ok": true,
+    "sign_at_lower_bounds": 0.0,
+    "sign_at_upper_bounds": 0.0,
+    "stationarity": 1.11e-16,
+    "tolerance": 1e-08
+  },
+  "counts": {
+    "anchored": 1062,
+    "cells_explanation_required": 103,
+    "constraints": 429,
+    "entries": 3893,
+    "explanation_required": 223,
+    "fixed": 195,
+    "free": 2636,
+    "gras_findings": 229,
+    "moved": 2229,
+    "unexplained": 0,
+    "variable": 3698
+  },
+  "fixed_residuals": {},
+  "gras": {
+    "converged": true,
+    "iterations": 3676,
+    "max_gap": 1e-06,
+    "messages": [
+      "iteration 1: row: no feasible multiplier for index [114]"
+    ]
+  },
+  "iterations": 83,
+  "max_imbalance": 0.0,
+  "messages": [],
+  "method": "cross-entropy (GRAS / minimum-information-loss form, signed priors): phase-1 minimum-slack LP (HiGHS), then the dual Newton method, KKT certificate, polish on free entries",
+  "objective": 114127.730687,
+  "ok": true,
+  "phase1": {
+    "fixed_only_bands": {},
+    "total_slack": 0.0,
+    "widened_anchored": 0,
+    "widened_bands": 0
+  },
+  "polish": {
+    "applied": false,
+    "band_moves": {},
+    "bands_held": [],
+    "entries_adjusted": 0,
+    "max_adjustment": 0.0,
+    "max_imbalance_after": 0.0,
+    "max_imbalance_before": 0.0,
+    "sign_flips": 0,
+    "unreachable_accounts": []
+  },
+  "solver": "NEWTON",
+  "solver_options": {
+    "max_iter": 500,
+    "path": "direct",
+    "tol_abs": 1e-06,
+    "tol_rel": 1e-12
+  },
+  "status": "optimal",
+  "tolerances": {
+    "balance_tol": 0.01,
+    "explain_abs": 5000.0,
+    "explain_drift_abs": 500.0,
+    "explain_drift_rel": 0.2,
+    "explain_min_abs": 500.0,
+    "explain_rel": 0.1,
+    "gras_tol": 1e-06,
+    "kkt_tol": 1e-08,
+    "lp_zero": 1e-06,
+    "material_change": 1.0,
+    "newton_tol_abs": 1e-06,
+    "newton_tol_rel": 1e-12,
+    "polish_max": 1.0,
+    "polish_trigger": 0.0001,
+    "slack_report_tol": 0.01,
+    "widen_margin": 0.001
+  },
+  "year": "2023-24"
+}

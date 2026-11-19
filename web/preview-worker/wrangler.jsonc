@@ -1,0 +1,10 @@
+{
+  // Private preview only (Checkpoint C). workers.dev, password-protected, noindex. No custom domain until the owner's go.
+  "name": "economy-preview",
+  "main": "worker.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": { "directory": "../out", "binding": "ASSETS", "run_worker_first": true, "not_found_handling": "404-page", "html_handling": "auto-trailing-slash" },
+  "observability": { "enabled": true }
+}

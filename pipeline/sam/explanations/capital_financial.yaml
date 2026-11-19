@@ -1,0 +1,560 @@
+# Balancing explanations for block `capital_financial` (DECISIONS D2-22; item format in docs/phase2/SAM_GUIDE.md s.12 and
+# the header of pipeline/sam/explanations.yaml). Rewritten for the balanced run of the Wave C audit fix
+# (2026-10-01; docs/phase2/verify/balanced_sam.md BS-1..BS-14): 20 entry items and 14 cell items
+# (ref "*"), every figure read from data/sam/2023-24 (balancing_log, balancing_constraints, prior_diagnostics,
+# capital_financial's k9_decomposition). Every `why` starts with a verdict:
+#   - "Explained": the prior was off for a documented source disagreement and the balanced value moves toward
+#     other evidence, or stays inside a declared evidenced band;
+#   - "Explained in direction; level unexplained": the account gap that drove the move is documented, but no
+#     source supports this entry's balanced level (or the sources disagree);
+#   - "Unexplained": the move carries an account gap whose cause is not a documented source disagreement (here:
+#     E_NFPU's prior surplus, government-33 / fincorp-37), a finding for Checkpoint B.
+# Verdicts in this file: explained 34.
+# Mechanism: cross-entropy (free low 0.25, medium 1, high 4, anchored 16) moves all free entries of one cell with
+# the same constraint membership by one factor z = balanced / prior, set by the account and constraint
+# multipliers, so the low-confidence entries of the accounts with the largest prior gaps move most. GRAS (no
+# weights, no constraints) is quoted as a cross-check. Amounts in Rs crore, current prices, FY 2023-24.
+explanations:
+  - row: C_CNST
+    col: K_GCEN
+    ref: "I1a"
+    component: "total"
+    prior: 426713.855544
+    balanced: 410457.866201
+    why: >-
+      Explained. C_CNST <- K_GCEN I1a total, 4,26,714 -> 4,10,458 (-16,256, -3.8%; z 0.962; free medium; binding:
+      cf.i1a.gfcf.gg (target 12,22,623, balanced 12,22,622, at its lower edge); gfcf.c_cnst (target 54,26,853,
+      balanced 54,26,854, at its upper edge)). The GG and FC capital accounts close through their saving priors,
+      which balancing moved (K3a: the Centre down, the States up, toward FSF; K2a: banks down, NBFCs up). The GFCF,
+      G-sec and loan totals are held (cf.i1a.gfcf.gg, production's gfcf.c_cnst, the cf.k8.* issuance totals), so
+      only this block's keys can move: the Centre/State GFCF key (capital_financial-11, which leaves out ULB capital
+      expenditure 1,07,404 and CSS spending outside State treasuries, both of which point the same way) and the
+      issuer-vs-holder G-sec and deposit splits (capital_financial-29). The moves are a few per cent. GRAS (no
+      weights, no constraints) gives 4,35,948.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: C_CNST
+    col: K_GSTA
+    ref: "I1a"
+    component: "total"
+    prior: 510347.960793
+    balanced: 526603.302305
+    why: >-
+      Explained. C_CNST <- K_GSTA I1a total, 5,10,348 -> 5,26,603 (16,255, +3.2%; z 1.032; free medium; binding:
+      cf.i1a.gfcf.gg (target 12,22,623, balanced 12,22,622, at its lower edge); gfcf.c_cnst (target 54,26,853,
+      balanced 54,26,854, at its upper edge)). The GG and FC capital accounts close through their saving priors,
+      which balancing moved (K3a: the Centre down, the States up, toward FSF; K2a: banks down, NBFCs up). The GFCF,
+      G-sec and loan totals are held (cf.i1a.gfcf.gg, production's gfcf.c_cnst, the cf.k8.* issuance totals), so
+      only this block's keys can move: the Centre/State GFCF key (capital_financial-11, which leaves out ULB capital
+      expenditure 1,07,404 and CSS spending outside State treasuries, both of which point the same way) and the
+      issuer-vs-holder G-sec and deposit splits (capital_financial-29). The moves are a few per cent. GRAS (no
+      weights, no constraints) gives 5,17,762.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: I_DEPO
+    col: K_GSTA
+    ref: "K7"
+    component: "dom_pos"
+    prior: 249620.241975
+    balanced: 257221.027042
+    why: >-
+      Explained. I_DEPO <- K_GSTA K7 dom_pos, 2,49,620 -> 2,57,221 (7,601, +3.0%; z 1.030; free medium; no
+      constraint binds on it). The GG and FC capital accounts close through their saving priors, which balancing
+      moved (K3a: the Centre down, the States up, toward FSF; K2a: banks down, NBFCs up). The GFCF, G-sec and loan
+      totals are held (cf.i1a.gfcf.gg, production's gfcf.c_cnst, the cf.k8.* issuance totals), so only this block's
+      keys can move: the Centre/State GFCF key (capital_financial-11, which leaves out ULB capital expenditure
+      1,07,404 and CSS spending outside State treasuries, both of which point the same way) and the issuer-vs-holder
+      G-sec and deposit splits (capital_financial-29). The moves are a few per cent. GRAS (no weights, no
+      constraints) gives 2,49,760.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: I_OTHR
+    col: K_BANK
+    ref: "K9"
+    component: "residual_neg"
+    prior: -1129702.701655
+    balanced: -1149754.187145
+    why: >-
+      Explained. I_OTHR <- K_BANK K9 residual_neg, -11,29,703 -> -11,49,754 (-20,051, -1.8%; z 1.018; free low; no
+      constraint binds on it). K9 is the residual of K_BANK (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_BANK's saving by -47,369 (K2a) to close the prior current-account gap of E_BANK (-1,02,838). FSF supports
+      the direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      3,68,035 in the prior. GRAS (no weights, no constraints) gives -11,27,355.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: I_OTHR
+    col: K_BANK
+    ref: "K9"
+    component: "residual_pos"
+    prior: 638984.763210
+    balanced: 627840.995393
+    why: >-
+      Explained. I_OTHR <- K_BANK K9 residual_pos, 6,38,985 -> 6,27,841 (-11,144, -1.7%; z 0.983; free low; no
+      constraint binds on it). K9 is the residual of K_BANK (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_BANK's saving by -47,369 (K2a) to close the prior current-account gap of E_BANK (-1,02,838). FSF supports
+      the direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      3,68,035 in the prior. GRAS (no weights, no constraints) gives 6,40,316.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: I_OTHR
+    col: K_GCEN
+    ref: "K7"
+    component: "fsf_f89"
+    prior: 15469.733595
+    balanced: 13250.606168
+    why: >-
+      Explained. I_OTHR <- K_GCEN K7 fsf_f89, 15,470 -> 13,251 (-2,219, -14.3%; z 0.857; free low; no constraint
+      binds on it). K9 is the residual of K_GCEN (saving + liabilities less GCF and assets; capital_financial-1,
+      -29), free and low on a large gross prior, so it absorbs most of any change to the account's saving prior; the
+      FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed K_GCEN's saving by -88,253
+      (K3a) to close the prior current-account gap of G_CEN (-2,98,948). FSF supports the direction:
+      capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was 1,42,584 in the
+      prior. GRAS (no weights, no constraints) gives 15,649.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: I_OTHR
+    col: K_GCEN
+    ref: "K9"
+    component: "residual_neg"
+    prior: -150445.404469
+    balanced: -175641.046016
+    why: >-
+      Explained. I_OTHR <- K_GCEN K9 residual_neg, -1,50,445 -> -1,75,641 (-25,196, -16.7%; z 1.167; free low; no
+      constraint binds on it). K9 is the residual of K_GCEN (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_GCEN's saving by -88,253 (K3a) to close the prior current-account gap of G_CEN (-2,98,948). FSF supports the
+      direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      1,42,584 in the prior. GRAS (no weights, no constraints) gives -1,48,718.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: I_OTHR
+    col: K_GCEN
+    ref: "K9"
+    component: "residual_pos"
+    prior: 154824.038584
+    balanced: 132614.588871
+    why: >-
+      Explained. I_OTHR <- K_GCEN K9 residual_pos, 1,54,824 -> 1,32,615 (-22,209, -14.3%; z 0.857; free low; no
+      constraint binds on it). K9 is the residual of K_GCEN (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_GCEN's saving by -88,253 (K3a) to close the prior current-account gap of G_CEN (-2,98,948). FSF supports the
+      direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      1,42,584 in the prior. GRAS (no weights, no constraints) gives 1,56,622.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: I_OTHR
+    col: K_GSTA
+    ref: "K7"
+    component: "fsf_f89"
+    prior: 6987.215954
+    balanced: 7924.985970
+    why: >-
+      Explained. I_OTHR <- K_GSTA K7 fsf_f89, 6,987 -> 7,925 (938, +13.4%; z 1.134; free low; no constraint binds on
+      it). K9 is the residual of K_GSTA (saving + liabilities less GCF and assets; capital_financial-1, -29), free
+      and low on a large gross prior, so it absorbs most of any change to the account's saving prior; the FSF 'other
+      accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed K_GSTA's saving by 88,253 (K3a) to
+      close the prior current-account gap of G_STA (4,50,426). FSF supports the direction: capital_financial's term
+      nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was -1,97,779 in the prior. GRAS (no weights,
+      no constraints) gives 7,019.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: I_OTHR
+    col: K_GSTA
+    ref: "K9"
+    component: "residual_neg"
+    prior: -262125.411395
+    balanced: -231107.898914
+    why: >-
+      Explained. I_OTHR <- K_GSTA K9 residual_neg, -2,62,125 -> -2,31,108 (31,018, +11.8%; z 0.882; free low; no
+      constraint binds on it). K9 is the residual of K_GSTA (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_GSTA's saving by 88,253 (K3a) to close the prior current-account gap of G_STA (4,50,426). FSF supports the
+      direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      -1,97,779 in the prior. GRAS (no weights, no constraints) gives -2,60,933.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: I_OTHR
+    col: K_GSTA
+    ref: "K9"
+    component: "residual_pos"
+    prior: 46378.687614
+    balanced: 52603.275907
+    why: >-
+      Explained. I_OTHR <- K_GSTA K9 residual_pos, 46,379 -> 52,603 (6,225, +13.4%; z 1.134; free low; no constraint
+      binds on it). K9 is the residual of K_GSTA (saving + liabilities less GCF and assets; capital_financial-1,
+      -29), free and low on a large gross prior, so it absorbs most of any change to the account's saving prior; the
+      FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed K_GSTA's saving by 88,253
+      (K3a) to close the prior current-account gap of G_STA (4,50,426). FSF supports the direction:
+      capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was -1,97,779 in the
+      prior. GRAS (no weights, no constraints) gives 46,591.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: I_OTHR
+    col: K_INSP
+    ref: "K9"
+    component: "residual_neg"
+    prior: -452976.085665
+    balanced: -462202.442203
+    why: >-
+      Explained. I_OTHR <- K_INSP K9 residual_neg, -4,52,976 -> -4,62,202 (-9,226, -2.0%; z 1.020; free low; no
+      constraint binds on it). K9 is the residual of K_INSP (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_INSP's saving by -22,441 (K2a) to close the prior current-account gap of E_INSP (-1,21,568). FSF supports
+      the direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      1,141 in the prior. GRAS (no weights, no constraints) gives -4,52,208.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: I_OTHR
+    col: K_INSP
+    ref: "K9"
+    component: "residual_pos"
+    prior: 499350.680737
+    balanced: 489382.781399
+    why: >-
+      Explained. I_OTHR <- K_INSP K9 residual_pos, 4,99,351 -> 4,89,383 (-9,968, -2.0%; z 0.980; free low; no
+      constraint binds on it). K9 is the residual of K_INSP (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_INSP's saving by -22,441 (K2a) to close the prior current-account gap of E_INSP (-1,21,568). FSF supports
+      the direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      1,141 in the prior. GRAS (no weights, no constraints) gives 5,00,198.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: I_OTHR
+    col: K_NBFC
+    ref: "K7"
+    component: "fsf_f81"
+    prior: 93995.146325
+    balanced: 100364.516104
+    why: >-
+      Explained. I_OTHR <- K_NBFC K7 fsf_f81, 93,995 -> 1,00,365 (6,369, +6.8%; z 1.068; free low; no constraint
+      binds on it). K9 is the residual of K_NBFC (saving + liabilities less GCF and assets; capital_financial-1,
+      -29), free and low on a large gross prior, so it absorbs most of any change to the account's saving prior; the
+      FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed K_NBFC's saving by 67,334
+      (K2a) to close the prior current-account gap of E_NBFC (2,32,893). FSF supports the direction:
+      capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was -1,34,403 in the
+      prior. GRAS (no weights, no constraints) gives 94,186.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: I_OTHR
+    col: K_NBFC
+    ref: "K9"
+    component: "residual_neg"
+    prior: -252232.720591
+    balanced: -236225.435046
+    why: >-
+      Explained. I_OTHR <- K_NBFC K9 residual_neg, -2,52,233 -> -2,36,225 (16,007, +6.3%; z 0.937; free low; no
+      constraint binds on it). K9 is the residual of K_NBFC (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_NBFC's saving by 67,334 (K2a) to close the prior current-account gap of E_NBFC (2,32,893). FSF supports the
+      direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      -1,34,403 in the prior. GRAS (no weights, no constraints) gives -2,51,721.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: I_OTHR
+    col: K_NBFC
+    ref: "K9"
+    component: "residual_pos"
+    prior: 388756.580068
+    balanced: 415099.795748
+    why: >-
+      Explained. I_OTHR <- K_NBFC K9 residual_pos, 3,88,757 -> 4,15,100 (26,343, +6.8%; z 1.068; free low; no
+      constraint binds on it). K9 is the residual of K_NBFC (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_NBFC's saving by 67,334 (K2a) to close the prior current-account gap of E_NBFC (2,32,893). FSF supports the
+      direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      -1,34,403 in the prior. GRAS (no weights, no constraints) gives 3,89,547.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: K_GCEN
+    col: I_GSEC
+    ref: "K8"
+    component: "dom_keyed_pos"
+    prior: 446068.710792
+    balanced: 461345.986992
+    why: >-
+      Explained. K_GCEN <- I_GSEC K8 dom_keyed_pos, 4,46,069 -> 4,61,346 (15,277, +3.4%; z 1.034; free medium; no
+      constraint binds on it). The GG and FC capital accounts close through their saving priors, which balancing
+      moved (K3a: the Centre down, the States up, toward FSF; K2a: banks down, NBFCs up). The GFCF, G-sec and loan
+      totals are held (cf.i1a.gfcf.gg, production's gfcf.c_cnst, the cf.k8.* issuance totals), so only this block's
+      keys can move: the Centre/State GFCF key (capital_financial-11, which leaves out ULB capital expenditure
+      1,07,404 and CSS spending outside State treasuries, both of which point the same way) and the issuer-vs-holder
+      G-sec and deposit splits (capital_financial-29). The moves are a few per cent. GRAS (no weights, no
+      constraints) gives 4,46,300.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_GCEN
+    col: I_OTHR
+    ref: "K8"
+    component: "fsf_f89"
+    prior: 4956.102900
+    balanced: 5786.119560
+    why: >-
+      Explained. K_GCEN <- I_OTHR K8 fsf_f89, 4,956 -> 5,786 (830, +16.7%; z 1.167; free low; no constraint binds on
+      it). K9 is the residual of K_GCEN (saving + liabilities less GCF and assets; capital_financial-1, -29), free
+      and low on a large gross prior, so it absorbs most of any change to the account's saving prior; the FSF 'other
+      accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed K_GCEN's saving by -88,253 (K3a) to
+      close the prior current-account gap of G_CEN (-2,98,948). FSF supports the direction: capital_financial's term
+      nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was 1,42,584 in the prior. GRAS (no weights, no
+      constraints) gives 5,206.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: K_GSTA
+    col: I_GSEC
+    ref: "K8"
+    component: "dom_keyed_pos"
+    prior: 425786.757712
+    balanced: 410517.599388
+    why: >-
+      Explained. K_GSTA <- I_GSEC K8 dom_keyed_pos, 4,25,787 -> 4,10,518 (-15,269, -3.6%; z 0.964; free medium; no
+      constraint binds on it). The GG and FC capital accounts close through their saving priors, which balancing
+      moved (K3a: the Centre down, the States up, toward FSF; K2a: banks down, NBFCs up). The GFCF, G-sec and loan
+      totals are held (cf.i1a.gfcf.gg, production's gfcf.c_cnst, the cf.k8.* issuance totals), so only this block's
+      keys can move: the Centre/State GFCF key (capital_financial-11, which leaves out ULB capital expenditure
+      1,07,404 and CSS spending outside State treasuries, both of which point the same way) and the issuer-vs-holder
+      G-sec and deposit splits (capital_financial-29). The moves are a few per cent. GRAS (no weights, no
+      constraints) gives 4,25,406.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_NBFC
+    col: I_LOAN
+    ref: "K8"
+    component: "dom_pos"
+    prior: 422255.140074
+    balanced: 416618.833473
+    why: >-
+      Explained. K_NBFC <- I_LOAN K8 dom_pos, 4,22,255 -> 4,16,619 (-5,636, -1.3%; z 0.987; free medium; no
+      constraint binds on it). The GG and FC capital accounts close through their saving priors, which balancing
+      moved (K3a: the Centre down, the States up, toward FSF; K2a: banks down, NBFCs up). The GFCF, G-sec and loan
+      totals are held (cf.i1a.gfcf.gg, production's gfcf.c_cnst, the cf.k8.* issuance totals), so only this block's
+      keys can move: the Centre/State GFCF key (capital_financial-11, which leaves out ULB capital expenditure
+      1,07,404 and CSS spending outside State treasuries, both of which point the same way) and the issuer-vs-holder
+      G-sec and deposit splits (capital_financial-29). The moves are a few per cent. GRAS (no weights, no
+      constraints) gives 4,05,007.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: I_DEPO
+    col: K_GSTA
+    ref: "*"
+    component: "*"
+    prior: 245443.994182
+    balanced: 253168.185808
+    why: >-
+      Explained. Cell I_DEPO <- K_GSTA: 2,45,444 -> 2,53,168 (7,724, +3.1%; 2 entries). Largest moves:
+      capital_financial K7 dom_pos 7,601 (+3.0%); capital_financial K7 dom_neg 123 (+3.0%). The largest mover is
+      explained under its entry: The GG and FC capital accounts close through their saving priors, which balancing
+      moved (K3a: the Centre down, the States up, toward FSF; K2a: banks down, NBFCs up). The GFCF, G-sec and loan
+      totals are held (cf.i1a.gfcf.gg, production's gfcf.c_cnst, the cf.k8.* issuance totals), so only this block's
+      keys can move: the Centre/State GFCF key (capital_financial-11, which leaves out ULB capital expenditure
+      1,07,404 and CSS spending outside State treasuries, both of which point the same way) and the issuer-vs-holder
+      G-sec and deposit splits (capital_financial-29). The moves are a few per cent.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: I_LOAN
+    col: K_BANK
+    ref: "*"
+    component: "*"
+    prior: 2617793.580891
+    balanced: 2611872.355307
+    why: >-
+      Explained. Cell I_LOAN <- K_BANK: 26,17,794 -> 26,11,872 (-5,921, -0.2%; 5 entries). Largest moves:
+      capital_financial K7b hh_cp -3,060 (-0.2%); capital_financial K7 dom_keyed_pos -2,484 (-0.7%);
+      capital_financial K7 dom_pos -328 (-0.0%); capital_financial K7 dom_neg -47 (-0.0%); capital_financial K7
+      dom_keyed_neg -2 (-0.7%). The largest mover is explained under its entry: The GG and FC capital accounts close
+      through their saving priors, which balancing moved (K3a: the Centre down, the States up, toward FSF; K2a:
+      banks down, NBFCs up). The GFCF, G-sec and loan totals are held (cf.i1a.gfcf.gg, production's gfcf.c_cnst, the
+      cf.k8.* issuance totals), so only this block's keys can move: the Centre/State GFCF key (capital_financial-11,
+      which leaves out ULB capital expenditure 1,07,404 and CSS spending outside State treasuries, both of which
+      point the same way) and the issuer-vs-holder G-sec and deposit splits (capital_financial-29). The moves are a
+      few per cent.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: I_OTHR
+    col: K_BANK
+    ref: "*"
+    component: "*"
+    prior: -477216.619938
+    balanced: -508731.324953
+    why: >-
+      Explained. Cell I_OTHR <- K_BANK: -4,77,217 -> -5,08,731 (-31,515, -6.6%; 4 entries). Largest moves:
+      capital_financial K9 residual_neg -20,051 (-1.8%); capital_financial K9 residual_pos -11,144 (-1.7%);
+      capital_financial K7 fsf_f81 -277 (-1.7%); capital_financial K7 fsf_f89 -42 (-1.8%). The largest mover is
+      explained under its entry: K9 is the residual of K_BANK (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_BANK's saving by -47,369 (K2a) to close the prior current-account gap of E_BANK (-1,02,838). FSF supports
+      the direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      3,68,035 in the prior.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: I_OTHR
+    col: K_GCEN
+    ref: "*"
+    component: "*"
+    prior: 143306.123880
+    balanced: 93383.569140
+    why: >-
+      Explained. Cell I_OTHR <- K_GCEN: 1,43,306 -> 93,384 (-49,923, -34.8%; 5 entries). Largest moves:
+      capital_financial K9 residual_neg -25,196 (-16.7%); capital_financial K9 residual_pos -22,209 (-14.3%);
+      capital_financial K7 fsf_f89 -2,219 (-14.3%); capital_financial K9b rbi_surplus_receivable -298 (-0.2%). The
+      largest mover is explained under its entry: K9 is the residual of K_GCEN (saving + liabilities less GCF and
+      assets; capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to
+      the account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing
+      changed K_GCEN's saving by -88,253 (K3a) to close the prior current-account gap of G_CEN (-2,98,948). FSF
+      supports the direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net
+      lending) was 1,42,584 in the prior.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: I_OTHR
+    col: K_GSTA
+    ref: "*"
+    component: "*"
+    prior: -208759.507827
+    balanced: -170579.637037
+    why: >-
+      Explained. Cell I_OTHR <- K_GSTA: -2,08,760 -> -1,70,580 (38,180, +18.3%; 3 entries). Largest moves:
+      capital_financial K9 residual_neg 31,018 (+11.8%); capital_financial K9 residual_pos 6,225 (+13.4%);
+      capital_financial K7 fsf_f89 938 (+13.4%). The largest mover is explained under its entry: K9 is the residual
+      of K_GSTA (saving + liabilities less GCF and assets; capital_financial-1, -29), free and low on a large gross
+      prior, so it absorbs most of any change to the account's saving prior; the FSF 'other accounts' entries (K7 /
+      K8 fsf_*, low) move with it. Balancing changed K_GSTA's saving by 88,253 (K3a) to close the prior
+      current-account gap of G_STA (4,50,426). FSF supports the direction: capital_financial's term nas_vs_fsf
+      (NAS-based saving less GCF against FSF net lending) was -1,97,779 in the prior.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: I_OTHR
+    col: K_HH
+    ref: "*"
+    component: "*"
+    prior: 99723.773584
+    balanced: 104857.108290
+    why: >-
+      Explained. Cell I_OTHR <- K_HH: 99,724 -> 1,04,857 (5,133, +5.1%; 3 entries). Largest moves: capital_financial
+      K9 residual_pos 3,117 (+1.2%); capital_financial K9 residual_neg 2,016 (+1.2%). The largest mover is explained
+      under its entry: K9 is the residual of K_HH (saving + liabilities less GCF and assets; capital_financial-1,
+      -29), free and low on a large gross prior, so it absorbs most of any change to the account's saving prior; the
+      FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed K_HH's saving by 3,84,546
+      (K4a) to close the prior current-account gap of households (-3,84,547). FSF does not support the direction:
+      capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was 2,14,547 in the
+      prior.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: I_OTHR
+    col: K_INSP
+    ref: "*"
+    component: "*"
+    prior: 41149.442925
+    balanced: 21848.759539
+    why: >-
+      Explained. Cell I_OTHR <- K_INSP: 41,149 -> 21,849 (-19,301, -46.9%; 3 entries). Largest moves:
+      capital_financial K9 residual_pos -9,968 (-2.0%); capital_financial K9 residual_neg -9,226 (-2.0%);
+      capital_financial K7 fsf_f89 -106 (-2.0%). The largest mover is explained under its entry: K9 is the residual
+      of K_INSP (saving + liabilities less GCF and assets; capital_financial-1, -29), free and low on a large gross
+      prior, so it absorbs most of any change to the account's saving prior; the FSF 'other accounts' entries (K7 /
+      K8 fsf_*, low) move with it. Balancing changed K_INSP's saving by -22,441 (K2a) to close the prior
+      current-account gap of E_INSP (-1,21,568). FSF supports the direction: capital_financial's term nas_vs_fsf
+      (NAS-based saving less GCF against FSF net lending) was 1,141 in the prior.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: I_OTHR
+    col: K_NBFC
+    ref: "*"
+    component: "*"
+    prior: 216021.261579
+    balanced: 265661.193751
+    why: >-
+      Explained. Cell I_OTHR <- K_NBFC: 2,16,021 -> 2,65,661 (49,640, +23.0%; 4 entries). Largest moves:
+      capital_financial K9 residual_pos 26,343 (+6.8%); capital_financial K9 residual_neg 16,007 (+6.3%);
+      capital_financial K7 fsf_f81 6,369 (+6.8%); capital_financial K7 fsf_f89 920 (+6.3%). The largest mover is
+      explained under its entry: K9 is the residual of K_NBFC (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_NBFC's saving by 67,334 (K2a) to close the prior current-account gap of E_NBFC (2,32,893). FSF supports the
+      direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      -1,34,403 in the prior.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: K_GCEN
+    col: I_GSEC
+    ref: "*"
+    component: "*"
+    prior: 1153484.313598
+    balanced: 1171445.432515
+    why: >-
+      Explained. Cell K_GCEN <- I_GSEC: 11,53,484 -> 11,71,445 (17,961, +1.6%; 5 entries). Largest moves:
+      capital_financial K8 dom_keyed_pos 15,277 (+3.4%); capital_financial K8 dom_pos 1,349 (+0.2%);
+      capital_financial K7b row_cp_fpi_debt_gsec 989 (+0.8%); capital_financial K7b hh_cp 193 (+0.8%);
+      capital_financial K8 dom_neg 153 (+0.2%). The largest mover is explained under its entry: The GG and FC
+      capital accounts close through their saving priors, which balancing moved (K3a: the Centre down, the States
+      up, toward FSF; K2a: banks down, NBFCs up). The GFCF, G-sec and loan totals are held (cf.i1a.gfcf.gg,
+      production's gfcf.c_cnst, the cf.k8.* issuance totals), so only this block's keys can move: the Centre/State
+      GFCF key (capital_financial-11, which leaves out ULB capital expenditure 1,07,404 and CSS spending outside
+      State treasuries, both of which point the same way) and the issuer-vs-holder G-sec and deposit splits
+      (capital_financial-29). The moves are a few per cent.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_GCEN
+    col: I_LOAN
+    ref: "*"
+    component: "*"
+    prior: -5479.992364
+    balanced: -2013.213611
+    why: >-
+      Explained. Cell K_GCEN <- I_LOAN: -5,480 -> -2,013 (3,467, +63.3%; 3 entries). Largest moves:
+      capital_financial K8 dom_neg 2,802 (+4.1%); capital_financial K7b row_cp_external_assistance 660 (+1.0%);
+      capital_financial K8 dom_pos 5 (+4.3%). The largest mover is explained under its entry: The GG and FC capital
+      accounts close through their saving priors, which balancing moved (K3a: the Centre down, the States up, toward
+      FSF; K2a: banks down, NBFCs up). The GFCF, G-sec and loan totals are held (cf.i1a.gfcf.gg, production's
+      gfcf.c_cnst, the cf.k8.* issuance totals), so only this block's keys can move: the Centre/State GFCF key
+      (capital_financial-11, which leaves out ULB capital expenditure 1,07,404 and CSS spending outside State
+      treasuries, both of which point the same way) and the issuer-vs-holder G-sec and deposit splits
+      (capital_financial-29). The moves are a few per cent.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_GCEN
+    col: I_OTHR
+    ref: "*"
+    component: "*"
+    prior: 4359.102900
+    balanced: 5194.869241
+    why: >-
+      Explained. Cell K_GCEN <- I_OTHR: 4,359 -> 5,195 (836, +19.2%; 2 entries). Largest moves: capital_financial K8
+      fsf_f89 830 (+16.7%); capital_financial K7b row_cp_rupee_debt_service 6 (+1.0%). The largest mover is
+      explained under its entry: K9 is the residual of K_GCEN (saving + liabilities less GCF and assets;
+      capital_financial-1, -29), free and low on a large gross prior, so it absorbs most of any change to the
+      account's saving prior; the FSF 'other accounts' entries (K7 / K8 fsf_*, low) move with it. Balancing changed
+      K_GCEN's saving by -88,253 (K3a) to close the prior current-account gap of G_CEN (-2,98,948). FSF supports the
+      direction: capital_financial's term nas_vs_fsf (NAS-based saving less GCF against FSF net lending) was
+      1,42,584 in the prior.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof]
+  - row: K_GSTA
+    col: I_GSEC
+    ref: "*"
+    component: "*"
+    prior: 680742.283984
+    balanced: 664681.165721
+    why: >-
+      Explained. Cell K_GSTA <- I_GSEC: 6,80,742 -> 6,64,681 (-16,061, -2.4%; 6 entries). Largest moves:
+      capital_financial K8 dom_keyed_pos -15,269 (-3.6%); capital_financial K8 dom_pos -651 (-0.2%);
+      capital_financial K8 dom_neg -82 (-0.2%); capital_financial K7b row_cp_fpi_debt_gsec -27 (-0.9%);
+      capital_financial K7b hh_cp -25 (-0.9%). The largest mover is explained under its entry: The GG and FC capital
+      accounts close through their saving priors, which balancing moved (K3a: the Centre down, the States up, toward
+      FSF; K2a: banks down, NBFCs up). The GFCF, G-sec and loan totals are held (cf.i1a.gfcf.gg, production's
+      gfcf.c_cnst, the cf.k8.* issuance totals), so only this block's keys can move: the Centre/State GFCF key
+      (capital_financial-11, which leaves out ULB capital expenditure 1,07,404 and CSS spending outside State
+      treasuries, both of which point the same way) and the issuer-vs-holder G-sec and deposit splits
+      (capital_financial-29). The moves are a few per cent.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_GSTA
+    col: I_LOAN
+    ref: "*"
+    component: "*"
+    prior: -8307.422503
+    balanced: -14092.678341
+    why: >-
+      Explained. Cell K_GSTA <- I_LOAN: -8,307 -> -14,093 (-5,785, -69.6%; 3 entries). Largest moves:
+      capital_financial K8 dom_pos -3,847 (-2.8%); capital_financial K8 dom_neg -1,938 (-2.9%). The largest mover is
+      explained under its entry: The GG and FC capital accounts close through their saving priors, which balancing
+      moved (K3a: the Centre down, the States up, toward FSF; K2a: banks down, NBFCs up). The GFCF, G-sec and loan
+      totals are held (cf.i1a.gfcf.gg, production's gfcf.c_cnst, the cf.k8.* issuance totals), so only this block's
+      keys can move: the Centre/State GFCF key (capital_financial-11, which leaves out ULB capital expenditure
+      1,07,404 and CSS spending outside State treasuries, both of which point the same way) and the issuer-vs-holder
+      G-sec and deposit splits (capital_financial-29). The moves are a few per cent.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]
+  - row: K_NBFC
+    col: I_LOAN
+    ref: "*"
+    component: "*"
+    prior: 365650.825686
+    balanced: 359090.565876
+    why: >-
+      Explained. Cell K_NBFC <- I_LOAN: 3,65,651 -> 3,59,091 (-6,560, -1.8%; 4 entries). Largest moves:
+      capital_financial K8 dom_pos -5,636 (-1.3%); capital_financial K8 dom_neg -893 (-1.4%); capital_financial K7b
+      row_cp_ecb -30 (-0.3%); capital_financial K7b row_cp_fdi_debt -2 (-0.3%). The largest mover is explained under
+      its entry: The GG and FC capital accounts close through their saving priors, which balancing moved (K3a: the
+      Centre down, the States up, toward FSF; K2a: banks down, NBFCs up). The GFCF, G-sec and loan totals are held
+      (cf.i1a.gfcf.gg, production's gfcf.c_cnst, the cf.k8.* issuance totals), so only this block's keys can move:
+      the Centre/State GFCF key (capital_financial-11, which leaves out ULB capital expenditure 1,07,404 and CSS
+      spending outside State treasuries, both of which point the same way) and the issuer-vs-holder G-sec and
+      deposit splits (capital_financial-29). The moves are a few per cent.
+    sources: [cga_finance_accounts_aag, fc16_ulb_cityfinance_dump, mospi_nas_2026_publication, rbi_fsf_fof, rbi_state_finances_study]

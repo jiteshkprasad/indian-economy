@@ -1,0 +1,2825 @@
+# Balancing explanations for block `fincorp` (DECISIONS D2-22; item format in docs/phase2/SAM_GUIDE.md s.12 and
+# the header of pipeline/sam/explanations.yaml). Rewritten for the balanced run of the Wave C audit fix
+# (2026-10-01; docs/phase2/verify/balanced_sam.md BS-1..BS-14): 116 entry items and 55 cell items
+# (ref "*"), every figure read from data/sam/2023-24 (balancing_log, balancing_constraints, prior_diagnostics,
+# capital_financial's k9_decomposition). Every `why` starts with a verdict:
+#   - "Explained": the prior was off for a documented source disagreement and the balanced value moves toward
+#     other evidence, or stays inside a declared evidenced band;
+#   - "Explained in direction; level unexplained": the account gap that drove the move is documented, but no
+#     source supports this entry's balanced level (or the sources disagree);
+#   - "Unexplained": the move carries an account gap whose cause is not a documented source disagreement (here:
+#     E_NFPU's prior surplus, government-33 / fincorp-37), a finding for Checkpoint B.
+# Verdicts in this file: explained 127, level unexplained 32, unexplained 12.
+# Mechanism: cross-entropy (free low 0.25, medium 1, high 4, anchored 16) moves all free entries of one cell with
+# the same constraint membership by one factor z = balanced / prior, set by the account and constraint
+# multipliers, so the low-confidence entries of the accounts with the largest prior gaps move most. GRAS (no
+# weights, no constraints) is quoted as a cross-check. Amounts in Rs crore, current prices, FY 2023-24.
+explanations:
+  - row: E_BANK
+    col: E_NBFC
+    ref: "R4"
+    component: "loans"
+    prior: 187204.899625
+    balanced: 205567.018427
+    why: >-
+      Explained. E_BANK <- E_NBFC R4 loans, 1,87,205 -> 2,05,567 (18,362, +9.8%; z 1.098; free medium; no constraint
+      binds on it). Interbank and bank-NBFC interest is FSF stocks x the scaled RTP rates. E_BANK ran a -1,02,838
+      deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA property income
+      negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and captive
+      institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. Balancing moves interest
+      from the surplus account to the deficit one. GRAS (no weights, no constraints) gives 2,25,641.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_BANK
+    col: E_NFPU
+    ref: "R5"
+    component: "loans"
+    prior: 115710.836149
+    balanced: 184501.949641
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). E_BANK <- E_NFPU R5 loans, 1,15,711 -> 1,84,502 (68,791, +59.5%; z
+      1.595; free medium; no constraint binds on it). Public NFCs' interest to banks and NBFCs is FSF stock x the
+      scaled RTP return (medium), less FISIM; the balanced level implies a rate well above the RTP return on
+      advances. E_NFPU's prior keeps 3,12,829 over NAS 2026 St 1.9 public NFC saving (closure institution_gaps). Its
+      cause is not a documented source disagreement: the old-base NAS 2024 St 2.1A shows departmental enterprises
+      passing 95.6% of their primary income on as D6 + D7 (1,48,177 in 2022-23), a flow the new-base SAM does not
+      write (government-33, a NAD question for Checkpoint B). After the Wave C constraints held the published
+      outlets (R9d at the AFS total, R18 at IGAS-2, T4a within 25% of the old-base share, R7x lines and payer
+      shares, insurers' and MF bond interest near FSF stock x coupon, non-government dividends near the R7-grossed
+      issuer total), what is left of the surplus lands on E_NFPU's remaining weak-keyed flows (fincorp-32, -37).
+      GRAS (no weights, no constraints) gives 1,56,521. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_BANK
+    col: E_NFPU
+    ref: "R5"
+    component: "nongov_bonds"
+    prior: 9135.260377
+    balanced: 14566.253310
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). E_BANK <- E_NFPU R5 nongov_bonds, 9,135 -> 14,566 (5,431, +59.5%; z
+      1.595; free medium; no constraint binds on it). Public NFCs' interest to banks and NBFCs is FSF stock x the
+      scaled RTP return (medium), less FISIM; the balanced level implies a rate well above the RTP return on
+      advances. E_NFPU's prior keeps 3,12,829 over NAS 2026 St 1.9 public NFC saving (closure institution_gaps). Its
+      cause is not a documented source disagreement: the old-base NAS 2024 St 2.1A shows departmental enterprises
+      passing 95.6% of their primary income on as D6 + D7 (1,48,177 in 2022-23), a flow the new-base SAM does not
+      write (government-33, a NAD question for Checkpoint B). After the Wave C constraints held the published
+      outlets (R9d at the AFS total, R18 at IGAS-2, T4a within 25% of the old-base share, R7x lines and payer
+      shares, insurers' and MF bond interest near FSF stock x coupon, non-government dividends near the R7-grossed
+      issuer total), what is left of the surplus lands on E_NFPU's remaining weak-keyed flows (fincorp-32, -37).
+      GRAS (no weights, no constraints) gives 12,357. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_BANK
+    col: F_GOSC
+    ref: "F4a"
+    component: "private"
+    prior: 330310.122376
+    balanced: 343803.670539
+    why: >-
+      Explained. E_BANK <- F_GOSC F4a private, 3,30,310 -> 3,43,804 (13,494, +4.1%; z 1.041; free medium; binding:
+      f4a.fins_gos (target 9,68,693, balanced 9,68,692, at its lower edge)). E_BANK ran a -1,02,838 deficit and
+      E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA property income negative, while
+      the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and captive institutions) gives NBFCs
+      more GOS than the RTP-scaled interest matrix can carry. f4a.fins_gos holds banks + NBFCs + RBI GOS at SUT
+      industry 55; balancing moved GOS from NBFCs to banks, toward the RTP P&L evidence (banks' operating profit),
+      which fincorp-2 shows the NAS 8.12 split understates for banks. GRAS (no weights, no constraints) gives
+      3,39,506.
+    sources: [mospi_nas_2026_publication, mospi_sut_2022base, rbi_trend_progress]
+  - row: E_BANK
+    col: F_GOSC
+    ref: "F4a"
+    component: "public"
+    prior: 224285.448259
+    balanced: 232776.464313
+    why: >-
+      Explained. E_BANK <- F_GOSC F4a public, 2,24,285 -> 2,32,776 (8,491, +3.8%; z 1.038; free medium; binding:
+      f4a.fins_gos (target 9,68,693, balanced 9,68,692, at its lower edge); f4a.public (target 4,34,233, balanced
+      4,34,234, at its upper edge)). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior
+      (fincorp-2): FISIM leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12 S125-S127
+      GVA, including MFs, auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled interest
+      matrix can carry. f4a.fins_gos holds banks + NBFCs + RBI GOS at SUT industry 55; balancing moved GOS from
+      NBFCs to banks, toward the RTP P&L evidence (banks' operating profit), which fincorp-2 shows the NAS 8.12
+      split understates for banks. GRAS (no weights, no constraints) gives 2,30,530.
+    sources: [mospi_nas_2026_publication, mospi_sut_2022base, rbi_trend_progress]
+  - row: E_BANK
+    col: G_CEN
+    ref: "R3a"
+    component: "dated_securities"
+    prior: 267666.979835
+    balanced: 274445.672679
+    why: >-
+      Explained. E_BANK <- G_CEN R3a dated_securities, 2,67,667 -> 2,74,446 (6,779, +2.5%; z 1.025; free medium; no
+      constraint binds on it). Government interest by holder is each payer line x HBS T107 holder shares (medium;
+      'other securities' use the dated-security shares, low); the payer totals are held (r3b.union_nas_concept 3%,
+      r3b.states_nas_concept 1%, and since Wave C r3a.states_other_internal_debt 2%). Inside them balancing shifts
+      interest toward the accounts in deficit: E_INSP (-1,21,568; fincorp-31: its SAM investment income is below the
+      IRDAI, EPFO and NPS evidence) and E_BANK (-1,02,838; fincorp-2), away from E_NFPU and E_NBFC, whose priors are
+      in surplus. GRAS (no weights, no constraints) gives 2,63,217.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs, rbi_state_finances_study]
+  - row: E_BANK
+    col: G_CEN
+    ref: "R3a"
+    component: "other_securities"
+    prior: 9665.719482
+    balanced: 10682.687936
+    why: >-
+      Explained. E_BANK <- G_CEN R3a other_securities, 9,666 -> 10,683 (1,017, +10.5%; z 1.105; free low; no
+      constraint binds on it). Government interest by holder is each payer line x HBS T107 holder shares (medium;
+      'other securities' use the dated-security shares, low); the payer totals are held (r3b.union_nas_concept 3%,
+      r3b.states_nas_concept 1%, and since Wave C r3a.states_other_internal_debt 2%). Inside them balancing shifts
+      interest toward the accounts in deficit: E_INSP (-1,21,568; fincorp-31: its SAM investment income is below the
+      IRDAI, EPFO and NPS evidence) and E_BANK (-1,02,838; fincorp-2), away from E_NFPU and E_NBFC, whose priors are
+      in surplus. GRAS (no weights, no constraints) gives 9,505.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs, rbi_state_finances_study]
+  - row: E_BANK
+    col: G_STA
+    ref: "R3a"
+    component: "state_loans"
+    prior: 2268.849786
+    balanced: 3118.361109
+    why: >-
+      Explained. E_BANK <- G_STA R3a state_loans, 2,269 -> 3,118 (850, +37.4%; z 1.374; free low; binding:
+      r3a.states_other_internal_debt (target 27,460, balanced 26,911, at its lower edge); r3b.states_nas_concept
+      (target 4,94,609, balanced 4,99,555, at its upper edge)). Government interest by holder is each payer line x
+      HBS T107 holder shares (medium; 'other securities' use the dated-security shares, low); the payer totals are
+      held (r3b.union_nas_concept 3%, r3b.states_nas_concept 1%, and since Wave C r3a.states_other_internal_debt
+      2%). Inside them balancing shifts interest toward the accounts in deficit: E_INSP (-1,21,568; fincorp-31: its
+      SAM investment income is below the IRDAI, EPFO and NPS evidence) and E_BANK (-1,02,838; fincorp-2), away from
+      E_NFPU and E_NBFC, whose priors are in surplus. GRAS (no weights, no constraints) gives 2,377.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs, rbi_state_finances_study]
+  - row: E_BANK
+    col: H_R4
+    ref: "R5"
+    component: "loans"
+    prior: 87899.471701
+    balanced: 79546.281433
+    why: >-
+      Explained. E_BANK <- H_R4 R5 loans, 87,899 -> 79,546 (-8,353, -9.5%; z 0.905; free low; no constraint binds on
+      it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Bank loans to households are FSF stock x the scaled
+      RTP return, less FISIM (AIDIS 2019 key, low); the cut is under 10%. GRAS (no weights, no constraints) gives
+      79,121.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_BANK
+    col: H_R5
+    ref: "R5"
+    component: "loans"
+    prior: 95746.151009
+    balanced: 87669.761963
+    why: >-
+      Explained. E_BANK <- H_R5 R5 loans, 95,746 -> 87,670 (-8,076, -8.4%; z 0.916; free low; no constraint binds on
+      it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Bank loans to households are FSF stock x the scaled
+      RTP return, less FISIM (AIDIS 2019 key, low); the cut is under 10%. GRAS (no weights, no constraints) gives
+      87,187.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_BANK
+    col: H_U3
+    ref: "R5"
+    component: "loans"
+    prior: 63894.308397
+    balanced: 58591.088516
+    why: >-
+      Explained. E_BANK <- H_U3 R5 loans, 63,894 -> 58,591 (-5,303, -8.3%; z 0.917; free low; no constraint binds on
+      it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Bank loans to households are FSF stock x the scaled
+      RTP return, less FISIM (AIDIS 2019 key, low); the cut is under 10%. GRAS (no weights, no constraints) gives
+      58,088.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_BANK
+    col: H_U4
+    ref: "R5"
+    component: "loans"
+    prior: 111735.776151
+    balanced: 102641.958352
+    why: >-
+      Explained. E_BANK <- H_U4 R5 loans, 1,11,736 -> 1,02,642 (-9,094, -8.1%; z 0.919; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Bank loans to households are FSF stock x the scaled
+      RTP return, less FISIM (AIDIS 2019 key, low); the cut is under 10%. GRAS (no weights, no constraints) gives
+      1,01,892.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_BANK
+    col: H_U5
+    ref: "R5"
+    component: "loans"
+    prior: 163035.372127
+    balanced: 148989.384986
+    why: >-
+      Explained. E_BANK <- H_U5 R5 loans, 1,63,035 -> 1,48,989 (-14,046, -8.6%; z 0.914; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Bank loans to households are FSF stock x the scaled
+      RTP return, less FISIM (AIDIS 2019 key, low); the cut is under 10%. GRAS (no weights, no constraints) gives
+      1,48,251.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_INSP
+    col: E_BANK
+    ref: "R4"
+    component: "deposits"
+    prior: 9665.560457
+    balanced: 11201.663825
+    why: >-
+      Explained. E_INSP <- E_BANK R4 deposits, 9,666 -> 11,202 (1,536, +15.9%; z 1.159; free low; no constraint
+      binds on it). Interbank and bank-NBFC interest is FSF stocks x the scaled RTP rates. E_BANK ran a -1,02,838
+      deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA property income
+      negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and captive
+      institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. Balancing moves interest
+      from the surplus account to the deficit one; E_INSP ran a -1,21,568 deficit because its SAM investment income
+      (FSF stocks x rates) is 1,38,486 below the administrative sources behind its D44 payouts (IRDAI life and
+      non-life investment income + EPF, EPS, exempted PF and NPS income: 7,80,914; fincorp-31), so raising its
+      receipts moves toward that evidence. GRAS (no weights, no constraints) gives 10,080.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_INSP
+    col: E_NBFC
+    ref: "R4"
+    component: "bonds"
+    prior: 32747.709934
+    balanced: 55179.953612
+    why: >-
+      Explained. E_INSP <- E_NBFC R4 bonds, 32,748 -> 55,180 (22,432, +68.5%; z 1.685; free low; no constraint binds
+      on it). NBFC bonds pay about half the coupon in the prior (the NBFC expended scale 0.503: the RTP NBFC P&L
+      leaves little for non-bank creditors; fincorp-4), so a rise toward the full coupon is toward the evidence.
+      E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA
+      property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and
+      captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. E_INSP ran a
+      -1,21,568 deficit because its SAM investment income (FSF stocks x rates) is 1,38,486 below the administrative
+      sources behind its D44 payouts (IRDAI life and non-life investment income + EPF, EPS, exempted PF and NPS
+      income: 7,80,914; fincorp-31), so raising its receipts moves toward that evidence. GRAS (no weights, no
+      constraints) gives 40,847.
+    sources: [irdai_handbook_insurance, mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_INSP
+    col: E_NBFC
+    ref: "R8"
+    component: "dividends"
+    prior: 2824.563148
+    balanced: 4759.394284
+    why: >-
+      Explained. E_INSP <- E_NBFC R8 dividends, 2,825 -> 4,759 (1,935, +68.5%; z 1.685; free low; no constraint
+      binds on it). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM
+      leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs,
+      auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry.
+      E_NBFC's onward distribution of the private NFC equity it holds (holding companies) is only the ratio-based
+      prior (fincorp-2), so its dividends and MF-looked-through payments rising is toward the evidence; E_INSP ran a
+      -1,21,568 deficit because its SAM investment income (FSF stocks x rates) is 1,38,486 below the administrative
+      sources behind its D44 payouts (IRDAI life and non-life investment income + EPF, EPS, exempted PF and NPS
+      income: 7,80,914; fincorp-31), so raising its receipts moves toward that evidence. GRAS (no weights, no
+      constraints) gives 3,523.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_INSP
+    col: E_NFPR
+    ref: "R5"
+    component: "loans"
+    prior: 6228.315682
+    balanced: 7286.701096
+    why: >-
+      Explained. E_INSP <- E_NFPR R5 loans, 6,228 -> 7,287 (1,058, +17.0%; z 1.170; free low; no constraint binds on
+      it). E_INSP ran a -1,21,568 deficit because its SAM investment income (FSF stocks x rates) is 1,38,486 below
+      the administrative sources behind its D44 payouts (IRDAI life and non-life investment income + EPF, EPS,
+      exempted PF and NPS income: 7,80,914; fincorp-31), so raising its receipts moves toward that evidence.
+      Insurers' interest on private NFC bonds and loans is FSF ICPF holdings x the corporate coupon (unscaled;
+      fincorp-30); the rise is within the coupon range. GRAS (no weights, no constraints) gives 6,595.
+    sources: [epfo_annual_report_accounts, irdai_handbook_insurance, pfrda_nps_statistics, rbi_fsf_fof]
+  - row: E_INSP
+    col: E_NFPR
+    ref: "R5"
+    component: "nongov_bonds"
+    prior: 41355.292901
+    balanced: 48382.849151
+    why: >-
+      Explained. E_INSP <- E_NFPR R5 nongov_bonds, 41,355 -> 48,383 (7,028, +17.0%; z 1.170; free low; no constraint
+      binds on it). E_INSP ran a -1,21,568 deficit because its SAM investment income (FSF stocks x rates) is
+      1,38,486 below the administrative sources behind its D44 payouts (IRDAI life and non-life investment income +
+      EPF, EPS, exempted PF and NPS income: 7,80,914; fincorp-31), so raising its receipts moves toward that
+      evidence. Insurers' interest on private NFC bonds and loans is FSF ICPF holdings x the corporate coupon
+      (unscaled; fincorp-30); the rise is within the coupon range. GRAS (no weights, no constraints) gives 43,789.
+    sources: [epfo_annual_report_accounts, irdai_handbook_insurance, pfrda_nps_statistics, rbi_fsf_fof]
+  - row: E_INSP
+    col: E_NFPR
+    ref: "R8"
+    component: "distributed_income"
+    prior: 23018.524778
+    balanced: 26930.091262
+    why: >-
+      Explained. E_INSP <- E_NFPR R8 distributed_income, 23,019 -> 26,930 (3,912, +17.0%; z 1.170; free low; no
+      constraint binds on it). Private NFCs' old-base distributed income and dividends (D2-21, fincorp-27) are split
+      over holders by FSF F51 book values (low). E_INSP ran a -1,21,568 deficit because its SAM investment income
+      (FSF stocks x rates) is 1,38,486 below the administrative sources behind its D44 payouts (IRDAI life and
+      non-life investment income + EPF, EPS, exempted PF and NPS income: 7,80,914; fincorp-31), so raising its
+      receipts moves toward that evidence. E_NFPR's prior deficit (-1,13,892) cuts what it pays in total. GRAS (no
+      weights, no constraints) gives 24,373.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_INSP
+    col: E_NFPR
+    ref: "R8"
+    component: "dividends"
+    prior: 5375.444426
+    balanced: 6288.900369
+    why: >-
+      Explained. E_INSP <- E_NFPR R8 dividends, 5,375 -> 6,289 (913, +17.0%; z 1.170; free low; no constraint binds
+      on it). Private NFCs' old-base distributed income and dividends (D2-21, fincorp-27) are split over holders by
+      FSF F51 book values (low). E_INSP ran a -1,21,568 deficit because its SAM investment income (FSF stocks x
+      rates) is 1,38,486 below the administrative sources behind its D44 payouts (IRDAI life and non-life investment
+      income + EPF, EPS, exempted PF and NPS income: 7,80,914; fincorp-31), so raising its receipts moves toward
+      that evidence. E_NFPR's prior deficit (-1,13,892) cuts what it pays in total. GRAS (no weights, no
+      constraints) gives 5,692.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_INSP
+    col: E_NFPU
+    ref: "R5"
+    component: "nongov_bonds"
+    prior: 33185.004857
+    balanced: 41481.256071
+    why: >-
+      Explained (bounded). E_INSP <- E_NFPU R5 nongov_bonds, 33,185 -> 41,481 (8,296, +25.0%; z 1.250; free low;
+      binding: r5.insp_bonds.e_nfpu (target 33,185, balanced 41,481, at its upper edge)). E_INSP ran a -1,21,568
+      deficit because its SAM investment income (FSF stocks x rates) is 1,38,486 below the administrative sources
+      behind its D44 payouts (IRDAI life and non-life investment income + EPF, EPS, exempted PF and NPS income:
+      7,80,914; fincorp-31), so raising its receipts moves toward that evidence. Insurers' interest on public NFC
+      bonds is FSF ICPF holdings x the corporate coupon (fincorp-30); the Wave C band r5.insp_bonds.e_nfpu (target
+      33,185, balanced 41,481, at its upper edge) (fincorp-32) holds it within 25% of that stock x coupon, where the
+      earlier run had +93.6% (an implied 15.7% yield). The rise inside the band is carried by E_NFPU's prior
+      surplus. GRAS (no weights, no constraints) gives 46,453.
+    sources: [epfo_annual_report_accounts, irdai_handbook_insurance, pfrda_nps_statistics, rbi_fsf_fof]
+  - row: E_INSP
+    col: E_NFPU
+    ref: "R8"
+    component: "dividends"
+    prior: 2592.812513
+    balanced: 3577.351998
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). E_INSP <- E_NFPU R8 dividends, 2,593 -> 3,577
+      (985, +38.0%; z 1.380; free low; binding: r8.nfpu_nongov_holders (target 30,714, balanced 38,393, at its upper
+      edge)). Public NFC dividends and MF-held bond interest to non-government holders are the R7-grossed issuer
+      total (fincorp dividend_matrix) and FSF stock x coupon; the Wave C bands r8.nfpu_nongov_holders and
+      r8.mf_bonds.e_nfpu hold their totals within 25% (the earlier run raised them 1.7-1.9 times). The rise inside
+      the bands is E_NFPU's prior surplus (3,12,829), whose cause is the NAD question of government-33. GRAS (no
+      weights, no constraints) gives 3,629. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure
+      institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893,
+      E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_INSP
+    col: G_CEN
+    ref: "R3a"
+    component: "dated_securities"
+    prior: 240858.772369
+    balanced: 256234.692802
+    why: >-
+      Explained. E_INSP <- G_CEN R3a dated_securities, 2,40,859 -> 2,56,235 (15,376, +6.4%; z 1.064; free medium; no
+      constraint binds on it). Government interest by holder is each payer line x HBS T107 holder shares (medium;
+      'other securities' use the dated-security shares, low); the payer totals are held (r3b.union_nas_concept 3%,
+      r3b.states_nas_concept 1%, and since Wave C r3a.states_other_internal_debt 2%). Inside them balancing shifts
+      interest toward the accounts in deficit: E_INSP (-1,21,568; fincorp-31: its SAM investment income is below the
+      IRDAI, EPFO and NPS evidence) and E_BANK (-1,02,838; fincorp-2), away from E_NFPU and E_NBFC, whose priors are
+      in surplus. GRAS (no weights, no constraints) gives 2,45,108.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs, rbi_state_finances_study]
+  - row: E_INSP
+    col: G_CEN
+    ref: "R3a"
+    component: "other_securities"
+    prior: 8697.648586
+    balanced: 11140.474913
+    why: >-
+      Explained. E_INSP <- G_CEN R3a other_securities, 8,698 -> 11,140 (2,443, +28.1%; z 1.281; free low; no
+      constraint binds on it). Government interest by holder is each payer line x HBS T107 holder shares (medium;
+      'other securities' use the dated-security shares, low); the payer totals are held (r3b.union_nas_concept 3%,
+      r3b.states_nas_concept 1%, and since Wave C r3a.states_other_internal_debt 2%). Inside them balancing shifts
+      interest toward the accounts in deficit: E_INSP (-1,21,568; fincorp-31: its SAM investment income is below the
+      IRDAI, EPFO and NPS evidence) and E_BANK (-1,02,838; fincorp-2), away from E_NFPU and E_NBFC, whose priors are
+      in surplus. GRAS (no weights, no constraints) gives 8,851.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs, rbi_state_finances_study]
+  - row: E_INSP
+    col: G_STA
+    ref: "R3a"
+    component: "sdl"
+    prior: 196050.382301
+    balanced: 202233.748143
+    why: >-
+      Explained. E_INSP <- G_STA R3a sdl, 1,96,050 -> 2,02,234 (6,183, +3.2%; z 1.032; free medium; binding:
+      r3b.states_nas_concept (target 4,94,609, balanced 4,99,555, at its upper edge)). Government interest by holder
+      is each payer line x HBS T107 holder shares (medium; 'other securities' use the dated-security shares, low);
+      the payer totals are held (r3b.union_nas_concept 3%, r3b.states_nas_concept 1%, and since Wave C
+      r3a.states_other_internal_debt 2%). Inside them balancing shifts interest toward the accounts in deficit:
+      E_INSP (-1,21,568; fincorp-31: its SAM investment income is below the IRDAI, EPFO and NPS evidence) and E_BANK
+      (-1,02,838; fincorp-2), away from E_NFPU and E_NBFC, whose priors are in surplus. GRAS (no weights, no
+      constraints) gives 2,12,591.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs, rbi_state_finances_study]
+  - row: E_NBFC
+    col: E_BANK
+    ref: "R4"
+    component: "deposits"
+    prior: 66353.586510
+    balanced: 60426.602465
+    why: >-
+      Explained. E_NBFC <- E_BANK R4 deposits, 66,354 -> 60,427 (-5,927, -8.9%; z 0.911; free medium; no constraint
+      binds on it). Interbank and bank-NBFC interest is FSF stocks x the scaled RTP rates. E_BANK ran a -1,02,838
+      deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA property income
+      negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and captive
+      institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. Balancing moves interest
+      from the surplus account to the deficit one. GRAS (no weights, no constraints) gives 56,547.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: E_NFPR
+    ref: "R5"
+    component: "loans"
+    prior: 140249.347163
+    balanced: 128023.835413
+    why: >-
+      Explained. E_NBFC <- E_NFPR R5 loans, 1,40,249 -> 1,28,024 (-12,226, -8.7%; z 0.913; free medium; no
+      constraint binds on it). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior
+      (fincorp-2): FISIM leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12 S125-S127
+      GVA, including MFs, auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled interest
+      matrix can carry. NBFC interest from private NFCs (FSF stock x scaled rate, medium) falls as E_NBFC sheds its
+      surplus and E_NFPR (-1,13,892) its deficit. GRAS (no weights, no constraints) gives 1,21,350.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: E_NFPR
+    ref: "R8"
+    component: "distributed_income"
+    prior: 85933.834202
+    balanced: 59665.616415
+    why: >-
+      Explained. E_NBFC <- E_NFPR R8 distributed_income, 85,934 -> 59,666 (-26,268, -30.6%; z 0.694; free low; no
+      constraint binds on it). Private NFCs' old-base distributed income and dividends (D2-21, fincorp-27) are split
+      over holders by FSF F51 book values (low). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the
+      prior (fincorp-2): FISIM leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12
+      S125-S127 GVA, including MFs, auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled
+      interest matrix can carry. E_NFPR's prior deficit (-1,13,892) cuts what it pays in total. GRAS (no weights, no
+      constraints) gives 74,354.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NBFC
+    col: E_NFPR
+    ref: "R8"
+    component: "dividends"
+    prior: 20067.860756
+    balanced: 13933.525639
+    why: >-
+      Explained. E_NBFC <- E_NFPR R8 dividends, 20,068 -> 13,934 (-6,134, -30.6%; z 0.694; free low; no constraint
+      binds on it). Private NFCs' old-base distributed income and dividends (D2-21, fincorp-27) are split over
+      holders by FSF F51 book values (low). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the
+      prior (fincorp-2): FISIM leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12
+      S125-S127 GVA, including MFs, auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled
+      interest matrix can carry. E_NFPR's prior deficit (-1,13,892) cuts what it pays in total. GRAS (no weights, no
+      constraints) gives 17,364.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NBFC
+    col: E_NFPU
+    ref: "R5"
+    component: "loans"
+    prior: 75865.376655
+    balanced: 110162.636297
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). E_NBFC <- E_NFPU R5 loans, 75,865 -> 1,10,163 (34,297, +45.2%; z
+      1.452; free medium; no constraint binds on it). Public NFCs' interest to banks and NBFCs is FSF stock x the
+      scaled RTP return (medium), less FISIM; the balanced level implies a rate well above the RTP return on
+      advances. E_NFPU's prior keeps 3,12,829 over NAS 2026 St 1.9 public NFC saving (closure institution_gaps). Its
+      cause is not a documented source disagreement: the old-base NAS 2024 St 2.1A shows departmental enterprises
+      passing 95.6% of their primary income on as D6 + D7 (1,48,177 in 2022-23), a flow the new-base SAM does not
+      write (government-33, a NAD question for Checkpoint B). After the Wave C constraints held the published
+      outlets (R9d at the AFS total, R18 at IGAS-2, T4a within 25% of the old-base share, R7x lines and payer
+      shares, insurers' and MF bond interest near FSF stock x coupon, non-government dividends near the R7-grossed
+      issuer total), what is left of the surplus lands on E_NFPU's remaining weak-keyed flows (fincorp-32, -37).
+      GRAS (no weights, no constraints) gives 86,782. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: E_NFPU
+    ref: "R5"
+    component: "nongov_bonds"
+    prior: 1642.837559
+    balanced: 2385.532432
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). E_NBFC <- E_NFPU R5 nongov_bonds, 1,643 -> 2,386 (743, +45.2%; z
+      1.452; free medium; no constraint binds on it). Public NFCs' interest to banks and NBFCs is FSF stock x the
+      scaled RTP return (medium), less FISIM; the balanced level implies a rate well above the RTP return on
+      advances. E_NFPU's prior keeps 3,12,829 over NAS 2026 St 1.9 public NFC saving (closure institution_gaps). Its
+      cause is not a documented source disagreement: the old-base NAS 2024 St 2.1A shows departmental enterprises
+      passing 95.6% of their primary income on as D6 + D7 (1,48,177 in 2022-23), a flow the new-base SAM does not
+      write (government-33, a NAD question for Checkpoint B). After the Wave C constraints held the published
+      outlets (R9d at the AFS total, R18 at IGAS-2, T4a within 25% of the old-base share, R7x lines and payer
+      shares, insurers' and MF bond interest near FSF stock x coupon, non-government dividends near the R7-grossed
+      issuer total), what is left of the surplus lands on E_NFPU's remaining weak-keyed flows (fincorp-32, -37).
+      GRAS (no weights, no constraints) gives 1,879. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: F_GOSC
+    ref: "F4a"
+    component: "private"
+    prior: 260539.459251
+    balanced: 246959.597043
+    why: >-
+      Explained. E_NBFC <- F_GOSC F4a private, 2,60,539 -> 2,46,960 (-13,580, -5.2%; z 0.948; free medium; binding:
+      f4a.fins_gos (target 9,68,693, balanced 9,68,692, at its lower edge)). E_BANK ran a -1,02,838 deficit and
+      E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA property income negative, while
+      the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and captive institutions) gives NBFCs
+      more GOS than the RTP-scaled interest matrix can carry. f4a.fins_gos holds banks + NBFCs + RBI GOS at SUT
+      industry 55; balancing moved GOS from NBFCs to banks, toward the RTP P&L evidence (banks' operating profit),
+      which fincorp-2 shows the NAS 8.12 split understates for banks. GRAS (no weights, no constraints) gives
+      2,26,457.
+    sources: [mospi_nas_2026_publication, mospi_sut_2022base, rbi_trend_progress]
+  - row: E_NBFC
+    col: F_GOSC
+    ref: "F4a"
+    component: "public"
+    prior: 153187.439801
+    balanced: 144785.443992
+    why: >-
+      Explained. E_NBFC <- F_GOSC F4a public, 1,53,187 -> 1,44,785 (-8,402, -5.5%; z 0.945; free medium; binding:
+      f4a.fins_gos (target 9,68,693, balanced 9,68,692, at its lower edge); f4a.public (target 4,34,233, balanced
+      4,34,234, at its upper edge)). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior
+      (fincorp-2): FISIM leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12 S125-S127
+      GVA, including MFs, auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled interest
+      matrix can carry. f4a.fins_gos holds banks + NBFCs + RBI GOS at SUT industry 55; balancing moved GOS from
+      NBFCs to banks, toward the RTP P&L evidence (banks' operating profit), which fincorp-2 shows the NAS 8.12
+      split understates for banks. GRAS (no weights, no constraints) gives 1,33,148.
+    sources: [mospi_nas_2026_publication, mospi_sut_2022base, rbi_trend_progress]
+  - row: E_NBFC
+    col: H_R1
+    ref: "R5"
+    component: "loans"
+    prior: 1844.156997
+    balanced: 1151.931482
+    why: >-
+      Explained in direction; level unexplained. E_NBFC <- H_R1 R5 loans, 1,844 -> 1,152 (-692, -37.5%; z 0.625;
+      free low; no constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. NBFC loans to
+      households are FSF stock x the scaled NBFC rate (AIDIS 2019 key, low); E_NBFC's prior surplus (2,32,893,
+      fincorp-2) pushes the same way, so these fall much more than bank loans; no source supports a 37% lower NBFC
+      household interest. GRAS (no weights, no constraints) gives 1,405. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: H_R2
+    ref: "R5"
+    component: "loans"
+    prior: 3406.130426
+    balanced: 2129.301191
+    why: >-
+      Explained in direction; level unexplained. E_NBFC <- H_R2 R5 loans, 3,406 -> 2,129 (-1,277, -37.5%; z 0.625;
+      free low; no constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. NBFC loans to
+      households are FSF stock x the scaled NBFC rate (AIDIS 2019 key, low); E_NBFC's prior surplus (2,32,893,
+      fincorp-2) pushes the same way, so these fall much more than bank loans; no source supports a 37% lower NBFC
+      household interest. GRAS (no weights, no constraints) gives 2,600. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: H_R3
+    ref: "R5"
+    component: "loans"
+    prior: 5884.084813
+    balanced: 3680.969336
+    why: >-
+      Explained in direction; level unexplained. E_NBFC <- H_R3 R5 loans, 5,884 -> 3,681 (-2,203, -37.4%; z 0.626;
+      free low; no constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. NBFC loans to
+      households are FSF stock x the scaled NBFC rate (AIDIS 2019 key, low); E_NBFC's prior surplus (2,32,893,
+      fincorp-2) pushes the same way, so these fall much more than bank loans; no source supports a 37% lower NBFC
+      household interest. GRAS (no weights, no constraints) gives 4,494. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: H_R4
+    ref: "R5"
+    component: "loans"
+    prior: 9923.863968
+    balanced: 6176.885019
+    why: >-
+      Explained in direction; level unexplained. E_NBFC <- H_R4 R5 loans, 9,924 -> 6,177 (-3,747, -37.8%; z 0.622;
+      free low; no constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. NBFC loans to
+      households are FSF stock x the scaled NBFC rate (AIDIS 2019 key, low); E_NBFC's prior surplus (2,32,893,
+      fincorp-2) pushes the same way, so these fall much more than bank loans; no source supports a 37% lower NBFC
+      household interest. GRAS (no weights, no constraints) gives 7,554. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: H_R5
+    ref: "R5"
+    component: "loans"
+    prior: 10809.755277
+    balanced: 6807.685156
+    why: >-
+      Explained in direction; level unexplained. E_NBFC <- H_R5 R5 loans, 10,810 -> 6,808 (-4,002, -37.0%; z 0.630;
+      free low; no constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. NBFC loans to
+      households are FSF stock x the scaled NBFC rate (AIDIS 2019 key, low); E_NBFC's prior surplus (2,32,893,
+      fincorp-2) pushes the same way, so these fall much more than bank loans; no source supports a 37% lower NBFC
+      household interest. GRAS (no weights, no constraints) gives 8,324. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: H_U2
+    ref: "R5"
+    component: "loans"
+    prior: 3208.698165
+    balanced: 2015.017907
+    why: >-
+      Explained in direction; level unexplained. E_NBFC <- H_U2 R5 loans, 3,209 -> 2,015 (-1,194, -37.2%; z 0.628;
+      free low; no constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. NBFC loans to
+      households are FSF stock x the scaled NBFC rate (AIDIS 2019 key, low); E_NBFC's prior surplus (2,32,893,
+      fincorp-2) pushes the same way, so these fall much more than bank loans; no source supports a 37% lower NBFC
+      household interest. GRAS (no weights, no constraints) gives 2,459. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: H_U3
+    ref: "R5"
+    component: "loans"
+    prior: 7213.677313
+    balanced: 4549.683661
+    why: >-
+      Explained in direction; level unexplained. E_NBFC <- H_U3 R5 loans, 7,214 -> 4,550 (-2,664, -36.9%; z 0.631;
+      free low; no constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. NBFC loans to
+      households are FSF stock x the scaled NBFC rate (AIDIS 2019 key, low); E_NBFC's prior surplus (2,32,893,
+      fincorp-2) pushes the same way, so these fall much more than bank loans; no source supports a 37% lower NBFC
+      household interest. GRAS (no weights, no constraints) gives 5,546. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: H_U4
+    ref: "R5"
+    component: "loans"
+    prior: 12614.986432
+    balanced: 7970.298089
+    why: >-
+      Explained in direction; level unexplained. E_NBFC <- H_U4 R5 loans, 12,615 -> 7,970 (-4,645, -36.8%; z 0.632;
+      free low; no constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. NBFC loans to
+      households are FSF stock x the scaled NBFC rate (AIDIS 2019 key, low); E_NBFC's prior surplus (2,32,893,
+      fincorp-2) pushes the same way, so these fall much more than bank loans; no source supports a 37% lower NBFC
+      household interest. GRAS (no weights, no constraints) gives 9,728. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: H_U5
+    ref: "R5"
+    component: "loans"
+    prior: 18406.718762
+    balanced: 11569.243509
+    why: >-
+      Explained in direction; level unexplained. E_NBFC <- H_U5 R5 loans, 18,407 -> 11,569 (-6,837, -37.1%; z 0.629;
+      free low; no constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. NBFC loans to
+      households are FSF stock x the scaled NBFC rate (AIDIS 2019 key, low); E_NBFC's prior surplus (2,32,893,
+      fincorp-2) pushes the same way, so these fall much more than bank loans; no source supports a 37% lower NBFC
+      household interest. GRAS (no weights, no constraints) gives 14,154. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NFPR
+    col: E_NBFC
+    ref: "R4"
+    component: "mf_lookthrough"
+    prior: 5289.610004
+    balanced: 7618.398944
+    why: >-
+      Explained. E_NFPR <- E_NBFC R4 mf_lookthrough, 5,290 -> 7,618 (2,329, +44.0%; z 1.440; free low; no constraint
+      binds on it). NBFC bonds pay about half the coupon in the prior (the NBFC expended scale 0.503: the RTP NBFC
+      P&L leaves little for non-bank creditors; fincorp-4), so a rise toward the full coupon is toward the evidence.
+      E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA
+      property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and
+      captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. GRAS (no weights, no
+      constraints) gives 6,822.
+    sources: [irdai_handbook_insurance, mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress, sebi_handbook_statistics]
+  - row: E_NFPR
+    col: E_NBFC
+    ref: "R8"
+    component: "dividends"
+    prior: 6202.074117
+    balanced: 8932.581961
+    why: >-
+      Explained. E_NFPR <- E_NBFC R8 dividends, 6,202 -> 8,933 (2,731, +44.0%; z 1.440; free low; no constraint
+      binds on it). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM
+      leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs,
+      auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry.
+      E_NBFC's onward distribution of the private NFC equity it holds (holding companies) is only the ratio-based
+      prior (fincorp-2), so its dividends and MF-looked-through payments rising is toward the evidence. GRAS (no
+      weights, no constraints) gives 7,999.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NFPR
+    col: E_NFPU
+    ref: "R8"
+    component: "interest_mf_lookthrough"
+    prior: 3731.785934
+    balanced: 4664.732418
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). E_NFPR <- E_NFPU R8 interest_mf_lookthrough,
+      3,732 -> 4,665 (933, +25.0%; z 1.250; free low; binding: r8.mf_bonds.e_nfpu (target 3,732, balanced 4,665, at
+      its upper edge)). Public NFC dividends and MF-held bond interest to non-government holders are the R7-grossed
+      issuer total (fincorp dividend_matrix) and FSF stock x coupon; the Wave C bands r8.nfpu_nongov_holders and
+      r8.mf_bonds.e_nfpu hold their totals within 25% (the earlier run raised them 1.7-1.9 times). The rise inside
+      the bands is E_NFPU's prior surplus (3,12,829), whose cause is the NAD question of government-33. GRAS (no
+      weights, no constraints) gives 5,401. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure
+      institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893,
+      E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NFPR
+    col: E_NFPU
+    ref: "R8"
+    component: "mf_lookthrough"
+    prior: 5937.498895
+    balanced: 7002.187967
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). E_NFPR <- E_NFPU R8 mf_lookthrough, 5,937 ->
+      7,002 (1,065, +17.9%; z 1.179; free low; binding: r8.nfpu_nongov_holders (target 30,714, balanced 38,393, at
+      its upper edge)). Public NFC dividends and MF-held bond interest to non-government holders are the R7-grossed
+      issuer total (fincorp dividend_matrix) and FSF stock x coupon; the Wave C bands r8.nfpu_nongov_holders and
+      r8.mf_bonds.e_nfpu hold their totals within 25% (the earlier run raised them 1.7-1.9 times). The rise inside
+      the bands is E_NFPU's prior surplus (3,12,829), whose cause is the NAD question of government-33. GRAS (no
+      weights, no constraints) gives 8,594. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure
+      institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893,
+      E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NFPU
+    col: E_BANK
+    ref: "R4"
+    component: "deposits"
+    prior: 47262.554053
+    balanced: 29640.823084
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). E_NFPU <- E_BANK R4 deposits, 47,263 -> 29,641 (-17,622, -37.3%; z
+      0.627; free medium; no constraint binds on it). Public NFCs' deposit interest from banks is FSF deposits x the
+      scaled cost of deposits (medium). E_NFPU's prior keeps 3,12,829 over NAS 2026 St 1.9 public NFC saving
+      (closure institution_gaps). Its cause is not a documented source disagreement: the old-base NAS 2024 St 2.1A
+      shows departmental enterprises passing 95.6% of their primary income on as D6 + D7 (1,48,177 in 2022-23), a
+      flow the new-base SAM does not write (government-33, a NAD question for Checkpoint B). After the Wave C
+      constraints held the published outlets (R9d at the AFS total, R18 at IGAS-2, T4a within 25% of the old-base
+      share, R7x lines and payer shares, insurers' and MF bond interest near FSF stock x coupon, non-government
+      dividends near the R7-grossed issuer total), what is left of the surplus lands on E_NFPU's remaining
+      weak-keyed flows (fincorp-32, -37). GRAS (no weights, no constraints) gives 15,572. The prior account gaps
+      (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547,
+      E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NFPU
+    col: E_NFPR
+    ref: "R8"
+    component: "distributed_income"
+    prior: 94989.628020
+    balanced: 14834.513928
+    why: >-
+      Explained in direction; level unexplained (fincorp-32, -37). E_NFPU <- E_NFPR R8 distributed_income, 94,990 ->
+      14,835 (-80,155, -84.4%; z 0.156; free low; no constraint binds on it). This is E_NFPU's share of private
+      NFCs' old-base distributed income (D2-21 top-up, fincorp-27; FSF F51 holdings, very low confidence). The
+      old-base NAS 2024 St 2.1 structure evidences a cut of about 50,764 of the 94,990 it gives E_NFPU (fincorp-32);
+      balancing cut further because E_NFPU keeps its prior surplus (3,12,829) after the Wave C bands held its other
+      outlets. The part of the cut beyond 50,764 has no evidence. GRAS (no weights, no constraints) gives 31,775.
+      The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426,
+      households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892,
+      E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NFPU
+    col: E_NFPR
+    ref: "R8"
+    component: "dividends"
+    prior: 22182.632092
+    balanced: 3464.257852
+    why: >-
+      Explained in direction; level unexplained (fincorp-32, -37). E_NFPU <- E_NFPR R8 dividends, 22,183 -> 3,464
+      (-18,718, -84.4%; z 0.156; free low; no constraint binds on it). This is E_NFPU's share of private NFCs'
+      old-base distributed income (D2-21 top-up, fincorp-27; FSF F51 holdings, very low confidence). The old-base
+      NAS 2024 St 2.1 structure evidences a cut of about 50,764 of the 94,990 it gives E_NFPU (fincorp-32);
+      balancing cut further because E_NFPU keeps its prior surplus (3,12,829) after the Wave C bands held its other
+      outlets. The part of the cut beyond 50,764 has no evidence. GRAS (no weights, no constraints) gives 7,420. The
+      prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426,
+      households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892,
+      E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NFPU
+    col: G_CEN
+    ref: "R3a"
+    component: "dated_securities"
+    prior: 17751.414610
+    balanced: 3035.090262
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). E_NFPU <- G_CEN R3a dated_securities, 17,751 -> 3,035 (-14,716,
+      -82.9%; z 0.171; free low; no constraint binds on it). Union G-sec interest to public NFCs is the HBS T107
+      'corporates' share of each Finance Accounts payer line split by FSF holdings (low). E_NFPU's prior keeps
+      3,12,829 over NAS 2026 St 1.9 public NFC saving (closure institution_gaps). Its cause is not a documented
+      source disagreement: the old-base NAS 2024 St 2.1A shows departmental enterprises passing 95.6% of their
+      primary income on as D6 + D7 (1,48,177 in 2022-23), a flow the new-base SAM does not write (government-33, a
+      NAD question for Checkpoint B). After the Wave C constraints held the published outlets (R9d at the AFS total,
+      R18 at IGAS-2, T4a within 25% of the old-base share, R7x lines and payer shares, insurers' and MF bond
+      interest near FSF stock x coupon, non-government dividends near the R7-grossed issuer total), what is left of
+      the surplus lands on E_NFPU's remaining weak-keyed flows (fincorp-32, -37). GRAS (no weights, no constraints)
+      gives 5,707. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA
+      4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR
+      -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs]
+  - row: E_NFPU
+    col: G_CEN
+    ref: "R3a"
+    component: "other_securities"
+    prior: 641.021146
+    balanced: 109.600112
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). E_NFPU <- G_CEN R3a other_securities, 641 -> 110 (-531, -82.9%; z
+      0.171; free low; no constraint binds on it). Union G-sec interest to public NFCs is the HBS T107 'corporates'
+      share of each Finance Accounts payer line split by FSF holdings (low). E_NFPU's prior keeps 3,12,829 over NAS
+      2026 St 1.9 public NFC saving (closure institution_gaps). Its cause is not a documented source disagreement:
+      the old-base NAS 2024 St 2.1A shows departmental enterprises passing 95.6% of their primary income on as D6 +
+      D7 (1,48,177 in 2022-23), a flow the new-base SAM does not write (government-33, a NAD question for Checkpoint
+      B). After the Wave C constraints held the published outlets (R9d at the AFS total, R18 at IGAS-2, T4a within
+      25% of the old-base share, R7x lines and payer shares, insurers' and MF bond interest near FSF stock x coupon,
+      non-government dividends near the R7-grossed issuer total), what is left of the surplus lands on E_NFPU's
+      remaining weak-keyed flows (fincorp-32, -37). GRAS (no weights, no constraints) gives 206. The prior account
+      gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z
+      -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK
+      -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs]
+  - row: E_NFPU
+    col: G_CEN
+    ref: "R3a"
+    component: "tbills"
+    prior: 2874.509905
+    balanced: 491.476156
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). E_NFPU <- G_CEN R3a tbills, 2,875 -> 491 (-2,383, -82.9%; z 0.171;
+      free low; no constraint binds on it). Union G-sec interest to public NFCs is the HBS T107 'corporates' share
+      of each Finance Accounts payer line split by FSF holdings (low). E_NFPU's prior keeps 3,12,829 over NAS 2026
+      St 1.9 public NFC saving (closure institution_gaps). Its cause is not a documented source disagreement: the
+      old-base NAS 2024 St 2.1A shows departmental enterprises passing 95.6% of their primary income on as D6 + D7
+      (1,48,177 in 2022-23), a flow the new-base SAM does not write (government-33, a NAD question for Checkpoint
+      B). After the Wave C constraints held the published outlets (R9d at the AFS total, R18 at IGAS-2, T4a within
+      25% of the old-base share, R7x lines and payer shares, insurers' and MF bond interest near FSF stock x coupon,
+      non-government dividends near the R7-grossed issuer total), what is left of the surplus lands on E_NFPU's
+      remaining weak-keyed flows (fincorp-32, -37). GRAS (no weights, no constraints) gives 924. The prior account
+      gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z
+      -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK
+      -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs]
+  - row: G_CEN
+    col: E_NBFC
+    ref: "R4"
+    component: "bonds"
+    prior: 6805.127146
+    balanced: 8952.303389
+    why: >-
+      Explained. G_CEN <- E_NBFC R4 bonds, 6,805 -> 8,952 (2,147, +31.6%; z 1.316; free low; no constraint binds on
+      it). NBFC bonds pay about half the coupon in the prior (the NBFC expended scale 0.503: the RTP NBFC P&L leaves
+      little for non-bank creditors; fincorp-4), so a rise toward the full coupon is toward the evidence. E_BANK ran
+      a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA property
+      income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and captive
+      institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. GRAS (no weights, no
+      constraints) gives 9,835.
+    sources: [irdai_handbook_insurance, mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: G_STA
+    col: E_BANK
+    ref: "R4"
+    component: "borrowings"
+    prior: 1024.001758
+    balanced: 353.342359
+    why: >-
+      Explained. G_STA <- E_BANK R4 borrowings, 1,024 -> 353 (-671, -65.5%; z 0.345; free low; no constraint binds
+      on it). GG interest received from banks is FSF deposit and loan stocks x the scaled cost of deposits (low). No
+      bridge sees such a receipt: the States' interest receipts (28,494) are booked in R7x from E_NFPU, and the
+      4,620 urban local bodies report interest income of only 3,158 (FC16 cityfinance; government-26). With G_STA's
+      prior excess (4,50,426) and E_BANK's deficit (-1,02,838), balancing cut it toward that evidence. GRAS (no
+      weights, no constraints) gives 836.
+    sources: [fc16_ulb_cityfinance_dump, rbi_fsf_fof, rbi_state_finances_study, rbi_trend_progress]
+  - row: G_STA
+    col: E_BANK
+    ref: "R4"
+    component: "deposits"
+    prior: 83933.350644
+    balanced: 28962.067573
+    why: >-
+      Explained. G_STA <- E_BANK R4 deposits, 83,933 -> 28,962 (-54,971, -65.5%; z 0.345; free low; no constraint
+      binds on it). GG interest received from banks is FSF deposit and loan stocks x the scaled cost of deposits
+      (low). No bridge sees such a receipt: the States' interest receipts (28,494) are booked in R7x from E_NFPU,
+      and the 4,620 urban local bodies report interest income of only 3,158 (FC16 cityfinance; government-26). With
+      G_STA's prior excess (4,50,426) and E_BANK's deficit (-1,02,838), balancing cut it toward that evidence. GRAS
+      (no weights, no constraints) gives 68,483.
+    sources: [fc16_ulb_cityfinance_dump, rbi_fsf_fof, rbi_state_finances_study, rbi_trend_progress]
+  - row: G_STA
+    col: G_CEN
+    ref: "R3"
+    component: "gsec_state_reserve_funds"
+    prior: 18514.496307
+    balanced: 14549.472254
+    why: >-
+      Explained in direction; level unexplained (fincorp-35). G_STA <- G_CEN R3 gsec_state_reserve_funds, 18,514 ->
+      14,549 (-3,965, -21.4%; z 0.786; free medium; no constraint binds on it). Union G-sec interest to the States'
+      reserve funds is the HBS T107 'others: State governments' share of the Finance Accounts lines (medium); only
+      the Union payer total is constrained (r3b.union_nas_concept, 3%). G_STA's prior excess (4,50,426) cuts its
+      receipts; no source shows the States holding less. GRAS (no weights, no constraints) gives 14,741. The prior
+      account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z
+      -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK
+      -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs, rbi_state_finances_study]
+  - row: H_R1
+    col: E_BANK
+    ref: "R8a"
+    component: "deposits_bank"
+    prior: 29209.170799
+    balanced: 32162.186671
+    why: >-
+      Explained. H_R1 <- E_BANK R8a deposits_bank, 29,209 -> 32,162 (2,953, +10.1%; z 1.101; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 29,346.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R1
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income"
+    prior: 8530.879811
+    balanced: 9482.547098
+    why: >-
+      Explained. H_R1 <- E_NFPR R8a distributed_income, 8,531 -> 9,483 (952, +11.2%; z 1.112; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 8,702.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R2
+    col: E_BANK
+    ref: "R8a"
+    component: "deposits_bank"
+    prior: 45876.022411
+    balanced: 50473.686987
+    why: >-
+      Explained. H_R2 <- E_BANK R8a deposits_bank, 45,876 -> 50,474 (4,598, +10.0%; z 1.100; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 46,109.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R2
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income"
+    prior: 13398.628674
+    balanced: 14881.423299
+    why: >-
+      Explained. H_R2 <- E_NFPR R8a distributed_income, 13,399 -> 14,881 (1,483, +11.1%; z 1.111; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 13,673.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R2
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income_mf"
+    prior: 5901.528362
+    balanced: 6554.636583
+    why: >-
+      Explained. H_R2 <- E_NFPR R8a distributed_income_mf, 5,902 -> 6,555 (653, +11.1%; z 1.111; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 6,022.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R3
+    col: E_BANK
+    ref: "R8a"
+    component: "deposits_bank"
+    prior: 81421.522504
+    balanced: 89518.138073
+    why: >-
+      Explained. H_R3 <- E_BANK R8a deposits_bank, 81,422 -> 89,518 (8,097, +9.9%; z 1.099; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 81,856.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R3
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income"
+    prior: 23780.107533
+    balanced: 26393.104708
+    why: >-
+      Explained. H_R3 <- E_NFPR R8a distributed_income, 23,780 -> 26,393 (2,613, +11.0%; z 1.110; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 24,273.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R3
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income_mf"
+    prior: 10474.130038
+    balanced: 11625.044607
+    why: >-
+      Explained. H_R3 <- E_NFPR R8a distributed_income_mf, 10,474 -> 11,625 (1,151, +11.0%; z 1.110; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 10,691.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R3
+    col: E_NFPR
+    ref: "R8a"
+    component: "dividends"
+    prior: 5553.294475
+    balanced: 6163.499570
+    why: >-
+      Explained. H_R3 <- E_NFPR R8a dividends, 5,553 -> 6,163 (610, +11.0%; z 1.110; free low; no constraint binds
+      on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 5,668.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_BANK
+    ref: "R8a"
+    component: "deposits_bank"
+    prior: 122046.704338
+    balanced: 134862.882851
+    why: >-
+      Explained. H_R4 <- E_BANK R8a deposits_bank, 1,22,047 -> 1,34,863 (12,816, +10.5%; z 1.105; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 1,22,751.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_BANK
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 6693.500456
+    balanced: 7396.387905
+    why: >-
+      Explained. H_R4 <- E_BANK R8a mf_lookthrough, 6,694 -> 7,396 (703, +10.5%; z 1.105; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 6,732.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_NBFC
+    ref: "R8a"
+    component: "debentures"
+    prior: 1054.854006
+    balanced: 1694.742193
+    why: >-
+      Explained. H_R4 <- E_NBFC R8a debentures, 1,055 -> 1,695 (640, +60.7%; z 1.607; free low; no constraint binds
+      on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half
+      the coupon in the prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893)
+      pushes the same way, so these rise more than the other household receipts. GRAS (no weights, no constraints)
+      gives 1,269.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_NBFC
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 972.497946
+    balanced: 1562.427873
+    why: >-
+      Explained. H_R4 <- E_NBFC R8a mf_lookthrough, 972 -> 1,562 (590, +60.7%; z 1.607; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half
+      the coupon in the prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893)
+      pushes the same way, so these rise more than the other household receipts. GRAS (no weights, no constraints)
+      gives 1,170.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income"
+    prior: 35645.166830
+    balanced: 39762.334930
+    why: >-
+      Explained. H_R4 <- E_NFPR R8a distributed_income, 35,645 -> 39,762 (4,117, +11.6%; z 1.116; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 36,399.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income_mf"
+    prior: 15700.186052
+    balanced: 17513.624196
+    why: >-
+      Explained. H_R4 <- E_NFPR R8a distributed_income_mf, 15,700 -> 17,514 (1,813, +11.6%; z 1.116; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 16,032.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_NFPR
+    ref: "R8a"
+    component: "dividends"
+    prior: 8324.104833
+    balanced: 9285.574281
+    why: >-
+      Explained. H_R4 <- E_NFPR R8a dividends, 8,324 -> 9,286 (961, +11.6%; z 1.116; free low; no constraint binds
+      on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 8,500.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_NFPR
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 5174.629553
+    balanced: 5772.321235
+    why: >-
+      Explained. H_R4 <- E_NFPR R8a mf_lookthrough, 5,175 -> 5,772 (598, +11.6%; z 1.116; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 5,284.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_NFPU
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 1703.412760
+    balanced: 2240.894170
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). H_R4 <- E_NFPU R8a mf_lookthrough, 1,703 ->
+      2,241 (537, +31.6%; z 1.316; free low; binding: r8.nfpu_nongov_holders (target 30,714, balanced 38,393, at its
+      upper edge)). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. The public NFC part of households' MF income
+      (dividends from the R7-grossed issuer total and MF-held bond interest) is held within 25% by
+      r8.nfpu_nongov_holders; the rise inside the band carries E_NFPU's prior surplus (3,12,829, government-33).
+      GRAS (no weights, no constraints) gives 2,300. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, mospi_aidis_2019, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: H_R5
+    col: E_BANK
+    ref: "R8a"
+    component: "deposits_bank"
+    prior: 142098.347482
+    balanced: 155188.853391
+    why: >-
+      Explained. H_R5 <- E_BANK R8a deposits_bank, 1,42,098 -> 1,55,189 (13,091, +9.2%; z 1.092; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 1,43,037.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R5
+    col: E_NBFC
+    ref: "R8a"
+    component: "debentures"
+    prior: 1228.161071
+    balanced: 1950.166659
+    why: >-
+      Explained. H_R5 <- E_NBFC R8a debentures, 1,228 -> 1,950 (722, +58.8%; z 1.588; free low; no constraint binds
+      on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half
+      the coupon in the prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893)
+      pushes the same way, so these rise more than the other household receipts. GRAS (no weights, no constraints)
+      gives 1,479.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R5
+    col: E_NBFC
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 1132.274336
+    balanced: 1797.910479
+    why: >-
+      Explained. H_R5 <- E_NBFC R8a mf_lookthrough, 1,132 -> 1,798 (666, +58.8%; z 1.588; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half
+      the coupon in the prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893)
+      pushes the same way, so these rise more than the other household receipts. GRAS (no weights, no constraints)
+      gives 1,363.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R5
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income"
+    prior: 41501.483630
+    balanced: 45755.148009
+    why: >-
+      Explained. H_R5 <- E_NFPR R8a distributed_income, 41,501 -> 45,755 (4,254, +10.2%; z 1.102; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 42,415.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R5
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income_mf"
+    prior: 18279.645527
+    balanced: 20153.204500
+    why: >-
+      Explained. H_R5 <- E_NFPR R8a distributed_income_mf, 18,280 -> 20,153 (1,874, +10.2%; z 1.102; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 18,682.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R5
+    col: E_NFPR
+    ref: "R8a"
+    component: "dividends"
+    prior: 9691.712262
+    balanced: 10685.057261
+    why: >-
+      Explained. H_R5 <- E_NFPR R8a dividends, 9,692 -> 10,685 (993, +10.2%; z 1.102; free low; no constraint binds
+      on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 9,905.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R5
+    col: E_NFPR
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 6024.794461
+    balanced: 6642.301387
+    why: >-
+      Explained. H_R5 <- E_NFPR R8a mf_lookthrough, 6,025 -> 6,642 (618, +10.2%; z 1.102; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 6,157.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R5
+    col: E_NFPU
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 1983.274678
+    balanced: 2578.632381
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). H_R5 <- E_NFPU R8a mf_lookthrough, 1,983 ->
+      2,579 (595, +30.0%; z 1.300; free low; binding: r8.nfpu_nongov_holders (target 30,714, balanced 38,393, at its
+      upper edge)). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. The public NFC part of households' MF income
+      (dividends from the R7-grossed issuer total and MF-held bond interest) is held within 25% by
+      r8.nfpu_nongov_holders; the rise inside the band carries E_NFPU's prior surplus (3,12,829, government-33).
+      GRAS (no weights, no constraints) gives 2,680. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, mospi_aidis_2019, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: H_U1
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income"
+    prior: 8210.676343
+    balanced: 9091.645918
+    why: >-
+      Explained. H_U1 <- E_NFPR R8a distributed_income, 8,211 -> 9,092 (881, +10.7%; z 1.107; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 8,356.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U2
+    col: E_BANK
+    ref: "R8a"
+    component: "deposits_bank"
+    prior: 61427.234820
+    balanced: 67276.907309
+    why: >-
+      Explained. H_U2 <- E_BANK R8a deposits_bank, 61,427 -> 67,277 (5,850, +9.5%; z 1.095; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 61,657.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U2
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income"
+    prior: 18285.504793
+    balanced: 20217.006571
+    why: >-
+      Explained. H_U2 <- E_NFPR R8a distributed_income, 18,286 -> 20,217 (1,932, +10.6%; z 1.106; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 18,635.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U2
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income_mf"
+    prior: 8053.990283
+    balanced: 8904.734997
+    why: >-
+      Explained. H_U2 <- E_NFPR R8a distributed_income_mf, 8,054 -> 8,905 (851, +10.6%; z 1.106; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 8,208.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_BANK
+    ref: "R8a"
+    component: "deposits_bank"
+    prior: 126176.144385
+    balanced: 137596.649693
+    why: >-
+      Explained. H_U3 <- E_BANK R8a deposits_bank, 1,26,176 -> 1,37,597 (11,421, +9.1%; z 1.091; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 1,26,719.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_NBFC
+    ref: "R8a"
+    component: "debentures"
+    prior: 1111.514021
+    balanced: 1762.343071
+    why: >-
+      Explained. H_U3 <- E_NBFC R8a debentures, 1,112 -> 1,762 (651, +58.6%; z 1.586; free low; no constraint binds
+      on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half
+      the coupon in the prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893)
+      pushes the same way, so these rise more than the other household receipts. GRAS (no weights, no constraints)
+      gives 1,335.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_NBFC
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 1024.734320
+    balanced: 1624.750921
+    why: >-
+      Explained. H_U3 <- E_NBFC R8a mf_lookthrough, 1,025 -> 1,625 (600, +58.6%; z 1.586; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half
+      the coupon in the prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893)
+      pushes the same way, so these rise more than the other household receipts. GRAS (no weights, no constraints)
+      gives 1,231.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income"
+    prior: 37559.797371
+    balanced: 41348.398466
+    why: >-
+      Explained. H_U3 <- E_NFPR R8a distributed_income, 37,560 -> 41,348 (3,789, +10.1%; z 1.101; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 38,299.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income_mf"
+    prior: 16543.499701
+    balanced: 18212.217997
+    why: >-
+      Explained. H_U3 <- E_NFPR R8a distributed_income_mf, 16,543 -> 18,212 (1,669, +10.1%; z 1.101; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 16,869.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_NFPR
+    ref: "R8a"
+    component: "dividends"
+    prior: 8771.222542
+    balanced: 9655.962760
+    why: >-
+      Explained. H_U3 <- E_NFPR R8a dividends, 8,771 -> 9,656 (885, +10.1%; z 1.101; free low; no constraint binds
+      on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 8,944.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_NFPR
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 5452.577579
+    balanced: 6002.570998
+    why: >-
+      Explained. H_U3 <- E_NFPR R8a mf_lookthrough, 5,453 -> 6,003 (550, +10.1%; z 1.101; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 5,560.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_NFPU
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 1794.909206
+    balanced: 2330.280281
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). H_U3 <- E_NFPU R8a mf_lookthrough, 1,795 ->
+      2,330 (535, +29.8%; z 1.298; free low; binding: r8.nfpu_nongov_holders (target 30,714, balanced 38,393, at its
+      upper edge)). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. The public NFC part of households' MF income
+      (dividends from the R7-grossed issuer total and MF-held bond interest) is held within 25% by
+      r8.nfpu_nongov_holders; the rise inside the band carries E_NFPU's prior surplus (3,12,829, government-33).
+      GRAS (no weights, no constraints) gives 2,420. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, mospi_aidis_2019, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: H_U4
+    col: E_BANK
+    ref: "R8a"
+    component: "deposits_bank"
+    prior: 211834.739500
+    balanced: 230602.761422
+    why: >-
+      Explained. H_U4 <- E_BANK R8a deposits_bank, 2,11,835 -> 2,30,603 (18,768, +8.9%; z 1.089; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 2,12,824.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U4
+    col: E_NBFC
+    ref: "R8a"
+    component: "debentures"
+    prior: 1866.099843
+    balanced: 2953.568855
+    why: >-
+      Explained. H_U4 <- E_NBFC R8a debentures, 1,866 -> 2,954 (1,087, +58.3%; z 1.583; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half
+      the coupon in the prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893)
+      pushes the same way, so these rise more than the other household receipts. GRAS (no weights, no constraints)
+      gives 2,242.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U4
+    col: E_NBFC
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 1720.407046
+    balanced: 2722.973633
+    why: >-
+      Explained. H_U4 <- E_NBFC R8a mf_lookthrough, 1,720 -> 2,723 (1,003, +58.3%; z 1.583; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half
+      the coupon in the prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893)
+      pushes the same way, so these rise more than the other household receipts. GRAS (no weights, no constraints)
+      gives 2,067.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U4
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income"
+    prior: 63058.432563
+    balanced: 69297.144138
+    why: >-
+      Explained. H_U4 <- E_NFPR R8a distributed_income, 63,058 -> 69,297 (6,239, +9.9%; z 1.099; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 64,322.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U4
+    col: E_NFPU
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 3013.439077
+    balanced: 3905.393547
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). H_U4 <- E_NFPU R8a mf_lookthrough, 3,013 ->
+      3,905 (892, +29.6%; z 1.296; free low; binding: r8.nfpu_nongov_holders (target 30,714, balanced 38,393, at its
+      upper edge)). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. The public NFC part of households' MF income
+      (dividends from the R7-grossed issuer total and MF-held bond interest) is held within 25% by
+      r8.nfpu_nongov_holders; the rise inside the band carries E_NFPU's prior surplus (3,12,829, government-33).
+      GRAS (no weights, no constraints) gives 4,064. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, mospi_aidis_2019, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: H_U4
+    col: G_CEN
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 3313.641137
+    balanced: 3986.751338
+    why: >-
+      Explained. H_U4 <- G_CEN R8a mf_lookthrough, 3,314 -> 3,987 (673, +20.3%; z 1.203; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 3,249.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: E_BANK
+    ref: "R8a"
+    component: "deposits_bank"
+    prior: 295981.985819
+    balanced: 323885.713102
+    why: >-
+      Explained. H_U5 <- E_BANK R8a deposits_bank, 2,95,982 -> 3,23,886 (27,904, +9.4%; z 1.094; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 2,97,388.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: E_NBFC
+    ref: "R8a"
+    component: "debentures"
+    prior: 2607.371853
+    balanced: 4148.340414
+    why: >-
+      Explained. H_U5 <- E_NBFC R8a debentures, 2,607 -> 4,148 (1,541, +59.1%; z 1.591; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half
+      the coupon in the prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893)
+      pushes the same way, so these rise more than the other household receipts. GRAS (no weights, no constraints)
+      gives 3,133.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: E_NBFC
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 2403.805415
+    balanced: 3824.465290
+    why: >-
+      Explained. H_U5 <- E_NBFC R8a mf_lookthrough, 2,404 -> 3,824 (1,421, +59.1%; z 1.591; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half
+      the coupon in the prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893)
+      pushes the same way, so these rise more than the other household receipts. GRAS (no weights, no constraints)
+      gives 2,889.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income"
+    prior: 88107.173245
+    balanced: 97329.081432
+    why: >-
+      Explained. H_U5 <- E_NFPR R8a distributed_income, 88,107 -> 97,329 (9,222, +10.5%; z 1.105; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 89,880.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: E_NFPR
+    ref: "R8a"
+    component: "distributed_income_mf"
+    prior: 38807.477576
+    balanced: 42869.337490
+    why: >-
+      Explained. H_U5 <- E_NFPR R8a distributed_income_mf, 38,807 -> 42,869 (4,062, +10.5%; z 1.105; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 39,588.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: E_NFPR
+    ref: "R8a"
+    component: "dividends"
+    prior: 20575.393856
+    balanced: 22728.957363
+    why: >-
+      Explained. H_U5 <- E_NFPR R8a dividends, 20,575 -> 22,729 (2,154, +10.5%; z 1.105; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 20,989.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: E_NFPR
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 12790.569466
+    balanced: 14129.319229
+    why: >-
+      Explained. H_U5 <- E_NFPR R8a mf_lookthrough, 12,791 -> 14,129 (1,339, +10.5%; z 1.105; free low; no
+      constraint binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the
+      prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below
+      the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of
+      property income rise toward that structure and their interest payments fall. Every free, low household receipt
+      of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+      GRAS (no weights, no constraints) gives 13,048.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: E_NFPU
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 4210.469370
+    balanced: 5485.195260
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). H_U5 <- E_NFPU R8a mf_lookthrough, 4,210 ->
+      5,485 (1,275, +30.3%; z 1.303; free low; binding: r8.nfpu_nongov_holders (target 30,714, balanced 38,393, at
+      its upper edge)). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior
+      (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the
+      old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property
+      income rise toward that structure and their interest payments fall. The public NFC part of households' MF
+      income (dividends from the R7-grossed issuer total and MF-held bond interest) is held within 25% by
+      r8.nfpu_nongov_holders; the rise inside the band carries E_NFPU's prior surplus (3,12,829, government-33).
+      GRAS (no weights, no constraints) gives 5,678. The prior account gaps (BALANCING.md 'Pre-balancing
+      imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN
+      -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [cga_finance_accounts_aag, mospi_aidis_2019, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: H_U5
+    col: G_CEN
+    ref: "R8a"
+    component: "gsec_direct"
+    prior: 2932.277998
+    balanced: 3546.320711
+    why: >-
+      Explained. H_U5 <- G_CEN R8a gsec_direct, 2,932 -> 3,546 (614, +20.9%; z 1.209; free low; no constraint binds
+      on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 2,875.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: G_CEN
+    ref: "R8a"
+    component: "mf_lookthrough"
+    prior: 4629.920883
+    balanced: 5599.463737
+    why: >-
+      Explained. H_U5 <- G_CEN R8a mf_lookthrough, 4,630 -> 5,599 (970, +20.9%; z 1.209; free low; no constraint
+      binds on it). Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure
+      hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS
+      2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise
+      toward that structure and their interest payments fall. Every free, low household receipt of property income
+      moves by about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates). GRAS (no weights,
+      no constraints) gives 4,539.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: K_BANK
+    col: E_BANK
+    ref: "K2a"
+    component: "private"
+    prior: 230814.251357
+    balanced: 205682.273309
+    why: >-
+      Explained in direction; level unexplained (fincorp-34; the sources disagree). K_BANK <- E_BANK K2a private,
+      2,30,814 -> 2,05,682 (-25,132, -10.9%; z 0.891; free low; binding: k2.fc_saving_total (target 9,91,448,
+      balanced 9,91,449, at its upper edge); k2.private (target 4,55,938, balanced 4,55,939, at its upper edge)).
+      E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA
+      property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and
+      captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. K2a is a
+      GOS-proportional split of NAS 1.9 FC saving (no sub-sector data; free, low; the public and private totals held
+      by k2.*), so balancing moved saving from banks to NBFCs. FSF supports that direction: capital_financial's
+      nas_vs_fsf is 3,68,035 for banks (NAS-based saving above FSF net lending) and -1,34,403 for NBFCs. RBI Trend
+      and Progress business accounts oppose it (banks' saving near 4.6 lakh, NBFCs' near 1.5 lakh before auxiliaries
+      and captives; fincorp-2). Which source to follow is a Checkpoint B decision. GRAS (no weights, no constraints)
+      gives 2,23,525. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: K_BANK
+    col: E_BANK
+    ref: "K2a"
+    component: "public"
+    prior: 228144.641391
+    balanced: 205907.657010
+    why: >-
+      Explained in direction; level unexplained (fincorp-34; the sources disagree). K_BANK <- E_BANK K2a public,
+      2,28,145 -> 2,05,908 (-22,237, -9.7%; z 0.903; free low; binding: k2.fc_saving_total (target 9,91,448,
+      balanced 9,91,449, at its upper edge)). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the
+      prior (fincorp-2): FISIM leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12
+      S125-S127 GVA, including MFs, auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled
+      interest matrix can carry. K2a is a GOS-proportional split of NAS 1.9 FC saving (no sub-sector data; free,
+      low; the public and private totals held by k2.*), so balancing moved saving from banks to NBFCs. FSF supports
+      that direction: capital_financial's nas_vs_fsf is 3,68,035 for banks (NAS-based saving above FSF net lending)
+      and -1,34,403 for NBFCs. RBI Trend and Progress business accounts oppose it (banks' saving near 4.6 lakh,
+      NBFCs' near 1.5 lakh before auxiliaries and captives; fincorp-2). Which source to follow is a Checkpoint B
+      decision. GRAS (no weights, no constraints) gives 2,20,940. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: K_INSP
+    col: E_INSP
+    ref: "K2a"
+    component: "private"
+    prior: 43063.727502
+    balanced: 33197.585471
+    why: >-
+      Explained. K_INSP <- E_INSP K2a private, 43,064 -> 33,198 (-9,866, -22.9%; z 0.771; free low; binding:
+      k2.fc_saving_total (target 9,91,448, balanced 9,91,449, at its upper edge); k2.private (target 4,55,938,
+      balanced 4,55,939, at its upper edge)). E_INSP ran a -1,21,568 deficit because its SAM investment income (FSF
+      stocks x rates) is 1,38,486 below the administrative sources behind its D44 payouts (IRDAI life and non-life
+      investment income + EPF, EPS, exempted PF and NPS income: 7,80,914; fincorp-31), so raising its receipts moves
+      toward that evidence. K2a is a GOS-proportional split of NAS 1.9 FC saving (free, low); balancing cut
+      insurers' saving toward the IRDAI / RTP business-account evidence of about 0.6 lakh (fincorp-31); FSF is
+      neutral (nas_vs_fsf 1,141). GRAS (no weights, no constraints) gives 41,314.
+    sources: [irdai_handbook_insurance, mospi_nas_2026_publication, rbi_trend_progress]
+  - row: K_INSP
+    col: E_INSP
+    ref: "K2a"
+    component: "public"
+    prior: 57359.377094
+    balanced: 44784.454254
+    why: >-
+      Explained. K_INSP <- E_INSP K2a public, 57,359 -> 44,784 (-12,575, -21.9%; z 0.781; free low; binding:
+      k2.fc_saving_total (target 9,91,448, balanced 9,91,449, at its upper edge)). E_INSP ran a -1,21,568 deficit
+      because its SAM investment income (FSF stocks x rates) is 1,38,486 below the administrative sources behind its
+      D44 payouts (IRDAI life and non-life investment income + EPF, EPS, exempted PF and NPS income: 7,80,914;
+      fincorp-31), so raising its receipts moves toward that evidence. K2a is a GOS-proportional split of NAS 1.9 FC
+      saving (free, low); balancing cut insurers' saving toward the IRDAI / RTP business-account evidence of about
+      0.6 lakh (fincorp-31); FSF is neutral (nas_vs_fsf 1,141). GRAS (no weights, no constraints) gives 55,029.
+    sources: [irdai_handbook_insurance, mospi_nas_2026_publication, rbi_trend_progress]
+  - row: K_NBFC
+    col: E_NBFC
+    ref: "K2a"
+    component: "private"
+    prior: 182059.876952
+    balanced: 217058.997032
+    why: >-
+      Explained in direction; level unexplained (fincorp-34; the sources disagree). K_NBFC <- E_NBFC K2a private,
+      1,82,060 -> 2,17,059 (34,999, +19.2%; z 1.192; free low; binding: k2.fc_saving_total (target 9,91,448,
+      balanced 9,91,449, at its upper edge); k2.private (target 4,55,938, balanced 4,55,939, at its upper edge)).
+      E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA
+      property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and
+      captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. K2a is a
+      GOS-proportional split of NAS 1.9 FC saving (no sub-sector data; free, low; the public and private totals held
+      by k2.*), so balancing moved saving from banks to NBFCs. FSF supports that direction: capital_financial's
+      nas_vs_fsf is 3,68,035 for banks (NAS-based saving above FSF net lending) and -1,34,403 for NBFCs. RBI Trend
+      and Progress business accounts oppose it (banks' saving near 4.6 lakh, NBFCs' near 1.5 lakh before auxiliaries
+      and captives; fincorp-2). Which source to follow is a Checkpoint B decision. GRAS (no weights, no constraints)
+      gives 2,00,695. The prior account gaps (BALANCING.md 'Pre-balancing imbalances'; closure institution_gaps):
+      G_STA 4,50,426, households Z -3,84,547, E_NFPU 3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568,
+      E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI 25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: K_NBFC
+    col: E_NBFC
+    ref: "K2a"
+    component: "public"
+    prior: 155823.276946
+    balanced: 188158.508217
+    why: >-
+      Explained in direction; level unexplained (fincorp-34; the sources disagree). K_NBFC <- E_NBFC K2a public,
+      1,55,823 -> 1,88,159 (32,335, +20.8%; z 1.208; free low; binding: k2.fc_saving_total (target 9,91,448,
+      balanced 9,91,449, at its upper edge)). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the
+      prior (fincorp-2): FISIM leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12
+      S125-S127 GVA, including MFs, auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled
+      interest matrix can carry. K2a is a GOS-proportional split of NAS 1.9 FC saving (no sub-sector data; free,
+      low; the public and private totals held by k2.*), so balancing moved saving from banks to NBFCs. FSF supports
+      that direction: capital_financial's nas_vs_fsf is 3,68,035 for banks (NAS-based saving above FSF net lending)
+      and -1,34,403 for NBFCs. RBI Trend and Progress business accounts oppose it (banks' saving near 4.6 lakh,
+      NBFCs' near 1.5 lakh before auxiliaries and captives; fincorp-2). Which source to follow is a Checkpoint B
+      decision. GRAS (no weights, no constraints) gives 1,71,773. The prior account gaps (BALANCING.md
+      'Pre-balancing imbalances'; closure institution_gaps): G_STA 4,50,426, households Z -3,84,547, E_NFPU
+      3,12,829, G_CEN -2,98,948, E_NBFC 2,32,893, E_INSP -1,21,568, E_NFPR -1,13,892, E_BANK -1,02,838, E_RBI
+      25,646.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_BANK
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 207579.471493
+    balanced: 228374.476178
+    why: >-
+      Explained. Cell E_BANK <- E_NBFC: 2,07,579 -> 2,28,374 (20,795, +10.0%; 5 entries). Largest moves: fincorp R4
+      loans 18,362 (+9.8%); fincorp R4 nongov_bonds 1,879 (+9.8%); fincorp R8 dividends 494 (+45.4%); fincorp R4
+      mf_lookthrough 58 (+45.4%); fincorp R8 mf_lookthrough 3 (+45.4%). The largest mover is explained under its
+      entry: Interbank and bank-NBFC interest is FSF stocks x the scaled RTP rates. E_BANK ran a -1,02,838 deficit
+      and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA property income negative,
+      while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and captive institutions) gives
+      NBFCs more GOS than the RTP-scaled interest matrix can carry. Balancing moves interest from the surplus
+      account to the deficit one.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_BANK
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 127223.203578
+    balanced: 202371.995802
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). Cell E_BANK <- E_NFPU: 1,27,223 -> 2,02,372 (75,149, +59.1%; 5
+      entries). Largest moves: fincorp R5 loans 68,791 (+59.5%); fincorp R5 nongov_bonds 5,431 (+59.5%); fincorp R5
+      mf_lookthrough 491 (+546.4%); fincorp R8 dividends 409 (+19.1%); fincorp R8 mf_lookthrough 27 (+19.1%). Public
+      NFCs' interest to banks and NBFCs is FSF stock x the scaled RTP return (medium), less FISIM; the balanced
+      level implies a rate well above the RTP return on advances. E_NFPU's prior keeps 3,12,829 over NAS 2026 St 1.9
+      public NFC saving (closure institution_gaps). Its cause is not a documented source disagreement: the old-base
+      NAS 2024 St 2.1A shows departmental enterprises passing 95.6% of their primary income on as D6 + D7 (1,48,177
+      in 2022-23), a flow the new-base SAM does not write (government-33, a NAD question for Checkpoint B). After
+      the Wave C constraints held the published outlets (R9d at the AFS total, R18 at IGAS-2, T4a within 25% of the
+      old-base share, R7x lines and payer shares, insurers' and MF bond interest near FSF stock x coupon,
+      non-government dividends near the R7-grossed issuer total), what is left of the surplus lands on E_NFPU's
+      remaining weak-keyed flows (fincorp-32, -37).
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_BANK
+    col: F_GOSC
+    ref: "*"
+    component: "*"
+    prior: 554595.570635
+    balanced: 576580.134852
+    why: >-
+      Explained. Cell E_BANK <- F_GOSC: 5,54,596 -> 5,76,580 (21,985, +4.0%; 2 entries). Largest moves: fincorp F4a
+      private 13,494 (+4.1%); fincorp F4a public 8,491 (+3.8%). The largest mover is explained under its entry:
+      E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA
+      property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and
+      captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. f4a.fins_gos holds
+      banks + NBFCs + RBI GOS at SUT industry 55; balancing moved GOS from NBFCs to banks, toward the RTP P&L
+      evidence (banks' operating profit), which fincorp-2 shows the NAS 8.12 split understates for banks.
+    sources: [mospi_nas_2026_publication, mospi_sut_2022base, rbi_trend_progress]
+  - row: E_BANK
+    col: G_CEN
+    ref: "*"
+    component: "*"
+    prior: 332476.042394
+    balanced: 341210.421520
+    why: >-
+      Explained. Cell E_BANK <- G_CEN: 3,32,476 -> 3,41,210 (8,734, +2.6%; 5 entries). Largest moves: fincorp R3a
+      dated_securities 6,779 (+2.5%); fincorp R3a other_securities 1,017 (+10.5%); fincorp R3a tbills 880 (+2.5%);
+      fincorp R3a recap_bonds 31 (+0.2%); fincorp R3a mf_lookthrough 27 (+10.5%). The largest mover is explained
+      under its entry: Government interest by holder is each payer line x HBS T107 holder shares (medium; 'other
+      securities' use the dated-security shares, low); the payer totals are held (r3b.union_nas_concept 3%,
+      r3b.states_nas_concept 1%, and since Wave C r3a.states_other_internal_debt 2%). Inside them balancing shifts
+      interest toward the accounts in deficit: E_INSP (-1,21,568; fincorp-31: its SAM investment income is below the
+      IRDAI, EPFO and NPS evidence) and E_BANK (-1,02,838; fincorp-2), away from E_NFPU and E_NBFC, whose priors are
+      in surplus.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs, rbi_state_finances_study]
+  - row: E_INSP
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 10608.126041
+    balanced: 12294.027052
+    why: >-
+      Explained. Cell E_INSP <- E_BANK: 10,608 -> 12,294 (1,686, +15.9%; 3 entries). Largest moves: fincorp R4
+      deposits 1,536 (+15.9%); fincorp R4 borrowings 107 (+15.9%); fincorp R8 dividends 42 (+15.9%). The largest
+      mover is explained under its entry: Interbank and bank-NBFC interest is FSF stocks x the scaled RTP rates.
+      E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA
+      property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and
+      captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. Balancing moves
+      interest from the surplus account to the deficit one; E_INSP ran a -1,21,568 deficit because its SAM
+      investment income (FSF stocks x rates) is 1,38,486 below the administrative sources behind its D44 payouts
+      (IRDAI life and non-life investment income + EPF, EPS, exempted PF and NPS income: 7,80,914; fincorp-31), so
+      raising its receipts moves toward that evidence.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_INSP
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 35572.273082
+    balanced: 59939.347896
+    why: >-
+      Explained. Cell E_INSP <- E_NBFC: 35,572 -> 59,939 (24,367, +68.5%; 2 entries). Largest moves: fincorp R4
+      bonds 22,432 (+68.5%); fincorp R8 dividends 1,935 (+68.5%). The largest mover is explained under its entry:
+      NBFC bonds pay about half the coupon in the prior (the NBFC expended scale 0.503: the RTP NBFC P&L leaves
+      little for non-bank creditors; fincorp-4), so a rise toward the full coupon is toward the evidence. E_BANK ran
+      a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA property
+      income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and captive
+      institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. E_INSP ran a -1,21,568
+      deficit because its SAM investment income (FSF stocks x rates) is 1,38,486 below the administrative sources
+      behind its D44 payouts (IRDAI life and non-life investment income + EPF, EPS, exempted PF and NPS income:
+      7,80,914; fincorp-31), so raising its receipts moves toward that evidence.
+    sources: [irdai_handbook_insurance, mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_INSP
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 137500.418797
+    balanced: 152810.498085
+    why: >-
+      Explained. Cell E_INSP <- E_NFPR: 1,37,500 -> 1,52,810 (15,310, +11.1%; 5 entries). Largest moves: fincorp R5
+      nongov_bonds 7,028 (+17.0%); fincorp R8 distributed_income 3,912 (+17.0%); fincorp R17 premium 2,399 (+3.9%);
+      fincorp R5 loans 1,058 (+17.0%); fincorp R8 dividends 913 (+17.0%). The largest mover is explained under its
+      entry: E_INSP ran a -1,21,568 deficit because its SAM investment income (FSF stocks x rates) is 1,38,486 below
+      the administrative sources behind its D44 payouts (IRDAI life and non-life investment income + EPF, EPS,
+      exempted PF and NPS income: 7,80,914; fincorp-31), so raising its receipts moves toward that evidence.
+      Insurers' interest on private NFC bonds and loans is FSF ICPF holdings x the corporate coupon (unscaled;
+      fincorp-30); the rise is within the coupon range.
+    sources: [epfo_annual_report_accounts, irdai_handbook_insurance, pfrda_nps_statistics, rbi_fsf_fof]
+  - row: E_INSP
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 51323.986836
+    balanced: 61382.086008
+    why: >-
+      Explained (bounded). Cell E_INSP <- E_NFPU: 51,324 -> 61,382 (10,058, +19.6%; 3 entries). Largest moves:
+      fincorp R5 nongov_bonds 8,296 (+25.0%); fincorp R8 dividends 985 (+38.0%); fincorp R17 premium 777 (+5.0%).
+      E_INSP ran a -1,21,568 deficit because its SAM investment income (FSF stocks x rates) is 1,38,486 below the
+      administrative sources behind its D44 payouts (IRDAI life and non-life investment income + EPF, EPS, exempted
+      PF and NPS income: 7,80,914; fincorp-31), so raising its receipts moves toward that evidence. Insurers'
+      interest on public NFC bonds is FSF ICPF holdings x the corporate coupon (fincorp-30); the Wave C band
+      r5.insp_bonds.e_nfpu (target 33,185, balanced 41,481, at its upper edge) (fincorp-32) holds it within 25% of
+      that stock x coupon, where the earlier run had +93.6% (an implied 15.7% yield). The rise inside the band is
+      carried by E_NFPU's prior surplus.
+    sources: [epfo_annual_report_accounts, irdai_handbook_insurance, pfrda_nps_statistics, rbi_fsf_fof]
+  - row: E_INSP
+    col: G_CEN
+    ref: "*"
+    component: "*"
+    prior: 282996.830784
+    balanced: 302877.091955
+    why: >-
+      Explained. Cell E_INSP <- G_CEN: 2,82,997 -> 3,02,877 (19,880, +7.0%; 5 entries). Largest moves: fincorp R3a
+      dated_securities 15,376 (+6.4%); fincorp R3a other_securities 2,443 (+28.1%); fincorp R3a public_account_funds
+      1,905 (+6.4%); fincorp R3a tbills 221 (+6.4%); government R18 lic_pension_subsidy -65 (-47.9%). The largest
+      mover is explained under its entry: Government interest by holder is each payer line x HBS T107 holder shares
+      (medium; 'other securities' use the dated-security shares, low); the payer totals are held
+      (r3b.union_nas_concept 3%, r3b.states_nas_concept 1%, and since Wave C r3a.states_other_internal_debt 2%).
+      Inside them balancing shifts interest toward the accounts in deficit: E_INSP (-1,21,568; fincorp-31: its SAM
+      investment income is below the IRDAI, EPFO and NPS evidence) and E_BANK (-1,02,838; fincorp-2), away from
+      E_NFPU and E_NBFC, whose priors are in surplus.
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs, rbi_state_finances_study]
+  - row: E_NBFC
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 104944.511184
+    balanced: 95570.093607
+    why: >-
+      Explained. Cell E_NBFC <- E_BANK: 1,04,945 -> 95,570 (-9,374, -8.9%; 4 entries). Largest moves: fincorp R4
+      deposits -5,927 (-8.9%); fincorp R4 borrowings -3,143 (-8.9%); fincorp R4 bonds -304 (-8.9%). The largest
+      mover is explained under its entry: Interbank and bank-NBFC interest is FSF stocks x the scaled RTP rates.
+      E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA
+      property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and
+      captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. Balancing moves
+      interest from the surplus account to the deficit one.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 246295.760910
+    balanced: 201663.798127
+    why: >-
+      Explained. Cell E_NBFC <- E_NFPR: 2,46,296 -> 2,01,664 (-44,632, -18.1%; 4 entries). Largest moves: fincorp R8
+      distributed_income -26,268 (-30.6%); fincorp R5 loans -12,226 (-8.7%); fincorp R8 dividends -6,134 (-30.6%);
+      fincorp R5 nongov_bonds -4 (-8.7%). The largest mover is explained under its entry: Private NFCs' old-base
+      distributed income and dividends (D2-21, fincorp-27) are split over holders by FSF F51 book values (low).
+      E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA
+      property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and
+      captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. E_NFPR's prior
+      deficit (-1,13,892) cuts what it pays in total.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NBFC
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 78546.327049
+    balanced: 113398.199653
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). Cell E_NBFC <- E_NFPU: 78,546 -> 1,13,398 (34,852, +44.4%; 3 entries).
+      Largest moves: fincorp R5 loans 34,297 (+45.2%); fincorp R5 nongov_bonds 743 (+45.2%); fincorp R8 dividends
+      -188 (-18.1%). Public NFCs' interest to banks and NBFCs is FSF stock x the scaled RTP return (medium), less
+      FISIM; the balanced level implies a rate well above the RTP return on advances. E_NFPU's prior keeps 3,12,829
+      over NAS 2026 St 1.9 public NFC saving (closure institution_gaps). Its cause is not a documented source
+      disagreement: the old-base NAS 2024 St 2.1A shows departmental enterprises passing 95.6% of their primary
+      income on as D6 + D7 (1,48,177 in 2022-23), a flow the new-base SAM does not write (government-33, a NAD
+      question for Checkpoint B). After the Wave C constraints held the published outlets (R9d at the AFS total, R18
+      at IGAS-2, T4a within 25% of the old-base share, R7x lines and payer shares, insurers' and MF bond interest
+      near FSF stock x coupon, non-government dividends near the R7-grossed issuer total), what is left of the
+      surplus lands on E_NFPU's remaining weak-keyed flows (fincorp-32, -37).
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NBFC
+    col: F_GOSC
+    ref: "*"
+    component: "*"
+    prior: 413726.899052
+    balanced: 391745.041035
+    why: >-
+      Explained. Cell E_NBFC <- F_GOSC: 4,13,727 -> 3,91,745 (-21,982, -5.3%; 2 entries). Largest moves: fincorp F4a
+      private -13,580 (-5.2%); fincorp F4a public -8,402 (-5.5%). The largest mover is explained under its entry:
+      E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA
+      property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and
+      captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. f4a.fins_gos holds
+      banks + NBFCs + RBI GOS at SUT industry 55; balancing moved GOS from NBFCs to banks, toward the RTP P&L
+      evidence (banks' operating profit), which fincorp-2 shows the NAS 8.12 split understates for banks.
+    sources: [mospi_nas_2026_publication, mospi_sut_2022base, rbi_trend_progress]
+  - row: E_NFPR
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 16673.853610
+    balanced: 22307.552111
+    why: >-
+      Explained. Cell E_NFPR <- E_NBFC: 16,674 -> 22,308 (5,634, +33.8%; 6 entries). Largest moves: fincorp R8
+      dividends 2,731 (+44.0%); fincorp R4 mf_lookthrough 2,329 (+44.0%); fincorp R4 borrowings 324 (+9.5%); fincorp
+      R8 mf_lookthrough 102 (+44.0%); fincorp R4 bonds 88 (+9.5%). The largest mover is explained under its entry:
+      E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA
+      property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and
+      captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry. E_NBFC's onward
+      distribution of the private NFC equity it holds (holding companies) is only the ratio-based prior (fincorp-2),
+      so its dividends and MF-looked-through payments rising is toward the evidence.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NFPR
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 12367.973796
+    balanced: 14849.527699
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). Cell E_NFPR <- E_NFPU: 12,368 -> 14,850
+      (2,482, +20.1%; 3 entries). Largest moves: fincorp R8 mf_lookthrough 1,065 (+17.9%); fincorp R8
+      interest_mf_lookthrough 933 (+25.0%); fincorp R8 dividends 484 (+17.9%). Public NFC dividends and MF-held bond
+      interest to non-government holders are the R7-grossed issuer total (fincorp dividend_matrix) and FSF stock x
+      coupon; the Wave C bands r8.nfpu_nongov_holders and r8.mf_bonds.e_nfpu hold their totals within 25% (the
+      earlier run raised them 1.7-1.9 times). The rise inside the bands is E_NFPU's prior surplus (3,12,829), whose
+      cause is the NAD question of government-33.
+    sources: [cga_finance_accounts_aag, mospi_nas_2026_publication, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NFPU
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 48449.412600
+    balanced: 30382.412544
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). Cell E_NFPU <- E_BANK: 48,449 -> 30,382 (-18,067, -37.3%; 3 entries).
+      Largest moves: fincorp R4 deposits -17,622 (-37.3%); fincorp R4 bonds -440 (-37.3%); fincorp R8 dividends -5
+      (-84.5%). Public NFCs' deposit interest from banks is FSF deposits x the scaled cost of deposits (medium).
+      E_NFPU's prior keeps 3,12,829 over NAS 2026 St 1.9 public NFC saving (closure institution_gaps). Its cause is
+      not a documented source disagreement: the old-base NAS 2024 St 2.1A shows departmental enterprises passing
+      95.6% of their primary income on as D6 + D7 (1,48,177 in 2022-23), a flow the new-base SAM does not write
+      (government-33, a NAD question for Checkpoint B). After the Wave C constraints held the published outlets (R9d
+      at the AFS total, R18 at IGAS-2, T4a within 25% of the old-base share, R7x lines and payer shares, insurers'
+      and MF bond interest near FSF stock x coupon, non-government dividends near the R7-grossed issuer total), what
+      is left of the surplus lands on E_NFPU's remaining weak-keyed flows (fincorp-32, -37).
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: E_NFPU
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 117172.260112
+    balanced: 18298.771780
+    why: >-
+      Explained in direction; level unexplained (fincorp-32, -37). Cell E_NFPU <- E_NFPR: 1,17,172 -> 18,299
+      (-98,873, -84.4%; 2 entries). Largest moves: fincorp R8 distributed_income -80,155 (-84.4%); fincorp R8
+      dividends -18,718 (-84.4%). This is E_NFPU's share of private NFCs' old-base distributed income (D2-21 top-up,
+      fincorp-27; FSF F51 holdings, very low confidence). The old-base NAS 2024 St 2.1 structure evidences a cut of
+      about 50,764 of the 94,990 it gives E_NFPU (fincorp-32); balancing cut further because E_NFPU keeps its prior
+      surplus (3,12,829) after the Wave C bands held its other outlets. The part of the cut beyond 50,764 has no
+      evidence.
+    sources: [mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: E_NFPU
+    col: G_CEN
+    ref: "*"
+    component: "*"
+    prior: 45284.392461
+    balanced: 25251.868650
+    why: >-
+      Unexplained (fincorp-37, Checkpoint B). Cell E_NFPU <- G_CEN: 45,284 -> 25,252 (-20,033, -44.2%; 4 entries).
+      Largest moves: fincorp R3a dated_securities -14,716 (-82.9%); government R18 psu_revenue_grants -2,402
+      (-10.0%); fincorp R3a tbills -2,383 (-82.9%); fincorp R3a other_securities -531 (-82.9%). Union G-sec interest
+      to public NFCs is the HBS T107 'corporates' share of each Finance Accounts payer line split by FSF holdings
+      (low). E_NFPU's prior keeps 3,12,829 over NAS 2026 St 1.9 public NFC saving (closure institution_gaps). Its
+      cause is not a documented source disagreement: the old-base NAS 2024 St 2.1A shows departmental enterprises
+      passing 95.6% of their primary income on as D6 + D7 (1,48,177 in 2022-23), a flow the new-base SAM does not
+      write (government-33, a NAD question for Checkpoint B). After the Wave C constraints held the published
+      outlets (R9d at the AFS total, R18 at IGAS-2, T4a within 25% of the old-base share, R7x lines and payer
+      shares, insurers' and MF bond interest near FSF stock x coupon, non-government dividends near the R7-grossed
+      issuer total), what is left of the surplus lands on E_NFPU's remaining weak-keyed flows (fincorp-32, -37).
+    sources: [cga_finance_accounts_aag, rbi_fsf_fof, rbi_hbs]
+  - row: G_CEN
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 7099.036524
+    balanced: 9338.948027
+    why: >-
+      Explained. Cell G_CEN <- E_NBFC: 7,099 -> 9,339 (2,240, +31.6%; 2 entries). Largest moves: fincorp R4 bonds
+      2,147 (+31.6%); fincorp R4 borrowings 93 (+31.6%). The largest mover is explained under its entry: NBFC bonds
+      pay about half the coupon in the prior (the NBFC expended scale 0.503: the RTP NBFC P&L leaves little for
+      non-bank creditors; fincorp-4), so a rise toward the full coupon is toward the evidence. E_BANK ran a
+      -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2): FISIM leaves banks' SNA property
+      income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including MFs, auxiliaries and captive
+      institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry.
+    sources: [irdai_handbook_insurance, mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: G_STA
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 84958.823173
+    balanced: 29315.917437
+    why: >-
+      Explained. Cell G_STA <- E_BANK: 84,959 -> 29,316 (-55,643, -65.5%; 3 entries). Largest moves: fincorp R4
+      deposits -54,971 (-65.5%); fincorp R4 borrowings -671 (-65.5%). The largest mover is explained under its
+      entry: GG interest received from banks is FSF deposit and loan stocks x the scaled cost of deposits (low). No
+      bridge sees such a receipt: the States' interest receipts (28,494) are booked in R7x from E_NFPU, and the
+      4,620 urban local bodies report interest income of only 3,158 (FC16 cityfinance; government-26). With G_STA's
+      prior excess (4,50,426) and E_BANK's deficit (-1,02,838), balancing cut it toward that evidence.
+    sources: [fc16_ulb_cityfinance_dump, rbi_fsf_fof, rbi_state_finances_study, rbi_trend_progress]
+  - row: H_R1
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 30956.271096
+    balanced: 34085.916936
+    why: >-
+      Explained. Cell H_R1 <- E_BANK: 30,956 -> 34,086 (3,130, +10.1%; 4 entries). Largest moves: fincorp R8a
+      deposits_bank 2,953 (+10.1%); fincorp R8a mf_lookthrough 162 (+10.1%); fincorp R8a dividends 14 (+10.1%). The
+      largest mover is explained under its entry: Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. Every free, low
+      household receipt of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF
+      stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R1
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 15518.993572
+    balanced: 17250.223977
+    why: >-
+      Explained. Cell H_R1 <- E_NFPR: 15,519 -> 17,250 (1,731, +11.2%; 4 entries). Largest moves: fincorp R8a
+      distributed_income 952 (+11.2%); fincorp R8a distributed_income_mf 419 (+11.2%); fincorp R8a dividends 222
+      (+11.2%); fincorp R8a mf_lookthrough 138 (+11.2%). The largest mover is explained under its entry: Households
+      fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. Every free, low household receipt of property income moves by about the same
+      factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R2
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 48620.024046
+    balanced: 53492.690648
+    why: >-
+      Explained. Cell H_R2 <- E_BANK: 48,620 -> 53,493 (4,873, +10.0%; 4 entries). Largest moves: fincorp R8a
+      deposits_bank 4,598 (+10.0%); fincorp R8a mf_lookthrough 252 (+10.0%); fincorp R8a dividends 22 (+10.0%). The
+      largest mover is explained under its entry: Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. Every free, low
+      household receipt of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF
+      stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R2
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 885.362079
+    balanced: 1416.266863
+    why: >-
+      Explained. Cell H_R2 <- E_NBFC: 885 -> 1,416 (531, +60.0%; 4 entries). Largest moves: fincorp R8a debentures
+      238 (+60.0%); fincorp R8a mf_lookthrough 219 (+60.0%); fincorp R8a dividends 58 (+60.0%); fincorp R8a
+      deposits_nbfc 16 (+60.0%). The largest mover is explained under its entry: Households fell short of NAS 2026
+      St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their
+      net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income
+      (fincorp-19), so the household receipts of property income rise toward that structure and their interest
+      payments fall. NBFC debentures and MF-held NBFC paper pay about half the coupon in the prior (the NBFC
+      expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893) pushes the same way, so these rise
+      more than the other household receipts.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R2
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 24374.183774
+    balanced: 27071.617188
+    why: >-
+      Explained. Cell H_R2 <- E_NFPR: 24,374 -> 27,072 (2,697, +11.1%; 4 entries). Largest moves: fincorp R8a
+      distributed_income 1,483 (+11.1%); fincorp R8a distributed_income_mf 653 (+11.1%); fincorp R8a dividends 346
+      (+11.1%); fincorp R8a mf_lookthrough 215 (+11.1%). The largest mover is explained under its entry: Households
+      fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. Every free, low household receipt of property income moves by about the same
+      factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R3
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 86291.621939
+    balanced: 94872.523748
+    why: >-
+      Explained. Cell H_R3 <- E_BANK: 86,292 -> 94,873 (8,581, +9.9%; 4 entries). Largest moves: fincorp R8a
+      deposits_bank 8,097 (+9.9%); fincorp R8a mf_lookthrough 444 (+9.9%); fincorp R8a dividends 39 (+9.9%); fincorp
+      R8a debentures 1 (+9.9%). The largest mover is explained under its entry: Households fell short of NAS 2026 St
+      1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net
+      property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income
+      (fincorp-19), so the household receipts of property income rise toward that structure and their interest
+      payments fall. Every free, low household receipt of property income moves by about the same factor within a
+      payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R3
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 1571.355247
+    balanced: 2511.834982
+    why: >-
+      Explained. Cell H_R3 <- E_NBFC: 1,571 -> 2,512 (940, +59.9%; 4 entries). Largest moves: fincorp R8a debentures
+      421 (+59.9%); fincorp R8a mf_lookthrough 388 (+59.9%); fincorp R8a dividends 102 (+59.9%); fincorp R8a
+      deposits_nbfc 29 (+59.9%). The largest mover is explained under its entry: Households fell short of NAS 2026
+      St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their
+      net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income
+      (fincorp-19), so the household receipts of property income rise toward that structure and their interest
+      payments fall. NBFC debentures and MF-held NBFC paper pay about half the coupon in the prior (the NBFC
+      expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893) pushes the same way, so these rise
+      more than the other household receipts.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R3
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 43259.704055
+    balanced: 48013.151210
+    why: >-
+      Explained. Cell H_R3 <- E_NFPR: 43,260 -> 48,013 (4,753, +11.0%; 4 entries). Largest moves: fincorp R8a
+      distributed_income 2,613 (+11.0%); fincorp R8a distributed_income_mf 1,151 (+11.0%); fincorp R8a dividends 610
+      (+11.0%); fincorp R8a mf_lookthrough 379 (+11.0%). The largest mover is explained under its entry: Households
+      fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. Every free, low household receipt of property income moves by about the same
+      factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R3
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 4444.937482
+    balanced: 5143.884469
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). Cell H_R3 <- E_NFPU: 4,445 -> 5,144 (699,
+      +15.7%; 4 entries). Largest moves: fincorp R8a mf_lookthrough 351 (+30.9%); government R9d railways 295
+      (+10.5%); government R9d posts 53 (+10.5%). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. The public NFC part
+      of households' MF income (dividends from the R7-grossed issuer total and MF-held bond interest) is held within
+      25% by r8.nfpu_nongov_holders; the rise inside the band carries E_NFPU's prior surplus (3,12,829,
+      government-33).
+    sources: [cga_finance_accounts_aag, mospi_aidis_2019, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: H_R4
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 129346.734694
+    balanced: 142929.492629
+    why: >-
+      Explained. Cell H_R4 <- E_BANK: 1,29,347 -> 1,42,929 (13,583, +10.5%; 4 entries). Largest moves: fincorp R8a
+      deposits_bank 12,816 (+10.5%); fincorp R8a mf_lookthrough 703 (+10.5%); fincorp R8a dividends 62 (+10.5%);
+      fincorp R8a debentures 2 (+10.5%). The largest mover is explained under its entry: Households fell short of
+      NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. Every free, low household receipt of property income moves by about the same
+      factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 2355.381271
+    balanced: 3784.186244
+    why: >-
+      Explained. Cell H_R4 <- E_NBFC: 2,355 -> 3,784 (1,429, +60.7%; 4 entries). Largest moves: fincorp R8a
+      debentures 640 (+60.7%); fincorp R8a mf_lookthrough 590 (+60.7%); fincorp R8a dividends 155 (+60.7%); fincorp
+      R8a deposits_nbfc 44 (+60.7%). The largest mover is explained under its entry: Households fell short of NAS
+      2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving).
+      Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary
+      income (fincorp-19), so the household receipts of property income rise toward that structure and their
+      interest payments fall. NBFC debentures and MF-held NBFC paper pay about half the coupon in the prior (the
+      NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893) pushes the same way, so these
+      rise more than the other household receipts.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 64844.087268
+    balanced: 72333.854642
+    why: >-
+      Explained. Cell H_R4 <- E_NFPR: 64,844 -> 72,334 (7,490, +11.6%; 4 entries). Largest moves: fincorp R8a
+      distributed_income 4,117 (+11.6%); fincorp R8a distributed_income_mf 1,813 (+11.6%); fincorp R8a dividends 961
+      (+11.6%); fincorp R8a mf_lookthrough 598 (+11.6%). The largest mover is explained under its entry: Households
+      fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. Every free, low household receipt of property income moves by about the same
+      factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R4
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 6395.654952
+    balanced: 7452.825490
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). Cell H_R4 <- E_NFPU: 6,396 -> 7,453 (1,057,
+      +16.5%; 4 entries). Largest moves: fincorp R8a mf_lookthrough 537 (+31.6%); government R9d railways 441
+      (+11.1%); government R9d posts 79 (+11.1%). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. The public NFC part
+      of households' MF income (dividends from the R7-grossed issuer total and MF-held bond interest) is held within
+      25% by r8.nfpu_nongov_holders; the rise inside the band carries E_NFPU's prior surplus (3,12,829,
+      government-33).
+    sources: [cga_finance_accounts_aag, mospi_aidis_2019, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: H_R5
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 150597.735120
+    balanced: 164471.228911
+    why: >-
+      Explained. Cell H_R5 <- E_BANK: 1,50,598 -> 1,64,471 (13,873, +9.2%; 4 entries). Largest moves: fincorp R8a
+      deposits_bank 13,091 (+9.2%); fincorp R8a mf_lookthrough 718 (+9.2%); fincorp R8a dividends 63 (+9.2%);
+      fincorp R8a debentures 2 (+9.2%). The largest mover is explained under its entry: Households fell short of NAS
+      2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving).
+      Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary
+      income (fincorp-19), so the household receipts of property income rise toward that structure and their
+      interest payments fall. Every free, low household receipt of property income moves by about the same factor
+      within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R5
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 2742.358248
+    balanced: 4354.522993
+    why: >-
+      Explained. Cell H_R5 <- E_NBFC: 2,742 -> 4,355 (1,612, +58.8%; 4 entries). Largest moves: fincorp R8a
+      debentures 722 (+58.8%); fincorp R8a mf_lookthrough 666 (+58.8%); fincorp R8a dividends 175 (+58.8%); fincorp
+      R8a deposits_nbfc 50 (+58.8%). The largest mover is explained under its entry: Households fell short of NAS
+      2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving).
+      Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary
+      income (fincorp-19), so the household receipts of property income rise toward that structure and their
+      interest payments fall. NBFC debentures and MF-held NBFC paper pay about half the coupon in the prior (the
+      NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893) pushes the same way, so these
+      rise more than the other household receipts.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_R5
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 75497.635880
+    balanced: 83235.711157
+    why: >-
+      Explained. Cell H_R5 <- E_NFPR: 75,498 -> 83,236 (7,738, +10.2%; 4 entries). Largest moves: fincorp R8a
+      distributed_income 4,254 (+10.2%); fincorp R8a distributed_income_mf 1,874 (+10.2%); fincorp R8a dividends 993
+      (+10.2%); fincorp R8a mf_lookthrough 618 (+10.2%). The largest mover is explained under its entry: Households
+      fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. Every free, low household receipt of property income moves by about the same
+      factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U1
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 14936.493798
+    balanced: 16539.114099
+    why: >-
+      Explained. Cell H_U1 <- E_NFPR: 14,936 -> 16,539 (1,603, +10.7%; 4 entries). Largest moves: fincorp R8a
+      distributed_income 881 (+10.7%); fincorp R8a distributed_income_mf 388 (+10.7%); fincorp R8a dividends 206
+      (+10.7%); fincorp R8a mf_lookthrough 128 (+10.7%). The largest mover is explained under its entry: Households
+      fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. Every free, low household receipt of property income moves by about the same
+      factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U2
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 65172.055000
+    balanced: 71378.344088
+    why: >-
+      Explained. Cell H_U2 <- E_BANK: 65,172 -> 71,378 (6,206, +9.5%; 4 entries). Largest moves: fincorp R8a
+      deposits_bank 5,850 (+9.5%); fincorp R8a mf_lookthrough 327 (+9.5%); fincorp R8a dividends 29 (+9.5%). The
+      largest mover is explained under its entry: Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. Every free, low
+      household receipt of property income moves by about the same factor within a payer (AIDIS 2019 keys; FSF
+      stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U2
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 1208.072961
+    balanced: 1923.725582
+    why: >-
+      Explained. Cell H_U2 <- E_NBFC: 1,208 -> 1,924 (716, +59.2%; 4 entries). Largest moves: fincorp R8a debentures
+      321 (+59.2%); fincorp R8a mf_lookthrough 296 (+59.2%); fincorp R8a dividends 78 (+59.2%); fincorp R8a
+      deposits_nbfc 22 (+59.2%). The largest mover is explained under its entry: Households fell short of NAS 2026
+      St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their
+      net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income
+      (fincorp-19), so the household receipts of property income rise toward that structure and their interest
+      payments fall. NBFC debentures and MF-held NBFC paper pay about half the coupon in the prior (the NBFC
+      expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893) pushes the same way, so these rise
+      more than the other household receipts.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U2
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 33264.169421
+    balanced: 36777.870744
+    why: >-
+      Explained. Cell H_U2 <- E_NFPR: 33,264 -> 36,778 (3,514, +10.6%; 4 entries). Largest moves: fincorp R8a
+      distributed_income 1,932 (+10.6%); fincorp R8a distributed_income_mf 851 (+10.6%); fincorp R8a dividends 451
+      (+10.6%); fincorp R8a mf_lookthrough 280 (+10.6%). The largest mover is explained under its entry: Households
+      fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. Every free, low household receipt of property income moves by about the same
+      factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 133868.285714
+    balanced: 145985.025173
+    why: >-
+      Explained. Cell H_U3 <- E_BANK: 1,33,868 -> 1,45,985 (12,117, +9.1%; 4 entries). Largest moves: fincorp R8a
+      deposits_bank 11,421 (+9.1%); fincorp R8a mf_lookthrough 638 (+9.1%); fincorp R8a dividends 56 (+9.1%);
+      fincorp R8a debentures 2 (+9.1%). The largest mover is explained under its entry: Households fell short of NAS
+      2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving).
+      Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary
+      income (fincorp-19), so the household receipts of property income rise toward that structure and their
+      interest payments fall. Every free, low household receipt of property income moves by about the same factor
+      within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 2481.472409
+    balanced: 3934.458427
+    why: >-
+      Explained. Cell H_U3 <- E_NBFC: 2,481 -> 3,934 (1,453, +58.6%; 4 entries). Largest moves: fincorp R8a
+      debentures 651 (+58.6%); fincorp R8a mf_lookthrough 600 (+58.6%); fincorp R8a dividends 158 (+58.6%); fincorp
+      R8a deposits_nbfc 45 (+58.6%). The largest mover is explained under its entry: Households fell short of NAS
+      2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving).
+      Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary
+      income (fincorp-19), so the household receipts of property income rise toward that structure and their
+      interest payments fall. NBFC debentures and MF-held NBFC paper pay about half the coupon in the prior (the
+      NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893) pushes the same way, so these
+      rise more than the other household receipts.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 68327.097193
+    balanced: 75219.150221
+    why: >-
+      Explained. Cell H_U3 <- E_NFPR: 68,327 -> 75,219 (6,892, +10.1%; 4 entries). Largest moves: fincorp R8a
+      distributed_income 3,789 (+10.1%); fincorp R8a distributed_income_mf 1,669 (+10.1%); fincorp R8a dividends 885
+      (+10.1%); fincorp R8a mf_lookthrough 550 (+10.1%). The largest mover is explained under its entry: Households
+      fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. Every free, low household receipt of property income moves by about the same
+      factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U3
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 8146.872205
+    balanced: 9293.161829
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). Cell H_U3 <- E_NFPU: 8,147 -> 9,293 (1,146,
+      +14.1%; 4 entries). Largest moves: fincorp R8a mf_lookthrough 535 (+29.8%); government R9d railways 518
+      (+9.6%); government R9d posts 93 (+9.6%). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. The public NFC part
+      of households' MF income (dividends from the R7-grossed issuer total and MF-held bond interest) is held within
+      25% by r8.nfpu_nongov_holders; the rise inside the band carries E_NFPU's prior surplus (3,12,829,
+      government-33).
+    sources: [cga_finance_accounts_aag, mospi_aidis_2019, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: H_U4
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 224748.929917
+    balanced: 244661.116433
+    why: >-
+      Explained. Cell H_U4 <- E_BANK: 2,24,749 -> 2,44,661 (19,912, +8.9%; 4 entries). Largest moves: fincorp R8a
+      deposits_bank 18,768 (+8.9%); fincorp R8a mf_lookthrough 1,049 (+8.9%); fincorp R8a dividends 93 (+8.9%);
+      fincorp R8a debentures 3 (+8.9%). The largest mover is explained under its entry: Households fell short of NAS
+      2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving).
+      Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary
+      income (fincorp-19), so the household receipts of property income rise toward that structure and their
+      interest payments fall. Every free, low household receipt of property income moves by about the same factor
+      within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U4
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 4166.097040
+    balanced: 6593.888591
+    why: >-
+      Explained. Cell H_U4 <- E_NBFC: 4,166 -> 6,594 (2,428, +58.3%; 4 entries). Largest moves: fincorp R8a
+      debentures 1,087 (+58.3%); fincorp R8a mf_lookthrough 1,003 (+58.3%); fincorp R8a dividends 263 (+58.3%);
+      fincorp R8a deposits_nbfc 75 (+58.3%). The largest mover is explained under its entry: Households fell short
+      of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half the coupon in the
+      prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893) pushes the same way,
+      so these rise more than the other household receipts.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U4
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 114713.069615
+    balanced: 126062.253636
+    why: >-
+      Explained. Cell H_U4 <- E_NFPR: 1,14,713 -> 1,26,062 (11,349, +9.9%; 4 entries). Largest moves: fincorp R8a
+      distributed_income 6,239 (+9.9%); fincorp R8a distributed_income_mf 2,748 (+9.9%); fincorp R8a dividends 1,457
+      (+9.9%); fincorp R8a mf_lookthrough 906 (+9.9%). The largest mover is explained under its entry: Households
+      fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. Every free, low household receipt of property income moves by about the same
+      factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U4
+    col: E_NFPU
+    ref: "*"
+    component: "*"
+    prior: 12021.968337
+    balanced: 13763.025168
+    why: >-
+      Explained in direction; level unexplained (bounded; fincorp-32). Cell H_U4 <- E_NFPU: 12,022 -> 13,763 (1,741,
+      +14.5%; 4 entries). Largest moves: fincorp R8a mf_lookthrough 892 (+29.6%); government R9d railways 720
+      (+9.4%); government R9d posts 129 (+9.4%). Households fell short of NAS 2026 St 1.9 household saving by Z =
+      -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving). Their net property income is several
+      lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary income (fincorp-19), so the household
+      receipts of property income rise toward that structure and their interest payments fall. The public NFC part
+      of households' MF income (dividends from the R7-grossed issuer total and MF-held bond interest) is held within
+      25% by r8.nfpu_nongov_holders; the rise inside the band carries E_NFPU's prior surplus (3,12,829,
+      government-33).
+    sources: [cga_finance_accounts_aag, mospi_aidis_2019, rbi_fsf_fof, sebi_handbook_statistics]
+  - row: H_U5
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 314026.088188
+    balanced: 343630.924781
+    why: >-
+      Explained. Cell H_U5 <- E_BANK: 3,14,026 -> 3,43,631 (29,605, +9.4%; 4 entries). Largest moves: fincorp R8a
+      deposits_bank 27,904 (+9.4%); fincorp R8a mf_lookthrough 1,560 (+9.4%); fincorp R8a dividends 138 (+9.4%);
+      fincorp R8a debentures 4 (+9.4%). The largest mover is explained under its entry: Households fell short of NAS
+      2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by cf.k4.hh_saving).
+      Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of net D4 to primary
+      income (fincorp-19), so the household receipts of property income rise toward that structure and their
+      interest payments fall. Every free, low household receipt of property income moves by about the same factor
+      within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: E_INSP
+    ref: "*"
+    component: "*"
+    prior: 246722.578912
+    balanced: 240850.139263
+    why: >-
+      Explained. Cell H_U5 <- E_INSP: 2,46,723 -> 2,40,850 (-5,872, -2.4%; 9 entries). Largest moves: fincorp R9c
+      exempted_pf -1,763 (-5.6%); fincorp R9c life -1,403 (-1.4%); fincorp R9c nps -1,298 (-5.6%); fincorp R9c eps
+      -1,294 (-5.6%); fincorp R9c epf -568 (-1.4%). The largest mover is explained under its entry: Households fell
+      short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. D44 to households is held by scheme (r9c.* bands); the group split moves.
+    sources: [epfo_annual_report_accounts, irdai_handbook_insurance, mospi_nas_2026_publication, pfrda_nps_statistics]
+  - row: H_U5
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 5820.998377
+    balanced: 9261.234752
+    why: >-
+      Explained. Cell H_U5 <- E_NBFC: 5,821 -> 9,261 (3,440, +59.1%; 4 entries). Largest moves: fincorp R8a
+      debentures 1,541 (+59.1%); fincorp R8a mf_lookthrough 1,421 (+59.1%); fincorp R8a dividends 373 (+59.1%);
+      fincorp R8a deposits_nbfc 106 (+59.1%). The largest mover is explained under its entry: Households fell short
+      of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4 held by
+      cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0 ratio of
+      net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that structure
+      and their interest payments fall. NBFC debentures and MF-held NBFC paper pay about half the coupon in the
+      prior (the NBFC expended scale 0.503, fincorp-4), and E_NBFC's prior surplus (2,32,893) pushes the same way,
+      so these rise more than the other household receipts.
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: H_U5
+    col: E_NFPR
+    ref: "*"
+    component: "*"
+    prior: 160280.614143
+    balanced: 177056.695514
+    why: >-
+      Explained. Cell H_U5 <- E_NFPR: 1,60,281 -> 1,77,057 (16,776, +10.5%; 4 entries). Largest moves: fincorp R8a
+      distributed_income 9,222 (+10.5%); fincorp R8a distributed_income_mf 4,062 (+10.5%); fincorp R8a dividends
+      2,154 (+10.5%); fincorp R8a mf_lookthrough 1,339 (+10.5%). The largest mover is explained under its entry:
+      Households fell short of NAS 2026 St 1.9 household saving by Z = -3,84,547 in the prior (closure hh_saving; K4
+      held by cf.k4.hh_saving). Their net property income is several lakh crore below the old-base NAS 2024 St 5.0
+      ratio of net D4 to primary income (fincorp-19), so the household receipts of property income rise toward that
+      structure and their interest payments fall. Every free, low household receipt of property income moves by
+      about the same factor within a payer (AIDIS 2019 keys; FSF stocks x scaled rates).
+    sources: [mospi_aidis_2019, mospi_nas_2026_publication, mospi_nas_old_base_2011_12, rbi_fsf_fof, rbi_trend_progress]
+  - row: K_BANK
+    col: E_BANK
+    ref: "*"
+    component: "*"
+    prior: 458958.892748
+    balanced: 411589.930319
+    why: >-
+      Explained in direction; level unexplained (fincorp-34; the sources disagree). Cell K_BANK <- E_BANK: 4,58,959
+      -> 4,11,590 (-47,369, -10.3%; 2 entries). Largest moves: fincorp K2a private -25,132 (-10.9%); fincorp K2a
+      public -22,237 (-9.7%). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2):
+      FISIM leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including
+      MFs, auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry.
+      K2a is a GOS-proportional split of NAS 1.9 FC saving (no sub-sector data; free, low; the public and private
+      totals held by k2.*), so balancing moved saving from banks to NBFCs. FSF supports that direction:
+      capital_financial's nas_vs_fsf is 3,68,035 for banks (NAS-based saving above FSF net lending) and -1,34,403
+      for NBFCs. RBI Trend and Progress business accounts oppose it (banks' saving near 4.6 lakh, NBFCs' near 1.5
+      lakh before auxiliaries and captives; fincorp-2). Which source to follow is a Checkpoint B decision.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]
+  - row: K_INSP
+    col: E_INSP
+    ref: "*"
+    component: "*"
+    prior: 100423.104596
+    balanced: 77982.039725
+    why: >-
+      Explained. Cell K_INSP <- E_INSP: 1,00,423 -> 77,982 (-22,441, -22.3%; 2 entries). Largest moves: fincorp K2a
+      public -12,575 (-21.9%); fincorp K2a private -9,866 (-22.9%). The largest mover is explained under its entry:
+      E_INSP ran a -1,21,568 deficit because its SAM investment income (FSF stocks x rates) is 1,38,486 below the
+      administrative sources behind its D44 payouts (IRDAI life and non-life investment income + EPF, EPS, exempted
+      PF and NPS income: 7,80,914; fincorp-31), so raising its receipts moves toward that evidence. K2a is a
+      GOS-proportional split of NAS 1.9 FC saving (free, low); balancing cut insurers' saving toward the IRDAI / RTP
+      business-account evidence of about 0.6 lakh (fincorp-31); FSF is neutral (nas_vs_fsf 1,141).
+    sources: [irdai_handbook_insurance, mospi_nas_2026_publication, rbi_trend_progress]
+  - row: K_NBFC
+    col: E_NBFC
+    ref: "*"
+    component: "*"
+    prior: 337883.153898
+    balanced: 405217.505249
+    why: >-
+      Explained in direction; level unexplained (fincorp-34; the sources disagree). Cell K_NBFC <- E_NBFC: 3,37,883
+      -> 4,05,218 (67,334, +19.9%; 2 entries). Largest moves: fincorp K2a private 34,999 (+19.2%); fincorp K2a
+      public 32,335 (+20.8%). E_BANK ran a -1,02,838 deficit and E_NBFC a 2,32,893 surplus in the prior (fincorp-2):
+      FISIM leaves banks' SNA property income negative, while the F4a GOS split (NAS 8.12 S125-S127 GVA, including
+      MFs, auxiliaries and captive institutions) gives NBFCs more GOS than the RTP-scaled interest matrix can carry.
+      K2a is a GOS-proportional split of NAS 1.9 FC saving (no sub-sector data; free, low; the public and private
+      totals held by k2.*), so balancing moved saving from banks to NBFCs. FSF supports that direction:
+      capital_financial's nas_vs_fsf is 3,68,035 for banks (NAS-based saving above FSF net lending) and -1,34,403
+      for NBFCs. RBI Trend and Progress business accounts oppose it (banks' saving near 4.6 lakh, NBFCs' near 1.5
+      lakh before auxiliaries and captives; fincorp-2). Which source to follow is a Checkpoint B decision.
+    sources: [mospi_nas_2026_publication, rbi_fsf_fof, rbi_trend_progress]

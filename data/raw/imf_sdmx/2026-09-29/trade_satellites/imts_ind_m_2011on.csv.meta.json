@@ -1,0 +1,32 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 7068226,
+  "content_type": "application/vnd.sdmx.data+csv;version=1.0.0",
+  "final_url": "https://api.imf.org/external/sdmx/2.1/data/IMF.STA,IMTS/IND.XG_FOB_USD+MG_CIF_USD.*.M?startPeriod=2011-01&detail=dataonly",
+  "key": "imf_sdmx/imts_ind_m_2011on.csv",
+  "method": "GET",
+  "name": "imts_ind_m_2011on.csv",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "application/vnd.sdmx.data+csv;version=1.0.0",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "application/vnd.sdmx.data+csv;version=1.0.0",
+    "server": "istio-envoy"
+  },
+  "retrieved_at": "2026-09-29T10:30:11Z",
+  "sha256": "ff75e8777b2ef4fe02c6481ebe04d9062ad51982e3ef5b0afa4004750022d37f",
+  "source_id": "imf_sdmx",
+  "status": 200,
+  "url": "https://api.imf.org/external/sdmx/2.1/data/IMF.STA,IMTS/IND.XG_FOB_USD+MG_CIF_USD.*.M?startPeriod=2011-01&detail=dataonly"
+}

@@ -1,0 +1,394 @@
+{
+  "about": "Golden label cases (PLAN s.3.4). entry_cases: the s.3.4.1 rule (pipeline/export/status.py entry_label; 'error' = the export fails). split_cases: composition (4 dp) and headline split label of an aggregate from its absolute values by entry label; web/src/lib/status.ts (U2) must reproduce them: total = o + d + e + b, label = least certain label L with abs_L >= 0.1 * total (order official < derived < estimated < balancing_set). flag_bits: the cells.json bitmask (s.3.4.4). aggregate_cases: real-data link labels (total from pinned.json, split from cells.json), from the real export (re-checked against the current export by tests/export/test_status.py): `total` from sam/pinned.json, `split` from the cells' per-label absolute values; tests/export/test_status.py re-derives them.",
+  "aggregate_cases": [
+    {
+      "abs": {
+        "b": 0.0,
+        "d": 0.0,
+        "e": 16415545.56,
+        "o": 0.0
+      },
+      "link": "HH--PRDS",
+      "name": "level-0 link HH--PRDS",
+      "pins": [
+        "households:hh.c1.total"
+      ],
+      "split": "estimated",
+      "total": "official"
+    },
+    {
+      "abs": {
+        "b": 0.0,
+        "d": 0.0,
+        "e": 983128.72,
+        "o": 0.0
+      },
+      "link": "ROW--HH",
+      "name": "level-0 link ROW--HH",
+      "pins": [
+        "rest_of_world:row.r11_total"
+      ],
+      "split": "estimated",
+      "total": "official"
+    },
+    {
+      "abs": {
+        "b": 5890329.95,
+        "d": 0.0,
+        "e": 0.0,
+        "o": 0.0
+      },
+      "link": "HH--SI",
+      "name": "level-0 link HH--SI",
+      "pins": [
+        "capital_financial:cf.k4.hh_saving"
+      ],
+      "split": "balancing_set",
+      "total": "official"
+    },
+    {
+      "abs": {
+        "b": 0.0,
+        "d": 0.0,
+        "e": 0.0,
+        "o": 2873404.78
+      },
+      "link": "NFC--SI",
+      "name": "level-0 link NFC--SI",
+      "pins": [],
+      "split": "official",
+      "total": null
+    },
+    {
+      "abs": {
+        "b": 30382.94,
+        "d": 0.0,
+        "e": 0.0,
+        "o": 0.0
+      },
+      "flags": 2,
+      "link": "E_BANK--E_NFPU",
+      "name": "account cell E_BANK--E_NFPU (unexplained verdict)",
+      "pins": [],
+      "split": "balancing_set",
+      "total": null
+    }
+  ],
+  "entry_cases": [
+    {
+      "explanation_required": true,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "balancing_set",
+      "name": "free, moved >= 1 crore, needs explanation",
+      "prior_status": "estimated",
+      "role": "free",
+      "status": "balanced"
+    },
+    {
+      "explanation_required": false,
+      "has_item": true,
+      "in_judgement_band": false,
+      "label": "balancing_set",
+      "name": "free, moved, has a current explanation item",
+      "prior_status": "estimated",
+      "role": "free",
+      "status": "balanced"
+    },
+    {
+      "explanation_required": false,
+      "has_item": false,
+      "in_judgement_band": true,
+      "label": "balancing_set",
+      "name": "free, moved, member of a binding judgement band",
+      "prior_status": "official",
+      "role": "free",
+      "status": "balanced"
+    },
+    {
+      "explanation_required": true,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "balancing_set",
+      "name": "free, moved, derived prior, needs explanation",
+      "prior_status": "derived",
+      "role": "free",
+      "status": "balanced"
+    },
+    {
+      "explanation_required": false,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "official",
+      "name": "free, moved a little (no explanation, no item, no band): keeps prior official",
+      "prior_status": "official",
+      "role": "free",
+      "status": "balanced"
+    },
+    {
+      "explanation_required": false,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "derived",
+      "name": "free, moved a little: keeps prior derived",
+      "prior_status": "derived",
+      "role": "free",
+      "status": "balanced"
+    },
+    {
+      "explanation_required": false,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "estimated",
+      "name": "free, moved a little: keeps prior estimated",
+      "prior_status": "estimated",
+      "role": "free",
+      "status": "balanced"
+    },
+    {
+      "explanation_required": true,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "official",
+      "name": "anchored, moved, needs explanation: anchored entries are never 'set by balancing'",
+      "prior_status": "official",
+      "role": "anchored",
+      "status": "balanced"
+    },
+    {
+      "explanation_required": false,
+      "has_item": true,
+      "in_judgement_band": false,
+      "label": "derived",
+      "name": "anchored derived, moved",
+      "prior_status": "derived",
+      "role": "anchored",
+      "status": "balanced"
+    },
+    {
+      "explanation_required": false,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "official",
+      "name": "fixed official",
+      "prior_status": "official",
+      "role": "fixed",
+      "status": "official"
+    },
+    {
+      "explanation_required": false,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "derived",
+      "name": "fixed derived",
+      "prior_status": "derived",
+      "role": "fixed",
+      "status": "derived"
+    },
+    {
+      "explanation_required": false,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "estimated",
+      "name": "fixed estimated",
+      "prior_status": "estimated",
+      "role": "fixed",
+      "status": "estimated"
+    },
+    {
+      "explanation_required": false,
+      "has_item": false,
+      "in_judgement_band": true,
+      "label": "estimated",
+      "name": "free estimated, not moved (status estimated) even if in a band",
+      "prior_status": "estimated",
+      "role": "free",
+      "status": "estimated"
+    },
+    {
+      "explanation_required": false,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "official",
+      "name": "free official not moved",
+      "prior_status": "official",
+      "role": "free",
+      "status": "official"
+    },
+    {
+      "explanation_required": false,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "error",
+      "name": "unknown prior status: no branch matches, the export fails",
+      "prior_status": "provisional",
+      "role": "free",
+      "status": "official"
+    },
+    {
+      "explanation_required": true,
+      "has_item": false,
+      "in_judgement_band": false,
+      "label": "balancing_set",
+      "name": "free, moved, needs explanation and unknown prior: still set by balancing (branch 1 first)",
+      "prior_status": "provisional",
+      "role": "free",
+      "status": "balanced"
+    }
+  ],
+  "flag_bits": {
+    "depends_on_assumption": 64,
+    "discrepancy": 16,
+    "has_negative": 32,
+    "judgement_band": 1,
+    "level_unexplained": 4,
+    "old_base_structure": 8,
+    "unexplained": 2
+  },
+  "split_cases": [
+    {
+      "abs": {
+        "b": 0,
+        "d": 0,
+        "e": 0,
+        "o": 100.0
+      },
+      "composition": {
+        "b": 0.0,
+        "d": 0.0,
+        "e": 0.0,
+        "o": 1.0
+      },
+      "name": "all official",
+      "split": "official"
+    },
+    {
+      "abs": {
+        "b": 5.0,
+        "d": 0.0,
+        "e": 90.0,
+        "o": 5.0
+      },
+      "composition": {
+        "b": 0.05,
+        "d": 0.0,
+        "e": 0.9,
+        "o": 0.05
+      },
+      "name": "PFCE-like: official total, split mostly estimated",
+      "split": "estimated"
+    },
+    {
+      "abs": {
+        "b": 10.0,
+        "d": 0.0,
+        "e": 0.0,
+        "o": 90.0
+      },
+      "composition": {
+        "b": 0.1,
+        "d": 0.0,
+        "e": 0.0,
+        "o": 0.9
+      },
+      "name": "exactly 10% set by balancing",
+      "split": "balancing_set"
+    },
+    {
+      "abs": {
+        "b": 9.99,
+        "d": 0.0,
+        "e": 0.0,
+        "o": 90.01
+      },
+      "composition": {
+        "b": 0.0999,
+        "d": 0.0,
+        "e": 0.0,
+        "o": 0.9001
+      },
+      "name": "just under 10% set by balancing",
+      "split": "official"
+    },
+    {
+      "abs": {
+        "b": 0.0,
+        "d": 40.01,
+        "e": 9.99,
+        "o": 50.0
+      },
+      "composition": {
+        "b": 0.0,
+        "d": 0.4001,
+        "e": 0.0999,
+        "o": 0.5
+      },
+      "name": "derived 50, estimated 9.99, balancing 0",
+      "split": "derived"
+    },
+    {
+      "abs": {
+        "b": 0.0,
+        "d": 28.0,
+        "e": 12.0,
+        "o": 60.0
+      },
+      "composition": {
+        "b": 0.0,
+        "d": 0.28,
+        "e": 0.12,
+        "o": 0.6
+      },
+      "name": "mixed, estimated 12%",
+      "split": "estimated"
+    },
+    {
+      "abs": {
+        "b": 3.5,
+        "d": 0.0,
+        "e": 0.0,
+        "o": 0.0
+      },
+      "composition": {
+        "b": 1.0,
+        "d": 0.0,
+        "e": 0.0,
+        "o": 0.0
+      },
+      "name": "only balancing",
+      "split": "balancing_set"
+    },
+    {
+      "abs": {
+        "b": 0.07,
+        "d": 0.02,
+        "e": 0.0,
+        "o": 0.01
+      },
+      "composition": {
+        "b": 0.7,
+        "d": 0.2,
+        "e": 0.0,
+        "o": 0.1
+      },
+      "name": "rounded cents",
+      "split": "balancing_set"
+    },
+    {
+      "abs": {
+        "b": 0.0,
+        "d": 50.0,
+        "e": 50.0,
+        "o": 0.0
+      },
+      "composition": {
+        "b": 0.0,
+        "d": 0.5,
+        "e": 0.5,
+        "o": 0.0
+      },
+      "name": "estimated and derived split evenly",
+      "split": "estimated"
+    }
+  ]
+}

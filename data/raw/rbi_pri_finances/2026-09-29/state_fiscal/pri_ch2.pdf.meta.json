@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 463145,
+  "content_type": "application/pdf",
+  "final_url": "https://rbidocs.rbi.org.in/rdocs/Publications/PDFs/2FISCALPOSITIONOFPANCHAYATIRAJ4F4C1CCC4CD3442097324939C4AE4342.PDF",
+  "key": "rbi_pri_finances/pri_ch2.pdf",
+  "method": "GET",
+  "name": "pri_ch2.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.rbi.org.in/Scripts/OccasionalPublications.aspx?head=Finances%20of%20Panchayati%20Raj%20Institutions",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "application/pdf",
+    "etag": "\"47d93e8faa4eda1:0\"",
+    "last-modified": "Wed, 24 Jan 2024 09:49:01 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:40:29Z",
+  "sha256": "a36c920f0601bd35b9592c3169141301bac829ad23f02c6820528fc3747004e7",
+  "source_id": "rbi_pri_finances",
+  "status": 200,
+  "url": "https://rbidocs.rbi.org.in/rdocs/Publications/PDFs/2FISCALPOSITIONOFPANCHAYATIRAJ4F4C1CCC4CD3442097324939C4AE4342.PDF"
+}

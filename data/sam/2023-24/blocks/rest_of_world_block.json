@@ -1,0 +1,116 @@
+{
+  "block": "rest_of_world",
+  "checks": {
+    "failed": [],
+    "n": 29
+  },
+  "concordances_read": {},
+  "constraints": 14,
+  "datasets_read": [
+    "external_sector_bop_bpm6_annual",
+    "external_sector_bop_bpm6_quarterly",
+    "external_sector_bop_overall_annual",
+    "external_sector_ecb_monthly_2324",
+    "external_sector_fla_census",
+    "external_sector_fx_inr_usd",
+    "external_sector_invisibles_annual",
+    "external_sector_ites_survey",
+    "external_sector_lrs_outward",
+    "external_sector_nri_deposits",
+    "external_sector_remittance_survey",
+    "finsector_markets_sebi_foreign",
+    "io_tables_sut_supply",
+    "mospi_nas_2026_s1_9",
+    "mospi_nas_2026_s6_1",
+    "rbi_banking_corporate_rbi_accounts",
+    "rbi_banking_corporate_rtp_banks",
+    "rbi_financial_accounts_fsf_balance_sheets",
+    "rbi_financial_accounts_hbs_gsec_ownership",
+    "state_fiscal_rbi_sf_appendices",
+    "trade_satellites_batis_2023_2024",
+    "trade_satellites_comtrade_fy_2324",
+    "trade_satellites_imf_imts_fy",
+    "union_fiscal_fa_expenditure",
+    "union_fiscal_fa_receipts"
+  ],
+  "dependency_hashes": {
+    "households": {
+      "constraints": "d7934f138cf654b2f21979d311b55b7961c10ff87e38de6b5303451362e86430",
+      "entries": "d3cd60ede26b86b6b17224652a27c1eb3e9c1b7544688d6efba0224e98f42d0e",
+      "provenance": "d2e8beab4f053055fbb9981ecc5b83a78f10f9b093b8fb701b8cdc09353b39dc"
+    },
+    "production": {
+      "constraints": "b0a9b2675e64f33e3b3483d4f82ae4633b7be0c9dfa1673f8de82f4472257281",
+      "entries": "f6f2a4c4b428bc234ec83c20c5c5e754d599497cbc9ec463de0f668a0993ca21",
+      "provenance": "5c8f496f92c629e03d161c981730c5d224a54275caad0c6303df0eb8cba6730c"
+    }
+  },
+  "depends": [
+    "production",
+    "households"
+  ],
+  "entries": 81,
+  "refs": [
+    "R11",
+    "R11a",
+    "R12",
+    "R12a",
+    "R13",
+    "R14",
+    "R14a",
+    "K5",
+    "K8b",
+    "K8c",
+    "D2",
+    "S1",
+    "S2",
+    "S3"
+  ],
+  "refs_not_implemented": [],
+  "satellites": {
+    "r11a_sensitivity": {
+      "decimals": 6,
+      "description": "R11a remittances by group: prior, hub-neutral and consumption-only variants, band",
+      "ref": "R11a",
+      "rows": 50
+    },
+    "r12a_sensitivity": {
+      "decimals": 6,
+      "description": "R12a outward transfers by group: prior and 'other transfers on all groups', band",
+      "ref": "R12a",
+      "rows": 40
+    },
+    "row_financial_counterparts": {
+      "decimals": 6,
+      "description": "K8b lines x instrument x bop_function x direction x domestic counterpart K_* (interface for capital_financial K7b)",
+      "ref": "K8b",
+      "rows": 41
+    },
+    "row_property_income": {
+      "decimals": 6,
+      "description": "RoW property income by direction x BoP type x component x domestic account (interface for fincorp and government)",
+      "ref": "R14",
+      "rows": 41
+    },
+    "s1_goods_by_partner": {
+      "decimals": 6,
+      "description": "Goods trade by partner x HS chapter (IMTS partner totals, Comtrade chapters, RAS), US$ mn and Rs crore",
+      "ref": "S1",
+      "rows": 63286
+    },
+    "s2_services_by_partner": {
+      "decimals": 6,
+      "description": "Services trade by partner x EBOPS 2010 item (BoP totals, BaTIS FY shares, ITES override), Rs crore",
+      "ref": "S2",
+      "rows": 5162
+    },
+    "s3_remittance_sources": {
+      "decimals": 9,
+      "description": "Remittances received by source country (RBI survey 2023-24 shares x R11)",
+      "ref": "S3",
+      "rows": 54
+    }
+  },
+  "warnings": 0,
+  "year": "2023-24"
+}

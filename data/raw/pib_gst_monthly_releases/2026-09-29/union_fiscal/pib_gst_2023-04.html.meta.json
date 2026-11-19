@@ -1,0 +1,33 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 299247,
+  "content_type": "text/html; charset=utf-8",
+  "final_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1921186&reg=3&lang=1",
+  "key": "pib_gst_monthly_releases/pib_gst_2023-04.html",
+  "method": "GET",
+  "name": "pib_gst_2023-04.html",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.pib.gov.in/allRel.aspx?reg=3&lang=1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "text/html; charset=utf-8",
+    "etag": "XXXXXXXX"
+  },
+  "retrieved_at": "2026-09-29T14:33:51Z",
+  "sha256": "07a00b412bf912b52bd190c09ed0eca7dd94ceb0a8b88baf556d5858a34f67ef",
+  "source_id": "pib_gst_monthly_releases",
+  "status": 200,
+  "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1921186&reg=3&lang=1"
+}

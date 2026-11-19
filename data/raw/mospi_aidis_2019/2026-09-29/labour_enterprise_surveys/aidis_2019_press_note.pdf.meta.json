@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 766593,
+  "content_type": "application/pdf",
+  "final_url": "https://mospi.gov.in/sites/default/files/press_release/press_note-AIDIS--240821%20update.pdf",
+  "key": "mospi_aidis_2019/aidis_2019_press_note.pdf",
+  "method": "GET",
+  "name": "aidis_2019_press_note.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "766593",
+    "content-type": "application/pdf",
+    "etag": "\"613b25ba-bb281\"",
+    "last-modified": "Fri, 10 Sep 2021 09:30:34 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:21:36Z",
+  "sha256": "74d1aca5ba0422fc2821e0c4f5209b1b9773355b23f7af0b43300d22e40c3c17",
+  "source_id": "mospi_aidis_2019",
+  "status": 200,
+  "url": "https://mospi.gov.in/sites/default/files/press_release/press_note-AIDIS--240821%20update.pdf"
+}

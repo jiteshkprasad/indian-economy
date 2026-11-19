@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "<v>/stories/<slug>.json: a story's figures, computed by the exporter from its YAML spec (PLAN s.3.8).",
+  "properties": {
+    "figures": {
+      "additionalProperties": {
+        "additionalProperties": false,
+        "properties": {
+          "composition": {
+            "additionalProperties": false,
+            "properties": {
+              "b": {
+                "maximum": 1,
+                "minimum": 0,
+                "type": "number"
+              },
+              "d": {
+                "maximum": 1,
+                "minimum": 0,
+                "type": "number"
+              },
+              "e": {
+                "maximum": 1,
+                "minimum": 0,
+                "type": "number"
+              },
+              "o": {
+                "maximum": 1,
+                "minimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "o",
+              "d",
+              "e",
+              "b"
+            ],
+            "type": "object"
+          },
+          "flags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "method": {
+            "type": "string"
+          },
+          "note_key": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "prov": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "split": {
+            "enum": [
+              "official",
+              "derived",
+              "estimated",
+              "balancing_set"
+            ]
+          },
+          "total": {
+            "enum": [
+              "official",
+              "derived",
+              null
+            ]
+          },
+          "unit": {
+            "enum": [
+              "inr",
+              "pct_gdp",
+              "per100",
+              "pct"
+            ]
+          },
+          "value": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "value",
+          "unit",
+          "total",
+          "split",
+          "composition",
+          "flags",
+          "prov",
+          "method",
+          "note_key"
+        ],
+        "type": "object"
+      },
+      "type": "object"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "steps": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "figures": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "id": {
+            "type": "string"
+          },
+          "view": {
+            "additionalProperties": false,
+            "properties": {
+              "expanded": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "highlight": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "preset": {
+                "enum": [
+                  "simple",
+                  "full"
+                ]
+              },
+              "select": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "view": {
+                "enum": [
+                  "sam",
+                  "ts"
+                ]
+              },
+              "year": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "view",
+              "preset",
+              "year",
+              "expanded",
+              "highlight",
+              "select"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "view",
+          "figures"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "slug",
+    "figures",
+    "steps"
+  ],
+  "title": "Story",
+  "type": "object"
+}

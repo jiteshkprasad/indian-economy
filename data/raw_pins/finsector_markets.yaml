@@ -1,0 +1,228 @@
+# Pinned raw files for one ingest unit. Written by `python -m pipeline fetch`; do not edit by hand.
+# key '<source_id>/<name>' -> the exact bytes (sha256) every build uses. `history` keeps superseded pins.
+pins:
+  epfo_annual_report_accounts/epfo_annual_report_2023_24.pdf:
+    body_sha256: null
+    bytes: 27000388
+    method: GET
+    path: data/raw/epfo_annual_report_accounts/2026-09-29/finsector_markets/epfo_annual_report_2023_24.pdf
+    retrieved_at: '2026-09-29T10:20:02Z'
+    sha256: 185cde30023f92a1007d2d6670b676c89e87638b3bedd8fa32e42814bbc20d91
+    url: https://pmvbry-cdn.epfindia.gov.in/wp-content/uploads/2025/08/71.pdf
+  epfo_annual_report_accounts/epfo_annual_report_2024_25.pdf:
+    body_sha256: null
+    bytes: 15364363
+    method: GET
+    path: data/raw/epfo_annual_report_accounts/2026-09-29/finsector_markets/epfo_annual_report_2024_25.pdf
+    retrieved_at: '2026-09-29T10:20:05Z'
+    sha256: 01411420c1b5215d753861c0d72c91230583156902d46ecb0ed8602a96395c82
+    url: https://pmvbry-cdn.epfindia.gov.in/wp-content/uploads/2025/08/Annual-Report-2024-25.pdf
+  irdai_handbook_insurance/irdai_handbook_2024_25.zip:
+    body_sha256: null
+    bytes: 6573360
+    method: GET
+    path: data/raw/irdai_handbook_insurance/2026-09-29/finsector_markets/irdai_handbook_2024_25.zip
+    retrieved_at: '2026-09-29T10:19:50Z'
+    sha256: c4c77d51dc6dbec9be0b2786303525f343d88e9b8d6334a887d14b47b53693e2
+    url: https://irdai.gov.in/documents/37343/825690/Handbook+on+Indian+Insurance+Statistics+2024-25.zip/c754826c-a24f-6adf-65d9-bba0e1bb8d2a?version=1.1&t=1770357151427&download=true
+  pfrda_nps_statistics/A2_sector-wise_asset_under_management.xlsx:
+    body_sha256: null
+    bytes: 5003
+    method: GET
+    path: data/raw/pfrda_nps_statistics/2026-09-29/finsector_markets/A2_sector-wise_asset_under_management.xlsx
+    retrieved_at: '2026-09-29T10:19:50Z'
+    sha256: 3a8c14419fd38459764966b9ac9b154089ee949fbbb0be38d934bd0d3ee640f0
+    url: https://www.pfrda.org.in/documents/33652/202494/A2_sector-wise_asset_under_management.xlsx?v=1.82
+  pfrda_nps_statistics/A5_sector-wise_contribution_in_tier.xlsx:
+    body_sha256: null
+    bytes: 4567
+    method: GET
+    path: data/raw/pfrda_nps_statistics/2026-09-29/finsector_markets/A5_sector-wise_contribution_in_tier.xlsx
+    retrieved_at: '2026-09-29T10:19:52Z'
+    sha256: a7dfe76dfd3a1145da5d3c62311bedf10f36c503b4f44e2ca3878d6a403e8128
+    url: https://www.pfrda.org.in/documents/33652/202494/A5_sector-wise_contribution_in_tier.xlsx?v=1.80
+  pfrda_nps_statistics/HoNPSS_2024-25.pdf:
+    body_sha256: null
+    bytes: 2601183
+    method: GET
+    path: data/raw/pfrda_nps_statistics/2026-09-29/finsector_markets/HoNPSS_2024-25.pdf
+    retrieved_at: '2026-09-29T10:20:00Z'
+    sha256: 279f99adfa33e207fdeb7cb80b76fd2a4ee69cb7bd01aa2abcf529fb9a548fa2
+    url: https://www.pfrda.org.in/documents/33652/203559/HoNPSS+2024-25.pdf
+  pfrda_nps_statistics/M2_sector_wise_asset_under_management.xlsx:
+    body_sha256: null
+    bytes: 18495
+    method: GET
+    path: data/raw/pfrda_nps_statistics/2026-09-29/finsector_markets/M2_sector_wise_asset_under_management.xlsx
+    retrieved_at: '2026-09-29T10:19:56Z'
+    sha256: fd7451b82eb30bab30dd8f6fd8459376f23f983df1936d7830c754ecf74322ee
+    url: https://www.pfrda.org.in/documents/33652/202496/M2_sector_wise_asset_under_management.xlsx?v=1.238
+  pfrda_nps_statistics/M4_sector_wise_nps_contribution.xlsx:
+    body_sha256: null
+    bytes: 18779
+    method: GET
+    path: data/raw/pfrda_nps_statistics/2026-09-29/finsector_markets/M4_sector_wise_nps_contribution.xlsx
+    retrieved_at: '2026-09-29T10:19:58Z'
+    sha256: 94fa7f5ce492d70003deec542dd82bb223f14d17ed1800c42e34113e3dc15114
+    url: https://www.pfrda.org.in/documents/33652/202496/M4_sector_wise_nps_contribution.xlsx?v=1.239
+  pfrda_nps_statistics/M6_asset_class_wise_classification.xlsx:
+    body_sha256: null
+    bytes: 22300
+    method: GET
+    path: data/raw/pfrda_nps_statistics/2026-09-29/finsector_markets/M6_asset_class_wise_classification.xlsx
+    retrieved_at: '2026-09-29T10:19:54Z'
+    sha256: d0f8598b4a217c33520fe91790b1bda0426fefe7c1b7ed07dfaa4fa343667623
+    url: https://www.pfrda.org.in/documents/33652/202496/M6_asset_class_wise_classification.xlsx?v=1.241
+  pfrda_nps_statistics/M7_state_wise_subscribers.xlsx:
+    body_sha256: null
+    bytes: 132431
+    method: GET
+    path: data/raw/pfrda_nps_statistics/2026-09-29/finsector_markets/M7_state_wise_subscribers.xlsx
+    retrieved_at: '2026-09-29T11:12:12Z'
+    sha256: 1cc751149c7be2b10ed65545440a119732869143f128acd35e165b8ec2ab30e7
+    url: https://www.pfrda.org.in/documents/33652/202496/M7_state_wise_subscribers.xlsx?v=1.239
+  sebi_handbook_statistics/hbs2025_26_contents.pdf:
+    body_sha256: null
+    bytes: 773738
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2025_26_contents.pdf
+    retrieved_at: '2026-09-29T10:19:48Z'
+    sha256: 2d9f21d5171a9ba2c6d302ba5d9b64cf63379692df29d9ee80e46911b6f418ee
+    url: https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786967914812.pdf
+  sebi_handbook_statistics/hbs2526_t11_a.xlsx:
+    body_sha256: null
+    bytes: 16488
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t11_a.xlsx
+    retrieved_at: '2026-09-29T10:20:32Z'
+    sha256: e62672c12713c51a40f43f04ed78d81d450bc5924447a6549716aeae3ae2166f
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2011%20Outstanding%20Corporate%20Bonds.xlsx
+  sebi_handbook_statistics/hbs2526_t13_a.xlsx:
+    body_sha256: null
+    bytes: 14468
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t13_a.xlsx
+    retrieved_at: '2026-09-29T10:20:35Z'
+    sha256: a617a82ff54960f042243909ac424fc68f1bfa5a90cb3ec86783dc0bfa201253
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2013%20Fund%20raising%20by%20REITs%20and%20InvITs_Y.xlsx
+  sebi_handbook_statistics/hbs2526_t14_a.xlsx:
+    body_sha256: null
+    bytes: 14687
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t14_a.xlsx
+    retrieved_at: '2026-09-29T10:20:37Z'
+    sha256: 945c01f8389a9bae75498c945b0c9b947ed8c7bd08e928bb7214f1ae04ce58d3
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2014%20Funds%20Mobilised%20by%20all%20Instruments_Y.xlsx
+  sebi_handbook_statistics/hbs2526_t1_a.xlsx:
+    body_sha256: null
+    bytes: 28620
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t1_a.xlsx
+    retrieved_at: '2026-09-29T10:20:25Z'
+    sha256: 6f5cde8bcd5f5d56ce9bdfbf0dd6af66be7e7b5b8745bc7964e0fe1e55cf5c40
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%201%20Resource%20Mobilisaion%20through%20Public%20and%20Rights%20issues%20(Equity%20Issue)_Y.xlsx
+  sebi_handbook_statistics/hbs2526_t23_a.xlsx:
+    body_sha256: null
+    bytes: 27484
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t23_a.xlsx
+    retrieved_at: '2026-09-29T10:20:39Z'
+    sha256: 2bb3472cbdaad3bb16b2b5c47366c9827c7d3c19cdb5f68227461f1525fcb42a
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2023%20Averages%20of%20Major%20Indices%20and%20%20Market%20Capitalisation-Y.xlsx
+  sebi_handbook_statistics/hbs2526_t58_a.xlsx:
+    body_sha256: null
+    bytes: 19490
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t58_a.xlsx
+    retrieved_at: '2026-09-29T10:20:42Z'
+    sha256: b596c357d44858084fa5bdb794f1110235227c5756ff71cdc03a88fba4ff40a7
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2058%20Foreign%20Investment%20Inflows_Y.xlsx
+  sebi_handbook_statistics/hbs2526_t59_a.xlsx:
+    body_sha256: null
+    bytes: 13669
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t59_a.xlsx
+    retrieved_at: '2026-09-29T10:20:44Z'
+    sha256: 88d3f23dd53d2c4889a556ed29b7607f18c1facf287f2e872043fa7f69eea790
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2059%20Trends%20in%20Foreign%20Portfolio%20Investment-Y.xlsx
+  sebi_handbook_statistics/hbs2526_t60_a.xlsx:
+    body_sha256: null
+    bytes: 17887
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t60_a.xlsx
+    retrieved_at: '2026-09-29T10:20:46Z'
+    sha256: c1946726d9e83da43a5de06d522b1de16cb46cdac262a6b0add5710be2c00604
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2060%20Foreign%20Portfolio%20Investment%20Instrument%20wise_Y.xlsx
+  sebi_handbook_statistics/hbs2526_t62_a.xlsx:
+    body_sha256: null
+    bytes: 17042
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t62_a.xlsx
+    retrieved_at: '2026-09-29T10:20:48Z'
+    sha256: e2439eaf8fccd4253ff3f40973b1223da565f043fe3e8a750c0e9e50b9517e37
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2062%20Assets%20under%20the%20Custody%20of%20Custodians-Y.xlsx
+  sebi_handbook_statistics/hbs2526_t63_a.xlsx:
+    body_sha256: null
+    bytes: 13983
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t63_a.xlsx
+    retrieved_at: '2026-09-29T10:20:51Z'
+    sha256: ea5e9d1d5c79e33b35991a6b64088f739ba9aaa4c068014901668958ee32d2f5
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2063%20FPI%20FII%20AUC%20category%20wise%20data.xlsx
+  sebi_handbook_statistics/hbs2526_t64_a.xlsx:
+    body_sha256: null
+    bytes: 15151
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t64_a.xlsx
+    retrieved_at: '2026-09-29T10:20:53Z'
+    sha256: a4f4bcb157cd3b3d267be1bb7cdf879c040d45b8c2b9bbd1243aef15f9079e7b
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2064%20Category-wise%20Resource%20Mobilisation%20by%20Mutual%20Funds_Y.xlsx
+  sebi_handbook_statistics/hbs2526_t67_a.xlsx:
+    body_sha256: null
+    bytes: 60330
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t67_a.xlsx
+    retrieved_at: '2026-09-29T10:20:55Z'
+    sha256: f4e653581044383715838b150c56029fa2b9afee0bbb74b5c48b371126efa25c
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2067%20Funds%20Mobilised%20and%20Total%20Assets%20-%20According%20To%20Investment%20Objectives-Y.xlsx
+  sebi_handbook_statistics/hbs2526_t69_a.xlsx:
+    body_sha256: null
+    bytes: 19832
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t69_a.xlsx
+    retrieved_at: '2026-09-29T10:20:58Z'
+    sha256: 7d9289f93a3487318a0689889e4f49673a433cdeb4e992619d8b179788ae8d9f
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2069%20Resource%20Mobilisation%20through%20Systemic%20Investment%20Plans.xlsx
+  sebi_handbook_statistics/hbs2526_t70_a.xlsx:
+    body_sha256: null
+    bytes: 14897
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t70_a.xlsx
+    retrieved_at: '2026-09-29T10:21:00Z'
+    sha256: ad2ae02037d604a76d67712822b6638b37abb43e7ac728fd42161263bd4d7239
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%2070%20Trends%20in%20Transactions%20on%20Stock%20Exchanges%20by%20Mutual%20Funds%20(rp%20%20crore).xlsx
+  sebi_handbook_statistics/hbs2526_t72_m.xlsx:
+    body_sha256: null
+    bytes: 39345
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t72_m.xlsx
+    retrieved_at: '2026-09-29T10:21:02Z'
+    sha256: ea22e559acef2c2d8e7909cdeebecb8d1987d9e7bbd65ced82e7ffc11dd19ff0
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/monthly/Table%2072%20Unit%20Holding%20Pattern%20of%20Mutual%20Funds_M.xlsx
+  sebi_handbook_statistics/hbs2526_t7_a.xlsx:
+    body_sha256: null
+    bytes: 12776
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t7_a.xlsx
+    retrieved_at: '2026-09-29T10:20:28Z'
+    sha256: 50381be3e5ae626aaa6064eb5e9e6c77780e397fb707b3ba6f8607a177157fef
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%207%20Resource%20Mobilisation%20through%20Public%20Issue%20of%20Corporate%20Bonds_Y.xlsx
+  sebi_handbook_statistics/hbs2526_t8_a.xlsx:
+    body_sha256: null
+    bytes: 24700
+    method: GET
+    path: data/raw/sebi_handbook_statistics/2026-09-29/finsector_markets/hbs2526_t8_a.xlsx
+    retrieved_at: '2026-09-29T10:20:30Z'
+    sha256: 213981df81df1899e291d6cca2f76e7e91606e797c9b94a987c0eeff6c8214ac
+    url: https://www.sebi.gov.in/sebi_data/hbs2025-26/annual/Table%208%20Resource%20Mobilisation%20through%20Private%20Placement%20of%20Corporate%20Debt_Y.xlsx
+unit: finsector_markets

@@ -1,0 +1,1139 @@
+# Top-flows time series: the declarative flow definitions (DESIGN_BRIEF s.8, DECISIONS D2-18).
+# Plan: docs/phase2/plans/timeseries.md (its s.8 cross-plan review overrides the body). Code: build.py.
+#
+# Each flow is defined twice:
+#   sam:       a sum of SAM cells for 2023-24 (terms: rows <- cols, gap-map refs, optional component and
+#              bop_function filters, coefficient). Rows receive, columns pay. Account tokens: a code
+#              (C_FOOD), a group of accounts.yaml (@HH, @COM, ...) or a named set below ($C_goods).
+#              optional_refs: refs of the definition that may have no entry (a constraint-only official
+#              total such as V1 or R9, or a guard such as R3b); every other listed ref must have entries.
+#              exclude_components: components of the listed refs that are not part of the flow (e.g. R14
+#              'other_primary_income' in a government-interest flow).
+#              excluded_refs: refs that may legitimately sit in the same rows x cols block but are NOT
+#              part of the flow; any other ref found there is reported (tests/timeseries T4 guard).
+#   segments:  the year-by-year series from clean data. One dataset per segment; a term is a clean
+#              series id (with coefficient) or a list of NAS API revision rounds taken in precedence order.
+#              base_year: '2011-12' (old NAS base and the series tied to it), '2022-23' (new base) or null
+#              (BoP, fiscal and FSF series, not tied to a GDP base, and RBI HBS Table 12 before 2011-12,
+#              which splices earlier bases). The build checks that a segment's base_year equals the
+#              base_year of every clean record it reads. Segments of one flow never overlap within the same
+#              (base_year, variant). variant: published (default) or a labelled alternative measure (never
+#              mixed into the main series). Every scalar that names something (codes, datasets, series ids,
+#              refs, components) must be a string: quote YAML 1.1 words such as NO, YES, ON, OFF.
+#
+# Status of a row: official when every term has coefficient +1, every input clean record is official and
+# the segment is one dataset (a published value or a pure sum of published lines of one table);
+# otherwise derived (sign flips, differences, the back-series current-account derivation, links).
+# A segment may downgrade itself with `status: derived`. Nothing is estimated.
+#
+# check_class (the 2023-24 comparison with the balanced SAM, build.py sam_check):
+#   A  official total held by fixed entries or `equal` constraints: |TS - SAM| <= max(tol_abs, the summed
+#      anchored allowances of the entries in the definition)
+#   B  official control with an estimated conversion inside a band: |TS - SAM| <= max(5, tol_rel x |TS|)
+#      (only when TS and the owning control are the same concept)
+#   C  cash vs accrual, coverage or a concept difference that clean series can bridge: |TS + bridge - SAM|
+#      <= max(500, 1% of |TS|), otherwise an entry in explanations.yaml whose recorded difference still holds
+#   D  FSF/BoP with counterparty postings: as C but the threshold is Rs 5 crore
+#   none  no 2023-24 value on the SAM's concept (old-base-only memo)
+#
+# link: allowed -> the build computes the linked_2022_23 variant only if the rules of plan s.2.5 hold in
+# the data (both overlap ratios exist, |r22 - r23| <= 0.02, one sign); otherwise {refused: <reason>}.
+# The build evaluates the rules for every flow and stores the result (definitions column link_rules); a
+# refusal that cites unstable ratios while the rules hold is an error. Ratios are never typed here.
+
+cutoff:
+  first_period: "1950-51"
+  last_period: "2025-26"          # the latest complete FY (plan s.2.0); FY 2026-27 rows are dropped
+  excluded_stages: [BE, RE]        # budget estimates are never used (plan s.2.0)
+link_rules:
+  max_ratio_gap: 0.02
+  overlap_periods: ["2022-23", "2023-24"]
+  last_linked_period: "2021-22"
+
+account_sets:
+  C_goods: [C_CROP, C_LVST, C_FOFI, C_COAL, C_OILG, C_OMIN, C_FOOD, C_BVTB, C_TXAP, C_WOOD, C_GJOM, C_RPET,
+            C_CHEM, C_PHRM, C_NMMN, C_MTLS, C_MACH, C_ELEQ, C_TREQ]
+  C_services: [C_CNST, C_UTIL, C_TRAD, C_HOTL, C_TRNS, C_COMM, C_FINS, C_INSR, C_DWEL, C_BSRE, C_ITSV, C_EDUC,
+               C_HLTH, C_OSRV, C_PADM]
+  E_all: [E_NFPU, E_NFPR, E_RBI, E_BANK, E_NBFC, E_INSP]
+  E_fc: [E_RBI, E_BANK, E_NBFC, E_INSP]
+  K_fc: [K_RBI, K_BANK, K_NBFC, K_INSP]
+  G_all: [G_CEN, G_STA]
+  EG_all: [E_NFPU, E_NFPR, E_RBI, E_BANK, E_NBFC, E_INSP, G_CEN, G_STA]
+  T_product: [T_CGST, T_SGST, T_GCES, T_UEXC, T_SVAT, T_SEXC, T_OPRT]
+  T_product_all: [T_CGST, T_SGST, T_GCES, T_UEXC, T_SVAT, T_SEXC, T_OPRT, T_CUST, T_PSUB]
+  F_all: [F_LREG, F_LCAS, F_MIXD, F_GOSC]
+  union_taxes: [T_CGST, T_GCES, T_CUST, T_UEXC, T_OPRT, T_PIT, T_CIT]
+  gov_interest_to_from_centre: [E_RBI, E_BANK, E_NBFC, E_INSP, E_NFPU, E_NFPR, R_ROW, G_STA]
+  gov_interest_to_from_states: [E_RBI, E_BANK, E_NBFC, E_INSP, E_NFPU, E_NFPR, R_ROW, G_CEN]
+
+flows:
+# ------------------------------------------------------------------------------------------------
+# A. Expenditure and trade
+# ------------------------------------------------------------------------------------------------
+- id: F01
+  name: Private final consumption expenditure (PFCE)
+  group: expenditure
+  tier: core
+  check_class: A
+  link: allowed
+  sam:
+    terms:
+    - {rows: ["@COM"], cols: ["@HH"], refs: [C1a, C4a, C4b, C4c, C4d], optional_refs: [C4c]}
+    excluded_refs: [C1, T3, T3a]
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.pfce.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.pfce.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.pfce.current}]}
+  - {code: NP, dataset: mospi_nas_2026_api_b2022_annual, base_year: "2022-23", from: "2025-26", to: "2025-26", terms: [{id: api.pfce.rev_provisional_estimates.current}]}
+
+- id: F02
+  name: Government final consumption expenditure (GFCE)
+  group: expenditure
+  tier: core
+  check_class: A
+  link: {refused: "concept change at the new base: free PDS grain (food subsidy as a social transfer in kind) and FCI as non-market are inside GFCE; unstable overlap ratios (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: ["@COM"], cols: ["$G_all"], refs: [C2a]}
+    excluded_refs: [C2]
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.gfce.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.gfce.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.gfce.current}]}
+  - {code: NP, dataset: mospi_nas_2026_api_b2022_annual, base_year: "2022-23", from: "2025-26", to: "2025-26", terms: [{id: api.gfce.rev_provisional_estimates.current}]}
+
+- id: F03
+  name: Gross fixed capital formation (GFCF, excluding valuables)
+  group: expenditure
+  tier: core
+  check_class: A
+  link: allowed
+  sam:
+    terms:
+    - {rows: ["@COM"], cols: ["@CAP"], refs: [I1, I1a], optional_refs: [I1]}
+    excluded_refs: [I2, I2a]
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.gfcf.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.gfcf.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.gfcf.current}]}
+  - {code: NP, dataset: mospi_nas_2026_api_b2022_annual, base_year: "2022-23", from: "2025-26", to: "2025-26", terms: [{id: api.gfcf.rev_provisional_estimates.current}]}
+
+- id: F04
+  name: Valuables (gold and silver ornaments)
+  group: expenditure
+  tier: core
+  check_class: A
+  link: {refused: "unstable overlap ratios (plan s.2.5)"}
+  sam:
+    note: "I2 (NAS 1.9 household) + I2a (unsectored); the D3 financing cell K_HH <- X_DISC is not part of the flow"
+    terms:
+    - {rows: ["@COM"], cols: [K_HH, X_DISC], refs: [I2, I2a]}
+    excluded_refs: [I1, I1a, D4]
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1999-00", to: "2010-11", terms: [{id: api.valuables.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.valuables.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.valuables.current}]}
+  - {code: NP, dataset: mospi_nas_2026_api_b2022_annual, base_year: "2022-23", from: "2025-26", to: "2025-26", terms: [{id: api.valuables.rev_provisional_estimates.current}]}
+
+- id: F05
+  name: Exports of goods
+  group: trade
+  tier: core
+  check_class: A
+  link: allowed
+  sam:
+    terms:
+    - {rows: ["$C_goods"], cols: [R_ROW], refs: [P5]}
+    excluded_refs: []
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.exports_goods.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.exports_goods.current}]}
+
+- id: F06
+  name: Exports of services
+  group: trade
+  tier: core
+  check_class: A
+  link: allowed
+  sam:
+    terms:
+    - {rows: ["$C_services"], cols: [R_ROW], refs: [P5]}
+    excluded_refs: []
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.exports_services.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.exports_services.current}]}
+
+- id: F07
+  name: Imports of goods
+  group: trade
+  tier: core
+  check_class: A
+  link: allowed
+  sam:
+    terms:
+    - {rows: [R_ROW], cols: ["$C_goods"], refs: [P6]}
+    excluded_refs: []
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.imports_goods.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.imports_goods.current}]}
+
+- id: F08
+  name: Imports of services, CIF-adjusted (SAM concept)
+  group: trade
+  tier: core
+  check_class: A
+  link: {refused: "new base only: old-base 1.1 services imports are not CIF-adjusted (a different concept; their history is M06)"}
+  sam:
+    terms:
+    - {rows: [R_ROW], cols: ["$C_services"], refs: [P6]}
+    excluded_refs: []
+  segments:
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.imports_services.current}]}
+
+# ------------------------------------------------------------------------------------------------
+# B. Income
+# ------------------------------------------------------------------------------------------------
+- id: F09
+  name: Compensation of employees (domestic)
+  group: income
+  tier: core
+  check_class: A
+  link: {refused: "single overlap year: the old-base sequence of accounts (NAS 2024 edition) ends in 2022-23 and is a different vintage from NAS 2025"}
+  sam:
+    note: "domestic concept (V1); CE receivable by residents = V1 + V3 - V4 is not this flow"
+    terms:
+    - {rows: [F_LREG, F_LCAS], cols: ["@ACT"], refs: [V1, V1a], optional_refs: [V1]}
+    excluded_refs: []
+  segments:
+  - {code: NS, dataset: mospi_nas_2026_oldbase_soa_s1_15, base_year: "2011-12", from: "2011-12", to: "2022-23", terms: [{id: oldbase_soa_s1_15.generation_of_income.uses.d1.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s7_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s7_1.total.ce.current}]}
+
+- id: F10
+  name: Gross operating surplus and mixed income (incl. CFC)
+  group: income
+  tier: core
+  check_class: A
+  link: {refused: "single overlap year (the old-base sequence of accounts ends in 2022-23, NAS 2024 edition)"}
+  sam:
+    terms:
+    - {rows: [F_MIXD, F_GOSC], cols: ["@ACT"], refs: [V2, V2a], optional_refs: [V2]}
+    excluded_refs: []
+  segments:
+  - {code: NS, dataset: mospi_nas_2026_oldbase_soa_s1_15, base_year: "2011-12", from: "2011-12", to: "2022-23", status: derived,
+     note: "net operating surplus / mixed income plus total-economy CFC (the old base publishes net only)",
+     terms: [{id: oldbase_soa_s1_15.generation_of_income.uses.b2n_b3n.current}, {id: oldbase_soa_s1_15.production.uses.p51c.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s7_1, base_year: "2022-23", from: "2022-23", to: "2024-25", status: derived,
+     note: "net operating surplus / mixed income plus CFC (NAS 7.1 total)",
+     terms: [{id: s7_1.total.os_mi.current}, {id: s7_1.total.cfc.current}]}
+
+- id: F11
+  name: Net primary income from the rest of the world
+  group: income
+  tier: core
+  check_class: A
+  link: {refused: "sign-changing balancing item"}
+  sam:
+    note: "CE from RoW + property income from RoW - CE to RoW - property income to RoW (R14 is written net of R14a; R3/R3a/R3b listed in case sovereign external-debt interest is written there)"
+    terms:
+    - {rows: [F_LREG], cols: [R_ROW], refs: [V3]}
+    - {rows: ["$EG_all"], cols: [R_ROW], refs: [R13]}
+    - {rows: [R_ROW], cols: [F_LREG], refs: [V4], coef: -1}
+    - {rows: [R_ROW], cols: ["$EG_all"], refs: [R14, R14a, R3, R3a, R3b], optional_refs: [R3, R3a, R3b], coef: -1}
+    excluded_refs: [R15]
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.primary_income_row_net.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.primary_income_row_net.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.primary_income_row_net.current}]}
+
+# ------------------------------------------------------------------------------------------------
+# C. Taxes
+# ------------------------------------------------------------------------------------------------
+- id: F12
+  name: Taxes on products incl. import duties
+  group: taxes
+  tier: core
+  check_class: A
+  link: {refused: "unstable overlap ratios (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: ["$T_product"], cols: ["@COM"], refs: [P7a]}
+    - {rows: [T_CUST], cols: ["@COM"], refs: [P8]}
+    excluded_refs: [P7]
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.taxes_on_products.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.taxes_on_products.current}]}
+
+- id: F13
+  name: Product subsidies
+  group: taxes
+  tier: core
+  display_sign: -1
+  check_class: A
+  link: {refused: "concept change at the new base: the old base includes food subsidy, the new base books it in GFCE"}
+  sam:
+    terms:
+    - {rows: [T_PSUB], cols: ["@COM"], refs: [P9]}
+    excluded_refs: []
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", note: "NAS 'Less subsidies' line with the SAM sign (x -1)", terms: [{id: oldbase_nas2025_s1_1.subsidies_on_products.current, coef: -1}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", note: "NAS 'Less subsidies' line with the SAM sign (x -1)", terms: [{id: s1_1.subsidies_on_products.current, coef: -1}]}
+
+- id: F14
+  name: GST to the Centre (CGST incl. unsettled IGST, and compensation cess)
+  group: taxes
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "taxes block books UTGST in T_CGST (component utgst): registered bridge"
+    terms:
+    - {rows: [G_CEN], cols: [T_CGST, T_GCES], refs: [T1a]}
+    excluded_refs: [T1]
+  segments:
+  - {code: RB, dataset: union_fiscal_rb_receipts, base_year: null, from: "2022-23", to: "2024-25",
+     note: "Receipt Budget 'Total GST' = MH 0005 CGST + MH 0008 IGST (unsettled residual) + MH 0009 compensation cess; actuals only",
+     terms: [{id: rb.tr.0005.central_goods_and_services_tax_cgst}, {id: rb.tr.0008.integrated_goods_and_services_tax_igst}, {id: rb.tr.0009.gst_compensation_cess}]}
+
+- id: F15
+  name: SGST to the States
+  group: taxes
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [G_STA], cols: [T_SGST], refs: [T2x]}
+    excluded_refs: [T2]
+  segments:
+  - {code: KF, dataset: state_fiscal_fc16_kfi, base_year: null, from: "2017-18", to: "2023-24",
+     note: "28 States (FC16 key fiscal indicators, audited); GST began in 2017-18, the published zeros before it are not carried",
+     terms: [{id: kfi.a_1_1_2-state_goods_and_service_tax.in.all_states_28}]}
+
+- id: F16
+  name: Union excise duties
+  group: taxes
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [G_CEN], cols: [T_UEXC], refs: [T1a]}
+    excluded_refs: [T1]
+  segments:
+  - {code: RB, dataset: union_fiscal_rb_receipts, base_year: null, from: "2022-23", to: "2024-25", terms: [{id: rb.tr.total.total_union_excise_duties}]}
+
+- id: F17
+  name: Customs duties
+  group: taxes
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [G_CEN], cols: [T_CUST], refs: [T1a]}
+    excluded_refs: [T1]
+  segments:
+  - {code: RB, dataset: union_fiscal_rb_receipts, base_year: null, from: "2022-23", to: "2024-25", terms: [{id: rb.tr.total.total_customs}]}
+
+- id: F18
+  name: State sales tax / VAT
+  group: taxes
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  breaks:
+  - {period: "2017-18", note: "GST subsumed State VAT except on petroleum and alcohol (5,81,435 in 2016-17 to 3,84,913 in 2017-18): flagged, not adjusted"}
+  sam:
+    terms:
+    - {rows: [G_STA], cols: [T_SVAT], refs: [T2x]}
+    excluded_refs: [T2]
+  segments:
+  - {code: KF, dataset: state_fiscal_fc16_kfi, base_year: null, from: "2011-12", to: "2023-24",
+     note: "28 States; concept break in 2017-18 (VAT subsumed into GST except petroleum and alcohol): flagged, not adjusted",
+     terms: [{id: kfi.a_1_1_1-taxes_on_sales_trade_etc.in.all_states_28}]}
+
+- id: F19
+  name: State excise
+  group: taxes
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [G_STA], cols: [T_SEXC], refs: [T2x]}
+    excluded_refs: [T2]
+  segments:
+  - {code: KF, dataset: state_fiscal_fc16_kfi, base_year: null, from: "2011-12", to: "2023-24", note: "28 States", terms: [{id: kfi.a_1_1_3-state_excise.in.all_states_28}]}
+
+- id: F20
+  name: Stamps and registration fees
+  group: taxes
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "a production tax (P10a) under the component agreed with taxes (CROSS_REVIEW XR-19)"
+    terms:
+    - {rows: [G_STA], cols: [T_PROD], refs: [P10a], components: [stamps_registration]}
+    excluded_refs: []
+  segments:
+  - {code: KF, dataset: state_fiscal_fc16_kfi, base_year: null, from: "2011-12", to: "2023-24", note: "28 States", terms: [{id: kfi.a_1_1_5-stamps_and_registration_fees.in.all_states_28}]}
+
+- id: F21
+  name: Corporation tax
+  group: taxes
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [G_CEN], cols: [T_CIT], refs: [T1a]}
+    excluded_refs: [T1]
+  segments:
+  - {code: RB, dataset: union_fiscal_rb_receipts, base_year: null, from: "2022-23", to: "2024-25", terms: [{id: rb.tr.total.total_corporation_tax}]}
+
+- id: F22
+  name: Personal income tax and other direct taxes of households (incl. STT)
+  group: taxes
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "STT is in T_PIT (DECISIONS D2-12); ~21% of MH 0021 is paid by quasi-corporations (D2-11) but G_CEN <- T_PIT still carries the whole cash total"
+    terms:
+    - {rows: [G_CEN], cols: [T_PIT], refs: [T1a]}
+    excluded_refs: [T1]
+  segments:
+  - {code: RB, dataset: union_fiscal_rb_receipts, base_year: null, from: "2022-23", to: "2024-25",
+     note: "the seven MH 0021 lines (income tax other than corporation tax) + MH 0034 securities transaction tax",
+     terms: [{id: rb.tr.0021.collections}, {id: rb.tr.0021.health_and_education_cess}, {id: rb.tr.0021.interest_recoveries},
+             {id: rb.tr.0021.miscellaneous_receipts}, {id: rb.tr.0021.penalties}, {id: rb.tr.0021.surcharge},
+             {id: rb.tr.0021.tax_under_black_money}, {id: rb.tr.0034.security_transaction_tax}]}
+
+# ------------------------------------------------------------------------------------------------
+# D. Government
+# ------------------------------------------------------------------------------------------------
+- id: F23
+  name: Tax devolution to the States
+  group: government
+  tier: core
+  check_class: B
+  tol_rel: 0.0005
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [G_STA], cols: [G_CEN], refs: [R1]}
+    excluded_refs: [R2, T2b, R3, R3b]
+  segments:
+  - {code: FT, dataset: state_fiscal_fc16_transfers, base_year: null, from: "1952-53", to: "2006-07", note: "FC16 time series of transfers (equals RBI AT2 within Rs 0.5 crore 2007-08..2022-23)", terms: [{id: tsm.states_share.actuals}]}
+  - {code: AT, dataset: state_fiscal_rbi_sf_app_tables, base_year: null, from: "2007-08", to: "2023-24", note: "RBI State Finances Appendix Table 2, States' receipts (all States and UTs), actuals", terms: [{id: at2.i-states_share_in_central_taxes.actuals}]}
+
+- id: F24
+  name: Grants from the Centre to the States
+  group: government
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "current grants (all R2 components) + GST compensation grants (T2b compensation_grants, not the cess used for loan recovery) + capital grants (R2k)"
+    terms:
+    - {rows: [G_STA], cols: [G_CEN], refs: [R2]}
+    - {rows: [G_STA], cols: [G_CEN], refs: [T2b], components: [compensation_grants]}
+    - {rows: [K_GSTA], cols: [K_GCEN], refs: [R2k]}
+    excluded_refs: [R1, R3, R3b, K6]
+  segments:
+  - {code: FT, dataset: state_fiscal_fc16_transfers, base_year: null, from: "1952-53", to: "2006-07", note: "FC16 time series of transfers; its 2023-24 value switches to the Union-side Statement 18 figure and is not used", terms: [{id: tsm.total_grants.actuals}]}
+  - {code: AT, dataset: state_fiscal_rbi_sf_app_tables, base_year: null, from: "2007-08", to: "2023-24", note: "RBI State Finances Appendix Table 2, States' receipts (all States and UTs), actuals", terms: [{id: at2.ii-grants_from_the_centre.actuals}]}
+
+- id: F25
+  name: Interest paid by the Centre
+  group: government
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "every interest cell with column G_CEN: holders by sector (R3, R3a, R3b; R5 as a guard; R14 to RoW), households' small savings and G-sec interest (R8a) and GPF interest (R9c) per CROSS_REVIEW XR-9; R14 'other_primary_income' (BoP other primary income spread by rest_of_world) is not interest and is excluded. The same cells as fincorp's r3b.union_nas_concept control, minus that component"
+    terms:
+    - {rows: ["$gov_interest_to_from_centre"], cols: [G_CEN], refs: [R3, R3a, R3b, R5, R14], optional_refs: [R3b, R5, R14], exclude_components: [other_primary_income]}
+    - {rows: ["@HH"], cols: [G_CEN], refs: [R3, R3a, R3b, R8a, R9c], optional_refs: [R3, R3a, R3b]}
+    excluded_refs: [R1, R2, T2b, R9, R9a, R9b, R10, R15, R16, R18]
+  segments:
+  - {code: AF, dataset: union_fiscal_afs, base_year: null, from: "2022-23", to: "2023-24", note: "Annual Financial Statement, Consolidated Fund revenue disbursements, MH 2049 interest payments (actuals)", terms: [{id: afs.cfi_rev_disbursements.2049}]}
+
+- id: F26
+  name: Interest paid by the States
+  group: government
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "includes G_CEN <- G_STA interest on Central loans (intra-government, not consolidated); R14 'other_primary_income' is not interest and is excluded. The same cells as fincorp's r3b.states_nas_concept control, minus that component"
+    terms:
+    - {rows: ["$gov_interest_to_from_states"], cols: [G_STA], refs: [R3, R3a, R3b, R5, R14], optional_refs: [R3b, R5, R14], exclude_components: [other_primary_income]}
+    - {rows: ["@HH"], cols: [G_STA], refs: [R3, R3a, R3b, R8a, R9c], optional_refs: [R3, R3a, R3b]}
+    excluded_refs: [R9, R9a, R9b, R10, R15, R16, R18, K8e]
+  segments:
+  - {code: KF, dataset: state_fiscal_fc16_kfi, base_year: null, from: "2011-12", to: "2023-24", note: "28 States (FC16 key fiscal indicators)", terms: [{id: kfi.b_1_a-interest_payments.in.all_states_28}]}
+
+- id: F27
+  name: Pensions paid by the Centre
+  group: government
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "R9 (constraint-only ref) and the group entries R9a (CROSS_REVIEW XR-11); excludes R9b, R9c and R10. The SAM holds government's gov.r9.centre concept (MH 2071 net of the NPS employer contribution and CGHS): class C with a clean-series bridge (explanations.yaml)"
+    terms:
+    - {rows: ["@HH"], cols: [G_CEN], refs: [R9, R9a], optional_refs: [R9]}
+    excluded_refs: [R3, R3a, R3b, R5, R8a, R9c, R10, R9b, R16]
+  segments:
+  - {code: AF, dataset: union_fiscal_afs, base_year: null, from: "2022-23", to: "2023-24", note: "Annual Financial Statement, MH 2071 pensions (actuals)", terms: [{id: afs.cfi_rev_disbursements.2071}]}
+
+- id: F28
+  name: Pensions paid by the States
+  group: government
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "the SAM holds government's gov.r9.states concept (RBI SF App. II pensions, all States and UTs, net of the State employer NPS contribution): class C with a clean-series bridge (explanations.yaml)"
+    terms:
+    - {rows: ["@HH"], cols: [G_STA], refs: [R9, R9a], optional_refs: [R9]}
+    excluded_refs: [R3, R3a, R3b, R5, R8a, R9c, R10, R9b, R16]
+  segments:
+  - {code: KF, dataset: state_fiscal_fc16_kfi, base_year: null, from: "2011-12", to: "2023-24", note: "28 States", terms: [{id: kfi.b_1_b-pension_and_other_retirement_benefits.in.all_states_28}]}
+
+- id: F29
+  name: Food subsidy (free grain, inside GFCE)
+  group: government
+  tier: core
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "a component of F02; never add the two"
+    terms:
+    - {rows: ["@COM"], cols: [G_CEN], refs: [C2a], components: [food_subsidy]}
+    excluded_refs: [C2]
+  segments:
+  - {code: EP, dataset: union_fiscal_exp_profile, base_year: null, from: "2022-23", to: "2024-25", note: "Expenditure Profile Statement 7 (actuals)", terms: [{id: stat7.food}]}
+  - {code: FS, dataset: state_fiscal_fc16_subsidies, base_year: null, from: "2018-19", to: "2023-24", variant: fc16_definition,
+     note: "FC16 subsidy series (a different definition from Statement 7, TAX-11): a labelled alternative, never spliced",
+     terms: [{id: sub.food.in.gg_centre}]}
+
+- id: F30
+  name: Fertiliser subsidy
+  group: government
+  tier: core
+  display_sign: -1
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "SUT product subsidies on C_CHEM (fertilisers, the NBS amount booked on pesticides, other chemicals)"
+    terms:
+    - {rows: [T_PSUB], cols: [C_CHEM], refs: [P9]}
+    excluded_refs: []
+  segments:
+  - {code: FS, dataset: state_fiscal_fc16_subsidies, base_year: null, from: "2018-19", to: "2021-22", note: "FC16 subsidy series, same measure as Statement 7 (equal in 2022-23 and 2023-24), SAM sign", terms: [{id: sub.fertilizer.in.gg_centre, coef: -1}]}
+  - {code: EP, dataset: union_fiscal_exp_profile, base_year: null, from: "2022-23", to: "2024-25", note: "Expenditure Profile Statement 7 (actuals), SAM sign", terms: [{id: stat7.fertiliser, coef: -1}]}
+
+- id: F31
+  name: RBI surplus transferred to the Centre (cash)
+  group: government
+  tier: core
+  check_class: A
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [G_CEN], cols: [E_RBI], refs: [R6]}
+    excluded_refs: []
+  segments:
+  - {code: RS, dataset: rbi_banking_corporate_rbi_surplus_timing, base_year: null, from: "2022-23", to: "2025-26", note: "RBI year t surplus received by the Centre in FY t+1 (DECISIONS D0-7)", terms: [{id: r6.surplus_received_by_centre_cash.current}]}
+
+- id: F32
+  name: General government gross saving
+  group: government
+  tier: core
+  check_class: A
+  link: {refused: "negative balancing item"}
+  sam:
+    terms:
+    - {rows: [K_GCEN, K_GSTA], cols: ["$G_all"], refs: [K3, K3a], optional_refs: [K3]}
+    excluded_refs: []
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_9, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_9.general_government.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_9, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_9.general_government.current}]}
+
+- id: F33
+  name: General government GFCF (public capex)
+  group: government
+  tier: core
+  check_class: A
+  link: {refused: "unstable overlap ratios (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: ["@COM"], cols: [K_GCEN, K_GSTA], refs: [I1a]}
+    excluded_refs: [I1]
+  segments:
+  - {code: NA, dataset: mospi_nas_2026_api_b2011_annual, base_year: "2011-12", from: "2011-12", to: "2023-24",
+     note: "NAS API old-base annual series, latest revision round per year (mospi_nas_2026-34)",
+     terms: [{template: "api.gfcf.sec_gg.rev_{round}.current", rounds: latest}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_11, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_11.general_government.current}]}
+
+- id: F34
+  name: Government net issuance of debt securities
+  group: government
+  tier: core
+  check_class: D
+  link: {refused: "not tied to a GDP base (FSF, consistent with the old base)"}
+  sam:
+    terms:
+    - {rows: [K_GCEN, K_GSTA], cols: [I_GSEC], refs: [K8, K8d, K7b], optional_refs: [K8d, K7b]}
+    excluded_refs: []
+  segments:
+  - {code: FF, dataset: rbi_financial_accounts_fsf_instrument_sector, base_year: null, from: "2012-13", to: "2023-24", note: "RBI flow of funds, general government, net incurrence of debt-security liabilities (transactions)", terms: [{id: fsf7.gg.liabilities.transaction.f3.current}]}
+
+# ------------------------------------------------------------------------------------------------
+# E. Households
+# ------------------------------------------------------------------------------------------------
+- id: F35
+  name: Household gross saving
+  group: households
+  tier: core
+  check_class: A
+  link: {refused: "unstable overlap ratios (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: [K_HH], cols: ["@HH"], refs: [K4a]}
+    excluded_refs: [K4]
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_9, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_9.household_sector.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_9, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_9.household_sector.current}]}
+
+- id: F36
+  name: Household gross financial saving
+  group: households
+  tier: core
+  check_class: A
+  link: {refused: "unstable overlap ratios (plan s.2.5)"}
+  sam:
+    note: "K7a only: K7b counterpart postings and K9 residuals are not household financial saving"
+    terms:
+    - {rows: ["@INST"], cols: [K_HH], refs: [K7a]}
+    excluded_refs: [K7, K7b, K8d, K8b, K9, K9b]
+  segments:
+  - {code: T12, dataset: rbi_financial_accounts_hbs_saving, base_year: null, from: "1983-84", to: "2010-11", note: "RBI Handbook Table 12 before 2011-12: RBI splices in earlier-base figures without naming the base (clean base_year null; level breaks expected at 2004-05 and 2011-12), so these rows carry no base and 2011-12 is flagged base_change. T12 equals old-base NAS 5.3 only from 2011-12", terms: [{id: t12.assets.financial_assets.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s5_3, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s5_3.gross_financial_saving.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s5_3, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s5_3.gross_financial_saving.current}]}
+
+- id: F37
+  name: Household financial liabilities
+  group: households
+  tier: core
+  check_class: A
+  link: allowed
+  sam:
+    terms:
+    - {rows: [K_HH], cols: ["@INST"], refs: [K8a]}
+    excluded_refs: [K8, K8b]
+  segments:
+  - {code: T12, dataset: rbi_financial_accounts_hbs_saving, base_year: null, from: "1983-84", to: "2010-11", terms: [{id: t12.liabilities.financial_liabilities.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s5_3, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s5_3.financial_liabilities.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s5_3, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s5_3.financial_liabilities.current}]}
+
+- id: F38
+  name: Household physical saving (GCF excluding valuables)
+  group: households
+  tier: core
+  check_class: A
+  link: {refused: "not in the plan's whitelist (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: ["@COM"], cols: [K_HH], refs: [I1a]}
+    - {rows: [K_DSTK], cols: [K_HH], refs: [I3a]}
+    excluded_refs: [I1, I2, I2a]
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_9, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_9.saving_in_physical_assets.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_9, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_9.saving_in_physical_assets.current}]}
+
+- id: F39
+  name: Household deposits with banks and co-operative banks
+  group: households
+  tier: core
+  check_class: A
+  link: {refused: "not in the plan's whitelist (plan s.2.5)"}
+  sam:
+    note: "components agreed with capital_financial (CROSS_REVIEW XR-19); excludes non-bank deposits and trade debt"
+    terms:
+    - {rows: [I_DEPO], cols: [K_HH], refs: [K7a], components: [banks, coop_banks]}
+    excluded_refs: [K7, K7b, K8d, K8b, K9, K9b]
+  segments:
+  - {code: T12, dataset: rbi_financial_accounts_hbs_saving, base_year: null, from: "1983-84", to: "2010-11", note: "T12 'bank deposits' = NAS banks + co-operative banks", terms: [{id: t12.assets.bank_deposits.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s5_3, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s5_3.with_banks.current}, {id: oldbase_nas2025_s5_3.with_co_operative_banks_and_societies.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s5_3, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s5_3.with_banks.current}, {id: s5_3.with_co_operative_banks_and_societies.current}]}
+
+- id: F40
+  name: Household shares, debentures and mutual fund units
+  group: households
+  tier: core
+  check_class: A
+  link: {refused: "not in the plan's whitelist (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: [I_EQTY, I_CBND, I_MFUN], cols: [K_HH], refs: [K7a]}
+    excluded_refs: [K7, K7b, K8d, K8b, K9, K9b]
+  segments:
+  - {code: T12, dataset: rbi_financial_accounts_hbs_saving, base_year: null, from: "1983-84", to: "2010-11", note: "shares & debentures + units of UTI (listed separately to 2008-09)", terms: [{id: t12.assets.shares_debentures.current}, {id: t12.assets.units_of_uti.current, to: "2008-09"}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s5_3, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s5_3.shares_and_debentures.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s5_3, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s5_3.shares_and_debentures.current}]}
+
+- id: F41
+  name: Household insurance, provident and pension funds
+  group: households
+  tier: core
+  check_class: A
+  link: {refused: "not in the plan's whitelist (plan s.2.5)"}
+  sam:
+    note: "PPF sits in I_SSAV (component ppf, CROSS_REVIEW s.3), so it is added here"
+    terms:
+    - {rows: [I_INPE], cols: [K_HH], refs: [K7a]}
+    - {rows: [I_SSAV], cols: [K_HH], refs: [K7a], components: [ppf]}
+    excluded_refs: [K7, K7b, K8d, K8b, K9, K9b]
+  segments:
+  - {code: T12, dataset: rbi_financial_accounts_hbs_saving, base_year: null, from: "1983-84", to: "2010-11", terms: [{id: t12.assets.life_insurance_fund.current}, {id: t12.assets.pf_pension_fund.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s5_3, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s5_3.insurance_funds.current}, {id: oldbase_nas2025_s5_3.provident_and_pension_funds.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s5_3, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s5_3.insurance_funds.current}, {id: s5_3.provident_and_pension_funds.current}]}
+
+- id: F42
+  name: Household borrowing from banks and co-operative banks
+  group: households
+  tier: core
+  check_class: A
+  link: {refused: "not in the plan's whitelist (plan s.2.5); the HDFC merger (1 Jul 2023) inflates 2023-24"}
+  sam:
+    note: "components agreed with capital_financial (NAS 5.3 liability lines, CROSS_REVIEW XR-19)"
+    terms:
+    - {rows: [K_HH], cols: [I_LOAN], refs: [K8a], components: [banks, coop_banks]}
+    excluded_refs: [K8, K8b]
+  segments:
+  - {code: T12, dataset: rbi_financial_accounts_hbs_saving, base_year: null, from: "1983-84", to: "2010-11", note: "T12 'bank advances' = NAS banks + co-operative loans", terms: [{id: t12.liabilities.bank_advances.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s5_3, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s5_3.bank_advances.current}, {id: oldbase_nas2025_s5_3.loans_and_advances_by_co_operative_banks_and_societies.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s5_3, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s5_3.bank_advances.current}, {id: s5_3.loans_and_advances_by_co_operative_banks_and_societies.current}]}
+
+- id: F43
+  name: Remittances and other private transfers received
+  group: households
+  tier: core
+  check_class: A
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: ["@HH"], cols: [R_ROW], refs: [R11, R11a], optional_refs: [R11]}
+    excluded_refs: []
+  segments:
+  - {code: BI, dataset: external_sector_invisibles_annual, base_year: null, from: "2006-07", to: "2025-26", note: "RBI BoP invisibles, private transfers receipts (equals NAS 6.1 item 4 in 2022-23..2024-25)", terms: [{id: invis.inr.private_transfers.receipts.current}]}
+
+- id: F44
+  name: Private transfers sent abroad
+  group: households
+  tier: core
+  check_class: A
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [R_ROW], cols: ["@HH"], refs: [R12, R12a], optional_refs: [R12]}
+    excluded_refs: []
+  segments:
+  - {code: BI, dataset: external_sector_invisibles_annual, base_year: null, from: "2006-07", to: "2025-26", terms: [{id: invis.inr.private_transfers.payments.current}]}
+
+# ------------------------------------------------------------------------------------------------
+# F. Corporations and finance
+# ------------------------------------------------------------------------------------------------
+- id: F45
+  name: Private non-financial corporations' gross saving
+  group: corporations
+  tier: core
+  check_class: A
+  link: {refused: "sector boundary and method change at the new base (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: [K_NFPR], cols: [E_NFPR], refs: [K1]}
+    excluded_refs: []
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_9, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_9.private_non_financial_corporations.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_9, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_9.private_non_financial_corporations.current}]}
+
+- id: F46
+  name: Private non-financial corporations' GFCF (private capex)
+  group: corporations
+  tier: core
+  check_class: A
+  link: {refused: "unstable overlap ratios (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: ["@COM"], cols: [K_NFPR], refs: [I1a]}
+    excluded_refs: [I1]
+  segments:
+  - {code: NA, dataset: mospi_nas_2026_api_b2011_annual, base_year: "2011-12", from: "2011-12", to: "2023-24",
+     note: "NAS API old-base annual series, latest revision round per year (mospi_nas_2026-34)",
+     terms: [{template: "api.gfcf.sec_nfc_private.rev_{round}.current", rounds: latest}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_11, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_11.private_non_financial_corporations.current}]}
+
+- id: F47
+  name: Financial corporations' gross saving
+  group: corporations
+  tier: core
+  check_class: A
+  link: {refused: "sector method change at the new base (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: ["$K_fc"], cols: ["$E_fc"], refs: [K2, K2a], optional_refs: [K2]}
+    excluded_refs: []
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_9, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_9.financial_corporations.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_9, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_9.financial_corporations.current}]}
+
+- id: F48
+  name: Non-financial corporations' net incurrence of liabilities (corporate borrowing)
+  group: corporations
+  tier: core
+  check_class: D
+  link: {refused: "not tied to a GDP base (FSF)"}
+  sam:
+    note: "K8, K8b and K7b liability postings; not the K9 residuals"
+    terms:
+    - {rows: [K_NFPU, K_NFPR], cols: ["@INST"], refs: [K8, K8b, K7b], optional_refs: [K8b, K7b]}
+    excluded_refs: []
+  segments:
+  - {code: FF, dataset: rbi_financial_accounts_fsf_instrument_sector, base_year: null, from: "2012-13", to: "2023-24", note: "RBI flow of funds, public + private NFC liabilities (transactions)", terms: [{id: fsf7.nfc_pub.liabilities.transaction.total.current}, {id: fsf7.nfc_pvt.liabilities.transaction.total.current}]}
+
+# ------------------------------------------------------------------------------------------------
+# G. External
+# ------------------------------------------------------------------------------------------------
+- id: F49
+  name: Current-account deficit (rest-of-world saving, NAS basis)
+  group: external
+  tier: core
+  check_class: A
+  link: {refused: "sign-changing balancing item"}
+  sam:
+    terms:
+    - {rows: [K_ROW], cols: [R_ROW], refs: [K5]}
+    excluded_refs: []
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11",
+     note: "back series: gross capital formation incl. errors and omissions - gross saving (exact in the old base: NO GCF - saving = NO net capital inflow 2011-12..2023-24)",
+     terms: [{id: api.gcf_incl_errors_omissions.current}, {id: api.gross_saving.current, coef: -1}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_9, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_9.net_capital_inflow_from_row.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_9, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_9.net_capital_inflow_from_row.current}]}
+
+- id: F50
+  name: Investment income paid abroad (incl. reinvested earnings)
+  group: external
+  tier: core
+  check_class: A
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    note: "R14 (net of reinvested earnings) + R14a (D43); R3/R3a/R3b in case sovereign external-debt interest is written there"
+    terms:
+    - {rows: [R_ROW], cols: ["$EG_all"], refs: [R14, R14a, R3, R3a, R3b], optional_refs: [R3, R3a, R3b]}
+    excluded_refs: [R15]
+  segments:
+  - {code: BI, dataset: external_sector_invisibles_annual, base_year: null, from: "2006-07", to: "2025-26", note: "RBI BoP invisibles, investment income payments (equals NAS 6.1 item 8)", terms: [{id: invis.inr.income.investment.payments.current}]}
+
+- id: F51
+  name: Foreign direct investment into India (net)
+  group: external
+  tier: core
+  check_class: A
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: ["@INST"], cols: [K_ROW], refs: [K8b], bop_functions: [FDI_equity, FDI_reinvested_earnings, FDI_debt]}
+    excluded_refs: [K7, K7b, K8d, K9]
+  segments:
+  - {code: FI, dataset: external_sector_foreign_investment, base_year: null, from: "2004-05", to: "2025-26", note: "RBI Handbook Table 143, FDI to India (net); equals the BoP in every overlap year", terms: [{id: t143.inr.fdi_to_india_net.current}]}
+
+- id: F52
+  name: Foreign portfolio investment in India (net)
+  group: external
+  tier: core
+  check_class: A
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [I_EQTY, I_GSEC, I_CBND], cols: [K_ROW], refs: [K8b], bop_functions: [FPI_equity, FPI_debt]}
+    excluded_refs: [K7, K7b, K8d, K9]
+  segments:
+  - {code: BO, dataset: external_sector_bop_overall_annual, base_year: null, from: "2020-21", to: "2025-26", terms: [{id: bop_old.inr.ka.portfolio.in_india.net.current}]}
+  - {code: FI, dataset: external_sector_foreign_investment, base_year: null, from: "2004-05", to: "2019-20", variant: proxy_total_portfolio,
+     note: "RBI Handbook Table 143 total portfolio (net), which includes India's portfolio investment abroad: a labelled proxy, never mixed into the main series",
+     terms: [{id: t143.inr.portfolio_net.current}]}
+
+- id: F53
+  name: NRI deposits (net)
+  group: external
+  tier: core
+  check_class: A
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [I_DEPO], cols: [K_ROW], refs: [K8b], bop_functions: [NRI_deposits]}
+    excluded_refs: [K7, K7b, K8d, K9]
+  segments:
+  - {code: NR, dataset: external_sector_nri_deposits, base_year: null, from: "2007-08", to: "2019-20", note: "RBI NRI deposit flows (the BoP wins from 2020-21; small source gaps in the overlap)", terms: [{id: nri.flow.inr.total.current}]}
+  - {code: BO, dataset: external_sector_bop_overall_annual, base_year: null, from: "2020-21", to: "2025-26", terms: [{id: bop_old.inr.ka.banking_capital.commercial_banks.nri_deposits.net.current}]}
+
+- id: F54
+  name: Increase in foreign-exchange reserves (BoP)
+  group: external
+  tier: core
+  check_class: A
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [I_RESV], cols: [K_RBI], refs: [K8c]}
+    excluded_refs: []
+  segments:
+  - {code: BO, dataset: external_sector_bop_overall_annual, base_year: null, from: "2020-21", to: "2025-26", note: "BoP monetary movements (reserves, net) with the sign flipped so that an increase is positive; not the change in the stock (which includes valuation)", terms: [{id: bop_old.inr.monetary_movements.reserves.net.current, coef: -1}]}
+
+# ------------------------------------------------------------------------------------------------
+# Memo aggregates (denominators, totals and balancing items)
+# ------------------------------------------------------------------------------------------------
+- id: M01
+  name: GDP at market prices
+  group: memo
+  tier: memo
+  check_class: A
+  link: allowed
+  sam:
+    terms:
+    - {rows: ["$F_all"], cols: ["@ACT"], refs: [V1, V1a, V2, V2a], optional_refs: [V1, V2]}
+    - {rows: [T_PROD], cols: ["@ACT"], refs: [P10]}
+    - {rows: ["$T_product_all"], cols: ["@COM"], refs: [P7a, P8, P9]}
+    excluded_refs: [P7]
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.gdp.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.gdp.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.gdp.current}]}
+  - {code: NP, dataset: mospi_nas_2026_api_b2022_annual, base_year: "2022-23", from: "2025-26", to: "2025-26", terms: [{id: api.gdp.rev_provisional_estimates.current}]}
+
+- id: M02
+  name: GVA at basic prices
+  group: memo
+  tier: memo
+  check_class: A
+  link: allowed
+  sam:
+    terms:
+    - {rows: ["$F_all"], cols: ["@ACT"], refs: [V1, V1a, V2, V2a], optional_refs: [V1, V2]}
+    - {rows: [T_PROD], cols: ["@ACT"], refs: [P10]}
+    excluded_refs: []
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.gva.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.gva_basic.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.gva_basic.current}]}
+  - {code: NP, dataset: mospi_nas_2026_api_b2022_annual, base_year: "2022-23", from: "2025-26", to: "2025-26", terms: [{id: api.gva.ind_total.rev_provisional_estimates.current}]}
+
+- id: M03
+  name: Exports of goods and services
+  group: memo
+  tier: memo
+  check_class: A
+  link: allowed
+  sam:
+    terms:
+    - {rows: ["@COM"], cols: [R_ROW], refs: [P5]}
+    excluded_refs: []
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.exports.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.exports.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.exports.current}]}
+  - {code: NP, dataset: mospi_nas_2026_api_b2022_annual, base_year: "2022-23", from: "2025-26", to: "2025-26", terms: [{id: api.exports.rev_provisional_estimates.current}]}
+
+- id: M04
+  name: Imports of goods and services, CIF-adjusted (SAM concept)
+  group: memo
+  tier: memo
+  check_class: A
+  link: {refused: "new base only (old-base imports are not CIF-adjusted; history in M06)"}
+  sam:
+    terms:
+    - {rows: [R_ROW], cols: ["@COM"], refs: [P6]}
+    excluded_refs: []
+  segments:
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.imports.current}]}
+  - {code: NP, dataset: mospi_nas_2026_api_b2022_annual, base_year: "2022-23", from: "2025-26", to: "2025-26", terms: [{id: api.imports.rev_provisional_estimates.current}]}
+
+- id: M05
+  name: CIF adjustment on imports of services (NAS-BoP reconciliation item)
+  group: memo
+  tier: memo
+  check_class: A
+  link: {refused: "new base only"}
+  sam:
+    terms:
+    - {rows: [R_ROW], cols: [X_DISC], refs: [D2]}
+    excluded_refs: []
+  segments:
+  - {code: NN, dataset: mospi_nas_2026_s6_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s6_1.adjustment_for_cif_in_import_of_services.current}]}
+
+- id: M06
+  name: Imports of goods and services, BoP basis (before the CIF adjustment)
+  group: memo
+  tier: memo
+  check_class: A
+  link: allowed
+  sam:
+    terms:
+    - {rows: [R_ROW], cols: ["@COM"], refs: [P6]}
+    - {rows: [R_ROW], cols: [X_DISC], refs: [D2]}
+    excluded_refs: []
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.imports.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", note: "old-base NAS 1.1 imports are not CIF-adjusted", terms: [{id: oldbase_nas2025_s1_1.imports.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s6_1, base_year: "2022-23", from: "2022-23", to: "2024-25", note: "NAS 6.1 imports (without the CIF adjustment)", terms: [{id: s6_1.imports.current}]}
+
+- id: M07
+  name: Net taxes on products
+  group: memo
+  tier: memo
+  check_class: A
+  link: {refused: "unstable overlap ratios (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: ["$T_product_all"], cols: ["@COM"], refs: [P7a, P8, P9]}
+    excluded_refs: [P7]
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.net_taxes_on_products.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.taxes_on_products.current}, {id: oldbase_nas2025_s1_1.subsidies_on_products.current, coef: -1}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.taxes_on_products.current}, {id: s1_1.subsidies_on_products.current, coef: -1}]}
+  - {code: NP, dataset: mospi_nas_2026_api_b2022_annual, base_year: "2022-23", from: "2025-26", to: "2025-26", terms: [{id: api.net_taxes_on_products.rev_provisional_estimates.current}]}
+
+- id: M08
+  name: Direct taxes on income (corporation tax + personal income tax incl. STT)
+  group: memo
+  tier: memo
+  check_class: C
+  link: {refused: "the two segments are different measures (NAS D5 receivable vs Union cash receipts)"}
+  sam:
+    terms:
+    - {rows: [G_CEN], cols: [T_CIT, T_PIT], refs: [T1a]}
+    excluded_refs: [T1]
+  segments:
+  - {code: NS, dataset: mospi_nas_2026_oldbase_soa_s4_0, base_year: "2011-12", from: "2011-12", to: "2022-23",
+     note: "old-base general government D5 receivable (NAS 2024 edition); likely excludes STT (TAX-14), so it is not joined with the Union segment",
+     terms: [{id: oldbase_soa_s4_0.secondary_distribution_of_income.resources.d5.current}]}
+  - {code: RB, dataset: union_fiscal_rb_receipts, base_year: null, from: "2022-23", to: "2024-25",
+     note: "Union corporation tax + the seven MH 0021 lines + MH 0034 STT (as F21 + F22)",
+     terms: [{id: rb.tr.total.total_corporation_tax}, {id: rb.tr.0021.collections}, {id: rb.tr.0021.health_and_education_cess}, {id: rb.tr.0021.interest_recoveries},
+             {id: rb.tr.0021.miscellaneous_receipts}, {id: rb.tr.0021.penalties}, {id: rb.tr.0021.surcharge},
+             {id: rb.tr.0021.tax_under_black_money}, {id: rb.tr.0034.security_transaction_tax}]}
+
+- id: M09
+  name: Household net financial saving
+  group: memo
+  tier: memo
+  check_class: A
+  link: {refused: "a difference of two flows"}
+  sam:
+    terms:
+    - {rows: ["@INST"], cols: [K_HH], refs: [K7a]}
+    - {rows: [K_HH], cols: ["@INST"], refs: [K8a], coef: -1}
+    excluded_refs: [K7, K7b, K8d, K8b, K9, K9b, K8]
+  segments:
+  - {code: T12, dataset: rbi_financial_accounts_hbs_saving, base_year: null, from: "1983-84", to: "2010-11", terms: [{id: t12.assets.financial_assets.current}, {id: t12.liabilities.financial_liabilities.current, coef: -1}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s5_3, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s5_3.net_financial_saving_of_household_sector_1_4.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s5_3, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s5_3.net_financial_saving_of_household_sector_1_4.current}]}
+
+- id: M10
+  name: Change in inventories
+  group: memo
+  tier: memo
+  check_class: A
+  link: {refused: "unstable overlap ratios (plan s.2.5)"}
+  sam:
+    terms:
+    - {rows: ["@COM"], cols: [K_DSTK], refs: [I3]}
+    excluded_refs: []
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.cis.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.cis.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.cis.current}]}
+  - {code: NP, dataset: mospi_nas_2026_api_b2022_annual, base_year: "2022-23", from: "2025-26", to: "2025-26", terms: [{id: api.cis.rev_provisional_estimates.current}]}
+
+- id: M11
+  name: Net current transfers from the rest of the world (other than general government)
+  group: memo
+  tier: memo
+  check_class: A
+  link: {refused: "a net balance"}
+  sam:
+    terms:
+    - {rows: ["@HH"], cols: [R_ROW], refs: [R11, R11a], optional_refs: [R11]}
+    - {rows: [R_ROW], cols: ["@HH"], refs: [R12, R12a], optional_refs: [R12], coef: -1}
+    excluded_refs: []
+  segments:
+  - {code: NB, dataset: mospi_nas_2026_api_b2011_back, base_year: "2011-12", from: "1950-51", to: "2010-11", terms: [{id: api.other_current_transfers_row_net.current}]}
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_1, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_1.other_current_transfers_row_net.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_1, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_1.other_current_transfers_row_net.current}]}
+
+- id: M12
+  name: Household residual (published statistical discrepancy)
+  group: memo
+  tier: memo
+  check_class: A
+  link: {refused: "new base only"}
+  sam:
+    terms:
+    - {rows: [X_DISC], cols: ["@HH"], refs: [D1]}
+    excluded_refs: []
+  segments:
+  - {code: NN, dataset: mospi_nas_2026_derived_residuals, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: derived.household_residual.current}]}
+
+- id: M13
+  name: Household gross disposable income
+  group: memo
+  tier: memo
+  check_class: A
+  link: {refused: "refused by plan s.2.5 although its overlap ratios meet the 0.02 rule in the data (see link_rules): kept refused until the orchestrator decides whether to add it to the whitelist (timeseries-5)"}
+  sam:
+    note: "use side: PFCE + gross saving + the published household residual (the NAS identity)"
+    terms:
+    - {rows: ["@COM"], cols: ["@HH"], refs: [C1a, C4a, C4b, C4c, C4d], optional_refs: [C4c]}
+    - {rows: [K_HH], cols: ["@HH"], refs: [K4a]}
+    - {rows: [X_DISC], cols: ["@HH"], refs: [D1]}
+    excluded_refs: [C1, K4]
+  segments:
+  - {code: "NO", dataset: mospi_nas_2026_oldbase_nas2025_s1_14, base_year: "2011-12", from: "2011-12", to: "2023-24", terms: [{id: oldbase_nas2025_s1_14.households_npish.gross_disposable_income.current}]}
+  - {code: NN, dataset: mospi_nas_2026_s1_14, base_year: "2022-23", from: "2022-23", to: "2024-25", terms: [{id: s1_14.households_npish.gross_disposable_income.current}]}
+
+- id: M14
+  name: Union gross tax revenue (before devolution)
+  group: memo
+  tier: memo
+  check_class: C
+  link: {refused: "not tied to a GDP base"}
+  sam:
+    terms:
+    - {rows: [G_CEN], cols: ["$union_taxes"], refs: [T1a]}
+    - {rows: [G_CEN], cols: [T_PROD], refs: [P10a]}
+    excluded_refs: [T1]
+  segments:
+  - {code: FT, dataset: state_fiscal_fc16_transfers, base_year: null, from: "1952-53", to: "2023-24", note: "FC16 time series of transfers, gross tax revenue of the Centre", terms: [{id: tsm.gtr.actuals}]}
+  - {code: RB, dataset: union_fiscal_rb_receipts, base_year: null, from: "2024-25", to: "2024-25",
+     note: "Receipt Budget net tax revenue of the Centre with the States' share and the NCCD transfer to the NDRF added back (both lines are published negative); equals FT in 2022-23 and 2023-24",
+     terms: [{id: rb.tr.total.total_tax_revenue}, {id: rb.tr.0710.less_states_share, coef: -1}, {id: rb.tr.total.net_less_nccd_transferred_to_the_national_disaster_response_fund, coef: -1}]}
+
+- id: M15
+  name: General government property income paid (old base, NAS concept)
+  group: memo
+  tier: memo
+  check_class: none
+  link: {refused: "old base only"}
+  sam:
+    note: "no 2023-24 value on this concept (the old-base sequence of accounts ends in 2022-23); the history of F25 + F26 on NAS concepts (consolidated, accrual), not additive with them"
+    terms: []
+    excluded_refs: []
+  segments:
+  - {code: NS, dataset: mospi_nas_2026_oldbase_soa_s4_0, base_year: "2011-12", from: "2011-12", to: "2022-23", terms: [{id: oldbase_soa_s4_0.allocation_of_primary_income.uses.d4.current}]}

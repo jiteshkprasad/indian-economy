@@ -1,0 +1,20 @@
+# Panel text keys for each item of the X_DISC account (PLAN s.3.4.4, flag `discrepancy`, bit 16).
+# The English text lives in web/messages/en/map.json (U3) under these keys; `summary` is the reviewed meaning,
+# kept here so the exporter and verifiers can check that every X_DISC entry is covered. Keys are
+# `<ref>` or `<ref>.<component>`; every X_DISC entry must match exactly one key (the export fails otherwise).
+disc_text:
+  D1:
+    key: disc.D1
+    summary: "Derived total (the published NAS household residual); split across groups estimated"
+  D2:
+    key: disc.D2
+    summary: "NAS-BoP reconciliation item (CIF adjustment on services imports), not money paid abroad"
+  D3.unsectored_valuables:
+    key: disc.D3_valuables
+    summary: "Derived: valuables with no institutional sector"
+  D3.si_errors:
+    key: disc.D3_si_errors
+    summary: "Remainder of the NAS derived saving-investment errors and omissions after the valuables part; spread over corporate capital accounts pro rata to GCF (estimated). The whole D3 (both components) is the derived total"
+  D4:
+    key: disc.D4
+    summary: "GDP expenditure discrepancy: zero in 2023-24"

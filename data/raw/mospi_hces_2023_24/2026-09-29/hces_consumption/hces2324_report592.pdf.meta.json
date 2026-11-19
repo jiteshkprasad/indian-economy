@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 11737505,
+  "content_type": "application/pdf",
+  "final_url": "https://www.mospi.gov.in/sites/default/files/publication_reports/Final_Report_HCES_2023-24L.pdf",
+  "key": "mospi_hces_2023_24/hces2324_report592.pdf",
+  "method": "GET",
+  "name": "hces2324_report592.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "11737505",
+    "content-type": "application/pdf",
+    "etag": "\"679b54e8-b319a1\"",
+    "last-modified": "Thu, 30 Jan 2025 10:31:04 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:36:52Z",
+  "sha256": "368deb9c858dcc71c3bf0e6cad096a31b5b337a724cf92a113637f3302ea268e",
+  "source_id": "mospi_hces_2023_24",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/sites/default/files/publication_reports/Final_Report_HCES_2023-24L.pdf"
+}

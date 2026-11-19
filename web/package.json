@@ -1,0 +1,56 @@
+{
+  "name": "india-economy-map",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/node-check.mjs && node scripts/with-lock.mjs --lock build -- npm run build:nolock",
+    "build:nolock": "node scripts/next-files.mjs && node scripts/check-data.mjs && node scripts/sync-fixture.mjs && next build && node scripts/next-files.mjs",
+    "start:out": "node scripts/node-check.mjs && node scripts/serve-out.mjs",
+    "sync-fixture": "node scripts/sync-fixture.mjs",
+    "gen:contract": "node scripts/gen-contract.mjs",
+    "test:unit": "node scripts/node-check.mjs && vitest run",
+    "test:e2e": "node scripts/node-check.mjs && playwright test",
+    "first-load": "node scripts/first-load.mjs",
+    "test:web": "node scripts/test-web.mjs",
+    "lint": "node scripts/node-check.mjs && eslint .",
+    "typecheck": "node scripts/node-check.mjs && tsc --noEmit",
+    "normalise": "node scripts/next-files.mjs"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "3.1.1",
+    "@mdx-js/react": "3.1.1",
+    "@next/mdx": "16.3.8",
+    "@tanstack/react-virtual": "3.14.13",
+    "next": "16.3.8",
+    "next-intl": "4.14.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remark-gfm": "4.0.1",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@lhci/cli": "0.15.1",
+    "@playwright/test": "1.63.0",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/react": "16.3.3",
+    "@types/mdx": "2.0.14",
+    "@types/node": "24.19.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitest/coverage-v8": "5.0.3",
+    "ajv": "8.20.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.8",
+    "happy-dom": "20.14.5",
+    "json-schema-to-typescript": "16.0.0",
+    "serve-handler": "6.1.7",
+    "typescript": "6.0.3",
+    "vitest": "5.0.3"
+  }
+}

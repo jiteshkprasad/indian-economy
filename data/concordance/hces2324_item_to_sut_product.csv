@@ -1,0 +1,447 @@
+sut_product,hces_item,ref,component,key_quality,note
+1,101,C1a,,direct,paddy: rice items incl. purchased PDS rice (101); free rice 061 excluded
+1,102,C1a,,direct,paddy: rice items incl. purchased PDS rice (101); free rice 061 excluded
+1,103,C1a,,direct,paddy: rice items incl. purchased PDS rice (101); free rice 061 excluded
+1,105,C1a,,direct,paddy: rice items incl. purchased PDS rice (101); free rice 061 excluded
+1,106,C1a,,direct,paddy: rice items incl. purchased PDS rice (101); free rice 061 excluded
+2,107,C1a,,direct,wheat: wheat/atta items incl. purchased PDS (107); free wheat 062 excluded
+2,108,C1a,,direct,wheat: wheat/atta items incl. purchased PDS (107); free wheat 062 excluded
+2,110,C1a,,direct,wheat: wheat/atta items incl. purchased PDS (107); free wheat 062 excluded
+2,111,C1a,,direct,wheat: wheat/atta items incl. purchased PDS (107); free wheat 062 excluded
+2,112,C1a,,direct,wheat: wheat/atta items incl. purchased PDS (107); free wheat 062 excluded
+2,114,C1a,,direct,wheat: wheat/atta items incl. purchased PDS (107); free wheat 062 excluded
+3,001,C1a,,direct,"coarse cereals: coarse grains PDS/other sources, other cereals"
+3,002,C1a,,direct,"coarse cereals: coarse grains PDS/other sources, other cereals"
+3,122,C1a,,direct,"coarse cereals: coarse grains PDS/other sources, other cereals"
+4,141,C1a,,direct,gram: gram split and whole
+4,142,C1a,,direct,gram: gram split and whole
+5,140,C1a,,direct,arhar/tur
+6,143,C1a,,direct,other pulses incl. purchased PDS pulses
+6,144,C1a,,direct,other pulses incl. purchased PDS pulses
+6,145,C1a,,direct,other pulses incl. purchased PDS pulses
+6,146,C1a,,direct,other pulses incl. purchased PDS pulses
+6,148,C1a,,direct,other pulses incl. purchased PDS pulses
+6,158,C1a,,direct,other pulses incl. purchased PDS pulses
+7,241,C1a,,direct,groundnut
+8,260,C1a,,proxy,rapeseed and mustard: HCES oilseeds item (proxy)
+9,260,C1a,,proxy,other oil seeds: HCES oilseeds item (proxy)
+11,173,C1a,,proxy,sugar crop: jaggery (gur) as proxy
+12,224,C1a,,direct,"coconut, green coconut, copra"
+12,225,C1a,,direct,"coconut, green coconut, copra"
+12,240,C1a,,direct,"coconut, green coconut, copra"
+13,312,C1a,,proxy,tobacco leaf: HCES leaf tobacco (proxy)
+17,231,C1a,,direct,mango
+18,220,C1a,,direct,banana
+19,216,C1a,,direct,"citrus and grape: lemon, orange/mausami, grapes"
+19,228,C1a,,direct,"citrus and grape: lemon, orange/mausami, grapes"
+19,237,C1a,,direct,"citrus and grape: lemon, orange/mausami, grapes"
+20,008,C1a,,direct,other fresh and dry fruit
+20,010,C1a,,direct,other fresh and dry fruit
+20,221,C1a,,direct,other fresh and dry fruit
+20,222,C1a,,direct,other fresh and dry fruit
+20,223,C1a,,direct,other fresh and dry fruit
+20,226,C1a,,direct,other fresh and dry fruit
+20,227,C1a,,direct,other fresh and dry fruit
+20,230,C1a,,direct,other fresh and dry fruit
+20,232,C1a,,direct,other fresh and dry fruit
+20,233,C1a,,direct,other fresh and dry fruit
+20,234,C1a,,direct,other fresh and dry fruit
+20,235,C1a,,direct,other fresh and dry fruit
+20,236,C1a,,direct,other fresh and dry fruit
+20,238,C1a,,direct,other fresh and dry fruit
+20,242,C1a,,direct,other fresh and dry fruit
+20,243,C1a,,direct,other fresh and dry fruit
+20,245,C1a,,direct,other fresh and dry fruit
+20,246,C1a,,direct,other fresh and dry fruit
+20,247,C1a,,direct,other fresh and dry fruit
+21,200,C1a,,direct,potato
+22,201,C1a,,direct,onion
+23,202,C1a,,direct,tomato
+24,211,C1a,,direct,"cauliflower, cabbage"
+24,212,C1a,,direct,"cauliflower, cabbage"
+25,203,C1a,,direct,other vegetables
+25,204,C1a,,direct,other vegetables
+25,205,C1a,,direct,other vegetables
+25,206,C1a,,direct,other vegetables
+25,208,C1a,,direct,other vegetables
+25,210,C1a,,direct,other vegetables
+25,213,C1a,,direct,other vegetables
+25,214,C1a,,direct,other vegetables
+25,215,C1a,,direct,other vegetables
+25,217,C1a,,direct,other vegetables
+26,207,C1a,,direct,spices incl. green chillies
+26,250,C1a,,direct,spices incl. green chillies
+26,251,C1a,,direct,spices incl. green chillies
+26,252,C1a,,direct,spices incl. green chillies
+26,253,C1a,,direct,spices incl. green chillies
+26,254,C1a,,direct,spices incl. green chillies
+26,255,C1a,,direct,spices incl. green chillies
+26,256,C1a,,direct,spices incl. green chillies
+26,257,C1a,,direct,spices incl. green chillies
+26,261,C1a,,direct,spices incl. green chillies
+26,263,C1a,,direct,spices incl. green chillies
+27,139,C1a,,proxy,"other food crops (proxy): tapioca etc., pan leaf, pan ingredients, fresh flowers"
+27,300,C1a,,proxy,"other food crops (proxy): tapioca etc., pan leaf, pan ingredients, fresh flowers"
+27,302,C1a,,proxy,"other food crops (proxy): tapioca etc., pan leaf, pan ingredients, fresh flowers"
+27,470,C1a,,proxy,"other food crops (proxy): tapioca etc., pan leaf, pan ingredients, fresh flowers"
+28,160,C1a,,direct,liquid milk
+30,190,C1a,,direct,eggs
+31,195,C1a,,direct,chicken
+32,193,C1a,,direct,beef/buffalo meat
+33,192,C1a,,direct,goat meat/mutton
+34,194,C1a,,direct,"pork, other birds/crab"
+34,196,C1a,,direct,"pork, other birds/crab"
+35,333,C1a,,proxy,"other livestock products (proxy): dung cake, honey"
+35,175,C1a,,proxy,"other livestock products (proxy): dung cake, honey"
+37,331,C1a,,direct,"firewood and chips, charcoal"
+37,341,C1a,,direct,"firewood and chips, charcoal"
+39,191,C1a,,direct,"inland fish: HCES fish, prawn (one item for all fish products)"
+40,191,C1a,,direct,"marine fish: HCES fish, prawn"
+41,191,C1a,,direct,"prawn: HCES fish, prawn"
+42,337,C1a,,direct,coal
+52,195,C1a,,direct,processed poultry: chicken
+53,192,C1a,,direct,"processed meat: mutton, beef, pork"
+53,193,C1a,,direct,"processed meat: mutton, beef, pork"
+53,194,C1a,,direct,"processed meat: mutton, beef, pork"
+54,191,C1a,,direct,"processed fish: fish, prawn"
+55,294,C1a,,direct,"pickles; sauce, jam, jelly"
+55,295,C1a,,direct,"pickles; sauce, jam, jelly"
+56,003,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+56,005,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+56,006,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+56,007,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+56,161,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+56,162,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+56,163,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+56,164,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+56,165,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+56,166,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+56,167,C1a,,direct,"dairy products: paneer, cheese, lassi, butter milk, baby food, condensed milk, curd, ghee, butter, ice-cream"
+57,180,C1a,,direct,edible oils incl. purchased PDS oil
+57,181,C1a,,direct,edible oils incl. purchased PDS oil
+57,182,C1a,,direct,edible oils incl. purchased PDS oil
+57,183,C1a,,direct,edible oils incl. purchased PDS oil
+57,184,C1a,,direct,edible oils incl. purchased PDS oil
+57,185,C1a,,direct,edible oils incl. purchased PDS oil
+57,188,C1a,,direct,edible oils incl. purchased PDS oil
+58,107,C1a,,direct,"wheat grain-mill products: wheat/atta, maida, suji, sewai"
+58,108,C1a,,direct,"wheat grain-mill products: wheat/atta, maida, suji, sewai"
+58,110,C1a,,direct,"wheat grain-mill products: wheat/atta, maida, suji, sewai"
+58,111,C1a,,direct,"wheat grain-mill products: wheat/atta, maida, suji, sewai"
+58,112,C1a,,direct,"wheat grain-mill products: wheat/atta, maida, suji, sewai"
+58,114,C1a,,direct,"wheat grain-mill products: wheat/atta, maida, suji, sewai"
+59,140,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+59,141,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+59,142,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+59,143,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+59,144,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+59,145,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+59,146,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+59,148,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+59,150,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+59,152,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+59,158,C1a,,direct,"pulse grain-mill products: pulses, besan, pulse products"
+60,101,C1a,,direct,"rice grain-mill products: rice, chira, muri, other rice products"
+60,102,C1a,,direct,"rice grain-mill products: rice, chira, muri, other rice products"
+60,103,C1a,,direct,"rice grain-mill products: rice, chira, muri, other rice products"
+60,105,C1a,,direct,"rice grain-mill products: rice, chira, muri, other rice products"
+60,106,C1a,,direct,"rice grain-mill products: rice, chira, muri, other rice products"
+61,001,C1a,,direct,"other grain-mill products: coarse grains, other cereals, breakfast cereals"
+61,002,C1a,,direct,"other grain-mill products: coarse grains, other cereals, breakfast cereals"
+61,122,C1a,,direct,"other grain-mill products: coarse grains, other cereals, breakfast cereals"
+61,012,C1a,,direct,"other grain-mill products: coarse grains, other cereals, breakfast cereals"
+62,171,C1a,,direct,"sugar, gur, candy; prepared sweets"
+62,172,C1a,,direct,"sugar, gur, candy; prepared sweets"
+62,173,C1a,,direct,"sugar, gur, candy; prepared sweets"
+62,174,C1a,,direct,"sugar, gur, candy; prepared sweets"
+62,004,C1a,,direct,"sugar, gur, candy; prepared sweets"
+63,013,C1a,,direct,"biscuits, bread, cake/pastry"
+63,113,C1a,,direct,"biscuits, bread, cake/pastry"
+63,290,C1a,,direct,"biscuits, bread, cake/pastry"
+64,014,C1a,,direct,"misc. food: health supplements, noodles, salt, curry powder, cocoa drinks, chocolates, namkeen, chips, other packaged"
+64,015,C1a,,direct,"misc. food: health supplements, noodles, salt, curry powder, cocoa drinks, chocolates, namkeen, chips, other packaged"
+64,170,C1a,,direct,"misc. food: health supplements, noodles, salt, curry powder, cocoa drinks, chocolates, namkeen, chips, other packaged"
+64,178,C1a,,direct,"misc. food: health supplements, noodles, salt, curry powder, cocoa drinks, chocolates, namkeen, chips, other packaged"
+64,258,C1a,,direct,"misc. food: health supplements, noodles, salt, curry powder, cocoa drinks, chocolates, namkeen, chips, other packaged"
+64,278,C1a,,direct,"misc. food: health supplements, noodles, salt, curry powder, cocoa drinks, chocolates, namkeen, chips, other packaged"
+64,291,C1a,,direct,"misc. food: health supplements, noodles, salt, curry powder, cocoa drinks, chocolates, namkeen, chips, other packaged"
+64,292,C1a,,direct,"misc. food: health supplements, noodles, salt, curry powder, cocoa drinks, chocolates, namkeen, chips, other packaged"
+64,293,C1a,,direct,"misc. food: health supplements, noodles, salt, curry powder, cocoa drinks, chocolates, namkeen, chips, other packaged"
+64,296,C1a,,direct,"misc. food: health supplements, noodles, salt, curry powder, cocoa drinks, chocolates, namkeen, chips, other packaged"
+65,320,C1a,,direct,"intoxicants: ganja, toddy, country liquor, beer, foreign liquor, other"
+65,321,C1a,,direct,"intoxicants: ganja, toddy, country liquor, beer, foreign liquor, other"
+65,322,C1a,,direct,"intoxicants: ganja, toddy, country liquor, beer, foreign liquor, other"
+65,323,C1a,,direct,"intoxicants: ganja, toddy, country liquor, beer, foreign liquor, other"
+65,324,C1a,,direct,"intoxicants: ganja, toddy, country liquor, beer, foreign liquor, other"
+65,325,C1a,,direct,"intoxicants: ganja, toddy, country liquor, beer, foreign liquor, other"
+66,011,C1a,,direct,"non-alcoholic beverages: soda, mineral water, cold drinks, juices"
+66,274,C1a,,direct,"non-alcoholic beverages: soda, mineral water, cold drinks, juices"
+66,275,C1a,,direct,"non-alcoholic beverages: soda, mineral water, cold drinks, juices"
+66,276,C1a,,direct,"non-alcoholic beverages: soda, mineral water, cold drinks, juices"
+67,271,C1a,,direct,tea leaf
+68,273,C1a,,direct,coffee powder
+69,301,C1a,,direct,"tobacco products: finished pan, bidi, cigarettes, snuff, hookah, cheroot, gutka, other"
+69,310,C1a,,direct,"tobacco products: finished pan, bidi, cigarettes, snuff, hookah, cheroot, gutka, other"
+69,311,C1a,,direct,"tobacco products: finished pan, bidi, cigarettes, snuff, hookah, cheroot, gutka, other"
+69,313,C1a,,direct,"tobacco products: finished pan, bidi, cigarettes, snuff, hookah, cheroot, gutka, other"
+69,314,C1a,,direct,"tobacco products: finished pan, bidi, cigarettes, snuff, hookah, cheroot, gutka, other"
+69,315,C1a,,direct,"tobacco products: finished pan, bidi, cigarettes, snuff, hookah, cheroot, gutka, other"
+69,316,C1a,,direct,"tobacco products: finished pan, bidi, cigarettes, snuff, hookah, cheroot, gutka, other"
+69,317,C1a,,direct,"tobacco products: finished pan, bidi, cigarettes, snuff, hookah, cheroot, gutka, other"
+70,350,C1a,,direct,"cotton textiles: dhoti, saree, cloth, gamchha/towel, bed sheets"
+70,351,C1a,,direct,"cotton textiles: dhoti, saree, cloth, gamchha/towel, bed sheets"
+70,352,C1a,,direct,"cotton textiles: dhoti, saree, cloth, gamchha/towel, bed sheets"
+70,353,C1a,,direct,"cotton textiles: dhoti, saree, cloth, gamchha/towel, bed sheets"
+70,371,C1a,,direct,"cotton textiles: dhoti, saree, cloth, gamchha/towel, bed sheets"
+70,380,C1a,,direct,"cotton textiles: dhoti, saree, cloth, gamchha/towel, bed sheets"
+71,351,C1a,,direct,"synthetic textiles: saree, cloth"
+71,352,C1a,,direct,"synthetic textiles: saree, cloth"
+71,353,C1a,,direct,"synthetic textiles: saree, cloth"
+72,355,C1a,,direct,"woollen textiles: shawl, knitting wool, blankets"
+72,374,C1a,,direct,"woollen textiles: shawl, knitting wool, blankets"
+72,381,C1a,,direct,"woollen textiles: shawl, knitting wool, blankets"
+73,351,C1a,,direct,silk textiles: saree
+74,555,C1a,,direct,"carpets, daree, floor matting"
+75,030,C1a,,direct,ready-made garments
+75,031,C1a,,direct,ready-made garments
+75,032,C1a,,direct,ready-made garments
+75,033,C1a,,direct,ready-made garments
+75,034,C1a,,direct,ready-made garments
+75,354,C1a,,direct,ready-made garments
+75,356,C1a,,direct,ready-made garments
+75,357,C1a,,direct,ready-made garments
+75,358,C1a,,direct,ready-made garments
+75,360,C1a,,direct,ready-made garments
+75,361,C1a,,direct,ready-made garments
+75,362,C1a,,direct,ready-made garments
+75,363,C1a,,direct,ready-made garments
+75,364,C1a,,direct,ready-made garments
+75,365,C1a,,direct,ready-made garments
+75,366,C1a,,direct,ready-made garments
+75,367,C1a,,direct,ready-made garments
+75,368,C1a,,direct,ready-made garments
+75,370,C1a,,direct,ready-made garments
+75,372,C1a,,direct,ready-made garments
+75,373,C1a,,direct,ready-made garments
+75,375,C1a,,direct,ready-made garments
+76,382,C1a,,direct,"misc. textile products: pillows, mattresses, upholstery cloth, mosquito nets, rope, doormats"
+76,383,C1a,,direct,"misc. textile products: pillows, mattresses, upholstery cloth, mosquito nets, rope, doormats"
+76,384,C1a,,direct,"misc. textile products: pillows, mattresses, upholstery cloth, mosquito nets, rope, doormats"
+76,385,C1a,,direct,"misc. textile products: pillows, mattresses, upholstery cloth, mosquito nets, rope, doormats"
+76,386,C1a,,direct,"misc. textile products: pillows, mattresses, upholstery cloth, mosquito nets, rope, doormats"
+76,472,C1a,,direct,"misc. textile products: pillows, mattresses, upholstery cloth, mosquito nets, rope, doormats"
+77,390,C1a,,direct,footwear
+77,391,C1a,,direct,footwear
+77,392,C1a,,direct,footwear
+77,393,C1a,,direct,footwear
+77,394,C1a,,direct,footwear
+77,395,C1a,,direct,footwear
+78,553,C1a,,direct,"leather products: suitcases, bags"
+78,554,C1a,,direct,"leather products: suitcases, bags"
+79,550,C1a,,proxy,wood products (proxy): furniture items
+79,551,C1a,,proxy,wood products (proxy): furniture items
+79,552,C1a,,proxy,wood products (proxy): furniture items
+79,557,C1a,,proxy,wood products (proxy): furniture items
+80,022,C1a,,direct,"paper products: diapers, stationery, sanitary napkins, paperware"
+80,404,C1a,,direct,"paper products: diapers, stationery, sanitary napkins, paperware"
+80,456,C1a,,direct,"paper products: diapers, stationery, sanitary napkins, paperware"
+80,462,C1a,,direct,"paper products: diapers, stationery, sanitary napkins, paperware"
+81,400,C1a,,direct,"printing and publishing: books, newspapers"
+81,401,C1a,,direct,"printing and publishing: books, newspapers"
+81,402,C1a,,direct,"printing and publishing: books, newspapers"
+82,550,C1a,,direct,"furniture: bedstead, almirah, chairs, sofa, quilt/mattress"
+82,551,C1a,,direct,"furniture: bedstead, almirah, chairs, sofa, quilt/mattress"
+82,552,C1a,,direct,"furniture: bedstead, almirah, chairs, sofa, quilt/mattress"
+82,557,C1a,,direct,"furniture: bedstead, almirah, chairs, sofa, quilt/mattress"
+82,383,C1a,,direct,"furniture: bedstead, almirah, chairs, sofa, quilt/mattress"
+83,603,C1a,,direct,"rubber products: tyres and tubes, rubber/PVC footwear, family-planning devices"
+83,393,C1a,,direct,"rubber products: tyres and tubes, rubber/PVC footwear, family-planning devices"
+83,423,C1a,,direct,"rubber products: tyres and tubes, rubber/PVC footwear, family-planning devices"
+84,050,C1a,,direct,"plastic products: bottles, hair accessories, toothbrushes, buckets"
+84,018,C1a,,direct,"plastic products: bottles, hair accessories, toothbrushes, buckets"
+84,451,C1a,,direct,"plastic products: bottles, hair accessories, toothbrushes, buckets"
+84,464,C1a,,direct,"plastic products: bottles, hair accessories, toothbrushes, buckets"
+85,512,C1a,,direct,"petroleum products: vehicle petrol and diesel, LPG, kerosene, other gas and fuel"
+85,513,C1a,,direct,"petroleum products: vehicle petrol and diesel, LPG, kerosene, other gas and fuel"
+85,338,C1a,,direct,"petroleum products: vehicle petrol and diesel, LPG, kerosene, other gas and fuel"
+85,334,C1a,,direct,"petroleum products: vehicle petrol and diesel, LPG, kerosene, other gas and fuel"
+85,335,C1a,,direct,"petroleum products: vehicle petrol and diesel, LPG, kerosene, other gas and fuel"
+85,340,C1a,,direct,"petroleum products: vehicle petrol and diesel, LPG, kerosene, other gas and fuel"
+85,344,C1a,,direct,"petroleum products: vehicle petrol and diesel, LPG, kerosene, other gas and fuel"
+85,345,C1a,,direct,"petroleum products: vehicle petrol and diesel, LPG, kerosene, other gas and fuel"
+85,346,C1a,,direct,"petroleum products: vehicle petrol and diesel, LPG, kerosene, other gas and fuel"
+86,337,C1a,,proxy,"coal tar products (proxy): coal, other fuel"
+86,346,C1a,,proxy,"coal tar products (proxy): coal, other fuel"
+91,632,C1a,,proxy,paints (proxy): minor repairs of residential building
+92,410,C1a,,direct,"drugs and medicines (hospitalisation and non-hospitalisation medicine); C1a, not C4d"
+92,420,C1a,,direct,"drugs and medicines (hospitalisation and non-hospitalisation medicine); C1a, not C4d"
+93,016,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,017,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,020,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,021,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,450,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,452,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,453,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,454,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,455,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,457,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,465,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,466,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,467,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+93,471,C1a,,direct,"soaps and cosmetics, cleaners, detergents, insect repellents"
+96,632,C1a,,proxy,cement (proxy): minor repairs of residential building
+97,463,C1a,,proxy,"non-metallic mineral products (proxy): glassware, crockery, sanitary equipment"
+97,573,C1a,,proxy,"non-metallic mineral products (proxy): glassware, crockery, sanitary equipment"
+97,630,C1a,,proxy,"non-metallic mineral products (proxy): glassware, crockery, sanitary equipment"
+102,442,C1a,,proxy,"hand tools, hardware (proxy): torch, lock, other minor durables"
+103,570,C1a,,proxy,"misc. metal products (proxy): utensils, stoves, pressure cookers"
+103,571,C1a,,proxy,"misc. metal products (proxy): utensils, stoves, pressure cookers"
+103,572,C1a,,proxy,"misc. metal products (proxy): utensils, stoves, pressure cookers"
+103,586,C1a,,proxy,"misc. metal products (proxy): utensils, stoves, pressure cookers"
+103,587,C1a,,proxy,"misc. metal products (proxy): utensils, stoves, pressure cookers"
+104,600,C1a,,proxy,tractors and agricultural implements (proxy): transport equipment items
+104,601,C1a,,proxy,tractors and agricultural implements (proxy): transport equipment items
+104,602,C1a,,proxy,tractors and agricultural implements (proxy): transport equipment items
+104,603,C1a,,proxy,tractors and agricultural implements (proxy): transport equipment items
+104,604,C1a,,proxy,tractors and agricultural implements (proxy): transport equipment items
+105,621,C1a,,proxy,industrial machinery for food and textiles (proxy): other machines for household work
+106,621,C1a,,proxy,industrial machinery (proxy): other machines for household work
+107,621,C1a,,proxy,machine tools (proxy): other machines for household work
+108,584,C1a,,proxy,"other non-electrical machinery (proxy): sewing machine, water purifier, other appliances, inverters"
+108,590,C1a,,proxy,"other non-electrical machinery (proxy): sewing machine, water purifier, other appliances, inverters"
+108,592,C1a,,proxy,"other non-electrical machinery (proxy): sewing machine, water purifier, other appliances, inverters"
+108,582,C1a,,proxy,"other non-electrical machinery (proxy): sewing machine, water purifier, other appliances, inverters"
+109,582,C1a,,proxy,"electrical industrial machinery (proxy): inverters, generators, stabilisers (HCES scale is 3% of the SUT PFCE)"
+111,461,C1a,,direct,batteries
+112,043,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,044,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,045,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,046,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,047,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,048,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,580,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,581,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,585,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,588,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,591,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+112,592,C1a,,direct,"electrical appliances: heaters, coolers, fans, AC, washing machines, refrigerators"
+113,623,C1a,,proxy,"communication equipment (proxy): mobile handsets, landline instruments (SUT books most handsets elsewhere)"
+113,624,C1a,,proxy,"communication equipment (proxy): mobile handsets, landline instruments (SUT books most handsets elsewhere)"
+114,023,C1a,,proxy,"other electrical machinery (proxy): bulbs, tube-lights, lamps, switches and fittings (HCES scale is 70x the SUT PFCE: the SUT books most of these elsewhere)"
+114,460,C1a,,proxy,"other electrical machinery (proxy): bulbs, tube-lights, lamps, switches and fittings (HCES scale is 70x the SUT PFCE: the SUT books most of these elsewhere)"
+114,583,C1a,,proxy,"other electrical machinery (proxy): bulbs, tube-lights, lamps, switches and fittings (HCES scale is 70x the SUT PFCE: the SUT books most of these elsewhere)"
+114,631,C1a,,proxy,"other electrical machinery (proxy): bulbs, tube-lights, lamps, switches and fittings (HCES scale is 70x the SUT PFCE: the SUT books most of these elsewhere)"
+115,035,C1a,,direct,"electronic equipment incl. TV: headphones, TV, storage media, other recreation goods, PCs, personal gadgets"
+115,560,C1a,,direct,"electronic equipment incl. TV: headphones, TV, storage media, other recreation goods, PCs, personal gadgets"
+115,562,C1a,,direct,"electronic equipment incl. TV: headphones, TV, storage media, other recreation goods, PCs, personal gadgets"
+115,564,C1a,,direct,"electronic equipment incl. TV: headphones, TV, storage media, other recreation goods, PCs, personal gadgets"
+115,622,C1a,,direct,"electronic equipment incl. TV: headphones, TV, storage media, other recreation goods, PCs, personal gadgets"
+115,625,C1a,,direct,"electronic equipment incl. TV: headphones, TV, storage media, other recreation goods, PCs, personal gadgets"
+116,040,C1a,,direct,"medical, precision and optical instruments: wheelchairs, massagers, nebulisers, spectacles, cameras"
+116,041,C1a,,direct,"medical, precision and optical instruments: wheelchairs, massagers, nebulisers, spectacles, cameras"
+116,042,C1a,,direct,"medical, precision and optical instruments: wheelchairs, massagers, nebulisers, spectacles, cameras"
+116,440,C1a,,direct,"medical, precision and optical instruments: wheelchairs, massagers, nebulisers, spectacles, cameras"
+116,561,C1a,,direct,"medical, precision and optical instruments: wheelchairs, massagers, nebulisers, spectacles, cameras"
+116,610,C1a,,direct,"medical, precision and optical instruments: wheelchairs, massagers, nebulisers, spectacles, cameras"
+116,611,C1a,,direct,"medical, precision and optical instruments: wheelchairs, massagers, nebulisers, spectacles, cameras"
+117,620,C1a,,direct,watches and clocks
+120,602,C1a,,direct,"motor vehicles: motor car, jeep"
+121,601,C1a,,direct,motor cycles and scooters
+122,600,C1a,,direct,bicycles
+124,604,C1a,,direct,other transport equipment
+126,036,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+126,037,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+126,097,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+126,432,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+126,441,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+126,556,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+126,563,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+126,468,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+126,342,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+126,336,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+126,633,C1a,,direct,"misc. manufacturing: sports goods, toys, umbrellas, paintings, musical instruments, incense, candles, matches, other durables"
+127,632,C1a,,proxy,construction (proxy): minor repairs of residential building (owner-occupier repairs; NAD question)
+128,332,C1a,,direct,electricity
+130,540,C1a,,direct,water charges
+131,540,C1a,,proxy,"other utility services (proxy): water charges, biogas"
+131,343,C1a,,proxy,"other utility services (proxy): water charges, biogas"
+133,512,C1a,,proxy,repair and maintenance of motor vehicles (proxy): vehicle fuel
+133,513,C1a,,proxy,repair and maintenance of motor vehicles (proxy): vehicle fuel
+134,076,C1a,,direct,"hotels and restaurants: cooked meals and snacks purchased, tea/coffee cups, workplace meals, hotel lodging (282 excluded)"
+134,270,C1a,,direct,"hotels and restaurants: cooked meals and snacks purchased, tea/coffee cups, workplace meals, hotel lodging (282 excluded)"
+134,272,C1a,,direct,"hotels and restaurants: cooked meals and snacks purchased, tea/coffee cups, workplace meals, hotel lodging (282 excluded)"
+134,280,C1a,,direct,"hotels and restaurants: cooked meals and snacks purchased, tea/coffee cups, workplace meals, hotel lodging (282 excluded)"
+134,281,C1a,,direct,"hotels and restaurants: cooked meals and snacks purchased, tea/coffee cups, workplace meals, hotel lodging (282 excluded)"
+134,283,C1a,,direct,"hotels and restaurants: cooked meals and snacks purchased, tea/coffee cups, workplace meals, hotel lodging (282 excluded)"
+134,284,C1a,,direct,"hotels and restaurants: cooked meals and snacks purchased, tea/coffee cups, workplace meals, hotel lodging (282 excluded)"
+134,521,C1a,,direct,"hotels and restaurants: cooked meals and snacks purchased, tea/coffee cups, workplace meals, hotel lodging (282 excluded)"
+135,024,C1a,,direct,railway fare
+136,025,C1a,,direct,"land transport: bus, auto, taxi, school/work transport, hiring, other conveyance"
+136,500,C1a,,direct,"land transport: bus, auto, taxi, school/work transport, hiring, other conveyance"
+136,501,C1a,,direct,"land transport: bus, auto, taxi, school/work transport, hiring, other conveyance"
+136,504,C1a,,direct,"land transport: bus, auto, taxi, school/work transport, hiring, other conveyance"
+136,505,C1a,,direct,"land transport: bus, auto, taxi, school/work transport, hiring, other conveyance"
+136,506,C1a,,direct,"land transport: bus, auto, taxi, school/work transport, hiring, other conveyance"
+136,508,C1a,,direct,"land transport: bus, auto, taxi, school/work transport, hiring, other conveyance"
+136,510,C1a,,direct,"land transport: bus, auto, taxi, school/work transport, hiring, other conveyance"
+136,511,C1a,,direct,"land transport: bus, auto, taxi, school/work transport, hiring, other conveyance"
+136,514,C1a,,direct,"land transport: bus, auto, taxi, school/work transport, hiring, other conveyance"
+137,503,C1a,,direct,air fare
+138,026,C1a,,direct,"steamer, boat fare"
+139,497,C1a,,proxy,"supporting transport services (proxy): parking, porter and other consumer services"
+141,437,C1a,,direct,"communication: cable/DTH, telephone, mobile, postage, internet"
+141,487,C1a,,direct,"communication: cable/DTH, telephone, mobile, postage, internet"
+141,488,C1a,,direct,"communication: cable/DTH, telephone, mobile, postage, internet"
+141,490,C1a,,direct,"communication: cable/DTH, telephone, mobile, postage, internet"
+141,496,C1a,,direct,"communication: cable/DTH, telephone, mobile, postage, internet"
+145,523,C1a,,proxy,real estate services (proxy): other consumer rent (HCES 520 is kept for C4a only)
+148,493,C1a,,direct,legal expenses
+149,027,C1a,,proxy,"other business services (proxy): watchmen/security, drivers, other consumer services"
+149,497,C1a,,proxy,"other business services (proxy): watchmen/security, drivers, other consumer services"
+150,622,C1a,,proxy,"computer-related services (proxy): PCs and software, internet expenses"
+150,496,C1a,,proxy,"computer-related services (proxy): PCs and software, internet expenses"
+151,899,C1a,,proxy,public administration (proxy): other consumer taxes and cesses (fees to government)
+154,027,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,435,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,480,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,481,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,482,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,483,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,484,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,485,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,486,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,492,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,494,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,495,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+154,497,C1a,,direct,"community, social and personal services: domestic help, barber, laundry, tailor, priest, repairs, pets"
+155,028,C1a,,direct,"recreation: streaming, cinema, clubs and gyms, other entertainment"
+155,430,C1a,,direct,"recreation: streaming, cinema, clubs and gyms, other entertainment"
+155,433,C1a,,direct,"recreation: streaming, cinema, clubs and gyms, other entertainment"
+155,438,C1a,,direct,"recreation: streaming, cinema, clubs and gyms, other entertainment"
+152,405,C4d,oop_education,direct,"education services: tuition and fees, private coaching, other educational expenses"
+152,406,C4d,oop_education,direct,"education services: tuition and fees, private coaching, other educational expenses"
+152,408,C4d,oop_education,direct,"education services: tuition and fees, private coaching, other educational expenses"
+153,411,C4d,oop_health,direct,"health services: tests, doctor fees, hospital charges, other medical expenses (hospitalisation and not); medicines are C1a (p092)"
+153,412,C4d,oop_health,direct,"health services: tests, doctor fees, hospital charges, other medical expenses (hospitalisation and not); medicines are C1a (p092)"
+153,413,C4d,oop_health,direct,"health services: tests, doctor fees, hospital charges, other medical expenses (hospitalisation and not); medicines are C1a (p092)"
+153,414,C4d,oop_health,direct,"health services: tests, doctor fees, hospital charges, other medical expenses (hospitalisation and not); medicines are C1a (p092)"
+153,421,C4d,oop_health,direct,"health services: tests, doctor fees, hospital charges, other medical expenses (hospitalisation and not); medicines are C1a (p092)"
+153,422,C4d,oop_health,direct,"health services: tests, doctor fees, hospital charges, other medical expenses (hospitalisation and not); medicines are C1a (p092)"
+153,424,C4d,oop_health,direct,"health services: tests, doctor fees, hospital charges, other medical expenses (hospitalisation and not); medicines are C1a (p092)"
+144,520,C4a,actual_rent,direct,actual rent paid by tenants: HCES house/garage rent (actual)
+144,539,C4a,imputed_rent,proxy,"owner-occupier imputed rent: HCES memo item house/garage rent (imputed), MoSPI imputation"
+144,520,C4a,govt_housing,proxy,"government-provided housing (SUT industry 67 output of p144): tenant-rent key as proxy (the gap-map key, government-employee CE, is built by factors, which depends on households)"
+,640,excluded,,,"jewellery: valuables (I2/I2a to K_HH), never PFCE"
+,641,excluded,,,"jewellery: valuables (I2/I2a to K_HH), never PFCE"
+,642,excluded,,,"jewellery: valuables (I2/I2a to K_HH), never PFCE"
+,643,excluded,,,"jewellery: valuables (I2/I2a to K_HH), never PFCE"
+,061,excluded,,,free items (PDS and State schemes): values not published; free PDS grain is GFCE (C2a) and satellite S8
+,062,excluded,,,free items (PDS and State schemes): values not published; free PDS grain is GFCE (C2a) and satellite S8
+,070,excluded,,,free items (PDS and State schemes): values not published; free PDS grain is GFCE (C2a) and satellite S8
+,071,excluded,,,free items (PDS and State schemes): values not published; free PDS grain is GFCE (C2a) and satellite S8
+,072,excluded,,,free items (PDS and State schemes): values not published; free PDS grain is GFCE (C2a) and satellite S8
+,073,excluded,,,free items (PDS and State schemes): values not published; free PDS grain is GFCE (C2a) and satellite S8
+,074,excluded,,,free items (PDS and State schemes): values not published; free PDS grain is GFCE (C2a) and satellite S8
+,075,excluded,,,free items (PDS and State schemes): values not published; free PDS grain is GFCE (C2a) and satellite S8
+,282,excluded,,,cooked meals received as assistance (PM-POSHAN/ICDS): government social transfer in kind in GFCE
+,522,excluded,,,"residential land rent: rent on land is property income (D45), not PFCE"

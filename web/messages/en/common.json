@@ -1,0 +1,126 @@
+{
+  "site": {
+    "title": "India's Economy as a Working Model",
+    "shortTitle": "India's Economy",
+    "description": "India's economy shown as money flowing between households, firms, banks, governments and the rest of the world, built from official statistics with every figure labelled by how it was made.",
+    "by": "By Jitesh K Prasad"
+  },
+  "nav": {
+    "label": "Main",
+    "skip": "Skip to content",
+    "home": "Home",
+    "map": "Map",
+    "stories": "Stories",
+    "data": "Data",
+    "gaps": "What it can't tell you",
+    "gapsShort": "Gaps",
+    "methodology": "Methodology & sources",
+    "methodologyShort": "Methodology"
+  },
+  "theme": {
+    "label": "Colour theme",
+    "system": "Theme: automatic",
+    "light": "Theme: light",
+    "dark": "Theme: dark",
+    "switchTo": "Change colour theme (now {current})",
+    "systemShort": "Auto",
+    "lightShort": "Light",
+    "darkShort": "Dark"
+  },
+  "footer": {
+    "attribution": "Made by <link>Jitesh K Prasad</link> from official statistics. Sources and licences are listed on the methodology page.",
+    "rechecked": "Official figures re-checked against MoSPI on 18 Nov 2026: NAS 2026 is still the latest release",
+    "dataVersion": "Data version {version}",
+    "fixture": "Test data: this build uses generated fixture data, not real statistics.",
+    "methodologyLink": "How the numbers are made",
+    "referenceYear": "Reference year {year} (GDP base {base})"
+  },
+  "status": {
+    "official": "Official",
+    "derived": "Derived",
+    "estimated": "Estimated",
+    "balancing_set": "Set by balancing",
+    "split_official": "split official",
+    "split_derived": "split derived",
+    "split_estimated": "split estimated",
+    "split_balancing_set": "split set by balancing",
+    "total_official": "Official total",
+    "total_derived": "Derived total",
+    "badgeSep": " · ",
+    "details": "What this label means",
+    "composition": "How the parts were made",
+    "compositionItem": "{label}: {share}",
+    "aggregateNote": "This amount adds up several entries of the accounts. The label for how its parts were made is the least certain kind of entry that carries at least 10% of the value:",
+    "pinnedBy": "The total is held to these figures from published statistics:",
+    "pairPinnedBy": "Together with the other part of this pair, the total is held to these figures from published statistics:",
+    "noTotal": "The sum itself is not held to a single published figure.",
+    "pinsLoading": "Loading these figures…",
+    "pinsError": "Could not load {files}, so these figures are listed by their ids.",
+    "pinSeries": "The time series “{name}” ({id}); the 2023-24 accounts match it (its check passes).",
+    "pinSeriesId": "The time series {id}; the 2023-24 accounts match it (its check passes).",
+    "pinUnknown": "{id} (no description exported)",
+    "pinTarget": "Target <target></target>.",
+    "pinTargetTol": "Target <target></target>; the balanced total is within <tol></tol> of it.",
+    "explainOfficial": "Taken from a published official statistic.",
+    "explainDerived": "Calculated from published statistics by a stated rule.",
+    "explainEstimated": "Estimated by this project from published data with a stated method.",
+    "explainBalancing": "Set when the accounts were balanced so that every row and column adds up; the change was large enough to need an explanation.",
+    "learnMore": "About the labels"
+  },
+  "flags": {
+    "judgement_band": "Level set by a judgement band, not by data (Checkpoint B §6b)",
+    "unexplained": "Balancing moved this and the reason is not yet documented",
+    "level_unexplained": "Direction explained, level not",
+    "old_base_structure": "Estimated with the old-base (2022-23 NAS) structure",
+    "discrepancy": "Includes a discrepancy or reconciliation item",
+    "has_negative": "Includes negative amounts (shown as a reversed flow)",
+    "depends_on_assumption": "Uses a stated assumption; method one click away"
+  },
+  "sources": {
+    "heading": "Sources",
+    "showAll": "All {count} sources",
+    "showFewer": "Show fewer sources",
+    "table": "Table {tables}",
+    "retrieved": "Retrieved {date}",
+    "retrievedRange": "Retrieved {from} to {to}",
+    "withheld": "Direct link not given (ISSUES P1-9)",
+    "noUrl": "No public URL recorded",
+    "landing": "Publisher page",
+    "open": "Open source",
+    "none": "No sources recorded."
+  },
+  "error": {
+    "title": "This part of the page could not be loaded",
+    "file": "File: {file}",
+    "noNumbers": "No figures are shown rather than incomplete ones.",
+    "retry": "Reload the page"
+  },
+  "loading": "Loading…",
+  "disclosure": {
+    "show": "Show",
+    "hide": "Hide"
+  },
+  "url": {
+    "invalidView": "Ignored an unknown view in the link: {value}",
+    "invalidPreset": "Ignored an unknown map preset in the link: {value}",
+    "invalidYear": "No data for the year in the link: {value}",
+    "nodeNotFound": "Group not found: {value}",
+    "notExpandable": "This group cannot be expanded: {value}",
+    "linkNotFound": "Link not found: {value}",
+    "selectionNotFound": "Not found: {value}",
+    "invalidTable": "Ignored an unknown option in the link: {value}"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "There is no page at this address.",
+    "home": "Go to the map"
+  },
+  "redirect": {
+    "title": "India's Economy as a Working Model",
+    "body": "Opening the English site…",
+    "link": "Continue to the English site"
+  },
+  "fig": {
+    "missing": "Figure not available"
+  }
+}

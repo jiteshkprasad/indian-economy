@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 102268,
+  "content_type": "application/pdf",
+  "final_url": "https://rbidocs.rbi.org.in/rdocs/Bulletin/PDFs/52BT_BULL25092026DDFCB0C318CF4A64BEC4E3E590FF1510.PDF",
+  "key": "rbi_hh_fin_savings/bulletin_2026_09_t52b.pdf",
+  "method": "GET",
+  "name": "bulletin_2026_09_t52b.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "application/pdf",
+    "etag": "\"7fe4402b954ddd1:0\"",
+    "last-modified": "Sat, 26 Sep 2026 08:58:16 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:23:32Z",
+  "sha256": "fd69c8800f63e557ef500f045f8b9e5cd64b17686fbc53781dd03a9df63439fc",
+  "source_id": "rbi_hh_fin_savings",
+  "status": 200,
+  "url": "https://rbidocs.rbi.org.in/rdocs/Bulletin/PDFs/52BT_BULL25092026DDFCB0C318CF4A64BEC4E3E590FF1510.PDF"
+}

@@ -1,0 +1,33 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 221391,
+  "content_type": "application/vnd.sdmx.structure+xml;version=2.1",
+  "final_url": "https://api.imf.org/external/sdmx/2.1/codelist/IMF.STA/CL_IMTS_COUNTRY/latest",
+  "key": "imf_sdmx/imts_cl_country.xml",
+  "method": "GET",
+  "name": "imts_cl_country.xml",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "221391",
+    "content-type": "application/vnd.sdmx.structure+xml;version=2.1",
+    "server": "istio-envoy"
+  },
+  "retrieved_at": "2026-09-29T10:29:56Z",
+  "sha256": "cdf085e2c51aff9c910baffe411b19df42090bdc9b15667a02a67c8e0732cf75",
+  "source_id": "imf_sdmx",
+  "status": 200,
+  "url": "https://api.imf.org/external/sdmx/2.1/codelist/IMF.STA/CL_IMTS_COUNTRY/latest"
+}

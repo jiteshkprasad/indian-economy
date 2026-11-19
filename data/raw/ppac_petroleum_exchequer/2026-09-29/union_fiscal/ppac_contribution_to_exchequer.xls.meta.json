@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 83456,
+  "content_type": "application/vnd.ms-excel",
+  "final_url": "https://ppac.gov.in/uploads/page-images/1790331603_PP_4_ContributionToExchequer%281%29.xls",
+  "key": "ppac_petroleum_exchequer/ppac_contribution_to_exchequer.xls",
+  "method": "GET",
+  "name": "ppac_contribution_to_exchequer.xls",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://ppac.gov.in/prices/contribution-to-central-and-state-exchequer",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "83456",
+    "content-type": "application/vnd.ms-excel",
+    "etag": "\"14600-65c4c0f412742\"",
+    "last-modified": "Fri, 25 Sep 2026 10:20:03 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:53:25Z",
+  "sha256": "ce78669325090482d39c425cd2df193d97779ee2d275872a93d75e502473f821",
+  "source_id": "ppac_petroleum_exchequer",
+  "status": 200,
+  "url": "https://ppac.gov.in/uploads/page-images/1790331603_PP_4_ContributionToExchequer%281%29.xls"
+}

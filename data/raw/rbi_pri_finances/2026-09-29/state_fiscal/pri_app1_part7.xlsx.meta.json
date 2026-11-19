@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 13275,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/7APPENDIXI2401202489952FC1CD09426DA87C3BD840BCD66F.XLSX",
+  "key": "rbi_pri_finances/pri_app1_part7.xlsx",
+  "method": "GET",
+  "name": "pri_app1_part7.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.rbi.org.in/Scripts/OccasionalPublications.aspx?head=Finances%20of%20Panchayati%20Raj%20Institutions",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"14cb3ed99252da1:0\"",
+    "last-modified": "Mon, 29 Jan 2024 09:09:22 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:23:17Z",
+  "sha256": "f8e187394b38fcbba5540524421f5a65220bb0e097ee327549943f524316655e",
+  "source_id": "rbi_pri_finances",
+  "status": 200,
+  "url": "https://rbidocs.rbi.org.in/rdocs/Publications/DOCs/7APPENDIXI2401202489952FC1CD09426DA87C3BD840BCD66F.XLSX"
+}

@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 60536852,
+  "content_type": "application/pdf",
+  "final_url": "https://mospi.gov.in/sites/default/files/publication_reports/Report_587m_0.pdf",
+  "key": "mospi_sas_2019/sas_2019_report_587.pdf",
+  "method": "GET",
+  "name": "sas_2019_report_587.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "60536852",
+    "content-type": "application/pdf",
+    "etag": "\"640b0530-39bb814\"",
+    "last-modified": "Fri, 10 Mar 2023 10:23:44 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:21:48Z",
+  "sha256": "119bbf39626de4a58ec183cf2d327f6a9916116dbe3367570c0952d40f9dcd05",
+  "source_id": "mospi_sas_2019",
+  "status": 200,
+  "url": "https://mospi.gov.in/sites/default/files/publication_reports/Report_587m_0.pdf"
+}

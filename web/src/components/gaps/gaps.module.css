@@ -1,0 +1,78 @@
+/* "What this model can't tell you yet" page. Colours come only from the design tokens. */
+
+.page { padding-top: 24px; padding-bottom: 48px; }
+.header { max-width: 72ch; margin-bottom: 24px; }
+.lede { font-size: 1.125rem; color: var(--text); }
+.note {
+  border-left: 4px solid var(--accent);
+  background: var(--surface-2);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  max-width: 72ch;
+}
+
+/* Overview: how a number reaches the map, and where it can go wrong */
+.flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 10px;
+  margin: 16px 0 8px;
+  counter-reset: step;
+}
+.flowStep {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 10px 12px;
+  position: relative;
+}
+.flowStep h3 { font-size: 1rem; margin: 0 0 4px; }
+.flowStep p { margin: 0; font-size: 0.95rem; color: var(--text-muted); }
+.flowStep ul { margin: 6px 0 0; padding-left: 1.1em; font-size: 0.9rem; }
+.flowStep a { text-decoration-thickness: 1px; display: inline-block; min-height: 24px; padding: 2px 0; }
+.flowStep li + li { margin-top: 4px; }
+.chart th a, .item a { display: inline-block; min-height: 24px; }
+
+/* Bar chart of sizes in % of GDP */
+.chart { margin: 8px 0 32px; max-width: 60rem; }
+.chart table { width: 100%; border-collapse: collapse; }
+.chart th, .chart td { padding: 6px 4px; vertical-align: middle; border-bottom: 1px solid var(--border); text-align: left; font-weight: normal; }
+.chart th { width: 42%; font-size: 0.95rem; }
+.barCell { width: 40%; }
+.bar { height: 14px; border-radius: 3px; min-width: 2px; }
+.val { white-space: nowrap; font-variant-numeric: tabular-nums; font-size: 0.9rem; }
+.chartNote { font-size: 0.9rem; color: var(--text-muted); }
+@media (max-width: 640px) {
+  .chart th { width: auto; display: block; border-bottom: none; padding-bottom: 0; }
+  .chart tr { display: grid; grid-template-columns: 1fr auto; }
+  .chart th { grid-column: 1 / -1; }
+  .chart td { border-bottom: none; }
+  .chart tr { border-bottom: 1px solid var(--border); align-items: center; padding-bottom: 4px; }
+  .barCell { width: auto; }
+}
+
+.cause { margin: 0 0 40px; scroll-margin-top: 16px; }
+.causeHead { display: flex; align-items: center; gap: 10px; }
+.causeHead h2 { margin: 0; }
+.swatch { width: 14px; height: 14px; border-radius: 3px; flex: none; }
+.items { display: grid; gap: 12px; margin-top: 12px; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
+.item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 12px 14px;
+}
+.item h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.item dl { margin: 8px 0 0; }
+.item dt { font-weight: 600; font-size: 0.9rem; margin-top: 8px; }
+.item dd { margin: 2px 0 0; }
+.size { font-size: 1.05rem; }
+.refs { font-size: 0.85rem; color: var(--text-muted); margin-top: 8px; }
+
+.tone-saving { background: var(--k-households); }
+.tone-disagree { background: var(--k-row); }
+.tone-judgement { background: var(--k-government); }
+.tone-base { background: var(--k-production); }
+.tone-data { background: var(--k-corporations); }
+.tone-coverage { background: var(--k-factors); }
+.tone-framework { background: var(--k-capital); }

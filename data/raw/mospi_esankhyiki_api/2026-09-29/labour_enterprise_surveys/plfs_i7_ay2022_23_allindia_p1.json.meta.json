@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 10758,
+  "content_type": "application/json; charset=utf-8",
+  "final_url": "https://api.mospi.gov.in/api/plfs/getData?indicator_code=7&frequency_code=1&year_type_code=1&year=2022-23&state_code=99&limit=100&page=1",
+  "key": "mospi_esankhyiki_api/plfs_i7_ay2022_23_allindia_p1.json",
+  "method": "GET",
+  "name": "plfs_i7_ay2022_23_allindia_p1.json",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "10758",
+    "content-type": "application/json; charset=utf-8",
+    "etag": "W/\"2a06-hAtQiU/09eiglsNCDwGdoCPvx7E\"",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T14:32:37Z",
+  "sha256": "132b035a1d82cd53d40243a58d864d4a878d872555174c664b7d4717d90942e5",
+  "source_id": "mospi_esankhyiki_api",
+  "status": 200,
+  "url": "https://api.mospi.gov.in/api/plfs/getData?indicator_code=7&frequency_code=1&year_type_code=1&year=2022-23&state_code=99&limit=100&page=1"
+}

@@ -1,0 +1,12252 @@
+{
+ "1.2": [
+  [
+   "Population (in million)",
+   "d",
+   "population_in_million",
+   "111"
+  ],
+  [
+   "At current prices",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "Per Capita GDP( ₹)",
+   "d",
+   "current.per_capita_gdp",
+   "111"
+  ],
+  [
+   "Per Capita GNI ( ₹)",
+   "d",
+   "current.per_capita_gni",
+   "111"
+  ],
+  [
+   "Per Capita NNI ( ₹)",
+   "d",
+   "current.per_capita_nni",
+   "111"
+  ],
+  [
+   "Per Capita GNDI( ₹)",
+   "d",
+   "per_capita_gndi",
+   "111"
+  ],
+  [
+   "Per Capita PFCE( ₹)",
+   "d",
+   "current.per_capita_pfce",
+   "111"
+  ],
+  [
+   "At constant (2022-23) prices",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "Per Capita GDP ( ₹)",
+   "d",
+   "constant.per_capita_gdp",
+   "111"
+  ],
+  [
+   "Per Capita GNI ( ₹)",
+   "d",
+   "constant.per_capita_gni",
+   "111"
+  ],
+  [
+   "Per Capita NNI( ₹)",
+   "d",
+   "constant.per_capita_nni",
+   "111"
+  ],
+  [
+   "Per Capita PFCE( ₹)",
+   "d",
+   "constant.per_capita_pfce",
+   "111"
+  ],
+  [
+   "Percentage change over previous year at constant (2022-23) prices",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "Per Capita GDP",
+   "d",
+   "growth.per_capita_gdp",
+   "011"
+  ],
+  [
+   "Per Capita GNI",
+   "d",
+   "growth.per_capita_gni",
+   "011"
+  ],
+  [
+   "Per Capita NNI",
+   "d",
+   "growth.per_capita_nni",
+   "011"
+  ],
+  [
+   "Per Capita PFCE",
+   "d",
+   "growth.per_capita_pfce",
+   "011"
+  ]
+ ],
+ "1.4": [
+  [
+   "Price indices",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "derived from national accounts (implicit)",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "price.gva_at_basic_prices",
+   "111"
+  ],
+  [
+   "agriculture, livestock, forestry & fishing",
+   "d",
+   "price.gva_at_basic_prices.agriculture_livestock_forestry_and_fishing",
+   "111"
+  ],
+  [
+   "mining & quarrying",
+   "d",
+   "price.gva_at_basic_prices.mining_and_quarrying",
+   "111"
+  ],
+  [
+   "manufacturing",
+   "d",
+   "price.gva_at_basic_prices.manufacturing",
+   "111"
+  ],
+  [
+   "electricity, gas, water supply & other utility services",
+   "d",
+   "price.gva_at_basic_prices.electricity_gas_water_supply_and_other_utility_services",
+   "111"
+  ],
+  [
+   "construction",
+   "d",
+   "price.gva_at_basic_prices.construction",
+   "111"
+  ],
+  [
+   "trade, repair, hotels & restaurants",
+   "d",
+   "price.gva_at_basic_prices.trade_repair_hotels_and_restaurants",
+   "111"
+  ],
+  [
+   "transport, storage, communication & services related to broadcasting",
+   "d",
+   "price.gva_at_basic_prices.transport_storage_communication_and_services_related_to_broa",
+   "111"
+  ],
+  [
+   "financial services",
+   "d",
+   "price.gva_at_basic_prices.financial_services",
+   "111"
+  ],
+  [
+   "real estate, ownership of dwelling & professional services",
+   "d",
+   "price.gva_at_basic_prices.real_estate_ownership_of_dwelling_and_professional_services",
+   "111"
+  ],
+  [
+   "public administration and defence",
+   "d",
+   "price.gva_at_basic_prices.public_administration_and_defence",
+   "111"
+  ],
+  [
+   "other services",
+   "d",
+   "price.gva_at_basic_prices.other_services",
+   "111"
+  ],
+  [
+   "government final consumption expenditure",
+   "d",
+   "price.government_final_consumption_expenditure",
+   "111"
+  ],
+  [
+   "private final consumption expenditure",
+   "d",
+   "price.private_final_consumption_expenditure",
+   "111"
+  ],
+  [
+   "gross fixed capital formation",
+   "d",
+   "price.gross_fixed_capital_formation",
+   "111"
+  ],
+  [
+   "directly available",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "Producer prices (all commodities)",
+   "d",
+   "producer_prices_all_commodities",
+   "111"
+  ],
+  [
+   "agriculture, livestock, forestry and fishing",
+   "d",
+   "producer_prices_all_commodities.agriculture_livestock_forestry_and_fishing",
+   "111"
+  ],
+  [
+   "mining & quarrying",
+   "d",
+   "producer_prices_all_commodities.mining_and_quarrying",
+   "111"
+  ],
+  [
+   "manufactured products",
+   "d",
+   "manufactured_products",
+   "111"
+  ],
+  [
+   "Consumer prices*",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "CPI (Rural)",
+   "d",
+   "cpi_rural",
+   "111"
+  ],
+  [
+   "CPI (Urban)",
+   "d",
+   "cpi_urban",
+   "111"
+  ],
+  [
+   "CPI (Combined)",
+   "d",
+   "cpi_combined",
+   "111"
+  ],
+  [
+   "CPI (IW)",
+   "d",
+   "cpi_iw",
+   "111"
+  ],
+  [
+   "Quantum indices",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "derived from national accounts (implicit)",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "quantum.gva_at_basic_prices",
+   "111"
+  ],
+  [
+   "agriculture, livestock, forestry & fishing",
+   "d",
+   "quantum.gva_at_basic_prices.agriculture_livestock_forestry_and_fishing",
+   "111"
+  ],
+  [
+   "mining & quarrying",
+   "d",
+   "quantum.gva_at_basic_prices.mining_and_quarrying",
+   "111"
+  ],
+  [
+   "manufacturing",
+   "d",
+   "quantum.gva_at_basic_prices.manufacturing",
+   "111"
+  ],
+  [
+   "electricity, gas, water supply & other utility services",
+   "d",
+   "quantum.gva_at_basic_prices.electricity_gas_water_supply_and_other_utility_services",
+   "111"
+  ],
+  [
+   "construction",
+   "d",
+   "quantum.gva_at_basic_prices.construction",
+   "111"
+  ],
+  [
+   "trade, repair, hotels & restaurants",
+   "d",
+   "quantum.gva_at_basic_prices.trade_repair_hotels_and_restaurants",
+   "111"
+  ],
+  [
+   "transport, storage, communication & services related to broadcasting",
+   "d",
+   "quantum.gva_at_basic_prices.transport_storage_communication_and_services_related_to_broa",
+   "111"
+  ],
+  [
+   "financial services",
+   "d",
+   "quantum.gva_at_basic_prices.financial_services",
+   "111"
+  ],
+  [
+   "real estate, ownership of dwelling & professional services",
+   "d",
+   "quantum.gva_at_basic_prices.real_estate_ownership_of_dwelling_and_professional_services",
+   "111"
+  ],
+  [
+   "public administration and defence",
+   "d",
+   "quantum.gva_at_basic_prices.public_administration_and_defence",
+   "111"
+  ],
+  [
+   "other services",
+   "d",
+   "quantum.gva_at_basic_prices.other_services",
+   "111"
+  ],
+  [
+   "government final consumption expenditure",
+   "d",
+   "quantum.government_final_consumption_expenditure",
+   "111"
+  ],
+  [
+   "private final consumption expenditure",
+   "d",
+   "quantum.private_final_consumption_expenditure",
+   "111"
+  ],
+  [
+   "gross fixed capital formation",
+   "d",
+   "quantum.gross_fixed_capital_formation",
+   "111"
+  ],
+  [
+   "directly available",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "index of agricultural production*",
+   "d",
+   "index_of_agricultural_production",
+   "111"
+  ],
+  [
+   "index of industrial production",
+   "d",
+   "index_of_industrial_production",
+   "111"
+  ]
+ ],
+ "1.5": [
+  [
+   "Agriculture, livestock, forestry and fishing",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Mining and quarrying",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Manufacturing",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Construction",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Financial services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Public administration and defence",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Other Services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ],
+  [
+   "Total",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Intermediate consumption",
+   "d",
+   "intermediate_consumption",
+   "111111"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Consumption of Fixed Capital (CFC)",
+   "d",
+   "consumption_of_fixed_capital_cfc",
+   "111111"
+  ],
+  [
+   "NVA at basic prices",
+   "d",
+   "nva_at_basic_prices",
+   "111111"
+  ],
+  [
+   "Compensation of Employees (CE)",
+   "d",
+   "compensation_of_employees_ce",
+   "111000"
+  ],
+  [
+   "Operating Surplus/ Mixed Income",
+   "d",
+   "operating_surplus_mixed_income",
+   "111000"
+  ],
+  [
+   "Production taxes less production subsidies",
+   "d",
+   "production_taxes_less_production_subsidies",
+   "111000"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111111"
+  ],
+  [
+   "GVA to Output Ratio",
+   "d",
+   "gva_to_output_ratio",
+   "111111"
+  ],
+  [
+   "GCF to Output Ratio",
+   "d",
+   "gcf_to_output_ratio",
+   "111111"
+  ]
+ ],
+ "1.6": [
+  [
+   "Agriculture, livestock, forestry and fishing",
+   "d",
+   "agri",
+   "111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111"
+  ],
+  [
+   "Forestry and logging",
+   "d",
+   "forestry",
+   "111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111"
+  ],
+  [
+   "Mining and quarrying",
+   "d",
+   "mining",
+   "111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111"
+  ],
+  [
+   "Food Products, Beverages and Tobacco",
+   "d",
+   "mfg_food",
+   "111111"
+  ],
+  [
+   "Textiles, Apparel and Leather Products",
+   "d",
+   "mfg_textiles",
+   "111111"
+  ],
+  [
+   "Metal Products",
+   "d",
+   "mfg_metal",
+   "111111"
+  ],
+  [
+   "Machinery and Equipment",
+   "d",
+   "mfg_machinery",
+   "111111"
+  ],
+  [
+   "Other Manufactured Goods",
+   "d",
+   "mfg_other",
+   "111111"
+  ],
+  [
+   "Electricity, gas, water supply & other utility services",
+   "d",
+   "utilities",
+   "111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111"
+  ],
+  [
+   "Trade & repair services",
+   "d",
+   "trade_repair",
+   "111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111"
+  ],
+  [
+   "Real estate, ownership of dwelling & professional services",
+   "d",
+   "real_estate_prof",
+   "111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111"
+  ],
+  [
+   "Total GVA at basic prices",
+   "d",
+   "total",
+   "111111"
+  ]
+ ],
+ "1.6A": [
+  [
+   "Agriculture, livestock, forestry and fishing",
+   "d",
+   "agri",
+   "111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111"
+  ],
+  [
+   "Forestry and logging",
+   "d",
+   "forestry",
+   "111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111"
+  ],
+  [
+   "Mining and quarrying",
+   "d",
+   "mining",
+   "111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111"
+  ],
+  [
+   "Food Products, Beverages and Tobacco",
+   "d",
+   "mfg_food",
+   "111111"
+  ],
+  [
+   "Textiles, Apparel and Leather Products",
+   "d",
+   "mfg_textiles",
+   "111111"
+  ],
+  [
+   "Metal Products",
+   "d",
+   "mfg_metal",
+   "111111"
+  ],
+  [
+   "Machinery and Equipment",
+   "d",
+   "mfg_machinery",
+   "111111"
+  ],
+  [
+   "Other Manufactured Goods",
+   "d",
+   "mfg_other",
+   "111111"
+  ],
+  [
+   "Electricity, gas, water supply & other utility services",
+   "d",
+   "utilities",
+   "111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111"
+  ],
+  [
+   "Trade & repair services",
+   "d",
+   "trade_repair",
+   "111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111"
+  ],
+  [
+   "Real estate, ownership of dwelling & professional services",
+   "d",
+   "real_estate_prof",
+   "111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111"
+  ],
+  [
+   "Total GVA at basic prices",
+   "d",
+   "total",
+   "111111"
+  ]
+ ],
+ "1.6B": [
+  [
+   "Agriculture, livestock, forestry and fishing",
+   "d",
+   "agri",
+   "1111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "1111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "1111"
+  ],
+  [
+   "Forestry and logging",
+   "d",
+   "forestry",
+   "1111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "1111"
+  ],
+  [
+   "Mining and quarrying",
+   "d",
+   "mining",
+   "1111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "1111"
+  ],
+  [
+   "Food Products, Beverages and Tobacco",
+   "d",
+   "mfg_food",
+   "1111"
+  ],
+  [
+   "Textiles, Apparel and Leather Products",
+   "d",
+   "mfg_textiles",
+   "1111"
+  ],
+  [
+   "Metal Products",
+   "d",
+   "mfg_metal",
+   "1111"
+  ],
+  [
+   "Machinery and Equipment",
+   "d",
+   "mfg_machinery",
+   "1111"
+  ],
+  [
+   "Other Manufactured Goods",
+   "d",
+   "mfg_other",
+   "1111"
+  ],
+  [
+   "Electricity, gas, water supply & other utility services",
+   "d",
+   "utilities",
+   "1111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "1111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "1111"
+  ],
+  [
+   "Trade & repair services",
+   "d",
+   "trade_repair",
+   "1111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "1111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "1111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "1111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "1111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "1111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "1111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "1111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "1111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "1111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "1111"
+  ],
+  [
+   "Real estate, ownership of dwelling & professional services",
+   "d",
+   "real_estate_prof",
+   "1111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "1111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "1111"
+  ],
+  [
+   "Total GVA at basic prices",
+   "d",
+   "total",
+   "1111"
+  ]
+ ],
+ "1.7": [
+  [
+   "Agriculture, livestock, forestry and fishing",
+   "d",
+   "agri",
+   "111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111"
+  ],
+  [
+   "Forestry and logging",
+   "d",
+   "forestry",
+   "111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111"
+  ],
+  [
+   "Mining and quarrying",
+   "d",
+   "mining",
+   "111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111"
+  ],
+  [
+   "Electricity, gas, water supply & other utility services",
+   "d",
+   "utilities",
+   "111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111"
+  ],
+  [
+   "Trade & repair services",
+   "d",
+   "trade_repair",
+   "111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111"
+  ],
+  [
+   "Real estate, ownership of dwelling & professional services",
+   "d",
+   "real_estate_prof",
+   "111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111"
+  ],
+  [
+   "Total NVA at basic prices",
+   "d",
+   "total",
+   "111111"
+  ]
+ ],
+ "1.8": [
+  [
+   "Agriculture, livestock, forestry and fishing",
+   "d",
+   "agri",
+   "111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111"
+  ],
+  [
+   "Forestry and logging",
+   "d",
+   "forestry",
+   "111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111"
+  ],
+  [
+   "Mining and quarrying",
+   "d",
+   "mining",
+   "111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111"
+  ],
+  [
+   "Electricity, gas, water supply & other utility services",
+   "d",
+   "utilities",
+   "111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111"
+  ],
+  [
+   "Trade & repair services",
+   "d",
+   "trade_repair",
+   "111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111"
+  ],
+  [
+   "Real estate, ownership of dwelling & professional services",
+   "d",
+   "real_estate_prof",
+   "111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111"
+  ],
+  [
+   "Total CFC at basic prices",
+   "d",
+   "total",
+   "111111"
+  ]
+ ],
+ "1.9": [
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "111"
+  ],
+  [
+   "Non-financial corporations",
+   "d",
+   "non_financial_corporations",
+   "111"
+  ],
+  [
+   "Public non-financial corporations",
+   "d",
+   "public_non_financial_corporations",
+   "111"
+  ],
+  [
+   "Departmental enterprises",
+   "d",
+   "public_non_financial_corporations.departmental_enterprises",
+   "111"
+  ],
+  [
+   "Non-departmental enterprises",
+   "d",
+   "public_non_financial_corporations.non_departmental_enterprises",
+   "111"
+  ],
+  [
+   "Private non-financial corporations",
+   "d",
+   "private_non_financial_corporations",
+   "111"
+  ],
+  [
+   "Financial corporations",
+   "d",
+   "financial_corporations",
+   "111"
+  ],
+  [
+   "Public financial corporations",
+   "d",
+   "public_financial_corporations",
+   "111"
+  ],
+  [
+   "Departmental enterprises",
+   "d",
+   "public_financial_corporations.departmental_enterprises",
+   "111"
+  ],
+  [
+   "Non-departmental enterprises",
+   "d",
+   "public_financial_corporations.non_departmental_enterprises",
+   "111"
+  ],
+  [
+   "Private financial corporations",
+   "d",
+   "private_financial_corporations",
+   "111"
+  ],
+  [
+   "General Government",
+   "d",
+   "general_government",
+   "111"
+  ],
+  [
+   "Household sector",
+   "d",
+   "household_sector",
+   "111"
+  ],
+  [
+   "Gross financial saving#",
+   "d",
+   "gross_financial_saving",
+   "111"
+  ],
+  [
+   "Less Financial liabilities#",
+   "d",
+   "less_financial_liabilities",
+   "111"
+  ],
+  [
+   "saving in physical assets",
+   "d",
+   "saving_in_physical_assets",
+   "111"
+  ],
+  [
+   "saving in the form of gold and silver ornaments",
+   "d",
+   "saving_in_the_form_of_gold_and_silver_ornaments",
+   "111"
+  ],
+  [
+   "net capital inflow from ROW",
+   "d",
+   "net_capital_inflow_from_row",
+   "111"
+  ],
+  [
+   "finances for gross capital formation (1+2)",
+   "d",
+   "finances_for_gross_capital_formation_1_2",
+   "111"
+  ],
+  [
+   "Memorandum items",
+   "d",
+   "memorandum_items",
+   "111"
+  ],
+  [
+   "Reinvested earnings of foreign companies in private corporations deducted from savings of private corporations",
+   "d",
+   "reinvested_earnings_of_foreign_companies_in_private_corporat",
+   "111"
+  ],
+  [
+   "Savings of co-operatives banks & societies",
+   "d",
+   "savings_of_co_operatives_banks_and_societies",
+   "111"
+  ]
+ ],
+ "1.10": [
+  [
+   "Agriculture, livestock, forestry and fishing",
+   "d",
+   "agri",
+   "111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111"
+  ],
+  [
+   "Forestry and logging",
+   "d",
+   "forestry",
+   "111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111"
+  ],
+  [
+   "Mining and quarrying",
+   "d",
+   "mining",
+   "111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111"
+  ],
+  [
+   "Electricity, gas, water supply & other utility services",
+   "d",
+   "utilities",
+   "111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111"
+  ],
+  [
+   "Trade & repair services",
+   "d",
+   "trade_repair",
+   "111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111"
+  ],
+  [
+   "Real estate, ownership of dwelling & professional services",
+   "d",
+   "real_estate_prof",
+   "111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111"
+  ],
+  [
+   "Total GCF by industry of use*",
+   "d",
+   "total",
+   "111111"
+  ]
+ ],
+ "1.11": [
+  [
+   "Gross Fixed Capital Formation",
+   "d",
+   "gross_fixed_capital_formation",
+   "111111"
+  ],
+  [
+   "Dwellings, Other buildings & Structures",
+   "d",
+   "gross_fixed_capital_formation.dwellings_other_buildings_and_structures",
+   "111111"
+  ],
+  [
+   "Machinery & equipment",
+   "d",
+   "gross_fixed_capital_formation.machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Cultivated biological resources",
+   "d",
+   "gross_fixed_capital_formation.cultivated_biological_resources",
+   "111111"
+  ],
+  [
+   "Intellectual property products",
+   "d",
+   "gross_fixed_capital_formation.intellectual_property_products",
+   "111111"
+  ],
+  [
+   "Public Non-Financial Corporations",
+   "d",
+   "public_non_financial_corporations",
+   "111111"
+  ],
+  [
+   "Dwellings, Other buildings & Structures",
+   "d",
+   "public_non_financial_corporations.dwellings_other_buildings_and_structures",
+   "111111"
+  ],
+  [
+   "Machinery & equipment",
+   "d",
+   "public_non_financial_corporations.machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Cultivated biological resources",
+   "d",
+   "public_non_financial_corporations.cultivated_biological_resources",
+   "111111"
+  ],
+  [
+   "Intellectual property products",
+   "d",
+   "public_non_financial_corporations.intellectual_property_products",
+   "111111"
+  ],
+  [
+   "Private Non-Financial Corporations",
+   "d",
+   "private_non_financial_corporations",
+   "111111"
+  ],
+  [
+   "Dwellings, Other buildings & Structures",
+   "d",
+   "private_non_financial_corporations.dwellings_other_buildings_and_structures",
+   "111111"
+  ],
+  [
+   "Machinery & equipment",
+   "d",
+   "private_non_financial_corporations.machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Cultivated biological resources",
+   "d",
+   "private_non_financial_corporations.cultivated_biological_resources",
+   "111111"
+  ],
+  [
+   "Intellectual property products",
+   "d",
+   "private_non_financial_corporations.intellectual_property_products",
+   "111111"
+  ],
+  [
+   "Public Financial Corporations",
+   "d",
+   "public_financial_corporations",
+   "111111"
+  ],
+  [
+   "Dwellings, Other buildings & Structures",
+   "d",
+   "public_financial_corporations.dwellings_other_buildings_and_structures",
+   "111111"
+  ],
+  [
+   "Machinery & equipment",
+   "d",
+   "public_financial_corporations.machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Cultivated biological resources",
+   "d",
+   "public_financial_corporations.cultivated_biological_resources",
+   "111111"
+  ],
+  [
+   "Intellectual property products",
+   "d",
+   "public_financial_corporations.intellectual_property_products",
+   "111111"
+  ],
+  [
+   "Private Financial Corporations",
+   "d",
+   "private_financial_corporations",
+   "111111"
+  ],
+  [
+   "Dwellings, Other buildings & Structures",
+   "d",
+   "private_financial_corporations.dwellings_other_buildings_and_structures",
+   "111111"
+  ],
+  [
+   "Machinery & equipment",
+   "d",
+   "private_financial_corporations.machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Cultivated biological resources",
+   "d",
+   "private_financial_corporations.cultivated_biological_resources",
+   "111111"
+  ],
+  [
+   "Intellectual property products",
+   "d",
+   "private_financial_corporations.intellectual_property_products",
+   "111111"
+  ],
+  [
+   "General Government",
+   "d",
+   "general_government",
+   "111111"
+  ],
+  [
+   "Dwellings, Other buildings & Structures",
+   "d",
+   "general_government.dwellings_other_buildings_and_structures",
+   "111111"
+  ],
+  [
+   "Machinery & equipment",
+   "d",
+   "general_government.machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Cultivated biological resources",
+   "d",
+   "general_government.cultivated_biological_resources",
+   "111111"
+  ],
+  [
+   "Intellectual property products",
+   "d",
+   "general_government.intellectual_property_products",
+   "111111"
+  ],
+  [
+   "Household Sector",
+   "d",
+   "household_sector",
+   "111111"
+  ],
+  [
+   "Dwellings, Other buildings & Structures",
+   "d",
+   "household_sector.dwellings_other_buildings_and_structures",
+   "111111"
+  ],
+  [
+   "Machinery & equipment",
+   "d",
+   "household_sector.machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Cultivated biological resources",
+   "d",
+   "household_sector.cultivated_biological_resources",
+   "111111"
+  ],
+  [
+   "Intellectual property products",
+   "d",
+   "household_sector.intellectual_property_products",
+   "111111"
+  ],
+  [
+   "Institutional sector wise GFCF-Percentage Share",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Public Non-Financial Corporations",
+   "d",
+   "pct_share.public_non_financial_corporations",
+   "111111"
+  ],
+  [
+   "Private Non-Financial Corporations",
+   "d",
+   "pct_share.private_non_financial_corporations",
+   "111111"
+  ],
+  [
+   "Public Financial Corporations",
+   "d",
+   "pct_share.public_financial_corporations",
+   "111111"
+  ],
+  [
+   "Private Financial Corporations",
+   "d",
+   "pct_share.private_financial_corporations",
+   "111111"
+  ],
+  [
+   "General Government",
+   "d",
+   "pct_share.general_government",
+   "111111"
+  ],
+  [
+   "Household Sector",
+   "d",
+   "pct_share.household_sector",
+   "111111"
+  ]
+ ],
+ "1.12": [
+  [
+   "By purpose",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Food and non-alcoholic beverages",
+   "d",
+   "food_and_non_alcoholic_beverages",
+   "111111"
+  ],
+  [
+   "Alcoholic beverages, tobacco and narcotics",
+   "d",
+   "alcoholic_beverages_tobacco_and_narcotics",
+   "111111"
+  ],
+  [
+   "Clothing and footwear",
+   "d",
+   "clothing_and_footwear",
+   "111111"
+  ],
+  [
+   "Housing, water, electricity, gas and other fuels",
+   "d",
+   "housing_water_electricity_gas_and_other_fuels",
+   "111111"
+  ],
+  [
+   "Furnishings, household equipment and routine household maintenance",
+   "d",
+   "furnishings_household_equipment_and_routine_household_mainte",
+   "111111"
+  ],
+  [
+   "Health",
+   "d",
+   "health",
+   "111111"
+  ],
+  [
+   "Transport",
+   "d",
+   "transport",
+   "111111"
+  ],
+  [
+   "Information and communication",
+   "d",
+   "information_and_communication",
+   "111111"
+  ],
+  [
+   "Recreation, sport and culture",
+   "d",
+   "recreation_sport_and_culture",
+   "111111"
+  ],
+  [
+   "Education",
+   "d",
+   "education",
+   "111111"
+  ],
+  [
+   "Restaurants and accommodation services",
+   "d",
+   "restaurants_and_accommodation_services",
+   "111111"
+  ],
+  [
+   "Insurance and financial services",
+   "d",
+   "insurance_and_financial_services",
+   "111111"
+  ],
+  [
+   "Personal care, social protection and miscellaneous goods and services",
+   "d",
+   "personal_care_social_protection_and_miscellaneous_goods_and",
+   "111111"
+  ],
+  [
+   "By durability",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Durable goods",
+   "d",
+   "durable_goods",
+   "111111"
+  ],
+  [
+   "Semi-durable goods",
+   "d",
+   "semi_durable_goods",
+   "111111"
+  ],
+  [
+   "Non-durable goods",
+   "d",
+   "non_durable_goods",
+   "111111"
+  ],
+  [
+   "Services",
+   "d",
+   "services",
+   "111111"
+  ],
+  [
+   "Private Final Consumption Expenditure in domestic market",
+   "d",
+   "private_final_consumption_expenditure_in_domestic_market",
+   "111111"
+  ],
+  [
+   "Final consumption expenditure of resident households in the rest of the world",
+   "d",
+   "final_consumption_expenditure_of_resident_households_in_the",
+   "111111"
+  ],
+  [
+   "Final consumption expenditure of non-resident households in the economic territory",
+   "d",
+   "final_consumption_expenditure_of_non_resident_households_in",
+   "111111"
+  ],
+  [
+   "Private Final Consumption Expenditure (3+4.1-4.2)",
+   "d",
+   "private_final_consumption_expenditure_3_4_1_4_2",
+   "111111"
+  ]
+ ],
+ "1.13": [
+  [
+   "Agriculture, livestock, forestry and fishing",
+   "d",
+   "agriculture_livestock_forestry_and_fishing",
+   "111"
+  ],
+  [
+   "Mining and quarrying",
+   "d",
+   "mining_and_quarrying",
+   "111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111"
+  ],
+  [
+   "Electricity, gas, water supply & other utility services",
+   "d",
+   "electricity_gas_water_supply_and_other_utility_services",
+   "111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_repair_hotels_and_restaurants",
+   "111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_storage_communication_and_services_related_to_broa",
+   "111"
+  ],
+  [
+   "Real estate, ownership of dwelling & professional services",
+   "d",
+   "real_estate_ownership_of_dwelling_and_professional_services",
+   "111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_administration_and_defence",
+   "111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111"
+  ],
+  [
+   "Allocation of FISIM as IC to user industry",
+   "d",
+   "allocation_of_fisim_as_ic_to_user_industry",
+   "111"
+  ],
+  [
+   "Private Final Consumption Expenditure",
+   "d",
+   "private_final_consumption_expenditure",
+   "111"
+  ],
+  [
+   "Rest of World (ROW)",
+   "d",
+   "rest_of_world_row",
+   "111"
+  ],
+  [
+   "Allocation of FISIM to Expenditure",
+   "d",
+   "allocation_of_fisim_to_expenditure",
+   "111"
+  ]
+ ],
+ "1.14": [
+  [
+   "Public non-financial corporations",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "111"
+  ],
+  [
+   "Private non-financial corporations",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "111"
+  ],
+  [
+   "Public Financial corporations",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "111"
+  ],
+  [
+   "Private Financial corporations",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "111"
+  ],
+  [
+   "General Government",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "111"
+  ],
+  [
+   "Gross Disposable Income",
+   "d",
+   "gross_disposable_income",
+   "111"
+  ],
+  [
+   "Final Consumption Expenditure",
+   "d",
+   "final_consumption_expenditure",
+   "111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "111"
+  ],
+  [
+   "Households including NPISH",
+   "h",
+   "",
+   "000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "111"
+  ],
+  [
+   "Gross Disposable Income",
+   "d",
+   "gross_disposable_income",
+   "111"
+  ],
+  [
+   "Final Consumption Expenditure",
+   "d",
+   "final_consumption_expenditure",
+   "111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "111"
+  ]
+ ],
+ "4.1": [
+  [
+   "Gross Value Added",
+   "d",
+   "gross_value_added",
+   "111111"
+  ],
+  [
+   "Consumption of fixed capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "net_value_added",
+   "111111"
+  ],
+  [
+   "Central government*",
+   "d",
+   "central_government",
+   "111111"
+  ],
+  [
+   "State government",
+   "d",
+   "state_government",
+   "111111"
+  ],
+  [
+   "Andhra Pradesh",
+   "d",
+   "andhra_pradesh",
+   "111111"
+  ],
+  [
+   "Arunachal Pradesh",
+   "d",
+   "arunachal_pradesh",
+   "111111"
+  ],
+  [
+   "Assam",
+   "d",
+   "assam",
+   "111111"
+  ],
+  [
+   "Bihar",
+   "d",
+   "bihar",
+   "111111"
+  ],
+  [
+   "Chhattisgarh",
+   "d",
+   "chhattisgarh",
+   "111111"
+  ],
+  [
+   "Delhi",
+   "d",
+   "delhi",
+   "111111"
+  ],
+  [
+   "Goa",
+   "d",
+   "goa",
+   "111111"
+  ],
+  [
+   "Gujarat",
+   "d",
+   "gujarat",
+   "111111"
+  ],
+  [
+   "Haryana",
+   "d",
+   "haryana",
+   "111111"
+  ],
+  [
+   "Himachal Pradesh",
+   "d",
+   "himachal_pradesh",
+   "111111"
+  ],
+  [
+   "Jammu & Kashmir",
+   "d",
+   "jammu_and_kashmir",
+   "111111"
+  ],
+  [
+   "Jharkhand",
+   "d",
+   "jharkhand",
+   "111111"
+  ],
+  [
+   "Karnataka",
+   "d",
+   "karnataka",
+   "111111"
+  ],
+  [
+   "Kerala",
+   "d",
+   "kerala",
+   "111111"
+  ],
+  [
+   "Madhya Pradesh",
+   "d",
+   "madhya_pradesh",
+   "111111"
+  ],
+  [
+   "Maharashtra",
+   "d",
+   "maharashtra",
+   "111111"
+  ],
+  [
+   "Manipur",
+   "d",
+   "manipur",
+   "111111"
+  ],
+  [
+   "Meghalaya",
+   "d",
+   "meghalaya",
+   "111111"
+  ],
+  [
+   "Mizoram",
+   "d",
+   "mizoram",
+   "111111"
+  ],
+  [
+   "Nagaland",
+   "d",
+   "nagaland",
+   "111111"
+  ],
+  [
+   "Odisha",
+   "d",
+   "odisha",
+   "111111"
+  ],
+  [
+   "Puducherry",
+   "d",
+   "puducherry",
+   "111111"
+  ],
+  [
+   "Punjab",
+   "d",
+   "punjab",
+   "111111"
+  ],
+  [
+   "Rajasthan",
+   "d",
+   "rajasthan",
+   "111111"
+  ],
+  [
+   "Sikkim",
+   "d",
+   "sikkim",
+   "111111"
+  ],
+  [
+   "Tamilnadu",
+   "d",
+   "tamilnadu",
+   "111111"
+  ],
+  [
+   "Telangana",
+   "d",
+   "telangana",
+   "111111"
+  ],
+  [
+   "Tripura",
+   "d",
+   "tripura",
+   "111111"
+  ],
+  [
+   "Uttarakhand",
+   "d",
+   "uttarakhand",
+   "111111"
+  ],
+  [
+   "Uttar Pradesh",
+   "d",
+   "uttar_pradesh",
+   "111111"
+  ],
+  [
+   "West Bengal",
+   "d",
+   "west_bengal",
+   "111111"
+  ],
+  [
+   "Local bodies",
+   "d",
+   "local_bodies",
+   "111111"
+  ],
+  [
+   "Autonomous institutions",
+   "d",
+   "autonomous_institutions",
+   "111111"
+  ]
+ ],
+ "4.2/2022-23": [
+  [
+   "Current expenditure",
+   "d",
+   "current_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "consumption Expenditure",
+   "d",
+   "consumption_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "compensation of Employees",
+   "d",
+   "compensation_of_employees",
+   "1111111111111111111111"
+  ],
+  [
+   "net purchase of commodities and services",
+   "d",
+   "net_purchase_of_commodities_and_services",
+   "1111111111111111111111"
+  ],
+  [
+   "subsidy",
+   "d",
+   "subsidy",
+   "1111111111111111111111"
+  ],
+  [
+   "Current Transfer",
+   "d",
+   "current_transfer",
+   "1111111111111111111111"
+  ],
+  [
+   "other current transfers",
+   "d",
+   "other_current_transfers",
+   "1111111111111111111111"
+  ],
+  [
+   "Capital Expenditure",
+   "d",
+   "capital_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "GCF",
+   "d",
+   "gcf",
+   "1111111111111111111111"
+  ],
+  [
+   "GFCF",
+   "d",
+   "gfcf",
+   "1111111111111111111111"
+  ],
+  [
+   "CIS",
+   "d",
+   "cis",
+   "1111111111111111111111"
+  ],
+  [
+   "Capital Transfer",
+   "d",
+   "capital_transfer",
+   "1111111111111111111111"
+  ],
+  [
+   "other capital transfers",
+   "d",
+   "other_capital_transfers",
+   "1111111111111111111111"
+  ],
+  [
+   "Net Investment in Stock",
+   "d",
+   "net_investment_in_stock",
+   "1111111111111111111111"
+  ],
+  [
+   "Loans and Advances",
+   "d",
+   "loans_and_advances",
+   "1111111111111111111111"
+  ],
+  [
+   "loans & advances to local bodies",
+   "d",
+   "loans_and_advances_to_local_bodies",
+   "1111111111111111111111"
+  ],
+  [
+   "loans & advances to domestic sector",
+   "d",
+   "loans_and_advances_to_domestic_sector",
+   "1111111111111111111111"
+  ],
+  [
+   "Total expenditure",
+   "d",
+   "total_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "Final Consumption Expenditure",
+   "d",
+   "final_consumption_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "Individual Consumption Expenditure",
+   "d",
+   "individual_consumption_expenditure",
+   "1111111001111111111111"
+  ],
+  [
+   "Collective consumption expenditure",
+   "d",
+   "collective_consumption_expenditure",
+   "1111111111111111111111"
+  ]
+ ],
+ "4.2/2023-24": [
+  [
+   "Current expenditure",
+   "d",
+   "current_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "consumption Expenditure",
+   "d",
+   "consumption_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "compensation of Employees",
+   "d",
+   "compensation_of_employees",
+   "1111111111111111111111"
+  ],
+  [
+   "net purchase of commodities and services",
+   "d",
+   "net_purchase_of_commodities_and_services",
+   "1111111111111111111111"
+  ],
+  [
+   "subsidy",
+   "d",
+   "subsidy",
+   "1111111111111111111111"
+  ],
+  [
+   "Current Transfer",
+   "d",
+   "current_transfer",
+   "1111111111111111111111"
+  ],
+  [
+   "other current transfers",
+   "d",
+   "other_current_transfers",
+   "1111111111111111111111"
+  ],
+  [
+   "Capital Expenditure",
+   "d",
+   "capital_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "GCF",
+   "d",
+   "gcf",
+   "1111111111111111111111"
+  ],
+  [
+   "GFCF",
+   "d",
+   "gfcf",
+   "1111111111111111111111"
+  ],
+  [
+   "CIS",
+   "d",
+   "cis",
+   "1111111111111111111111"
+  ],
+  [
+   "Capital Transfer",
+   "d",
+   "capital_transfer",
+   "1111111111111111111111"
+  ],
+  [
+   "other capital transfers",
+   "d",
+   "other_capital_transfers",
+   "1111111111111111111111"
+  ],
+  [
+   "Net Investment in Stock",
+   "d",
+   "net_investment_in_stock",
+   "1111111111111111111111"
+  ],
+  [
+   "Loans and Advances",
+   "d",
+   "loans_and_advances",
+   "1111111111111111111111"
+  ],
+  [
+   "loans & advances to local bodies",
+   "d",
+   "loans_and_advances_to_local_bodies",
+   "1111111111111111111111"
+  ],
+  [
+   "loans & advances to domestic sector",
+   "d",
+   "loans_and_advances_to_domestic_sector",
+   "1111111111111111111111"
+  ],
+  [
+   "Total expenditure",
+   "d",
+   "total_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "Final Consumption Expenditure",
+   "d",
+   "final_consumption_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "Individual Consumption Expenditure",
+   "d",
+   "individual_consumption_expenditure",
+   "1111111001111111111111"
+  ],
+  [
+   "Collective consumption expenditure",
+   "d",
+   "collective_consumption_expenditure",
+   "1111111111111111111111"
+  ]
+ ],
+ "4.2/2024-25": [
+  [
+   "Current expenditure",
+   "d",
+   "current_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "consumption Expenditure",
+   "d",
+   "consumption_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "compensation of Employees",
+   "d",
+   "compensation_of_employees",
+   "1111111111111111111111"
+  ],
+  [
+   "net purchase of commodities and services",
+   "d",
+   "net_purchase_of_commodities_and_services",
+   "1111111111111111111111"
+  ],
+  [
+   "subsidy",
+   "d",
+   "subsidy",
+   "1111111111111111111111"
+  ],
+  [
+   "Current Transfer",
+   "d",
+   "current_transfer",
+   "1111111111111111111111"
+  ],
+  [
+   "other current transfers",
+   "d",
+   "other_current_transfers",
+   "1111111111111111111111"
+  ],
+  [
+   "Capital Expenditure",
+   "d",
+   "capital_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "GCF",
+   "d",
+   "gcf",
+   "1111111111111111111111"
+  ],
+  [
+   "GFCF",
+   "d",
+   "gfcf",
+   "1111111111111111111111"
+  ],
+  [
+   "CIS",
+   "d",
+   "cis",
+   "1111111111111111111111"
+  ],
+  [
+   "Capital Transfer",
+   "d",
+   "capital_transfer",
+   "1111111111111111111111"
+  ],
+  [
+   "other capital transfers",
+   "d",
+   "other_capital_transfers",
+   "1111111111111111111111"
+  ],
+  [
+   "Net Investment in Stock",
+   "d",
+   "net_investment_in_stock",
+   "1111111111111111111111"
+  ],
+  [
+   "Loans and Advances",
+   "d",
+   "loans_and_advances",
+   "1111111111111111111111"
+  ],
+  [
+   "loans & advances to local bodies",
+   "d",
+   "loans_and_advances_to_local_bodies",
+   "1111111111111111111111"
+  ],
+  [
+   "loans & advances to domestic sector",
+   "d",
+   "loans_and_advances_to_domestic_sector",
+   "1111111111111111111111"
+  ],
+  [
+   "Total expenditure",
+   "d",
+   "total_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "Final Consumption Expenditure",
+   "d",
+   "final_consumption_expenditure",
+   "1111111111111111111111"
+  ],
+  [
+   "Individual Consumption Expenditure",
+   "d",
+   "individual_consumption_expenditure",
+   "1111111001111111111111"
+  ],
+  [
+   "Collective consumption expenditure",
+   "d",
+   "collective_consumption_expenditure",
+   "1111111111111111111111"
+  ]
+ ],
+ "5.1": [
+  [
+   "Food and non-alcoholic beverages",
+   "d",
+   "food_and_non_alcoholic_beverages",
+   "111111"
+  ],
+  [
+   "Food",
+   "d",
+   "food",
+   "111111"
+  ],
+  [
+   "Cereals and cereal products",
+   "d",
+   "cereals_and_cereal_products",
+   "111111"
+  ],
+  [
+   "Meat",
+   "d",
+   "meat",
+   "111111"
+  ],
+  [
+   "Fish and seafood",
+   "d",
+   "fish_and_seafood",
+   "111111"
+  ],
+  [
+   "Milk, other dairy products and eggs",
+   "d",
+   "milk_other_dairy_products_and_eggs",
+   "111111"
+  ],
+  [
+   "Milk and other dairy products",
+   "d",
+   "milk_and_other_dairy_products",
+   "111111"
+  ],
+  [
+   "Eggs",
+   "d",
+   "eggs",
+   "111111"
+  ],
+  [
+   "Oils and fats",
+   "d",
+   "oils_and_fats",
+   "111111"
+  ],
+  [
+   "Fruits and nuts",
+   "d",
+   "fruits_and_nuts",
+   "111111"
+  ],
+  [
+   "Vegetables, tubers, plantains, cooking bananas and pulses",
+   "d",
+   "vegetables_tubers_plantains_cooking_bananas_and_pulses",
+   "111111"
+  ],
+  [
+   "Sugar, confectionery and desserts",
+   "d",
+   "sugar_confectionery_and_desserts",
+   "111111"
+  ],
+  [
+   "Ready-made food and other food products",
+   "d",
+   "ready_made_food_and_other_food_products",
+   "111111"
+  ],
+  [
+   "Non-alcoholic beverages",
+   "d",
+   "non_alcoholic_beverages",
+   "111111"
+  ],
+  [
+   "Coffee, tea and cocoa drinks",
+   "d",
+   "coffee_tea_and_cocoa_drinks",
+   "111111"
+  ],
+  [
+   "Water, Soft drinks, Fruit and vegetable juices, Other non-alcoholic beverages",
+   "d",
+   "water_soft_drinks_fruit_and_vegetable_juices_other_non_alcoh",
+   "111111"
+  ],
+  [
+   "Alcoholic beverages, tobacco and narcotics",
+   "d",
+   "alcoholic_beverages_tobacco_and_narcotics",
+   "111111"
+  ],
+  [
+   "Alcoholic beverages",
+   "d",
+   "alcoholic_beverages",
+   "111111"
+  ],
+  [
+   "Tobacco",
+   "d",
+   "tobacco",
+   "111111"
+  ],
+  [
+   "Narcotics",
+   "d",
+   "narcotics",
+   "111111"
+  ],
+  [
+   "Clothing and footwear",
+   "d",
+   "clothing_and_footwear",
+   "111111"
+  ],
+  [
+   "Clothing",
+   "d",
+   "clothing",
+   "111111"
+  ],
+  [
+   "Footwear",
+   "d",
+   "footwear",
+   "111111"
+  ],
+  [
+   "Housing, water, electricity, gas and other fuels",
+   "d",
+   "housing_water_electricity_gas_and_other_fuels",
+   "111111"
+  ],
+  [
+   "Gross rentals, equipment and material for housing",
+   "d",
+   "gross_rentals_equipment_and_material_for_housing",
+   "111111"
+  ],
+  [
+   "Water supply and miscellaneous services relating to the dwelling",
+   "d",
+   "water_supply_and_miscellaneous_services_relating_to_the_dwel",
+   "111111"
+  ],
+  [
+   "Electricity, gas and other fuels",
+   "d",
+   "electricity_gas_and_other_fuels",
+   "111111"
+  ],
+  [
+   "Electricity",
+   "d",
+   "electricity",
+   "111111"
+  ],
+  [
+   "Gas",
+   "d",
+   "gas",
+   "111111"
+  ],
+  [
+   "Liquid fuels",
+   "d",
+   "liquid_fuels",
+   "111111"
+  ],
+  [
+   "Solid fuels",
+   "d",
+   "solid_fuels",
+   "111111"
+  ],
+  [
+   "Furnishings, household equipment and routine household maintenance",
+   "d",
+   "furnishings_household_equipment_and_routine_household_mainte",
+   "111111"
+  ],
+  [
+   "Furniture and furnishing, carpets and other floor coverings",
+   "d",
+   "furniture_and_furnishing_carpets_and_other_floor_coverings",
+   "111111"
+  ],
+  [
+   "Household textiles",
+   "d",
+   "household_textiles",
+   "111111"
+  ],
+  [
+   "Household appliances",
+   "d",
+   "household_appliances",
+   "111111"
+  ],
+  [
+   "Glassware, tableware and household utensils",
+   "d",
+   "glassware_tableware_and_household_utensils",
+   "111111"
+  ],
+  [
+   "Tools and equipment for house & garden",
+   "d",
+   "tools_and_equipment_for_house_and_garden",
+   "111111"
+  ],
+  [
+   "Goods and services for routine household maintenance",
+   "d",
+   "goods_and_services_for_routine_household_maintenance",
+   "111111"
+  ],
+  [
+   "Health",
+   "d",
+   "health",
+   "111111"
+  ],
+  [
+   "Health Services",
+   "d",
+   "health_services",
+   "111111"
+  ],
+  [
+   "Medicines and Health products",
+   "d",
+   "medicines_and_health_products",
+   "111111"
+  ],
+  [
+   "Transport",
+   "d",
+   "transport",
+   "111111"
+  ],
+  [
+   "Purchase of vehicles",
+   "d",
+   "purchase_of_vehicles",
+   "111111"
+  ],
+  [
+   "Operation of personal transport equipment",
+   "d",
+   "operation_of_personal_transport_equipment",
+   "111111"
+  ],
+  [
+   "Passenger transport services",
+   "d",
+   "passenger_transport_services",
+   "111111"
+  ],
+  [
+   "Transport services for goods",
+   "d",
+   "transport_services_for_goods",
+   "111111"
+  ],
+  [
+   "Information and communication",
+   "d",
+   "information_and_communication",
+   "111111"
+  ],
+  [
+   "Recreation, sport and culture",
+   "d",
+   "recreation_sport_and_culture",
+   "111111"
+  ],
+  [
+   "Recreational durables",
+   "d",
+   "recreational_durables",
+   "111111"
+  ],
+  [
+   "Other recreational goods",
+   "d",
+   "other_recreational_goods",
+   "111111"
+  ],
+  [
+   "Garden products and pets",
+   "d",
+   "garden_products_and_pets",
+   "111111"
+  ],
+  [
+   "Recreational and Cultural services",
+   "d",
+   "recreational_and_cultural_services",
+   "111111"
+  ],
+  [
+   "Cultural goods",
+   "d",
+   "cultural_goods",
+   "111111"
+  ],
+  [
+   "Newspapers, books and stationery",
+   "d",
+   "newspapers_books_and_stationery",
+   "111111"
+  ],
+  [
+   "Education",
+   "d",
+   "education",
+   "111111"
+  ],
+  [
+   "Restaurants and accommodation services",
+   "d",
+   "restaurants_and_accommodation_services",
+   "111111"
+  ],
+  [
+   "Insurance and financial services",
+   "d",
+   "insurance_and_financial_services",
+   "111111"
+  ],
+  [
+   "Insurance",
+   "d",
+   "insurance",
+   "111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial_services",
+   "111111"
+  ],
+  [
+   "Financial intermediation services indirectly measured",
+   "d",
+   "financial_intermediation_services_indirectly_measured",
+   "111111"
+  ],
+  [
+   "Personal care, social protection and miscellaneous goods and services",
+   "d",
+   "personal_care_social_protection_and_miscellaneous_goods_and",
+   "111111"
+  ],
+  [
+   "Personal care",
+   "d",
+   "personal_care",
+   "111111"
+  ],
+  [
+   "Other personal effects",
+   "d",
+   "other_personal_effects",
+   "111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111"
+  ]
+ ],
+ "5.2": [
+  [
+   "Food and non-alcoholic beverages",
+   "d",
+   "food_and_non_alcoholic_beverages",
+   "101101101101101101"
+  ],
+  [
+   "Alcoholic beverages, tobacco and narcotics",
+   "d",
+   "alcoholic_beverages_tobacco_and_narcotics",
+   "101101101101101101"
+  ],
+  [
+   "Clothing and footwear",
+   "d",
+   "clothing_and_footwear",
+   "101101101101101101"
+  ],
+  [
+   "Housing, water, electricity, gas and other fuels",
+   "d",
+   "housing_water_electricity_gas_and_other_fuels",
+   "101101101101101101"
+  ],
+  [
+   "Furnishings, household equipment and routine household maintenance",
+   "d",
+   "furnishings_household_equipment_and_routine_household_mainte",
+   "101101101101101101"
+  ],
+  [
+   "Health",
+   "d",
+   "health",
+   "111111111111111111"
+  ],
+  [
+   "Transport",
+   "d",
+   "transport",
+   "101101101101101101"
+  ],
+  [
+   "Information and communication",
+   "d",
+   "information_and_communication",
+   "101101101101101101"
+  ],
+  [
+   "Recreation, sport and culture",
+   "d",
+   "recreation_sport_and_culture",
+   "111111111111111111"
+  ],
+  [
+   "Education",
+   "d",
+   "education",
+   "111111111111111111"
+  ],
+  [
+   "Restaurants and accommodation services",
+   "d",
+   "restaurants_and_accommodation_services",
+   "101101101101101101"
+  ],
+  [
+   "Insurance and financial services",
+   "d",
+   "insurance_and_financial_services",
+   "101101101101101101"
+  ],
+  [
+   "Personal care, social protection and miscellaneous goods and services",
+   "d",
+   "personal_care_social_protection_and_miscellaneous_goods_and",
+   "111111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111"
+  ]
+ ],
+ "5.3": [
+  [
+   "Household saving (1+2+3-4)",
+   "d",
+   "household_saving_1_2_3_4",
+   "111"
+  ],
+  [
+   "Gross financial saving #",
+   "d",
+   "gross_financial_saving",
+   "111"
+  ],
+  [
+   "currency",
+   "d",
+   "currency",
+   "111"
+  ],
+  [
+   "deposits",
+   "d",
+   "deposits",
+   "111"
+  ],
+  [
+   "with banks",
+   "d",
+   "with_banks",
+   "111"
+  ],
+  [
+   "with non-banking companies",
+   "d",
+   "with_non_banking_companies",
+   "111"
+  ],
+  [
+   "with co-operative banks & societies",
+   "d",
+   "with_co_operative_banks_and_societies",
+   "111"
+  ],
+  [
+   "trade debt, net",
+   "d",
+   "trade_debt_net",
+   "111"
+  ],
+  [
+   "shares and debentures",
+   "d",
+   "shares_and_debentures",
+   "111"
+  ],
+  [
+   "Corporate Companies (Shares , Debentures,Hybrid Instruments) in Primary Market",
+   "d",
+   "corporate_companies_shares_debentures_hybrid_instruments_in",
+   "111"
+  ],
+  [
+   "co-operative banks & societies",
+   "d",
+   "co_operative_banks_and_societies",
+   "111"
+  ],
+  [
+   "mutual funds",
+   "d",
+   "mutual_funds",
+   "111"
+  ],
+  [
+   "Secondary markets net investments",
+   "d",
+   "secondary_markets_net_investments",
+   "111"
+  ],
+  [
+   "claims on government",
+   "d",
+   "claims_on_government",
+   "111"
+  ],
+  [
+   "investment in government securities",
+   "d",
+   "investment_in_government_securities",
+   "111"
+  ],
+  [
+   "investment in small savings etc.",
+   "d",
+   "investment_in_small_savings_etc",
+   "111"
+  ],
+  [
+   "insurance funds",
+   "d",
+   "insurance_funds",
+   "111"
+  ],
+  [
+   "life insurance funds",
+   "d",
+   "life_insurance_funds",
+   "111"
+  ],
+  [
+   "postal insurance",
+   "d",
+   "postal_insurance",
+   "111"
+  ],
+  [
+   "state insurance",
+   "d",
+   "state_insurance",
+   "111"
+  ],
+  [
+   "provident and pension funds",
+   "d",
+   "provident_and_pension_funds",
+   "111"
+  ],
+  [
+   "Saving in physical assets",
+   "d",
+   "saving_in_physical_assets",
+   "111"
+  ],
+  [
+   "Saving in form of gold & silver ornaments",
+   "d",
+   "saving_in_form_of_gold_and_silver_ornaments",
+   "111"
+  ],
+  [
+   "Financial liabilities #",
+   "d",
+   "financial_liabilities",
+   "111"
+  ],
+  [
+   "bank advances",
+   "d",
+   "bank_advances",
+   "111"
+  ],
+  [
+   "loans and advances by co-operative banks & societies",
+   "d",
+   "loans_and_advances_by_co_operative_banks_and_societies",
+   "111"
+  ],
+  [
+   "loans by financial corporations & non-banking companies",
+   "d",
+   "loans_by_financial_corporations_and_non_banking_companies",
+   "111"
+  ],
+  [
+   "loans and advances from government",
+   "d",
+   "loans_and_advances_from_government",
+   "111"
+  ],
+  [
+   "loans from insurance corporations",
+   "d",
+   "loans_from_insurance_corporations",
+   "111"
+  ],
+  [
+   "Net financial saving of household sector (1-4)",
+   "d",
+   "net_financial_saving_of_household_sector_1_4",
+   "111"
+  ]
+ ],
+ "6.1": [
+  [
+   "Exports of goods & services",
+   "d",
+   "exports",
+   "111"
+  ],
+  [
+   "Goods*",
+   "d",
+   "exports.goods",
+   "111"
+  ],
+  [
+   "Merchandise f.o.b.",
+   "d",
+   "merchandise_f_o_b",
+   "111"
+  ],
+  [
+   "Net exports of goods under merchanting",
+   "d",
+   "net_exports_of_goods_under_merchanting",
+   "111"
+  ],
+  [
+   "Goods acquired under merchanting",
+   "d",
+   "goods_acquired_under_merchanting",
+   "111"
+  ],
+  [
+   "Goods sold under merchanting",
+   "d",
+   "goods_sold_under_merchanting",
+   "111"
+  ],
+  [
+   "Goods for processing in reporting economy",
+   "d",
+   "exports.goods.goods_for_processing_in_reporting_economy",
+   "111"
+  ],
+  [
+   "Services",
+   "d",
+   "services",
+   "111"
+  ],
+  [
+   "Maintenance and repair services n.e.c.",
+   "d",
+   "maintenance_and_repair_services_n_e_c",
+   "111"
+  ],
+  [
+   "transport exports other than merchandise",
+   "d",
+   "transport_exports_other_than_merchandise",
+   "111"
+  ],
+  [
+   "insurance service charges in respect of exports other than merchandise",
+   "d",
+   "insurance_service_charges_in_respect_of_exports_other_than_m",
+   "111"
+  ],
+  [
+   "direct purchases in the domestic market, extra-territorial bodies",
+   "d",
+   "direct_purchases_in_the_domestic_market_extra_territorial_bo",
+   "111"
+  ],
+  [
+   "direct purchases in the domestic market, non-resident, households",
+   "d",
+   "direct_purchases_in_the_domestic_market_non_resident_househo",
+   "111"
+  ],
+  [
+   "miscellaneous services",
+   "d",
+   "miscellaneous_services",
+   "111"
+  ],
+  [
+   "computer services",
+   "d",
+   "miscellaneous_services.computer_services",
+   "111"
+  ],
+  [
+   "business services",
+   "d",
+   "miscellaneous_services.business_services",
+   "111"
+  ],
+  [
+   "Financial services (incl FISIM)",
+   "d",
+   "miscellaneous_services.financial_services_incl_fisim",
+   "111"
+  ],
+  [
+   "communication services",
+   "d",
+   "miscellaneous_services.communication_services",
+   "111"
+  ],
+  [
+   "Information services",
+   "d",
+   "miscellaneous_services.information_services",
+   "111"
+  ],
+  [
+   "Personal, cultural, and recreational services",
+   "d",
+   "miscellaneous_services.personal_cultural_and_recreational_services",
+   "111"
+  ],
+  [
+   "construction",
+   "d",
+   "miscellaneous_services.construction",
+   "111"
+  ],
+  [
+   "charges for the use of intellectual property n.e.c.",
+   "d",
+   "charges_for_the_use_of_intellectual_property_n_e_c",
+   "111"
+  ],
+  [
+   "Others n.e.c.",
+   "d",
+   "miscellaneous_services.others_n_e_c",
+   "111"
+  ],
+  [
+   "compensation of employees from rest of the world",
+   "d",
+   "compensation_of_employees_from_rest_of_the_world",
+   "111"
+  ],
+  [
+   "property and entrepreneurial Income from rest of the world",
+   "d",
+   "property_and_entrepreneurial_income_from_rest_of_the_world",
+   "111"
+  ],
+  [
+   "other current transfers to resident sectors other than general govt.from the rest of the world",
+   "d",
+   "other_current_transfers_to_resident_sectors_other_than_gener",
+   "111"
+  ],
+  [
+   "current receipts",
+   "d",
+   "current_receipts",
+   "111"
+  ],
+  [
+   "Imports of goods & services",
+   "d",
+   "imports",
+   "111"
+  ],
+  [
+   "Goods*",
+   "d",
+   "imports.goods",
+   "111"
+  ],
+  [
+   "Merchandise c.i.f",
+   "d",
+   "merchandise_c_i_f",
+   "111"
+  ],
+  [
+   "Goods for processing in reporting economy",
+   "d",
+   "imports.goods.goods_for_processing_in_reporting_economy",
+   "111"
+  ],
+  [
+   "Services (without adjustment for CIF)$",
+   "d",
+   "services_without_adjustment_for_cif",
+   "111"
+  ],
+  [
+   "Maintenance and repair services n.i.e.",
+   "d",
+   "maintenance_and_repair_services_n_i_e",
+   "111"
+  ],
+  [
+   "transport respect of Imports other than merchandise",
+   "d",
+   "transport_respect_of_imports_other_than_merchandise",
+   "111"
+  ],
+  [
+   "insurance service charges in respect of Imports other than merchandise",
+   "d",
+   "insurance_service_charges_in_respect_of_imports_other_than_m",
+   "111"
+  ],
+  [
+   "direct purchases abroad on current account, govt. services",
+   "d",
+   "direct_purchases_abroad_on_current_account_govt_services",
+   "111"
+  ],
+  [
+   "direct purchases abroad, resident households",
+   "d",
+   "direct_purchases_abroad_resident_households",
+   "111"
+  ],
+  [
+   "miscellaneous services of which",
+   "d",
+   "miscellaneous_services_of_which",
+   "111"
+  ],
+  [
+   "computer services",
+   "d",
+   "miscellaneous_services_of_which.computer_services",
+   "111"
+  ],
+  [
+   "business services",
+   "d",
+   "miscellaneous_services_of_which.business_services",
+   "111"
+  ],
+  [
+   "Financial services(incl FISIM)",
+   "d",
+   "miscellaneous_services_of_which.financial_services_incl_fisim",
+   "111"
+  ],
+  [
+   "communication services",
+   "d",
+   "miscellaneous_services_of_which.communication_services",
+   "111"
+  ],
+  [
+   "Information services",
+   "d",
+   "miscellaneous_services_of_which.information_services",
+   "111"
+  ],
+  [
+   "Personal, cultural, and recreational services",
+   "d",
+   "miscellaneous_services_of_which.personal_cultural_and_recreational_services",
+   "111"
+  ],
+  [
+   "construction",
+   "d",
+   "miscellaneous_services_of_which.construction",
+   "111"
+  ],
+  [
+   "charges for the use of intellectual property n.i.e.",
+   "d",
+   "charges_for_the_use_of_intellectual_property_n_i_e",
+   "111"
+  ],
+  [
+   "Others n.e.c.",
+   "d",
+   "miscellaneous_services_of_which.others_n_e_c",
+   "111"
+  ],
+  [
+   "compensation of employees to the rest of the world",
+   "d",
+   "compensation_of_employees_to_the_rest_of_the_world",
+   "111"
+  ],
+  [
+   "property and entrepreneurial income to the rest of the world",
+   "d",
+   "property_and_entrepreneurial_income_to_the_rest_of_the_world",
+   "111"
+  ],
+  [
+   "other current transfers by resident sectors other than general govt. to the rest of the world",
+   "d",
+   "other_current_transfers_by_resident_sectors_other_than_gener",
+   "111"
+  ],
+  [
+   "current disbursements",
+   "d",
+   "current_disbursements",
+   "111"
+  ],
+  [
+   "surplus on current transactions",
+   "d",
+   "surplus_on_current_transactions",
+   "111"
+  ],
+  [
+   "capital transfers to general government, from the rest of the world, net",
+   "d",
+   "capital_transfers_to_general_government_from_the_rest_of_the",
+   "111"
+  ],
+  [
+   "capital transfers to corporations, households and NPISHs, net",
+   "d",
+   "capital_transfers_to_corporations_households_and_npishs_net",
+   "111"
+  ],
+  [
+   "acquisitions less disposal of non-produced non-financial assets",
+   "d",
+   "acquisitions_less_disposal_of_non_produced_non_financial_ass",
+   "111"
+  ],
+  [
+   "net lending to the rest of the world (13+14+15-16)or(18-19)",
+   "d",
+   "net_lending_to_the_rest_of_the_world_13_14_15_16_or_18_19",
+   "111"
+  ],
+  [
+   "net acquisition of foreign financial assets",
+   "d",
+   "net_acquisition_of_foreign_financial_assets",
+   "111"
+  ],
+  [
+   "currency and transferable deposits",
+   "d",
+   "net_acquisition_of_foreign_financial_assets.currency_and_transferable_deposits",
+   "111"
+  ],
+  [
+   "corporate equity shares including capital participation",
+   "d",
+   "corporate_equity_shares_including_capital_participation",
+   "111"
+  ],
+  [
+   "loans",
+   "d",
+   "net_acquisition_of_foreign_financial_assets.loans",
+   "111"
+  ],
+  [
+   "other financial assets in respect of non-residents",
+   "d",
+   "other_financial_assets_in_respect_of_non_residents",
+   "111"
+  ],
+  [
+   "net incurrence of foreign liabilities",
+   "d",
+   "net_incurrence_of_foreign_liabilities",
+   "111"
+  ],
+  [
+   "currency and transferable deposits",
+   "d",
+   "net_incurrence_of_foreign_liabilities.currency_and_transferable_deposits",
+   "111"
+  ],
+  [
+   "corporate equity securities including capital participation",
+   "d",
+   "corporate_equity_securities_including_capital_participation",
+   "111"
+  ],
+  [
+   "loans",
+   "d",
+   "net_incurrence_of_foreign_liabilities.loans",
+   "111"
+  ],
+  [
+   "Other liabilities to non-residents @",
+   "d",
+   "other_liabilities_to_non_residents",
+   "111"
+  ],
+  [
+   "adjustment for CIF in Import of Services",
+   "d",
+   "adjustment_for_cif_in_import_of_services",
+   "111"
+  ],
+  [
+   "Import of Services adjusted for Cost, Insurance & Freight (CIF)",
+   "d",
+   "import_of_services_adjusted_for_cost_insurance_and_freight_c",
+   "111"
+  ]
+ ],
+ "6.2": [
+  [
+   "Exports of goods & services",
+   "d",
+   "exports",
+   "111"
+  ],
+  [
+   "Goods (including net exports of goods under merchanting and Manufacturing services on physical inputs owned by others)*",
+   "d",
+   "goods_including_net_exports_of_goods_under_merchanting_and_m",
+   "111"
+  ],
+  [
+   "Services",
+   "d",
+   "exports.services",
+   "111"
+  ],
+  [
+   "compensation of employees from rest of the world",
+   "d",
+   "compensation_of_employees_from_rest_of_the_world",
+   "111"
+  ],
+  [
+   "property and entrepreneurial income from rest of the world",
+   "d",
+   "property_and_entrepreneurial_income_from_rest_of_the_world",
+   "111"
+  ],
+  [
+   "Imports of goods & services",
+   "d",
+   "imports",
+   "111"
+  ],
+  [
+   "Goods (including Manufacturing services on physical inputs owned by others)*",
+   "d",
+   "goods_including_manufacturing_services_on_physical_inputs_ow",
+   "111"
+  ],
+  [
+   "Services$",
+   "d",
+   "imports.services",
+   "111"
+  ],
+  [
+   "compensation of employees to rest of the world",
+   "d",
+   "compensation_of_employees_to_rest_of_the_world",
+   "111"
+  ],
+  [
+   "property and entrepreneurial income to rest of the world",
+   "d",
+   "property_and_entrepreneurial_income_to_rest_of_the_world",
+   "111"
+  ],
+  [
+   "net primary income from rest of the world{(2+3)-(5+6)}",
+   "d",
+   "net_primary_income_from_rest_of_the_world_2_3_5_6",
+   "111"
+  ],
+  [
+   "adjustment for CIF in Import of Services",
+   "d",
+   "adjustment_for_cif_in_import_of_services",
+   "111"
+  ],
+  [
+   "Import of Services adjusted for Cost, Insurance & Freight (CIF)",
+   "d",
+   "import_of_services_adjusted_for_cost_insurance_and_freight_c",
+   "111"
+  ]
+ ],
+ "7.1": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111"
+  ]
+ ],
+ "7.1A": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111"
+  ]
+ ],
+ "7.1B": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111"
+  ]
+ ],
+ "7.1C": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Air transport",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111"
+  ]
+ ],
+ "8.15.1": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Crops",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Livestock",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Forestry & logging",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Fishing and aquaculture",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Mining & quarrying",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Manufacturing",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Trade & Repair Services",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Hotels & restaurants",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Railways",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Road transport",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Water transport",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Air transport",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Services incidental to transport",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Storage",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Financial services",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111011111101111110111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111"
+  ]
+ ],
+ "8.15.2": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111111111"
+  ],
+  [
+   "Livestock",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Mining & quarrying",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Manufacturing*",
+   "d",
+   "manufacturing",
+   "111111111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Air transport",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111111111"
+  ],
+  [
+   "Storage",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Public administration and defence",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Other services",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111"
+  ]
+ ],
+ "8.15.3": [
+  [
+   "Agriculture, livestock forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "h",
+   "",
+   "000000000000000000000"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111"
+  ]
+ ],
+ "7.2": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111111"
+  ]
+ ],
+ "7.2A": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111111"
+  ]
+ ],
+ "7.2B": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111111"
+  ]
+ ],
+ "7.2C": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111111111111"
+  ]
+ ],
+ "7.3": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111"
+  ]
+ ],
+ "7.3A": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111"
+  ]
+ ],
+ "7.3B": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "100001000010000"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111"
+  ]
+ ],
+ "7.3C": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111111111"
+  ]
+ ],
+ "7.4": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111"
+  ]
+ ],
+ "7.4A": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111"
+  ]
+ ],
+ "7.4B": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111"
+  ]
+ ],
+ "7.4C": [
+  [
+   "Agriculture, livestock, forestry & fishing",
+   "d",
+   "agri",
+   "111111111"
+  ],
+  [
+   "Crops",
+   "d",
+   "crops",
+   "111111111"
+  ],
+  [
+   "Livestock",
+   "d",
+   "livestock",
+   "111111111"
+  ],
+  [
+   "Forestry & logging",
+   "d",
+   "forestry",
+   "111111111"
+  ],
+  [
+   "Fishing and aquaculture",
+   "d",
+   "fishing",
+   "111111111"
+  ],
+  [
+   "Mining & quarrying",
+   "d",
+   "mining",
+   "111111111"
+  ],
+  [
+   "Manufacturing",
+   "d",
+   "manufacturing",
+   "111111111"
+  ],
+  [
+   "Electricity, gas, water supply and other utility services",
+   "d",
+   "utilities",
+   "111111111"
+  ],
+  [
+   "Construction",
+   "d",
+   "construction",
+   "111111111"
+  ],
+  [
+   "Trade, repair, hotels and restaurants",
+   "d",
+   "trade_hotels",
+   "111111111"
+  ],
+  [
+   "Trade & Repair Services",
+   "d",
+   "trade_repair",
+   "111111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "d",
+   "hotels",
+   "111111111"
+  ],
+  [
+   "Transport, storage, communication & services related to broadcasting",
+   "d",
+   "transport_comm",
+   "111111111"
+  ],
+  [
+   "Railways",
+   "d",
+   "railways",
+   "111111111"
+  ],
+  [
+   "Road transport",
+   "d",
+   "road_transport",
+   "111111111"
+  ],
+  [
+   "Water transport",
+   "d",
+   "water_transport",
+   "111111111"
+  ],
+  [
+   "Air transport",
+   "d",
+   "air_transport",
+   "111111111"
+  ],
+  [
+   "Services incidental to transport",
+   "d",
+   "transport_services",
+   "111111111"
+  ],
+  [
+   "Storage",
+   "d",
+   "storage",
+   "111111111"
+  ],
+  [
+   "Communication & services related to broadcasting",
+   "d",
+   "communication",
+   "111111111"
+  ],
+  [
+   "Financial services",
+   "d",
+   "financial",
+   "111111111"
+  ],
+  [
+   "Real estate, ownership of dwelling and professional services",
+   "d",
+   "real_estate_prof",
+   "111111111"
+  ],
+  [
+   "Public administration and defence",
+   "d",
+   "public_admin",
+   "111111111"
+  ],
+  [
+   "Other services",
+   "d",
+   "other_services",
+   "111111111"
+  ],
+  [
+   "Total",
+   "d",
+   "total",
+   "111111111"
+  ]
+ ],
+ "8.1.1": [
+  [
+   "Crop Sector",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Value of output",
+   "d",
+   "crop_sector.value_of_output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "crop_sector.input",
+   "111111"
+  ],
+  [
+   "seed",
+   "d",
+   "seed",
+   "111111"
+  ],
+  [
+   "organic manure",
+   "d",
+   "organic_manure",
+   "111111"
+  ],
+  [
+   "chemical fertilisers",
+   "d",
+   "chemical_fertilisers",
+   "111111"
+  ],
+  [
+   "current repairs, maintenance of fixed assets & other operational costs",
+   "d",
+   "current_repairs_maintenance_of_fixed_assets_and_other_operat",
+   "111111"
+  ],
+  [
+   "feed of livestock",
+   "d",
+   "feed_of_livestock",
+   "111111"
+  ],
+  [
+   "irrigation charges",
+   "d",
+   "irrigation_charges",
+   "111111"
+  ],
+  [
+   "market charges",
+   "d",
+   "market_charges",
+   "111111"
+  ],
+  [
+   "electricity",
+   "d",
+   "electricity",
+   "111111"
+  ],
+  [
+   "pesticides & insecticides",
+   "d",
+   "pesticides_and_insecticides",
+   "111111"
+  ],
+  [
+   "diesel oil",
+   "d",
+   "diesel_oil",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "crop_sector.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "crop_sector.cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "crop_sector.net_value_added",
+   "111111"
+  ],
+  [
+   "Irrigation",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Value of output",
+   "d",
+   "irrigation.value_of_output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "irrigation.input",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "irrigation.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "irrigation.cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "irrigation.net_value_added",
+   "111111"
+  ]
+ ],
+ "8.1.2": [
+  [
+   "Cereals",
+   "d",
+   "cereals",
+   "111111"
+  ],
+  [
+   "Paddy",
+   "d",
+   "paddy",
+   "111111"
+  ],
+  [
+   "Wheat",
+   "d",
+   "wheat",
+   "111111"
+  ],
+  [
+   "Maize",
+   "d",
+   "maize",
+   "111111"
+  ],
+  [
+   "Bajra",
+   "d",
+   "bajra",
+   "111111"
+  ],
+  [
+   "Barley",
+   "d",
+   "barley",
+   "111111"
+  ],
+  [
+   "Jowar",
+   "d",
+   "jowar",
+   "111111"
+  ],
+  [
+   "Ragi",
+   "d",
+   "ragi",
+   "111111"
+  ],
+  [
+   "Small Millets",
+   "d",
+   "small_millets",
+   "111111"
+  ],
+  [
+   "Other Cereal",
+   "d",
+   "other_cereal",
+   "111111"
+  ],
+  [
+   "Pulses",
+   "d",
+   "pulses",
+   "111111"
+  ],
+  [
+   "Gram",
+   "d",
+   "gram",
+   "111111"
+  ],
+  [
+   "Lentil",
+   "d",
+   "lentil",
+   "111111"
+  ],
+  [
+   "Moong",
+   "d",
+   "moong",
+   "111111"
+  ],
+  [
+   "Arhar",
+   "d",
+   "arhar",
+   "111111"
+  ],
+  [
+   "Urad",
+   "d",
+   "urad",
+   "111111"
+  ],
+  [
+   "Horse Gram(Kulthy)",
+   "d",
+   "horse_gram_kulthy",
+   "111111"
+  ],
+  [
+   "Kidney Beans/rajma",
+   "d",
+   "kidney_beans_rajma",
+   "111111"
+  ],
+  [
+   "Pea/waltine/matar",
+   "d",
+   "pea_waltine_matar",
+   "111111"
+  ],
+  [
+   "Khesari/Lakhs",
+   "d",
+   "khesari_lakhs",
+   "111111"
+  ],
+  [
+   "Lobhiya/cowpea/Chawli",
+   "d",
+   "lobhiya_cowpea_chawli",
+   "111111"
+  ],
+  [
+   "Moth",
+   "d",
+   "moth",
+   "111111"
+  ],
+  [
+   "Chickpea/Chola",
+   "d",
+   "chickpea_chola",
+   "111111"
+  ],
+  [
+   "Other Pulses",
+   "d",
+   "other_pulses",
+   "111111"
+  ],
+  [
+   "Oilseeds",
+   "d",
+   "oilseeds",
+   "111111"
+  ],
+  [
+   "Castor",
+   "d",
+   "castor",
+   "111111"
+  ],
+  [
+   "Safflower",
+   "d",
+   "safflower",
+   "111111"
+  ],
+  [
+   "Sesamum",
+   "d",
+   "sesamum",
+   "111111"
+  ],
+  [
+   "Linseed",
+   "d",
+   "linseed",
+   "111111"
+  ],
+  [
+   "Nigerseed",
+   "d",
+   "nigerseed",
+   "111111"
+  ],
+  [
+   "Coconut",
+   "d",
+   "coconut",
+   "111111"
+  ],
+  [
+   "Groundnut",
+   "d",
+   "groundnut",
+   "111111"
+  ],
+  [
+   "Rapseed & Mustard",
+   "d",
+   "rapseed_and_mustard",
+   "111111"
+  ],
+  [
+   "Soyabean",
+   "d",
+   "soyabean",
+   "111111"
+  ],
+  [
+   "Sunflower",
+   "d",
+   "sunflower",
+   "111111"
+  ],
+  [
+   "Other Oil Seeds",
+   "d",
+   "other_oil_seeds",
+   "111111"
+  ],
+  [
+   "Fibre",
+   "d",
+   "fibre",
+   "111111"
+  ],
+  [
+   "Cotton",
+   "d",
+   "cotton",
+   "111111"
+  ],
+  [
+   "Jute",
+   "d",
+   "jute",
+   "111111"
+  ],
+  [
+   "Mesta",
+   "d",
+   "mesta",
+   "111111"
+  ],
+  [
+   "Sanhemp",
+   "d",
+   "sanhemp",
+   "111111"
+  ],
+  [
+   "Other Fibres",
+   "d",
+   "other_fibres",
+   "111111"
+  ],
+  [
+   "Dyes & Tanning Material",
+   "d",
+   "dyes_and_tanning_material",
+   "111111"
+  ],
+  [
+   "Other Dyes & Tanning Material",
+   "d",
+   "other_dyes_and_tanning_material",
+   "111111"
+  ],
+  [
+   "Drugs & Narcotics",
+   "d",
+   "drugs_and_narcotics",
+   "111111"
+  ],
+  [
+   "Isabgol",
+   "d",
+   "isabgol",
+   "111111"
+  ],
+  [
+   "Saffron",
+   "d",
+   "saffron",
+   "111111"
+  ],
+  [
+   "Cocoa",
+   "d",
+   "cocoa",
+   "111111"
+  ],
+  [
+   "Tea",
+   "d",
+   "tea",
+   "111111"
+  ],
+  [
+   "Coffee",
+   "d",
+   "coffee",
+   "111111"
+  ],
+  [
+   "Arecanut",
+   "d",
+   "arecanut",
+   "111111"
+  ],
+  [
+   "Tobacco Leaf",
+   "d",
+   "tobacco_leaf",
+   "111111"
+  ],
+  [
+   "Tobacco Stem",
+   "d",
+   "tobacco_stem",
+   "111111"
+  ],
+  [
+   "Opium",
+   "d",
+   "opium",
+   "111111"
+  ],
+  [
+   "Betel Leaves",
+   "d",
+   "betel_leaves",
+   "111111"
+  ],
+  [
+   "Toddy",
+   "d",
+   "toddy",
+   "111111"
+  ],
+  [
+   "Other Drugs & Narcotics",
+   "d",
+   "other_drugs_and_narcotics",
+   "111111"
+  ],
+  [
+   "Spices & Condiments",
+   "d",
+   "spices_and_condiments",
+   "111111"
+  ],
+  [
+   "Ajwain",
+   "d",
+   "ajwain",
+   "111111"
+  ],
+  [
+   "Black Pepper",
+   "d",
+   "black_pepper",
+   "111111"
+  ],
+  [
+   "Cardamon/Elaichi",
+   "d",
+   "cardamon_elaichi",
+   "111111"
+  ],
+  [
+   "Dry Chilli",
+   "d",
+   "dry_chilli",
+   "111111"
+  ],
+  [
+   "Ginger",
+   "d",
+   "ginger",
+   "111111"
+  ],
+  [
+   "Cinnamon",
+   "d",
+   "cinnamon",
+   "111111"
+  ],
+  [
+   "Cloves",
+   "d",
+   "cloves",
+   "111111"
+  ],
+  [
+   "Coriander",
+   "d",
+   "coriander",
+   "111111"
+  ],
+  [
+   "Cumin",
+   "d",
+   "cumin",
+   "111111"
+  ],
+  [
+   "Fennel",
+   "d",
+   "fennel",
+   "111111"
+  ],
+  [
+   "Garlic",
+   "d",
+   "garlic",
+   "111111"
+  ],
+  [
+   "Nutmeg",
+   "d",
+   "nutmeg",
+   "111111"
+  ],
+  [
+   "Tamarind",
+   "d",
+   "tamarind",
+   "111111"
+  ],
+  [
+   "Turmeric",
+   "d",
+   "turmeric",
+   "111111"
+  ],
+  [
+   "Curry Leaf",
+   "d",
+   "curry_leaf",
+   "111111"
+  ],
+  [
+   "Fenugreek",
+   "d",
+   "fenugreek",
+   "111111"
+  ],
+  [
+   "Poppy Seed",
+   "d",
+   "poppy_seed",
+   "111111"
+  ],
+  [
+   "Other Condiments & Spices",
+   "d",
+   "other_condiments_and_spices",
+   "111111"
+  ],
+  [
+   "sugar crops",
+   "d",
+   "sugar_crops",
+   "111111"
+  ],
+  [
+   "Palmyra",
+   "d",
+   "palmyra",
+   "111111"
+  ],
+  [
+   "Sugarcane Used As Such",
+   "d",
+   "sugarcane_used_as_such",
+   "111111"
+  ],
+  [
+   "Gur",
+   "d",
+   "gur",
+   "111111"
+  ],
+  [
+   "Fruits",
+   "d",
+   "fruits",
+   "111111"
+  ],
+  [
+   "Almond",
+   "d",
+   "almond",
+   "111111"
+  ],
+  [
+   "Amla/Anola/Gooseberry",
+   "d",
+   "amla_anola_gooseberry",
+   "111111"
+  ],
+  [
+   "Apple",
+   "d",
+   "apple",
+   "111111"
+  ],
+  [
+   "Banana",
+   "d",
+   "banana",
+   "111111"
+  ],
+  [
+   "Cashew",
+   "d",
+   "cashew",
+   "111111"
+  ],
+  [
+   "Grapes",
+   "d",
+   "grapes",
+   "111111"
+  ],
+  [
+   "Guava",
+   "d",
+   "guava",
+   "111111"
+  ],
+  [
+   "Litchi",
+   "d",
+   "litchi",
+   "111111"
+  ],
+  [
+   "Mango",
+   "d",
+   "mango",
+   "111111"
+  ],
+  [
+   "Papaya",
+   "d",
+   "papaya",
+   "111111"
+  ],
+  [
+   "Pineapple",
+   "d",
+   "pineapple",
+   "111111"
+  ],
+  [
+   "Pomegranate",
+   "d",
+   "pomegranate",
+   "111111"
+  ],
+  [
+   "Sapota",
+   "d",
+   "sapota",
+   "111111"
+  ],
+  [
+   "Strawberry",
+   "d",
+   "strawberry",
+   "111111"
+  ],
+  [
+   "Ber",
+   "d",
+   "ber",
+   "111111"
+  ],
+  [
+   "Dragon Fruit",
+   "d",
+   "dragon_fruit",
+   "111111"
+  ],
+  [
+   "Cherry",
+   "d",
+   "cherry",
+   "111111"
+  ],
+  [
+   "Jackfruit",
+   "d",
+   "jackfruit",
+   "111111"
+  ],
+  [
+   "Muskmelon",
+   "d",
+   "muskmelon",
+   "111111"
+  ],
+  [
+   "Pear",
+   "d",
+   "pear",
+   "111111"
+  ],
+  [
+   "Walnut",
+   "d",
+   "walnut",
+   "111111"
+  ],
+  [
+   "Watermelon",
+   "d",
+   "watermelon",
+   "111111"
+  ],
+  [
+   "Kiwifruit",
+   "d",
+   "kiwifruit",
+   "111111"
+  ],
+  [
+   "Custard Apple",
+   "d",
+   "custard_apple",
+   "111111"
+  ],
+  [
+   "Passion Fruit/Purple Granadilla",
+   "d",
+   "passion_fruit_purple_granadilla",
+   "111111"
+  ],
+  [
+   "Peach",
+   "d",
+   "peach",
+   "111111"
+  ],
+  [
+   "Plum",
+   "d",
+   "plum",
+   "111111"
+  ],
+  [
+   "Mosambi",
+   "d",
+   "mosambi",
+   "111111"
+  ],
+  [
+   "Orange/Kinnow",
+   "d",
+   "orange_kinnow",
+   "111111"
+  ],
+  [
+   "Lemon/Acid lime",
+   "d",
+   "lemon_acid_lime",
+   "111111"
+  ],
+  [
+   "Other citrus",
+   "d",
+   "other_citrus",
+   "111111"
+  ],
+  [
+   "Apricot",
+   "d",
+   "apricot",
+   "111111"
+  ],
+  [
+   "Avocado",
+   "d",
+   "avocado",
+   "111111"
+  ],
+  [
+   "Bael",
+   "d",
+   "bael",
+   "111111"
+  ],
+  [
+   "fig",
+   "d",
+   "fig",
+   "111111"
+  ],
+  [
+   "Jamun",
+   "d",
+   "jamun",
+   "111111"
+  ],
+  [
+   "Kokum",
+   "d",
+   "kokum",
+   "111111"
+  ],
+  [
+   "Mulberry/Shehtoot",
+   "d",
+   "mulberry_shehtoot",
+   "111111"
+  ],
+  [
+   "Other Fruits",
+   "d",
+   "other_fruits",
+   "111111"
+  ],
+  [
+   "Vegetables",
+   "d",
+   "vegetables",
+   "111111"
+  ],
+  [
+   "Beans",
+   "d",
+   "beans",
+   "111111"
+  ],
+  [
+   "Bittergourd",
+   "d",
+   "bittergourd",
+   "111111"
+  ],
+  [
+   "Bottle Gourd",
+   "d",
+   "bottle_gourd",
+   "111111"
+  ],
+  [
+   "Brinjal",
+   "d",
+   "brinjal",
+   "111111"
+  ],
+  [
+   "Cabbage",
+   "d",
+   "cabbage",
+   "111111"
+  ],
+  [
+   "Capsicum",
+   "d",
+   "capsicum",
+   "111111"
+  ],
+  [
+   "Carrot",
+   "d",
+   "carrot",
+   "111111"
+  ],
+  [
+   "Cauliflower",
+   "d",
+   "cauliflower",
+   "111111"
+  ],
+  [
+   "Cucumber",
+   "d",
+   "cucumber",
+   "111111"
+  ],
+  [
+   "Green peas",
+   "d",
+   "green_peas",
+   "111111"
+  ],
+  [
+   "Mushroom",
+   "d",
+   "mushroom",
+   "111111"
+  ],
+  [
+   "Okra/Lady finger",
+   "d",
+   "okra_lady_finger",
+   "111111"
+  ],
+  [
+   "Onion",
+   "d",
+   "onion",
+   "111111"
+  ],
+  [
+   "Pointed Gourd/Parwal",
+   "d",
+   "pointed_gourd_parwal",
+   "111111"
+  ],
+  [
+   "Potato",
+   "d",
+   "potato",
+   "111111"
+  ],
+  [
+   "Pumpkin/Sitaphal",
+   "d",
+   "pumpkin_sitaphal",
+   "111111"
+  ],
+  [
+   "Radish",
+   "d",
+   "radish",
+   "111111"
+  ],
+  [
+   "Sweet Potato",
+   "d",
+   "sweet_potato",
+   "111111"
+  ],
+  [
+   "Tapioca",
+   "d",
+   "tapioca",
+   "111111"
+  ],
+  [
+   "Tomato",
+   "d",
+   "tomato",
+   "111111"
+  ],
+  [
+   "Beetroot",
+   "d",
+   "beetroot",
+   "111111"
+  ],
+  [
+   "Broccoli",
+   "d",
+   "broccoli",
+   "111111"
+  ],
+  [
+   "Green chillies",
+   "d",
+   "green_chillies",
+   "111111"
+  ],
+  [
+   "Elephant Foot Yam",
+   "d",
+   "elephant_foot_yam",
+   "111111"
+  ],
+  [
+   "Ridge Gourd",
+   "d",
+   "ridge_gourd",
+   "111111"
+  ],
+  [
+   "Taro/Arbi/Colocassia",
+   "d",
+   "taro_arbi_colocassia",
+   "111111"
+  ],
+  [
+   "Cluster Bean",
+   "d",
+   "cluster_bean",
+   "111111"
+  ],
+  [
+   "Snake Gourd",
+   "d",
+   "snake_gourd",
+   "111111"
+  ],
+  [
+   "Drum stick",
+   "d",
+   "drum_stick",
+   "111111"
+  ],
+  [
+   "Ash Gourd",
+   "d",
+   "ash_gourd",
+   "111111"
+  ],
+  [
+   "Turnips",
+   "d",
+   "turnips",
+   "111111"
+  ],
+  [
+   "Other Vegetables",
+   "d",
+   "other_vegetables",
+   "111111"
+  ],
+  [
+   "Floriculture",
+   "d",
+   "floriculture",
+   "111111"
+  ],
+  [
+   "Miscellaneous crop",
+   "d",
+   "miscellaneous_crop",
+   "111111"
+  ],
+  [
+   "Rubber",
+   "d",
+   "rubber",
+   "111111"
+  ],
+  [
+   "Guarseed",
+   "d",
+   "guarseed",
+   "111111"
+  ],
+  [
+   "Grass",
+   "d",
+   "grass",
+   "111111"
+  ],
+  [
+   "Fodder",
+   "d",
+   "fodder",
+   "111111"
+  ],
+  [
+   "Poppy Husk",
+   "d",
+   "poppy_husk",
+   "111111"
+  ],
+  [
+   "Misc. Food Crops",
+   "d",
+   "misc_food_crops",
+   "111111"
+  ],
+  [
+   "Misc. Non-Food Crops",
+   "d",
+   "misc_non_food_crops",
+   "111111"
+  ],
+  [
+   "By-products",
+   "d",
+   "by_products",
+   "111111"
+  ],
+  [
+   "Backyard",
+   "d",
+   "backyard",
+   "111111"
+  ],
+  [
+   "Value of output from crops",
+   "d",
+   "value_of_output_from_crops",
+   "111111"
+  ]
+ ],
+ "8.2": [
+  [
+   "Value of output",
+   "d",
+   "value_of_output",
+   "111111"
+  ],
+  [
+   "milk group",
+   "d",
+   "milk_group",
+   "111111"
+  ],
+  [
+   "meat group",
+   "d",
+   "meat_group",
+   "111111"
+  ],
+  [
+   "meat",
+   "d",
+   "meat",
+   "111111"
+  ],
+  [
+   "beef",
+   "d",
+   "beef",
+   "111111"
+  ],
+  [
+   "mutton",
+   "d",
+   "mutton",
+   "111111"
+  ],
+  [
+   "pork",
+   "d",
+   "pork",
+   "111111"
+  ],
+  [
+   "poultry meat",
+   "d",
+   "poultry_meat",
+   "111111"
+  ],
+  [
+   "meat products",
+   "d",
+   "meat_products",
+   "111111"
+  ],
+  [
+   "by-products",
+   "d",
+   "by_products",
+   "111111"
+  ],
+  [
+   "hides",
+   "d",
+   "hides",
+   "111111"
+  ],
+  [
+   "skins",
+   "d",
+   "skins",
+   "111111"
+  ],
+  [
+   "other by-products",
+   "d",
+   "other_by_products",
+   "111111"
+  ],
+  [
+   "eggs",
+   "d",
+   "eggs",
+   "111111"
+  ],
+  [
+   "wool & hair",
+   "d",
+   "wool_and_hair",
+   "111111"
+  ],
+  [
+   "wool",
+   "d",
+   "wool",
+   "111111"
+  ],
+  [
+   "hair & bristles",
+   "d",
+   "hair_and_bristles",
+   "111111"
+  ],
+  [
+   "dung",
+   "d",
+   "dung",
+   "111111"
+  ],
+  [
+   "dung fuel",
+   "d",
+   "dung_fuel",
+   "111111"
+  ],
+  [
+   "dung manure",
+   "d",
+   "dung_manure",
+   "111111"
+  ],
+  [
+   "silk worm cocoons & honey",
+   "d",
+   "silk_worm_cocoons_and_honey",
+   "111111"
+  ],
+  [
+   "increment in livestock",
+   "d",
+   "increment_in_livestock",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "input",
+   "111111"
+  ],
+  [
+   "feed of livestock",
+   "d",
+   "feed_of_livestock",
+   "111111"
+  ],
+  [
+   "current repairs, maintenance of fixed assets & other operational costs",
+   "d",
+   "current_repairs_maintenance_of_fixed_assets_and_other_operat",
+   "111111"
+  ],
+  [
+   "market charges",
+   "d",
+   "market_charges",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "net_value_added",
+   "111111"
+  ]
+ ],
+ "8.3": [
+  [
+   "Value of output",
+   "d",
+   "value_of_output",
+   "111111"
+  ],
+  [
+   "Industrial Wood (Forest and Trees outside forest)",
+   "d",
+   "industrial_wood_forest_and_trees_outside_forest",
+   "111111"
+  ],
+  [
+   "Firewood",
+   "d",
+   "firewood",
+   "111111"
+  ],
+  [
+   "Non-Timber Forest Products",
+   "d",
+   "non_timber_forest_products",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "input",
+   "111111"
+  ],
+  [
+   "Repair, maintenance & other operational costs",
+   "d",
+   "repair_maintenance_and_other_operational_costs",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "net_value_added",
+   "111111"
+  ]
+ ],
+ "8.4": [
+  [
+   "Value of output",
+   "d",
+   "value_of_output",
+   "111111"
+  ],
+  [
+   "Inland Fish*",
+   "d",
+   "inland_fish",
+   "111111"
+  ],
+  [
+   "Marine Fish",
+   "d",
+   "marine_fish",
+   "111111"
+  ],
+  [
+   "Prawn",
+   "d",
+   "prawn",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "net_value_added",
+   "111111"
+  ]
+ ],
+ "8.5": [
+  [
+   "Major minerals",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Fuel minerals",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Value of output",
+   "d",
+   "fuel_minerals.value_of_output",
+   "111111"
+  ],
+  [
+   "coal",
+   "d",
+   "coal",
+   "111111"
+  ],
+  [
+   "petroleum & natural gas",
+   "d",
+   "petroleum_and_natural_gas",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "fuel_minerals.input",
+   "111111"
+  ],
+  [
+   "Metallic minerals",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Value of output",
+   "d",
+   "metallic_minerals.value_of_output",
+   "111111"
+  ],
+  [
+   "iron ore",
+   "d",
+   "iron_ore",
+   "111111"
+  ],
+  [
+   "manganese ore",
+   "d",
+   "manganese_ore",
+   "111111"
+  ],
+  [
+   "bauxite",
+   "d",
+   "bauxite",
+   "111111"
+  ],
+  [
+   "copper ore",
+   "d",
+   "copper_ore",
+   "111111"
+  ],
+  [
+   "gold",
+   "d",
+   "gold",
+   "111111"
+  ],
+  [
+   "others",
+   "d",
+   "metallic_minerals.others",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "metallic_minerals.input",
+   "111111"
+  ],
+  [
+   "Non-Metallic minerals",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Value of output",
+   "d",
+   "non_metallic_minerals.value_of_output",
+   "111111"
+  ],
+  [
+   "lime stone",
+   "d",
+   "lime_stone",
+   "111111"
+  ],
+  [
+   "others",
+   "d",
+   "non_metallic_minerals.others",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "non_metallic_minerals.input",
+   "111111"
+  ],
+  [
+   "Minor minerals",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Value of output",
+   "d",
+   "minor_minerals.value_of_output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "minor_minerals.input",
+   "111111"
+  ],
+  [
+   "Total minerals",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Value of output",
+   "d",
+   "total_minerals.value_of_output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "total_minerals.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "net_value_added",
+   "111111"
+  ]
+ ],
+ "8.7": [
+  [
+   "Electricity",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "electricity.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "electricity.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "electricity.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "electricity.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "electricity.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "electricity.net_value_added",
+   "111111"
+  ],
+  [
+   "Gas",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "gas.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "gas.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "gas.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "gas.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "gas.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "gas.net_value_added",
+   "111111"
+  ],
+  [
+   "Water supply",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "water_supply.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "water_supply.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "water_supply.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "water_supply.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "water_supply.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "water_supply.net_value_added",
+   "111111"
+  ],
+  [
+   "Remediation & other utility services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "remediation_and_other_utility_services.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "remediation_and_other_utility_services.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "remediation_and_other_utility_services.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "remediation_and_other_utility_services.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "remediation_and_other_utility_services.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "remediation_and_other_utility_services.net_value_added",
+   "111111"
+  ],
+  [
+   "Total",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "total.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "total.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "total.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "total.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "total.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "total.net_value_added",
+   "111111"
+  ]
+ ],
+ "8.10": [
+  [
+   "Railways",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "railways.output",
+   "111111"
+  ],
+  [
+   "passenger earnings",
+   "d",
+   "passenger_earnings",
+   "111111"
+  ],
+  [
+   "goods earnings",
+   "d",
+   "goods_earnings",
+   "111111"
+  ],
+  [
+   "miscellaneous earnings",
+   "d",
+   "miscellaneous_earnings",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "railways.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "railways.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "railways.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "railways.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "railways.net_value_added",
+   "111111"
+  ],
+  [
+   "Road transport",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "road_transport.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "road_transport.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "road_transport.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "road_transport.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "road_transport.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "road_transport.net_value_added",
+   "111111"
+  ],
+  [
+   "Water transport",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "water_transport.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "water_transport.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "water_transport.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "water_transport.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "water_transport.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "water_transport.net_value_added",
+   "111111"
+  ],
+  [
+   "Air transport",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "air_transport.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "air_transport.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "air_transport.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "air_transport.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "air_transport.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "air_transport.net_value_added",
+   "111111"
+  ],
+  [
+   "Services incidental to transport",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "services_incidental_to_transport.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "services_incidental_to_transport.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "services_incidental_to_transport.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "services_incidental_to_transport.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "services_incidental_to_transport.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "services_incidental_to_transport.net_value_added",
+   "111111"
+  ],
+  [
+   "Total transport services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "total_transport_services.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "total_transport_services.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "total_transport_services.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "total_transport_services.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "total_transport_services.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "total_transport_services.net_value_added",
+   "111111"
+  ]
+ ],
+ "8.11": [
+  [
+   "Storage",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "storage.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "storage.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "storage.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "storage.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "storage.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "storage.net_value_added",
+   "111111"
+  ],
+  [
+   "Communication",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Post & courier activities",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "post_and_courier_activities.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "post_and_courier_activities.input",
+   "111111"
+  ],
+  [
+   "Gross Value Added unadjusted for FISIM",
+   "d",
+   "post_and_courier_activities.gross_value_added_unadjusted_for_fisim",
+   "111111"
+  ],
+  [
+   "Telecommunication",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "telecommunication.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "telecommunication.input",
+   "111111"
+  ],
+  [
+   "Gross Value Added unadjusted for FISIM",
+   "d",
+   "telecommunication.gross_value_added_unadjusted_for_fisim",
+   "111111"
+  ],
+  [
+   "Cable operators, recording, publishing & broadcasting services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "cable_operators_recording_publishing_and_broadcasting_servic.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "cable_operators_recording_publishing_and_broadcasting_servic.input",
+   "111111"
+  ],
+  [
+   "Gross Value Added unadjusted for FISIM",
+   "d",
+   "cable_operators_recording_publishing_and_broadcasting_servic.gross_value_added_unadjusted_for_fisim",
+   "111111"
+  ],
+  [
+   "Total communication & services related to broadcasting",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "total_communication_and_services_related_to_broadcasting.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "total_communication_and_services_related_to_broadcasting.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "total_communication_and_services_related_to_broadcasting.fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "total_communication_and_services_related_to_broadcasting.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "total_communication_and_services_related_to_broadcasting.cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "total_communication_and_services_related_to_broadcasting.net_value_added",
+   "111111"
+  ],
+  [
+   "Total-storage, communication & services related to broadcasting",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "total_storage_communication_and_services_related_to_broadcas.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "total_storage_communication_and_services_related_to_broadcas.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "total_storage_communication_and_services_related_to_broadcas.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "total_storage_communication_and_services_related_to_broadcas.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "total_storage_communication_and_services_related_to_broadcas.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "total_storage_communication_and_services_related_to_broadcas.net_value_added",
+   "111111"
+  ]
+ ],
+ "8.12": [
+  [
+   "Gross Value Added (S-12)",
+   "d",
+   "gross_value_added_s_12",
+   "111111"
+  ],
+  [
+   "Monetary Financial Institutions (S-121 to S-123)",
+   "d",
+   "monetary_financial_institutions_s_121_to_s_123",
+   "111111"
+  ],
+  [
+   "Central Bank (S-121)",
+   "d",
+   "central_bank_s_121",
+   "111111"
+  ],
+  [
+   "Deposit Taking Corporations excluding Central Bank (S-122) & Money Market Funds (S-123)",
+   "d",
+   "deposit_taking_corporations_excluding_central_bank_s_122_and",
+   "111111"
+  ],
+  [
+   "Other Financial Corporations (S-124 to S-127)",
+   "d",
+   "other_financial_corporations_s_124_to_s_127",
+   "111111"
+  ],
+  [
+   "Other Financial Intermediaries except ICPF (S-125) and Non MMF Investment Funds (S-124)",
+   "d",
+   "other_financial_intermediaries_except_icpf_s_125_and_non_mmf",
+   "111111"
+  ],
+  [
+   "Financial auxiliaries (S-126)",
+   "d",
+   "financial_auxiliaries_s_126",
+   "111111"
+  ],
+  [
+   "Captive Financial Institutions (S-127)",
+   "d",
+   "captive_financial_institutions_s_127",
+   "111111"
+  ],
+  [
+   "Insurance Corporation and Pension Funds (S-128 to S-129)",
+   "d",
+   "insurance_corporation_and_pension_funds_s_128_to_s_129",
+   "111111"
+  ],
+  [
+   "Life Insurance (S-128)",
+   "d",
+   "life_insurance_s_128",
+   "111111"
+  ],
+  [
+   "Non-Life Insurance (S-128)",
+   "d",
+   "non_life_insurance_s_128",
+   "111111"
+  ],
+  [
+   "Pension Funds (S-129)",
+   "d",
+   "pension_funds_s_129",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "net_value_added",
+   "111111"
+  ]
+ ],
+ "8.13": [
+  [
+   "Real estate",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "real_estate.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "real_estate.input",
+   "111111"
+  ],
+  [
+   "Gross Value Added unadjusted for FISIM",
+   "d",
+   "real_estate.gross_value_added_unadjusted_for_fisim",
+   "111111"
+  ],
+  [
+   "Ownership of dwellings",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "ownership_of_dwellings.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "ownership_of_dwellings.input",
+   "111111"
+  ],
+  [
+   "Gross Value Added unadjusted for FISIM",
+   "d",
+   "ownership_of_dwellings.gross_value_added_unadjusted_for_fisim",
+   "111111"
+  ],
+  [
+   "Information and computer related services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "information_and_computer_related_services.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "information_and_computer_related_services.input",
+   "111111"
+  ],
+  [
+   "Gross Value Added unadjusted for FISIM",
+   "d",
+   "information_and_computer_related_services.gross_value_added_unadjusted_for_fisim",
+   "111111"
+  ],
+  [
+   "Professional, scientific & technical services including R & D",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "professional_scientific_and_technical_services_including_r_a.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "professional_scientific_and_technical_services_including_r_a.input",
+   "111111"
+  ],
+  [
+   "Gross Value Added unadjusted for FISIM",
+   "d",
+   "professional_scientific_and_technical_services_including_r_a.gross_value_added_unadjusted_for_fisim",
+   "111111"
+  ],
+  [
+   "Administrative & support service activities and other professional services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "administrative_and_support_service_activities_and_other_prof.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "administrative_and_support_service_activities_and_other_prof.input",
+   "111111"
+  ],
+  [
+   "Gross Value Added unadjusted for FISIM",
+   "d",
+   "administrative_and_support_service_activities_and_other_prof.gross_value_added_unadjusted_for_fisim",
+   "111111"
+  ],
+  [
+   "Real estate, ownership of dwellings & other professional services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "real_estate_ownership_of_dwellings_and_other_professional_se.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "real_estate_ownership_of_dwellings_and_other_professional_se.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "net_value_added",
+   "111111"
+  ]
+ ],
+ "8.14": [
+  [
+   "Community & social services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Education",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "education.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "education.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "education.fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "education.gross_value_added",
+   "111111"
+  ],
+  [
+   "Health & social work",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "health_and_social_work.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "health_and_social_work.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "health_and_social_work.fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "health_and_social_work.gross_value_added",
+   "111111"
+  ],
+  [
+   "Services of membership organisations",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "services_of_membership_organisations.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "services_of_membership_organisations.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "services_of_membership_organisations.fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "services_of_membership_organisations.gross_value_added",
+   "111111"
+  ],
+  [
+   "Arts, entertainment & recreation",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "arts_entertainment_and_recreation.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "arts_entertainment_and_recreation.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "arts_entertainment_and_recreation.fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "arts_entertainment_and_recreation.gross_value_added",
+   "111111"
+  ],
+  [
+   "Personal services including- washing, hair dressing, custom tailoring and funeral related services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "personal_services_including_washing_hair_dressing_custom_tai.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "personal_services_including_washing_hair_dressing_custom_tai.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "personal_services_including_washing_hair_dressing_custom_tai.fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "personal_services_including_washing_hair_dressing_custom_tai.gross_value_added",
+   "111111"
+  ],
+  [
+   "Private household with employed person",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "private_household_with_employed_person.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "private_household_with_employed_person.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "private_household_with_employed_person.fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "private_household_with_employed_person.gross_value_added",
+   "111111"
+  ],
+  [
+   "Total - other services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "total_other_services.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "total_other_services.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "total_other_services.fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "total_other_services.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "net_value_added",
+   "111111"
+  ]
+ ],
+ "8.8": [
+  [
+   "Output",
+   "d",
+   "output",
+   "111111"
+  ],
+  [
+   "Dwellings, Other Buildings & Structures",
+   "d",
+   "dwellings_other_buildings_and_structures",
+   "111111"
+  ],
+  [
+   "Dwellings",
+   "d",
+   "dwellings",
+   "111111"
+  ],
+  [
+   "Other Buildings & Structures",
+   "d",
+   "other_buildings_and_structures",
+   "111111"
+  ],
+  [
+   "Non-Residential Buildings",
+   "d",
+   "non_residential_buildings",
+   "111111"
+  ],
+  [
+   "Roads & Bridges",
+   "d",
+   "roads_and_bridges",
+   "111111"
+  ],
+  [
+   "Other Structures & Land Improvements",
+   "d",
+   "other_structures_and_land_improvements",
+   "111111"
+  ],
+  [
+   "Plantation",
+   "d",
+   "plantation",
+   "111111"
+  ],
+  [
+   "Mineral Exploration",
+   "d",
+   "mineral_exploration",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "input",
+   "111111"
+  ],
+  [
+   "Cement & Cement Products",
+   "d",
+   "cement_and_cement_products",
+   "111111"
+  ],
+  [
+   "Iron & Steel",
+   "d",
+   "iron_and_steel",
+   "111111"
+  ],
+  [
+   "Bricks & Tiles",
+   "d",
+   "bricks_and_tiles",
+   "111111"
+  ],
+  [
+   "Timber & Roundwood",
+   "d",
+   "timber_and_roundwood",
+   "111111"
+  ],
+  [
+   "Bitumen and Bitumen Mixtures",
+   "d",
+   "bitumen_and_bitumen_mixtures",
+   "111111"
+  ],
+  [
+   "Glass and Glass Products",
+   "d",
+   "glass_and_glass_products",
+   "111111"
+  ],
+  [
+   "Fixtures & Fittings",
+   "d",
+   "fixtures_and_fittings",
+   "111111"
+  ],
+  [
+   "Paint and Varnishes",
+   "d",
+   "paint_and_varnishes",
+   "111111"
+  ],
+  [
+   "Sand, stone, marble, granite and related materials",
+   "d",
+   "sand_stone_marble_granite_and_related_materials",
+   "111111"
+  ],
+  [
+   "Other Materials (including kutcha material like mud, mud phuska, grass and straw etc.) , fuel, electricity water & Services related Charges",
+   "d",
+   "other_materials_including_kutcha_material_like_mud_mud_phusk",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "fisim",
+   "111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "net_value_added",
+   "111111"
+  ]
+ ],
+ "8.9": [
+  [
+   "Trade and repair services",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "trade_and_repair_services.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "trade_and_repair_services.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "trade_and_repair_services.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "trade_and_repair_services.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "trade_and_repair_services.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "trade_and_repair_services.net_value_added",
+   "111111"
+  ],
+  [
+   "Hotels & restaurants",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "hotels_and_restaurants.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "hotels_and_restaurants.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "hotels_and_restaurants.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "hotels_and_restaurants.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "hotels_and_restaurants.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "hotels_and_restaurants.net_value_added",
+   "111111"
+  ],
+  [
+   "Trade, repair, hotels & restaurants",
+   "h",
+   "",
+   "000000"
+  ],
+  [
+   "Output",
+   "d",
+   "trade_repair_hotels_and_restaurants.output",
+   "111111"
+  ],
+  [
+   "Input",
+   "d",
+   "trade_repair_hotels_and_restaurants.input",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "trade_repair_hotels_and_restaurants.fisim",
+   "111111"
+  ],
+  [
+   "Gross value added",
+   "d",
+   "trade_repair_hotels_and_restaurants.gross_value_added",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "trade_repair_hotels_and_restaurants.cfc",
+   "111111"
+  ],
+  [
+   "Net value added",
+   "d",
+   "trade_repair_hotels_and_restaurants.net_value_added",
+   "111111"
+  ]
+ ],
+ "8.6.1A": [
+  [
+   "Manufacture of food products, beverages & tobacco",
+   "d",
+   "manufacture_of_food_products_beverages_and_tobacco",
+   "111111"
+  ],
+  [
+   "Production, processing and preservation of meat, fish, fruit, vegetables, oils and fats",
+   "d",
+   "production_processing_and_preservation_of_meat_fish_fruit_ve",
+   "111111"
+  ],
+  [
+   "Manufacture of dairy products",
+   "d",
+   "manufacture_of_dairy_products",
+   "111111"
+  ],
+  [
+   "Manufacture of grain mill products, etc. and animal feeds",
+   "d",
+   "manufacture_of_grain_mill_products_etc_and_animal_feeds",
+   "111111"
+  ],
+  [
+   "Manufacture of other food products",
+   "d",
+   "manufacture_of_other_food_products",
+   "111111"
+  ],
+  [
+   "Manufacture of beverages",
+   "d",
+   "manufacture_of_beverages",
+   "111111"
+  ],
+  [
+   "Manufacture of tobacco products",
+   "d",
+   "manufacture_of_tobacco_products",
+   "111111"
+  ],
+  [
+   "Manufacture of textiles, apparel & leather products",
+   "d",
+   "manufacture_of_textiles_apparel_and_leather_products",
+   "111111"
+  ],
+  [
+   "Manufacture of textiles + cotton ginning",
+   "d",
+   "manufacture_of_textiles_cotton_ginning",
+   "111111"
+  ],
+  [
+   "Manufacture of wearing apparel, except custom tailoring",
+   "d",
+   "manufacture_of_wearing_apparel_except_custom_tailoring",
+   "111111"
+  ],
+  [
+   "Manufacture of leather and related products",
+   "d",
+   "manufacture_of_leather_and_related_products",
+   "111111"
+  ],
+  [
+   "Manufacture of metal & metal products",
+   "d",
+   "manufacture_of_metal_and_metal_products",
+   "111111"
+  ],
+  [
+   "Manufacture of basic iron and steel + casting of iron and steel",
+   "d",
+   "manufacture_of_basic_iron_and_steel_casting_of_iron_and_stee",
+   "111111"
+  ],
+  [
+   "Manufacture of basic precious and non-ferrous metals + casting of non-ferrous metals",
+   "d",
+   "manufacture_of_basic_precious_and_non_ferrous_metals_casting",
+   "111111"
+  ],
+  [
+   "Manufacture of fabricated metal products, except machinery and equipment",
+   "d",
+   "manufacture_of_fabricated_metal_products_except_machinery_an",
+   "111111"
+  ],
+  [
+   "Manufacture of machinery & equipment",
+   "d",
+   "manufacture_of_machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of computer, electronic & optical products",
+   "d",
+   "manufacture_of_computer_electronic_and_optical_products",
+   "111111"
+  ],
+  [
+   "Manufacture of electronic component, consumer electronics, magnetic and optical media",
+   "d",
+   "manufacture_of_electronic_component_consumer_electronics_mag",
+   "111111"
+  ],
+  [
+   "Manufacture of computer and peripheral equipment",
+   "d",
+   "manufacture_of_computer_and_peripheral_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of communication equipment",
+   "d",
+   "manufacture_of_communication_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of optical and electronics products n.e.c",
+   "d",
+   "manufacture_of_optical_and_electronics_products_n_e_c",
+   "111111"
+  ],
+  [
+   "Manufacture of electrical equipment",
+   "d",
+   "manufacture_of_electrical_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of machinery and equipment n.e.c",
+   "d",
+   "manufacture_of_machinery_and_equipment_n_e_c",
+   "111111"
+  ],
+  [
+   "Manufacture of transport equipment",
+   "d",
+   "manufacture_of_transport_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of coke, petroleum, rubber, chemical and related products",
+   "d",
+   "manufacture_of_coke_petroleum_rubber_chemical_and_related_pr",
+   "111111"
+  ],
+  [
+   "Manufacture of coke & refined petroleum products",
+   "d",
+   "manufacture_of_coke_and_refined_petroleum_products",
+   "111111"
+  ],
+  [
+   "Manufacture of chemical and chemical products except pharmaceuticals, medicinal and botanical products",
+   "d",
+   "manufacture_of_chemical_and_chemical_products_except_pharmac",
+   "111111"
+  ],
+  [
+   "Manufacture of pharmaceutical; medicinal chemicals and botanical products",
+   "d",
+   "manufacture_of_pharmaceutical_medicinal_chemicals_and_botani",
+   "111111"
+  ],
+  [
+   "Manufacture of rubber & plastic products",
+   "d",
+   "manufacture_of_rubber_and_plastic_products",
+   "111111"
+  ],
+  [
+   "Manufacture of other non-metallic mineral products",
+   "d",
+   "manufacture_of_other_non_metallic_mineral_products",
+   "111111"
+  ],
+  [
+   "Others",
+   "d",
+   "others",
+   "111111"
+  ],
+  [
+   "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting material",
+   "d",
+   "manufacture_of_wood_and_of_products_of_wood_and_cork_except",
+   "111111"
+  ],
+  [
+   "Manufacture of paper and paper products",
+   "d",
+   "manufacture_of_paper_and_paper_products",
+   "111111"
+  ],
+  [
+   "Printing and reproduction of recorded media except publishing",
+   "d",
+   "printing_and_reproduction_of_recorded_media_except_publishin",
+   "111111"
+  ],
+  [
+   "Manufacture of furniture",
+   "d",
+   "manufacture_of_furniture",
+   "111111"
+  ],
+  [
+   "Other manufacturing",
+   "d",
+   "other_manufacturing",
+   "111111"
+  ],
+  [
+   "Repair and installation of machinery and equipment",
+   "d",
+   "repair_and_installation_of_machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Total Value of Output",
+   "d",
+   "total_value_of_output",
+   "111111"
+  ]
+ ],
+ "8.6.1B": [
+  [
+   "Manufacture of food products, beverages & tobacco",
+   "d",
+   "manufacture_of_food_products_beverages_and_tobacco",
+   "111111"
+  ],
+  [
+   "Production, processing and preservation of meat, fish, fruit, vegetables, oils and fats",
+   "d",
+   "production_processing_and_preservation_of_meat_fish_fruit_ve",
+   "111111"
+  ],
+  [
+   "Manufacture of dairy products",
+   "d",
+   "manufacture_of_dairy_products",
+   "111111"
+  ],
+  [
+   "Manufacture of grain mill products, etc. and animal feeds",
+   "d",
+   "manufacture_of_grain_mill_products_etc_and_animal_feeds",
+   "111111"
+  ],
+  [
+   "Manufacture of other food products",
+   "d",
+   "manufacture_of_other_food_products",
+   "111111"
+  ],
+  [
+   "Manufacture of beverages",
+   "d",
+   "manufacture_of_beverages",
+   "111111"
+  ],
+  [
+   "Manufacture of tobacco products",
+   "d",
+   "manufacture_of_tobacco_products",
+   "111111"
+  ],
+  [
+   "Manufacture of textiles, apparel & leather products",
+   "d",
+   "manufacture_of_textiles_apparel_and_leather_products",
+   "111111"
+  ],
+  [
+   "Manufacture of textiles + cotton ginning",
+   "d",
+   "manufacture_of_textiles_cotton_ginning",
+   "111111"
+  ],
+  [
+   "Manufacture of wearing apparel, except custom tailoring",
+   "d",
+   "manufacture_of_wearing_apparel_except_custom_tailoring",
+   "111111"
+  ],
+  [
+   "Manufacture of leather and related products",
+   "d",
+   "manufacture_of_leather_and_related_products",
+   "111111"
+  ],
+  [
+   "Manufacture of metal & metal products",
+   "d",
+   "manufacture_of_metal_and_metal_products",
+   "111111"
+  ],
+  [
+   "Manufacture of basic iron and steel + casting of iron and steel",
+   "d",
+   "manufacture_of_basic_iron_and_steel_casting_of_iron_and_stee",
+   "111111"
+  ],
+  [
+   "Manufacture of basic precious and non-ferrous metals + casting of non-ferrous metals",
+   "d",
+   "manufacture_of_basic_precious_and_non_ferrous_metals_casting",
+   "111111"
+  ],
+  [
+   "Manufacture of fabricated metal products, except machinery and equipment",
+   "d",
+   "manufacture_of_fabricated_metal_products_except_machinery_an",
+   "111111"
+  ],
+  [
+   "Manufacture of machinery & equipment",
+   "d",
+   "manufacture_of_machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of computer, electronic & optical products",
+   "d",
+   "manufacture_of_computer_electronic_and_optical_products",
+   "111111"
+  ],
+  [
+   "Manufacture of electronic component, consumer electronics, magnetic and optical media",
+   "d",
+   "manufacture_of_electronic_component_consumer_electronics_mag",
+   "111111"
+  ],
+  [
+   "Manufacture of computer and peripheral equipment",
+   "d",
+   "manufacture_of_computer_and_peripheral_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of communication equipment",
+   "d",
+   "manufacture_of_communication_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of optical and electronics products n.e.c",
+   "d",
+   "manufacture_of_optical_and_electronics_products_n_e_c",
+   "111111"
+  ],
+  [
+   "Manufacture of electrical equipment",
+   "d",
+   "manufacture_of_electrical_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of machinery and equipment n.e.c",
+   "d",
+   "manufacture_of_machinery_and_equipment_n_e_c",
+   "111111"
+  ],
+  [
+   "Manufacture of transport equipment",
+   "d",
+   "manufacture_of_transport_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of coke, petroleum, rubber, chemical and related products",
+   "d",
+   "manufacture_of_coke_petroleum_rubber_chemical_and_related_pr",
+   "111111"
+  ],
+  [
+   "Manufacture of coke & refined petroleum products",
+   "d",
+   "manufacture_of_coke_and_refined_petroleum_products",
+   "111111"
+  ],
+  [
+   "Manufacture of chemical and chemical products except pharmaceuticals, medicinal and botanical products",
+   "d",
+   "manufacture_of_chemical_and_chemical_products_except_pharmac",
+   "111111"
+  ],
+  [
+   "Manufacture of pharmaceutical; medicinal chemicals and botanical products",
+   "d",
+   "manufacture_of_pharmaceutical_medicinal_chemicals_and_botani",
+   "111111"
+  ],
+  [
+   "Manufacture of rubber & plastic products",
+   "d",
+   "manufacture_of_rubber_and_plastic_products",
+   "111111"
+  ],
+  [
+   "Manufacture of other non-metallic mineral products",
+   "d",
+   "manufacture_of_other_non_metallic_mineral_products",
+   "111111"
+  ],
+  [
+   "Others",
+   "d",
+   "others",
+   "111111"
+  ],
+  [
+   "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting material",
+   "d",
+   "manufacture_of_wood_and_of_products_of_wood_and_cork_except",
+   "111111"
+  ],
+  [
+   "Manufacture of paper and paper products",
+   "d",
+   "manufacture_of_paper_and_paper_products",
+   "111111"
+  ],
+  [
+   "Printing and reproduction of recorded media except publishing",
+   "d",
+   "printing_and_reproduction_of_recorded_media_except_publishin",
+   "111111"
+  ],
+  [
+   "Manufacture of furniture",
+   "d",
+   "manufacture_of_furniture",
+   "111111"
+  ],
+  [
+   "Other manufacturing",
+   "d",
+   "other_manufacturing",
+   "111111"
+  ],
+  [
+   "Repair and installation of machinery and equipment",
+   "d",
+   "repair_and_installation_of_machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "GVA unadjusted for FISIM",
+   "d",
+   "gva_unadjusted_for_fisim",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "fisim",
+   "111111"
+  ],
+  [
+   "GVA",
+   "d",
+   "gva",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "111111"
+  ],
+  [
+   "NVA",
+   "d",
+   "nva",
+   "111111"
+  ]
+ ],
+ "8.6.2A": [
+  [
+   "Manufacture of food products, beverages & tobacco",
+   "d",
+   "manufacture_of_food_products_beverages_and_tobacco",
+   "111111"
+  ],
+  [
+   "Production, processing and preservation of meat, fish, fruit, vegetables, oils and fats",
+   "d",
+   "production_processing_and_preservation_of_meat_fish_fruit_ve",
+   "111111"
+  ],
+  [
+   "Manufacture of dairy products",
+   "d",
+   "manufacture_of_dairy_products",
+   "111111"
+  ],
+  [
+   "Manufacture of grain mill products, etc. and animal feeds",
+   "d",
+   "manufacture_of_grain_mill_products_etc_and_animal_feeds",
+   "111111"
+  ],
+  [
+   "Manufacture of other food products",
+   "d",
+   "manufacture_of_other_food_products",
+   "111111"
+  ],
+  [
+   "Manufacture of beverages",
+   "d",
+   "manufacture_of_beverages",
+   "111111"
+  ],
+  [
+   "Manufacture of tobacco products",
+   "d",
+   "manufacture_of_tobacco_products",
+   "111111"
+  ],
+  [
+   "Manufacture of textiles, apparel & leather products",
+   "d",
+   "manufacture_of_textiles_apparel_and_leather_products",
+   "111111"
+  ],
+  [
+   "Manufacture of textiles + cotton ginning",
+   "d",
+   "manufacture_of_textiles_cotton_ginning",
+   "111111"
+  ],
+  [
+   "Manufacture of wearing apparel, except custom tailoring",
+   "d",
+   "manufacture_of_wearing_apparel_except_custom_tailoring",
+   "111111"
+  ],
+  [
+   "Manufacture of leather and related products",
+   "d",
+   "manufacture_of_leather_and_related_products",
+   "111111"
+  ],
+  [
+   "Manufacture of metal & metal products",
+   "d",
+   "manufacture_of_metal_and_metal_products",
+   "111111"
+  ],
+  [
+   "Manufacture of basic iron and steel + casting of iron and steel",
+   "d",
+   "manufacture_of_basic_iron_and_steel_casting_of_iron_and_stee",
+   "111111"
+  ],
+  [
+   "Manufacture of basic precious and non-ferrous metals + casting of non-ferrous metals",
+   "d",
+   "manufacture_of_basic_precious_and_non_ferrous_metals_casting",
+   "111111"
+  ],
+  [
+   "Manufacture of fabricated metal products, except machinery and equipment",
+   "d",
+   "manufacture_of_fabricated_metal_products_except_machinery_an",
+   "111111"
+  ],
+  [
+   "Manufacture of machinery & equipment",
+   "d",
+   "manufacture_of_machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of computer, electronic & optical products",
+   "d",
+   "manufacture_of_computer_electronic_and_optical_products",
+   "111111"
+  ],
+  [
+   "Manufacture of electronic component, consumer electronics, magnetic and optical media",
+   "d",
+   "manufacture_of_electronic_component_consumer_electronics_mag",
+   "111111"
+  ],
+  [
+   "Manufacture of computer and peripheral equipment",
+   "d",
+   "manufacture_of_computer_and_peripheral_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of communication equipment",
+   "d",
+   "manufacture_of_communication_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of optical and electronics products n.e.c",
+   "d",
+   "manufacture_of_optical_and_electronics_products_n_e_c",
+   "111111"
+  ],
+  [
+   "Manufacture of electrical equipment",
+   "d",
+   "manufacture_of_electrical_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of machinery and equipment n.e.c",
+   "d",
+   "manufacture_of_machinery_and_equipment_n_e_c",
+   "111111"
+  ],
+  [
+   "Manufacture of transport equipment",
+   "d",
+   "manufacture_of_transport_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of coke, petroleum, rubber, chemical and related products",
+   "d",
+   "manufacture_of_coke_petroleum_rubber_chemical_and_related_pr",
+   "111111"
+  ],
+  [
+   "Manufacture of coke & refined petroleum products",
+   "d",
+   "manufacture_of_coke_and_refined_petroleum_products",
+   "111111"
+  ],
+  [
+   "Manufacture of chemical and chemical products except pharmaceuticals, medicinal and botanical products",
+   "d",
+   "manufacture_of_chemical_and_chemical_products_except_pharmac",
+   "111111"
+  ],
+  [
+   "Manufacture of pharmaceutical; medicinal chemicals and botanical products",
+   "d",
+   "manufacture_of_pharmaceutical_medicinal_chemicals_and_botani",
+   "111111"
+  ],
+  [
+   "Manufacture of rubber & plastic products",
+   "d",
+   "manufacture_of_rubber_and_plastic_products",
+   "111111"
+  ],
+  [
+   "Manufacture of other non-metallic mineral products",
+   "d",
+   "manufacture_of_other_non_metallic_mineral_products",
+   "111111"
+  ],
+  [
+   "Others",
+   "d",
+   "others",
+   "111111"
+  ],
+  [
+   "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting material",
+   "d",
+   "manufacture_of_wood_and_of_products_of_wood_and_cork_except",
+   "111111"
+  ],
+  [
+   "Manufacture of paper and paper products",
+   "d",
+   "manufacture_of_paper_and_paper_products",
+   "111111"
+  ],
+  [
+   "Printing and reproduction of recorded media except publishing",
+   "d",
+   "printing_and_reproduction_of_recorded_media_except_publishin",
+   "111111"
+  ],
+  [
+   "Manufacture of furniture",
+   "d",
+   "manufacture_of_furniture",
+   "111111"
+  ],
+  [
+   "Other manufacturing",
+   "d",
+   "other_manufacturing",
+   "111111"
+  ],
+  [
+   "Repair and installation of machinery and equipment",
+   "d",
+   "repair_and_installation_of_machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Total Output",
+   "d",
+   "total_output",
+   "111111"
+  ]
+ ],
+ "8.6.2B": [
+  [
+   "Manufacture of food products, beverages & tobacco",
+   "d",
+   "manufacture_of_food_products_beverages_and_tobacco",
+   "111111"
+  ],
+  [
+   "Production, processing and preservation of meat, fish, fruit, vegetables, oils and fats",
+   "d",
+   "production_processing_and_preservation_of_meat_fish_fruit_ve",
+   "111111"
+  ],
+  [
+   "Manufacture of dairy products",
+   "d",
+   "manufacture_of_dairy_products",
+   "111111"
+  ],
+  [
+   "Manufacture of grain mill products, etc. and animal feeds",
+   "d",
+   "manufacture_of_grain_mill_products_etc_and_animal_feeds",
+   "111111"
+  ],
+  [
+   "Manufacture of other food products",
+   "d",
+   "manufacture_of_other_food_products",
+   "111111"
+  ],
+  [
+   "Manufacture of beverages",
+   "d",
+   "manufacture_of_beverages",
+   "111111"
+  ],
+  [
+   "Manufacture of tobacco products",
+   "d",
+   "manufacture_of_tobacco_products",
+   "111111"
+  ],
+  [
+   "Manufacture of textiles, apparel & leather products",
+   "d",
+   "manufacture_of_textiles_apparel_and_leather_products",
+   "111111"
+  ],
+  [
+   "Manufacture of textiles + cotton ginning",
+   "d",
+   "manufacture_of_textiles_cotton_ginning",
+   "111111"
+  ],
+  [
+   "Manufacture of wearing apparel, except custom tailoring",
+   "d",
+   "manufacture_of_wearing_apparel_except_custom_tailoring",
+   "111111"
+  ],
+  [
+   "Manufacture of leather and related products",
+   "d",
+   "manufacture_of_leather_and_related_products",
+   "111111"
+  ],
+  [
+   "Manufacture of metal & metal products",
+   "d",
+   "manufacture_of_metal_and_metal_products",
+   "111111"
+  ],
+  [
+   "Manufacture of basic iron and steel + casting of iron and steel",
+   "d",
+   "manufacture_of_basic_iron_and_steel_casting_of_iron_and_stee",
+   "111111"
+  ],
+  [
+   "Manufacture of basic precious and non-ferrous metals + casting of non-ferrous metals",
+   "d",
+   "manufacture_of_basic_precious_and_non_ferrous_metals_casting",
+   "111111"
+  ],
+  [
+   "Manufacture of fabricated metal products, except machinery and equipment",
+   "d",
+   "manufacture_of_fabricated_metal_products_except_machinery_an",
+   "111111"
+  ],
+  [
+   "Manufacture of machinery & equipment",
+   "d",
+   "manufacture_of_machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of computer, electronic & optical products",
+   "d",
+   "manufacture_of_computer_electronic_and_optical_products",
+   "111111"
+  ],
+  [
+   "Manufacture of electronic component, consumer electronics, magnetic and optical media",
+   "d",
+   "manufacture_of_electronic_component_consumer_electronics_mag",
+   "111111"
+  ],
+  [
+   "Manufacture of computer and peripheral equipment",
+   "d",
+   "manufacture_of_computer_and_peripheral_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of communication equipment",
+   "d",
+   "manufacture_of_communication_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of optical and electronics products n.e.c",
+   "d",
+   "manufacture_of_optical_and_electronics_products_n_e_c",
+   "111111"
+  ],
+  [
+   "Manufacture of electrical equipment",
+   "d",
+   "manufacture_of_electrical_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of machinery and equipment n.e.c",
+   "d",
+   "manufacture_of_machinery_and_equipment_n_e_c",
+   "111111"
+  ],
+  [
+   "Manufacture of transport equipment",
+   "d",
+   "manufacture_of_transport_equipment",
+   "111111"
+  ],
+  [
+   "Manufacture of coke, petroleum, rubber, chemical and related products",
+   "d",
+   "manufacture_of_coke_petroleum_rubber_chemical_and_related_pr",
+   "111111"
+  ],
+  [
+   "Manufacture of coke & refined petroleum products",
+   "d",
+   "manufacture_of_coke_and_refined_petroleum_products",
+   "111111"
+  ],
+  [
+   "Manufacture of chemical and chemical products except pharmaceuticals, medicinal and botanical products",
+   "d",
+   "manufacture_of_chemical_and_chemical_products_except_pharmac",
+   "111111"
+  ],
+  [
+   "Manufacture of pharmaceutical; medicinal chemicals and botanical products",
+   "d",
+   "manufacture_of_pharmaceutical_medicinal_chemicals_and_botani",
+   "111111"
+  ],
+  [
+   "Manufacture of rubber & plastic products",
+   "d",
+   "manufacture_of_rubber_and_plastic_products",
+   "111111"
+  ],
+  [
+   "Manufacture of other non-metallic mineral products",
+   "d",
+   "manufacture_of_other_non_metallic_mineral_products",
+   "111111"
+  ],
+  [
+   "Others",
+   "d",
+   "others",
+   "111111"
+  ],
+  [
+   "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting material",
+   "d",
+   "manufacture_of_wood_and_of_products_of_wood_and_cork_except",
+   "111111"
+  ],
+  [
+   "Manufacture of paper and paper products",
+   "d",
+   "manufacture_of_paper_and_paper_products",
+   "111111"
+  ],
+  [
+   "Printing and reproduction of recorded media except publishing",
+   "d",
+   "printing_and_reproduction_of_recorded_media_except_publishin",
+   "111111"
+  ],
+  [
+   "Manufacture of furniture",
+   "d",
+   "manufacture_of_furniture",
+   "111111"
+  ],
+  [
+   "Other manufacturing",
+   "d",
+   "other_manufacturing",
+   "111111"
+  ],
+  [
+   "Repair and installation of machinery and equipment",
+   "d",
+   "repair_and_installation_of_machinery_and_equipment",
+   "111111"
+  ],
+  [
+   "GVA unadjusted for FISIM",
+   "d",
+   "gva_unadjusted_for_fisim",
+   "111111"
+  ],
+  [
+   "FISIM",
+   "d",
+   "fisim",
+   "111111"
+  ],
+  [
+   "GVA",
+   "d",
+   "gva",
+   "111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "111111"
+  ],
+  [
+   "NVA",
+   "d",
+   "nva",
+   "111111"
+  ]
+ ],
+ "8.16": [
+  [
+   "Administrative Departments",
+   "d",
+   "administrative_departments",
+   "010101"
+  ],
+  [
+   "Departmental Enterprises",
+   "d",
+   "departmental_enterprises",
+   "111111"
+  ],
+  [
+   "Railways *",
+   "d",
+   "railways",
+   "111111"
+  ],
+  [
+   "Communication",
+   "d",
+   "communication",
+   "010101"
+  ],
+  [
+   "Other Departmental Enterprises",
+   "d",
+   "other_departmental_enterprises",
+   "111111"
+  ],
+  [
+   "Non-Departmental Enterprises",
+   "d",
+   "non_departmental_enterprises",
+   "010101"
+  ],
+  [
+   "Non-Financial",
+   "d",
+   "non_financial",
+   "111111"
+  ],
+  [
+   "Financial",
+   "d",
+   "financial",
+   "111111"
+  ],
+  [
+   "Private Corporate Sector**",
+   "d",
+   "private_corporate_sector",
+   "111111"
+  ]
+ ],
+ "8.17.2/constant": [
+  [
+   "1. Primary Sector",
+   "d",
+   "primary",
+   "1111"
+  ],
+  [
+   "1.1 Agriculture, Livestock, Forestry & Fishing",
+   "d",
+   "agri",
+   "1111"
+  ],
+  [
+   "1.2. Mining & Quarrying",
+   "d",
+   "mining",
+   "1111"
+  ],
+  [
+   "2. Secondary Sector",
+   "d",
+   "secondary",
+   "1111"
+  ],
+  [
+   "2.1. Manufacturing",
+   "d",
+   "manufacturing",
+   "1111"
+  ],
+  [
+   "2.2. Electricity, Gas, Water Supply & Other Utility Services",
+   "d",
+   "utilities",
+   "1111"
+  ],
+  [
+   "2.3. Construction",
+   "d",
+   "construction",
+   "1111"
+  ],
+  [
+   "3. Tertiary Sector",
+   "d",
+   "tertiary",
+   "1111"
+  ],
+  [
+   "3.1 Trade, Hotels, Transport, Communication & Services related to Broadcasting, Storage",
+   "d",
+   "trade_transport_comm",
+   "1111"
+  ],
+  [
+   "3.2 Financial, Real Estate, IT, Professional Services & Ownership of Dwelling",
+   "d",
+   "financial_real_estate_prof",
+   "1111"
+  ],
+  [
+   "3.3 Public Administration, Defence & Other Services",
+   "d",
+   "public_admin_other",
+   "1111"
+  ],
+  [
+   "GVA at Basic Prices",
+   "d",
+   "total",
+   "1111"
+  ]
+ ],
+ "8.17.2/current": [
+  [
+   "1. Primary Sector",
+   "d",
+   "primary",
+   "1111"
+  ],
+  [
+   "1.1 Agriculture, Livestock, Forestry & Fishing",
+   "d",
+   "agri",
+   "1111"
+  ],
+  [
+   "1.2. Mining & Quarrying",
+   "d",
+   "mining",
+   "1111"
+  ],
+  [
+   "2. Secondary Sector",
+   "d",
+   "secondary",
+   "1111"
+  ],
+  [
+   "2.1. Manufacturing",
+   "d",
+   "manufacturing",
+   "1111"
+  ],
+  [
+   "2.2. Electricity, Gas, Water Supply & Other Utility Services",
+   "d",
+   "utilities",
+   "1111"
+  ],
+  [
+   "2.3. Construction",
+   "d",
+   "construction",
+   "1111"
+  ],
+  [
+   "3. Tertiary Sector",
+   "d",
+   "tertiary",
+   "1111"
+  ],
+  [
+   "3.1 Trade, Hotels, Transport, Communication & Services related to Broadcasting, Storage",
+   "d",
+   "trade_transport_comm",
+   "1111"
+  ],
+  [
+   "3.2 Financial, Real Estate, IT, Professional Services & Ownership of Dwelling",
+   "d",
+   "financial_real_estate_prof",
+   "1111"
+  ],
+  [
+   "3.3 Public Administration, Defence & Other Services",
+   "d",
+   "public_admin_other",
+   "1111"
+  ],
+  [
+   "GVA at Basic Prices",
+   "d",
+   "total",
+   "1111"
+  ]
+ ],
+ "8.18.1": [
+  [
+   "1. Primary Sector",
+   "d",
+   "primary_sector",
+   "1111111111111111"
+  ],
+  [
+   "1.1 Agriculture, Livestock, Forestry & Fishing",
+   "d",
+   "agriculture_livestock_forestry_and_fishing",
+   "1111111111111111"
+  ],
+  [
+   "1.2. Mining & Quarrying",
+   "d",
+   "mining_and_quarrying",
+   "1111111111111111"
+  ],
+  [
+   "2. Secondary Sector",
+   "d",
+   "secondary_sector",
+   "1111111111111111"
+  ],
+  [
+   "2.1. Manufacturing",
+   "d",
+   "manufacturing",
+   "1111111111111111"
+  ],
+  [
+   "2.2. Electricity, Gas, Water Supply & Other Utility Services",
+   "d",
+   "electricity_gas_water_supply_and_other_utility_services",
+   "1111111111111111"
+  ],
+  [
+   "2.3. Construction",
+   "d",
+   "construction",
+   "1111111111111111"
+  ],
+  [
+   "3. Tertiary Sector",
+   "d",
+   "tertiary_sector",
+   "1111111111111111"
+  ],
+  [
+   "3.1 Trade, Hotels, Transport, Communication & Services related to Broadcasting, Storage",
+   "d",
+   "trade_hotels_transport_communication_and_services_related_to",
+   "1111111111111111"
+  ],
+  [
+   "3.2 Financial, Real Estate, Ownership of dwelling, IT & Professional Services",
+   "d",
+   "financial_real_estate_ownership_of_dwelling_it_and_professio",
+   "1111111111111111"
+  ],
+  [
+   "3.3 Public Administration, Defence & Other Services",
+   "d",
+   "public_administration_defence_and_other_services",
+   "1111111111111111"
+  ],
+  [
+   "GVA at Basic Prices",
+   "d",
+   "gva_at_basic_prices",
+   "1111111111111111"
+  ],
+  [
+   "Net Taxes",
+   "d",
+   "net_taxes",
+   "1111111111111111"
+  ],
+  [
+   "GDP",
+   "d",
+   "gdp",
+   "1111111111111111"
+  ],
+  [
+   "Expenditure Components",
+   "h",
+   "",
+   "0000000000000000"
+  ],
+  [
+   "1. Private Final Consumption Expenditure (PFCE)",
+   "d",
+   "private_final_consumption_expenditure_pfce",
+   "1111111111111111"
+  ],
+  [
+   "2. Government Final Consumption Expenditure (GFCE)",
+   "d",
+   "government_final_consumption_expenditure_gfce",
+   "1111111111111111"
+  ],
+  [
+   "3. Gross Fixed Capital Formation (GFCF)",
+   "d",
+   "gross_fixed_capital_formation_gfcf",
+   "1111111111111111"
+  ],
+  [
+   "4. Changes in Stocks (CIS)",
+   "d",
+   "changes_in_stocks_cis",
+   "1111111111111111"
+  ],
+  [
+   "5. Valuables",
+   "d",
+   "valuables",
+   "1111111111111111"
+  ],
+  [
+   "6. Exports",
+   "d",
+   "exports",
+   "1111111111111111"
+  ],
+  [
+   "7. Imports",
+   "d",
+   "imports",
+   "1111111111111111"
+  ],
+  [
+   "8. Discrepancies",
+   "d",
+   "discrepancies",
+   "1111111111111111"
+  ],
+  [
+   "GDP",
+   "d",
+   "exp.gdp",
+   "1111111111111111"
+  ]
+ ],
+ "8.18.2": [
+  [
+   "1. Primary Sector",
+   "d",
+   "primary_sector",
+   "1111111111111111"
+  ],
+  [
+   "1.1 Agriculture, Livestock, Forestry & Fishing",
+   "d",
+   "agriculture_livestock_forestry_and_fishing",
+   "1111111111111111"
+  ],
+  [
+   "1.2. Mining & Quarrying",
+   "d",
+   "mining_and_quarrying",
+   "1111111111111111"
+  ],
+  [
+   "2. Secondary Sector",
+   "d",
+   "secondary_sector",
+   "1111111111111111"
+  ],
+  [
+   "2.1. Manufacturing",
+   "d",
+   "manufacturing",
+   "1111111111111111"
+  ],
+  [
+   "2.2. Electricity, Gas, Water Supply & Other Utility Services",
+   "d",
+   "electricity_gas_water_supply_and_other_utility_services",
+   "1111111111111111"
+  ],
+  [
+   "2.3. Construction",
+   "d",
+   "construction",
+   "1111111111111111"
+  ],
+  [
+   "3. Tertiary Sector",
+   "d",
+   "tertiary_sector",
+   "1111111111111111"
+  ],
+  [
+   "3.1 Trade, Hotels, Transport, Communication & Services related to Broadcasting, Storage",
+   "d",
+   "trade_hotels_transport_communication_and_services_related_to",
+   "1111111111111111"
+  ],
+  [
+   "3.2 Financial, Real Estate, IT, Professional Services & Ownership of Dwelling",
+   "d",
+   "financial_real_estate_it_professional_services_and_ownership",
+   "1111111111111111"
+  ],
+  [
+   "3.3 Public Administration, Defence & Other Services",
+   "d",
+   "public_administration_defence_and_other_services",
+   "1111111111111111"
+  ],
+  [
+   "GVA at Basic Prices",
+   "d",
+   "gva_at_basic_prices",
+   "1111111111111111"
+  ],
+  [
+   "Net Taxes",
+   "d",
+   "net_taxes",
+   "1111111111111111"
+  ],
+  [
+   "GDP",
+   "d",
+   "gdp",
+   "1111111111111111"
+  ],
+  [
+   "Expenditure Components",
+   "h",
+   "",
+   "0000000000000000"
+  ],
+  [
+   "1. Private Final Consumption Expenditure (PFCE)",
+   "d",
+   "private_final_consumption_expenditure_pfce",
+   "1111111111111111"
+  ],
+  [
+   "2. Government Final Consumption Expenditure (GFCE)",
+   "d",
+   "government_final_consumption_expenditure_gfce",
+   "1111111111111111"
+  ],
+  [
+   "3. Gross Fixed Capital Formation (GFCF)",
+   "d",
+   "gross_fixed_capital_formation_gfcf",
+   "1111111111111111"
+  ],
+  [
+   "4. Changes in Stocks (CIS)",
+   "d",
+   "changes_in_stocks_cis",
+   "1111111111111111"
+  ],
+  [
+   "5. Valuables",
+   "d",
+   "valuables",
+   "1111111111111111"
+  ],
+  [
+   "6. Exports",
+   "d",
+   "exports",
+   "1111111111111111"
+  ],
+  [
+   "7. Imports",
+   "d",
+   "imports",
+   "1111111111111111"
+  ],
+  [
+   "8. Discrepancies",
+   "d",
+   "discrepancies",
+   "1111111111111111"
+  ],
+  [
+   "GDP",
+   "d",
+   "exp.gdp",
+   "1111111111111111"
+  ]
+ ]
+}

@@ -1,0 +1,153 @@
+# Gap-map coverage declared by the finsector_markets unit (format: pipeline/core/coverage.py).
+# extent: full = this dataset fills the cell; partial = part of it; control_total = the total the
+# cell must sum to (the cell's detail comes from another unit or from Phase 2 estimation).
+# None of this unit's cells is filled 'full': every ref below also needs other sources or a Phase 2
+# estimation step (see docs/phase1/issues/finsector_markets.md, "Coverage").
+unit: finsector_markets
+entries:
+- ref: S9
+  dataset: finsector_markets_epfo_ar
+  series_ids: [app5i.epf_contribution.current, app5i.epf_payment.current, app5i.eps_contribution.current,
+    app5i.eps_payment.current, app5i.edli_contribution.current, app5i.edli_payment.current,
+    app5i.total_contribution.current, app5i.total_payment.current, para54.eps_contribution_government.current]
+  extent: partial
+  note: EPFO un-exempted sector contributions and payments 2023-24 (unaudited; AR 2024-25 revises EPF
+    contributions by +7,291 cr, probably central past accumulations, and its 2024-25 EPF figure includes
+    7,320.22 cr of past accumulations = transfers from exempted trusts, not contributions; use AR 2023-24
+    for 2023-24). Exempted PF trusts' contributions/withdrawals, CMPF, GPF and PPF are not here.
+    App. 5(i) 'EPS contribution' / 'total contribution' exclude the Central Government's EPS share
+    (para54.eps_contribution_government, listed here). EPS payment = pensions + withdrawal benefits (split in
+    finsector_markets_epfo_eps_outgo).
+- ref: S9
+  dataset: finsector_markets_epfo_eps_outgo
+  series_ids: [eps_outgo.pension_disbursed.current, eps_outgo.withdrawal_benefits.current,
+    eps_outgo.total_outgo.current]
+  extent: partial
+  note: EPFO's own split of EPS outgo into monthly pensions and withdrawal benefits (lump sums), 2019-20..2024-25.
+    Its total is 371.23 cr below the App. 5(i) EPS payment in 2023-24 (38-382 cr in 2020-21..2023-24; ties in
+    2024-25 within the 0.35 Life Assurance Benefit entry); the difference is unexplained (finsector_markets-37).
+- ref: S9
+  dataset: finsector_markets_pfrda_nps
+  series_ids: [m4d.annual_contribution.central_govt.current, m4d.annual_contribution.state_govt.current,
+    m4d.annual_contribution.corporate.current, m4d.annual_contribution.all_citizen.current,
+    m4d.annual_contribution.apy.current, a5.tier2_contribution.all_citizen.current]
+  extent: partial
+  note: NPS/APY contributions 2023-24 are DERIVED (difference of PFRDA M4 end-March levels read as
+    cumulative contributions). NPS withdrawals/exits are not published as amounts in the files used.
+- ref: S9
+  dataset: finsector_markets_pfrda_sg
+  series_ids: [m7d.annual_contribution_total.state_govt.current, m7d.annual_contribution_employer.state_govt.current,
+    m7d.annual_contribution_employee.state_govt.current]
+  extent: partial
+  note: NPS State Government sector contributions 2023-24 with the employer/employee split, FY sums of the
+    published monthly PFRDA Table M7 flows (status derived; equal to the M4-derived SG figure within 0.02 cr).
+- ref: S9
+  dataset: finsector_markets_irdai_life
+  series_ids: [t24.premium.insurers_life.current, t24.benefits_paid_net.insurers_life.current,
+    t24.premium.lic.current, t24.benefits_paid_net.lic.current]
+  extent: partial
+  note: Life insurance premiums and benefits paid (net), industry and LIC, 2023-24.
+- ref: R17
+  dataset: finsector_markets_irdai_nonlife
+  series_ids: [t41.gross_direct_premium.total.insurers_general_direct.current,
+    t41.gross_direct_premium.motor.insurers_general_direct.current,
+    t41.gross_direct_premium.health_pa_travel.insurers_general_direct.current,
+    t41.gross_direct_premium.fire.insurers_general_direct.current,
+    t44.net_premium_earned.total.insurers_general_direct.current,
+    t44.claims_incurred_net.total.insurers_general_direct.current,
+    t44.claims_incurred_net.motor.insurers_general_direct.current,
+    t44.claims_incurred_net.health.insurers_general_direct.current]
+  extent: partial
+  note: Gross direct premium, net premium earned and net incurred claims by segment and insurer group
+    (2023-24). The SNA service charge and the payer split (households vs NFC) are Phase 2 estimates.
+- ref: R17
+  dataset: finsector_markets_irdai_summary
+  series_ids: [sum_c.gross_direct_premium.current, sum_c.gdp_segment.total.current, sum_c.underwriting_experience.current]
+  extent: control_total
+  note: IRDAI Summary C totals for general insurers (incl. health and reinsurers' direct business).
+- ref: R9c
+  dataset: finsector_markets_irdai_life
+  series_ids: [t24.inv_interest_dividends_rent_gross.insurers_life.current,
+    t24.inv_interest_dividends_rent_gross.lic.current, t24.inv_profit_on_sale.insurers_life.current]
+  extent: partial
+  note: Life insurers' investment income in the policyholders' account (2023-24). The share attributed
+    to policyholders (D44) is a Phase 2 estimate.
+- ref: R9c
+  dataset: finsector_markets_epfo_ar
+  series_ids: [app5vii.epf_interest_rate, invest.epf.net_addition.current]
+  period: '2023-24'
+  extent: partial
+  note: EPF interest rate declared for 2023-24 (8.25%) and the net addition to EPF investments. EPFO
+    interest credited in rupees is not in the Annual Report text; the corpus at face value (next entry)
+    is the base for a Phase 2 estimate.
+- ref: R9c
+  dataset: finsector_markets_epfo_ar
+  series_ids: [invest.epf.total.current, invest.eps.total.current]
+  period: '2024-03-31'
+  extent: partial
+  note: EPF and EPS corpus (face value) at end-March 2024, the base for interest attributed to members.
+- ref: R9c
+  dataset: finsector_markets_irdai_nonlife
+  series_ids: [t51.inv_interest_dividend_rent_gross.general_public.current,
+    t51.inv_interest_dividend_rent_gross.general_private.current]
+  extent: partial
+  note: General insurers' shareholders' investment income (context for the D44 split; non-life D44 is small).
+- ref: F4a
+  dataset: finsector_markets_irdai_life
+  series_ids: [t24.commission.lic.current, t24.operating_expenses.lic.current, t24.commission.insurers_life.current,
+    t24.operating_expenses.insurers_life.current, t25.profit_before_tax.lic.current,
+    t25.profit_before_tax.insurers_life.current]
+  extent: partial
+  note: LIC (public) vs industry life-insurer accounts; private = industry - LIC. Input to the E_INSP
+    public/private GOS split (F4a is ESTIMATED).
+- ref: F4a
+  dataset: finsector_markets_irdai_nonlife
+  series_ids: [t51.profit_before_tax.general_public.current, t51.profit_before_tax.general_private.current,
+    t51.profit_before_tax.health_standalone.current]
+  extent: partial
+  note: General insurers' profit before tax by ownership group (public/private/stand-alone health).
+- ref: K2a
+  dataset: finsector_markets_irdai_life
+  series_ids: [t25.profit_after_tax.lic.current, t25.profit_after_tax.insurers_life.current,
+    t25.appr_interim_dividends.insurers_life.current, t25.appr_proposed_final_dividend.insurers_life.current]
+  extent: partial
+  note: Life insurers' profit after tax and dividends (retained earnings input for E_INSP saving).
+- ref: K2a
+  dataset: finsector_markets_irdai_nonlife
+  series_ids: [t51.profit_after_tax.general_public.current, t51.profit_after_tax.general_private.current,
+    t51.profit_after_tax.health_standalone.current]
+  extent: partial
+  note: General insurers' profit after tax by ownership group.
+- ref: T4a
+  dataset: finsector_markets_irdai_life
+  series_ids: [t25.provision_for_tax.insurers_life.current, t24.provision_for_tax.insurers_life.current,
+    t25.provision_for_tax.lic.current, t24.provision_for_tax.lic.current]
+  extent: partial
+  note: Tax provisions of life insurers (policyholders' and shareholders' accounts), 2023-24.
+- ref: T4a
+  dataset: finsector_markets_irdai_nonlife
+  series_ids: [t51.provision_for_tax.general_public.current, t51.provision_for_tax.general_private.current,
+    t51.provision_for_tax.health_standalone.current, t51.provision_for_tax.general_specialized.current]
+  extent: partial
+  note: Tax provisions of general and health insurers by group, 2023-24 (reinsurers not included).
+- ref: K8b
+  dataset: finsector_markets_sebi_foreign
+  series_ids: [t60.net_investment.equity.current, t60.net_investment.debt_general.current,
+    t60.net_investment.debt_vrr.current, t60.net_investment.hybrid.current, t60.net_investment.total.current,
+    t58.portfolio_net.usd, t58.fdi_net.usd]
+  extent: partial
+  note: FPI net investment by instrument (NSDL data via SEBI) and BoP-basis FDI/portfolio totals (RBI
+    via SEBI T58) for 2023-24. The G-sec vs corporate-bond split of FPI debt is not in these tables.
+- ref: K8b
+  dataset: finsector_markets_sebi_foreign
+  series_ids: [t63.assets_under_custody.category_i.debt.current, t63.assets_under_custody.category_i.equity.current]
+  period: '2024-03-31'
+  extent: partial
+  note: FPI assets under custody by instrument, end-March 2024.
+- ref: R8
+  dataset: finsector_markets_sebi_mf
+  series_ids: [t72.aum.corporates.current, t72.aum.hnis.current, t72.aum.retail.current, t72.aum.banks.current]
+  period: '2024-03-31'
+  extent: partial
+  note: MF unit-holding by holder (for the look-through of MF-held dividends to unit-holders). The
+    dividend totals come from RBI corporate finances (another unit).

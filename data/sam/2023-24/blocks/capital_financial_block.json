@@ -1,0 +1,152 @@
+{
+  "block": "capital_financial",
+  "checks": {
+    "failed": [],
+    "n": 24
+  },
+  "concordances_read": {
+    "io_tables_sut_product_to_sam34": "8b534e018e28cb7fa5d74c81e0fd498eae68266e03aa26653c391eb035370a23"
+  },
+  "constraints": 19,
+  "datasets_read": [
+    "io_tables_sut_use",
+    "mospi_nas_2026_derived_residuals",
+    "mospi_nas_2026_s1_11",
+    "mospi_nas_2026_s1_14",
+    "mospi_nas_2026_s1_9",
+    "mospi_nas_2026_s5_3",
+    "mospi_nas_2026_s7_2a",
+    "mospi_nas_2026_s7_2b",
+    "rbi_banking_corporate_rbi_accounts",
+    "rbi_banking_corporate_rbi_surplus_timing",
+    "rbi_banking_corporate_rtp_banks",
+    "rbi_financial_accounts_fsf_balance_sheets",
+    "rbi_financial_accounts_fsf_fwtw",
+    "rbi_financial_accounts_fsf_instrument_sector",
+    "rbi_financial_accounts_hh_finsav_52ab",
+    "state_fiscal_rbi_sf_appendices",
+    "union_fiscal_afs",
+    "union_fiscal_fa_expenditure",
+    "union_fiscal_fa_gia",
+    "union_fiscal_nssf"
+  ],
+  "dependency_hashes": {
+    "fincorp": {
+      "constraints": "d96f0cafb7267b3b653d9789e9510cc973a805a633d6b1d6344693785ac221ef",
+      "entries": "1f125a34266dd062d2e25ebafe980fb3adafb4d5c03e1f58672c7d8a47966a9e",
+      "provenance": "10cc5106ff4e0b9e4b083f6d2586ff27cd0274ee64f9bbfbeeab2606f96a7bc8"
+    },
+    "government": {
+      "constraints": "29c633211eed7f6c14bcf95fc4c1930e59bd800cc825b56e4c1e03632ba153e2",
+      "entries": "c5d0e9dabbe5c7cc1a1b2e3bf82ced0b9974af57e735ae19f02104fc18dc8ca2",
+      "provenance": "64b1fbefd602f63bee4b8e80f3818f82e3e1854e4bc1eb1681f5d07bb998510f"
+    },
+    "households": {
+      "constraints": "d7934f138cf654b2f21979d311b55b7961c10ff87e38de6b5303451362e86430",
+      "entries": "d3cd60ede26b86b6b17224652a27c1eb3e9c1b7544688d6efba0224e98f42d0e",
+      "provenance": "d2e8beab4f053055fbb9981ecc5b83a78f10f9b093b8fb701b8cdc09353b39dc"
+    },
+    "production": {
+      "constraints": "b0a9b2675e64f33e3b3483d4f82ae4633b7be0c9dfa1673f8de82f4472257281",
+      "entries": "f6f2a4c4b428bc234ec83c20c5c5e754d599497cbc9ec463de0f668a0993ca21",
+      "provenance": "5c8f496f92c629e03d161c981730c5d224a54275caad0c6303df0eb8cba6730c"
+    },
+    "rest_of_world": {
+      "constraints": "16a53aec08531574570a7514743f47237816c5f3665dfd03ecbd0f4a5a7348b8",
+      "entries": "1231c03003f84755c65b8ea07522bb54d501f2c02cc10fa7f7c71961f6c8113d",
+      "provenance": "0212bebbaf5922c8449454401856eb0a57e320306cc25aa52f2cb89bd796a646"
+    }
+  },
+  "depends": [
+    "production",
+    "households",
+    "rest_of_world",
+    "government",
+    "fincorp"
+  ],
+  "entries": 444,
+  "refs": [
+    "I1a",
+    "I2",
+    "I2a",
+    "I3a",
+    "K1",
+    "K4",
+    "K7",
+    "K7a",
+    "K7b",
+    "K8",
+    "K8a",
+    "K8d",
+    "K9",
+    "K9b",
+    "D3",
+    "S4",
+    "S5"
+  ],
+  "refs_not_implemented": [],
+  "satellites": {
+    "capital_formation_by_account": {
+      "decimals": 6,
+      "description": "GFCF, CIS, valuables, GCF and D3 by capital account",
+      "ref": "I1a",
+      "rows": 33
+    },
+    "fsf_instrument_closure": {
+      "decimals": 6,
+      "description": "FSF 2023-24 sum of assets and of liabilities by instrument (leaf statements + RoW)",
+      "ref": "K7",
+      "rows": 24
+    },
+    "gg_gfcf_key": {
+      "decimals": 9,
+      "description": "Centre/State GG GFCF key and RBI GFCF (inputs of I1a)",
+      "ref": "I1a",
+      "rows": 10
+    },
+    "k9_decomposition": {
+      "decimals": 6,
+      "description": "K9 by domestic capital account: real (non-financial) net resources, SAM net financial transactions by layer (sam_hh, sam_row, sam_dom:<instrument>), FSF published net financial transactions (fsf_total), K9 and its exact decomposition (term:*); pair:* regroup the same terms (RoW as one term; household and domestic layers combined per instrument, hh_dom:<instrument>) and pos/neg, the K9 entries, are the sums of the positive and negative pair:* terms",
+      "ref": "K9",
+      "rows": 549
+    },
+    "k9_sensitivity": {
+      "decimals": 6,
+      "description": "Plan T24 sensitivity (report only): K9 by domestic capital account as built (base) and with one rule changed: equity issuer control, no insurers' revaluation strip, D3 remainder all to K_NFPU",
+      "ref": "K9",
+      "rows": 70
+    },
+    "s4_fsf_dual_reports": {
+      "decimals": 6,
+      "description": "FSF 2023-24 holder vs issuer reports by instrument and sector pair, the control side and the value chosen (plan s.2.6)",
+      "ref": "S4",
+      "rows": 1052
+    },
+    "s4_fwtw_fsf": {
+      "decimals": 6,
+      "description": "RBI FSF from-whom-to-whom (St 6.13.a stocks at 2024-03-31, 6.13.b 2023-24 flows), as published",
+      "ref": "S4",
+      "rows": 360
+    },
+    "s4_fwtw_sam": {
+      "decimals": 6,
+      "description": "Who funds whom in the SAM (holder x issuer x instrument), Rs crore, 2023-24 flows",
+      "ref": "S4",
+      "rows": 195
+    },
+    "s4_hdfc_merger_memo": {
+      "decimals": 6,
+      "description": "HDFC merger memo: household loans by lender (published and SAM boundary) and the merger's effect on SCB loans and deposits",
+      "ref": "S4",
+      "rows": 18
+    },
+    "s5_hh_wealth": {
+      "decimals": 6,
+      "description": "Household financial assets and institutional debt by group (T52(b) 2024-03-31 x AIDIS keys); physical assets and non-institutional debt at AIDIS 2018 levels, not rebased",
+      "ref": "S5",
+      "rows": 40
+    }
+  },
+  "warnings": 0,
+  "year": "2023-24"
+}

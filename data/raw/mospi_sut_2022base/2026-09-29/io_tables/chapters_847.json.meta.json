@@ -1,0 +1,37 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 11962,
+  "content_type": "application/json; charset=utf-8",
+  "final_url": "https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data",
+  "key": "mospi_sut_2022base/chapters_847.json",
+  "method": "POST",
+  "name": "chapters_847.json",
+  "redirects": [],
+  "request_body": {
+    "publication_id": "847"
+  },
+  "request_headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Content-Type": "application/json",
+    "Origin": "https://www.mospi.gov.in",
+    "Referer": "https://www.mospi.gov.in/publications-reports/innerpage/847",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "11962",
+    "content-type": "application/json; charset=utf-8",
+    "etag": "W/\"2eba-QBwNRb8MkvLMpd59XKYHmjcNoZI\"",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:20:29Z",
+  "sha256": "05f1894e52fee95191f9c8b915d89f32229c1f9dacb633b9b9821b2033dee3e3",
+  "source_id": "mospi_sut_2022base",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data"
+}

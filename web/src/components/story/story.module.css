@@ -1,0 +1,341 @@
+/* Stories (U5). Colours only from tokens (src/styles/tokens.css). */
+
+/* ---------- story cards ---------- */
+.cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.card {
+  margin: 0;
+}
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 44px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+.cardLink:hover {
+  border-color: var(--border-strong);
+}
+.cardLink:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.cardTitle {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.3;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.cardBlurb {
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+/* ---------- player ---------- */
+.player {
+  display: block;
+}
+.help {
+  margin: 4px 0 12px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+.notice {
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  border-left: 4px solid var(--st-estimated);
+  background: var(--surface-2);
+  color: var(--text);
+}
+.progress ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.progressItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.86rem;
+}
+.progressItem[aria-current="step"] {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+  font-weight: 600;
+}
+.progressItem:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.progressNo {
+  display: inline-grid;
+  place-items: center;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  font-variant-numeric: tabular-nums;
+}
+/* The server HTML already has the player's layout (step 1 current), so these rules apply from the
+   first paint; without JavaScript a <noscript> style in StoryPlayer shows every title. */
+@media (max-width: 639.98px) {
+  .progressText {
+    display: none;
+  }
+  .progressItem[aria-current="step"] .progressText {
+    display: inline;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 960px) {
+  .grid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    align-items: start;
+  }
+  .mapCol {
+    position: sticky;
+    top: 12px;
+  }
+}
+.text {
+  min-width: 0;
+}
+.mapCol {
+  min-width: 0;
+}
+.mapBox {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  overflow: hidden;
+  /* the controlled map's height (StoryPlayer DESKTOP_MAP_HEIGHT / PHONE_MAP_HEIGHT), reserved before it
+     mounts so hydration does not shift the page (V4-03) */
+  min-height: 560px;
+}
+@media (max-width: 639.98px) {
+  .mapBox {
+    min-height: 280px;
+  }
+}
+
+.step {
+  margin: 0 0 20px;
+}
+.step p {
+  line-height: 1.6;
+}
+.stepHeading {
+  scroll-margin-top: 12px;
+  margin: 8px 0 8px;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+.stepHeading:focus {
+  outline: none;
+}
+.stepHeading:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.stepNo {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fig {
+  white-space: normal;
+}
+.fig > :global(.num) {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin: 8px 0 16px;
+}
+.figTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+.figTable caption {
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+.figTable th,
+.figTable td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.figTable thead th {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.figTable tbody th {
+  font-weight: 400;
+}
+.figValue {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+.right {
+  text-align: right !important;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.flows {
+  margin-top: 12px;
+}
+.flowsHeading {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+.flowList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.flowItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  min-height: 44px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.flowName {
+  flex: 1 1 12rem;
+}
+.flowValues {
+  font-variant-numeric: tabular-nums;
+}
+.muted {
+  color: var(--text-muted);
+  font-size: 0.86rem;
+}
+
+.notes {
+  margin: 8px 0 16px;
+}
+.notesList {
+  margin: 8px 0;
+}
+.noteItem {
+  margin: 0 0 10px;
+}
+.noteItem dt {
+  font-weight: 600;
+}
+.noteItem dd {
+  margin: 2px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.9rem;
+}
+.flag {
+  color: var(--text-muted);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 16px 0 8px;
+}
+.navBtn {
+  /* room for the focus ring when StoryPlayer scrolls the focused control into view (V3-06) */
+  scroll-margin: 12px;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font: inherit;
+  cursor: pointer;
+}
+.navBtn[aria-disabled="true"] {
+  background: var(--surface-2);
+  color: var(--text-muted);
+  border-color: var(--border);
+  cursor: default;
+}
+.navBtn:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.navPos {
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- pages ---------- */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.lede {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  max-width: 48rem;
+}
+.back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}

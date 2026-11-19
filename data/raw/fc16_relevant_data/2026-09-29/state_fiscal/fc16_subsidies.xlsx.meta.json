@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 39108,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/Sector%20wise%20Subsidies%20and%20Transfers.xlsx",
+  "key": "fc16_relevant_data/fc16_subsidies.xlsx",
+  "method": "GET",
+  "name": "fc16_subsidies.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://fincomindia.nic.in/commission-reports-sixteenth",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "39108",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "\"69841ce6-98c4\"",
+    "last-modified": "Thu, 05 Feb 2026 04:30:30 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:19:00Z",
+  "sha256": "88a2d8df60736611f9e0c850002f68767a132f4e03e4a948d7275f322a6dbf0d",
+  "source_id": "fc16_relevant_data",
+  "status": 200,
+  "url": "https://fincomindia.nic.in/asset/doc/commission-reports/16th-FC/relevant-data/Sector%20wise%20Subsidies%20and%20Transfers.xlsx"
+}

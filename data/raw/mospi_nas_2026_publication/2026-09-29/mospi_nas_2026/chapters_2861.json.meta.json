@@ -1,0 +1,36 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 30891,
+  "content_type": "application/json; charset=utf-8",
+  "final_url": "https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data",
+  "key": "mospi_nas_2026_publication/chapters_2861.json",
+  "method": "POST",
+  "name": "chapters_2861.json",
+  "request_body": {
+    "publication_id": 2861
+  },
+  "request_headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Content-Type": "application/json",
+    "Origin": "https://www.mospi.gov.in",
+    "Referer": "https://mospi.gov.in/publications-reports/innerpage/2861",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "30891",
+    "content-type": "application/json; charset=utf-8",
+    "etag": "W/\"78ab-JrDUUrCUOXGgCdP7D26vihzEbt0\"",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T09:15:33Z",
+  "sha256": "4a9922a79f6fd863a417b4a2671aa28845986ecb38bba169e7f0c383af943491",
+  "source_id": "mospi_nas_2026_publication",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/api/publications-reports/get-web-chapter-data"
+}

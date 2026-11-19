@@ -1,0 +1,88 @@
+{/* Story 3 (U5). No numbers in this file: every figure is a <StoryFig> or <FigList> binding to stories/deficit-funding.json. */}
+
+<Step id="saving">
+
+Start with the government's day-to-day account: what it earns from taxes and other current income, against what it spends on salaries, pensions, interest, subsidies and transfers. What is left is its **gross saving**.
+
+In 2023-24 the Centre's gross saving was <StoryFig id="saving_cen" />. It is negative: the Centre **dissaved**, spending more on current items than its current income. Part of the reason is that the Centre passes a large share of its taxes to the States, which counts as its current spending. The States together saved <StoryFig id="saving_sta" />.
+
+For general government as a whole (the Centre and the States together) gross saving was <StoryFig id="saving_gg" />, or <StoryFig id="saving_gg_gdp" />. That total is published; how it divides between the Centre and the States is estimated from their budget accounts and was then adjusted when the accounts were balanced.
+
+</Step>
+
+<Step id="invest">
+
+Governments also invest: roads, buildings, defence equipment and computer systems. The Centre's investment (fixed capital formation and changes in stocks) was <StoryFig id="invest_cen" /> and the States' <StoryFig id="invest_sta" />.
+
+The Railways and the Posts are not in these figures. The national accounts treat them as public enterprises, so their investment is counted with that of public sector companies, and the money the Centre puts into them appears in the next steps as a financial asset, not as government investment. That is one reason these figures are smaller than the capital expenditure in the Budget.
+
+They also give **capital transfers**, money that others use to build assets. The Centre's include its grants to the States for creating capital assets: <StoryFig id="captr_cen" /> in all. The States paid <StoryFig id="captr_sta" />.
+
+</Step>
+
+<Step id="gap">
+
+Put the two steps together. When saving, plus capital transfers received, falls short of investment plus capital transfers paid, the gap has to be borrowed. In the national accounts this gap is called **net borrowing**. A government with money to spare would show the opposite, **net lending**. In 2023-24 both the Centre and the States were net borrowers:
+
+<FigList ids="nb_cen nb_sta nb_gg" caption="gap" />
+
+Net borrowing by the Centre came to <StoryFig id="nb_cen_gdp" />, by the States <StoryFig id="nb_sta_gdp" />, and by general government <StoryFig id="nb_gg_gdp" />.
+
+This is **not the Budget's fiscal deficit**. The fiscal deficit counts loans that a government gives, and shares it buys, as spending; here they are financial assets, the next step. The Budget also counts mostly in cash, while the national accounts follow their own rules on timing and on what belongs to government. So the two numbers differ, and both are correct for what they measure.
+
+The accounts check this gap from the other side, too: it must equal the debts the government took on minus the financial assets it acquired. Here the two sides agree.
+
+</Step>
+
+<Step id="borrow">
+
+How was the gap financed? These are the debts each government took on during the year, and the financial assets it acquired.
+
+<FigList ids="liab_cen liab_cen_gsec liab_cen_ssav liab_cen_other" caption="borrowCentre" />
+
+<FigList ids="assets_cen assets_cen_eqty assets_cen_loan assets_cen_k9_net assets_cen_rest" caption="assetsCentre" />
+
+The Centre borrowed mainly by selling government securities (bonds and treasury bills) and through small savings schemes such as the Public Provident Fund and post office deposits, whose money is lent to the Centre. It also acquired shares and other equity, which in these accounts covers the capital it puts into enterprises it owns, such as the Railways and public sector companies, not only purchases of listed shares. And it lent to others.
+
+<FigList ids="liab_sta liab_sta_gsec liab_sta_loan liab_sta_other" caption="borrowStates" />
+
+<FigList ids="assets_sta assets_sta_depo assets_sta_k9 assets_sta_rest" caption="assetsStates" />
+
+The States borrowed mainly through State Development Loans, their own bonds. Their net loans were negative partly because they repaid the GST back-to-back loans out of the compensation cess (see the GST story).
+
+Two things need a word, because they come from fitting two official sources together:
+
+- **The reconciliation residual** is the difference between net borrowing as the national accounts measure it and what the financial statistics record for the same government. Both sources are official; they do not quite agree, and this line shows by how much.
+- **The Reserve Bank's surplus.** The map counts as the Centre's income the surplus the Reserve Bank actually paid it in cash during the year. The financial statistics also record what the Reserve Bank owes the Centre: its surplus for 2023-24 was paid only the following year and was larger than the one paid during the year, so the amount owed rose by <StoryFig id="assets_cen_k9b" />. With income counted in cash, that rise has no matching income, so the accounts net it against an equal amount inside the Centre's reconciliation residual. The Centre's residual line above shows the two together.
+
+</Step>
+
+<Step id="buyers">
+
+Who bought the government securities? The accounts pool the Centre's bonds and the States' bonds in one market, so they show who bought **Centre and State securities together**, not who bought the Centre's paper alone. Net issuance was <StoryFig id="gsec_issued" />.
+
+<FigList ids="gsec_bank gsec_insp gsec_row gsec_nbfc_mf gsec_hh gsec_rbi gsec_others" caption="buyers" />
+
+Banks bought the most, <StoryFig id="gsec_bank_per100" /> of every hundred rupees issued. Insurance companies and provident and pension funds came close behind, with <StoryFig id="gsec_insp_per100" />. Foreign investors bought <StoryFig id="gsec_row_per100" />. Households bought only <StoryFig id="gsec_hh_per100" /> directly. The Reserve Bank was a **net seller** over the year, so its line is negative and the buyers' shares add up to more than a hundred.
+
+How much each type of institution bought is estimated from the financial statistics and then adjusted when the accounts were balanced. The households' direct purchases, <StoryFig id="gsec_hh" /> in the table, are a published figure. Each share per hundred rupees carries the label of its own amount; it also depends on total issuance, which was set when the accounts were balanced, as the list of how these figures were made says.
+
+</Step>
+
+<Step id="households">
+
+Where did the banks and insurers get the money? Largely from households. In 2023-24 households put <StoryFig id="hhfin_depo" /> into bank and other deposits, <StoryFig id="hhfin_inpe" /> into insurance, provident and pension funds, and <StoryFig id="hhfin_ssav" /> into small savings schemes.
+
+Read this as **pooled, not traced**. The accounts route money through markets for each kind of financial instrument, not from one saver to one borrower. They show that households put money into deposits and pension funds in the same year that banks and pension funds bought government bonds. They do not show that a particular family's deposit paid for a particular bond.
+
+</Step>
+
+<Step id="cost">
+
+Borrowing has a cost. The Centre paid <StoryFig id="int_cen" /> in interest in 2023-24 (<StoryFig id="int_cen_gdp" />), up from <StoryFig id="int_cen_prev" /> the year before. The States paid <StoryFig id="int_sta" /> (<StoryFig id="int_sta_gdp" />).
+
+These are the interest figures as published in the government accounts. The Centre's series has only two years so far, so it is shown as two values rather than as a trend. The balanced accounts use the national-accounts definition of interest, which differs slightly from the cash figure; the Map's panel for this series explains the difference.
+
+Interest is paid to the same institutions that lend: banks, insurers, pension funds, the Reserve Bank and households holding small savings. On the map it shows as flows from the Centre and the States to banks and financial institutions and to households.
+
+</Step>

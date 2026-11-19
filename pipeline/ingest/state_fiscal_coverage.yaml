@@ -1,0 +1,175 @@
+# Gap-map coverage declared by the state_fiscal unit (format: pipeline/core/coverage.py).
+# extent: full = this dataset fills the cell by itself; partial = part of it; control_total = the
+# total the cell must sum to (the cell's detail comes from another unit or from Phase 2 estimation).
+# Default period: the SAM reference year 2023-24. KFI covers 28 States (no UTs); RBI Appendices I-IV
+# cover All States and UTs with legislature (Delhi, Puducherry, J&K).
+unit: state_fiscal
+entries:
+- ref: T2
+  dataset: state_fiscal_rbi_sf_appendices
+  series_ids:
+  - app1.total_revenue.i.a.3.vii-state_goods_and_services_tax.in.all_states_uts.actuals
+  - app1.total_revenue.i.a.3.i.b-state_sales_tax_vat.in.all_states_uts.actuals
+  - app1.total_revenue.i.a.3.i-sales_tax.in.all_states_uts.actuals
+  - app1.total_revenue.i.a.3.ii-state_excise.in.all_states_uts.actuals
+  extent: full
+  note: State product-tax receipts (SGST post-settlement, sales tax/VAT, State excise), 2023-24 Accounts, all States and UTs with legislature (RBI State Finances 2025-26 Appendix I).
+- ref: T2
+  dataset: state_fiscal_fc16_kfi
+  series_ids:
+  - kfi.a_1_1_2-state_goods_and_service_tax.in.all_states_28
+  - kfi.a_1_1_1-taxes_on_sales_trade_etc.in.all_states_28
+  - kfi.a_1_1_3-state_excise.in.all_states_28
+  extent: partial
+  note: The gap map's primary figures (SGST 8,00,112; VAT 3,97,467; excise 2,49,133), 28 States only, from the Finance Accounts.
+- ref: T2x
+  dataset: state_fiscal_rbi_sf_appendices
+  series_ids:
+  - app1.total_revenue.i.a.3.vii-state_goods_and_services_tax.in.all_states_uts.actuals
+  - app1.total_revenue.i.a.3.i-sales_tax.in.all_states_uts.actuals
+  - app1.total_revenue.i.a.3.ii-state_excise.in.all_states_uts.actuals
+  extent: control_total
+  note: Cash totals that the accrual conversion (Phase 2) starts from.
+- ref: P7a
+  dataset: state_fiscal_fc16_kfi
+  series_ids:
+  - kfi.a_1_1_2-state_goods_and_service_tax.in.all_states_28
+  - kfi.a_1_1_1-taxes_on_sales_trade_etc.in.all_states_28
+  - kfi.a_1_1_3-state_excise.in.all_states_28
+  - kfi.a_1_1_4-taxes_on_vehicles.in.all_states_28
+  extent: control_total
+  note: Row targets for T_SGST, T_SVAT, T_SEXC (and vehicle tax, class pending NAD) on the gap-map basis.
+- ref: T2b
+  dataset: state_fiscal_fc16_kfi
+  series_ids: [kfi.a_1_4_a-compensation_for_loss_of_revenue_for_gst.in.all_states_28]
+  extent: partial
+  note: GST compensation grants as received by 28 States (43,788); the cess and loan-recovery side comes from the Union unit.
+- ref: T2b
+  dataset: state_fiscal_rbi_sf_appendices
+  series_ids: [app1.total_revenue.ii.d.7.gst_compensation_2-gst_compensation_2.in.all_states_uts.actuals]
+  extent: partial
+  note: GST compensation (2) within 'Other Grants', all States and UTs (45,464).
+- ref: R1
+  dataset: state_fiscal_fc16_kfi
+  series_ids: [kfi.a_1_3-state_s_share_in_union_taxes_and_duties.in.all_states_28]
+  extent: full
+  note: State side of tax devolution, 28 States, 11,29,397 (gap map primary). All States and UTs 11,29,761 is in Appendix I and App. Table 2.
+- ref: R1
+  dataset: state_fiscal_fc16_transfers
+  series_ids: [tsm.states_share.actuals]
+  extent: partial
+  note: Union-side devolution as compiled by FC16 from Union Budget Statement 18 (11,29,494).
+- ref: R2
+  dataset: state_fiscal_fc16_kfi
+  series_ids: [kfi.a_1_4-grants_in_aid_from_goi.in.all_states_28]
+  extent: partial
+  note: State-side grants received (4,72,466, includes GST compensation grants per the KFI note). Union Statement 18 grants (7,39,260) are in state_fiscal_fc16_transfers tsm.total_grants; the gap (H9) is logged.
+- ref: R2
+  dataset: state_fiscal_rbi_sf_app_tables
+  series_ids: [at2.ii-grants_from_the_centre.actuals, at2.ii.3-centrally_sponsored_schemes.actuals, at2.ii.5-finance_commission_grants.actuals, at2.ii.7-other_grants.actuals]
+  extent: partial
+  note: Grants from the Centre by type, all States and UTs (5,27,931), from State budgets.
+- ref: R3
+  dataset: state_fiscal_fc16_kfi
+  series_ids: [kfi.b_1_a-interest_payments.in.all_states_28]
+  extent: partial
+  note: States' interest payments, cash (4,94,911, 28 States). The Union part comes from union_fiscal.
+- ref: R3
+  dataset: state_fiscal_rbi_sf_statements
+  series_ids: [st13.interest_payments_gross.in.all_states_uts.actuals]
+  extent: partial
+  note: Gross interest, all States and UTs (5,07,175); interest by creditor type is in Appendix II C.2.
+- ref: R3b
+  dataset: state_fiscal_rbi_sf_appendices
+  series_ids:
+  - app2.total_expenditure.ii.c.2-interest_payments.in.all_states_uts.actuals
+  - app2.total_expenditure.ii.c.2.i-interest_on_loans_from_the_centre.in.all_states_uts.actuals
+  - app2.total_expenditure.ii.c.2.ii.a-interest_on_market_loans.in.all_states_uts.actuals
+  - app2.total_expenditure.ii.c.2.ii.b-interest_on_nssf.in.all_states_uts.actuals
+  extent: control_total
+  note: Cash interest by instrument, the starting point of the accrual conversion.
+- ref: R7
+  dataset: state_fiscal_rbi_sf_appendices
+  series_ids: [app1.total_revenue.ii.c.2-dividends_and_profits.in.all_states_uts.actuals]
+  extent: partial
+  note: States' dividends and profits (6,915); the Union side comes from union_fiscal.
+- ref: R9
+  dataset: state_fiscal_fc16_kfi
+  series_ids: [kfi.b_1_b-pension_and_other_retirement_benefits.in.all_states_28]
+  extent: partial
+  note: States' pensions and other retirement benefits (4,94,939, gap map primary); Union pensions come from union_fiscal.
+- ref: R9b
+  dataset: state_fiscal_fc16_kfi
+  series_ids: [kfi.b_1_b-pension_and_other_retirement_benefits.in.all_states_28]
+  extent: control_total
+  note: States' pensions paid, the base of the imputed D612 for States still on OPS.
+- ref: R10
+  dataset: state_fiscal_fc16_subsidies
+  series_ids: [sub.cash_transfers.in-wb.gg_state, sub.social_security.in-wb.gg_state]
+  extent: partial
+  note: State cash-transfer and social-security schemes by State (21 States only); the full scheme list is Phase 2.
+- ref: R16
+  dataset: state_fiscal_rbi_sf_appendices
+  series_ids:
+  - app1.total_revenue.i.a.3.iii-taxes_on_vehicles.in.all_states_uts.actuals
+  - app1.total_revenue.ii.c-own_non_tax_revenue.in.all_states_uts.actuals
+  extent: partial
+  note: Vehicle tax and States' own non-tax revenue (fees and user charges by function) as the pool for the household part.
+- ref: R18
+  dataset: state_fiscal_rbi_sf_statements
+  series_ids: [st36.subsidies.in.all_states_uts.actuals]
+  extent: partial
+  note: "PARTIAL TOTAL: RBI Statement 36 'All States and UTs' subsidies (3,29,610 in 2023-24) sum only the reporting States; AP, Arunachal, Goa, J&K, Maharashtra and Uttarakhand print '-' in 2023-24 (Maharashtra alone was 43,158 in 2022-23), so it understates by about 60,000 crore and is not comparable across years (state_fiscal-19). Phase 2 fills the gaps (FC16 sector subsidies, Finance Accounts). Sector split in state_fiscal_fc16_subsidies."
+- ref: P9a
+  dataset: state_fiscal_rbi_sf_statements
+  series_ids: [st36.subsidies.in.all_states_uts.actuals]
+  extent: partial
+  note: "PARTIAL TOTAL: States' subsidies, sum of the reporting States only (2023-24 omits AP, Arunachal, Goa, J&K, Maharashtra, Uttarakhand; about 60,000 crore short); see state_fiscal-19."
+- ref: P9a
+  dataset: state_fiscal_fc16_subsidies
+  series_ids: [sub.power.in-up.gg_state, sub.food.in-up.gg_state, sub.power.in.gg_centre]
+  extent: partial
+  note: Sector split (agriculture, power, food, ...) for 21 States and the Union.
+- ref: P10a
+  dataset: state_fiscal_fc16_kfi
+  series_ids:
+  - kfi.a_1_1_5-stamps_and_registration_fees.in.all_states_28
+  - kfi.a_1_1_6-land_revenue.in.all_states_28
+  extent: partial
+  note: States' production taxes (stamps 2,20,289; land revenue); professional tax and property tax are in Appendix I.
+- ref: C2a
+  dataset: state_fiscal_rbi_sf_appendices
+  series_ids:
+  - app2.total_expenditure-total_expenditure.in.all_states_uts.actuals
+  - app2.total_expenditure.i.a-social_services.in.all_states_uts.actuals
+  - app2.total_expenditure.i.b-economic_services.in.all_states_uts.actuals
+  extent: control_total
+  note: States' revenue expenditure by function (cash) before conversion to NAS GFCE; salaries in KFI b_1_c; local bodies in ULB/PRI datasets.
+- ref: I1a
+  dataset: state_fiscal_rbi_sf_appendices
+  series_ids: [app4.total_capital_disbursements.i-total_capital_outlay.in.all_states_uts.actuals]
+  extent: control_total
+  note: States' capital outlay (7,47,306), the Centre-vs-States GG capital-formation input.
+- ref: K3a
+  dataset: state_fiscal_fc16_kfi
+  series_ids: [kfi.d_1-revenue_deficit_surplus_a_1_b_1.in.all_states_28]
+  extent: partial
+  note: States' revenue balance (cash, -1,03,369); local bodies from the ULB and PRI datasets; NAS conversion is Phase 2.
+- ref: K3a
+  dataset: state_fiscal_ulb_cityfinance
+  series_ids: [ulb.total_revenues.in.all_ulbs_in_dump, ulb.total_revenue_expenditure.in.all_ulbs_in_dump]
+  extent: partial
+  note: Urban local bodies' revenue account (4,620 ULBs, summed; incomplete coverage).
+- ref: K8e
+  dataset: state_fiscal_fc16_kfi
+  series_ids: [kfi.c_1_2_a-loan_for_gst_compensation_cum.in.all_states_28]
+  period: '2024-03-31'
+  extent: partial
+  note: "Cumulative GST back-to-back loans received by 28 States (KFI C.1.2.a '(cum)', 2,49,191 at end-March 2022, 2023 and 2024; not net of repayment, so not the outstanding balance: KFI itself deducts it, C.3.a = C.3 - C.1.2.a). The 78,104 recovery flow in 2023-24 comes from the Union unit."
+- ref: S9
+  dataset: state_fiscal_rbi_sf_appendices
+  series_ids:
+  - app3.total_capital_receipts.vi.1-state_provident_funds.in.all_states_uts.actuals
+  - app4.total_capital_disbursements.vii.1-state_provident_funds.in.all_states_uts.actuals
+  extent: partial
+  note: "Gross State GPF flows, 2023-24 Accounts, all States and UTs with legislature (RBI State Finances 2025-26; State budget documents, J&K from CAG, provisional): State Provident Funds receipts 1,03,892.37 crore (Appendix III item VI.1, sheet AP_3_T5) and disbursements 91,398.49 crore (Appendix IV item VII.1, sheet 4APP_3), Rs lakh / 100. These are gross public-account lines; only Appendix III's 'Total capital receipts (includes public accounts on a net basis)' nets them. Caveats: RBI's footnote says 'State Provident Funds also includes other savings deposits'; the file does not say whether receipts include interest credited to subscribers (the States' interest cost is printed only jointly with small savings, Appendix II C.2.iii, 54,183); item VI.2/VII.2 'Others' (1,58,757.58 / 1,50,632.93) is not identified and is not claimed for S9 (state_fiscal-25)."

@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 3465607,
+  "content_type": "application/pdf",
+  "final_url": "https://www.mospi.gov.in/sites/default/files/publication_reports/Factsheet_of_ASUSE_2023_24.pdf",
+  "key": "mospi_asuse/asuse_2023_24_factsheet.pdf",
+  "method": "GET",
+  "name": "asuse_2023_24_factsheet.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "3465607",
+    "content-type": "application/pdf",
+    "etag": "\"676a8b80-34e187\"",
+    "last-modified": "Tue, 24 Dec 2024 10:22:56 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:21:29Z",
+  "sha256": "5e288475c530831207b7a29030368aeb31dab6696af6873b2f37b5639080eb4d",
+  "source_id": "mospi_asuse",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/sites/default/files/publication_reports/Factsheet_of_ASUSE_2023_24.pdf"
+}

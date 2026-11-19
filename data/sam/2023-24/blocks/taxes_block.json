@@ -1,0 +1,131 @@
+{
+  "block": "taxes",
+  "checks": {
+    "failed": [],
+    "n": 16
+  },
+  "concordances_read": {
+    "io_tables_sut_product_to_sam34": "8b534e018e28cb7fa5d74c81e0fd498eae68266e03aa26653c391eb035370a23"
+  },
+  "constraints": 23,
+  "datasets_read": [
+    "finsector_markets_irdai_life",
+    "finsector_markets_irdai_nonlife",
+    "io_tables_ifpri_2223_datapaper",
+    "io_tables_sut_supply",
+    "io_tables_sut_use",
+    "mospi_nas_2026_oldbase_soa_s2_1",
+    "mospi_nas_2026_oldbase_soa_s2_2",
+    "mospi_nas_2026_oldbase_soa_s3_1",
+    "mospi_nas_2026_oldbase_soa_s3_2",
+    "mospi_nas_2026_oldbase_soa_s5_0",
+    "mospi_nas_2026_s1_1",
+    "mospi_nas_2026_s4_2",
+    "mospi_nas_2026_s7_1",
+    "rbi_banking_corporate_rtp_banks",
+    "rbi_banking_corporate_rtp_coop",
+    "rbi_banking_corporate_rtp_nbfi",
+    "rbi_financial_accounts_fsf_balance_sheets",
+    "state_fiscal_fc16_state_accounts",
+    "state_fiscal_fc16_subsidies",
+    "state_fiscal_rbi_sf_appendices",
+    "state_fiscal_ulb_cityfinance",
+    "union_fiscal_exp_profile",
+    "union_fiscal_fa_expenditure",
+    "union_fiscal_fa_receipts",
+    "union_fiscal_pib_gst",
+    "union_fiscal_ppac_exchequer",
+    "union_fiscal_rb_receipts"
+  ],
+  "dependency_hashes": {
+    "factors": {
+      "constraints": "33b7e0beaa82d469d451d8568301a226e625a0aea1bd4db7efc0621f65742d8f",
+      "entries": "104bdbbdbdd9a1c80a4c7e3f9efbef56626f6bf89367958da80ca503654ac374",
+      "provenance": "3e19f602fcb504fc589e225f8447fdda4c597688bb69e96b86f9c06b8a7f3ea4"
+    },
+    "households": {
+      "constraints": "d7934f138cf654b2f21979d311b55b7961c10ff87e38de6b5303451362e86430",
+      "entries": "d3cd60ede26b86b6b17224652a27c1eb3e9c1b7544688d6efba0224e98f42d0e",
+      "provenance": "d2e8beab4f053055fbb9981ecc5b83a78f10f9b093b8fb701b8cdc09353b39dc"
+    },
+    "production": {
+      "constraints": "b0a9b2675e64f33e3b3483d4f82ae4633b7be0c9dfa1673f8de82f4472257281",
+      "entries": "f6f2a4c4b428bc234ec83c20c5c5e754d599497cbc9ec463de0f668a0993ca21",
+      "provenance": "5c8f496f92c629e03d161c981730c5d224a54275caad0c6303df0eb8cba6730c"
+    }
+  },
+  "depends": [
+    "production",
+    "households",
+    "factors"
+  ],
+  "entries": 181,
+  "refs": [
+    "P7a",
+    "P7b",
+    "P9a",
+    "P10a",
+    "T1",
+    "T1a",
+    "T2",
+    "T2x",
+    "T3",
+    "T3a",
+    "T4",
+    "T4a",
+    "S7"
+  ],
+  "refs_not_implemented": [],
+  "satellites": {
+    "direct_tax_split": {
+      "decimals": 9,
+      "description": "Direct-tax split: T4a cells, FC bottom-up provisions, T3 household/quasi-corp. parts (Rs crore; shares as ratios)",
+      "ref": "T4a",
+      "rows": 50
+    },
+    "p10a_items": {
+      "decimals": 6,
+      "description": "Gross production taxes and subsidies by government and item",
+      "ref": "P10a",
+      "rows": 13
+    },
+    "p7a_precheck": {
+      "decimals": 9,
+      "description": "P7a row/column targets, pre-check, final accrual/cash ratio by type, prior and final items",
+      "ref": "P7a",
+      "rows": 403
+    },
+    "p7b_tax_by_use": {
+      "decimals": 9,
+      "description": "Product taxes by type x commodity x use (pre-balancing P7a)",
+      "ref": "P7b",
+      "rows": 1750
+    },
+    "p9a_by_commodity": {
+      "decimals": 6,
+      "description": "SUT product subsidies by commodity and paying government",
+      "ref": "P9a",
+      "rows": 27
+    },
+    "s7_igst_settlement": {
+      "decimals": 6,
+      "description": "IGST settlement memo (annual FA St 8; PIB April-May 2023)",
+      "ref": "S7",
+      "rows": 49
+    },
+    "t3a_sensitivity": {
+      "decimals": 9,
+      "description": "T3a key shares at Rs 5, 7 and 10 lakh thresholds; fractile incomes",
+      "ref": "T3a",
+      "rows": 55
+    },
+    "tax_classification": {
+      "decimals": 6,
+      "description": "Where each contested tax/subsidy head is booked (booked once)",
+      "ref": "T1a",
+      "rows": 23
+    }
+  },
+  "warnings": 0,
+  "year": "2023-24"
+}

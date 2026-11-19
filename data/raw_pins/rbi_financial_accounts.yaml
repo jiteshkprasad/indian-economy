@@ -1,0 +1,116 @@
+# Pinned raw files for one ingest unit. Written by `python -m pipeline fetch`; do not edit by hand.
+# key '<source_id>/<name>' -> the exact bytes (sha256) every build uses. `history` keeps superseded pins.
+pins:
+  dea_public_debt_reports/dea_qr_jan_mar_2023.pdf:
+    body_sha256: null
+    bytes: 1184142
+    method: GET
+    path: data/raw/dea_public_debt_reports/2026-09-29/rbi_financial_accounts/dea_qr_jan_mar_2023.pdf
+    retrieved_at: '2026-09-29T10:23:07Z'
+    sha256: ac10a15be8a1d89840cc6ad71e49844f94342b4404229bee289bda024d25c2b2
+    url: https://dea.gov.in/files/public_debt_management_documents/Quarterly_Report_on_Public_Debt_Management_for_the_quarter_January_March_2023.pdf
+  dea_public_debt_reports/dea_qr_jan_mar_2024.pdf:
+    body_sha256: null
+    bytes: 827092
+    method: GET
+    path: data/raw/dea_public_debt_reports/2026-09-29/rbi_financial_accounts/dea_qr_jan_mar_2024.pdf
+    retrieved_at: '2026-09-29T10:23:09Z'
+    sha256: 5a2362d9aa2941d3c881a966421db210f0351d7b659273aa08afc77a7337859f
+    url: https://dea.gov.in/files/public_debt_management_documents/Quarterly%20Report%20on%20Public%20Debt%20Management%20for%20the%20quarter%20January-March%202024.pdf
+  dea_public_debt_reports/dea_status_paper_2023_24.pdf:
+    body_sha256: null
+    bytes: 6203117
+    method: GET
+    path: data/raw/dea_public_debt_reports/2026-09-29/rbi_financial_accounts/dea_status_paper_2023_24.pdf
+    retrieved_at: '2026-09-29T10:23:12Z'
+    sha256: c5264e9db4f76979a0af7a2938b7f2dedd3de12b7e497e57e837216912fe9b5a
+    url: https://dea.gov.in/files/public_debt_management_documents/Status%20Paper%20on%20Government%20Debt%20for%20%202023-24.pdf
+  rbi_fsf_fof/FSF2023-24_21012026.xlsx:
+    body_sha256: null
+    bytes: 3224680
+    method: GET
+    path: data/raw/rbi_fsf_fof/2026-09-29/rbi_financial_accounts/FSF2023-24_21012026.xlsx
+    retrieved_at: '2026-09-29T10:23:15Z'
+    sha256: 3de9013dd37ef78dddd724f908ba89b5d80357494a0c34d99b8524b083bf3a1a
+    url: https://rbidocs.rbi.org.in/rdocs/content/docs/FSF2023-24_21012026.xlsx
+  rbi_fsf_fof/fsf_2023_24_article.html:
+    body_sha256: null
+    bytes: 225625
+    method: GET
+    path: data/raw/rbi_fsf_fof/2026-09-29/rbi_financial_accounts/fsf_2023_24_article.html
+    retrieved_at: '2026-09-29T10:23:06Z'
+    sha256: 9b98dcb097f49a383450aeb71cdeef65edad1de4ccc4f9c28c321103e305a693
+    url: https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23912
+  rbi_hbs/hbs_2025_26_listing.html:
+    body_sha256: null
+    bytes: 424772
+    method: GET
+    path: data/raw/rbi_hbs/2026-09-29/rbi_financial_accounts/hbs_2025_26_listing.html
+    retrieved_at: '2026-09-29T10:22:34Z'
+    sha256: af51ff9a5dc8c7585e0763d218bcd49a33382e5250a5ed7a93ecaa8e35617cef
+    url: https://www.rbi.org.in/Scripts/AnnualPublications.aspx?head=Handbook%20of%20Statistics%20on%20Indian%20Economy
+  rbi_hbs/hbs_t107.html:
+    body_sha256: null
+    bytes: 74250
+    method: GET
+    path: data/raw/rbi_hbs/2026-09-29/rbi_financial_accounts/hbs_t107.html
+    retrieved_at: '2026-09-29T10:22:58Z'
+    sha256: 5d251d44163f390e304920710fe9d8b4de4f8c009c0023d9de08cf68b80d7ce0
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23932
+  rbi_hbs/hbs_t109.html:
+    body_sha256: null
+    bytes: 75592
+    method: GET
+    path: data/raw/rbi_hbs/2026-09-29/rbi_financial_accounts/hbs_t109.html
+    retrieved_at: '2026-09-29T10:23:01Z'
+    sha256: 991e404112ccc4d1c5fc8c13edaca8c0f09ce96670b023bd676e7521c58b7715
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23934
+  rbi_hbs/hbs_t11.html:
+    body_sha256: null
+    bytes: 67999
+    method: GET
+    path: data/raw/rbi_hbs/2026-09-29/rbi_financial_accounts/hbs_t11.html
+    retrieved_at: '2026-09-29T10:22:37Z'
+    sha256: 01b16509348f811567a0f6277214187f9eb41f681089235ec5aac157e1bad0f8
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23836
+  rbi_hbs/hbs_t12.html:
+    body_sha256: null
+    bytes: 88975
+    method: GET
+    path: data/raw/rbi_hbs/2026-09-29/rbi_financial_accounts/hbs_t12.html
+    retrieved_at: '2026-09-29T10:22:50Z'
+    sha256: 7378fc0551bf2d871029bb5130b75d5e96da892966539dd3d639cb1ec8948089
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23837
+  rbi_hbs/hbs_t39.html:
+    body_sha256: null
+    bytes: 119717
+    method: GET
+    path: data/raw/rbi_hbs/2026-09-29/rbi_financial_accounts/hbs_t39.html
+    retrieved_at: '2026-09-29T10:22:53Z'
+    sha256: 5dca3b980131651590b57037d9454ca99e8f86ec6673be998985fa9e323939a0
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23864
+  rbi_hbs/hbs_t49.html:
+    body_sha256: null
+    bytes: 74331
+    method: GET
+    path: data/raw/rbi_hbs/2026-09-29/rbi_financial_accounts/hbs_t49.html
+    retrieved_at: '2026-09-29T10:22:56Z'
+    sha256: 58498c3e17a267df4cb98cc30cd2cc559ffc8f0e81a162548b26821bf00770bb
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23874
+  rbi_hh_fin_savings/bulletin_2026_09_t52a.pdf:
+    body_sha256: null
+    bytes: 104598
+    method: GET
+    path: data/raw/rbi_hh_fin_savings/2026-09-29/rbi_financial_accounts/bulletin_2026_09_t52a.pdf
+    retrieved_at: '2026-09-29T10:23:22Z'
+    sha256: 62ca27bd28f2e444fab8b60212dad6d30d5768bdefa72ee4b7c1ef4d8a9b41cb
+    url: https://rbidocs.rbi.org.in/rdocs/Bulletin/PDFs/52AT_BULL25092026004CFAF0BB3B4F779B3E0ADBC8826701.PDF
+  rbi_hh_fin_savings/bulletin_2026_09_t52b.pdf:
+    body_sha256: null
+    bytes: 102268
+    method: GET
+    path: data/raw/rbi_hh_fin_savings/2026-09-29/rbi_financial_accounts/bulletin_2026_09_t52b.pdf
+    retrieved_at: '2026-09-29T10:23:32Z'
+    sha256: fd69c8800f63e557ef500f045f8b9e5cd64b17686fbc53781dd03a9df63439fc
+    url: https://rbidocs.rbi.org.in/rdocs/Bulletin/PDFs/52BT_BULL25092026DDFCB0C318CF4A64BEC4E3E590FF1510.PDF
+unit: rbi_financial_accounts

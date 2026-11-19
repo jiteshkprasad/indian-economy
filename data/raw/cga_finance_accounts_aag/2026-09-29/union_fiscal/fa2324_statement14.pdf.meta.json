@@ -1,0 +1,34 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 505837,
+  "content_type": "application/pdf",
+  "final_url": "https://cga.gov.in//writereaddata/file/Fin20232024Statement14.pdf",
+  "key": "cga_finance_accounts_aag/fa2324_statement14.pdf",
+  "method": "GET",
+  "name": "fa2324_statement14.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://cga.nic.in/FinanceReport/Published/2023-2024.aspx",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "505837",
+    "content-type": "application/pdf",
+    "last-modified": "Tue, 24 Dec 2024 07:34:21 GMT"
+  },
+  "retrieved_at": "2026-09-29T14:33:39Z",
+  "sha256": "2f327b3ddf31f74c33f5bf2cc3e1c7e442c7899cf520d252fde8212f3a49335e",
+  "source_id": "cga_finance_accounts_aag",
+  "status": 200,
+  "url": "https://cga.gov.in//writereaddata/file/Fin20232024Statement14.pdf"
+}

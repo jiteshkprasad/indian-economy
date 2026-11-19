@@ -1,0 +1,36 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 4567,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://www.pfrda.org.in/documents/33652/202494/A5_sector-wise_contribution_in_tier.xlsx?v=1.80",
+  "key": "pfrda_nps_statistics/A5_sector-wise_contribution_in_tier.xlsx",
+  "method": "GET",
+  "name": "A5_sector-wise_contribution_in_tier.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.pfrda.org.in/research-publications/statistics/statistical-data",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-disposition": "attachment; filename=\"A5_sector-wise_contribution_in_tier.xlsx\"",
+    "content-length": "4567",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "last-modified": "Tue, 29 Sep 2026 01:18:00 GMT",
+    "server": "Apache"
+  },
+  "retrieved_at": "2026-09-29T10:19:52Z",
+  "sha256": "a7dfe76dfd3a1145da5d3c62311bedf10f36c503b4f44e2ca3878d6a403e8128",
+  "source_id": "pfrda_nps_statistics",
+  "status": 200,
+  "url": "https://www.pfrda.org.in/documents/33652/202494/A5_sector-wise_contribution_in_tier.xlsx?v=1.80"
+}

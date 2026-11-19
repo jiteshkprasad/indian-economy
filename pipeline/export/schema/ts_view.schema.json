@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "<v>/ts/view.json: the top-flows board: ribbons, internal flows and slot sizes (PLAN s.3.7.3).",
+  "properties": {
+    "coverage": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "internal": {
+      "additionalProperties": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "type": "object"
+    },
+    "ribbons": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "flow": {
+            "type": "string"
+          },
+          "from": {
+            "type": "string"
+          },
+          "reversed_text_key": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reversible": {
+            "type": "boolean"
+          },
+          "to": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "flow",
+          "from",
+          "to",
+          "reversible",
+          "reversed_text_key"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "slot_share": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "type": "object"
+    }
+  },
+  "required": [
+    "coverage",
+    "ribbons",
+    "internal",
+    "slot_share"
+  ],
+  "title": "TsView",
+  "type": "object"
+}

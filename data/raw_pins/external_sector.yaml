@@ -1,0 +1,364 @@
+# Pinned raw files for one ingest unit. Written by `python -m pipeline fetch`; do not edit by hand.
+# key '<source_id>/<name>' -> the exact bytes (sha256) every build uses. `history` keeps superseded pins.
+pins:
+  rbi_bop_quarterly/hbs2025_t196.html:
+    body_sha256: null
+    bytes: 147623
+    method: GET
+    path: data/raw/rbi_bop_quarterly/2026-09-29/external_sector/hbs2025_t196.html
+    retrieved_at: '2026-09-29T10:34:25Z'
+    sha256: 49de119b71b3656b967aef9f735cf89253bee581b21538112e4efb762f2d8a82
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23370
+  rbi_bop_quarterly/hbs2025_t197.html:
+    body_sha256: null
+    bytes: 149155
+    method: GET
+    path: data/raw/rbi_bop_quarterly/2026-09-29/external_sector/hbs2025_t197.html
+    retrieved_at: '2026-09-29T10:34:27Z'
+    sha256: 99df4a525f75718826504839d7aecee7a8b192e2a23c0f2716eedb6ed8c2f8d8
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23371
+  rbi_bop_quarterly/hbs2026_t197.html:
+    body_sha256: null
+    bytes: 147247
+    method: GET
+    path: data/raw/rbi_bop_quarterly/2026-09-29/external_sector/hbs2026_t197.html
+    retrieved_at: '2026-09-29T10:34:16Z'
+    sha256: 7e0d7bc1c60f36bedc842cac00447e02f3219a274951b42b46fac104969f0fc0
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=24022
+  rbi_bop_quarterly/hbs2026_t198.html:
+    body_sha256: null
+    bytes: 149300
+    method: GET
+    path: data/raw/rbi_bop_quarterly/2026-09-29/external_sector/hbs2026_t198.html
+    retrieved_at: '2026-09-29T10:34:22Z'
+    sha256: 45a87edf1301ec317f2e5119d13518b82de27b16525019ebd57f8aa546557fcb
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=24023
+  rbi_ecb_monthly/ecb_2023-04.html:
+    body_sha256: null
+    bytes: 118817
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2023-04.html
+    retrieved_at: '2026-09-29T10:36:46Z'
+    sha256: 0c3087f7a564ce9983006b1410828dacb510792228aea1389240d11f2375da9c
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=235
+  rbi_ecb_monthly/ecb_2023-05.html:
+    body_sha256: null
+    bytes: 134019
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2023-05.html
+    retrieved_at: '2026-09-29T10:36:49Z'
+    sha256: 43fa2b5a9ffff0ba312ce102ba820fce4c83b3dba87f4f0032b6c2c0f8bdf05c
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=236
+  rbi_ecb_monthly/ecb_2023-06.html:
+    body_sha256: null
+    bytes: 144439
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2023-06.html
+    retrieved_at: '2026-09-29T10:36:52Z'
+    sha256: 3a003cc88606faf316b82ef8a626cd7eba68096a421ab447c40d3260f19455f0
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=237
+  rbi_ecb_monthly/ecb_2023-07.html:
+    body_sha256: null
+    bytes: 114145
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2023-07.html
+    retrieved_at: '2026-09-29T10:36:54Z'
+    sha256: 523df3b5aeb1c789d5702a05305012c51f64f1a8eaf3029c7264005ac335d45e
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=238
+  rbi_ecb_monthly/ecb_2023-08.html:
+    body_sha256: null
+    bytes: 113597
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2023-08.html
+    retrieved_at: '2026-09-29T10:36:57Z'
+    sha256: e989849bbdd91938513cf44804014582fd84d0984313a11ff6c38b7649d52a30
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=239
+  rbi_ecb_monthly/ecb_2023-09.html:
+    body_sha256: null
+    bytes: 116300
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2023-09.html
+    retrieved_at: '2026-09-29T10:37:01Z'
+    sha256: bee51323c0f3db1e0b7c8f5c12d33d41516f4ce8e0685643484dc5e99d6c7cc0
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=240
+  rbi_ecb_monthly/ecb_2023-10.html:
+    body_sha256: null
+    bytes: 112838
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2023-10.html
+    retrieved_at: '2026-09-29T10:37:04Z'
+    sha256: df0dd59f530408d981cae1bca70466d30ff54622d4b2de9dab68f66258f8cb92
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=241
+  rbi_ecb_monthly/ecb_2023-11.html:
+    body_sha256: null
+    bytes: 99699
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2023-11.html
+    retrieved_at: '2026-09-29T10:37:06Z'
+    sha256: 1d7b01eeeb39674c1ffa52e3af100c9a6336019ca7c97851f7c1d6c666df1f5b
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=242
+  rbi_ecb_monthly/ecb_2023-12.html:
+    body_sha256: null
+    bytes: 122443
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29-r2/external_sector/ecb_2023-12.html
+    retrieved_at: '2026-09-29T10:37:17Z'
+    sha256: d7e447af938cfdca9ae9f23cb15d90cede4bdc6fc593ef5149545aeadb04a90f
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=243
+  rbi_ecb_monthly/ecb_2024-01.html:
+    body_sha256: null
+    bytes: 109965
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2024-01.html
+    retrieved_at: '2026-09-29T10:37:19Z'
+    sha256: e956009087d7453e73dbe480b17480d13b96d88fe1e8ff80e17470cd7b2974a4
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=244
+  rbi_ecb_monthly/ecb_2024-02.html:
+    body_sha256: null
+    bytes: 119636
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2024-02.html
+    retrieved_at: '2026-09-29T10:37:25Z'
+    sha256: 9b7ed7a2f7786e2714f932d26cdc6d31bc8e9e65ffb939a3e89dc58e85c715f1
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=245
+  rbi_ecb_monthly/ecb_2024-03.html:
+    body_sha256: null
+    bytes: 128049
+    method: GET
+    path: data/raw/rbi_ecb_monthly/2026-09-29/external_sector/ecb_2024-03.html
+    retrieved_at: '2026-09-29T10:37:27Z'
+    sha256: b99289ce0a57e5e71754ec3299e4150f077f1cb461c14647c1b63819846a764b
+    url: https://www.rbi.org.in/Scripts/ECBUserView.aspx?Id=246
+  rbi_external_debt/external_debt_end_march_2026_release.html:
+    body_sha256: null
+    bytes: 147069
+    method: GET
+    path: data/raw/rbi_external_debt/2026-09-29/external_sector/external_debt_end_march_2026_release.html
+    retrieved_at: '2026-09-29T10:51:19Z'
+    sha256: 004f7eb49e12671e56f1cf5d177c3a3a7ce7a21af1440342b2ff3ae61da41c06
+    url: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63041
+  rbi_external_debt/hbs2026_t145.html:
+    body_sha256: null
+    bytes: 113700
+    method: GET
+    path: data/raw/rbi_external_debt/2026-09-29/external_sector/hbs2026_t145.html
+    retrieved_at: '2026-09-29T10:34:43Z'
+    sha256: 90ba5a3efc1c828a226c42459d9216b7641ffd6faef3272d89d59ef0e0ea2767
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23970
+  rbi_external_debt/hbs2026_t146.html:
+    body_sha256: null
+    bytes: 112070
+    method: GET
+    path: data/raw/rbi_external_debt/2026-09-29/external_sector/hbs2026_t146.html
+    retrieved_at: '2026-09-29T10:34:46Z'
+    sha256: 8e7f0499f9819e039f5367cfb03b5b14c1bda4bbcba78e35a7ade2399a651190
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23971
+  rbi_fla_census/fla_census_2023_24.html:
+    body_sha256: null
+    bytes: 248893
+    method: GET
+    path: data/raw/rbi_fla_census/2026-09-29/external_sector/fla_census_2023_24.html
+    retrieved_at: '2026-09-29T11:12:07Z'
+    sha256: 07908248a7423417ac939d023bcbc3a1a0059c86fe2602557c54aa246b16ee42
+    url: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=58874
+  rbi_fla_census/fla_census_2024_25.html:
+    body_sha256: null
+    bytes: 182040
+    method: GET
+    path: data/raw/rbi_fla_census/2026-09-29/external_sector/fla_census_2024_25.html
+    retrieved_at: '2026-09-29T10:37:30Z'
+    sha256: 4b4e45bebbd79cda4a6e266fecfa73ae494c9db3e41ae54f304fbe0c239dd9ce
+    url: https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=23438
+  rbi_hbs_external/hbs2026_t124.html:
+    body_sha256: null
+    bytes: 108080
+    method: GET
+    path: data/raw/rbi_hbs_external/2026-09-29/external_sector/hbs2026_t124.html
+    retrieved_at: '2026-09-29T10:33:43Z'
+    sha256: 23fffa801c5663b588a65645ad87d03664c524e92d4800e29faebe77150368ec
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23949
+  rbi_hbs_external/hbs2026_t125.html:
+    body_sha256: null
+    bytes: 109017
+    method: GET
+    path: data/raw/rbi_hbs_external/2026-09-29/external_sector/hbs2026_t125.html
+    retrieved_at: '2026-09-29T10:33:48Z'
+    sha256: 292540567bbd9fb54112d8e6bdad9fe66ffcafa89e90b7ae106145dba51fa4d1
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23950
+  rbi_hbs_external/hbs2026_t126.html:
+    body_sha256: null
+    bytes: 105328
+    method: GET
+    path: data/raw/rbi_hbs_external/2026-09-29/external_sector/hbs2026_t126.html
+    retrieved_at: '2026-09-29T10:33:51Z'
+    sha256: 2e39450d702ab05fc8669d3568bf9dce610b76da068591727d2c79b781ae8e2d
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23951
+  rbi_hbs_external/hbs2026_t127.html:
+    body_sha256: null
+    bytes: 106099
+    method: GET
+    path: data/raw/rbi_hbs_external/2026-09-29/external_sector/hbs2026_t127.html
+    retrieved_at: '2026-09-29T10:33:54Z'
+    sha256: 967eb12e66da4f249f6320c66b628f6a20cf8794abe3c194140c0b1e7306fe4b
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23952
+  rbi_hbs_external/hbs2026_t130.html:
+    body_sha256: null
+    bytes: 91135
+    method: GET
+    path: data/raw/rbi_hbs_external/2026-09-29/external_sector/hbs2026_t130.html
+    retrieved_at: '2026-09-29T10:33:57Z'
+    sha256: fcc004d8f7866f756ac672bf13b78fcb5db5685cde347589ed805a099dd63276
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23955
+  rbi_hbs_external/hbs2026_t131.html:
+    body_sha256: null
+    bytes: 91674
+    method: GET
+    path: data/raw/rbi_hbs_external/2026-09-29/external_sector/hbs2026_t131.html
+    retrieved_at: '2026-09-29T10:34:00Z'
+    sha256: 5421be97eb779f3f2c15dcda197697dde4718b37592c3a4da5a6f7eb4fd26181
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23956
+  rbi_hbs_external/hbs2026_t133.html:
+    body_sha256: null
+    bytes: 80196
+    method: GET
+    path: data/raw/rbi_hbs_external/2026-09-29/external_sector/hbs2026_t133.html
+    retrieved_at: '2026-09-29T10:34:05Z'
+    sha256: 4f3e66e9d1cc6d09b2cdfb94eed2d41bbb8f1f8eafb841b2392a6c78018c24c2
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23958
+  rbi_hbs_external/hbs2026_t143.html:
+    body_sha256: null
+    bytes: 76078
+    method: GET
+    path: data/raw/rbi_hbs_external/2026-09-29/external_sector/hbs2026_t143.html
+    retrieved_at: '2026-09-29T10:34:08Z'
+    sha256: e0c776f0cbacfbb70fe55e588575535ed62c425945d7f05a94f7969bc8a6e656
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23968
+  rbi_hbs_external/hbs2026_t144.html:
+    body_sha256: null
+    bytes: 85043
+    method: GET
+    path: data/raw/rbi_hbs_external/2026-09-29/external_sector/hbs2026_t144.html
+    retrieved_at: '2026-09-29T10:34:11Z'
+    sha256: 3c24381f7bc473cb276d2b82e5e240d383459e5ce97b5d71fe7bb215b5d6c849
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23969
+  rbi_hbs_external/hbs2026_t205.html:
+    body_sha256: null
+    bytes: 86601
+    method: GET
+    path: data/raw/rbi_hbs_external/2026-09-29/external_sector/hbs2026_t205.html
+    retrieved_at: '2026-09-29T10:34:14Z'
+    sha256: f32212970e642d6dfa536012c178f91459d9ccbb70acd24a9e3981a9f8f505c9
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=24030
+  rbi_intl_investment_position/hbs2025_t198.html:
+    body_sha256: null
+    bytes: 72482
+    method: GET
+    path: data/raw/rbi_intl_investment_position/2026-09-29/external_sector/hbs2025_t198.html
+    retrieved_at: '2026-09-29T10:34:54Z'
+    sha256: d2e8c47558f17dbe861b31ee09bfed00f5b63f2b02fe4a8d19bf55a33b36e747
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23372
+  rbi_intl_investment_position/hbs2025_t199.html:
+    body_sha256: null
+    bytes: 72366
+    method: GET
+    path: data/raw/rbi_intl_investment_position/2026-09-29/external_sector/hbs2025_t199.html
+    retrieved_at: '2026-09-29T10:34:56Z'
+    sha256: 2b05318eedf6e6eec0704bc60ca5317003a7900850c7938be9c3dc0d0339233a
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23373
+  rbi_intl_investment_position/hbs2026_t199.html:
+    body_sha256: null
+    bytes: 72524
+    method: GET
+    path: data/raw/rbi_intl_investment_position/2026-09-29/external_sector/hbs2026_t199.html
+    retrieved_at: '2026-09-29T10:34:48Z'
+    sha256: 8af8369f720834eab0d245262564e9367578c7613ee0eb1f72e3bc2b23155282
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=24024
+  rbi_intl_investment_position/hbs2026_t200.html:
+    body_sha256: null
+    bytes: 72727
+    method: GET
+    path: data/raw/rbi_intl_investment_position/2026-09-29/external_sector/hbs2026_t200.html
+    retrieved_at: '2026-09-29T10:34:51Z'
+    sha256: e42d8682363a93758d59cd389618b878faf24c8f0e1e0d32c91a00884f6e2e0a
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=24025
+  rbi_ites_survey/ites_survey_2024_25.html:
+    body_sha256: null
+    bytes: 148557
+    method: GET
+    path: data/raw/rbi_ites_survey/2026-09-29/external_sector/ites_survey_2024_25.html
+    retrieved_at: '2026-09-29T10:37:38Z'
+    sha256: d593781d7879eba6a58857c7fbb0fb29016597adf80bfe47011bd7c31c2d6064
+    url: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61562
+  rbi_ites_survey/ites_survey_2025_26.html:
+    body_sha256: null
+    bytes: 150308
+    method: GET
+    path: data/raw/rbi_ites_survey/2026-09-29/external_sector/ites_survey_2025_26.html
+    retrieved_at: '2026-09-29T10:37:40Z'
+    sha256: 61543c1308190a49f751c7f991a7430298e6616e79b4304e6755f5e6e74d80d7
+    url: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63625
+  rbi_lrs_outward_remittances/lrs_bulletin_2024-06.html:
+    body_sha256: null
+    bytes: 133044
+    method: GET
+    path: data/raw/rbi_lrs_outward_remittances/2026-09-29/external_sector/lrs_bulletin_2024-06.html
+    retrieved_at: '2026-09-29T10:37:43Z'
+    sha256: eac01becde5c3b5021c44ff33dd4dcb3538ebe83f51c9268768187060730b888
+    url: https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=22690
+  rbi_lrs_outward_remittances/lrs_bulletin_2025-06.html:
+    body_sha256: null
+    bytes: 133079
+    method: GET
+    path: data/raw/rbi_lrs_outward_remittances/2026-09-29/external_sector/lrs_bulletin_2025-06.html
+    retrieved_at: '2026-09-29T10:37:46Z'
+    sha256: 9eaed6542a0ed6a1b188b76868f66831516d9032f8a7fec31c04b6c122ba8ed8
+    url: https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23490
+  rbi_lrs_outward_remittances/lrs_bulletin_2026-06.html:
+    body_sha256: null
+    bytes: 136924
+    method: GET
+    path: data/raw/rbi_lrs_outward_remittances/2026-09-29/external_sector/lrs_bulletin_2026-06.html
+    retrieved_at: '2026-09-29T10:37:48Z'
+    sha256: b2ae1e29557200ab31c411f3416a315e80d292a30e8a2d1bda7cc0cee2cd587e
+    url: https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24281
+  rbi_nri_deposits/hbs2026_t139.html:
+    body_sha256: null
+    bytes: 69243
+    method: GET
+    path: data/raw/rbi_nri_deposits/2026-09-29/external_sector/hbs2026_t139.html
+    retrieved_at: '2026-09-29T10:34:30Z'
+    sha256: 15376b42e690bad0a3272b89f7c8f9aeff97023e6df24b080041a86a0cd77d4f
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23964
+  rbi_nri_deposits/hbs2026_t140.html:
+    body_sha256: null
+    bytes: 68865
+    method: GET
+    path: data/raw/rbi_nri_deposits/2026-09-29/external_sector/hbs2026_t140.html
+    retrieved_at: '2026-09-29T10:34:32Z'
+    sha256: dd9824516f2c25e2954091007079d119ddefa3c80eac90c88ad4e1df3e9d5683
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23965
+  rbi_nri_deposits/hbs2026_t141.html:
+    body_sha256: null
+    bytes: 69339
+    method: GET
+    path: data/raw/rbi_nri_deposits/2026-09-29/external_sector/hbs2026_t141.html
+    retrieved_at: '2026-09-29T10:34:35Z'
+    sha256: 7e4d2771a2de37b93c3449aea365f099113f3c9fd66db76efa95e8af79b5adbc
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23966
+  rbi_nri_deposits/hbs2026_t142.html:
+    body_sha256: null
+    bytes: 69411
+    method: GET
+    path: data/raw/rbi_nri_deposits/2026-09-29/external_sector/hbs2026_t142.html
+    retrieved_at: '2026-09-29T10:34:38Z'
+    sha256: 34d0dfd322f9df6d2112f72881b02902604549122d863a72852b2b1ecb809d79
+    url: https://www.rbi.org.in/scripts/PublicationsView.aspx?id=23967
+  rbi_remittances_survey/remittances_survey_r6.html:
+    body_sha256: null
+    bytes: 253913
+    method: GET
+    path: data/raw/rbi_remittances_survey/2026-09-29/external_sector/remittances_survey_r6.html
+    retrieved_at: '2026-09-29T10:37:34Z'
+    sha256: 9df07b03c2a1c6267568d47e4df497b8ca2075f5883795af445084c2cbcd30c9
+    url: https://www.rbi.org.in/scripts/BS_ViewBulletin.aspx?Id=23260
+unit: external_sector

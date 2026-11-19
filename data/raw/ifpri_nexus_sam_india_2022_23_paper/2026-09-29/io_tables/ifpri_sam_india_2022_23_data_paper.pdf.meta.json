@@ -1,0 +1,37 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 501277,
+  "content_type": "application/pdf;charset=UTF-8",
+  "final_url": "https://cgspace.cgiar.org/server/api/core/bitstreams/ff7b1ece-8897-4567-be3a-4c99db75dca3/content",
+  "key": "ifpri_nexus_sam_india_2022_23_paper/ifpri_sam_india_2022_23_data_paper.pdf",
+  "method": "GET",
+  "name": "ifpri_sam_india_2022_23_data_paper.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://hdl.handle.net/10568/155099",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-disposition": "inline; filename=\"IFPRI_SAM_IND_2022-23.pdf\"; filename*=UTF-8''IFPRI_SAM_IND_2022-23.pdf",
+    "content-length": "501277",
+    "content-type": "application/pdf;charset=UTF-8",
+    "etag": "\"af2036fcdd508f68ea97458214e4535c\"",
+    "last-modified": "Wed, 02 Oct 2024 17:23:33 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:40:53Z",
+  "sha256": "baec90a6a8bfbe58be8782ef59fea786cb837246589297601de5ae3f0110e9f0",
+  "source_id": "ifpri_nexus_sam_india_2022_23_paper",
+  "status": 200,
+  "url": "https://cgspace.cgiar.org/server/api/core/bitstreams/ff7b1ece-8897-4567-be3a-4c99db75dca3/content"
+}

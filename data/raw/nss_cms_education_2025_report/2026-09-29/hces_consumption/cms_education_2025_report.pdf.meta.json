@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 17016577,
+  "content_type": "application/pdf",
+  "final_url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1757588642898_9ba30fe0-3677-478c-8d53-9a0d2ba107f0_CMS_E_2025L.pdf",
+  "key": "nss_cms_education_2025_report/cms_education_2025_report.pdf",
+  "method": "GET",
+  "name": "cms_education_2025_report.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "17016577",
+    "content-type": "application/pdf",
+    "etag": "W/\"103a701-19938727810\"",
+    "last-modified": "Thu, 11 Sep 2025 11:04:10 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:37:04Z",
+  "sha256": "090c9fca5d11726b9696068dd5c2c9d3f355943c6534e77b3145611c0adfdd2b",
+  "source_id": "nss_cms_education_2025_report",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1757588642898_9ba30fe0-3677-478c-8d53-9a0d2ba107f0_CMS_E_2025L.pdf"
+}

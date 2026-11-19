@@ -1,0 +1,36 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 818198,
+  "content_type": "application/pdf",
+  "final_url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1788173257610_f0d5f86d-0465-410e-85e8-f1c271803f26_Note_Supply_Use_Tables_2022-23,2023-24_(1).pdf",
+  "key": "mospi_sut_2022base/sut_note_2022_23_2023_24.pdf",
+  "method": "GET",
+  "name": "sut_note_2022_23_2023_24.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.mospi.gov.in/publications-reports/innerpage/847",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "818198",
+    "content-type": "application/pdf",
+    "etag": "W/\"c7c16-1a0576e8bdb\"",
+    "last-modified": "Mon, 31 Aug 2026 10:47:37 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:21:03Z",
+  "sha256": "054e062c955af9b2a4778eb589300c882e7de216ede25c804af10ebb8865dcdb",
+  "source_id": "mospi_sut_2022base",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1788173257610_f0d5f86d-0465-410e-85e8-f1c271803f26_Note_Supply_Use_Tables_2022-23,2023-24_(1).pdf"
+}

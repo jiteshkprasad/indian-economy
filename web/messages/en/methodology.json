@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Methodology and sources",
+    "description": "How the map of India's economy was built: the balanced social accounting matrix for 2023-24, what the labels mean, what is estimated, the limits, the sources and their licences, and how to reproduce every figure."
+  },
+  "h1": "Methodology and sources",
+  "lede": "How the map was built, what each label means, what is estimated, where it could mislead you, and where every number comes from.",
+  "notForecastLabel": "Not a forecast.",
+  "notForecast": "This site records what happened in a year that has ended. It does not predict the future or say what a policy change would do.",
+  "toc": "On this page",
+  "sections": {
+    "what": "What this map is",
+    "build": "How it was built and balanced",
+    "status": "What the labels mean",
+    "estimates": "What is estimated",
+    "limits": "Limits: where the map could mislead",
+    "timeSeries": "One year in full, other years in part",
+    "provisional": "Choices accepted provisionally",
+    "sources": "Sources and licences",
+    "dataVersion": "Data version and how to reproduce it",
+    "issues": "Open issues"
+  },
+  "sources": {
+    "listLabel": "{count, plural, one {# source} other {# sources}}, most cited first",
+    "publisher": "Publisher",
+    "licence": "Licence",
+    "attribution": "Attribution",
+    "link": "Link",
+    "citedBy": "Cited by",
+    "registryStatus": "Registry id",
+    "unknown": "Not recorded",
+    "withheld": "Direct link not given (ISSUES P1-9)",
+    "landingLink": "Publisher page",
+    "deepLink": "Source page",
+    "noLink": "No public link recorded",
+    "opensNewTab": " for {name} (opens in a new tab)",
+    "usageEntries": "{count, plural, one {# SAM entry} other {# SAM entries}}",
+    "usageSeries": "{count, plural, one {# time series} other {# time series}}",
+    "usageConstraints": "{count, plural, one {# published total or band} other {# published totals or bands}}",
+    "usageStories": "{count, plural, one {# story figure} other {# story figures}}",
+    "listSep": "; ",
+    "notCited": "Not cited by any figure in this data version"
+  },
+  "version": {
+    "fixture": "This page was built from generated test data, not real statistics. Do not quote any figure on it.",
+    "version": "Data version",
+    "referenceYear": "Reference year",
+    "baseYear": "GDP base year",
+    "vintage": "Official vintage",
+    "vintageValue": "MoSPI National Accounts Statistics 2026 (31 Aug 2026); 2023-24 at Final Estimates. Re-checked on 18 Nov 2026: no newer release changes these figures.",
+    "files": "Data files",
+    "filesValue": "{count, plural, one {# file} other {# files}}",
+    "codeHash": "Export code hash",
+    "commandsHeading": "Reproduce it",
+    "commandsIntro": "From a copy of the repository, with Python (through uv) and Node 24. The first two commands check the published web data against the pipeline outputs; rebuilding those outputs from the raw sources starts with the pipeline's fetch and build commands, described in the repository.",
+    "commands": "uv sync --locked\nuv run python -m pipeline export --check   # rebuild the web data and compare byte for byte\nuv run python -m pipeline test           # every offline test, including the web unit tests (needs Node 24)\nnpm --prefix web ci\nnpm --prefix web run test:web            # build the site and run the browser tests",
+    "inputsSummary": "{count, plural, one {# input file} other {# input files}} and their fingerprints (SHA-256)"
+  }
+}

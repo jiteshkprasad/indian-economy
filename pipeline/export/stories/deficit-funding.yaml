@@ -1,0 +1,283 @@
+# Story 3: "Who funds the government's deficit?" (docs/phase3/PLAN.md s.4.9). Owner: U5.
+# Figure specs only; the evaluator is pipeline/export/stories.py (U1). Grammar: docs/phase3/requests/U5.md.
+# tests/export/test_export_stories.py recomputes every value with DuckDB SQL, independently of the evaluator,
+# and checks net borrowing = liabilities - financial assets for the Centre and the States.
+#
+# Concepts: this is NET BORROWING in the national accounts (investment + capital transfers paid - saving - capital
+# transfers received = minus net lending), not the Budget's fiscal deficit. The SAM pools Central and State
+# government securities in one instrument account (I_GSEC), so it cannot say who bought the Centre's paper
+# alone. Money is pooled through instrument accounts, not traced from one saver to one borrower.
+slug: deficit-funding
+
+figures:
+  # --- Step "saving": gross saving (K3a). The Centre's is negative (dissaving). ---
+  saving_cen:
+    kind: entries_sum
+    terms: [{rows: [K_GCEN], cols: [G_CEN], refs: [K3a]}]
+    unit: inr
+  saving_sta:
+    kind: entries_sum
+    terms: [{rows: [K_GSTA], cols: [G_STA], refs: [K3a]}]
+    unit: inr
+  saving_gg:            # one selector over both cells, so the NAS 1.9 pin (gov.k3.gg_saving) can apply
+    kind: entries_sum
+    terms: [{rows: [K_GCEN, K_GSTA], cols: [G_CEN, G_STA], refs: [K3a]}]
+    unit: inr
+  saving_gg_gdp: {kind: ratio, num: {ref: saving_gg}, den: {gdp: "2023-24"}, unit: pct_gdp}
+
+  # --- Step "invest": government investment (GFCF I1a + inventories I3a) and capital transfers paid ---
+  invest_cen:
+    kind: entries_sum
+    terms: [{rows: "@ALL", cols: [K_GCEN], refs: [I1a, I3a]}]
+    unit: inr
+  invest_sta:
+    kind: entries_sum
+    terms: [{rows: "@ALL", cols: [K_GSTA], refs: [I1a]}]
+    unit: inr
+  captr_cen:           # capital transfers paid by the Centre: K6 to others and R2k capital grants to the States
+    kind: entries_sum
+    terms: [{rows: "@ALL", cols: [K_GCEN], refs: [K6, R2k]}]
+    unit: inr
+  captr_sta:
+    kind: entries_sum
+    terms: [{rows: "@ALL", cols: [K_GSTA], refs: [K6]}]
+    unit: inr
+
+  # --- Step "gap": net borrowing (national accounts) = non-financial payments - non-financial receipts of the
+  # capital account, i.e. minus net lending. It is shown POSITIVE when the government borrows (V1-04/V2-01:
+  # an earlier draft labelled negative net lending "net borrowing"). Checked against liabilities - financial
+  # assets (the same number from the other side).
+  nonfin_in_cen:
+    kind: sam_sum
+    terms: [{rows: [K_GCEN], cols: "@ALL", not_cols: "@INST"}]
+    unit: inr
+  nonfin_out_cen:
+    kind: sam_sum
+    terms: [{rows: "@ALL", not_rows: "@INST", cols: [K_GCEN]}]
+    unit: inr
+  nb_cen:
+    kind: difference
+    a: {ref: nonfin_out_cen}
+    b: {ref: nonfin_in_cen}
+    unit: inr
+    check_equals: {ref: nb_cen_fin, tol: 0.01}
+  nonfin_in_sta:
+    kind: sam_sum
+    terms: [{rows: [K_GSTA], cols: "@ALL", not_cols: "@INST"}]
+    unit: inr
+  nonfin_out_sta:
+    kind: sam_sum
+    terms: [{rows: "@ALL", not_rows: "@INST", cols: [K_GSTA]}]
+    unit: inr
+  nb_sta:
+    kind: difference
+    a: {ref: nonfin_out_sta}
+    b: {ref: nonfin_in_sta}
+    unit: inr
+    check_equals: {ref: nb_sta_fin, tol: 0.01}
+  nb_gg: {kind: sum, terms: [{ref: nb_cen}, {ref: nb_sta}], unit: inr}
+  nb_gg_gdp: {kind: ratio, num: {ref: nb_gg}, den: {gdp: "2023-24"}, unit: pct_gdp}
+  nb_cen_gdp: {kind: ratio, num: {ref: nb_cen}, den: {gdp: "2023-24"}, unit: pct_gdp}
+  nb_sta_gdp: {kind: ratio, num: {ref: nb_sta}, den: {gdp: "2023-24"}, unit: pct_gdp}
+
+  # Financial side: assets acquired (K_* column into I_* rows) and liabilities incurred (I_* columns into K_* row).
+  assets_cen:
+    kind: sam_sum
+    terms: [{rows: "@INST", cols: [K_GCEN]}]
+    unit: inr
+  liab_cen:
+    kind: sam_sum
+    terms: [{rows: [K_GCEN], cols: "@INST"}]
+    unit: inr
+  nb_cen_fin: {kind: difference, a: {ref: liab_cen}, b: {ref: assets_cen}, unit: inr}
+  assets_sta:
+    kind: sam_sum
+    terms: [{rows: "@INST", cols: [K_GSTA]}]
+    unit: inr
+  liab_sta:
+    kind: sam_sum
+    terms: [{rows: [K_GSTA], cols: "@INST"}]
+    unit: inr
+  nb_sta_fin: {kind: difference, a: {ref: liab_sta}, b: {ref: assets_sta}, unit: inr}
+
+  # --- Step "borrow": liabilities by instrument ---
+  liab_cen_gsec:
+    kind: sam_sum
+    terms: [{rows: [K_GCEN], cols: [I_GSEC]}]
+    unit: inr
+  liab_cen_ssav:
+    kind: sam_sum
+    terms: [{rows: [K_GCEN], cols: [I_SSAV]}]
+    unit: inr
+  liab_cen_other:      # loans (net), other accounts payable, insurance/pension
+    kind: sam_sum
+    terms: [{rows: [K_GCEN], cols: "@INST", not_cols: [I_GSEC, I_SSAV]}]
+    unit: inr
+  liab_sta_gsec:       # State development loans (SDLs)
+    kind: sam_sum
+    terms: [{rows: [K_GSTA], cols: [I_GSEC]}]
+    unit: inr
+  liab_sta_loan:       # net loans, including repayment of the GST back-to-back loans (K8e)
+    kind: sam_sum
+    terms: [{rows: [K_GSTA], cols: [I_LOAN]}]
+    unit: inr
+  liab_sta_other:
+    kind: sam_sum
+    terms: [{rows: [K_GSTA], cols: "@INST", not_cols: [I_GSEC, I_LOAN]}]
+    unit: inr
+  # Assets acquired, with the reconciliation items named.
+  assets_cen_eqty:
+    kind: sam_sum
+    terms: [{rows: [I_EQTY], cols: [K_GCEN]}]
+    unit: inr
+  assets_cen_loan:
+    kind: sam_sum
+    terms: [{rows: [I_LOAN], cols: [K_GCEN]}]
+    unit: inr
+  assets_cen_k9:       # per-sector reconciliation residual (NAS net lending - FSF net financial transactions)
+    kind: entries_sum
+    terms: [{rows: [I_OTHR], cols: [K_GCEN], refs: [K9]}]
+    unit: inr
+  assets_cen_k9b:      # RBI surplus timing item: the rise in the surplus the RBI owes the Centre (FSF records it)
+    kind: entries_sum
+    terms: [{rows: [I_OTHR], cols: [K_GCEN], refs: [K9b]}]
+    unit: inr
+  # The Centre's R6 income is the cash received (D0-7, D2-16), so the K9b receivable has no income counterpart
+  # and is offset by an equal and opposite part of K9_GCEN (K9b method, sam_capital_financial:a55e888c87fa).
+  # The story shows K9 + K9b as one line, so "reconciliation residual" means the NAS-vs-FSF gap only (V2-03);
+  # K9b itself is quoted in the text as the amount netted inside it. K9 alone is not shown.
+  assets_cen_k9_net:
+    kind: sum
+    terms: [{ref: assets_cen_k9}, {ref: assets_cen_k9b}]
+    unit: inr
+  assets_cen_rest:
+    kind: difference
+    a: {ref: assets_cen}
+    b: {ref: assets_cen_named}
+    unit: inr
+  assets_cen_named:
+    kind: sum
+    terms: [{ref: assets_cen_eqty}, {ref: assets_cen_loan}, {ref: assets_cen_k9_net}]
+    unit: inr
+  assets_sta_depo:
+    kind: sam_sum
+    terms: [{rows: [I_DEPO], cols: [K_GSTA]}]
+    unit: inr
+  assets_sta_k9:
+    kind: entries_sum
+    terms: [{rows: [I_OTHR], cols: [K_GSTA], refs: [K9]}]
+    unit: inr
+  assets_sta_named: {kind: sum, terms: [{ref: assets_sta_depo}, {ref: assets_sta_k9}], unit: inr}
+  assets_sta_rest: {kind: difference, a: {ref: assets_sta}, b: {ref: assets_sta_named}, unit: inr}
+
+  # --- Step "buyers": who bought government securities (Centre and States pooled; I_GSEC row by acquirer) ---
+  gsec_issued:         # total net issuance, Centre plus States
+    kind: sam_sum
+    terms: [{rows: [K_GCEN, K_GSTA], cols: [I_GSEC]}]
+    unit: inr
+    check_equals: {ref: gsec_bought, tol: 0.01}
+  gsec_bought:
+    kind: sam_sum
+    terms: [{rows: [I_GSEC], cols: "@ALL"}]
+    unit: inr
+  gsec_bank:
+    kind: sam_sum
+    terms: [{rows: [I_GSEC], cols: [K_BANK]}]
+    unit: inr
+  gsec_insp:
+    kind: sam_sum
+    terms: [{rows: [I_GSEC], cols: [K_INSP]}]
+    unit: inr
+  gsec_row:
+    kind: sam_sum
+    terms: [{rows: [I_GSEC], cols: [K_ROW]}]
+    unit: inr
+  gsec_nbfc_mf:
+    kind: sam_sum
+    terms: [{rows: [I_GSEC], cols: [K_NBFC, K_MUTF]}]
+    unit: inr
+  gsec_hh:             # households' direct purchases (NAS 5.3, K7a; official)
+    kind: sam_sum
+    terms: [{rows: [I_GSEC], cols: [K_HH]}]
+    unit: inr
+  gsec_rbi:            # the RBI was a net seller
+    kind: sam_sum
+    terms: [{rows: [I_GSEC], cols: [K_RBI]}]
+    unit: inr
+  gsec_others:
+    kind: sam_sum
+    terms: [{rows: [I_GSEC], cols: "@ALL", not_cols: [K_BANK, K_INSP, K_ROW, K_NBFC, K_MUTF, K_HH, K_RBI]}]
+    unit: inr
+  gsec_bank_per100: {kind: per100, part: {ref: gsec_bank}, whole: {ref: gsec_issued}, unit: per100}
+  gsec_insp_per100: {kind: per100, part: {ref: gsec_insp}, whole: {ref: gsec_issued}, unit: per100}
+  gsec_row_per100: {kind: per100, part: {ref: gsec_row}, whole: {ref: gsec_issued}, unit: per100}
+  gsec_hh_per100: {kind: per100, part: {ref: gsec_hh}, whole: {ref: gsec_issued}, unit: per100}
+
+  # --- Step "households": households' financial saving behind those institutions (K7a, NAS 5.3) ---
+  hhfin_depo:
+    kind: entries_sum
+    terms: [{rows: [I_DEPO], cols: [K_HH], refs: [K7a]}]
+    unit: inr
+  hhfin_inpe:
+    kind: entries_sum
+    terms: [{rows: [I_INPE], cols: [K_HH], refs: [K7a]}]
+    unit: inr
+  hhfin_ssav:
+    kind: entries_sum
+    terms: [{rows: [I_SSAV], cols: [K_HH], refs: [K7a]}]
+    unit: inr
+
+  # --- Step "cost": interest paid (the series, as published; F25 has only two years) ---
+  int_cen_prev:
+    kind: ts_value
+    flow: F25
+    period: "2022-23"
+    measure: value
+    unit: inr
+  int_cen:
+    kind: ts_value
+    flow: F25
+    period: "2023-24"
+    measure: value
+    unit: inr
+  int_cen_gdp:
+    kind: ts_value
+    flow: F25
+    period: "2023-24"
+    measure: share
+    unit: pct_gdp
+  int_sta:
+    kind: ts_value
+    flow: F26
+    period: "2023-24"
+    measure: value
+    unit: inr
+  int_sta_gdp:
+    kind: ts_value
+    flow: F26
+    period: "2023-24"
+    measure: share
+    unit: pct_gdp
+
+steps:
+  - id: saving
+    view: {view: sam, preset: simple, year: "2023-24", expanded: [], highlight: [CEN--SI~neg, STA--SI], select: null}
+    figures: [saving_cen, saving_sta, saving_gg, saving_gg_gdp]
+  - id: invest
+    view: {view: sam, preset: full, year: "2023-24", expanded: [SI], highlight: [SI.GOV--PRDS], select: SI.GOV--PRDS}
+    figures: [invest_cen, invest_sta, captr_cen, captr_sta]
+  - id: gap
+    view: {view: sam, preset: full, year: "2023-24", expanded: [SI], highlight: [CEN--SI.GOV~neg, STA--SI.GOV, SI.GOV--PRDS], select: null}
+    figures: [nb_cen, nb_sta, nb_gg, nb_gg_gdp, nb_cen_gdp, nb_sta_gdp]
+  - id: borrow
+    view: {view: sam, preset: full, year: "2023-24", expanded: [SI, FINM], highlight: [FINM.GOVD--SI.GOV, I_LOAN--SI.GOV~neg, SI.GOV--FINM.SEC, SI.GOV--FINM.OTH], select: null}
+    figures: [liab_cen, liab_cen_gsec, liab_cen_ssav, liab_cen_other, assets_cen, assets_cen_eqty, assets_cen_loan, assets_cen_k9_net, assets_cen_k9b, assets_cen_rest, liab_sta, liab_sta_gsec, liab_sta_loan, liab_sta_other, assets_sta, assets_sta_depo, assets_sta_k9, assets_sta_rest]
+  - id: buyers
+    view: {view: sam, preset: full, year: "2023-24", expanded: [SI, FINM], highlight: [SI.FIN--FINM.GOVD, K_ROW--FINM.GOVD, K_HH--FINM.GOVD], select: null}
+    figures: [gsec_issued, gsec_bank, gsec_bank_per100, gsec_insp, gsec_insp_per100, gsec_row, gsec_row_per100, gsec_nbfc_mf, gsec_hh, gsec_hh_per100, gsec_rbi, gsec_others]
+  - id: households
+    view: {view: sam, preset: full, year: "2023-24", expanded: [SI, FINM], highlight: [K_HH--FINM.MONEY, K_HH--I_INPE, K_HH--FINM.GOVD], select: null}
+    figures: [hhfin_depo, hhfin_inpe, hhfin_ssav]
+  - id: cost
+    view: {view: sam, preset: simple, year: "2023-24", expanded: [], highlight: [CEN--FC, STA--FC, CEN--HH, STA--HH], select: null}
+    figures: [int_cen_prev, int_cen, int_cen_gdp, int_sta, int_sta_gdp]

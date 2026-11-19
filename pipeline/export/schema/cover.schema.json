@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": {
+    "additionalProperties": false,
+    "properties": {
+      "abs_total": {
+        "type": "number"
+      },
+      "cells": {
+        "items": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 3,
+          "minItems": 3,
+          "type": "array"
+        },
+        "type": "array"
+      }
+    },
+    "required": [
+      "cells",
+      "abs_total"
+    ],
+    "type": "object"
+  },
+  "description": "<v>/ts/cover.json: the SAM cells each series measures in 2023-24, [row idx, col idx, signed value].",
+  "title": "Cover",
+  "type": "object"
+}

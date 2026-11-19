@@ -1,0 +1,140 @@
+{
+  "block": "fincorp",
+  "checks": {
+    "failed": [
+      "k2a.rbi_prior_vs_nas"
+    ],
+    "n": 14
+  },
+  "concordances_read": {},
+  "constraints": 30,
+  "datasets_read": [
+    "finsector_markets_epfo_ar",
+    "finsector_markets_epfo_eps_outgo",
+    "finsector_markets_irdai_life",
+    "finsector_markets_irdai_nonlife",
+    "finsector_markets_irdai_summary",
+    "finsector_markets_pfrda_nps",
+    "finsector_markets_pfrda_sg",
+    "finsector_markets_sebi_bonds_equity",
+    "finsector_markets_sebi_mf",
+    "io_tables_sut_va",
+    "mospi_nas_2026_oldbase_soa_s2_2",
+    "mospi_nas_2026_s1_13",
+    "mospi_nas_2026_s1_9",
+    "mospi_nas_2026_s7_1a",
+    "mospi_nas_2026_s7_1b",
+    "mospi_nas_2026_s7_1c",
+    "mospi_nas_2026_s8_12",
+    "mospi_nas_2026_s8_15_1",
+    "rbi_banking_corporate_rbi_accounts",
+    "rbi_banking_corporate_rtp_banks",
+    "rbi_banking_corporate_rtp_coop",
+    "rbi_banking_corporate_rtp_nbfi",
+    "rbi_financial_accounts_fsf_balance_sheets",
+    "rbi_financial_accounts_hbs_gsec_ownership",
+    "state_fiscal_fc16_kfi",
+    "state_fiscal_rbi_sf_appendices",
+    "union_fiscal_fa_expenditure",
+    "union_fiscal_fa_provident_funds",
+    "union_fiscal_fa_receipts",
+    "union_fiscal_nssf"
+  ],
+  "dependency_hashes": {
+    "factors": {
+      "constraints": "33b7e0beaa82d469d451d8568301a226e625a0aea1bd4db7efc0621f65742d8f",
+      "entries": "104bdbbdbdd9a1c80a4c7e3f9efbef56626f6bf89367958da80ca503654ac374",
+      "provenance": "3e19f602fcb504fc589e225f8447fdda4c597688bb69e96b86f9c06b8a7f3ea4"
+    },
+    "government": {
+      "constraints": "29c633211eed7f6c14bcf95fc4c1930e59bd800cc825b56e4c1e03632ba153e2",
+      "entries": "c5d0e9dabbe5c7cc1a1b2e3bf82ced0b9974af57e735ae19f02104fc18dc8ca2",
+      "provenance": "64b1fbefd602f63bee4b8e80f3818f82e3e1854e4bc1eb1681f5d07bb998510f"
+    },
+    "households": {
+      "constraints": "d7934f138cf654b2f21979d311b55b7961c10ff87e38de6b5303451362e86430",
+      "entries": "d3cd60ede26b86b6b17224652a27c1eb3e9c1b7544688d6efba0224e98f42d0e",
+      "provenance": "d2e8beab4f053055fbb9981ecc5b83a78f10f9b093b8fb701b8cdc09353b39dc"
+    },
+    "production": {
+      "constraints": "b0a9b2675e64f33e3b3483d4f82ae4633b7be0c9dfa1673f8de82f4472257281",
+      "entries": "f6f2a4c4b428bc234ec83c20c5c5e754d599497cbc9ec463de0f668a0993ca21",
+      "provenance": "5c8f496f92c629e03d161c981730c5d224a54275caad0c6303df0eb8cba6730c"
+    },
+    "rest_of_world": {
+      "constraints": "16a53aec08531574570a7514743f47237816c5f3665dfd03ecbd0f4a5a7348b8",
+      "entries": "1231c03003f84755c65b8ea07522bb54d501f2c02cc10fa7f7c71961f6c8113d",
+      "provenance": "0212bebbaf5922c8449454401856eb0a57e320306cc25aa52f2cb89bd796a646"
+    }
+  },
+  "depends": [
+    "production",
+    "households",
+    "factors",
+    "government",
+    "rest_of_world"
+  ],
+  "entries": 488,
+  "refs": [
+    "F4a",
+    "R3",
+    "R3a",
+    "R3b",
+    "R4",
+    "R5",
+    "R8",
+    "R8a",
+    "R9c",
+    "R17",
+    "K2",
+    "K2a",
+    "S9"
+  ],
+  "refs_not_implemented": [],
+  "satellites": {
+    "d44_by_scheme": {
+      "decimals": 9,
+      "description": "R9c D44 by scheme and the stocks/rates behind it",
+      "ref": "R9c",
+      "rows": 23
+    },
+    "dividend_matrix": {
+      "decimals": 9,
+      "description": "R8 dividends by issuer x holder incl. the government (R7) and RoW (R14) memo parts",
+      "ref": "R8",
+      "rows": 109
+    },
+    "fc_public_private": {
+      "decimals": 9,
+      "description": "F4a GOS by FC sub-sector x public/private, with the inputs of the split",
+      "ref": "F4a",
+      "rows": 18
+    },
+    "gov_interest_bridge": {
+      "decimals": 9,
+      "description": "Union MH 2049 and States' interest lines, their destinations, holder allocation, R3b targets",
+      "ref": "R3b",
+      "rows": 97
+    },
+    "interest_fisim_bridge": {
+      "decimals": 9,
+      "description": "R4/R5 interest matrix: FSF positions, rates, bank interest, P&L totals, scale, FISIM",
+      "ref": "R4",
+      "rows": 167
+    },
+    "mf_lookthrough": {
+      "decimals": 9,
+      "description": "Mutual-fund unit-holder shares (SEBI T72) and the MF income looked through to holders",
+      "ref": "R8a",
+      "rows": 5
+    },
+    "s9_funded_schemes": {
+      "decimals": 9,
+      "description": "S9: gross flows of funded schemes (EPF/EPS/EDLI, NPS, life, GPF, State PF, PPF, PLI, CGEGIS)",
+      "ref": "S9",
+      "rows": 35
+    }
+  },
+  "warnings": 1,
+  "year": "2023-24"
+}

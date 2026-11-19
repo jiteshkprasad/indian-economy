@@ -1,0 +1,36 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 1967821,
+  "content_type": "application/pdf",
+  "final_url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1776237517942_bc184217-6e54-43d6-91a7-fd54751314c9_Chapter-9.pdf",
+  "key": "mospi_energy_statistics/es2026_chapter_9.pdf",
+  "method": "GET",
+  "name": "es2026_chapter_9.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.mospi.gov.in/publications-reports/innerpage/2817",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "1967821",
+    "content-type": "application/pdf",
+    "etag": "W/\"1e06cd-19d90019c7c\"",
+    "last-modified": "Wed, 15 Apr 2026 07:18:37 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:21:08Z",
+  "sha256": "d4ebae869c99ccfe992e759b611bdeb2ba2bde550bcae2307c1b971fe3f99a49",
+  "source_id": "mospi_energy_statistics",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/uploads/publications_reports/publications_reports1776237517942_bc184217-6e54-43d6-91a7-fd54751314c9_Chapter-9.pdf"
+}

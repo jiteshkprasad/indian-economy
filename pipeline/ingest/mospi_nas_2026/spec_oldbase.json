@@ -1,0 +1,5248 @@
+{
+ "nas2024/1.15": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "d",
+   "production.resources.d21",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies on Products",
+   "d",
+   "production.resources.d31",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Domestic Product",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Domestic Product",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Domestic Product",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on Production and imports",
+   "d",
+   "generation_of_income.uses.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "d",
+   "generation_of_income.uses.d21",
+   "111111111111"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "generation_of_income.uses.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "d",
+   "generation_of_income.uses.d3",
+   "111111111111"
+  ],
+  [
+   "Subsidies on products",
+   "d",
+   "generation_of_income.uses.d31",
+   "111111111111"
+  ],
+  [
+   "Other subsidies on production",
+   "d",
+   "generation_of_income.uses.d39",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "generation_of_income.uses.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "Compensation of Employees",
+   "d",
+   "allocation_of_primary_income.resources.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on production and imports, less Subsidies",
+   "d",
+   "allocation_of_primary_income.resources.taxes_on_production_and_imports_less_subsidies",
+   "111111111111"
+  ],
+  [
+   "Taxes on production and imports",
+   "d",
+   "allocation_of_primary_income.resources.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "d",
+   "allocation_of_primary_income.resources.d21",
+   "111111111111"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "allocation_of_primary_income.resources.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "d",
+   "allocation_of_primary_income.resources.d3",
+   "111111111111"
+  ],
+  [
+   "Subsidies on products",
+   "d",
+   "allocation_of_primary_income.resources.d31",
+   "111111111111"
+  ],
+  [
+   "Other subsidies on production",
+   "d",
+   "allocation_of_primary_income.resources.d39",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.resources.d5",
+   "111111111111"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.uses.d5",
+   "111111111111"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.uses.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "redistribution_of_income_in_kind.resources.b6n",
+   "111111111111"
+  ],
+  [
+   "Social transfers in kind",
+   "d",
+   "redistribution_of_income_in_kind.resources.d63",
+   "111111111111"
+  ],
+  [
+   "Social transfers in kind",
+   "d",
+   "redistribution_of_income_in_kind.uses.d63",
+   "111111111111"
+  ],
+  [
+   "NET ADJUSTED DISPOSABLE INCOME",
+   "d",
+   "redistribution_of_income_in_kind.uses.b7n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Final consumption expenditure",
+   "d",
+   "use_of_disposable_income.uses.p3",
+   "111111111111"
+  ],
+  [
+   "Individual consumption expenditure",
+   "d",
+   "use_of_disposable_income.uses.p31",
+   "111111111111"
+  ],
+  [
+   "Collective consumption expenditure",
+   "d",
+   "use_of_disposable_income.uses.p32",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "NET ADJUSTED DISPOSABLE INCOME",
+   "d",
+   "use_of_adjusted_disposable_income.resources.b7n",
+   "111111111111"
+  ],
+  [
+   "Actual Final consumption expenditure",
+   "d",
+   "use_of_adjusted_disposable_income.uses.p4",
+   "111111111111"
+  ],
+  [
+   "Actual Individual consumption expenditure",
+   "d",
+   "use_of_adjusted_disposable_income.uses.p41",
+   "111111111111"
+  ],
+  [
+   "Actual Collective consumption expenditure",
+   "d",
+   "use_of_adjusted_disposable_income.uses.p42",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_adjusted_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_adjusted_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable",
+   "d",
+   "capital.liabilities.d9r",
+   "111111111111"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "d",
+   "capital.liabilities.d9p",
+   "111111111111"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "d",
+   "capital.assets.p53",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "d",
+   "capital.assets.np",
+   "111111111111"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.liabilities.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.liabilities.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.liabilities.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.liabilities.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.liabilities.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "d",
+   "financial.liabilities.f6",
+   "111111111111"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.assets.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.assets.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.assets.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.assets.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "d",
+   "financial.assets.f6",
+   "111111111111"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "d",
+   "financial.assets.f7",
+   "111111111111"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2024/2.0": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on Production and imports",
+   "d",
+   "generation_of_income.uses.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "h",
+   "generation_of_income.uses.d21",
+   "000000000000"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "generation_of_income.uses.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "d",
+   "generation_of_income.uses.d3",
+   "111111111111"
+  ],
+  [
+   "Subsidies on products",
+   "h",
+   "generation_of_income.uses.d31",
+   "000000000000"
+  ],
+  [
+   "Other subsidies on production",
+   "d",
+   "generation_of_income.uses.d39",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "generation_of_income.uses.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.resources.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.uses.d5",
+   "111111111111"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.uses.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable",
+   "d",
+   "capital.liabilities.d9r",
+   "111111111111"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "d",
+   "capital.liabilities.d9p",
+   "111111111111"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "h",
+   "capital.assets.p53",
+   "000000000000"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "d",
+   "capital.assets.np",
+   "111111111111"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.liabilities.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.liabilities.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.liabilities.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.liabilities.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.liabilities.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.liabilities.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.assets.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.assets.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.assets.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.assets.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "d",
+   "financial.assets.f6",
+   "000100000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.assets.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2024/2.1": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on Production and imports",
+   "d",
+   "generation_of_income.uses.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "h",
+   "generation_of_income.uses.d21",
+   "000000000000"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "generation_of_income.uses.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "d",
+   "generation_of_income.uses.d3",
+   "111111111111"
+  ],
+  [
+   "Subsidies on products",
+   "h",
+   "generation_of_income.uses.d31",
+   "000000000000"
+  ],
+  [
+   "Other subsidies on production",
+   "d",
+   "generation_of_income.uses.d39",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "generation_of_income.uses.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.resources.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.uses.d5",
+   "111111111111"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.uses.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable",
+   "d",
+   "capital.liabilities.d9r",
+   "111111111111"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "d",
+   "capital.liabilities.d9p",
+   "111111111111"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "h",
+   "capital.assets.p53",
+   "000000000000"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "d",
+   "capital.assets.np",
+   "111111111111"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.liabilities.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "h",
+   "financial.liabilities.f2",
+   "000000000000"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.liabilities.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.liabilities.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.liabilities.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.liabilities.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.assets.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.assets.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.assets.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.assets.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "d",
+   "financial.assets.f6",
+   "000100000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.assets.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2024/2.1A": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on Production and imports",
+   "h",
+   "generation_of_income.uses.d2",
+   "000000000000"
+  ],
+  [
+   "Other taxes on production",
+   "h",
+   "generation_of_income.uses.d29",
+   "000000000000"
+  ],
+  [
+   "Less: Subsidies",
+   "d",
+   "generation_of_income.uses.d3",
+   "111111111111"
+  ],
+  [
+   "Subsidies on products",
+   "h",
+   "generation_of_income.uses.d31",
+   "000000000000"
+  ],
+  [
+   "Other subsidies on production",
+   "d",
+   "generation_of_income.uses.d39",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "generation_of_income.uses.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "h",
+   "allocation_of_primary_income.resources.d4",
+   "000000000000"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.resources.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "h",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "000000000000"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.uses.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.uses.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable",
+   "h",
+   "capital.liabilities.d9r",
+   "000000000000"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "d",
+   "capital.liabilities.d9p",
+   "111111111111"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "h",
+   "capital.assets.p53",
+   "000000000000"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "d",
+   "capital.assets.np",
+   "111111111111"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.liabilities.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "h",
+   "financial.liabilities.f2",
+   "000000000000"
+  ],
+  [
+   "Debt Securities",
+   "h",
+   "financial.liabilities.f3",
+   "000000000000"
+  ],
+  [
+   "Loans",
+   "h",
+   "financial.liabilities.f4",
+   "000000000000"
+  ],
+  [
+   "Equity and investment fund shares",
+   "h",
+   "financial.liabilities.f5",
+   "000000000000"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.liabilities.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.assets.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "h",
+   "financial.assets.f2",
+   "000000000000"
+  ],
+  [
+   "Debt Securities",
+   "h",
+   "financial.assets.f3",
+   "000000000000"
+  ],
+  [
+   "Loans",
+   "h",
+   "financial.assets.f4",
+   "000000000000"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.assets.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.assets.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts receivable",
+   "h",
+   "financial.assets.f8",
+   "000000000000"
+  ]
+ ],
+ "nas2024/2.1B": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on Production and imports",
+   "d",
+   "generation_of_income.uses.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "h",
+   "generation_of_income.uses.d21",
+   "000000000000"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "generation_of_income.uses.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "d",
+   "generation_of_income.uses.d3",
+   "111111111111"
+  ],
+  [
+   "Subsidies on products",
+   "h",
+   "generation_of_income.uses.d31",
+   "000000000000"
+  ],
+  [
+   "Other subsidies on production",
+   "d",
+   "generation_of_income.uses.d39",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "generation_of_income.uses.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.resources.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.uses.d5",
+   "111111111111"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.uses.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable",
+   "d",
+   "capital.liabilities.d9r",
+   "111111111111"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "h",
+   "capital.liabilities.d9p",
+   "000000000000"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "h",
+   "capital.assets.p53",
+   "000000000000"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "d",
+   "capital.assets.np",
+   "111111111111"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.liabilities.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "h",
+   "financial.liabilities.f2",
+   "000000000000"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.liabilities.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.liabilities.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.liabilities.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.liabilities.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.assets.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.assets.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.assets.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.assets.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "d",
+   "financial.assets.f6",
+   "000100000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.assets.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2024/2.2": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on Production and imports",
+   "d",
+   "generation_of_income.uses.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "h",
+   "generation_of_income.uses.d21",
+   "000000000000"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "generation_of_income.uses.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "h",
+   "generation_of_income.uses.d3",
+   "000000000000"
+  ],
+  [
+   "Other subsidies on production",
+   "h",
+   "generation_of_income.uses.d39",
+   "000000000000"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "generation_of_income.uses.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.resources.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.uses.d5",
+   "111111111111"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.uses.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable*",
+   "d",
+   "capital.liabilities.d9r",
+   "111111111111"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "h",
+   "capital.liabilities.d9p",
+   "000000000000"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "h",
+   "capital.assets.p53",
+   "000000000000"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "d",
+   "capital.assets.np",
+   "111111111111"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.liabilities.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.liabilities.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities #",
+   "d",
+   "financial.liabilities.f3",
+   "000011111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.liabilities.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.liabilities.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.liabilities.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.assets.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.assets.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities ##",
+   "d",
+   "financial.assets.f3",
+   "000011111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.assets.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.assets.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.assets.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2024/3.0": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on Production and imports",
+   "d",
+   "generation_of_income.uses.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "h",
+   "generation_of_income.uses.d21",
+   "000000000000"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "generation_of_income.uses.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "d",
+   "generation_of_income.uses.d3",
+   "111111111111"
+  ],
+  [
+   "Subsidies on products",
+   "h",
+   "generation_of_income.uses.d31",
+   "000000000000"
+  ],
+  [
+   "Other subsidies on production",
+   "d",
+   "generation_of_income.uses.d39",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "generation_of_income.uses.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.resources.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.uses.d5",
+   "111111111111"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.uses.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable",
+   "d",
+   "capital.liabilities.d9r",
+   "111111111111"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "d",
+   "capital.liabilities.d9p",
+   "100001101011"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "h",
+   "capital.assets.p53",
+   "000000000000"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "d",
+   "capital.assets.np",
+   "111111111111"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.liabilities.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.liabilities.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.liabilities.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.liabilities.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.liabilities.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "d",
+   "financial.liabilities.f6",
+   "111111111111"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs *",
+   "d",
+   "financial.assets.f1",
+   "111111111111"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.assets.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.assets.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.assets.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.assets.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "d",
+   "financial.assets.f7",
+   "101111111111"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2024/3.1": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on Production and imports",
+   "d",
+   "generation_of_income.uses.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "h",
+   "generation_of_income.uses.d21",
+   "000000000000"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "generation_of_income.uses.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "d",
+   "generation_of_income.uses.d3",
+   "111111111111"
+  ],
+  [
+   "Subsidies on products",
+   "h",
+   "generation_of_income.uses.d31",
+   "000000000000"
+  ],
+  [
+   "Other subsidies on production",
+   "d",
+   "generation_of_income.uses.d39",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "generation_of_income.uses.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.resources.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.uses.d5",
+   "111111111111"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.uses.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable",
+   "d",
+   "capital.liabilities.d9r",
+   "111111111111"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "d",
+   "capital.liabilities.d9p",
+   "100001100000"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "000000111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "h",
+   "capital.assets.p53",
+   "000000000000"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "d",
+   "capital.assets.np",
+   "111111111111"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.liabilities.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.liabilities.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.liabilities.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.liabilities.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.liabilities.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "d",
+   "financial.liabilities.f6",
+   "111111111111"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs *",
+   "d",
+   "financial.assets.f1",
+   "111111111111"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.assets.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.assets.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.assets.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.assets.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "d",
+   "financial.assets.f7",
+   "111111111111"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2024/3.2": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on Production and imports",
+   "d",
+   "generation_of_income.uses.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "h",
+   "generation_of_income.uses.d21",
+   "000000000000"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "generation_of_income.uses.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "h",
+   "generation_of_income.uses.d3",
+   "000000000000"
+  ],
+  [
+   "Subsidies on products",
+   "h",
+   "generation_of_income.uses.d31",
+   "000000000000"
+  ],
+  [
+   "Other subsidies on production",
+   "h",
+   "generation_of_income.uses.d39",
+   "000000000000"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "generation_of_income.uses.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.resources.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.uses.d5",
+   "111111111111"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.uses.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable",
+   "d",
+   "capital.liabilities.d9r",
+   "111111111111"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "d",
+   "capital.liabilities.d9p",
+   "100001100000"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "h",
+   "capital.assets.p53",
+   "000000000000"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "d",
+   "capital.assets.np",
+   "111111111111"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.liabilities.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.liabilities.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.liabilities.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.liabilities.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.liabilities.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "d",
+   "financial.liabilities.f6",
+   "111111111111"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.assets.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.assets.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.assets.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.assets.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.assets.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "d",
+   "financial.assets.f7",
+   "001111111100"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2024/4.0": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "h",
+   "generation_of_income.uses.b2n_b3n",
+   "000000000000"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "h",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "000000000000"
+  ],
+  [
+   "Compensation of Employees",
+   "h",
+   "allocation_of_primary_income.resources.d1",
+   "000000000000"
+  ],
+  [
+   "Taxes on production and imports, less Subsidies",
+   "d",
+   "allocation_of_primary_income.resources.taxes_on_production_and_imports_less_subsidies",
+   "111111111111"
+  ],
+  [
+   "Taxes on production and imports",
+   "d",
+   "allocation_of_primary_income.resources.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "d",
+   "allocation_of_primary_income.resources.d21",
+   "111111111111"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "allocation_of_primary_income.resources.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "d",
+   "allocation_of_primary_income.resources.d3",
+   "111111111111"
+  ],
+  [
+   "Subsidies on products",
+   "d",
+   "allocation_of_primary_income.resources.d31",
+   "111111111111"
+  ],
+  [
+   "Other subsidies on production",
+   "d",
+   "allocation_of_primary_income.resources.d39",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.resources.d5",
+   "111111111111"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.uses.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.uses.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "redistribution_of_income_in_kind.resources.b6n",
+   "111111111111"
+  ],
+  [
+   "Social transfers in kind",
+   "h",
+   "redistribution_of_income_in_kind.resources.d63",
+   "000000000000"
+  ],
+  [
+   "Social transfers in kind",
+   "d",
+   "redistribution_of_income_in_kind.uses.d63",
+   "111111111111"
+  ],
+  [
+   "NET ADJUSTED DISPOSABLE INCOME",
+   "d",
+   "redistribution_of_income_in_kind.uses.b7n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Final consumption expenditure",
+   "d",
+   "use_of_disposable_income.uses.p3",
+   "111111111111"
+  ],
+  [
+   "Individual consumption expenditure",
+   "d",
+   "use_of_disposable_income.uses.p31",
+   "111111111111"
+  ],
+  [
+   "Collective consumption expenditure",
+   "d",
+   "use_of_disposable_income.uses.p32",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "NET ADJUSTED DISPOSABLE INCOME",
+   "d",
+   "use_of_adjusted_disposable_income.resources.b7n",
+   "111111111111"
+  ],
+  [
+   "Actual Final consumption expenditure",
+   "d",
+   "use_of_adjusted_disposable_income.uses.p4",
+   "111111111111"
+  ],
+  [
+   "Actual Individual consumption expenditure",
+   "h",
+   "use_of_adjusted_disposable_income.uses.p41",
+   "000000000000"
+  ],
+  [
+   "Actual Collective consumption expenditure",
+   "d",
+   "use_of_adjusted_disposable_income.uses.p42",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_adjusted_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_adjusted_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable",
+   "d",
+   "capital.liabilities.d9r",
+   "111111111111"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "d",
+   "capital.liabilities.d9p",
+   "111111111111"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "h",
+   "capital.assets.p53",
+   "000000000000"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "h",
+   "capital.assets.np",
+   "000000000000"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Currency and deposits",
+   "h",
+   "financial.liabilities.f2",
+   "000000000000"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.liabilities.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "h",
+   "financial.liabilities.f4",
+   "000000000000"
+  ],
+  [
+   "Equity and investment fund shares",
+   "h",
+   "financial.liabilities.f5",
+   "000000000000"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.liabilities.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Currency and deposits",
+   "h",
+   "financial.assets.f2",
+   "000000000000"
+  ],
+  [
+   "Debt Securities",
+   "h",
+   "financial.assets.f3",
+   "000000000000"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.assets.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.assets.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.assets.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2024/5.0": [
+  [
+   "Output, in basic prices",
+   "d",
+   "production.resources.p1",
+   "111111111111"
+  ],
+  [
+   "Less:Intermediate consumption, in purchaser's prices",
+   "d",
+   "production.uses.p2",
+   "111111111111"
+  ],
+  [
+   "Gross Value Added",
+   "d",
+   "production.uses.b1g",
+   "111111111111"
+  ],
+  [
+   "Less: Consumption of fixed capital",
+   "d",
+   "production.uses.p51c",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "production.uses.b1n",
+   "111111111111"
+  ],
+  [
+   "Net Value Added",
+   "d",
+   "generation_of_income.resources.b1n",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "generation_of_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes on Production and imports",
+   "d",
+   "generation_of_income.uses.d2",
+   "111111111111"
+  ],
+  [
+   "Taxes on products",
+   "h",
+   "generation_of_income.uses.d21",
+   "000000000000"
+  ],
+  [
+   "Other taxes on production",
+   "d",
+   "generation_of_income.uses.d29",
+   "111111111111"
+  ],
+  [
+   "Less: Subsidies",
+   "d",
+   "generation_of_income.uses.d3",
+   "111111111111"
+  ],
+  [
+   "Subsidies on products",
+   "h",
+   "generation_of_income.uses.d31",
+   "000000000000"
+  ],
+  [
+   "Other subsidies on production",
+   "d",
+   "generation_of_income.uses.d39",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "generation_of_income.uses.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "OPERATING SURPLUS/MIXED INCOME, NET",
+   "d",
+   "allocation_of_primary_income.resources.b2n_b3n",
+   "111111111111"
+  ],
+  [
+   "Compensation of Employees",
+   "d",
+   "allocation_of_primary_income.resources.d1",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Property income",
+   "d",
+   "allocation_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "allocation_of_primary_income.uses.b5n",
+   "111111111111"
+  ],
+  [
+   "BALANCE OF PRIMARY INCOMES",
+   "d",
+   "secondary_distribution_of_income.resources.b5n",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "secondary_distribution_of_income.resources.d5",
+   "000000000000"
+  ],
+  [
+   "Other current transfers",
+   "d",
+   "secondary_distribution_of_income.resources.d6_plus_d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "d",
+   "secondary_distribution_of_income.uses.d5",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "secondary_distribution_of_income.uses.b6n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "redistribution_of_income_in_kind.resources.b6n",
+   "111111111111"
+  ],
+  [
+   "Social transfers in kind",
+   "d",
+   "redistribution_of_income_in_kind.resources.d63",
+   "111111111111"
+  ],
+  [
+   "Social transfers in kind",
+   "h",
+   "redistribution_of_income_in_kind.uses.d63",
+   "000000000000"
+  ],
+  [
+   "NET ADJUSTED DISPOSABLE INCOME",
+   "d",
+   "redistribution_of_income_in_kind.uses.b7n",
+   "111111111111"
+  ],
+  [
+   "NET DISPOSABLE INCOME",
+   "d",
+   "use_of_disposable_income.resources.b6",
+   "111111111111"
+  ],
+  [
+   "Final consumption expenditure",
+   "d",
+   "use_of_disposable_income.uses.p3",
+   "111111111111"
+  ],
+  [
+   "Individual consumption expenditure",
+   "d",
+   "use_of_disposable_income.uses.p31",
+   "111111111111"
+  ],
+  [
+   "Collective consumption expenditure",
+   "h",
+   "use_of_disposable_income.uses.p32",
+   "000000000000"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "NET ADJUSTED DISPOSABLE INCOME",
+   "d",
+   "use_of_adjusted_disposable_income.resources.b7n",
+   "111111111111"
+  ],
+  [
+   "Actual Final consumption expenditure",
+   "d",
+   "use_of_adjusted_disposable_income.uses.p4",
+   "111111111111"
+  ],
+  [
+   "Actual Individual consumption expenditure",
+   "d",
+   "use_of_adjusted_disposable_income.uses.p41",
+   "111111111111"
+  ],
+  [
+   "Actual Collective consumption expenditure",
+   "d",
+   "use_of_adjusted_disposable_income.uses.p42",
+   "111111111111"
+  ],
+  [
+   "Adjustment for the change in pension entitlements",
+   "h",
+   "use_of_adjusted_disposable_income.uses.d8",
+   "000000000000"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "use_of_adjusted_disposable_income.uses.b8n",
+   "111111111111"
+  ],
+  [
+   "SAVING, NET",
+   "d",
+   "capital.liabilities.b8n",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "h",
+   "capital.liabilities.d9",
+   "000000000000"
+  ],
+  [
+   "Capital transfers, receivable",
+   "h",
+   "capital.liabilities.d9r",
+   "000000000000"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "h",
+   "capital.liabilities.d9p",
+   "000000000000"
+  ],
+  [
+   "Equals: CHANGES IN NET WORTH DUETO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Net capital formation",
+   "d",
+   "capital.assets.p5n",
+   "111111111111"
+  ],
+  [
+   "Gross fixed capital formation",
+   "d",
+   "capital.assets.p51g",
+   "111111111111"
+  ],
+  [
+   "Changes in inventories",
+   "d",
+   "capital.assets.p52",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of valuables",
+   "d",
+   "capital.assets.p53",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of non-produced assets",
+   "h",
+   "capital.assets.np",
+   "000000000000"
+  ],
+  [
+   "Less consumption of fixed capital",
+   "d",
+   "capital.assets.p51c",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.net_incurrence_of_liabilities",
+   "111111111111"
+  ],
+  [
+   "Currency and deposits",
+   "h",
+   "financial.liabilities.f2",
+   "000000000000"
+  ],
+  [
+   "Debt Securities",
+   "h",
+   "financial.liabilities.f3",
+   "000000000000"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.liabilities.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "h",
+   "financial.liabilities.f5",
+   "000000000000"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.liabilities.f6",
+   "000000000000"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.liabilities.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "h",
+   "financial.liabilities.f8",
+   "000000000000"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.net_acquisition_of_financial_assets",
+   "111111111111"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.assets.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "d",
+   "financial.assets.f3",
+   "111111111111"
+  ],
+  [
+   "Loans",
+   "h",
+   "financial.assets.f4",
+   "000000000000"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "d",
+   "financial.assets.f6",
+   "111111111111"
+  ],
+  [
+   "Financial derivatives and employee stock options",
+   "h",
+   "financial.assets.f7",
+   "000000000000"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2024/6.0": [
+  [
+   "Imports of Goods and Services",
+   "d",
+   "external_of_goods_and_services.resources.p7",
+   "111111111111"
+  ],
+  [
+   "Imports of goods",
+   "d",
+   "external_of_goods_and_services.resources.p71",
+   "111111111111"
+  ],
+  [
+   "Imports of Services",
+   "d",
+   "external_of_goods_and_services.resources.p72",
+   "111111111111"
+  ],
+  [
+   "Exports of Goods and Services",
+   "d",
+   "external_of_goods_and_services.uses.p6",
+   "111111111111"
+  ],
+  [
+   "Exports of goods",
+   "d",
+   "external_of_goods_and_services.uses.p61",
+   "111111111111"
+  ],
+  [
+   "Exports of Services",
+   "d",
+   "external_of_goods_and_services.uses.p62",
+   "111111111111"
+  ],
+  [
+   "EXTERNAL BALANCE OF GOODS AND SERVICES",
+   "d",
+   "external_of_goods_and_services.uses.b11",
+   "111111111111"
+  ],
+  [
+   "EXTERNAL BALANCE OF GOODS AND SERVICES",
+   "d",
+   "external_of_primary_income.resources.b11",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "external_of_primary_income.resources.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes less subsidies on production and imports",
+   "h",
+   "external_of_primary_income.resources.d2_d3",
+   "000000000000"
+  ],
+  [
+   "Property Income",
+   "d",
+   "external_of_primary_income.resources.d4",
+   "111111111111"
+  ],
+  [
+   "Compensation of employees",
+   "d",
+   "external_of_primary_income.uses.d1",
+   "111111111111"
+  ],
+  [
+   "Taxes less subsidies on production and imports",
+   "h",
+   "external_of_primary_income.uses.d2_d3",
+   "000000000000"
+  ],
+  [
+   "Property Income",
+   "d",
+   "external_of_primary_income.uses.d4",
+   "111111111111"
+  ],
+  [
+   "EXTERNAL BALANCE OF PRIMARY INCOME",
+   "d",
+   "external_of_primary_income.uses.external_balance_of_primary_income",
+   "111111111111"
+  ],
+  [
+   "EXTERNAL BALANCE OF PRIMARY INCOME",
+   "d",
+   "external_of_secondary_income.resources.external_balance_of_primary_income",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "external_of_secondary_income.resources.d5",
+   "000000000000"
+  ],
+  [
+   "Social contributions and benefits",
+   "h",
+   "external_of_secondary_income.resources.d6",
+   "000000000000"
+  ],
+  [
+   "Other Current Transfers",
+   "d",
+   "external_of_secondary_income.resources.d7",
+   "111111111111"
+  ],
+  [
+   "Current taxes on income, wealth, etc.",
+   "h",
+   "external_of_secondary_income.uses.d5",
+   "000000000000"
+  ],
+  [
+   "Social contributions and benefits",
+   "h",
+   "external_of_secondary_income.uses.d6",
+   "000000000000"
+  ],
+  [
+   "Other Current Transfers",
+   "d",
+   "external_of_secondary_income.uses.d7",
+   "111111111111"
+  ],
+  [
+   "EXTERNAL BALANCE OF SECONDARY INCOME",
+   "d",
+   "external_of_secondary_income.uses.external_balance_of_secondary_income",
+   "111111111111"
+  ],
+  [
+   "EXTERNAL BALANCE OF SECONDARY INCOME",
+   "d",
+   "external_of_disposable_income.resources.external_balance_of_secondary_income",
+   "111111111111"
+  ],
+  [
+   "Adjustment for merchandise imports by change of ownership",
+   "d",
+   "external_of_disposable_income.resources.adjustment_for_merchandise_imports_by_change_of_ownership",
+   "111111111111"
+  ],
+  [
+   "Adjustment for merchandise exports by change of ownership",
+   "d",
+   "external_of_disposable_income.uses.adjustment_for_merchandise_exports_by_change_of_ownership",
+   "111111111111"
+  ],
+  [
+   "CURRENT EXTERNAL BALANCE",
+   "d",
+   "external_of_disposable_income.uses.b12",
+   "111111111111"
+  ],
+  [
+   "CURRENT EXTERNAL BALANCE",
+   "d",
+   "capital.liabilities.b12",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable less payable",
+   "d",
+   "capital.liabilities.d9",
+   "111111111111"
+  ],
+  [
+   "Capital transfers, receivable",
+   "d",
+   "capital.liabilities.d9r",
+   "111111111111"
+  ],
+  [
+   "Less: Capital transfers, payable",
+   "d",
+   "capital.liabilities.d9p",
+   "111111111111"
+  ],
+  [
+   "CHANGES IN NET WORTH DUE TO SAVING AND CAPITAL TRANSFERS",
+   "d",
+   "capital.liabilities.b101",
+   "111111111111"
+  ],
+  [
+   "Acquisitions less disposals of non-produced non-financial assets",
+   "d",
+   "capital.assets.k2",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "capital.assets.b9",
+   "111111111111"
+  ],
+  [
+   "Net incurrence of liabilities",
+   "d",
+   "financial.liabilities.f",
+   "111111111111"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.liabilities.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "h",
+   "financial.liabilities.f3",
+   "000000000000"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.liabilities.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.liabilities.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.liabilities.f6",
+   "000000000000"
+  ],
+  [
+   "Other accounts payable",
+   "d",
+   "financial.liabilities.f8",
+   "111111111111"
+  ],
+  [
+   "NET LENDING (+) / NET BORROWING (-)",
+   "d",
+   "financial.liabilities.b9",
+   "111111111111"
+  ],
+  [
+   "Net acquisition of financial assets",
+   "d",
+   "financial.assets.f",
+   "111111111111"
+  ],
+  [
+   "Monetary gold and SDRs",
+   "h",
+   "financial.assets.f1",
+   "000000000000"
+  ],
+  [
+   "Currency and deposits",
+   "d",
+   "financial.assets.f2",
+   "111111111111"
+  ],
+  [
+   "Debt Securities",
+   "h",
+   "financial.assets.f3",
+   "000000000000"
+  ],
+  [
+   "Loans",
+   "d",
+   "financial.assets.f4",
+   "111111111111"
+  ],
+  [
+   "Equity and investment fund shares",
+   "d",
+   "financial.assets.f5",
+   "111111111111"
+  ],
+  [
+   "Insurance, pension and standardised guarantee scheme",
+   "h",
+   "financial.assets.f6",
+   "000000000000"
+  ],
+  [
+   "Other accounts receivable",
+   "d",
+   "financial.assets.f8",
+   "111111111111"
+  ]
+ ],
+ "nas2025/1.1": [
+  [
+   "Domestic Product",
+   "h",
+   "",
+   "00000000000000000000000000"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_basic",
+   "11111111111111111111111111"
+  ],
+  [
+   "Taxes on Products including import duties",
+   "d",
+   "taxes_on_products",
+   "11111111111111111111111111"
+  ],
+  [
+   "Less Subsidies on Products",
+   "d",
+   "subsidies_on_products",
+   "11111111111111111111111111"
+  ],
+  [
+   "GDP (1+2-3)",
+   "d",
+   "gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "CFC",
+   "d",
+   "cfc",
+   "11111111111111111111111111"
+  ],
+  [
+   "NDP(4-5)",
+   "d",
+   "ndp",
+   "11111111111111111111111111"
+  ],
+  [
+   "Final Expenditure",
+   "h",
+   "",
+   "00000000000000000000000000"
+  ],
+  [
+   "PFCE",
+   "d",
+   "pfce",
+   "11111111111111111111111111"
+  ],
+  [
+   "GFCE",
+   "d",
+   "gfce",
+   "11111111111111111111111111"
+  ],
+  [
+   "GCF",
+   "d",
+   "gcf",
+   "11111111111111111111111111"
+  ],
+  [
+   "GFCF",
+   "d",
+   "gfcf",
+   "11111111111111111111111111"
+  ],
+  [
+   "CIS",
+   "d",
+   "cis",
+   "11111111111111111111111111"
+  ],
+  [
+   "VALUABLES",
+   "d",
+   "valuables",
+   "11111111111111111111111111"
+  ],
+  [
+   "Exports of goods and services",
+   "d",
+   "exports",
+   "11111111111111111111111111"
+  ],
+  [
+   "Export of goods",
+   "d",
+   "exports_goods",
+   "11111111111111111111111111"
+  ],
+  [
+   "Export of services",
+   "d",
+   "exports_services",
+   "11111111111111111111111111"
+  ],
+  [
+   "Less Imports of goods and services",
+   "d",
+   "imports",
+   "11111111111111111111111111"
+  ],
+  [
+   "Import of goods",
+   "d",
+   "imports_goods",
+   "11111111111111111111111111"
+  ],
+  [
+   "Import of services",
+   "d",
+   "imports_services",
+   "11111111111111111111111111"
+  ],
+  [
+   "Discrepancies",
+   "d",
+   "discrepancies",
+   "11111111111111111111111111"
+  ],
+  [
+   "GDP",
+   "d",
+   "gdp_expenditure",
+   "11111111111111111111111111"
+  ],
+  [
+   "Primary income receivable from ROW (net)",
+   "d",
+   "primary_income_row_net",
+   "11111111111111111111111111"
+  ],
+  [
+   "GNI(13+14)",
+   "d",
+   "gni",
+   "11111111111111111111111111"
+  ],
+  [
+   "NNI (15-5)",
+   "d",
+   "nni",
+   "11111111111111111111111111"
+  ],
+  [
+   "Other current transfers (net) from ROW",
+   "d",
+   "other_current_transfers_row_net",
+   "11111111111110000000000000"
+  ],
+  [
+   "GNDI(15+17)",
+   "d",
+   "gndi",
+   "11111111111110000000000000"
+  ],
+  [
+   "NNDI(18-5)",
+   "d",
+   "nndi",
+   "11111111111110000000000000"
+  ],
+  [
+   "Gross Saving",
+   "d",
+   "gross_saving",
+   "11111111111110000000000000"
+  ],
+  [
+   "Net Saving (19-5)",
+   "d",
+   "net_saving",
+   "11111111111110000000000000"
+  ],
+  [
+   "Rates",
+   "h",
+   "",
+   "00000000000000000000000000"
+  ],
+  [
+   "Gross Saving to GNDI",
+   "d",
+   "gross_saving_pct_gndi",
+   "11111111111110000000000000"
+  ],
+  [
+   "GCF to GDP",
+   "d",
+   "gcf_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "GCF excluding Valuables to GDP",
+   "d",
+   "gcf_excl_valuables_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "PFCE to NNI",
+   "d",
+   "pfce_pct_nni",
+   "11111111111111111111111111"
+  ],
+  [
+   "Rates of Expenditure Components to GDP",
+   "h",
+   "",
+   "00000000000000000000000000"
+  ],
+  [
+   "PFCE",
+   "d",
+   "pfce_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "GFCE",
+   "d",
+   "gfce_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "GFCF",
+   "d",
+   "gfcf_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "CIS",
+   "d",
+   "cis_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "Valuables",
+   "d",
+   "valuables_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "Export of goods and services",
+   "d",
+   "exports_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "Export of goods",
+   "d",
+   "exports_goods_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "Export of services",
+   "d",
+   "exports_services_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "Less Import of goods and services",
+   "d",
+   "imports_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "Import of goods",
+   "d",
+   "imports_goods_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "Import of services",
+   "d",
+   "imports_services_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "Discrepancies",
+   "d",
+   "discrepancies_pct_gdp",
+   "11111111111111111111111111"
+  ],
+  [
+   "Percentage Change over Previous Year",
+   "h",
+   "",
+   "00000000000000000000000000"
+  ],
+  [
+   "GVA at basic prices",
+   "d",
+   "gva_basic_growth",
+   "01111111111110111111111111"
+  ],
+  [
+   "GDP",
+   "d",
+   "gdp_growth",
+   "01111111111110111111111111"
+  ]
+ ],
+ "nas2025/1.9": [
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "1111111111111"
+  ],
+  [
+   "Non-financial corporations",
+   "d",
+   "non_financial_corporations",
+   "1111111111111"
+  ],
+  [
+   "Public non-financial corporations",
+   "d",
+   "public_non_financial_corporations",
+   "1111111111111"
+  ],
+  [
+   "Departmental enterprises",
+   "d",
+   "public_non_financial_corporations.departmental_enterprises",
+   "1111111111111"
+  ],
+  [
+   "Non-departmental enterprises",
+   "d",
+   "public_non_financial_corporations.non_departmental_enterprises",
+   "1111111111111"
+  ],
+  [
+   "Private non-financial corporations",
+   "d",
+   "private_non_financial_corporations",
+   "1111111111111"
+  ],
+  [
+   "Financial corporations",
+   "d",
+   "financial_corporations",
+   "1111111111111"
+  ],
+  [
+   "Public financial corporations",
+   "d",
+   "public_financial_corporations",
+   "1111111111111"
+  ],
+  [
+   "Departmental enterprises",
+   "d",
+   "public_financial_corporations.departmental_enterprises",
+   "1111111111111"
+  ],
+  [
+   "Non-departmental enterprises",
+   "d",
+   "public_financial_corporations.non_departmental_enterprises",
+   "1111111111111"
+  ],
+  [
+   "Private financial corporations",
+   "d",
+   "private_financial_corporations",
+   "1111111111111"
+  ],
+  [
+   "General Government",
+   "d",
+   "general_government",
+   "1111111111111"
+  ],
+  [
+   "Household sector",
+   "d",
+   "household_sector",
+   "1111111111111"
+  ],
+  [
+   "Gross financial saving#",
+   "d",
+   "gross_financial_saving",
+   "1111111111111"
+  ],
+  [
+   "Less Financial liabilities#",
+   "d",
+   "less_financial_liabilities",
+   "1111111111111"
+  ],
+  [
+   "saving in physical assets",
+   "d",
+   "saving_in_physical_assets",
+   "1111111111111"
+  ],
+  [
+   "saving in the form of gold and silver ornaments",
+   "d",
+   "saving_in_the_form_of_gold_and_silver_ornaments",
+   "1111111111111"
+  ],
+  [
+   "net capital inflow from ROW",
+   "d",
+   "net_capital_inflow_from_row",
+   "1111111111111"
+  ],
+  [
+   "finances for gross capital formation (1+2)",
+   "d",
+   "finances_for_gross_capital_formation_1_2",
+   "1111111111111"
+  ],
+  [
+   "Memorandum items",
+   "d",
+   "memorandum_items",
+   "1111111111111"
+  ],
+  [
+   "Reinvested earnings of foreign companies in private corporations deducted from savings of private corporations",
+   "d",
+   "reinvested_earnings_of_foreign_companies_in_private_corporat",
+   "1111111111111"
+  ],
+  [
+   "Savings of co-operatives banks & societies",
+   "d",
+   "savings_of_co_operatives_banks_and_societies",
+   "1111111111111"
+  ]
+ ],
+ "nas2025/1.14": [
+  [
+   "Public non-financial corporations",
+   "h",
+   "",
+   "0000000000000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "1111111111111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "1111111111111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "1111111111111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "1111111111111"
+  ],
+  [
+   "Private non-financial corporations",
+   "h",
+   "",
+   "0000000000000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "1111111111111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "1111111111111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "1111111111111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "1111111111111"
+  ],
+  [
+   "Public Financial corporations",
+   "h",
+   "",
+   "0000000000000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "1111111111111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "1111111111111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "1111111111111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "1111111111111"
+  ],
+  [
+   "Private Financial corporations",
+   "h",
+   "",
+   "0000000000000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "1111111111111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "1111111111111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "1111111111111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "1111111111111"
+  ],
+  [
+   "General Government",
+   "h",
+   "",
+   "0000000000000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "1111111111111"
+  ],
+  [
+   "Gross Disposable Income",
+   "d",
+   "gross_disposable_income",
+   "1111111111111"
+  ],
+  [
+   "Final Consumption Expenditure",
+   "d",
+   "final_consumption_expenditure",
+   "1111111111111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "1111111111111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "1111111111111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "1111111111111"
+  ],
+  [
+   "Households including NPISH",
+   "h",
+   "",
+   "0000000000000"
+  ],
+  [
+   "Gross Value Added at basic prices",
+   "d",
+   "gross_value_added_at_basic_prices",
+   "1111111111111"
+  ],
+  [
+   "Gross Disposable Income",
+   "d",
+   "gross_disposable_income",
+   "1111111111111"
+  ],
+  [
+   "Final Consumption Expenditure",
+   "d",
+   "final_consumption_expenditure",
+   "1111111111111"
+  ],
+  [
+   "Gross Savings",
+   "d",
+   "gross_savings",
+   "1111111111111"
+  ],
+  [
+   "Gross Capital Formation",
+   "d",
+   "gross_capital_formation",
+   "1111111111111"
+  ],
+  [
+   "Consumption of Fixed Capital",
+   "d",
+   "consumption_of_fixed_capital",
+   "1111111111111"
+  ]
+ ],
+ "nas2025/5.3": [
+  [
+   "Household saving (1+2+3-4)",
+   "d",
+   "household_saving_1_2_3_4",
+   "1111111111111"
+  ],
+  [
+   "gross financial saving #",
+   "d",
+   "gross_financial_saving",
+   "1111111111111"
+  ],
+  [
+   "currency",
+   "d",
+   "currency",
+   "1111111111111"
+  ],
+  [
+   "deposits",
+   "d",
+   "deposits",
+   "1111111111111"
+  ],
+  [
+   "with banks",
+   "d",
+   "with_banks",
+   "1111111111111"
+  ],
+  [
+   "with non-banking companies",
+   "d",
+   "with_non_banking_companies",
+   "1111111111111"
+  ],
+  [
+   "with co-operative banks & societies",
+   "d",
+   "with_co_operative_banks_and_societies",
+   "1111111111111"
+  ],
+  [
+   "trade debt, net",
+   "d",
+   "trade_debt_net",
+   "1111111111111"
+  ],
+  [
+   "shares and debentures",
+   "d",
+   "shares_and_debentures",
+   "1111111111111"
+  ],
+  [
+   "private corporate companies",
+   "d",
+   "private_corporate_companies",
+   "1111111111111"
+  ],
+  [
+   "co-operative banks & societies",
+   "d",
+   "co_operative_banks_and_societies",
+   "1111111111111"
+  ],
+  [
+   "mutual funds",
+   "d",
+   "mutual_funds",
+   "1111111111111"
+  ],
+  [
+   "claims on government",
+   "d",
+   "claims_on_government",
+   "1111111111111"
+  ],
+  [
+   "investment in government securities",
+   "d",
+   "investment_in_government_securities",
+   "1111111111111"
+  ],
+  [
+   "investment in small savings etc.",
+   "d",
+   "investment_in_small_savings_etc",
+   "1111111111111"
+  ],
+  [
+   "insurance funds",
+   "d",
+   "insurance_funds",
+   "1111111111111"
+  ],
+  [
+   "life insurance funds",
+   "d",
+   "life_insurance_funds",
+   "1111111111111"
+  ],
+  [
+   "postal insurance",
+   "d",
+   "postal_insurance",
+   "1111111111111"
+  ],
+  [
+   "state insurance",
+   "d",
+   "state_insurance",
+   "1111111111111"
+  ],
+  [
+   "provident and pension funds",
+   "d",
+   "provident_and_pension_funds",
+   "1111111111111"
+  ],
+  [
+   "saving in physical assets",
+   "d",
+   "saving_in_physical_assets",
+   "1111111111111"
+  ],
+  [
+   "saving in form of gold & silver ornaments",
+   "d",
+   "saving_in_form_of_gold_and_silver_ornaments",
+   "1111111111111"
+  ],
+  [
+   "financial liabilities #",
+   "d",
+   "financial_liabilities",
+   "1111111111111"
+  ],
+  [
+   "bank advances",
+   "d",
+   "bank_advances",
+   "1111111111111"
+  ],
+  [
+   "loans and advances by co-operative banks & societies",
+   "d",
+   "loans_and_advances_by_co_operative_banks_and_societies",
+   "1111111111111"
+  ],
+  [
+   "loans by financial corporations & non-banking companies",
+   "d",
+   "loans_by_financial_corporations_and_non_banking_companies",
+   "1111111111111"
+  ],
+  [
+   "loans and advances from government",
+   "d",
+   "loans_and_advances_from_government",
+   "1111111111111"
+  ],
+  [
+   "loans from insurance corporations",
+   "d",
+   "loans_from_insurance_corporations",
+   "1111111111111"
+  ],
+  [
+   "net financial saving of household sector (1-4)",
+   "d",
+   "net_financial_saving_of_household_sector_1_4",
+   "1111111111111"
+  ]
+ ]
+}

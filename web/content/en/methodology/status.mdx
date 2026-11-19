@@ -1,0 +1,26 @@
+Every flow on the map and every figure in the stories carries a badge that answers two separate questions, because a total can be firmly published even when its parts are estimates. On this page, the economic values (GDP, household factor income, the discrepancy items and the sums of flagged entries) carry the same badge; counts, rule thresholds and totals over the whole SAM carry none: they describe how the map was built, not a flow in the economy. A zero amount has no badge.
+
+**First: is the total held to a published figure?** If it is, the badge says **Official total** (or **Derived total**). This happens when the figure's parts are exactly covered by published totals that balancing had to respect within a tight tolerance: at most <DataFig path="methodology.pin_width_abs"/> or <DataFig path="methodology.pin_width_rel"/> of the figure, whichever is larger. A matching annual series whose check against the map passes counts too. Select the badge to see which published figure holds it. Household consumption, household saving and remittances received are examples. If no published total holds a figure, the badge shows only how its parts were made.
+
+**Second: how were the parts made?** Each entry gets one of four labels:
+
+- **Official**: a published cell or total, used as it is. <DataFig path="sam.labels.official.entries" fmt="count"/> entries, worth <DataFig path="sam.labels.official.abs" fmt="inr"/> (summed ignoring sign).
+- **Derived**: arithmetic on published figures, such as a difference or a sum of two tables. <DataFig path="sam.labels.derived.entries" fmt="count"/> entries, worth <DataFig path="sam.labels.derived.abs" fmt="inr"/>.
+- **Estimated**: a published total split with a key, a structure or a model, for example consumption split across household groups with survey shares. <DataFig path="sam.labels.estimated.entries" fmt="count"/> entries, worth <DataFig path="sam.labels.estimated.abs" fmt="inr"/>.
+- **Set by balancing**: balancing moved a free estimate enough to need a written explanation, or the entry has an explanation verdict, or it sits in a judgement band whose edge it reached. Its level comes from the balancing, not from a source. <DataFig path="sam.labels.balancing_set.entries" fmt="count"/> entries, worth <DataFig path="sam.labels.balancing_set.abs" fmt="inr"/>.
+
+Balancing nudged many other entries by small amounts. Those keep their original label, and the flow panel says "adjusted by" the percentage, so a move of a fraction of a per cent does not hide an official figure behind a "balancing" label.
+
+A flow on the map usually contains many entries. Its badge shows the **least certain label that carries at least <DataFig path="methodology.split_headline_min"/> of its value**, and a small bar shows the full mix of the four labels. Across the whole SAM the mix is: official <DataFig path="sam.composition.o" fmt="pct"/>, derived <DataFig path="sam.composition.d" fmt="pct"/>, estimated <DataFig path="sam.composition.e" fmt="pct"/> and set by balancing <DataFig path="sam.composition.b" fmt="pct"/>. On the map, estimated ribbons are hatched and balancing-set ribbons cross-hatched, so colour is never the only signal.
+
+**Flags** add warnings in plain words. On the map they read:
+
+- **"Level set by a judgement band, not by data."** The entry belongs to one of the bands described under [limits](#limits): the balanced value sits on the band's edge, so our choice of width sets it.
+- **"Balancing moved this and the reason is not yet documented."** Its explanation verdict is "unexplained".
+- **"Direction explained, level not."** A source supports the direction of the move but not its size.
+- **"Estimated with the old-base structure."** The split uses the pattern of the previous national-accounts series, because the new series does not publish it yet.
+- **"Includes a discrepancy or reconciliation item."** The flow panel says which published residual it is.
+- **"Includes negative amounts."** Part of the flow is negative, such as a subsidy (a negative tax) or a sector that sold more of an asset than it bought, so it is drawn in the opposite direction.
+- **"Uses a stated assumption."** Somewhere in its sources there is an assumption rather than a published figure; the method is one click away.
+
+The words "official", "derived", "estimated" and "official total" appear on this site only where these rules put them.

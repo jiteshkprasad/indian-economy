@@ -1,0 +1,36 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 2359023,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://www.mospi.gov.in/uploads/documents/documents/1769670019171-Annex_5.3.xlsx",
+  "key": "mospi_cpi_2024base/cpi2024_annex_5_3_weights.xlsx",
+  "method": "GET",
+  "name": "cpi2024_annex_5_3_weights.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.mospi.gov.in/uploads/documents/documents/1769670534541-Export_report_CPI.pdf",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "2359023",
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "etag": "W/\"23feef-19c088d886a\"",
+    "last-modified": "Thu, 29 Jan 2026 07:00:19 GMT",
+    "server": "nginx"
+  },
+  "retrieved_at": "2026-09-29T10:36:55Z",
+  "sha256": "cae0f770cdace596929a1ccb89d2b4bca15c573accf9fa06a17222ce2be9b80d",
+  "source_id": "mospi_cpi_2024base",
+  "status": 200,
+  "url": "https://www.mospi.gov.in/uploads/documents/documents/1769670019171-Annex_5.3.xlsx"
+}

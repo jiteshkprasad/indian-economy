@@ -1,0 +1,330 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "definitions": {
+    "SeriesArrays": {
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": "array"
+        },
+        "flags": {
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": "array"
+        },
+        "prov": {
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": "array"
+        },
+        "segment": {
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": "array"
+        },
+        "share": {
+          "items": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "type": "array"
+        },
+        "stage": {
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": "array"
+        },
+        "status": {
+          "items": {
+            "enum": [
+              "official",
+              "derived",
+              null
+            ]
+          },
+          "type": "array"
+        },
+        "v": {
+          "items": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "v",
+        "share",
+        "base",
+        "status",
+        "stage",
+        "flags",
+        "segment",
+        "prov"
+      ],
+      "title": "SeriesArrays",
+      "type": "object"
+    }
+  },
+  "description": "<v>/ts/series.json: the 69 top-flow series over 76 periods (PLAN s.3.7). Arrays align with `periods`.",
+  "properties": {
+    "flows": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "alts": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "arrays": {
+                  "$ref": "#/definitions/SeriesArrays"
+                },
+                "variant": {
+                  "enum": [
+                    "fc16_definition",
+                    "proxy_total_portfolio"
+                  ]
+                }
+              },
+              "required": [
+                "variant",
+                "arrays"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "check": {
+            "additionalProperties": false,
+            "properties": {
+              "class": {
+                "type": "string"
+              },
+              "explanation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rel_diff": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "sam_value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "ts_value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "verdict": {
+                "enum": [
+                  "pass",
+                  "explained",
+                  "no_check"
+                ]
+              }
+            },
+            "required": [
+              "class",
+              "verdict",
+              "ts_value",
+              "sam_value",
+              "rel_diff",
+              "explanation"
+            ],
+            "type": "object"
+          },
+          "display_sign": {
+            "enum": [
+              1,
+              -1
+            ]
+          },
+          "group": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "link_policy": {
+            "enum": [
+              "linked",
+              "refused"
+            ]
+          },
+          "link_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "linked": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/SeriesArrays"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "main": {
+            "$ref": "#/definitions/SeriesArrays"
+          },
+          "markers": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "base_change",
+                    "concept_break",
+                    "segment_join",
+                    "segment",
+                    "break"
+                  ]
+                },
+                "note": {
+                  "type": "string"
+                },
+                "period": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "period",
+                "kind",
+                "note"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "name_tech": {
+            "type": "string"
+          },
+          "tier": {
+            "enum": [
+              "core",
+              "memo"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "tier",
+          "group",
+          "display_sign",
+          "name_tech",
+          "check",
+          "link_policy",
+          "link_reason",
+          "markers",
+          "main",
+          "linked",
+          "alts"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "gdp": {
+      "additionalProperties": false,
+      "properties": {
+        "linked": {
+          "items": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "type": "array"
+        },
+        "main": {
+          "items": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "type": "array"
+        },
+        "main_base": {
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": "array"
+        },
+        "prov": {
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "main",
+        "main_base",
+        "linked",
+        "prov"
+      ],
+      "type": "object"
+    },
+    "periods": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 76,
+      "minItems": 76,
+      "type": "array"
+    }
+  },
+  "required": [
+    "periods",
+    "gdp",
+    "flows"
+  ],
+  "title": "Series",
+  "type": "object"
+}

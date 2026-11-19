@@ -1,0 +1,283 @@
+# Gap-map coverage declared by the union_fiscal unit (format: pipeline/core/coverage.py).
+# extent: full = this dataset fills the cell by itself; partial = part of it (usually the Union
+# side of a Centre+States cell, or an input to an ESTIMATED cell); control_total = the total the
+# cell must sum to. Period: 2023-24 (reference year) unless stated.
+unit: union_fiscal
+entries:
+- ref: T1
+  dataset: union_fiscal_rb_receipts
+  series_ids: [rb.tr.0005.central_goods_and_services_tax_cgst, rb.tr.0008.integrated_goods_and_services_tax_igst,
+    rb.tr.0009.gst_compensation_cess, rb.tr.total.total_goods_and_services_tax_gst, rb.tr.total.total_corporation_tax,
+    rb.tr.total.total_taxes_on_income, rb.tr.total.total_customs, rb.tr.total.total_union_excise_duties,
+    rb.tr.0710.less_states_share, rb.tr.total.grand_total]
+  extent: full
+  note: Union tax receipts by type, gross of devolution, Receipt Budget 2025-26 Actual 2023-24 (CGST 8,20,622.09; IGST -4,850.43; cess 1,41,436.16; GST 9,57,207.82).
+- ref: T1
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0005.total, fa8.0005.00.901, fa8.0008.total, fa8.0009.total, fa8.0020.total, fa8.0020.00.901,
+    fa8.0021.total, fa8.0021.00.901, fa8.0034.total, fa8.0037.total, fa8.0038.total, fa8.section.a_tax_revenue]
+  extent: full
+  note: Audited Finance Accounts St 8; each major-head TOTAL is net of minor head 901 (States' share), gross = total - 901.
+- ref: T1
+  dataset: union_fiscal_afs
+  series_ids: [afs.cfi_rev_receipts.0005, afs.cfi_rev_receipts.0008, afs.cfi_rev_receipts.0009, afs.cfi_rev_receipts.0020,
+    afs.cfi_rev_receipts.0021, afs.cfi_rev_receipts.0037, afs.cfi_rev_receipts.0038]
+  extent: full
+  note: AFS 2025-26 Statement I by major head (gross), Actuals 2023-24; also 2022-23 from AFS 2024-25.
+- ref: T1a
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0005.total, fa8.0008.total, fa8.0009.total, fa8.0037.total, fa8.0038.total]
+  extent: partial
+  note: Cash inputs only; the accrual conversion and SUT fit are Phase 2 estimates.
+- ref: T3
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0021.total, fa8.0021.00.901, fa8.0034.total, fa8.0023.total, fa8.0024.total, fa8.0026.total,
+    fa8.0028.total, fa8.0031.total, fa8.0032.total]
+  extent: full
+  note: MH 0021 (net of States' share; gross = total - 901) and Securities Transaction Tax MH 0034 carry the cell. The gap map's 'etc.' heads are listed too, all residual arrears in 2023-24 (Rs crore; hotel receipts tax 0023 0.34, interest tax 0024 19.93, fringe benefit tax 0026 -4.46, other taxes on income and expenditure 0028 14.89, miscellaneous tax receipts 0031 1.31, wealth tax 0032 6.12); 0023/0024/0026 fall on firms, not households. The household vs firm/AOP split is not in these documents (CBDT not automated).
+- ref: T4
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0020.total, fa8.0020.00.901]
+  extent: full
+  note: Corporation tax MH 0020; gross = total - minor head 901.
+- ref: T2b
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.3601.08.112, fa9.3601.08.904, fa9.3602.08.106, fa9.3602.08.904]
+  extent: partial
+  note: GST compensation grants released 2023-24 (MH 3601-08-112, 43,788.41 to States; 3602 to UTs) and the part met from the GST Compensation Fund. The 78,104 cess used for back-to-back loan recovery is not ingested.
+- ref: T2b
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0009.total]
+  extent: partial
+  note: Compensation cess collected (the source of the transfer).
+- ref: R1
+  dataset: union_fiscal_rb_receipts
+  series_ids: [rb.tr.0710.less_states_share]
+  extent: partial
+  note: Centre side of devolution, Receipt Budget 2025-26 (-11,29,493.71); the State side (FC16 KFI) belongs to state_fiscal.
+- ref: R1
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0005.00.901, fa8.0020.00.901, fa8.0021.00.901, fa8.0037.00.901, fa8.0038.01.901]
+  extent: partial
+  note: Audited devolution by tax head (minor head 901 inside each major head).
+- ref: R2
+  dataset: union_fiscal_exp_profile
+  series_ids: [stat18.grand_total, stat18.some_important_items_of_transfer, stat18.finance_commission_grants,
+    stat18.transfers_to_states_other_than_i_ii, stat18.transfers_to_delhi_puducherry_and_jammu_kashmir,
+    stat18.some_important_items_of_transfer.externally_aided_projects_loan,
+    stat18.some_important_items_of_transfer.special_assistance_as_loan_to_states_for_capital_expenditure]
+  extent: partial
+  note: Statement 18 actuals 2023-24 (9,35,335.03 incl. loans); grants excl. loans = total - EAP loans - SASCI loans. The State receipts side is state_fiscal's.
+- ref: R2
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.3601.total, fa9.3601.06.total, fa9.3601.07.total, fa9.3601.08.total, fa9.3602.total]
+  extent: partial
+  note: Audited grants-in-aid to States (MH 3601) and UTs (MH 3602).
+- ref: R2k
+  dataset: union_fiscal_exp_profile
+  series_ids: [stat18.transfers_to_states_other_than_i_ii.capital_transfers,
+    stat18.some_important_items_of_transfer.special_assistance_as_loan_to_states_for_capital_expenditure]
+  extent: partial
+  note: Inputs only. Statement 18 'Capital Transfers' under III is 0.63 crore in 2023-24 (2.0 in 2022-23 and 2024-25); SASCI (1,09,554.30 in 2023-24) is a loan, listed so that it can be excluded, not a capital grant. The capital-grant figures themselves are the fa_gia and gcca entries below.
+- ref: R2k
+  dataset: union_fiscal_fa_gia
+  series_ids: [gia.cash.state_governments.capital_assets, gia.cash.state_governments.total,
+    gia.cash.ut_governments.capital_assets, gia.cash.ut_governments.total]
+  extent: partial
+  note: Audited IGAS-2 disclosure (Finance Accounts 2023-24, Appendix to St 9) - grants-in-aid released to State Governments 3,98,428.04 crore, of which for creation of capital assets 1,19,435.32; UT Governments 57,748.91 / 4,522.41. The Union-side capital-grant figure by grantee. Its 'State Government' total is below MH 3601 (5,39,963.59) because IGAS-2 classifies by grantee (releases to State agencies are elsewhere), so Phase 2 must bridge it to the R2 total before using the ratio (union_fiscal-22).
+- ref: R2k
+  dataset: union_fiscal_gcca
+  series_ids: [stat6.grand_total, stat6.demand.ministry_of_finance.transfers_to_states]
+  extent: partial
+  note: Expenditure Budget Statement 6 (object head 'grants for creation of capital assets'), Actuals 2023-24 3,03,915.55 for all grantees (= IGAS-2 capital column, 3,03,915.56); by ministry, demand and item (scheme), no grantee split. Demand 42 'Transfers to States' 6,460.38 (ACA for EAP grants + Special Assistance).
+- ref: R3
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.2049.total, fa9.2049.01.total, fa9.2049.02.total, fa9.section.interest_payments_and_servicing_of_debt]
+  extent: partial
+  note: Union interest MH 2049, audited 2023-24 (internal/external debt and other obligations by minor head). States from state_fiscal.
+- ref: R3b
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.2049.total, fa9.2049.01.128]
+  extent: partial
+  note: Cash base incl. discount on cash management bills (minor head 128); accrual adjustment is Phase 2.
+- ref: R6
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0050.00.106]
+  extent: full
+  note: Share of surplus profits from RBI received by the Union in 2023-24, 87,416.2162 (cash basis, D0-7).
+- ref: R7
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0050.00.101, fa8.0050.00.106, fa8.0050.00.107, fa8.0050.00.108, fa8.0050.00.109, fa8.0050.00.200,
+    fa8.0050.total]
+  extent: partial
+  note: Union dividends by payer type (PSUs 63,827.41; LIC 4,272.54; nationalised banks 13,806.57; IDBI 488.99; other 1,078.79). States' dividends are state_fiscal's.
+- ref: R9
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.2071.total]
+  extent: partial
+  note: Union pensions MH 2071 (civil, defence, other), audited 2023-24; State pensions from state_fiscal.
+- ref: R9b
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.2071.total]
+  extent: partial
+  note: Pension base for the imputed-contribution estimate.
+- ref: R10
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.2235.total, fa9.section.social_welfare_and_nutrition]
+  extent: partial
+  note: Union social security and welfare heads; scheme-level allocation to households is Phase 2.
+- ref: R15
+  dataset: union_fiscal_exp_profile
+  series_ids: [stat20.grand_total.grant, stat20.grand_total.loan, stat21.grand_total]
+  extent: partial
+  note: Grants and loans to foreign governments (Statement 20) and contributions to international bodies (Statement 21); the BoP side is external_sector's.
+- ref: R16
+  dataset: union_fiscal_rb_receipts
+  series_ids: [rb.ntr.total.total_general_services, rb.ntr.total.total_social_and_community_services]
+  extent: partial
+  note: Union non-tax fees and service receipts; the household share is estimated in Phase 2.
+- ref: R18
+  dataset: union_fiscal_exp_profile
+  series_ids: [stat7.interest_subsidies, stat7.interest_subsidies.modified_interest_subvention_scheme, stat7.other_subsidies]
+  extent: partial
+  note: Interest and other subsidies to corporations, Statement 7 actuals 2023-24.
+- ref: P7a
+  dataset: union_fiscal_ppac_exchequer
+  series_ids: [ppac.centre.a.excise_duty, ppac.centre.a.customs_duty, ppac.centre.a.cess_on_crude_oil, ppac.centre.a.igst,
+    ppac.centre.a.cgst, ppac.states.a.sales_tax_vat_on_pol_products, ppac.states.a.sgst_utgst]
+  extent: partial
+  note: Petroleum product-tax priors (PPAC, table posted 17.07.2026).
+- ref: P7a
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0005.total, fa8.0005.00.901, fa8.0008.total, fa8.0009.total, fa8.0038.total]
+  extent: partial
+  note: Union row targets T_CGST (MH 0005 + 0008 residual), T_GCES (MH 0009), T_UEXC (MH 0038).
+- ref: P7b
+  dataset: union_fiscal_ppac_exchequer
+  series_ids: [ppac.centre.a.excise_duty, ppac.states.a.sales_tax_vat_on_pol_products]
+  extent: partial
+  note: Petroleum tax priors only.
+- ref: P8
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0037.total, fa8.0037.00.901]
+  extent: control_total
+  note: Union customs receipts MH 0037 (gross = total - 901) for the reconciliation with the SUT import-duty column.
+- ref: P9
+  dataset: union_fiscal_exp_profile
+  series_ids: [stat7.fertiliser, stat7.petroleum, stat7.interest_subsidies, stat7.other_subsidies, stat7.grand_total]
+  extent: partial
+  note: Union subsidies (Statement 7 actuals 2023-24); food is GFCE, not a product subsidy (C2a).
+- ref: P9a
+  dataset: union_fiscal_exp_profile
+  series_ids: [stat7.fertiliser.nutrient_based_subsidy, stat7.fertiliser.urea_subsidy, stat7.petroleum.lpg_subsidy,
+    stat7.food.food_subsidy]
+  extent: partial
+  note: Centre side of product subsidies; State side from state_fiscal.
+- ref: C2a
+  dataset: union_fiscal_exp_profile
+  series_ids: [stat7.food.food_subsidy]
+  extent: partial
+  note: Union food subsidy 2,11,814.39 (keys the food STiK inside GFCE).
+- ref: C2a
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.section.expenditure_heads_revenue_account, fa9.2408.total]
+  extent: partial
+  note: Union revenue expenditure by function (Centre side of the GFCE split).
+- ref: S8
+  dataset: union_fiscal_exp_profile
+  series_ids: [stat7.food.food_subsidy]
+  extent: control_total
+  note: Union food subsidy actuals 2023-24 (control for the PDS grain valuation).
+- ref: I1a
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.section.expenditure_heads_capital_account, fa9.4076.total, fa9.5054.total]
+  extent: partial
+  note: Union capital outlay by major head (Centre GG capital formation input).
+- ref: F4b
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.section.expenditure_heads_revenue_account]
+  extent: partial
+  note: Union revenue account (grants to central autonomous bodies are inside the minor heads).
+- ref: K3a
+  dataset: union_fiscal_afs
+  series_ids: [afs.cfi_rev_receipts.excess_of_disbursements_over_receipts_revenue_deficit, afs.cfi_rev_receipts.total_revenue_receipts,
+    afs.cfi_rev_disbursements.total_revenue_disbursements]
+  extent: partial
+  note: Union revenue balance (Consolidated Fund) 2023-24, input to the Centre's saving.
+- ref: K6
+  dataset: union_fiscal_exp_profile
+  series_ids: [stat18.transfers_to_states_other_than_i_ii.capital_transfers,
+    stat18.transfers_to_delhi_puducherry_and_jammu_kashmir.capital_transfers]
+  extent: partial
+  note: Only the lines Statement 18 itself labels 'Capital Transfers' (0.63 crore to States and 0 to Delhi, Puducherry and J&K in 2023-24). This is not the Centre->State capital-grant total (see the fa_gia and gcca entries), and SASCI is a loan (financial account), not a capital transfer. The RoW and other-sector parts of K6 are NAS.
+- ref: K6
+  dataset: union_fiscal_fa_gia
+  series_ids: [gia.cash.state_governments.capital_assets, gia.cash.ut_governments.capital_assets,
+    gia.cash.urban_local_bodies.capital_assets, gia.cash.panchayati_raj_institutions.capital_assets,
+    gia.cash.public_sector_undertakings.capital_assets, gia.cash.ngos.capital_assets,
+    gia.cash.autonomous_bodies.capital_assets, gia.cash.cooperatives.capital_assets,
+    gia.cash.statutory_bodies_and_development_authorities.capital_assets, gia.cash.others.capital_assets]
+  extent: partial
+  note: Union domestic capital grants by grantee category, audited 2023-24 (IGAS-2; total 3,03,915.56 crore). Which categories are capital transfers in the SNA sense (vs grants to units inside general government, e.g. central autonomous bodies) is a Phase 2 classification. States' capital grants and the RoW part are not here.
+- ref: K6
+  dataset: union_fiscal_gcca
+  series_ids: [stat6.grand_total]
+  extent: control_total
+  note: Budget GCCA object head, Actuals 2023-24 3,03,915.55 (= the IGAS-2 capital column); scheme detail by ministry/demand/item for the grantee classification.
+- ref: K7a
+  dataset: union_fiscal_nssf
+  series_ids: [nssf.ppf.additions, nssf.savings_deposits.additions, nssf.savings_certificates.additions, nssf.net_collection]
+  extent: partial
+  note: Small savings and PPF accretion 2023-24 (Receipt Budget Annex 8) for the PPF vs small-savings split.
+- ref: K7b
+  dataset: union_fiscal_nssf
+  series_ids: [nssf.net_collection]
+  extent: partial
+  note: Counterparty (K_GCEN, I_SSAV) of household small-savings flows.
+- ref: K9b
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0050.00.106]
+  extent: partial
+  note: Cash leg (87,416.22) of the RBI surplus timing item; the accrued leg is RBI's.
+- ref: S7
+  dataset: union_fiscal_fa_receipts
+  series_ids: [fa8.0008.01.total, fa8.0008.02.101, fa8.0008.02.950, fa8.0008.02.951, fa8.0008.02.953, fa8.0008.02.954,
+    fa8.0008.02.956, fa8.0008.02.957, fa8.0008.02.959, fa8.0008.02.960, fa8.0008.02.961, fa8.0008.total]
+  extent: partial
+  note: Annual IGST collection and apportionment to CGST/SGST/UTGST (regular and advance) from the audited accounts; the State-by-month settlement detail (GSTN) is not automated (D1-1c).
+- ref: S7
+  dataset: union_fiscal_pib_gst
+  period: '2023-04'
+  series_ids: [pib.gst.gross_gst, pib.gst.igst, pib.gst.igst_on_imports, pib.gst.igst_settled_to_cgst,
+    pib.gst.igst_settled_to_sgst, pib.gst.cgst_post_settlement, pib.gst.sgst_post_settlement,
+    pib.gst_domestic_by_state.grand_total]
+  extent: partial
+  note: Monthly IGST collection and regular settlement to CGST/SGST from the PIB releases, plus State-wise domestic GST; April and May 2023 only - www.pib.gov.in served a bot challenge before the other ten months of FY 2023-24 were pinned (union_fiscal-1).
+- ref: S9
+  dataset: union_fiscal_nssf
+  series_ids: [nssf.ppf.additions]
+  extent: partial
+  note: PPF gross accretion and stock.
+- ref: S9
+  dataset: union_fiscal_fa_provident_funds
+  series_ids: [fa14.8009.total.additions, fa14.8009.total.discharges, fa14.8009.01.101.additions,
+    fa14.8009.01.101.discharges, fa14.8009.02.total.additions, fa14.8009.03.total.additions,
+    fa14.8011.total.additions, fa14.8011.total.discharges, fa14.8014.total.additions, fa14.8014.total.discharges]
+  extent: partial
+  note: Audited Finance Accounts 2023-24 St 14 - Union State Provident Funds (GPF of civil, defence and railway employees; MH 8009) gross additions 68,989.35 and discharges 63,930.50 crore (= AFS Statement III), CGEGIS and other insurance/pension funds (MH 8011) and Postal Life Insurance (MH 8014); balances at 31 Mar 2023 and 2024 are in the dataset. Additions include interest credited (the interest is also Union expenditure under MH 2049); the split is not printed. States' GPF is state_fiscal's.
+- ref: R8a
+  dataset: union_fiscal_nsi_collections
+  series_ids: [nsi.gross_deposits, nsi.net_collections]
+  extent: partial
+  note: Small-savings flows (holdings-side input only).
+- ref: R3a
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.2049.01.101, fa9.2049.01.108, fa9.2049.01.110, fa9.2049.01.121, fa9.2049.01.122, fa9.2049.01.125,
+    fa9.2049.02.total, fa9.2049.03.total]
+  extent: partial
+  note: Union interest by instrument (market loans, T-bills, NSSF special securities, external debt, small savings/PF); the split by holder (DEA ownership) is rbi_financial_accounts' and Phase 2.
+- ref: R9c
+  dataset: union_fiscal_fa_expenditure
+  series_ids: [fa9.2049.03.104, fa9.2049.03.108]
+  extent: partial
+  note: Union interest credited on State (i.e. government) Provident Funds and on insurance and pension funds (GPF-type D44 input).

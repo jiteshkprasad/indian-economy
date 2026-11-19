@@ -1,0 +1,240 @@
+# Story 2: "How a remittance from Dubai moves through India" (docs/phase3/PLAN.md s.4.9). Owner: U5.
+# Figure specs only; the evaluator is pipeline/export/stories.py (U1). Grammar: docs/phase3/requests/U5.md.
+# tests/export/test_export_stories.py recomputes every value with DuckDB SQL, independently of the evaluator.
+#
+# Honesty notes carried into the text (web/content/en/stories/remittance-dubai.mdx):
+# - The UAE figure is ESTIMATED: the RBI survey's bank-channel share for the UAE (shares sum to 99.80% as
+#   published, normalised to 100) applied to the NAS R11 total. Dubai cannot be isolated from the UAE.
+# - The RBI survey is internal-processing-only until RBI grants permission (ISSUES P1-9): its citation is
+#   withheld, and this figure is on the Checkpoint C permission list.
+# - Household shares are AVERAGE shares for all households, not marginal propensities; first round only.
+slug: remittance-dubai
+
+figures:
+  # --- Step "arrive": remittances and other private transfers received by households (R11a) ---
+  remit_total:
+    kind: entries_sum
+    terms: [{rows: "@HH", cols: [R_ROW], refs: [R11a]}]
+    unit: inr
+  remit_gdp:
+    kind: ratio
+    num: {ref: remit_total}
+    den: {gdp: "2023-24"}
+    unit: pct_gdp
+  # The F43 series (NAS/BoP, 2006-07 onwards). Shares of GDP on the matching base (PLAN s.3.7.2).
+  remit_value_first:
+    kind: ts_value
+    flow: F43
+    period: "2006-07"
+    measure: value
+    unit: inr
+  remit_share_first:
+    kind: ts_value
+    flow: F43
+    period: "2006-07"
+    measure: share
+    unit: pct_gdp
+  remit_share_2023:
+    kind: ts_value
+    flow: F43
+    period: "2023-24"
+    measure: share
+    unit: pct_gdp
+  remit_value_latest:
+    kind: ts_value
+    flow: F43
+    period: "2025-26"
+    measure: value
+    unit: inr
+    note_key: notes.provisional
+
+  # --- Step "uae": the UAE's part (satellite S3; estimated) ---
+  uae_remit:
+    kind: satellite_sum
+    table: rest_of_world/s3_remittance_sources
+    where: {country: ARE, measure: inr_crore}
+    unit: inr
+    note_key: notes.rbi_survey_permission
+  uae_share:
+    kind: satellite_sum
+    table: rest_of_world/s3_remittance_sources
+    where: {country: ARE, measure: share}
+    unit: pct
+    note_key: notes.rbi_survey_permission
+  usa_share:
+    kind: satellite_sum
+    table: rest_of_world/s3_remittance_sources
+    where: {country: USA, measure: share}
+    unit: pct
+    note_key: notes.rbi_survey_permission
+
+  # --- Step "who": which household groups receive it (R11a split by group; estimated key) ---
+  remit_rural:
+    kind: entries_sum
+    terms: [{rows: "node:HH.RUR", cols: [R_ROW], refs: [R11a]}]
+    unit: inr
+  remit_urban:
+    kind: entries_sum
+    terms: [{rows: "node:HH.URB", cols: [R_ROW], refs: [R11a]}]
+    unit: inr
+  remit_top:
+    kind: entries_sum
+    terms: [{rows: [H_R5, H_U5], cols: [R_ROW], refs: [R11a]}]
+    unit: inr
+  remit_bottom:
+    kind: entries_sum
+    terms: [{rows: [H_R1, H_U1], cols: [R_ROW], refs: [R11a]}]
+    unit: inr
+  remit_rural_per100: {kind: per100, part: {ref: remit_rural}, whole: {ref: remit_total}, unit: per100}
+  remit_urban_per100: {kind: per100, part: {ref: remit_urban}, whole: {ref: remit_total}, unit: per100}
+  remit_top_per100: {kind: per100, part: {ref: remit_top}, whole: {ref: remit_total}, unit: per100}
+  remit_bottom_per100: {kind: per100, part: {ref: remit_bottom}, whole: {ref: remit_total}, unit: per100}
+
+  # --- Step "use": what households do with their income, on average (all households; @HH columns) ---
+  hh_consumption:
+    kind: sam_sum
+    terms: [{rows: "@COM", cols: "@HH"}]
+    unit: inr
+  hh_saving:
+    kind: sam_sum
+    terms: [{rows: [K_HH], cols: "@HH"}]
+    unit: inr
+  hh_taxes:
+    kind: sam_sum
+    terms: [{rows: "@TAX", cols: "@HH"}]
+    unit: inr
+  hh_finance:          # interest to banks and NBFCs (R5) and net non-life premiums (R17)
+    kind: sam_sum
+    terms: [{rows: "@FC", cols: "@HH"}]
+    unit: inr
+  hh_abroad:           # transfers sent abroad (R12a)
+    kind: sam_sum
+    terms: [{rows: [R_ROW], cols: "@HH"}]
+    unit: inr
+  hh_to_gov:           # interest and rent paid to government (R7x)
+    kind: sam_sum
+    terms: [{rows: "@GOV", cols: "@HH"}]
+    unit: inr
+  hh_residual:         # X_DISC D1: the unallocated published residual (never consumption or saving)
+    kind: sam_sum
+    terms: [{rows: [X_DISC], cols: "@HH"}]
+    unit: inr
+  hh_outlays:
+    kind: sum
+    terms: [{ref: hh_consumption}, {ref: hh_saving}, {ref: hh_taxes}, {ref: hh_finance}, {ref: hh_abroad}, {ref: hh_to_gov}, {ref: hh_residual}]
+    unit: inr
+    check_equals: {ref: hh_outlays_all, tol: 0.01}
+  hh_outlays_all:      # the whole @HH column total, to prove the seven parts are complete
+    kind: sam_sum
+    terms: [{rows: "@ALL", cols: "@HH"}]
+    unit: inr
+  hh_consumption_per100: {kind: per100, part: {ref: hh_consumption}, whole: {ref: hh_outlays}, unit: per100}
+  hh_saving_per100: {kind: per100, part: {ref: hh_saving}, whole: {ref: hh_outlays}, unit: per100}
+  hh_taxes_per100: {kind: per100, part: {ref: hh_taxes}, whole: {ref: hh_outlays}, unit: per100}
+  hh_finance_per100: {kind: per100, part: {ref: hh_finance}, whole: {ref: hh_outlays}, unit: per100}
+  hh_abroad_per100: {kind: per100, part: {ref: hh_abroad}, whole: {ref: hh_outlays}, unit: per100}
+  hh_to_gov_per100: {kind: per100, part: {ref: hh_to_gov}, whole: {ref: hh_outlays}, unit: per100}
+  hh_residual_per100: {kind: per100, part: {ref: hh_residual}, whole: {ref: hh_outlays}, unit: per100}
+
+  # --- Step "buys": what the consumption buys, per 100 of household consumption ---
+  # (a) product taxes on household purchases: p7b `pfce` shares rescaled to each tax account's balanced total.
+  #     p7b covers the P7a accounts (GST, Union excise, State VAT, State excise, other); customs (P8) and
+  #     product subsidies (P9) are not in it, so they are not in this figure.
+  pfce_tax_cgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_CGST, use_type: pfce}
+    within: {tax_account: T_CGST}
+    total: {kind: sam_sum, terms: [{rows: [T_CGST], cols: "@COM"}]}
+    unit: inr
+  pfce_tax_sgst:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_SGST, use_type: pfce}
+    within: {tax_account: T_SGST}
+    total: {kind: sam_sum, terms: [{rows: [T_SGST], cols: "@COM"}]}
+    unit: inr
+  pfce_tax_cess:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_GCES, use_type: pfce}
+    within: {tax_account: T_GCES}
+    total: {kind: sam_sum, terms: [{rows: [T_GCES], cols: "@COM"}]}
+    unit: inr
+  pfce_tax_uexc:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_UEXC, use_type: pfce}
+    within: {tax_account: T_UEXC}
+    total: {kind: sam_sum, terms: [{rows: [T_UEXC], cols: "@COM"}]}
+    unit: inr
+  pfce_tax_svat:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_SVAT, use_type: pfce}
+    within: {tax_account: T_SVAT}
+    total: {kind: sam_sum, terms: [{rows: [T_SVAT], cols: "@COM"}]}
+    unit: inr
+  pfce_tax_sexc:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_SEXC, use_type: pfce}
+    within: {tax_account: T_SEXC}
+    total: {kind: sam_sum, terms: [{rows: [T_SEXC], cols: "@COM"}]}
+    unit: inr
+  pfce_tax_oprt:
+    kind: satellite_share
+    table: taxes/p7b_tax_by_use
+    share_of: {tax_account: T_OPRT, use_type: pfce}
+    within: {tax_account: T_OPRT}
+    total: {kind: sam_sum, terms: [{rows: [T_OPRT], cols: "@COM"}]}
+    unit: inr
+  pfce_gst:
+    kind: sum
+    terms: [{ref: pfce_tax_cgst}, {ref: pfce_tax_sgst}, {ref: pfce_tax_cess}]
+    unit: inr
+  pfce_other_tax:
+    kind: sum
+    terms: [{ref: pfce_tax_uexc}, {ref: pfce_tax_svat}, {ref: pfce_tax_sexc}, {ref: pfce_tax_oprt}]
+    unit: inr
+  pfce_gst_per100: {kind: per100, part: {ref: pfce_gst}, whole: {ref: hh_consumption}, unit: per100}
+  pfce_other_tax_per100: {kind: per100, part: {ref: pfce_other_tax}, whole: {ref: hh_consumption}, unit: per100}
+  # (b) imports: each commodity's import share of its total supply (column total) applied to household
+  #     purchases of that commodity (proportionality assumption: households buy the same import mix as total supply).
+  pfce_imports:
+    kind: prorata_sum
+    over: "@COM"
+    base: {rows: ["$"], cols: "@HH"}
+    num: {rows: [R_ROW], cols: ["$"]}
+    den: {rows: "@ALL", cols: ["$"]}
+    unit: inr
+  # (c) trade and transport margins (domestic services), same method.
+  pfce_margins:
+    kind: prorata_sum
+    over: "@COM"
+    base: {rows: ["$"], cols: "@HH"}
+    num: {rows: [M_TTM], cols: ["$"]}
+    den: {rows: "@ALL", cols: ["$"]}
+    unit: inr
+  pfce_imports_per100: {kind: per100, part: {ref: pfce_imports}, whole: {ref: hh_consumption}, unit: per100}
+  pfce_margins_per100: {kind: per100, part: {ref: pfce_margins}, whole: {ref: hh_consumption}, unit: per100}
+
+steps:
+  - id: arrive
+    view: {view: sam, preset: simple, year: "2023-24", expanded: [], highlight: [ROW--HH], select: ROW--HH}
+    figures: [remit_total, remit_gdp, remit_value_first, remit_share_first, remit_share_2023, remit_value_latest]
+  - id: uae
+    view: {view: sam, preset: simple, year: "2023-24", expanded: [], highlight: [ROW--HH], select: ROW--HH}
+    figures: [uae_remit, uae_share, usa_share]
+  - id: who
+    view: {view: sam, preset: full, year: "2023-24", expanded: [HH], highlight: [ROW--HH.RUR, ROW--HH.URB], select: null}
+    figures: [remit_rural_per100, remit_urban_per100, remit_top_per100, remit_bottom_per100]
+  - id: use
+    view: {view: sam, preset: simple, year: "2023-24", expanded: [], highlight: [HH--PRODUCERS, HH--SI, HH--TAX, HH--FC, HH--ROW, HH--STA, HH--CEN, HH--DISC], select: null}
+    figures: [hh_outlays, hh_consumption_per100, hh_saving_per100, hh_taxes_per100, hh_finance_per100, hh_abroad_per100, hh_to_gov_per100, hh_residual_per100]
+  - id: buys
+    view: {view: sam, preset: simple, year: "2023-24", expanded: [], highlight: [HH--PRODUCERS, PRODUCERS--ROW, PRODUCERS--TAX], select: null}
+    figures: [hh_consumption, pfce_gst_per100, pfce_other_tax_per100, pfce_imports_per100, pfce_margins_per100]
+  - id: ripple
+    view: {view: sam, preset: simple, year: "2023-24", expanded: [], highlight: [ROW--HH, HH--PRODUCERS], select: null}
+    figures: []

@@ -1,0 +1,19 @@
+# One explanation per over-threshold balancing adjustment (DESIGN_BRIEF s.5.3, SPEC s.6): an entry, or a
+# cell (the sum of its entries), needs one when |balanced - prior| >= Rs 5,000 crore, or >= Rs 500 crore and
+# >= 10% of the prior. Filled after balancing by the agent investigating the adjustment; tests fail while any
+# is missing or stale (docs/phase2/SAM_GUIDE.md s.12).
+#
+# Format (keyed by row, col, ref, component exactly as in balancing_log.parquet; a cell with several entries
+# is explained with ref: "*" and component: "*"). prior and balanced are the values explained (Rs crore): a
+# later run whose change differs by more than +-20% or Rs 500 crore makes the item stale.
+#   - row: C_FOOD
+#     col: H_R1
+#     ref: C1a
+#     component: total
+#     prior: 123456.0
+#     balanced: 131000.0
+#     why: >-
+#       Why the prior was off, citing the conflicting sources (dataset/series ids or documents),
+#       and why the balanced value is more credible.
+#     sources: [mospi_hces_2023_24, mospi_sut_2022base]
+explanations: []

@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "web/public/data/index.json (unversioned): which data version to load (PLAN s.3.1, s.3.6).",
+  "properties": {
+    "data_version": {
+      "pattern": "^\\d{4}-\\d{2}\\.([0-9a-f]{10}|fixture0000)$",
+      "type": "string"
+    },
+    "export_code_hash": {
+      "type": "string"
+    },
+    "files": {
+      "additionalProperties": {
+        "additionalProperties": false,
+        "properties": {
+          "bytes": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "sha256",
+          "bytes"
+        ],
+        "type": "object"
+      },
+      "type": "object"
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "gdp_base_year": {
+      "const": "2022-23"
+    },
+    "inputs": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "type": "object"
+    },
+    "reference_year": {
+      "const": "2023-24"
+    },
+    "schema_version": {
+      "const": 2
+    }
+  },
+  "required": [
+    "schema_version",
+    "data_version",
+    "fixture",
+    "reference_year",
+    "gdp_base_year",
+    "inputs",
+    "export_code_hash",
+    "files"
+  ],
+  "title": "DataIndex",
+  "type": "object"
+}

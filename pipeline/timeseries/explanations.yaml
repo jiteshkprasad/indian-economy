@@ -1,0 +1,248 @@
+# Registered 2023-24 bridges between a flow's time-series value (TS) and its SAM definition (plan s.7 T3).
+#
+# For check classes C and D the build compares SAM - TS with the bridge:
+#   bridge      = sum of the clean series listed under `bridge_series` (2023-24, read from clean data, never
+#                 typed in), signed so that TS + bridge is on the SAM's concept;
+#   residual    = SAM - TS - bridge;
+#   pass        if |residual| <= max(500, 1% of |TS|) (class C) or <= 5 (class D);
+#   explained   otherwise, if `explained_residual` is recorded here and the run's residual is within
+#               max(20% of it, Rs 500 crore) of it (the SAM_GUIDE s.12 drift rule); the residual is recorded
+#               only AFTER a full balancing run, from data/timeseries/top_flows_sam_check.parquet, with the
+#               owning block's logged adjustment that causes it named in `why`;
+#   unexplained otherwise (the test fails once the balanced SAM exists).
+# Numbers are never typed here except `explained_residual`, which is copied from the check output of the run
+# it explains (like pipeline/sam/explanations.yaml).
+#
+# Run explained: the balanced SAM of 2026-10-01 03:00 (data/sam/2023-24/balancing_run.json: NEWTON, direct
+# path, status optimal, KKT certificate passed; BALANCING.md "Result: BALANCED"). `timeseries` re-run on it:
+# 58 pass, 1 no_check, 10 unexplained before this edit (F14, F15, F16, F24, F27, F28, F29, F30, F34, F48).
+# Each of the ten now carries the residual of that run, rounded to Rs 0.01 crore, and a `why` that splits it
+# into (a) the prior's concept difference, as logged by the owning block, and (b) the balancing move, as
+# logged in pipeline/sam/explanations/<block>.yaml and the block's issues file. The amounts quoted in `why`
+# are read from that run (block entries, satellites, balancing_constraints.parquet) and from clean data.
+#
+# Re-run on the balanced SAM of the Wave C audit fix (2026-10-01, docs/phase2/verify/balanced_sam.md BS-14;
+# new constraints on government transfers, PM-KISAN in R10, fincorp and taxes bands): 57 pass, 11 explained,
+# 1 no_check, 0 unexplained. F16, F24, F25 and F27 changed and are re-registered from that run (their `why`
+# says so). The other seven residuals are unchanged within the drift rule; their texts still quote the 03:00
+# run's prior gaps (e.g. G_STA +5,00,750, now +4,49,133 after PM-KISAN moved to R10).
+explanations:
+- flow_id: F14
+  why: >-
+    The taxes block books UTGST (MH 0007) in T_CGST (component utgst; CROSS_REVIEW s.3) while the Receipt
+    Budget 'Total GST' excludes it: bridge +UTGST. TS + bridge (9,62,704.98) equals the taxes block's cash
+    targets t1.cgst 8,21,268.82 + t1.gces 1,41,436.16. The residual is the taxes block's logged adjustments:
+    (a) prior +15,369.47, the uniform TAX-1 cash-to-accrual factor 1.015965 (taxes-1); (b) balancing
+    +32,765.78, which puts both G_CEN <- T_CGST and G_CEN <- T_GCES exactly on their band ceilings (1.05 x
+    cash; both bands bind), so the residual is 5% of 9,62,704.98. The balancer moved product tax from State to
+    Union rows to absorb the prior's G_STA +5,00,750 / G_CEN -2,97,655 imbalance (government-27); the taxes
+    block logs this as not supported by tax evidence (taxes explanations G_CEN <- T_CGST; finding taxes-26).
+  bridge_series:
+  - {dataset: union_fiscal_rb_receipts, id: rb.tr.0007.union_territories_goods_and_services_tax_utgst, coef: 1}
+  explained_residual: 48135.25
+- flow_id: F15
+  why: >-
+    Coverage: FC16 KFI covers 28 States; T2x covers all States and UTs with legislature (TAX-5: RBI SF all
+    States+UTs SGST minus KFI). TS + bridge (8,41,120.78) equals the taxes block's cash target t2.sgst. The
+    residual is the taxes block's logged adjustments: (a) prior +13,428.39, the TAX-1 factor 1.015965
+    (taxes-1); (b) balancing -24,141.30 (balanced 8,30,407.86 = 0.987 x cash, inside the +-5% band, not
+    binding): the State side of the Centre/State shift of product taxes that absorbs the prior's G_STA
+    +5,00,750 / G_CEN -2,97,655 imbalance (taxes explanations G_STA <- T_SGST; findings taxes-26,
+    government-27).
+  bridge_series:
+  - {dataset: state_fiscal_rbi_sf_appendices, id: app1.total_revenue.i.a.3.vii-state_goods_and_services_tax.in.all_states_uts.actuals, coef: 1}
+  - {dataset: state_fiscal_fc16_kfi, id: kfi.a_1_1_2-state_goods_and_service_tax.in.all_states_28, coef: -1}
+  explained_residual: -10712.91
+- flow_id: F16
+  why: >-
+    Cash (Receipt Budget; = the taxes block's target t1.uexc) vs the T1a accrual and SUT fit of the taxes
+    block. Re-registered for the balanced run of the Wave C audit fix (2026-10-01, audit BS-14): the residual is
+    the taxes block's logged adjustments: (a) prior +4,875.07, the TAX-1 factor 1.015965 (taxes-1); (b)
+    balancing +10,393.04, which puts G_CEN <- T_UEXC on the ceiling of t1.uexc (3,20,630.29 = 1.05 x cash,
+    binding): the C_RPET product taxes move from the fallback State VAT toward PPAC's Union excise on POL
+    (taxes-3) and the Centre/State pull of the prior (G_CEN -2,97,655 / G_STA +4,49,133; taxes explanations
+    G_CEN <- T_UEXC, finding BS-9). Residual = 5% of the cash control.
+  bridge_series: []
+  explained_residual: 15268.11
+- flow_id: F17
+  why: >-
+    Customs receipts include export duty and cesses on exports, which the SAM books as other product taxes
+    (T_OPRT, DECISIONS D2-12); the rest (TAX-2: about Rs 888 crore) is cash vs accrual.
+  bridge_series:
+  - {dataset: union_fiscal_rb_receipts, id: rb.tr.0037.export_duty, coef: -1}
+  - {dataset: union_fiscal_rb_receipts, id: rb.tr.0037.cesses_on_exports, coef: -1}
+  explained_residual: null
+- flow_id: F18
+  why: Coverage (28 States in KFI vs all States and UTs in T2x) plus the T2x accrual adjustment.
+  bridge_series:
+  - {dataset: state_fiscal_rbi_sf_appendices, id: app1.total_revenue.i.a.3.i-sales_tax.in.all_states_uts.actuals, coef: 1}
+  - {dataset: state_fiscal_fc16_kfi, id: kfi.a_1_1_1-taxes_on_sales_trade_etc.in.all_states_28, coef: -1}
+  explained_residual: null
+- flow_id: F19
+  why: Coverage (28 States vs all States and UTs), the T2x licence-fee split of State excise and the accrual adjustment.
+  bridge_series:
+  - {dataset: state_fiscal_rbi_sf_appendices, id: app1.total_revenue.i.a.3.ii-state_excise.in.all_states_uts.actuals, coef: 1}
+  - {dataset: state_fiscal_fc16_kfi, id: kfi.a_1_1_3-state_excise.in.all_states_28, coef: -1}
+  explained_residual: null
+- flow_id: F20
+  why: Coverage (28 States vs all States and UTs) of stamps and registration fees in P10a.
+  bridge_series:
+  - {dataset: state_fiscal_rbi_sf_appendices, id: app1.total_revenue.i.a.2.ii-stamps_and_registration_fees.in.all_states_uts.actuals, coef: 1}
+  - {dataset: state_fiscal_fc16_kfi, id: kfi.a_1_1_5-stamps_and_registration_fees.in.all_states_28, coef: -1}
+  explained_residual: null
+- flow_id: F21
+  why: Cash (Receipt Budget) vs the T1a accrual of the taxes block.
+  bridge_series: []
+  explained_residual: null
+- flow_id: F22
+  why: Cash (Receipt Budget, MH 0021 + STT) vs the T1a accrual of the taxes block.
+  bridge_series: []
+  explained_residual: null
+- flow_id: F24
+  why: >-
+    The States'-receipt measure (RBI AT2) vs the government block's R2 + T2b compensation grants + R2k, which
+    follow the institutional Centre/State view (DECISIONS D2-8: CSS released outside State treasuries and
+    Union grants to ULBs are inside G_STA); the government block's gov_grants_bridge satellite names the items.
+    (a) Prior +1,68,087.36 = the CSS money released outside State treasuries (gov_grants_bridge
+    css_outside_treasury 1,68,087.31 = Union St 18 III CSS revenue less MH 3601.06 net releases, written as R2
+    1,48,479.11 + R2k 19,608.20; government-6) + 0.05 (government's control 5,27,931.05 vs AT2 5,27,931.00).
+    (b) Balancing (re-registered for the Wave C audit fix, 2026-10-01, audit BS-7 / BS-14): the outside-treasury
+    CSS money (R2 + R2k css_outside_treasury) is now held by the band gov.r2.css_outside_treasury (+-10% of
+    1,68,087.31) and ends at its lower edge, 1,51,278.58 (-16,808.73; the earlier run cut it 40%), and the
+    States'-receipt part ends at the lower edge of gov.grants.state_receipts (0.995 x 5,27,931.05 = 5,25,291.39,
+    -2,639.66, binding). Residual = outside-treasury CSS 1,51,278.58 - 2,639.61.
+  bridge_series: []
+  explained_residual: 148638.97
+- flow_id: F25
+  why: >-
+    Cash (MH 2049 as published) vs the NAS concept of fincorp's control r3b.union_nas_concept, which the SAM
+    cells hold. Bridge (Union Finance Accounts 2023-24 and RBI State Finances, the inputs fincorp uses):
+    minus interest paid inside G_CEN to reserve funds, FCI and other funds (2049.05.101/.103/.105, 60.107,
+    60.111); minus management of debt (01.305, a fee, not D41); minus the deduct-recoveries lines (01.911,
+    03.911, 05.911); minus accrued interest and premium received on re-issues (Receipt MH 0049.03.116/.117);
+    plus the States' interest on NSSF loans (App. II ii.b), which NSSF (inside G_CEN) passes to small savers
+    as R8a. The Centre's own interest to NSSF (2049.01.121/.122/.125) leaves MH 2049 as an intra-G_CEN item
+    and returns as NSSF interest to savers, so the two cancel and are not listed. The rest is fincorp's
+    band movement in balancing (re-registered for the Wave C audit fix, 2026-10-01, audit BS-14): the SAM's
+    Union interest under r3b.union_nas_concept (target 10,86,513.97, +-3% because the NSSF interest to savers
+    is estimated) goes 10,87,704.16 -> 11,11,221.29, inside the band (not binding). Balancing raised the Union
+    interest received by the accounts whose priors are in deficit, insurers and PFs (E_INSP, fincorp-31) and
+    banks (E_BANK, fincorp-2), on dated and other securities (fincorp explanations R3a); no cash source
+    supports the rise, which is within the band's allowance for the estimated NSSF interest.
+  bridge_series:
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2049.05.101, coef: -1}
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2049.05.103, coef: -1}
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2049.05.105, coef: -1}
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2049.60.107, coef: -1}
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2049.60.111, coef: -1}
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2049.01.305, coef: -1}
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2049.01.911, coef: -1}
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2049.03.911, coef: -1}
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2049.05.911, coef: -1}
+  - {dataset: union_fiscal_fa_receipts, id: fa8.0049.03.116, coef: -1}
+  - {dataset: union_fiscal_fa_receipts, id: fa8.0049.03.117, coef: -1}
+  - {dataset: state_fiscal_rbi_sf_appendices, id: app2.total_expenditure.ii.c.2.ii.b-interest_on_nssf.in.all_states_uts.actuals, coef: 1}
+  explained_residual: 23510.21
+- flow_id: F26
+  why: >-
+    Coverage and fincorp's intra-State netting (control r3b.states_nas_concept): RBI SF App. II interest of
+    all States and UTs minus FC16 KFI (28 States), minus App. II 'others' (iv), which fincorp nets out as
+    intra-State. The rest is fincorp's estimated interest on SDLs held by State governments' own funds (HBS
+    T107 'others: State governments' share of SDL interest net of FPI and RBI; intra-G_STA, dropped), which
+    no clean series carries, plus fincorp's band movement (1%) in balancing.
+  bridge_series:
+  - {dataset: state_fiscal_rbi_sf_appendices, id: app2.total_expenditure.ii.c.2-interest_payments.in.all_states_uts.actuals, coef: 1}
+  - {dataset: state_fiscal_fc16_kfi, id: kfi.b_1_a-interest_payments.in.all_states_28, coef: -1}
+  - {dataset: state_fiscal_rbi_sf_appendices, id: app2.total_expenditure.ii.c.2.iv-others.in.all_states_uts.actuals, coef: -1}
+  explained_residual: null
+- flow_id: F27
+  why: >-
+    Concept: MH 2071 as published includes the government's employer contribution to the defined-contribution
+    pension scheme (2071.01.117 and .902: compensation of employees that reaches households through F_LREG and
+    I_INPE) and the medical treatment of CGHS pensioners (2071.01.118: in kind, inside health GFCE). The
+    government block's control gov.r9.centre (Finance Accounts MH 2071 total less these lines) excludes them:
+    bridge = minus the three lines. TS + bridge = 2,24,647.49 = gov.r9.centre (to Rs 0.01 crore: AFS vs Finance
+    Accounts rounding). The whole residual is balancing. Re-registered for the Wave C audit fix (2026-10-01,
+    audit BS-14): the band gov.r9.centre (+-2%) now binds at its lower edge (2,20,154.54), every free H_g <-
+    G_CEN R9a entry falling about 2%: with the Union's R10 lines and the NAS 4.2 COFOG current-transfer total
+    held (government-30/-31), the Centre's prior shortfall (G_CEN -2,97,655) pulls its pensions to the bottom
+    of the band (the earlier run had them at the top, pulled by the household gap). No pension source supports
+    either edge. Residual = -2% of the control.
+  bridge_series:
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2071.01.117, coef: -1}
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2071.01.902, coef: -1}
+  - {dataset: union_fiscal_fa_expenditure, id: fa9.2071.01.118, coef: -1}
+  explained_residual: -4492.94
+- flow_id: F28
+  why: >-
+    Coverage, definition and concept: FC16 KFI 'pension and other retirement benefits' (28 States) vs RBI SF
+    App. II 'pensions' (all States and UTs), which the government block's control gov.r9.states uses, net of
+    the State employer NPS contribution (PFRDA m7d; government's assumption A-R9-1 that States book it inside
+    the pension head). Bridge = App. II pensions - KFI - PFRDA State employer contribution. TS + bridge =
+    4,46,990.75 = gov.r9.states exactly. The whole residual is balancing: the band gov.r9.states (+-3%) binds at
+    its upper edge (4,60,400.47), every free H_g <- G_STA R9a entry rising about 3%, as part of closing the
+    household gap Z = -4,36,164 (the K4 constraint binds; closure-19) together with R10 (government-31) and
+    R9d (government-33); no pension source supports the rise. Residual = 3% of the control.
+  bridge_series:
+  - {dataset: state_fiscal_rbi_sf_appendices, id: app2.total_expenditure.ii.e-pensions.in.all_states_uts.actuals, coef: 1}
+  - {dataset: state_fiscal_fc16_kfi, id: kfi.b_1_b-pension_and_other_retirement_benefits.in.all_states_28, coef: -1}
+  - {dataset: finsector_markets_pfrda_sg, id: m7d.annual_contribution_employer.state_govt.current, coef: -1}
+  explained_residual: 13409.72
+- flow_id: F29
+  why: >-
+    The SAM books GFCE on free grain (C2a food_subsidy on the grain rows), not the cash subsidy: the Statement 7
+    subsidy also pays FCI costs outside grain GFCE (plan C6). The cell C_CROP <- G_CEN C2a food_subsidy is the
+    SUT's GFCE on the grain row, 1,63,971.75, fixed (government-21), so balancing does not move it; the whole
+    residual is this concept difference (cross-checks in government-21 / TAX-11: FA 2408.01.102 1,84,468.93,
+    FC16 Union food 2,30,755.71).
+  bridge_series: []
+  explained_residual: -47842.64
+- flow_id: F30
+  why: >-
+    The SUT product-subsidy row of C_CHEM includes the NBS amount booked on pesticides (SUT quirk Q6) and other
+    chemicals, beyond the Union fertiliser subsidy of Statement 7 (plan C14). The cell T_PSUB <- C_CHEM is the
+    published SUT row, fixed (production-9): fertilisers p089 -1,45,128.64 + pesticides p090 -62,440.48 =
+    -2,07,569.12, against Statement 7's -1,88,291.62 (taxes-12, open with NAD). Balancing does not move it; the
+    whole residual is this source conflict.
+  bridge_series: []
+  explained_residual: -19277.50
+- flow_id: F34
+  why: >-
+    FSF (GG F3 liabilities, = Centre 12,02,664.62 + States 6,81,218.32) vs capital_financial's net G-sec
+    issuance targets cf.k8.gsec_centre / cf.k8.gsec_states, which replace the FSF holder parts of households
+    and RoW by this SAM's own postings (capital_financial-24, verification V-CF-3). (a) Prior -49,656.35 =
+    households: NAS 2026 St 5.3 G-secs 25,552.16 (K7b hh_cp) against FSF 13,311.85 (+12,240.30); RoW:
+    rest_of_world's estimated FPI acquisition of government paper 1,19,903.00 (K7b row_cp_fpi_debt_gsec; HBS
+    T107 FPI shares x outstanding, not a clean series) against FSF 1,81,799.65 (-61,896.65). (b) Balancing
+    +417.22 inside the two 5% bands (neither binds; the keyed G-sec pairs, capital_financial explanations).
+    Not a clean-series bridge because the RoW posting is an estimate.
+  bridge_series: []
+  explained_residual: -49239.13
+- flow_id: F48
+  why: >-
+    Concept: FSF total is what NFCs report as their own liabilities; the SAM holds capital_financial's
+    reconciled pairs: domestic pairs on the holder's report (params.CONTROL), RoW lines from the BoP and
+    household lines from NAS (K7b), F81/F89 as each sector's own report, FSF 'other'/NEC items not written but
+    left in K9 (capital_financial-6, -7, -22). (a) Prior +5,68,106.04 by instrument (SAM K8+K7b on K_NFPU,
+    K_NFPR minus FSF): equity +8,48,598.28 (BoP FDI equity, reinvested earnings and FPI equity 3,43,898.34 vs
+    FSF's -90,440.57 to RoW: +4,34,338.91; domestic holders' own reports, e.g. the Centre's 2,71,178.19 in
+    public NFCs vs their 42,285.55: +3,85,986.52; households +28,272.85); loans +2,62,670.94 (holder side
+    +3,00,526.33; BoP ECB and FDI debt 40,595.46 vs FSF 78,450.86: -37,855.39); debt securities -73,580.75
+    (BoP FPI corporate debt 34,150.20 vs FSF 96,585.40: -62,435.20; holder side -11,145.55); deposits
+    -1,220.86 (NAS household deposits); F8 other accounts payable and NEC -4,68,361.56 (FSF 'other' NEC
+    2,97,767.51, mostly the round-number nfc_pvt 3,00,000, is not written: -2,97,767.51; FSF's F8 to RoW
+    1,71,986.61 is replaced by the BoP short-term trade credit -6,741.00: -1,78,727.61; the domestic F81/F89
+    own reports and households +8,133.56). (b) Balancing +1,439.19 (free entries, no band binds). The
+    balanced SAM's NFC borrowing is 25.7% above FSF's own report: a finding (timeseries-25).
+  bridge_series: []
+  explained_residual: 569545.23
+- flow_id: M08
+  why: Cash (Receipt Budget CIT + MH 0021 + STT) vs the T1a accrual of the taxes block (F21 + F22).
+  bridge_series: []
+  explained_residual: null
+- flow_id: M14
+  why: >-
+    FC16 gross tax revenue (cash) vs the SAM's Union tax cells (T1a accrual) plus the Centre's production
+    taxes (P10a); export duty sits in T_OPRT and is inside both.
+  bridge_series: []
+  explained_residual: null

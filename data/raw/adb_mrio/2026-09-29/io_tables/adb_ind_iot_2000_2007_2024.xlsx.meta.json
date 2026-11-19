@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 921068,
+  "content_type": "application/xlsx",
+  "final_url": "https://kidb.adb.org/download/mrio-file/211",
+  "key": "adb_mrio/adb_ind_iot_2000_2007_2024.xlsx",
+  "method": "GET",
+  "name": "adb_ind_iot_2000_2007_2024.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://kidb.adb.org/globalization/current",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-disposition": "attachment; filename=\"IND IOT 2000, 2007-2024.xlsx\"",
+    "content-length": "921068",
+    "content-type": "application/xlsx",
+    "last-modified": "Fri, 05 Dec 2025 07:46:13 GMT"
+  },
+  "retrieved_at": "2026-09-29T10:21:09Z",
+  "sha256": "7bb76a14c6afb969e1eb668a71cffdf140d519fcd50a2c58ce1683cb6212e337",
+  "source_id": "adb_mrio",
+  "status": 200,
+  "url": "https://kidb.adb.org/download/mrio-file/211"
+}

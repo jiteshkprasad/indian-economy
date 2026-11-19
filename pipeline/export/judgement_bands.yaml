@@ -1,0 +1,18 @@
+# Binding bands that set a level by judgement, not by data (docs/phase2/CHECKPOINT_B.md s.6b; PLAN s.3.4.3).
+# Exactly these 11 constraint ids. tests/export/test_status.py checks the list against s.6b and that each id
+# binds in the current run. A member entry of one of these bands gets flag `judgement_band` (bit 1), and a free
+# entry that balancing moved (status `balanced`) gets the label `balancing_set`.
+# Not listed on purpose: rounding-tolerance bands (GFCE +-1 crore, NAS CIS +-0.1 crore, RBI saving +-2,500 crore)
+# and the other 37 binding bands (listed for the owner in docs/phase3/issues/U1.md).
+judgement_bands:
+  - government:gov.cofog.current_transfers
+  - government:gov.cofog.capital_transfers
+  - government:gov.r9d.railways
+  - government:gov.r9d.posts
+  - government:gov.r2.css_outside_treasury
+  - government:gov.r18.psu_revenue_grants
+  - taxes:t1.cgst
+  - taxes:t1.gces
+  - taxes:t1.uexc
+  - factors:f4b.centre
+  - taxes:t4a.nfpu

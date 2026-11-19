@@ -1,0 +1,197 @@
+# Balancing explanations for block `closure` (DECISIONS D2-22; item format in docs/phase2/SAM_GUIDE.md s.12 and
+# the header of pipeline/sam/explanations.yaml). Rewritten for the balanced run of the Wave C audit fix
+# (2026-10-01; docs/phase2/verify/balanced_sam.md BS-1..BS-14): 10 entry items and 0 cell items
+# (ref "*"), every figure read from data/sam/2023-24 (balancing_log, balancing_constraints, prior_diagnostics,
+# capital_financial's k9_decomposition). Every `why` starts with a verdict:
+#   - "Explained": the prior was off for a documented source disagreement and the balanced value moves toward
+#     other evidence, or stays inside a declared evidenced band;
+#   - "Explained in direction; level unexplained": the account gap that drove the move is documented, but no
+#     source supports this entry's balanced level (or the sources disagree);
+#   - "Unexplained": the move carries an account gap whose cause is not a documented source disagreement (here:
+#     E_NFPU's prior surplus, government-33 / fincorp-37), a finding for Checkpoint B.
+# Verdicts in this file: explained 10.
+# Mechanism: cross-entropy (free low 0.25, medium 1, high 4, anchored 16) moves all free entries of one cell with
+# the same constraint membership by one factor z = balanced / prior, set by the account and constraint
+# multipliers, so the low-confidence entries of the accounts with the largest prior gaps move most. GRAS (no
+# weights, no constraints) is quoted as a cross-check. Amounts in Rs crore, current prices, FY 2023-24.
+explanations:
+  - row: K_HH
+    col: H_R1
+    ref: "K4a"
+    component: "total"
+    prior: 332439.449587
+    balanced: 354374.435373
+    why: >-
+      Explained (the move; the group profile it keeps is finding BS-8). K_HH <- H_R1 K4a total, 3,32,439 -> 3,54,374
+      (21,935, +6.6%; z 1.066; free low; binding: cf.k4.hh_saving (target 58,90,330, balanced 58,90,330, at its
+      lower edge)). The prior K4a is each group's current-account residual (closure option A); the ten residuals sum
+      to 55,05,784 against NAS 2026 St 1.9 household saving 58,90,330 (Z = -3,84,547; check k4.prior_sum_vs_nas),
+      and cf.k4.hh_saving binds at its lower edge. The other blocks' flows delivered households too little income
+      (closure institution_gaps), and cross-entropy closed Z mostly by raising households' property income (R8a) and
+      cutting their interest payments (R5), which raises every group's saving by 6-8% of its prior. The level by
+      group inherits the factor-income keys' shape (D2-19, factors-19): rural groups save more than urban ones, the
+      reverse of IFPRI 2022/23; that is an owner decision for Checkpoint B (closure-19, BS-8), not something
+      balancing can settle. GRAS (no weights, no constraints) gives 3,42,030.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: K_HH
+    col: H_R2
+    ref: "K4a"
+    component: "total"
+    prior: 417339.295442
+    balanced: 445231.798763
+    why: >-
+      Explained (the move; the group profile it keeps is finding BS-8). K_HH <- H_R2 K4a total, 4,17,339 -> 4,45,232
+      (27,893, +6.7%; z 1.067; free low; binding: cf.k4.hh_saving (target 58,90,330, balanced 58,90,330, at its
+      lower edge)). The prior K4a is each group's current-account residual (closure option A); the ten residuals sum
+      to 55,05,784 against NAS 2026 St 1.9 household saving 58,90,330 (Z = -3,84,547; check k4.prior_sum_vs_nas),
+      and cf.k4.hh_saving binds at its lower edge. The other blocks' flows delivered households too little income
+      (closure institution_gaps), and cross-entropy closed Z mostly by raising households' property income (R8a) and
+      cutting their interest payments (R5), which raises every group's saving by 6-8% of its prior. The level by
+      group inherits the factor-income keys' shape (D2-19, factors-19): rural groups save more than urban ones, the
+      reverse of IFPRI 2022/23; that is an owner decision for Checkpoint B (closure-19, BS-8), not something
+      balancing can settle. GRAS (no weights, no constraints) gives 4,30,280.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: K_HH
+    col: H_R3
+    ref: "K4a"
+    component: "total"
+    prior: 562361.774450
+    balanced: 600371.600896
+    why: >-
+      Explained (the move; the group profile it keeps is finding BS-8). K_HH <- H_R3 K4a total, 5,62,362 -> 6,00,372
+      (38,010, +6.8%; z 1.068; free low; binding: cf.k4.hh_saving (target 58,90,330, balanced 58,90,330, at its
+      lower edge)). The prior K4a is each group's current-account residual (closure option A); the ten residuals sum
+      to 55,05,784 against NAS 2026 St 1.9 household saving 58,90,330 (Z = -3,84,547; check k4.prior_sum_vs_nas),
+      and cf.k4.hh_saving binds at its lower edge. The other blocks' flows delivered households too little income
+      (closure institution_gaps), and cross-entropy closed Z mostly by raising households' property income (R8a) and
+      cutting their interest payments (R5), which raises every group's saving by 6-8% of its prior. The level by
+      group inherits the factor-income keys' shape (D2-19, factors-19): rural groups save more than urban ones, the
+      reverse of IFPRI 2022/23; that is an owner decision for Checkpoint B (closure-19, BS-8), not something
+      balancing can settle. GRAS (no weights, no constraints) gives 5,80,260.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: K_HH
+    col: H_R4
+    ref: "K4a"
+    component: "total"
+    prior: 1192578.913902
+    balanced: 1266767.502652
+    why: >-
+      Explained (the move; the group profile it keeps is finding BS-8). K_HH <- H_R4 K4a total, 11,92,579 ->
+      12,66,768 (74,189, +6.2%; z 1.062; free low; binding: cf.k4.hh_saving (target 58,90,330, balanced 58,90,330,
+      at its lower edge)). The prior K4a is each group's current-account residual (closure option A); the ten
+      residuals sum to 55,05,784 against NAS 2026 St 1.9 household saving 58,90,330 (Z = -3,84,547; check
+      k4.prior_sum_vs_nas), and cf.k4.hh_saving binds at its lower edge. The other blocks' flows delivered
+      households too little income (closure institution_gaps), and cross-entropy closed Z mostly by raising
+      households' property income (R8a) and cutting their interest payments (R5), which raises every group's saving
+      by 6-8% of its prior. The level by group inherits the factor-income keys' shape (D2-19, factors-19): rural
+      groups save more than urban ones, the reverse of IFPRI 2022/23; that is an owner decision for Checkpoint B
+      (closure-19, BS-8), not something balancing can settle. GRAS (no weights, no constraints) gives 12,26,304.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: K_HH
+    col: H_R5
+    ref: "K4a"
+    component: "total"
+    prior: 472012.453461
+    balanced: 507292.135853
+    why: >-
+      Explained (the move; the group profile it keeps is finding BS-8). K_HH <- H_R5 K4a total, 4,72,012 -> 5,07,292
+      (35,280, +7.5%; z 1.075; free low; binding: cf.k4.hh_saving (target 58,90,330, balanced 58,90,330, at its
+      lower edge)). The prior K4a is each group's current-account residual (closure option A); the ten residuals sum
+      to 55,05,784 against NAS 2026 St 1.9 household saving 58,90,330 (Z = -3,84,547; check k4.prior_sum_vs_nas),
+      and cf.k4.hh_saving binds at its lower edge. The other blocks' flows delivered households too little income
+      (closure institution_gaps), and cross-entropy closed Z mostly by raising households' property income (R8a) and
+      cutting their interest payments (R5), which raises every group's saving by 6-8% of its prior. The level by
+      group inherits the factor-income keys' shape (D2-19, factors-19): rural groups save more than urban ones, the
+      reverse of IFPRI 2022/23; that is an owner decision for Checkpoint B (closure-19, BS-8), not something
+      balancing can settle. GRAS (no weights, no constraints) gives 4,91,014.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: K_HH
+    col: H_U1
+    ref: "K4a"
+    component: "total"
+    prior: 173308.594926
+    balanced: 185454.568262
+    why: >-
+      Explained (the move; the group profile it keeps is finding BS-8). K_HH <- H_U1 K4a total, 1,73,309 -> 1,85,455
+      (12,146, +7.0%; z 1.070; free low; binding: cf.k4.hh_saving (target 58,90,330, balanced 58,90,330, at its
+      lower edge)). The prior K4a is each group's current-account residual (closure option A); the ten residuals sum
+      to 55,05,784 against NAS 2026 St 1.9 household saving 58,90,330 (Z = -3,84,547; check k4.prior_sum_vs_nas),
+      and cf.k4.hh_saving binds at its lower edge. The other blocks' flows delivered households too little income
+      (closure institution_gaps), and cross-entropy closed Z mostly by raising households' property income (R8a) and
+      cutting their interest payments (R5), which raises every group's saving by 6-8% of its prior. The level by
+      group inherits the factor-income keys' shape (D2-19, factors-19): rural groups save more than urban ones, the
+      reverse of IFPRI 2022/23; that is an owner decision for Checkpoint B (closure-19, BS-8), not something
+      balancing can settle. GRAS (no weights, no constraints) gives 1,79,117.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: K_HH
+    col: H_U2
+    ref: "K4a"
+    component: "total"
+    prior: 273097.968467
+    balanced: 292677.668058
+    why: >-
+      Explained (the move; the group profile it keeps is finding BS-8). K_HH <- H_U2 K4a total, 2,73,098 -> 2,92,678
+      (19,580, +7.2%; z 1.072; free low; binding: cf.k4.hh_saving (target 58,90,330, balanced 58,90,330, at its
+      lower edge)). The prior K4a is each group's current-account residual (closure option A); the ten residuals sum
+      to 55,05,784 against NAS 2026 St 1.9 household saving 58,90,330 (Z = -3,84,547; check k4.prior_sum_vs_nas),
+      and cf.k4.hh_saving binds at its lower edge. The other blocks' flows delivered households too little income
+      (closure institution_gaps), and cross-entropy closed Z mostly by raising households' property income (R8a) and
+      cutting their interest payments (R5), which raises every group's saving by 6-8% of its prior. The level by
+      group inherits the factor-income keys' shape (D2-19, factors-19): rural groups save more than urban ones, the
+      reverse of IFPRI 2022/23; that is an owner decision for Checkpoint B (closure-19, BS-8), not something
+      balancing can settle. GRAS (no weights, no constraints) gives 2,82,697.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: K_HH
+    col: H_U3
+    ref: "K4a"
+    component: "total"
+    prior: 361258.120836
+    balanced: 388833.058206
+    why: >-
+      Explained (the move; the group profile it keeps is finding BS-8). K_HH <- H_U3 K4a total, 3,61,258 -> 3,88,833
+      (27,575, +7.6%; z 1.076; free low; binding: cf.k4.hh_saving (target 58,90,330, balanced 58,90,330, at its
+      lower edge)). The prior K4a is each group's current-account residual (closure option A); the ten residuals sum
+      to 55,05,784 against NAS 2026 St 1.9 household saving 58,90,330 (Z = -3,84,547; check k4.prior_sum_vs_nas),
+      and cf.k4.hh_saving binds at its lower edge. The other blocks' flows delivered households too little income
+      (closure institution_gaps), and cross-entropy closed Z mostly by raising households' property income (R8a) and
+      cutting their interest payments (R5), which raises every group's saving by 6-8% of its prior. The level by
+      group inherits the factor-income keys' shape (D2-19, factors-19): rural groups save more than urban ones, the
+      reverse of IFPRI 2022/23; that is an owner decision for Checkpoint B (closure-19, BS-8), not something
+      balancing can settle. GRAS (no weights, no constraints) gives 3,75,191.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: K_HH
+    col: H_U4
+    ref: "K4a"
+    component: "total"
+    prior: 521415.725961
+    balanced: 562202.761630
+    why: >-
+      Explained (the move; the group profile it keeps is finding BS-8). K_HH <- H_U4 K4a total, 5,21,416 -> 5,62,203
+      (40,787, +7.8%; z 1.078; free low; binding: cf.k4.hh_saving (target 58,90,330, balanced 58,90,330, at its
+      lower edge)). The prior K4a is each group's current-account residual (closure option A); the ten residuals sum
+      to 55,05,784 against NAS 2026 St 1.9 household saving 58,90,330 (Z = -3,84,547; check k4.prior_sum_vs_nas),
+      and cf.k4.hh_saving binds at its lower edge. The other blocks' flows delivered households too little income
+      (closure institution_gaps), and cross-entropy closed Z mostly by raising households' property income (R8a) and
+      cutting their interest payments (R5), which raises every group's saving by 6-8% of its prior. The level by
+      group inherits the factor-income keys' shape (D2-19, factors-19): rural groups save more than urban ones, the
+      reverse of IFPRI 2022/23; that is an owner decision for Checkpoint B (closure-19, BS-8), not something
+      balancing can settle. GRAS (no weights, no constraints) gives 5,43,175.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]
+  - row: K_HH
+    col: H_U5
+    ref: "K4a"
+    component: "total"
+    prior: 1199971.332300
+    balanced: 1287124.416352
+    why: >-
+      Explained (the move; the group profile it keeps is finding BS-8). K_HH <- H_U5 K4a total, 11,99,971 ->
+      12,87,124 (87,153, +7.3%; z 1.073; free low; binding: cf.k4.hh_saving (target 58,90,330, balanced 58,90,330,
+      at its lower edge)). The prior K4a is each group's current-account residual (closure option A); the ten
+      residuals sum to 55,05,784 against NAS 2026 St 1.9 household saving 58,90,330 (Z = -3,84,547; check
+      k4.prior_sum_vs_nas), and cf.k4.hh_saving binds at its lower edge. The other blocks' flows delivered
+      households too little income (closure institution_gaps), and cross-entropy closed Z mostly by raising
+      households' property income (R8a) and cutting their interest payments (R5), which raises every group's saving
+      by 6-8% of its prior. The level by group inherits the factor-income keys' shape (D2-19, factors-19): rural
+      groups save more than urban ones, the reverse of IFPRI 2022/23; that is an owner decision for Checkpoint B
+      (closure-19, BS-8), not something balancing can settle. GRAS (no weights, no constraints) gives 12,46,510.
+    sources: [ifpri_nexus_sam_india_2022_23_paper, mospi_nas_2026_publication, mospi_nas_old_base_2011_12]

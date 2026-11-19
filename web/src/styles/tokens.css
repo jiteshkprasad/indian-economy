@@ -1,0 +1,179 @@
+/*
+ * Design tokens (PLAN §4.11). Owner: U2. Hex values only live here.
+ * Contrast is tested on what is drawn: tests/unit/platform/contrast.test.ts.
+ *   --k-<kind>        ribbon/node fill hue (drawn at the opacities in lib/sankey/style.ts)
+ *   --k-<kind>-edge   >= 3:1 against --bg and --surface (stroke when the fill is below 3:1)
+ *   --k-<kind>-text   >= 4.5:1 against --bg and --surface (labels)
+ *   --st-*            status colours, >= 4.5:1 as text on --bg and --surface
+ */
+:root {
+  color-scheme: light;
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --surface-2: #f1efe9;
+  --text: #1c1c21;
+  --text-muted: #55565f;
+  --border: #d9d6ce;
+  --border-strong: #807d75;
+  --focus: #1a4fd6;
+  --focus-halo: #ffffff;
+  --accent: #0b5f8a;
+  --accent-text: #ffffff;
+  --danger: #a4161a;
+  --pattern-line: #1c1c21;
+  --flow-stripe: #ffffff;
+  --flow-stripe-opacity: 0.34;
+
+  --st-official: #1d6b40;
+  --st-derived: #2a56a3;
+  --st-estimated: #8f5000;
+  --st-balancing: #823a88;
+  --st-official-bg: #e3f1e8;
+  --st-derived-bg: #e4ebf7;
+  --st-estimated-bg: #f8ecdb;
+  --st-balancing-bg: #f3e6f3;
+
+  --k-production: #d9822b;
+  --k-production-edge: #a65a0c;
+  --k-production-text: #864600;
+  --k-factors: #c9a227;
+  --k-factors-edge: #8a6d00;
+  --k-factors-text: #6b5400;
+  --k-households: #3a9a5b;
+  --k-households-edge: #22703e;
+  --k-households-text: #1a5c32;
+  --k-corporations: #4a7fc1;
+  --k-corporations-edge: #2f5f9e;
+  --k-corporations-text: #24508a;
+  --k-government: #8d5fb8;
+  --k-government-edge: #6c3f97;
+  --k-government-text: #5d3285;
+  --k-row: #2b9fa0;
+  --k-row-edge: #13706f;
+  --k-row-text: #0d5f5e;
+  --k-capital: #6c7a89;
+  --k-capital-edge: #4f5c6a;
+  --k-capital-text: #414d5a;
+  --k-discrepancy: #a39482;
+  --k-discrepancy-edge: #6e6151;
+  --k-discrepancy-text: #5a4e40;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Noto Sans Devanagari",
+    Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --radius: 8px;
+  --radius-sm: 4px;
+  --gutter: 16px;
+  --max-width: 1200px;
+  --target: 44px;
+  --target-min: 24px;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.06), 0 2px 8px rgb(0 0 0 / 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121317;
+    --surface: #1b1d22;
+    --surface-2: #24272e;
+    --text: #ececef;
+    --text-muted: #a9abb4;
+    --flow-stripe-opacity: 0.2;
+    --border: #3a3d45;
+    --border-strong: #8b8e98;
+    --focus: #8fb2ff;
+    --focus-halo: #121317;
+    --accent: #6fb7e0;
+    --accent-text: #0d1117;
+    --danger: #ff8a80;
+    --pattern-line: #f4f4f6;
+
+    --st-official: #6fcf97;
+    --st-derived: #8fb2ff;
+    --st-estimated: #f0b35a;
+    --st-balancing: #e19be6;
+    --st-official-bg: #1b3326;
+    --st-derived-bg: #1e2a44;
+    --st-estimated-bg: #3a2c16;
+    --st-balancing-bg: #36203a;
+
+    --k-production: #f0a050;
+    --k-production-edge: #f2ae68;
+    --k-production-text: #f6c08a;
+    --k-factors: #e3c04c;
+    --k-factors-edge: #e8c95f;
+    --k-factors-text: #f0d98c;
+    --k-households: #5cc584;
+    --k-households-edge: #6bcf90;
+    --k-households-text: #95dfb0;
+    --k-corporations: #6f9fe0;
+    --k-corporations-edge: #82adea;
+    --k-corporations-text: #a9c6f0;
+    --k-government: #b48ce0;
+    --k-government-edge: #bf9ce6;
+    --k-government-text: #d3baf0;
+    --k-row: #48c3c3;
+    --k-row-edge: #5ccccc;
+    --k-row-text: #8fdede;
+    --k-capital: #9aa8b8;
+    --k-capital-edge: #a7b4c3;
+    --k-capital-text: #c3ccd7;
+    --k-discrepancy: #b9ab98;
+    --k-discrepancy-edge: #c2b5a3;
+    --k-discrepancy-text: #d6ccbf;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 2px 8px rgb(0 0 0 / 0.3);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121317;
+  --surface: #1b1d22;
+  --surface-2: #24272e;
+  --text: #ececef;
+  --text-muted: #a9abb4;
+  --flow-stripe-opacity: 0.2;
+  --border: #3a3d45;
+  --border-strong: #8b8e98;
+  --focus: #8fb2ff;
+  --focus-halo: #121317;
+  --accent: #6fb7e0;
+  --accent-text: #0d1117;
+  --danger: #ff8a80;
+  --pattern-line: #f4f4f6;
+
+  --st-official: #6fcf97;
+  --st-derived: #8fb2ff;
+  --st-estimated: #f0b35a;
+  --st-balancing: #e19be6;
+  --st-official-bg: #1b3326;
+  --st-derived-bg: #1e2a44;
+  --st-estimated-bg: #3a2c16;
+  --st-balancing-bg: #36203a;
+
+  --k-production: #f0a050;
+  --k-production-edge: #f2ae68;
+  --k-production-text: #f6c08a;
+  --k-factors: #e3c04c;
+  --k-factors-edge: #e8c95f;
+  --k-factors-text: #f0d98c;
+  --k-households: #5cc584;
+  --k-households-edge: #6bcf90;
+  --k-households-text: #95dfb0;
+  --k-corporations: #6f9fe0;
+  --k-corporations-edge: #82adea;
+  --k-corporations-text: #a9c6f0;
+  --k-government: #b48ce0;
+  --k-government-edge: #bf9ce6;
+  --k-government-text: #d3baf0;
+  --k-row: #48c3c3;
+  --k-row-edge: #5ccccc;
+  --k-row-text: #8fdede;
+  --k-capital: #9aa8b8;
+  --k-capital-edge: #a7b4c3;
+  --k-capital-text: #c3ccd7;
+  --k-discrepancy: #b9ab98;
+  --k-discrepancy-edge: #c2b5a3;
+  --k-discrepancy-text: #d6ccbf;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 2px 8px rgb(0 0 0 / 0.3);
+}

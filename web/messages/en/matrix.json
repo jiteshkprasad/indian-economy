@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "The whole table",
+    "description": "Every flow in India's 2023-24 social accounting matrix as a heat-map and a table: who pays whom, how much, and how sure we are of each figure."
+  },
+  "page": {
+    "h1": "The whole table: every flow in {year}",
+    "intro": "The map draws India's economy as flows. Underneath it sits a single table, a social accounting matrix (SAM). Each row is an account that receives money and each column is an account that pays it, so the cell where a row meets a column is the money flowing from that column to that row in {year}. Every account's row total equals its column total: what comes in goes out.",
+    "units": "Money is in rupees at current prices for the financial year {year}. One lakh crore is one trillion rupees.",
+    "gdpNote": "Shares are of GDP in {year}. Gross flows can exceed GDP: GDP counts final output once, while this table also holds what firms buy from each other and the money that passes through financial markets.",
+    "methodLink": "How the labels work",
+    "mapLink": "Back to the map"
+  },
+  "views": {
+    "label": "How to show the table",
+    "heatmap": "Heat-map",
+    "table": "Table"
+  },
+  "zoom": {
+    "heading": "What you are looking at",
+    "rows": "Receivers (rows)",
+    "cols": "Payers (columns)",
+    "whole": "Whole economy",
+    "grainAccounts": "all {n} accounts",
+    "grainGroups": "{n} groups",
+    "showAccounts": "Show all accounts",
+    "showGroups": "Show groups",
+    "zoomOut": "Zoom out",
+    "reset": "Start again",
+    "zoomRowsInto": "Zoom receivers into {name}",
+    "zoomColsInto": "Zoom payers into {name}",
+    "axisUp": "Up to {name}",
+    "size": "{rows} receivers × {cols} payers"
+  },
+  "heatmap": {
+    "label": "Heat-map of the social accounting matrix: {rows} receivers by {cols} payers",
+    "roledesc": "matrix",
+    "help": "Arrow keys move the cursor, Enter zooms into a block, Esc zooms out, T opens the table.",
+    "helpPointer": "Tap or click a cell to see it; double-click, or select a group name, to zoom into that block.",
+    "legendPos": "Money paid (stronger shade = larger)",
+    "legendNeg": "Negative overall (for example subsidies, the Centre’s negative saving, inventory run-downs)",
+    "legendZeroNet": "Flows that cancel out exactly",
+    "legendEmpty": "No flow",
+    "legendLabel": "Colour key",
+    "legendScale": "Log scale, the same for both colours: the faintest shade is the smallest flow in this view ({lo}), the strongest is the largest ({hi}). Equal steps in shade are equal multiples in size.",
+    "legendScaleTiny": "Log scale, the same for both colours: the faintest shade is the smallest flow in this view (less than {floor}), the strongest is the largest ({hi}). Equal steps in shade are equal multiples in size.",
+    "rowHeader": "Receives",
+    "colHeader": "Pays",
+    "noCanvas": "The heat-map needs a browser that can draw on a canvas. The table below shows the same figures.",
+    "emptyView": "No money flows between these groups in this table. Zoom out to see the rest.",
+    "noZoom": "There is nothing more detailed to show for this cell."
+  },
+  "cell": {
+    "heading": "Selected cell",
+    "pays": "{payer} pays {receiver}",
+    "internal": "Flows inside {name}",
+    "none": "No money flows from {payer} to {receiver} in this table.",
+    "value": "Amount",
+    "share": "Share of GDP",
+    "netOf": "This is a net amount: <pos></pos> of positive flows and <neg></neg> of negative ones.",
+    "cellsCount": "{n, plural, one {Sums # account cell} other {Sums # account cells}}",
+    "flowPage": "Read about this flow",
+    "announce": "{payer} pays {receiver}: {value}, {share} of GDP, {labels}",
+    "announceEmpty": "{payer} pays {receiver}: no flow",
+    "announceZoom": "Now showing {rows} receivers by {cols} payers",
+    "status": "How sure we are",
+    "zoomIn": "Zoom into this block",
+    "flowPageNeg": "Read about the negative part"
+  },
+  "flags": {
+    "judgement_band": "Level set by a judgement band, not by data",
+    "unexplained": "Balancing moved this and the reason is not yet documented",
+    "level_unexplained": "Balancing moved this: direction explained, level not",
+    "old_base_structure": "Estimated with the old-base national-accounts structure",
+    "discrepancy": "Includes a discrepancy or reconciliation item, not a payment between real parties",
+    "has_negative": "Includes negative entries",
+    "depends_on_assumption": "Uses a stated assumption"
+  },
+  "table": {
+    "caption": "Social accounting matrix, {year}: money paid by each column to each row. {rows} receivers by {cols} payers.",
+    "captionBlocks": "The heat-map shows every account; this table groups them into {n} blocks so it can be read. Zoom into a block to see its accounts.",
+    "corner": "Receiver ↓ / payer →",
+    "zero": "·",
+    "zeroLabel": "no flow",
+    "region": "Matrix table (scrolls sideways)"
+  },
+  "list": {
+    "heading": "All non-zero cells",
+    "intro": "Every one of the {n} account-to-account flows in the table, one per line.",
+    "payer": "Payer",
+    "receiver": "Receiver",
+    "value": "Amount",
+    "share": "Share of GDP",
+    "status": "How sure",
+    "flags": "Notes",
+    "any": "Any",
+    "search": "Search by name or code",
+    "sortBy": "Sort by",
+    "sortAbs": "Size (largest first)",
+    "sortValue": "Amount",
+    "sortPayer": "Payer",
+    "sortReceiver": "Receiver",
+    "asc": "Ascending",
+    "desc": "Descending",
+    "showAll": "Show every row at once (no virtual scrolling; better for screen readers, slower)",
+    "count": "{shown, plural, one {Showing {shownText} cell} other {Showing {shownText} cells}} of {total}",
+    "empty": "No cells match these filters.",
+    "region": "List of all non-zero cells"
+  },
+  "downloads": {
+    "heading": "Download the data",
+    "intro": "These are the exact JSON files this site is built from (data version {version}). Each file's SHA-256 fingerprint lets you check that your copy is unchanged.",
+    "fixture": "This build uses generated test data, not the real export.",
+    "file": "File",
+    "size": "Size",
+    "sha": "SHA-256",
+    "index": "index.json (the list of files and their fingerprints)",
+    "bytes": "{n} bytes",
+    "kb": "{n} KB"
+  },
+  "status": {
+    "explain": "The label on each figure says whether its total is held to a published number and how its parts were made."
+  },
+  "errors": {
+    "data": "The matrix data could not be shown: {message}"
+  },
+  "flagsShort": {
+    "judgement_band": "Judgement band",
+    "unexplained": "Move not yet explained",
+    "level_unexplained": "Level not explained",
+    "old_base_structure": "Old-base structure",
+    "discrepancy": "Discrepancy item",
+    "has_negative": "Negative entries",
+    "depends_on_assumption": "Stated assumption"
+  }
+}

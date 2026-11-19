@@ -1,0 +1,33 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 276693,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "final_url": "https://www.indiabudget.gov.in/budget2024-25/doc/eb/stat6.xlsx",
+  "key": "mof_union_budget_2026_27/b2425_stat6.xlsx",
+  "method": "GET",
+  "name": "b2425_stat6.xlsx",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://www.indiabudget.gov.in/",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "last-modified": "Thu, 08 Aug 2024 05:27:11 GMT"
+  },
+  "retrieved_at": "2026-09-29T14:33:41Z",
+  "sha256": "d31b7551b3686865a21826c21eccc5460e176c2da76a06fdaeebc4d49769d4d6",
+  "source_id": "mof_union_budget_2026_27",
+  "status": 200,
+  "url": "https://www.indiabudget.gov.in/budget2024-25/doc/eb/stat6.xlsx"
+}

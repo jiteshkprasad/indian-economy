@@ -1,0 +1,35 @@
+{
+  "access_policy": "DECISIONS.md D1-1 (public file, browser-like headers, >=2 s per host)",
+  "attempts": 1,
+  "bytes": 1184142,
+  "content_type": "application/pdf",
+  "final_url": "https://dea.gov.in/files/public_debt_management_documents/Quarterly_Report_on_Public_Debt_Management_for_the_quarter_January_March_2023.pdf",
+  "key": "dea_public_debt_reports/dea_qr_jan_mar_2023.pdf",
+  "method": "GET",
+  "name": "dea_qr_jan_mar_2023.pdf",
+  "redirects": [],
+  "request_body": null,
+  "request_headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept-Language": "en-IN,en-GB;q=0.9,en;q=0.8",
+    "Referer": "https://dea.gov.in/reports-public-debt-management",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+  },
+  "response_headers": {
+    "content-length": "1184142",
+    "content-type": "application/pdf",
+    "last-modified": "Thu, 04 Sep 2025 07:33:14 GMT",
+    "server": "GoIServer"
+  },
+  "retrieved_at": "2026-09-29T10:23:07Z",
+  "sha256": "ac10a15be8a1d89840cc6ad71e49844f94342b4404229bee289bda024d25c2b2",
+  "source_id": "dea_public_debt_reports",
+  "status": 200,
+  "url": "https://dea.gov.in/files/public_debt_management_documents/Quarterly_Report_on_Public_Debt_Management_for_the_quarter_January_March_2023.pdf"
+}

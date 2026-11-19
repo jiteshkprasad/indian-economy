@@ -1,0 +1,361 @@
+/* Matrix unit styles (U4). Colours come only from U2's tokens (src/styles/tokens.css). */
+
+.explorer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+
+.zoombar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.zoombar h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+.axisRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+}
+.axisName {
+  font-weight: 600;
+  min-width: 9.5em;
+}
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.crumbs li {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.crumbs li + li::before {
+  content: "›";
+  color: var(--text-muted);
+}
+.crumbCurrent {
+  font-weight: 600;
+  padding: 2px 4px;
+}
+.zoomActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.muted {
+  color: var(--text-muted);
+}
+
+.heatmap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+.help {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.canvasWrap {
+  position: relative;
+  overflow: auto;
+  max-width: 100%;
+  border-radius: var(--radius-sm);
+}
+.canvasWrap:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.canvasBox {
+  position: relative;
+}
+.canvasBox canvas,
+.canvasBox svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+}
+.canvasBox canvas {
+  cursor: crosshair;
+  touch-action: manipulation;
+}
+.canvasBox svg {
+  pointer-events: none;
+  overflow: visible;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  align-items: center;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.ramp {
+  display: inline-block;
+  width: 96px;
+  height: 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: 2px;
+}
+.swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--border-strong);
+  border-radius: 2px;
+}
+
+.info {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  min-height: 9rem;
+}
+.info h2,
+.info h3 {
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 12px;
+  margin: 0 0 8px;
+}
+.facts dt {
+  color: var(--text-muted);
+}
+.facts dd {
+  margin: 0;
+}
+.flagList {
+  margin: 6px 0;
+  padding-left: 1.2em;
+  font-size: 0.9rem;
+}
+
+.tableRegion {
+  overflow: auto;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.tableRegion:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.matrixTable {
+  font-size: 0.875rem;
+}
+.matrixTable caption {
+  text-align: left;
+  padding: 8px;
+  caption-side: top;
+}
+.matrixTable th,
+.matrixTable td {
+  border: 1px solid var(--border);
+  padding: 4px 6px;
+  vertical-align: top;
+}
+.matrixTable thead th {
+  position: sticky;
+  top: 0;
+  background: var(--surface-2);
+  z-index: 1;
+  font-weight: 600;
+  text-align: left;
+  min-width: 8.5em;
+}
+.matrixTable tbody th {
+  position: sticky;
+  left: 0;
+  background: var(--surface-2);
+  text-align: left;
+  font-weight: 600;
+  min-width: 9em;
+}
+.matrixTable td {
+  text-align: right;
+  min-width: 8.5em;
+}
+.matrixTable td .badgeLine {
+  display: block;
+  margin-top: 2px;
+  text-align: right;
+}
+.zeroCell {
+  color: var(--text-muted);
+  text-align: center !important;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: flex-end;
+}
+.field {
+  display: grid;
+  gap: 2px;
+  font-size: 0.875rem;
+  flex: 1 1 13rem;
+  min-width: 0;
+  max-width: 100%;
+}
+.filters select,
+.filters input[type="search"] {
+  min-height: var(--target);
+  padding: 4px 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  width: 100%;
+  max-width: 100%;
+}
+.field label {
+  font-size: 0.875rem;
+}
+.filters .check {
+  flex: 1 1 100%;
+}
+.check {
+  display: flex !important;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 8px !important;
+  min-height: var(--target);
+}
+.check input {
+  width: 20px;
+  height: 20px;
+}
+.listScroll {
+  overflow: auto;
+  max-height: 32rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.listScroll:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.listTable {
+  width: 100%;
+  font-size: 0.875rem;
+}
+.listTable th,
+.listTable td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: middle;
+  height: 44px;
+  box-sizing: border-box;
+}
+.listTable thead th {
+  position: sticky;
+  top: 0;
+  background: var(--surface-2);
+  z-index: 1;
+}
+.listTable td.numCol,
+.listTable th.numCol {
+  text-align: right;
+}
+.notes {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.downloads table {
+  width: 100%;
+  font-size: 0.875rem;
+}
+.downloads th,
+.downloads td {
+  border-bottom: 1px solid var(--border);
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.downloads td a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--target-min);
+}
+.sha {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  word-break: break-all;
+}
+.downloadsScroll {
+  overflow-x: auto;
+}
+
+.page > *,
+.explorer > * {
+  min-width: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  padding-block: 16px 48px;
+}
+.page section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+.intro {
+  max-width: 72ch;
+}
+.intro p {
+  margin: 0 0 8px;
+}
+
+@media (max-width: 639px) {
+  .axisName {
+    min-width: 0;
+    width: 100%;
+  }
+  .facts {
+    grid-template-columns: 1fr;
+    gap: 0 0;
+  }
+  .facts dd {
+    margin-bottom: 6px;
+  }
+}

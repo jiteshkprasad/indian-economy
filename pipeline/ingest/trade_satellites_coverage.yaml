@@ -1,0 +1,28 @@
+# Gap-map coverage declared by the trade_satellites unit (format: pipeline/core/coverage.py).
+# S1 and S2 are INTERNATIONAL satellites (not SAM cells); nothing here is `full`:
+# - S1 needs partner x product group for FY 2023-24. IMF IMTS gives every partner (FY sums of
+#   monthly data); Comtrade gives every HS chapter for World and for the top 30 partners only
+#   (the keyless preview's 500-record cap), so the full partner x chapter matrix is not complete.
+# - S2 needs FY 2023-24; BaTIS is calendar-year only (2023, 2024) and its balanced levels are far
+#   below India's reported totals, so it serves partner shares only (FY weighting is Phase 2).
+unit: trade_satellites
+entries:
+- ref: S1
+  dataset: trade_satellites_imf_imts_fy
+  series_ids: [imts.exports_fob.g001.current, imts.imports_cif.g001.current, imts.exports_fob.usa.current,
+    imts.imports_cif.chn.current]
+  extent: partial
+  note: Goods exports FOB / imports CIF by every partner, FY 2023-24 summed from IMF monthly data (US$ mn). No product split.
+- ref: S1
+  dataset: trade_satellites_comtrade_fy_2324
+  series_ids: [ct.exports.total.w00.current, ct.imports.total.w00.current, ct.exports.84.w00.current,
+    ct.imports.27.w00.current, ct.exports.84.usa.current, ct.imports.27.rus.current]
+  extent: partial
+  note: HS chapter x World and HS chapter x top-30 partners, FY 2023-24 from Comtrade monthly preview (US$ mn).
+- ref: S2
+  dataset: trade_satellites_batis_2023_2024
+  period: '2023'
+  series_ids: [batis.exports.s.w.reported.current, batis.exports.s.w.balanced.current, batis.imports.s.w.balanced.current,
+    batis.exports.s.usa.balanced.current, batis.exports.si2.usa.balanced.current]
+  extent: partial
+  note: Services by partner x EBOPS item, calendar 2023 (2024 also ingested); FY 2023-24 weighting is Phase 2.

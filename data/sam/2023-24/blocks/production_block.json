@@ -1,0 +1,56 @@
+{
+  "block": "production",
+  "checks": {
+    "failed": [],
+    "n": 35
+  },
+  "concordances_read": {
+    "io_tables_sut_industry_to_sam34": "29772cb6a0343afa5de17247dbc990f968b6cef3c2ad5595b9988a1732138ea2",
+    "io_tables_sut_product_to_sam34": "8b534e018e28cb7fa5d74c81e0fd498eae68266e03aa26653c391eb035370a23"
+  },
+  "constraints": 238,
+  "datasets_read": [
+    "io_tables_sut_note_totals",
+    "io_tables_sut_supply",
+    "io_tables_sut_use",
+    "io_tables_sut_va",
+    "mospi_nas_2026_s1_1",
+    "mospi_nas_2026_s7_1"
+  ],
+  "dependency_hashes": {},
+  "depends": [],
+  "entries": 1064,
+  "refs": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7",
+    "P8",
+    "P9",
+    "P10",
+    "V1",
+    "V2",
+    "C1",
+    "C2",
+    "I1",
+    "I3",
+    "D4"
+  ],
+  "refs_not_implemented": [
+    "P6a",
+    "S6"
+  ],
+  "satellites": {
+    "sut_memo": {
+      "decimals": 6,
+      "description": "SUT 2023-24 memo items: CIF adjustment by commodity; purchases abroad/in India",
+      "ref": "P6",
+      "rows": 8
+    }
+  },
+  "warnings": 0,
+  "year": "2023-24"
+}

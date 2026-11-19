@@ -1,0 +1,58 @@
+# Sources added by the hces_consumption ingest unit (PIPELINE_GUIDE s.8). Unverified until the
+# orchestrator checks and merges them into data/registry.yaml.
+unit: hces_consumption
+sources:
+- id: nss_health_2025_report
+  name: 'NSS Report No. 596: Household Social Consumption: Health (NSS 80th round, Jan-Dec 2025) - published report'
+  publisher: NSO, MoSPI
+  family: mospi_households
+  urls:
+    landing: https://www.mospi.gov.in/uploads/publications_reports/publications_reports1776676412084_2b4f2b5c-2f1c-446b-8fa3-ec8f125b2b66_Final_Report_no_596_Health_(2).pdf
+    data:
+    - https://www.mospi.gov.in/uploads/publications_reports/publications_reports1776676412084_2b4f2b5c-2f1c-446b-8fa3-ec8f125b2b66_Final_Report_no_596_Health_(2).pdf
+    docs: []
+  access:
+    method: Direct download of the public report PDF (no login). The unit-level data (registry id nss_health_2025, microdata.gov.in catalog 290) is NOT used (DECISIONS D1-2).
+    requires: none
+    notes: URL from data/access_plan.csv (nss_health_2025 row, 'The report PDF is open; use it, not the unit data').
+  formats:
+  - pdf
+  license:
+    name: MoSPI copyright policy + GSDD 2026 Category A (open access); no GODL-India statement
+    url: https://www.mospi.gov.in/uploads/acts_and_policies/acts_and_policies1778231030122_a1a3ee77-e36d-4895-8da5-b294751cbb1a_272304_(1).pdf
+    attribution: 'Source: NSO, MoSPI, NSS Report No. 596 (Health), <table>, accessed <date>.'
+  frequency: Irregular
+  coverage:
+    start: 2025-01
+    end: 2025-12
+  base_year_price_basis: Current prices of the survey period
+  verification:
+    status: unverified
+    notes: Added by hces_consumption (Phase 1) as the open published-report counterpart of nss_health_2025 (whose registry entry covers only the registration-gated unit data). Fetched by the pipeline on 2026-09-29; licence assumed identical to other MoSPI reports (not re-read for this file).
+- id: nss_cms_education_2025_report
+  name: 'NSS Comprehensive Modular Survey: Education 2025 (NSS 80th round, Apr-Jun 2025) - published report'
+  publisher: NSO, MoSPI
+  family: mospi_households
+  urls:
+    landing: https://www.mospi.gov.in/uploads/publications_reports/publications_reports1757588642898_9ba30fe0-3677-478c-8d53-9a0d2ba107f0_CMS_E_2025L.pdf
+    data:
+    - https://www.mospi.gov.in/uploads/publications_reports/publications_reports1757588642898_9ba30fe0-3677-478c-8d53-9a0d2ba107f0_CMS_E_2025L.pdf
+    docs: []
+  access:
+    method: Direct download of the public report PDF (no login). The unit-level data (registry id nss_cms_education_2025, microdata.gov.in catalog 255) is NOT used (DECISIONS D1-2).
+    requires: none
+    notes: URL from data/access_plan.csv (nss_cms_education_2025 row).
+  formats:
+  - pdf
+  license:
+    name: MoSPI copyright policy + GSDD 2026 Category A (open access); no GODL-India statement
+    url: https://www.mospi.gov.in/uploads/acts_and_policies/acts_and_policies1778231030122_a1a3ee77-e36d-4895-8da5-b294751cbb1a_272304_(1).pdf
+    attribution: 'Source: NSO, MoSPI, CMS: Education 2025 report, <table>, accessed <date>.'
+  frequency: Irregular
+  coverage:
+    start: 2025-04
+    end: 2025-06
+  base_year_price_basis: Current prices of the survey period
+  verification:
+    status: unverified
+    notes: Added by hces_consumption (Phase 1) as the open published-report counterpart of nss_cms_education_2025 (whose registry entry covers only the registration-gated unit data). Fetched by the pipeline on 2026-09-29; licence assumed identical to other MoSPI reports (not re-read for this file).

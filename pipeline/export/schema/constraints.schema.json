@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": {
+    "additionalProperties": false,
+    "properties": {
+      "balanced_sum": {
+        "type": "number"
+      },
+      "binding": {
+        "type": "boolean"
+      },
+      "description": {
+        "type": "string"
+      },
+      "hi": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "judgement": {
+        "type": "boolean"
+      },
+      "kind": {
+        "enum": [
+          "band",
+          "equal",
+          "max",
+          "min"
+        ]
+      },
+      "lo": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "prov": {
+        "type": "string"
+      },
+      "ref": {
+        "type": "string"
+      },
+      "target": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "kind",
+      "ref",
+      "description",
+      "target",
+      "lo",
+      "hi",
+      "balanced_sum",
+      "binding",
+      "judgement",
+      "prov"
+    ],
+    "type": "object"
+  },
+  "description": "<v>/sam/constraints.json: every balancing constraint, keyed by constraint id.",
+  "title": "Constraints",
+  "type": "object"
+}
